@@ -14,67 +14,81 @@
 </head>
 <body>
   <div id="wrap" class="gibdd">
-    <div id="header">
-      <div class="top">
-        <ul class="nav clear">
-          <li class="col_1">
-            <img src="img/logo.png" alt="" class="logo"/>
-          </li>
-          <li class="col_2">
-            <span class="catalog btn"><img src="img/ico_catalog.png" alt=""/>Перейти на основной портал</span>
-          </li>
-          <li class="col_3">
-            <a class="exit">Константинопольский К. К. <img src="img/ico_exit.png" alt=""/></a>
-          </li>                                      
-        </ul>      
+    <div class="cover">
+      <div id="header">
+        <div class="top">
+          <ul class="nav clear">
+            <li class="col_1">
+              <img src="img/logo.png" alt="" class="logo"/>
+            </li>
+            <li class="col_2">
+              <span class="catalog btn">Перейти на основной портал</span>
+            </li>
+            <li class="col_3">
+              <a class="exit">Константинопольский К. К.</a>
+            </li>                                      
+          </ul>      
+        </div>
+        <div class="bottom">
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><img src="img/ico_home.png" alt=""/>Главная</a></li>         
+            <li class="last"><span>Штрафы ГИБДД</span></li>                                       
+          </ul>          
+        </div>
       </div>
-      <div class="bottom">
-        <ul class="breadcrumbs">
-          <li class="first"><a href="#"><img src="img/ico_home.png" alt=""/>Главная</a></li>         
-          <li class="last"><span>Штрафы ГИБДД</span></li>                                       
-        </ul>          
-      </div>
-    </div>
 
-    <div id="content">
-      <div class="title">
-        <img src="img/ico_gibdd.png" alt=""/><h1>Штрафы ГИБДД</h1>
-      </div>
-      
+      <div id="content">
+        <div class="title">
+          <img src="img/ico_gibdd.png" alt=""/><h1>Штрафы ГИБДД</h1>
+        </div>
         
-      <form class="main">
+          
+        <form class="main clear">
+              
+          <fieldset class="group_1">
+            <div class="info_block bg_c1">
+              <h4>Обратите внимание</h4>
+              <p>Чтобы получить полную информацию обо всех ваших штрафах, рекомендуем вам ввести данные во все поля.</p>
+            </div>
+          
+            <span class="point_num">1</span>
+            <h3>Водитель / Владелец</h3>          
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big"/></em><br/>
             
-        <fieldset class="group_1">
-          <div class="info_block bg_c1">
-            <h4>Обратите внимание</h4>
-            <p>Чтобы получить полную информацию обо всех ваших штрафах, рекомендуем вам ввести данные во все поля.</p>
-          </div>
+            <em class="wrapper l_50"><input type="text" placeholder="Номер водительского удостоверения" class="big"/>
+            </em><i class="q">?<div class="bg_c3"><img src="img/doc_group_1.png" alt=""/></div></i><br/>
+            
+            <em class="wrapper l_50">
+              <select>
+                <option>А777АА 777</option>
+                <option>А999АА 999</option>
+              </select>                  
+            </em><em class="wrapper l_50"><input type="checkbox"><label>Не использовать поле</label></em>
+            
+          </fieldset> 
+          <span class="btn white"><input class="big" type="submit" value="Найти штрафы" disabled="disabled"/></span>
+                             
+        </form>
         
-          <span class="point_num">1</span>
-          <h3>Водитель / Владелец</h3>          
-          <em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
-          </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big"/>
-          </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big"/></em><br/>
-          
-          <em class="wrapper l_50"><input type="text" placeholder="Номер водительского удостоверения" class="big"/>
-          </em><i class="q"></i><br/>
-          
-          <em class="wrapper l_50">
-            <select>
-              <option>А777АА 777</option>
-              <option>А999АА 999</option>
-            </select>                  
-          </em><em class="wrapper l_50"><input type="checkbox"><label>Не использовать поле</label></em>
-          
-        </fieldset> 
-        <span class="btn"><input class="big" type="submit" value="Найти штрафы" disabled="disabled"/></span>
-                           
-      </form>
-      
-      
-    </div>
+        
+      </div>
+    </div>  
     <div id="footer">
-    
+      <ul class="col_cover">
+        <li class="left">
+          <p>Официальный интернет-портал<br/>Российской Федерации, 2014 г.</p>
+        </li>
+        <li class="right">
+          <span class="phones">
+            8 800 100-70-10<br/>
+            +7 499 550-18-39
+          </span><a href="#" class="btn white">
+            Обратная связь
+          </a>
+        </li>
+      </ul>
     </div>  
   </div>
   
