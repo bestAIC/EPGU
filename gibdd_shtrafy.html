@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  <div id="wrap" class="gibdd">
+  <div id="wrap" class="gibdd_shtrafy">
     <div class="cover">
       <div id="header">
         <div class="top">
@@ -22,7 +22,7 @@
               <img src="img/logo.png" alt="" class="logo"/>
             </li>
             <li class="col_2">
-              <span class="catalog btn">Перейти на основной портал</span>
+              <span class="catalog_btn">Перейти на основной портал</span>
             </li>
             <li class="col_3">
               <a class="exit">Константинопольский К. К.</a>
@@ -46,10 +46,12 @@
         <form class="main clear">
               
           <fieldset class="group_1">
-            <div class="info_block bg_c1">
-              <h4>Обратите внимание</h4>
-              <p>Чтобы получить полную информацию обо всех ваших штрафах, рекомендуем вам ввести данные во все поля.</p>
-            </div>
+            <ul class="info_column">
+              <li class="info_block bg_c1">
+                <h4>Обратите внимание</h4>
+                <p>Чтобы получить полную информацию обо всех ваших штрафах, рекомендуем вам ввести данные во все поля.</p>
+              </li>
+            </ul>  
           
             <span class="point_num">1</span>
             <h3>Водитель / Владелец</h3>          
@@ -68,10 +70,155 @@
             </em><em class="wrapper l_50"><input type="checkbox"><label>Не использовать поле</label></em>
             
           </fieldset> 
-          <span class="btn white"><input class="big" type="submit" value="Найти штрафы" disabled="disabled"/></span>
+          <div class="clear"><span class="btn fr"><input class="big" type="submit" value="Найти штрафы" disabled="disabled"/></span></div>
+          
+          <fieldset class="group_2">
+            <ul class="info_column">
+              <li class="info_block bg_c0">
+                <div class="switcher active">
+                  <div class="cover">
+                    <div class="left active">Вкл</div>
+                    <div class="movable"></div>                  
+                    <div class="right">Откл</div>
+                  </div>
+                </div>              
+              
+                <h4 class="add_pad">Информер</h4>                                               
+                <p>Подключите информер, и информация о штрафах будет отображаться на главной странице портала.</p>
+              </li>            
+              <li class="info_block bg_c1">
+                <h4>Обратите внимание</h4>
+                <p>Оплата штрафа производится в течение 2&nbsp;часов.</p>
+              </li>
+            </ul>                      
+            <span class="point_num">2</span>
+            <h3>Ваши штрафы</h3>          
+            <p>Общая сумма неоплаченных штрафов: <b>150 000</b> <strong class="rouble">Р</strong></p>
+            <ul class="selector">
+              <li class="first">К оплате (107)</li>
+              <li >Оплаченные (170)</li>
+              <li class="last active">Все (277)</li>
+            </ul>
+            
+            <div class="ticket">
+              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="fr">5000&nbsp;<nobr class="rouble">Р</nobr></span> <span class="btn"><input class="small" type="submit" value="Оплатить" /></span></div>
+              <dl>
+                <dt>Дата и время нарушения</dt>
+                <dd>26.05.2013 в 11:47</dd>
+              </dl>
+              <dl>
+                <dt>Место нарушения</dt>
+                <dd>г.Москва, Садовое кольцо, внутрен., Самотечная эстакада, Садово-Сухаревская ул. д. 4
+                  <p><span class="pseudo">На карте</span></p>
+                </dd>
+              </dl>
+
+              <div class="more_info">
+                <span class="pseudo"><em class="slide_down">Узнать больше о штрафе</em><em class="slide_up">Скрыть</em></span>
+                <div class="hide_show">
+                  <dl>
+                    <dt>Статья правонарушения</dt>
+                    <dd>Управление транспортным средством водителем, не пристегнутым ремнем безопасности... <span class="pseudo">Вся статья</span></dd>
+                  </dl>
+                  <dl>
+                    <dt>Марка, модель</dt>
+                    <dd>Ниссан</dd>
+                  </dl>
+                  <dl>
+                    <dt>Подразделение, выявившее нарушение</dt>
+                    <dd>1145519</dd>
+                  </dl>
+                  <dl>
+                    <dt>Постановление</dt>
+                    <dd>77ФА1525884 от 08.12.2012</dd>
+                  </dl> 
+                  <dl>
+                    <dt>Оплатить до</dt>
+                    <dd>25.06.2014</dd>
+                  </dl>                                                                         
+                </div>
+              </div>                  
+               
+            </div>
+            
+            <div class="ticket">
+              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="fr">10 000&nbsp;<nobr class="rouble">Р</nobr></span> <span class="btn"><input class="small" type="submit" value="Оплатить" /></span></div>
+              <dl>
+                <dt>Дата и время нарушения</dt>
+                <dd>26.05.2013 в 11:47</dd>
+              </dl>
+              <dl>
+                <dt>Место нарушения</dt>
+                <dd>г.Москва, Садовое кольцо, внутрен., Самотечная эстакада, Садово-Сухаревская ул. д. 4
+                  <p><span class="pseudo">На карте</span></p>
+                </dd>
+              </dl>
+
+              <div class="more_info">
+                <span class="pseudo"><em class="slide_down">Узнать больше о штрафе</em><em class="slide_up">Скрыть</em></span>
+                <div class="hide_show">
+                  <dl>
+                    <dt>Статья правонарушения</dt>
+                    <dd>Управление транспортным средством водителем, не пристегнутым ремнем безопасности... <span class="pseudo">Вся статья</span></dd>
+                  </dl>
+                  <dl>
+                    <dt>Марка, модель</dt>
+                    <dd>Ниссан</dd>
+                  </dl>
+                  <dl>
+                    <dt>Подразделение, выявившее нарушение</dt>
+                    <dd>1145519</dd>
+                  </dl>
+                  <dl>
+                    <dt>Постановление</dt>
+                    <dd>77ФА1525884 от 08.12.2012</dd>
+                  </dl> 
+                  <dl>
+                    <dt>Оплатить до</dt>
+                    <dd>25.06.2014</dd>
+                  </dl>                                                                         
+                </div>
+              </div>                  
+               
+            </div>            
+          </fieldset>           
                              
         </form>
         
+        <div class="advice type_ok">
+          <h2>Вы подписаны на уведомление</h2>
+          <p>После восстановления работоспособности сервиса вам будет отправлено автоматическое уведомление по указаным вами контактным данным, 
+          и вы сможете вернутся к получению услуги.</p>
+          <div class="social">
+            <b>Поделись удобным сервисом с друзьями:</b>
+            <a href="#"><img src="img/ico_soc_vk.png"/></a>
+            <a href="#"><img src="img/ico_soc_fb.png"/></a>
+            <a href="#"><img src="img/ico_soc_tw.png"/></a>
+            <a href="#"><img src="img/ico_soc_ok.png"/></a>
+          </div>  
+        </div>        
+        
+        <div class="advice type_like">
+          <h2>Поздравляем!</h2>
+          <p>С радостью сообщаем, что в доступных нам базах данных не найдено ни одной вашей задолженности. Это означает, что вам не о чем беспокоится.</p>
+          <div class="social">
+            <b>Поделись удобным сервисом с друзьями:</b>
+            <a href="#"><img src="img/ico_soc_vk.png"/></a>
+            <a href="#"><img src="img/ico_soc_fb.png"/></a>
+            <a href="#"><img src="img/ico_soc_tw.png"/></a>
+            <a href="#"><img src="img/ico_soc_ok.png"/></a>
+          </div>  
+        </div>
+        
+        <div class="advice type_not">
+          <h2>Что-то пошло не так!</h2>
+          <p>К сожалению, сервис недоступен. Попробуйте еще раз позднее. Вы можете подписаться на разовое уведомление о восстановлении работоспособности сервиса.
+          Данные будут отправлены на почту или телефон, указанные в вашем личном кабинете.</p>
+          <form>
+            <em class="wrapper l_66"><input type="text" placeholder="E-mail" value="test@test.ru" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"/></em>
+          </form>
+        </div>        
         
       </div>
     </div>  
@@ -84,7 +231,7 @@
           <span class="phones">
             8 800 100-70-10<br/>
             +7 499 550-18-39
-          </span><a href="#" class="btn white">
+          </span><a href="#" class="feedback_btn">
             Обратная связь
           </a>
         </li>

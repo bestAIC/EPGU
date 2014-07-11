@@ -2,6 +2,9 @@
 $(document).ready(function() {
   SForm(); 
   PopUp();
+  HideShow();
+  AccordiOn();
+  SwitchPoint();  
   PlaceSmall();  
 });
 
@@ -28,6 +31,64 @@ function PopUp() {
  
        
 }
+
+
+
+// Hide show
+function HideShow(){
+  $('.more_info .pseudo').click(function(){
+    $(this).parent().find('.hide_show').slideToggle();
+    var down = $(this).parent().find('.slide_down'); 
+    var up = $(this).parent().find('.slide_up');
+    
+    if(down.is(':visible')){
+      down.hide();
+    } else {
+      down.show();
+    }
+    
+    if(down.is(':visible')){
+      up.hide();
+    } else {
+      up.show();
+    }    
+  
+  });
+}
+
+function AccordiOn(){
+  $('.accordion dt').click(function(){
+    var root = $(this).parent();
+    if($(this).hasClass('active')){
+      root.find('dd').slideUp();
+      root.find('dt').removeClass('active');
+    } else {
+      var currentIndex = $(this).index();
+      root.find('dd').slideUp();
+      root.find('dt').removeClass('active');
+      $(this).addClass('active');
+      root.children().eq(currentIndex+1).slideDown();
+    }
+  });
+}
+
+function SwitchPoint(){
+  $('.selector li').click(function(){
+    $(this).parent().find('li').removeClass('active');
+    $(this).addClass('active');
+  });
+  
+  $('.switcher').click(function(){
+    if($(this).hasClass('active')){
+      $(this).find('.cover').animate({left:-55}, 200);
+      $(this).removeClass('active');          
+    } else {
+      $(this).find('.cover').animate({left:0}, 200);
+      $(this).addClass('active'); 
+    }
+  });  
+}
+
 
 // Placeholder small
 function PlaceSmall() {
