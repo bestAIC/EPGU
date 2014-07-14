@@ -27,8 +27,42 @@ function SForm() {
 
 // Popup
 function PopUp() {
+
+  $(document).keyup(function(d) {
+		if (d.keyCode == 27) {
+      $('.popup').hide();
+      $(document).unbind('click.event');
+      $('#popup_fade').remove();
+		}
+	});
  
- 
+  $('.popup_link em').click(function(e) {
+  
+    var choise = "";
+  
+    choise = $(this).attr('class');
+  
+    var $message = $('#'+choise);
+    $('#wrap').prepend('<div id="popup_fade"></div>');
+    if ($message.css('display') != 'block') {
+        $message.show();
+        var firstClick = true;
+        $(document).bind('click.event', function(e) {
+            if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
+                $message.hide();
+                $(document).unbind('click.event');
+                $('#popup_fade').remove();
+            }
+            $('.close_popup_x').click(function(){
+              $('#'+choise).hide();
+              $(document).unbind('click.event');
+              $('#popup_fade').remove();
+            });
+            firstClick = false;
+        });
+    }
+    e.preventDefault();
+  }); 
        
 }
 
