@@ -639,6 +639,38 @@ EM {font-style:normal;}
   display:none;
 }
 
+.slide_up,
+.slide_down {
+  position:relative;
+}
+
+.slide_up:after,
+.slide_down:after {
+  content:'';
+  display:block;
+  width:11px;
+  height:6px;
+  position:absolute;
+  top:0.5em;
+  right:-17px;
+}
+
+.slide_up:after {
+  background: url('../img/link_arrow_top_small.png') 0 0 no-repeat; 
+}
+
+.slide_down:after {
+  background: url('../img/link_arrow_bottom_small.png') 0 0 no-repeat; 
+}
+
+.slide_up:hover:after {
+  background: url('../img/link_arrow_top_small_hover.png') 0 0 no-repeat; 
+}
+
+.slide_down:hover:after {
+  background: url('../img/link_arrow_bottom_small_hover.png') 0 0 no-repeat; 
+}
+
 .hide_show {
   margin:20px 0 0 0;
 }
@@ -785,6 +817,10 @@ EM {font-style:normal;}
 
 .nalogovaya_zadoljennost #content .ticket {
   padding: 30px 15px 0px 85px;
+}
+
+.proverka_sudebnyh_zadoljennostey {
+
 }
 
 
