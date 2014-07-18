@@ -1,0 +1,543 @@
+/*Tablet Landscape*/
+
+BODY {
+  background:#fff;
+  min-width:320px;
+}
+
+.cover {
+  margin:0;
+}
+
+#header .menu {
+  display:none;
+}
+
+#header .top {
+  border-bottom: 1px solid #eee;
+}
+
+#header .logo {
+  width: 150px;
+  height:auto;
+  margin:16px 0 0 0;
+}
+
+#header .nav {
+  width: 945px;
+}
+
+#header .nav LI {
+  height: 70px;
+}
+
+
+#header .catalog_link {
+  display: inline-block;
+  margin:25px 0 0 0;
+  background: url('../img/mobile/link_larr.png') 0 4px no-repeat; 
+  background-size: 8px 12px;
+  padding:0 0 0 15px;   
+}
+
+#header LI.col_1 {
+    width: 180px;
+}
+
+#header LI.col_2 {
+    width: 180px;
+}
+
+#intro {
+  padding:245px 0 40px 0;
+  background:#e1edf5 url('../img/mobile/mobile_intro_bg.png') 50% -255px no-repeat; 
+  background-size: 761px 786px;  
+  text-align:center;
+  margin:0 0 30px 0;   
+}
+
+#intro .txt {
+  width:808px;
+  margin:0 auto; 
+}
+
+#intro H2 {
+  font:200% 'etelka_thinregular';
+  margin:0 0 0.7em 0;
+}
+
+#intro P {
+  color: #5c5c5c;
+  margin:0 0 1em 0;  
+}
+
+#intro .enter_block {
+  margin:40px 0 10px 0;
+}
+
+#intro .enter_block SPAN {
+  color: #5c5c5c;
+  margin:0 20px;
+  font-size:95%;
+}
+
+#intro .enter_link {
+  font-size:115%;
+}
+
+#intro .enter_link B {
+  font-weight:normal;
+}
+
+#content {
+  width:808px;
+  padding:50px 0 80px 0;
+}
+
+#content H2{
+  text-align:center;
+  font:200% 'etelka_thinregular';
+  margin:0 0 0.5em 0;  
+}
+
+.new_service {
+  padding:30px 0 0 0;
+  width:908px;
+}
+
+.new_service LI {
+  display:table-cell;
+  width:200px;
+  padding:0 100px 0 0;
+  vertical-align:top; 
+}
+
+.new_service LI IMG {
+  width:72px;
+  height:77px;
+}
+
+.new_service LI H3 {
+  margin:0.6em 0 0 0;
+  font:125% 'etelka_mediumregular'; 
+  height:2.5em;    
+}
+
+.new_service LI H3 SPAN {
+  height:2.5em;
+  display:table-cell;
+  vertical-align:middle;    
+}
+
+.new_service LI P {
+  color: #5c5c5c;
+  height:8em;
+  padding: 0 0 0.3em;        
+}
+
+.new_service LI P SPAN {
+  height:8em;
+  display:table-cell;
+  vertical-align:middle;      
+}
+
+.new_service LI .fine {
+  color:#ca0000;
+}
+
+.new_service LI .fine .ico_i{
+  position:relative;
+  top:2px;
+  width:17px;
+  height:18px;
+}
+
+#footer UL {
+  width: 945px;
+}
+
+#footer LI.left {
+  padding:0 0 0 70px;
+  background: url("../img/mobile/logo_arms.png") 0 50% no-repeat; 
+  background-size: 34px 42px; 
+  width:260px;      
+}
+
+#footer LI.right {
+  padding:0 70px 0 0;  
+  text-align:left;
+  background: url("../img/mobile/logo_rostelecom.png") 100% 50% no-repeat; 
+  background-size: 49px 40px; 
+  width:685px;     
+}
+
+#footer .bottom_link {
+  width: 945px;
+  margin:0 auto;
+  position:relative;
+}
+
+#footer .bottom_link .cover {
+  position:absolute;
+  top:2.8em;
+  left:320px;
+  z-index:2;
+}
+
+#footer .bottom_link A {
+  padding:0 0 0 30px;
+  position:relative;
+}
+
+#footer .call_link {
+  margin:0 30px 0 0;  
+}
+
+#footer .call_link:before {
+  position:absolute;
+  display:block;
+  content:'';
+  width:17px;
+  height:17px;
+  background: url('../img/mobile/ico_call.png') 0 0 no-repeat; 
+  background-size: cover;
+  left:0px;
+  top:2px;
+}
+
+#footer .feedback_link {
+  margin:0 30px 0 0;    
+}
+
+#footer .feedback_link:before {
+  position:absolute;
+  display:block;
+  content:'';
+  width:17px;
+  height:16px;
+  background: url('../img/mobile/ico_cloud_txt.png') 0 0 no-repeat; 
+  background-size: cover;
+  left:0px;
+  top:2px;
+}
+
+#footer .mail_link {
+ 
+}
+
+#footer .mail_link:before {
+  position:absolute;
+  display:block;
+  content:'';
+  width:17px;
+  height:14px;
+  background: url('../img/mobile/ico_mail.png') 0 0 no-repeat; 
+  background-size: 17px 14px;
+  left:0px;
+  top:2px;
+}
+
+/**/
+.btn B {
+  height:50px;
+  line-height:50px;  
+}
+
+
+/*Tablet Portrait*/
+@media (max-width:1024px) {
+
+  #header .nav {
+    width: 600px;
+  }
+
+  #intro .txt {
+      margin: 0 auto;
+      width: 600px;
+  }
+  
+  #content {
+    width:auto;
+  }
+  
+  #content h2 {
+    margin:0 auto;
+    width:600px;
+  } 
+  
+  #content .new_service {
+    width:100%;
+  }   
+  
+  #content .new_service LI {
+    display:block;
+    width:100%;
+    padding:0;
+    border-top:1px solid #d0d0d0;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset; 
+    cursor:pointer;   
+  }
+  
+  #content .new_service LI.last {
+    border-bottom:1px solid #d0d0d0;
+  }
+  
+  #content .new_service LI DIV.cover {
+    position:relative;  
+    margin:0 auto;
+    width:444px;
+    padding:0 45px 0 110px; 
+    background: url('../img/mobile/ico_rarr_gray.png') 100% 50% no-repeat; 
+    background-size: 8px 12px;            
+  }
+  
+  #content .new_service LI DIV.cover DIV {
+    display:table-cell;
+    vertical-align:middle;
+    height:150px;          
+  }    
+  
+  #content .new_service LI IMG {
+    position:absolute;
+    left:0;
+    top:35px;     
+  }
+  
+  #content .new_service LI .ico_i{
+    position:relative;
+    top:2px;
+    width:17px;
+    height:18px;
+  }  
+  
+  #content .new_service LI .btn {
+    display:none;    
+  }
+  
+  .new_service LI H3 {
+      height:auto;
+      margin:0 0 0.3em 0;
+  } 
+  
+  .new_service LI H3 SPAN {
+      height:auto;
+      margin:0;
+  }
+  
+  .new_service LI P {
+      height:auto;
+      margin:0;
+  }   
+  
+  .new_service LI P SPAN {
+      height:auto;
+      margin:0;
+  }                  
+
+  #footer .bottom_link {
+    width: 600px;
+  }
+  
+  #footer .bottom_link .cover {
+    position:relative;
+    top:0;
+    left:0;
+    border-bottom:1px solid #d0d0d0;
+    height:60px;
+    line-height:60px;
+  }
+  
+  #footer .bottom_link EM {
+    width:33.3%;
+    display:inline-block;
+    text-align:center;
+  }
+  
+  #footer .bottom_link EM.first {
+    text-align:left;
+  } 
+  
+  #footer .bottom_link EM.last {
+    text-align:right;
+  } 
+       
+
+  #footer UL {
+    width: 600px;
+    font-size:110%;
+  }
+  
+  #footer UL LI {
+    height:75px;
+  }  
+  
+  #footer LI.left {
+    width:600px;   
+  }
+  
+  #footer LI.right {
+    width:55px; 
+  }  
+
+}  
+
+
+/*Phone Portrait*/
+@media (max-width:640px) {
+
+  #header .nav {
+    width: 285px;
+  }
+  
+  #header LI.col_2,
+  #header .exit,
+  #intro H2,
+  #intro .enter_block SPAN {
+    display:none;
+  }
+  
+  #header .menu {
+    display:block;
+    margin: 13px 0 0;
+    padding: 0 0 0 24px;
+    position: relative; 
+    font-size:115%; 
+    background: url('../img/mobile/ico_bottom_arrow.png') 0 50% no-repeat; 
+    background-size: 12px 8px;        
+  }
+  
+  #header .logo {
+    width: 100px;
+    height:auto;
+    margin:11px 0 0 0;
+  } 
+  
+  #header .nav LI {
+    height: 50px;
+  }  
+  
+  #intro {
+    padding:30px 0 0 0;
+    background:#e1edf5 url('../img/mobile/mobile_intro_bg.png') 50% -460px no-repeat; 
+    background-size: 761px 786px;  
+    margin:0;   
+  }        
+
+  #intro .txt {
+    font-size:90%;
+    width: 285px;
+  }
+  
+
+  #intro .enter_block .btn {
+      margin:0 0 20px 0;
+      width:100%;
+  }  
+  
+  #intro .enter_block .enter_link {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #d0d0d0;
+    color: #565656;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1em;
+    margin: 0 0 30px; 
+    width:100%;     
+  } 
+  
+  #intro .enter_block .enter_link:hover {
+    background:#f5f5f5;
+  } 
+  
+  #intro .enter_block .enter_link:active {
+    background:#e0e0e0;
+  }     
+  
+  #intro .enter_block .enter_link B {
+    height:50px;
+    line-height:50px;    
+  } 
+  
+  #intro .enter_block {
+    margin:10px 0;
+  }
+  
+  #content {
+    padding: 25px 0 0 0;
+  }      
+
+  #content H2 {
+    font-size:100%;
+    width:285px;
+  }
+  
+  #content .new_service LI DIV.cover {
+    padding: 0 25px 0 55px;
+    width: 205px;
+  }
+  
+  #content .new_service LI DIV.cover DIV {
+    min-height:75px;
+    height: auto;
+  }
+  
+  .new_service LI H3 {
+    font:100% 'etelka_mediumregular';
+  }
+  
+  #content .new_service LI P {
+    font-size:85%;
+    padding:0;
+    margin:0 0 1.3em 0;
+  }         
+  
+  #content .new_service LI IMG {
+    top:15px;
+    height:42px;
+    width:41px;
+  } 
+  
+  #footer .bottom_link {
+    width: 285px;
+  }
+  
+  #footer .bottom_link .cover {
+    height: auto;
+    line-height: 1em;
+    padding:5px 0;
+  }   
+  
+  #footer .bottom_link EM {
+    text-align:left;
+    width:100%;
+    height:45px;
+    line-height:45px;
+  } 
+  
+  #footer .bottom_link EM.last {
+    text-align: left;
+  }     
+  
+  #footer UL {
+    width: 285px;
+  }
+  
+  #footer LI.left {
+    padding:0 0 0 50px;
+    background-size: 30px 36px;     
+  }
+  
+  #footer LI.right {
+    padding: 0 40px 0 0;
+    background-size: 41px 34px;     
+  }    
+  
+  #footer UL LI P {
+    text-align:center;
+    font-size:70%;
+  }  
+     
+
+} 
+
