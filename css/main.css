@@ -80,6 +80,7 @@ EM {font-style:normal;}
 .bg_c3 {background:#a2c4e6;}
 .bg_c4 {background:#e6ee9c;}
 .bg_c5 {background:#e6ebec;}
+.bg_c6 {background:#f6f6f6;}
 
 .list {
   padding:0 0 1em 0;
@@ -980,6 +981,11 @@ INPUT.big {
   height:54px;
   padding:0px 20px;
 }
+TEXTAREA.big {
+  height:54px;
+  padding:0px 20px;
+}
+
 
 INPUT.small {
   height:40px;
