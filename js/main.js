@@ -129,7 +129,7 @@ function SwitchPoint(){
 function PlaceSmall() {
 
 
-  $('em.wrapper input:disabled').each(function(indx, element){
+  $('em.wrapper input:text:disabled').each(function(indx, element){
       var psmall = $(this).attr('placeholder'); 
       $(this).parent().prepend('<div class="placeholder_small">'+ psmall +'</div>'); 
   });

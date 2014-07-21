@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ЕПГУ</title>
+
+<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+<script type="text/javascript" src="js/device.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+  <div id="wrap" class="zamena_pasporta_pol">
+  
+    <div class="cover">
+      <div id="header">
+        <div class="top">
+          <ul class="nav clear">
+            <li class="col_1">
+              <img src="img/logo.png" alt="" class="logo"/>
+            </li>
+            <li class="col_2">
+              <span class="catalog_btn">Перейти на основной портал</span>
+            </li>
+            <li class="col_3 closed" id="menu_btn">
+              <a class="exit">Константинопольский К. К.</a>
+              
+              <ul class="submenu">
+              	<li class='ico_lk'><a href="#">Личный кабинет</a></li>
+              	<li class='ico_contact'><a href="#">Свяжитесь с нами</a></li>
+              	<li class='ico_exit'><a href="#">Выход</a></li>
+              </ul>
+              
+            </li>                                      
+          </ul>      
+        </div>
+        <div class="bottom">
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><img src="img/ico_home.png" alt=""/>Главная</a></li>
+            <li ><a href="#">Личные документы</a></li>          
+            <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>                                       
+          </ul>          
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="title">
+          <img src="img/ico_passport.png" alt=""/><h1>Замена паспорта гражданина Российской Федерации в&nbsp;связи с&nbsp;изменением пола</h1>
+        </div>
+        
+          
+        <form class="main clear">
+              
+          <fieldset class="group_1">         
+            <span class="point_num">1</span>
+            <h3>Заполните данные которые хотите изменить</h3>          
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
+            
+            <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" value="09.09.1989" disabled="disabled"/>
+            </em><em class="wrapper l_16"><input type="radio" checked="checked" name="sex" disabled="disabled"><label>Мужской</label>
+            </em><em class="wrapper l_16"><input type="radio" name="sex" disabled="disabled"><label>Женский</label></em><br/>
+            
+            <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>            
+            
+            <em class="wrapper l_100"><input type="text" placeholder="Место рождения как в паспорте" class="big" /></em>            
+          </fieldset>
+                     
+          <fieldset class="group_2">
+            <ul class="info_column">           
+              <li class="info_block bg_c1">
+                <h4>Обратите внимание!</h4>
+                <p>Заявление на&nbsp;получение паспорта гражданина&nbsp;РФ будет формироваться от&nbsp;лица гражданина, имеющего данные, указываемые вами в&nbsp;блоке 2. 
+                Пожалуйста заполняйте только те&nbsp;данные, которые изменились. 
+                Остальные данные будут взяты из&nbsp;блока&nbsp;1</p>
+              </li>
+            </ul>                      
+            <span class="point_num">2</span>
+
+            <h3>Ваши новые персональные данны</h3>          
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+            
+            <em class="wrapper l_16"><input type="radio" checked="checked" name="sex" disabled="disabled" /><label>Мужской</label>
+            </em><em class="wrapper l_16"><input type="radio" name="sex" disabled="disabled" /><label>Женский</label></em><br/>
+            
+            <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                                    
+          </fieldset>
+          
+          <fieldset class="group_3">                     
+            <span class="point_num">3</span>
+            <h3>Загрузите вашу фотографию</h3>          
+            <div class="col_left">            
+              <div class="load_photo">
+                <div class="photo_brd">
+                  <img src="img/empty_photo.png" alt=""/>
+                </div>
+                <a class="btn white small" href="#">
+                  <b>Загрузить фотографию</b>
+                </a>
+              </div>
+            </div>
+            <div class="col_right">                         
+              <h4>Технические требования к файлу фотографии:</h4>
+              <ul class="list">
+                <li>Формат файла: JPEG</li>
+                <li>Максимальный размер файла: 300 Кб</li>
+                <li>Размеры фотографии 350 х 450 пикселей (ширина к высоте)</li>
+                <li>Соотношение сторон фотографии 35 х 45 (не более 12%)</li>
+              </ul>
+              <em class="wrapper l_100"><input type="checkbox" /><label>Автоматическая обработка фотографии</label></em>
+            </div>                                    
+          </fieldset>
+          
+          <fieldset class="group_4">                      
+            <span class="point_num">4</span>
+
+            <h3>Есть или было ли у вас гражданство другого государства?</h3>          
+            
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="citizenship" /><label>Нет, я никогда не имел гражданство другого государства</label></em>
+            
+            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Да, у меня имеется по настоящее время гражданство другого государства</label></em>
+            
+            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Да, ранее у меня имелось гражданство другого государства</label></em>
+            <div class="fields_cover">
+              <h4>Укажите страну, и дату получения другого гражданства</h4>
+              
+              <em class="wrapper l_75">
+                <select>
+                  <option>Гражданство</option>                
+                  <option>Белоруссия</option>
+                  <option>Украина</option>
+                </select>                  
+              </em><em class="wrapper l_25">
+                <input type="text" placeholder="Дата" class="big" />  
+              </em><br/>
+              
+              <a class="btn white" href="#">
+                <b>Добавить данные</b>
+              </a>
+            
+            </div>
+                               
+          </fieldset> 
+          
+          <fieldset class="group_5">                    
+            <span class="point_num">5</span>
+
+            <h3>Данные родителей (как в свидетельстве о рождении)</h3> 
+            
+            <h4>Сведения об отце</h4>         
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+            
+            <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+            </em><br/>
+
+            <h4>Сведения о матери</h4>         
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+            
+            <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+            </em>            
+                                                
+          </fieldset> 
+          
+          <fieldset class="group_6">                      
+            <span class="point_num">6</span>
+
+            <h3>Семейное положение</h3>          
+            
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="family_status" /><label>Женат</label></em>
+            
+            <em class="wrapper l_100"><input type="radio" name="family_status" /><label>Никогда не был женат</label></em>
+            
+            <em class="wrapper l_100"><input type="radio" name="family_status" /><label>Вдовец</label></em>
+
+            <em class="wrapper l_100"><input type="radio" name="family_status" /><label>Разведен</label></em>                   
+          </fieldset> 
+          
+          <fieldset class="group_7">                      
+            <span class="point_num">7</span>
+
+            <h3>Есть ли у вас несовершеннолетние дети?</h3>          
+            
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="chaild" /><label>Да</label></em>
+            
+            <div class="fields_cover">
+              <h4>Укажите страну ФИО ребенка</h4>
+              
+              <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
+              
+              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+              </em><em class="wrapper l_16"><input type="radio" checked="checked" name="chaild_sex" /><label>Мужской</label>
+              </em><em class="wrapper l_16"><input type="radio" name="chaild_sex" /><label>Женский</label></em><br/>
+              
+              <a class="btn white" href="#">
+                <b>Добавить данные</b>
+              </a>
+            
+            </div>
+            
+            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Нет</label></em>                               
+          </fieldset>
+          
+          <fieldset class="group_8">                      
+            <span class="point_num">8</span>
+
+            <h3>Сведения о паспорте, подлежащем замене</h3>          
+            
+            <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
+            </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
+            </em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" class="big" />            
+            </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
+            
+            <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" />
+            </em><br/>
+            
+            <em class="wrapper l_100"><input type="text" placeholder="Место рождения как в паспорте" class="big" /></em>                                       
+          </fieldset>          
+          
+          <fieldset class="group_9">                      
+            <span class="point_num">9</span>
+
+            <h3>Имеется ли у вас действующий в настоящий момент загранпаспорт?</h3>          
+            
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="pass" /><label>Да</label></em>
+            
+            <div class="fields_cover">
+              <h4>Данные вашего загранпаспорта</h4>
+              
+              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
+              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
+              
+              <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" />
+              </em><br/>
+              
+              <em class="wrapper l_33"><input type="text" placeholder="Действителен до" class="big" /></em>
+            
+            </div>
+            
+            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Нет</label></em>                               
+          </fieldset>
+          
+          <fieldset class="group_10">                      
+            <span class="point_num">10</span>
+
+            <h3>Оригиналы документов будут поданы</h3>          
+            
+            <em class="wrapper l_100"><input type="radio" name="place" /><label>по месту жительства (как в паспорте), срок оказания услуги составит 10 дней</label></em>
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="place" /><label>по месту пребывания, срок оказания услуги составит до 2-x месяцев</label></em>            
+            
+            <div class="fields_cover">
+
+              <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+              
+              <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
+              </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+              
+              <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
+              </em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
+              </em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+              </em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+            
+            </div>
+            
+            <em class="wrapper l_100"><input type="radio" name="place" /><label>по месту фактического проживания, срок оказания услуги составит 2 месяца</label></em>                               
+          </fieldset>
+          
+          <fieldset class="group_11">                      
+            <span class="point_num">11</span>
+
+            <h3>Для подачи заявления необходимо выбрать отделение УФМС</h3>          
+            
+            <em class="wrapper l_100"><input type="text" placeholder="Выберите ваше местоположение" class="big" /></em><br/>           
+            
+            <div class="fields_cover clear">
+            
+              <div class="col_left"> 
+                <ul>
+                  <li>
+                    <p><b>Межрайонный отдел УФМС России по Влад...</b></p>
+                    <p>г. Александров, Первомайская, 68</p>
+                  </li>                
+                </ul>
+              </div>
+              <div class="col_right"> 
+                <img src="img/map_2.jpg" width="415" height="415" alt=""/>
+              </div>           
+            
+            </div>
+            
+            <em class="wrapper l_100"><input type="radio" name="place" /><label>по месту фактического проживания, срок оказания услуги составит 2 месяца</label></em>                               
+          </fieldset> 
+          
+          <fieldset class="group_12">                      
+
+            <h3>Согласие на обработку персональных данных</h3>          
+            
+            <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Согласен на обработку персональных данных</label></em>
+            
+            <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Об ответственности за предоставление заведомо ложных сведений,
+             либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>           
+                                                   
+          </fieldset>                                                                                               
+          
+          <span class="fr">
+            <input class="big btn" type="submit" value="Отправить">
+          </span>                     
+                             
+        </form>                      
+        
+      </div>
+    </div>  
+    <div id="footer">
+      <ul class="col_cover">
+        <li class="left">
+          <p>Официальный интернет-портал<br/>Российской Федерации, 2014 г.</p>
+        </li>
+        <li class="right">
+          <span class="phones">
+            8 800 100-70-10<br/>
+            +7 499 550-18-39
+          </span><a href="#" class="feedback_btn">
+            Обратная связь
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </div>
+  
+<script src="js/jquery.placeholders.min.js"></script>  
+</body>
+</html>

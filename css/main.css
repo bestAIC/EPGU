@@ -81,6 +81,15 @@ EM {font-style:normal;}
 .bg_c4 {background:#e6ee9c;}
 .bg_c5 {background:#e6ebec;}
 
+.list {
+  padding:0 0 1em 0;
+}
+
+.list LI {
+  margin:0 0 1em 1.5em;
+  list-style-type:disc;
+}
+
 /* Popup */ 
 #popup_fade {
   position:absolute;
@@ -348,7 +357,7 @@ float: right;
   height:76px;
   display:table;
   vertical-align:middle;
-  margin:30px 0 40px 0;
+  margin:30px -255px 40px 0;
   padding:0 0 0 105px;
 }
 
@@ -476,7 +485,7 @@ float: right;
   position:absolute;
   font:80% 'Arial';
   color:#485158;
-  left:0;
+  right:20px;
   bottom:-20px;
 }
 
@@ -505,30 +514,66 @@ float: right;
   margin:0 20px 0 0;
 }
 
-.passport #content .group_1 .col_left {
-  width:460px;
+#content .col_left {
+  width:250px;
   float:left;
 }
 
-.passport #content .group_1 .col_right {
-  width:220px;
-  float:left;
+#content .col_right {
+  width:500px;
+  float:right;
 }
 
 .load_photo {
-  background:#f0f7fa;
+  background:#ececec;
   padding:15px 20px;
+  margin:0 20px 0 0;
+  position:relative;
+  text-align:center;
 }
 
 .load_photo .photo_brd {
   width:81px;
   border:7px solid #79c7ef;
   line-height:0;
+  margin:20px auto;
+}
+
+#content .load_photo .q {
+  top:0;
+  right:0;
+  position:absolute;
+}
+
+#content .load_photo .btn {
+  margin:0 0 10px 0;
 }
 
 .fields_cover {
-  background:#f0f7fa;
-  padding:20px 0 0 20px;  
+  position:relative;
+  background:#ececec;
+  margin: 0 -15px 30px -85px;
+  padding: 25px 15px 10px 85px;      
+}
+
+.fields_cover:before {
+  position:absolute;
+  display:block;
+  content:'';
+  width:20px;
+  height:20px;
+  left:85px;
+  top:-10px;
+  background: url('../img/corners_gray.png') 0 0 no-repeat;         
+}
+
+H4 {
+  font-size:90%;
+  margin:0 0 25px 0;    
+}
+
+.fields_cover H4 {
+  margin:0.5em 0 2em 0;     
 }
 
 .cover_info_title {
@@ -890,6 +935,24 @@ float: right;
 
 }
 
+.zamena_pasporta_pol #content .main FIELDSET {
+  margin:0;
+  border-bottom:1px solid #eee; 
+}
+
+.zamena_pasporta_pol #content .group_11 .col_left {
+  width: 380px; 
+}
+
+.zamena_pasporta_pol #content .group_11 .col_right {
+  width: 395px;
+  padding:10px 20px 20px 0;  
+}
+
+.zamena_pasporta_pol #content .main .group_12 {
+  margin:0 0 40px 0;
+}
+
 
 /*Field & Button*/
 INPUT {
@@ -920,6 +983,13 @@ INPUT.big {
 
 INPUT.small {
   height:40px;
+  padding:0px 10px;
+  font-size:90%;
+}
+
+.btn.small B {
+  height:40px;
+  line-height:40px;
   padding:0px 10px;
   font-size:90%;
 }
@@ -1040,7 +1110,7 @@ LABEL {
 	border: 1px solid #a6aed0;
 	border-radius: 50%;
 	background: #f6f7f9;
-	vertical-align: middle;
+	vertical-align: top;
 	cursor: pointer;
   box-sizing:border-box;
   -moz-box-sizing:border-box;   
@@ -1142,7 +1212,9 @@ LABEL {
 	cursor: pointer;
   width:100%;
 	border: 1px solid #CCC;
-	border-radius: 4px;  
+	border-radius: 4px;
+  position:relative;
+  top:-2px;  
 }
 .jq-selectbox__select {
 	  behavior: url(PIE.htc);
