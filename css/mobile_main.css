@@ -8,17 +8,18 @@ BODY {
 .cover {
   margin:0;
 }
-#menu_top_btn{
+
+#menu_top_btn {
   width: 808px;
   margin: 0 auto;
   position: relative;
 }
-#menu_top_btn DIV{
+
+#menu_top_btn DIV {
   position: absolute;
   right: 0;
   top: 25px;
   z-index: 9;
-
 } 
 
 #header .menu {
