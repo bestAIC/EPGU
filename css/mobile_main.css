@@ -152,6 +152,141 @@ BODY {
   height:18px;
 }
 
+
+
+
+/* obratnaya_svyaz */
+
+.obratnaya_svyaz #content .title{
+  margin: 0;
+  padding: 0;
+}
+
+.obratnaya_svyaz #content .main FIELDSET{
+  padding: 30px 10px 30px 30px;
+}
+.obratnaya_svyaz FIELDSET H3{
+  margin-bottom: 30px;
+}
+.obratnaya_svyaz TEXTAREA{
+  resize: none;
+  width: 100%;
+  min-height: 136px;
+  box-sizing: border-box;
+  font-size: 115%;
+}
+
+.obratnaya_svyaz .jq-file{
+  box-shadow: none;
+  width: 74px;
+  float: left;
+}
+.obratnaya_svyaz .jq-file__name{
+  display: none;
+}
+.obratnaya_svyaz .jq-file__browse,
+.file-loader_square{
+  width: 72px;
+  height: 72px;
+  position: relative;
+  top: 0;
+  right: 0;
+  border: 1px solid #eeeff0;
+  padding: 0;
+  background: transparent;
+  display: inline-block;
+}
+.obratnaya_svyaz .jq-file__browse{
+  text-indent: -9999px;
+}
+.obratnaya_svyaz .jq-file__browse:before{
+  content: "";
+  background: url('../img/mobile/ico_cross.png') no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.obratnaya_svyaz .file-sidebar_right{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.file-sidebar_right LABEL{
+  margin: 0;
+}
+.file-sidebar_right .sub_txt{
+  color: #A5AEB3;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.file-loader_square{
+  text-align: center;
+  line-height: 74px;
+}
+.file-loader_square .file_progress_line{
+  width: 50px;
+  height: 8px;
+  border: 1px solid #eeeff0;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.file-loader_square .file_progress_line span{
+  background: #689f38;
+  width: 40%;
+  display: block;
+  height: 10px;
+  margin-top: -1px;
+  border-radius: 5px;
+}
+
+.file_progress .file_name{
+  display: inline-block;
+  font-size: 18px;
+  color: #74777F;
+  width: 80%;
+  padding-bottom: 10px;
+}
+.file_progress .file_progress-cont{
+  margin-left: 100px;
+  border-bottom: 1px solid #cdd1d4;
+  min-height: 84px;
+}
+.file_progress .file_close{
+  display: inline-block;
+  margin-top: 14px;
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+  cursor: pointer;
+  background: url('../img/ico_close.png') 0 0 no-repeat;
+} 
+.file_progress .file_close:hover{
+  background: url('../img/ico_close_hover.png') 0 0 no-repeat;
+}
+
+.file_progress .file_error{
+  line-height: 1;
+  color: #d0021b;
+  font-size: 14px;
+}
+.file_progress .file_error:before{
+  content: '';
+  background: url('../img/mobile/ico_stop.png') no-repeat center;
+  width: 36px;
+  height: 36px;
+  background-size: 50%;
+  display: inline-block;
+}
+
+/* /obratnaya_svyaz */
+
+
 #footer UL {
   width: 945px;
 }
@@ -539,7 +674,7 @@ BODY {
   }  
      
 .test-css_git{
-  
+
 }
 } 
 
