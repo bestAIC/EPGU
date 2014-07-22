@@ -8,6 +8,18 @@ BODY {
 .cover {
   margin:0;
 }
+#menu_top_btn{
+  width: 808px;
+  margin: 0 auto;
+  position: relative;
+}
+#menu_top_btn DIV{
+  position: absolute;
+  right: 0;
+  top: 25px;
+  z-index: 9;
+
+} 
 
 #header .menu {
   display:none;
@@ -157,42 +169,57 @@ BODY {
 
 /* obratnaya_svyaz */
 
-.obratnaya_svyaz #content .title{
+#content .title.no-ico{
   margin: 0;
   padding: 0;
+  margin-bottom: 4px;
+}
+#content .title.no-ico h1{
+  font-size: 2em;
 }
 
-.obratnaya_svyaz #content .main FIELDSET{
+FORM .wrapper{
+  margin: 0 0 14px 0;
+}
+
+#content .main FIELDSET{
   padding: 30px 10px 30px 30px;
 }
 .obratnaya_svyaz FIELDSET H3{
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
-.obratnaya_svyaz .jq-file{
+INPUT:focus,
+TEXTAREA:focus{
+  behavior: url(PIE.htc);
+  box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
+  border: 1px solid #addeff;
+}
+
+.jq-file{
   box-shadow: none;
   width: 74px;
   float: left;
 }
-.obratnaya_svyaz .jq-file__name{
+.jq-file__name{
   display: none;
 }
-.obratnaya_svyaz .jq-file__browse,
+.jq-file__browse,
 .file-loader_square{
   width: 72px;
   height: 72px;
   position: relative;
   top: 0;
   right: 0;
-  border: 1px solid #eeeff0;
+  border: 1px solid #d0d0d0;
   padding: 0;
   background: transparent;
   display: inline-block;
 }
-.obratnaya_svyaz .jq-file__browse{
+.jq-file__browse{
   text-indent: -9999px;
 }
-.obratnaya_svyaz .jq-file__browse:before{
+.jq-file__browse:before{
   content: "";
   background: url('../img/mobile/ico_cross.png') no-repeat;
   width: 40px;
@@ -201,12 +228,13 @@ BODY {
   top: 17px;
   left: 17px;
 }
-.obratnaya_svyaz .file-sidebar_right{
-  margin-left: 100px;
-  margin-top: 10px;
+.file-sidebar_right{
+  margin-left: 90px;
+  margin-top: 16px;
 }
 .file-sidebar_right LABEL{
   margin: 0;
+  display: block;
 }
 .file-sidebar_right .sub_txt{
   color: #A5AEB3;
@@ -218,6 +246,7 @@ BODY {
 .file-loader_square{
   text-align: center;
   line-height: 74px;
+  border-radius: 4px;
 }
 .file-loader_square .file_progress_line{
   width: 50px;
@@ -243,25 +272,33 @@ BODY {
   font-size: 18px;
   color: #74777F;
   width: 80%;
-  margin-top: 22px;
+  margin-top: 28px;
   padding-bottom: 10px;
 }
 .file_progress .file_progress-cont{
-  margin-left: 100px;
+  margin-left: 90px;
   border-bottom: 1px solid #cdd1d4;
-  min-height: 84px;
+  min-height: 80px;
+  margin-bottom: -2px;
 }
 .file_progress .file_close{
   display: inline-block;
-  margin-top: 14px;
+  margin-top: 16px;
+  margin-right: -8px;
   width: 43px;
   height: 43px;
   display: inline-block;
   cursor: pointer;
   background: url('../img/ico_close.png') 0 0 no-repeat;
+  background-size: 88%;
 } 
 .file_progress .file_close:hover{
   background: url('../img/ico_close_hover.png') 0 0 no-repeat;
+  background-size: 88%;
+}
+.file_progress .file_close:active{
+  background: url('../img/ico_close_active.png') 0 0 no-repeat;
+  background-size: 88%;
 }
 
 .file_progress .file_error{
@@ -280,7 +317,7 @@ BODY {
 
 .jq-file.disabled + .file-sidebar_right LABEL{
   color: #dd191d;
-  margin-top: 24px;
+  margin-top: 28px;
   display: block;
 }
 
@@ -382,6 +419,10 @@ BODY {
 /*Tablet Portrait*/
 @media (max-width:1024px) {
 
+  #menu_top_btn{
+    width: 648px;
+  }
+
   #header .nav {
     width: 600px;
   }
@@ -392,7 +433,7 @@ BODY {
   }
   
   #content {
-    width:auto;
+    width:648px;
   }
   
   #content h2 {
@@ -418,23 +459,23 @@ BODY {
   }
   
   #content .new_service LI DIV.cover {
-    position:relative;  
-    margin:0 auto;
-    width:444px;
-    padding:0 45px 0 110px; 
-    background: url('../img/mobile/ico_rarr_gray.png') 100% 50% no-repeat; 
     background-size: 8px 12px;            
+    background: url('../img/mobile/ico_rarr_gray.png') 100% 50% no-repeat; 
+    margin:0 auto;
+    padding:0 45px 0 110px; 
+    position:relative;  
+    width:444px;
   }
   
   #content .new_service LI DIV.cover DIV {
     display:table-cell;
-    vertical-align:middle;
     height:150px;          
+    vertical-align:middle;
   }    
   
   #content .new_service LI IMG {
-    position:absolute;
     left:0;
+    position:absolute;
     top:35px;     
   }
   
@@ -467,7 +508,165 @@ BODY {
   .new_service LI P SPAN {
       height:auto;
       margin:0;
-  }                  
+  }               
+
+
+
+  /* obratnaya_svyaz */
+
+  #content .title.no-ico{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  #content .title.no-ico h1{
+    font-size: 2em;
+  }
+
+  FORM .wrapper{
+    margin: 0 0 14px 0;
+  }
+
+  #content .main FIELDSET{
+    padding: 30px 10px 30px 30px;
+  }
+  .obratnaya_svyaz FIELDSET H3{
+    margin-bottom: 18px;
+  }
+
+  INPUT:focus,
+  TEXTAREA:focus{
+    behavior: url(PIE.htc);
+    box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
+    border: 1px solid #addeff;
+  }
+
+  .jq-file{
+    box-shadow: none;
+    width: 74px;
+    float: left;
+  }
+  .jq-file__name{
+    display: none;
+  }
+  .jq-file__browse,
+  .file-loader_square{
+    background: transparent;
+    border: 1px solid #d0d0d0;
+    display: inline-block;
+    height: 72px;
+    padding: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 72px;
+  }
+  .jq-file__browse{
+    text-indent: -9999px;
+  }
+  .jq-file__browse:before{
+    content: "";
+    background: url('../img/mobile/ico_cross.png') no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+  }
+  .file-sidebar_right{
+    margin-left: 90px;
+    margin-top: 16px;
+  }
+  .file-sidebar_right LABEL{
+    margin: 0;
+    display: block;
+  }
+  .file-sidebar_right .sub_txt{
+    color: #A5AEB3;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: normal;
+  }
+
+  .file-loader_square{
+    text-align: center;
+    line-height: 74px;
+    border-radius: 4px;
+  }
+  .file-loader_square .file_progress_line{
+    width: 50px;
+    height: 8px;
+    border: 1px solid #eeeff0;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .file-loader_square .file_progress_line span{
+    background: #689f38;
+    width: 40%;
+    display: block;
+    height: 10px;
+    margin-top: -1px;
+    border-radius: 5px;
+  }
+
+  .file_progress .file_name{
+    display: inline-block;
+    font-size: 18px;
+    color: #74777F;
+    width: 80%;
+    margin-top: 28px;
+    padding-bottom: 10px;
+  }
+  .file_progress .file_progress-cont{
+    margin-left: 88px;
+    border-bottom: 1px solid #cdd1d4;
+    min-height: 80px;
+    margin-bottom: -2px;
+  }
+  .file_progress .file_close{
+    display: inline-block;
+    margin-top: 16px;
+    margin-right: -8px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('../img/ico_close.png') 0 0 no-repeat;
+    background-size: 88%;
+  } 
+  .file_progress .file_close:hover{
+    background: url('../img/ico_close_hover.png') 0 0 no-repeat;
+    background-size: 88%;
+  }
+  .file_progress .file_close:active{
+    background: url('../img/ico_close_active.png') 0 0 no-repeat;
+    background-size: 88%;
+  }
+
+  .file_progress .file_error{
+    line-height: 1;
+    color: #d0021b;
+    font-size: 14px;
+  }
+  .file_progress .file_error:before{
+    content: '';
+    background: url('../img/mobile/ico_stop.png') no-repeat center;
+    width: 36px;
+    height: 36px;
+    background-size: 50%;
+    display: inline-block;
+  }
+
+  .jq-file.disabled + .file-sidebar_right LABEL{
+    color: #dd191d;
+    margin-top: 28px;
+    display: block;
+  }
+
+  /* /obratnaya_svyaz */   
 
   #footer .bottom_link {
     width: 600px;
@@ -520,8 +719,17 @@ BODY {
 /*Phone Portrait*/
 @media (max-width:640px) {
 
+  #menu_top_btn{
+    width: 244px;
+    right: -244px;
+  }
+
+  #header .menu{
+    display: block;
+  }
+
   #header .nav {
-    width: 285px;
+    width: 280px;
   }
   
   #header LI.col_2,
@@ -531,15 +739,107 @@ BODY {
     display:none;
   }
   
-  #header .menu {
+  
+
+  /* Header top menu phone*/
+
+  #menu_top_btn .menu {
     display:block;
-    margin: 13px 0 0;
     padding: 0 0 0 24px;
-    position: relative; 
-    font-size:115%; 
-    background: url('../img/mobile/ico_bottom_arrow.png') 0 50% no-repeat; 
-    background-size: 12px 8px;        
+    position: absolute;
+    top: 0;
+    left: -100px; 
+    font-size:115%;      
   }
+
+  #menu_top_btn.opened .menu {
+    display: none;
+  }
+
+  #menu_top_btn.opened a.exit{
+    display: block;
+    padding: 17px 0;
+    left: 230px;
+    z-index: 300;
+    border-bottom: 1px solid #CDD1D4;
+  }
+
+  #menu_top_btn{
+    behavior: url(PIE.htc);
+    position: absolute;
+    right: -244px;
+    top: 0;
+    padding: 0;
+    background: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.1s ease;
+    height: 100%;
+    width: 244px;
+  }
+
+  .menu a.exit_phone{
+    background: url('../img/mobile/ico_mobile_menu.png') 0 42% no-repeat; 
+    background-size: 12px 12px;   
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    padding: 12px 0px 16px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 100;
+  }
+
+  #menu_top_btn .menu_side-rigth{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 244px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+    margin: 50px 0 0;
+    transition: left 0.1s ease;
+  }
+
+  #menu_top_btn.opened .menu_side-rigth{
+    background-color: #fff;
+    border-left: 1px solid #CDD1D4;
+    height: 100%;
+  }
+
+
+  #menu_top_btn .menu_side-rigth li{
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0px;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+
+  #menu_top_btn .menu_side-rigth li.ico_lk{ 
+    background-position: 3px 0px;
+    background-image: url(../img/ico_empty_photo.png);
+  }
+
+  #menu_top_btn .menu_side-rigth li.ico_contact{ 
+    background-position: 2px 0px;
+    background-image: url(../img/ico_cloud_dotted.png);
+  }
+  
+  #menu_top_btn .menu_side-rigth li.ico_exit{ 
+    background-position: 0px 0px;
+    background-image: url(../img/ico_exit.png);
+  }
+
+  /* /Header top menu phone*/
   
   #header .logo {
     width: 100px;
@@ -600,6 +900,7 @@ BODY {
   
   #content {
     padding: 25px 0 0 0;
+    width: 320px;
   }      
 
   #content H2 {
@@ -632,6 +933,215 @@ BODY {
     height:42px;
     width:41px;
   } 
+
+
+  /* obratnaya_svyaz */
+
+  #content .title.no-ico{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+  
+    padding-left: 20px;
+    height: 36px;
+}
+  #content .title.no-ico h1{
+    font-size: 1.125em;
+  
+    margin-top: 0;
+}
+
+  FORM .wrapper{
+    margin: 0 0 8px 0;
+  }
+  FORM .wrapper.l_50{
+    width: 100%;
+  }
+
+  #content .main FIELDSET{
+    padding: 20px 0px 10px 20px;
+    margin-bottom: 18px;
+  }
+  .obratnaya_svyaz FIELDSET H3{
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+  
+  .obratnaya_svyaz{
+    
+  }
+
+  INPUT.big{
+    height: 38px;
+  
+    font-size: 12px;
+    padding: 0 12px;
+    margin-bottom: 6px;
+}
+  TEXTAREA{
+    min-height: 88px;
+  
+    font-size: 12px;
+    padding: 8px 10px;
+}
+
+  INPUT:focus,
+  TEXTAREA:focus{
+    behavior: url(PIE.htc);
+    box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
+    border: 1px solid #addeff;
+  }
+
+  .jq-file{
+    box-shadow: none;
+    width: 53px;
+    float: left;
+  }
+  .jq-file__name{
+    display: none;
+  }
+  .jq-file__browse,
+  .file-loader_square{
+    width: 51px;
+    height: 51px;
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 1px solid #d0d0d0;
+    padding: 0;
+    background: transparent;
+    display: inline-block;
+  }
+  .jq-file__browse{
+    text-indent: -9999px;
+  }
+  .jq-file__browse:before{
+    content: "";
+    background: url('../img/mobile/ico_cross.png') no-repeat;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 17px;
+    background-size: 100%;
+    left: 17px;
+  }
+  .file-sidebar_right{
+    margin-left: 62px;
+    margin-top: 8px;
+  }
+  .file-sidebar_right LABEL{
+    margin: 0;
+    display: block;
+  
+    font-size: 14px;
+}
+  .file-sidebar_right .sub_txt{
+    color: #A5AEB3;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: normal;
+  }
+
+  .file-loader_square{
+    text-align: center;
+    line-height: 53px;
+    border-radius: 4px;
+  }
+  .file-loader_square img{
+    width: 47px;
+  }
+  .file-loader_square .file_progress_line{
+    width: 40px;
+    height: 8px;
+    border: 1px solid #eeeff0;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .file-loader_square .file_progress_line span{
+    background: #689f38;
+    width: 40%;
+    display: block;
+    height: 10px;
+    margin-top: -1px;
+    border-radius: 5px;
+  }
+
+  .file_progress .file_name{
+    display: inline-block;
+    font-size: 14px;
+    color: #74777F;
+    width: 80%;
+    margin-top: 20px;
+    padding-bottom: 19px;
+    max-width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .file_progress .file_name:before{
+    content: "";
+  }
+  .file_progress .file_progress-cont{
+    margin-left: 64px;
+    border-bottom: 1px solid #cdd1d4;
+    min-height: 53px;
+    margin-bottom: -2px;
+  }
+  .file_progress .file_close{
+    display: inline-block;
+    margin-top: 16px;
+    margin-right: 0px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('../img/ico_close.png') 0 0 no-repeat;
+    background-size: 100%;
+  } 
+  .file_progress .file_close:hover{
+    background: url('../img/ico_close_hover.png') 0 0 no-repeat;
+    background-size: 100%;
+  }
+  .file_progress .file_close:active{
+    background: url('../img/ico_close_active.png') 0 0 no-repeat;
+    background-size: 100%;
+  }
+
+  .file_progress .file_error{
+    line-height: 1;
+    color: #d0021b;
+    font-size: 10px;
+  
+    font-weight: bold;
+    margin-top: 6px;
+}
+  .file_progress .file_error:before{
+    content: '';
+    background: url('../img/mobile/ico_stop.png') no-repeat center;
+    width: 14px;
+    height: 14px;
+    background-size: 80%;
+    display: inline-block;
+  }
+
+  .jq-file.disabled + .file-sidebar_right LABEL{
+    color: #dd191d;
+    margin-top: -6px;
+    display: block;
+  }
+  .jq-file.disabled + .file-sidebar_right LABEL B{
+    display: block;
+  }
+
+  .send_btn{
+    margin-right: 20px;  
+  }
+
+  /* /obratnaya_svyaz */
   
   #footer .bottom_link {
     width: 285px;
