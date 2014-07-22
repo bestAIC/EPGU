@@ -373,7 +373,12 @@ float: right;
 
 #content .title H1 {
   font:265% 'etelka_thinregular';
-  margin:0.3em 0 0.3em 0;
+  margin:0.3em 0 0 0;
+}
+
+#content .title H2 {
+  font:135% 'etelka_thinregular';
+  margin:0 0 0.3em 0;  
 }
 
 #content .info_column {
@@ -414,7 +419,7 @@ float: right;
   background:#fff;
   font:bold 14px/23px 'Arial', 'Helvetica', 'sans-serif';
   cursor:pointer;
-  z-index:3;  
+  z-index:3; 
 }
 
 #content .q:hover {
@@ -428,6 +433,9 @@ float: right;
   line-height:1em;
   padding:20px;
   display:none;
+  min-width:195px;
+  text-align:left;
+  font:100% 'Arial', 'Helvetica', 'sans-serif';   
 }
 
 #content .q DIV:before {
@@ -459,7 +467,7 @@ float: right;
 
 .main FIELDSET H3 {
   margin:15px 0 40px 0;
-  font-size:100%; 
+  font:105% 'etelka_mediumregular';   
 }
 
 
@@ -479,6 +487,21 @@ float: right;
   display:inline-block;
   position:relative; 
   margin:0 0 30px 0; 
+}
+
+.wrapper.skew {
+  padding:0 20px 0 20px;
+}
+
+.wrapper.skew LABEL {
+  display:inline-block;
+}
+
+.wrapper.skew .jq-checkbox,
+.wrapper.skew .jq-radio {
+  position:absolute!important;
+  left:0;
+  top:0;  
 }
 
 .wrapper .not {
@@ -952,7 +975,6 @@ H4 {
 .zamena_pasporta_pol #content .main .group_12 {
   margin:0 0 40px 0;
 }
-
 
 /*Field & Button*/
 INPUT {

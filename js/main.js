@@ -134,10 +134,14 @@ function PlaceSmall() {
       $(this).parent().prepend('<div class="placeholder_small">'+ psmall +'</div>'); 
   });
   
-  lock_phs = 0;  
+  lock_phs = 0;
+  
+  $('em.wrapper input').focus(function(){
+    lock_phs = 0;
+  });    
  
   $('em.wrapper input').keyup(function(){
-
+  
       var phs = $(this).attr('placeholder');
     
       if (this.value != '') { 

@@ -48,7 +48,8 @@
 
       <div id="content">
         <div class="title">
-          <img src="img/ico_passport.png" alt=""/><h1>Замена паспорта гражданина Российской Федерации в&nbsp;связи с&nbsp;изменением пола</h1>
+          <img src="img/ico_passport.png" alt=""/><h1>Замена паспорта гражданина Российской Федерации</h1>
+          <h2>В&nbsp;связи с&nbsp;изменением пола<h2/>
         </div>
         
           
@@ -68,7 +69,16 @@
             <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
             </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>            
             
-            <em class="wrapper l_100"><input type="text" placeholder="Место рождения как в паспорте" class="big" /></em>            
+            <em class="wrapper l_100">
+              <span class="fr"><a href="#">Изменить данные</a> 
+                <i class="q">?
+                <div class="bg_c3">
+                  <p>Изменение личных данных будет происходить в личном кабинете.</p>
+                </div></i>
+              </span>
+            </em>
+            
+                        
           </fieldset>
                      
           <fieldset class="group_2">
@@ -82,7 +92,7 @@
             </ul>                      
             <span class="point_num">2</span>
 
-            <h3>Ваши новые персональные данны</h3>          
+            <h3>Ваши новые персональные данные</h3>          
             <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
             </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
             </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
@@ -90,7 +100,10 @@
             <em class="wrapper l_16"><input type="radio" checked="checked" name="sex" disabled="disabled" /><label>Мужской</label>
             </em><em class="wrapper l_16"><input type="radio" name="sex" disabled="disabled" /><label>Женский</label></em><br/>
             
-            <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                                    
+            <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em><br/>
+            
+            <textarea placeholder="строка">
+            </textarea>                                    
           </fieldset>
           
           <fieldset class="group_3">                     
@@ -283,7 +296,13 @@
 
             <h3>Для подачи заявления необходимо выбрать отделение УФМС</h3>          
             
-            <em class="wrapper l_100"><input type="text" placeholder="Выберите ваше местоположение" class="big" /></em><br/>           
+            <em class="wrapper l_100">
+              <select>
+                <option>УФМС №23</option>                
+                <option>УФМС №15</option>
+                <option>УФМС №4</option>
+              </select>                  
+            </em><br/>           
             
             <div class="fields_cover clear">
             
@@ -310,7 +329,7 @@
             
             <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Согласен на обработку персональных данных</label></em>
             
-            <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Об ответственности за предоставление заведомо ложных сведений,
+            <em class="wrapper skew l_100"><input type="checkbox" checked="checked" /><label>Об ответственности за предоставление заведомо ложных сведений,
              либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>           
                                                    
           </fieldset>                                                                                               
