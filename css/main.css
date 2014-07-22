@@ -181,12 +181,12 @@ EM {font-style:normal;}
 }
 
 #header .nav LI {
-  height:77px;
+  height:74px;
   float:left; 
 }
 
 #header LI.col_1 {
-  width:255px;
+  width:257px;
 }
 
 #header LI.col_2 {
@@ -201,18 +201,18 @@ float: right;
   display:block;
   width:203px;
   height:50px;
-  margin:8px 0 0 0;
+  margin:5px 0 0 0;
 }
 
 #header .catalog_btn {
   behavior: url(PIE.htc);
   position:relative;
-  margin:18px 0 0 0;
+  margin:15px 0 0 0;
   display:inline-block;
   border-radius:3px;
   border:1px solid #d0d0d0;
   color:#56575c;
-  padding:12px 20px 12px 33px; 
+  padding:12px 18px 12px 31px; 
   cursor:pointer;
   font-size:14px;
   background: url('../img/header_arrow_left.png') 20px 50% no-repeat;   
@@ -230,7 +230,7 @@ float: right;
 	position: relative;
 	margin: 0;
 	display: inline-block;
-	padding: 29px 12px 25px 0;
+	padding: 25px 12px 25px 0;
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: bold;
@@ -245,13 +245,11 @@ float: right;
 	overflow:hidden;
 	right:0;
 	top:0;
-	margin-top: 4px;
 	padding: 0px 20px;
 	background: white;
 	border-radius: 4px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	height: 73px;
 	z-index: 100;
 	transition: all 0.1s ease;
 }
@@ -318,9 +316,9 @@ float: right;
   display:inline-block;
   height:44px;
   line-height:44px;
-  padding:0 24px 0 12px;    
+  padding:0 30px 0 13px;    
   position:relative;
-  font-size:85%;       
+  font-size:80%;       
 }
 
 #header .breadcrumbs LI A {
@@ -332,7 +330,7 @@ float: right;
 }
 
 #header .breadcrumbs .first A {
-  padding:0 24px;   
+  padding:0 35px 0 20px;   
 }
 
 #header .breadcrumbs .first IMG {
@@ -358,8 +356,8 @@ float: right;
   height:76px;
   display:table;
   vertical-align:middle;
-  margin:30px -255px 40px 0;
-  padding:0 0 0 105px;
+  margin:30px -255px 30px 0;
+  padding:0 0 0 101px;
 }
 
 #content .title IMG {
@@ -374,7 +372,7 @@ float: right;
 
 #content .title H1 {
   font:265% 'etelka_thinregular';
-  margin:0.3em 0 0 0;
+  margin:0.35em 0 0 0;
 }
 
 #content .title H2 {
@@ -412,13 +410,13 @@ float: right;
   behavior: url(PIE.htc);
   display:inline-block;
   position:relative;
-  width:23px;
-  height:23px;
+  width:21px;
+  height:21px;
   border:1px solid #d0d0d0;
   border-radius:12px;
   text-align:center;
   background:#fff;
-  font:bold 14px/23px 'Arial', 'Helvetica', 'sans-serif';
+  font:bold 12px/21px 'Arial', 'Helvetica', 'sans-serif';
   cursor:pointer;
   z-index:3; 
 }
@@ -461,13 +459,13 @@ float: right;
 #content .main FIELDSET {
   position:relative;
   display:block;
-  padding:25px 15px 25px 85px;
+  padding:25px 15px 25px 88px;
   background:#fff;
   margin:0 0 40px 0;  
 }
 
 .main FIELDSET H3 {
-  margin:15px 0 40px 0;
+  margin:12px 0 37px 0;
   font:105% 'etelka_mediumregular';   
 }
 
@@ -475,7 +473,7 @@ float: right;
 .placeholder_small {
   position:absolute;
   top:3px;
-  left:20px;
+  left:22px;
   font-size:70%;
   color:#777;
 }
@@ -518,7 +516,7 @@ float: right;
   position:absolute;
   text-align:center;
   width:40px;
-  left:15px;
+  left:18px;
   font:265% 'etelka_thinregular';  
 }
 
@@ -944,15 +942,15 @@ H4 {
 /*Variable data*/
 
 .gibdd_shtrafy #content .main FIELDSET {
-  padding:25px 15px 0px 85px;  
+  padding:25px 15px 5px 88px;  
 }
 
 .nalogovaya_zadoljennost #content .main FIELDSET {
-  padding:25px 15px 0px 85px;  
+  padding:25px 15px 0px 88px;  
 }
 
 .nalogovaya_zadoljennost #content .ticket {
-  padding: 30px 15px 0px 85px;
+  padding: 30px 15px 0px 88px;
 }
 
 .proverka_sudebnyh_zadoljennostey {
@@ -994,20 +992,24 @@ INPUT[disabled] {
 }
 
 INPUT:focus {
-	  behavior: url(PIE.htc);
+	behavior: url(PIE.htc);
   box-shadow: 0px 0px 0px 4px rgba(173, 222, 255, 1); 
   border:1px solid #addeff;
+}
+
+INPUT::-ms-clear {
+   display: none;
 }
 
 INPUT.big {
   height:54px;
   padding:0px 20px;
 }
+
 TEXTAREA.big {
   height:54px;
   padding:0px 20px;
 }
-
 
 INPUT.small {
   height:40px;
@@ -1016,6 +1018,7 @@ INPUT.small {
 }
 
 TEXTAREA{
+  behavior: url(PIE.htc);
   resize: none;
   width: 100%;
   min-height: 136px;
@@ -1103,7 +1106,7 @@ INPUT.btn.small {
 }
 
 LABEL {
-  margin:0 20px 0 10px;
+  margin:0 0 0 15px;
 }
 
 
