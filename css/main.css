@@ -163,7 +163,6 @@ EM {font-style:normal;}
   width:100%;
   height:100%;
   position:relative;
-  overflow:hidden;
 }
 
 .cover {
@@ -982,6 +981,7 @@ INPUT {
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
   font-size:115%;
+  outline: 0;
 }
 
 INPUT[disabled] {
@@ -1009,6 +1009,7 @@ INPUT.big {
 TEXTAREA.big {
   height:54px;
   padding:0px 20px;
+  outline: 0;
 }
 
 INPUT.small {
@@ -1021,11 +1022,17 @@ TEXTAREA{
   behavior: url(PIE.htc);
   resize: none;
   width: 100%;
-  min-height: 136px;
+  min-height: 152px;
   box-sizing: border-box;
   font-size: 115%;
-  padding: 10px 20px;
+  padding: 14px 20px;
   border: 1px solid #d0d0d0;
+  outline: none;
+}
+TEXTAREA:focus{
+  behavior: url(PIE.htc);
+  box-shadow: 0px 0px 0px 4px rgba(173, 222, 255, 1);
+  border: 1px solid #addeff;
 }
 
 .btn.small B {
