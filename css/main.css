@@ -1015,6 +1015,16 @@ INPUT.small {
   font-size:90%;
 }
 
+TEXTAREA{
+  resize: none;
+  width: 100%;
+  min-height: 136px;
+  box-sizing: border-box;
+  font-size: 115%;
+  padding: 10px 20px;
+  border: 1px solid #d0d0d0;
+}
+
 .btn.small B {
   height:40px;
   line-height:40px;

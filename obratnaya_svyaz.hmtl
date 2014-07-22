@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -44,8 +44,7 @@
         <form action="#" class="main clear">
           <fieldset class="group_1">
             <em class="wrapper l_100">
-              <textarea class="styler big" name="textarea" id="settings01" placeholder="Сообщение" resize="none">
-              </textarea>
+              <textarea placeholder="Сообщение"></textarea>
             </em>
             <em class="wrapper l_100">
               <input type="file" id="settings02" class="styler" />
@@ -81,8 +80,7 @@
         <form action="#" class="main clear">
           <fieldset class="group_1">
             <em class="wrapper l_100">
-              <textarea class="styler" name="textarea" id="settings01" placeholder="Сообщение" resize="none">
-              </textarea>
+              <textarea placeholder="Сообщение"></textarea>
             </em>
             <em class="wrapper l_100">
               <div class="file_progress">
@@ -109,7 +107,7 @@
             <em class="wrapper l_100">
               <div class="file_progress">
                 <div class="file-loader_square fl">
-                  <div class="file_ok">Ошибка загрузки</div>
+                  <div class="file_ok"><img src="img/ico_sudebnyi.png" alt="" /></div>
                 </div>
                 <div class="file_progress-cont">
                   <div class="file_name">Анкета мамы загранпаспорт.pdf</div>
@@ -118,10 +116,9 @@
               </div>
             </em>
             <em class="wrapper l_100">
-              <input type="file" id="settings02" class="styler" />
+              <input type="file" id="settings02" class="styler" disabled="disabled" />
               <div class="file-sidebar_right">
-                <label for="settings02"><b>Прикрепить файлы</b></label>
-                <div class="sub_txt gray">Осталось 7,22 Мб</div>
+                <label for=""><b>Вы превысили 10 Mb.</b> Найдите способ уменьшить объем загружамемых файлов</label>
               </div>
             </em>
           </fieldset>
