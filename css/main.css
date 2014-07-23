@@ -405,7 +405,7 @@ float: right;
   margin:0.8em 0 2em 0;    
 }
 
-#content .q {
+.main .q {
   behavior: url(PIE.htc);
   display:inline-block;
   position:relative;
@@ -420,11 +420,11 @@ float: right;
   z-index:3; 
 }
 
-#content .q:hover {
+.main .q:hover {
   background:#f5f5f5;
 }
 
-#content .q DIV {
+.main .q DIV {
   position:absolute;
   top:-17px;
   left:43px;
@@ -434,9 +434,10 @@ float: right;
   min-width:195px;
   text-align:left;
   font:100% 'Arial', 'Helvetica', 'sans-serif';   
+  z-index: 101;
 }
 
-#content .q DIV:before {
+.main .q DIV:before {
   position:absolute;
   display:block;
   content:'';
@@ -447,7 +448,7 @@ float: right;
   background: url('../img/blue_corner.png') 0 0 no-repeat;    
 }
 
-#content .q:hover DIV {
+.main .q:hover DIV {
   display:block;
 }
 
@@ -455,7 +456,7 @@ float: right;
   display:block;
 }
 
-#content .main FIELDSET {
+.main FIELDSET {
   position:relative;
   display:block;
   padding:25px 15px 25px 88px;
@@ -465,7 +466,7 @@ float: right;
 
 .main FIELDSET H3 {
   margin:12px 0 37px 0;
-  font:105% 'etelka_mediumregular';   
+  font:110% 'etelka_mediumregular';   
 }
 
 
@@ -510,7 +511,7 @@ float: right;
   bottom:-20px;
 }
 
-#content .point_num {
+.point_num {
   display:block;
   position:absolute;
   text-align:center;
