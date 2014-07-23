@@ -420,11 +420,6 @@ TEXTAREA:focus{
 .gibdd_shtrafy-tablet .field_name{
     margin-top: 4px;
 }
-.big_inp-form .jq-selectbox__dropdown{
-    background: #fff;
-    width: 320px;
-    border-radius: 10px;
-}
 
 /* /gibdd_shtrafy-tablet */
 
@@ -850,11 +845,11 @@ TEXTAREA:focus{
     font-size:115%;     
   }
   
-  #menu_btn.opened {	border:none; height:100%; top:0;}
-  #menu_btn.closed {	border:none; height:100%; top:0;}
-  #menu_btn.opened .exit {background:none; border-bottom: 1px solid #ddd;}
+  #menu_btn.opened,
+  #menu_btn.closed{	border:none; height:100%; top:0;}
+  #menu_btn.opened .exit,
   #menu_btn.closed .exit {background:none; border-bottom: 1px solid #ddd;}
-  #menu_btn.closed .submenu {top: 0px;}
+  #menu_btn.closed .submenu,
   #menu_btn.opened .submenu {top: 0px;}  
   
   #header .logo {
