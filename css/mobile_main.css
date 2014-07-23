@@ -170,24 +170,47 @@ BODY {
 
 /* feedback */
 
-#content .title.no-ico{
+#content .title.no-ico.medium{
   margin: 0;
   padding: 0;
-  margin-bottom: 4px;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
-#content .title.no-ico h1{
+
+#content .title.medium{
+  height: 38px;
+  display: table;
+  vertical-align: middle;
+  margin: 20px -255px 20px 0;
+  padding: 0 0 0 46px;
+}
+
+#content .title.medium IMG{
+  width: 36px;
+  height: 38px
+}
+
+#content .title.medium.no-ico H1,
+#content .title.medium H1{
   font-size: 2em;
+  margin: 0;
 }
 
 FORM .wrapper{
   margin: 0 0 14px 0;
 }
 
-#content .main FIELDSET{
-  padding: 30px 10px 30px 30px;
+FORM.big_inp-form .wrapper{
+  margin: 16px 0 14px 0;
 }
-.obratnaya_svyaz FIELDSET H3{
-  margin-bottom: 18px;
+
+.main FIELDSET{
+  padding: 20px 10px 4px 30px;
+  margin-bottom: 10px;
+}
+
+.main .big_inp-form FIELDSET{
+    margin-bottom: 20px;
 }
 
 INPUT:focus,
@@ -197,14 +220,156 @@ TEXTAREA:focus{
   border: 1px solid #addeff;
 }
 
+.big_inp-form INPUT{
+   height: 60px;
+}
+.big_inp-form INPUT.btn{
+    height: 42px;
+}
+
+.big_inp-form FIELDSET H3{
+    margin: 12px 0 20px 0;
+}
+
+.big_inp-form .selector LI{
+    padding: 12px 20px;
+}
+
+.big_inp-form .cover_info_title{
+    margin-bottom: 14px;
+}
+
+.big_inp-form .point_num{
+    left: -12px;
+    font-size: 32px;
+}
+
+.big_inp-form .field_cont{
+    margin-right: -20px;
+}
+
+.info_bloc-w100.yellow{
+    background: #FFF3AC;
+    padding: 15px 68px 20px 20px;
+    margin-bottom: 14px;
+}
+
+.big_inp-form .field_name{
+    color: #A5AEB3;
+    font-size: 12px;
+}
+
+.main.big_inp-form .q{
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    vertical-align: middle;
+}
+.main.big_inp-form .q .ico{
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+
+
+.big_inp-form .ticket {
+    padding: 26px 0px 30px 0px;
+    margin: 0 -15px 0 0px;
+    font-size: 15px;
+}
+.big_inp-form .ticket .btn_cover_r{
+    right: 8px;
+}
+.big_inp-form .ticket .sub_title{
+    margin-bottom: 20px;
+}
+.big_inp-form .ticket dt{
+    width: 225px;
+}
+.big_inp-form .ticket dt,
+.big_inp-form .ticket dd{
+    padding-bottom: 20px;
+}
+.big_inp-form .slide_up:after, .big_inp-form .slide_down:after{
+    right: -24px;
+}
+.big_inp-form  .ticket .money{
+    font-size: 18px;
+}
+
+
+.switcher_cont{
+    padding: 20px 0;
+    white-space: nowrap;
+}
+.switcher_cont .switcher_h{
+    display: inline-block;
+    line-height: 42px;
+    margin: 0;
+    margin-right: 30px;
+    vertical-align: top;
+    font-size: 15px;
+}
+.switcher_cont .switcher{
+    position: relative;
+    left: 0;
+    width: 86px;
+}
+.switcher_cont .switcher .cover DIV{
+    height: 36px;
+}
+.switcher_cont .left, .switcher_cont .right{
+    width: 46px;
+}
+.switcher_cont .switcher_txt{
+    display: inline-block;
+    white-space: normal;
+    font-size: 14px;
+    color: #A5AEB3;
+    margin-left: 24px;
+}
+
+
+.social_wrap-b{
+    border-top: 1px solid #DBE2E6;
+    padding-left: 30px;
+}
+.social_wrap-b .social{
+    height: 60px;
+    padding: 40px 0;
+    display: inline-block;
+} 
+.social_wrap-b A{
+    margin-left: 30px;
+}
+.social_wrap-b B{
+    color: #74777F;
+    font-size: 15px;
+}
+.social_wrap-b IMG{
+    height: 56px;
+    width: 56px;
+    top: 0;
+    vertical-align: middle;
+}
+
+#content .advice h2{
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+
 .jq-file{
   box-shadow: none;
   width: 74px;
   float: left;
 }
+
 .jq-file__name{
   display: none;
 }
+
 .jq-file__browse,
 .file-loader_square{
   width: 72px;
@@ -217,9 +382,11 @@ TEXTAREA:focus{
   background: transparent;
   display: inline-block;
 }
+
 .jq-file__browse{
   text-indent: -9999px;
 }
+
 .jq-file__browse:before{
   content: "";
   background: url('../img/mobile/ico_cross.png') no-repeat;
@@ -229,14 +396,17 @@ TEXTAREA:focus{
   top: 17px;
   left: 17px;
 }
+
 .file-sidebar_right{
   margin-left: 90px;
   margin-top: 16px;
 }
+
 .file-sidebar_right LABEL{
   margin: 0;
   display: block;
 }
+
 .file-sidebar_right .sub_txt{
   color: #A5AEB3;
   font-size: 14px;
@@ -249,6 +419,7 @@ TEXTAREA:focus{
   line-height: 74px;
   border-radius: 4px;
 }
+
 .file-loader_square .file_progress_line{
   width: 50px;
   height: 8px;
@@ -259,7 +430,8 @@ TEXTAREA:focus{
   border-radius: 5px;
   overflow: hidden;
 }
-.file-loader_square .file_progress_line span{
+
+.file-loader_square .file_progress_line SPAN{
   background: #689f38;
   width: 40%;
   display: block;
@@ -276,12 +448,14 @@ TEXTAREA:focus{
   margin-top: 28px;
   padding-bottom: 10px;
 }
+
 .file_progress .file_progress-cont{
   margin-left: 90px;
   border-bottom: 1px solid #cdd1d4;
   min-height: 80px;
   margin-bottom: -2px;
 }
+
 .file_progress .file_close{
   display: inline-block;
   margin-top: 16px;
@@ -293,10 +467,12 @@ TEXTAREA:focus{
   background: url('../img/ico_close.png') 0 0 no-repeat;
   background-size: 88%;
 } 
+
 .file_progress .file_close:hover{
   background: url('../img/ico_close_hover.png') 0 0 no-repeat;
   background-size: 88%;
 }
+
 .file_progress .file_close:active{
   background: url('../img/ico_close_active.png') 0 0 no-repeat;
   background-size: 88%;
@@ -307,6 +483,7 @@ TEXTAREA:focus{
   color: #d0021b;
   font-size: 14px;
 }
+
 .file_progress .file_error:before{
   content: '';
   background: url('../img/mobile/ico_stop.png') no-repeat center;
@@ -321,6 +498,35 @@ TEXTAREA:focus{
   margin-top: 28px;
   display: block;
 }
+
+
+/* obratnaya_svyaz */
+
+.obratnaya_svyaz FIELDSET H3{
+  margin-bottom: 18px;
+}
+
+/* /obratnaya_svyaz */
+
+
+/* gibdd_shtrafy-tablet */
+
+.gibdd_shtrafy-tablet #content{
+  padding: 0;
+}
+.gibdd_shtrafy-tablet FORM{
+  margin: 12px 0px 10px;
+}
+.gibdd_shtrafy-tablet FIELDSET{
+    border-top: 1px solid #DBE2E6;
+}
+.gibdd_shtrafy-tablet .field_name{
+    margin-top: 4px;
+}
+
+/* /gibdd_shtrafy-tablet */
+
+
 
 #footer UL {
   width: 945px;
@@ -742,11 +948,11 @@ TEXTAREA:focus{
     font-size:115%;     
   }
   
-  #menu_btn.opened {	border:none; height:100%; top:0;}
-  #menu_btn.closed {	border:none; height:100%; top:0;}
-  #menu_btn.opened .exit {background:none; border-bottom: 1px solid #ddd;}
+  #menu_btn.opened,
+  #menu_btn.closed{	border:none; height:100%; top:0;}
+  #menu_btn.opened .exit,
   #menu_btn.closed .exit {background:none; border-bottom: 1px solid #ddd;}
-  #menu_btn.closed .submenu {top: 0px;}
+  #menu_btn.closed .submenu,
   #menu_btn.opened .submenu {top: 0px;}  
   
   #header .logo {

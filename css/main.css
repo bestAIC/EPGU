@@ -417,7 +417,7 @@ float: right;
   margin:0.8em 0 2em 0;    
 }
 
-#content .q {
+.main .q {
   behavior: url(PIE.htc);
   display:inline-block;
   position:relative;
@@ -430,14 +430,14 @@ float: right;
   background:#fff;
   font:bold 12px/22px 'Arial', 'Helvetica', 'sans-serif';
   cursor:pointer;
-  z-index:3; 
+  z-index:101; 
 }
 
-#content .q:hover {
+.main .q:hover {
   background:#f5f5f5;
 }
 
-#content .q DIV {
+.main .q DIV {
   position:absolute;
   top:-17px;
   left:43px;
@@ -447,9 +447,10 @@ float: right;
   min-width:195px;
   text-align:left;
   font:100% 'Arial', 'Helvetica', 'sans-serif';   
+  z-index: 101;
 }
 
-#content .q DIV:before {
+.main .q DIV:before {
   position:absolute;
   display:block;
   content:'';
@@ -460,7 +461,7 @@ float: right;
   background: url('../img/corners_cloud_2.png') 0 0 no-repeat;    
 }
 
-#content .q:hover DIV {
+.main .q:hover DIV {
   display:block;
 }
 
@@ -476,7 +477,7 @@ float: right;
   display:block;
 }
 
-#content .main FIELDSET {
+.main FIELDSET {
   position:relative;
   display:block;
   padding:40px 10px 25px 65px;
@@ -485,8 +486,13 @@ float: right;
 }
 
 .main FIELDSET H3 {
+<<<<<<< HEAD
   margin:20px 0 40px 0;
   font:115% 'etelka_mediumregular';   
+=======
+  margin:12px 0 37px 0;
+  font:110% 'etelka_mediumregular';   
+>>>>>>> e3f7f2369d9e2530556dbc164deb2317b07e5b88
 }
 
 .main FIELDSET H3 A {
@@ -534,7 +540,7 @@ float: right;
   bottom:-20px;
 }
 
-#content .point_num {
+.point_num {
   display:block;
   position:absolute;
   text-align:center;
@@ -859,19 +865,19 @@ H4 {
   margin:0 0 1em 0;
 } 
 
-.advice .social {
+.social {
   display:table;
   vertical-align:middle;
   height:40px;
   margin:0 0 10px 0;
 }
 
-.advice .social A {
+.social A {
   display:inline-block;
   margin:0 0 0 15px;
 }
 
-.advice IMG { 
+.social IMG { 
   position:relative;
   top:0.9em;  
   width:40px;
