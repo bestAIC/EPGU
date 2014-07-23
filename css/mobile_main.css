@@ -9,13 +9,13 @@ BODY {
   margin:0;
 }
 
-#menu_top_btn {
-  width: 808px;
+.menu_btn_cover {
+  width: 1024px;
   margin: 0 auto;
   position: relative;
 }
 
-#menu_top_btn DIV {
+.menu_btn_cover DIV {
   position: absolute;
   right: 0;
   top: 25px;
@@ -168,6 +168,11 @@ BODY {
 
 
 
+<<<<<<< HEAD
+=======
+/* feedback */
+
+>>>>>>> FETCH_HEAD
 #content .title.no-ico{
   margin: 0;
   padding: 0;
@@ -396,6 +401,7 @@ TEXTAREA:focus{
   display: block;
 }
 
+<<<<<<< HEAD
 
 /* obratnaya_svyaz */
 
@@ -427,6 +433,8 @@ TEXTAREA:focus{
 /* /gibdd_shtrafy-tablet */
 
 
+=======
+>>>>>>> FETCH_HEAD
 #footer UL {
   width: 945px;
 }
@@ -496,10 +504,6 @@ TEXTAREA:focus{
   top:2px;
 }
 
-#footer .mail_link {
- 
-}
-
 #footer .mail_link:before {
   position:absolute;
   display:block;
@@ -512,7 +516,6 @@ TEXTAREA:focus{
   top:2px;
 }
 
-/**/
 .btn B {
   height:50px;
   line-height:50px;  
@@ -520,9 +523,9 @@ TEXTAREA:focus{
 
 
 /*Tablet Portrait*/
-@media (max-width:1024px) {
+@media (max-width:1024px){
 
-  #menu_top_btn{
+  .menu_btn_cover {
     width: 648px;
   }
 
@@ -615,7 +618,7 @@ TEXTAREA:focus{
 
 
 
-  /* obratnaya_svyaz */
+  /* feedback */
 
   #content .title.no-ico{
     margin: 0;
@@ -768,8 +771,7 @@ TEXTAREA:focus{
     margin-top: 28px;
     display: block;
   }
-
-  /* /obratnaya_svyaz */   
+ 
 
   #footer .bottom_link {
     width: 600px;
@@ -822,15 +824,6 @@ TEXTAREA:focus{
 /*Phone Portrait*/
 @media (max-width:640px) {
 
-  #menu_top_btn{
-    width: 244px;
-    right: -244px;
-  }
-
-  #header .menu{
-    display: block;
-  }
-
   #header .nav {
     width: 280px;
   }
@@ -840,109 +833,34 @@ TEXTAREA:focus{
   #intro H2,
   #intro .enter_block SPAN {
     display:none;
-  }
+  }  
+
+  /* Header top menu */
   
-  
+  .menu_btn_cover {
+    width:250px;
+    height:100%;
+    background:#fff;
+    position:absolute;
+    right:-250px;
+  } 
 
-  /* Header top menu phone*/
-
-  #menu_top_btn .menu {
-    display:block;
-    padding: 0 0 0 24px;
-    position: absolute;
-    top: 0;
-    left: -100px; 
-    font-size:115%;      
-  }
-
-  #menu_top_btn.opened .menu {
-    display: none;
-  }
-
-  #menu_top_btn.opened a.exit{
-    display: block;
-    padding: 17px 0;
-    left: 230px;
-    z-index: 300;
-    border-bottom: 1px solid #CDD1D4;
-  }
-
-  #menu_top_btn{
-    behavior: url(PIE.htc);
-    position: absolute;
-    right: -244px;
-    top: 0;
-    padding: 0;
-    background: white;
-    border-radius: 4px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    z-index: 100;
-    transition: all 0.1s ease;
-    height: 100%;
-    width: 244px;
-  }
-
-  .menu a.exit_phone{
-    background: url('../img/mobile/ico_mobile_menu.png') 0 42% no-repeat; 
+  .menu {
+    margin:12px 0 0 0;
+    padding: 0 0 0 20px; 
+    background: url('../img/mobile/ico_mobile_menu.png') 0 5px no-repeat; 
     background-size: 12px 12px;   
-    position: relative;
-    margin: 0;
-    display: inline-block;
-    padding: 12px 0px 16px 20px;
+    display: inline-block!important;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    z-index: 100;
-  }
-
-  #menu_top_btn .menu_side-rigth{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 244px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 20px 20px 10px 20px;
-    margin: 50px 0 0;
-    transition: left 0.1s ease;
-  }
-
-  #menu_top_btn.opened .menu_side-rigth{
-    background-color: #fff;
-    border-left: 1px solid #CDD1D4;
-    height: 100%;
-  }
-
-
-  #menu_top_btn .menu_side-rigth li{
-    display: block;
-    width: 100%;
-    height: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 8px 0px;
-    padding-left: 28px;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-  }
-
-  #menu_top_btn .menu_side-rigth li.ico_lk{ 
-    background-position: 3px 0px;
-    background-image: url(../img/ico_empty_photo.png);
-  }
-
-  #menu_top_btn .menu_side-rigth li.ico_contact{ 
-    background-position: 2px 0px;
-    background-image: url(../img/ico_cloud_dotted.png);
+    font-size:115%;     
   }
   
-  #menu_top_btn .menu_side-rigth li.ico_exit{ 
-    background-position: 0px 0px;
-    background-image: url(../img/ico_exit.png);
-  }
-
-  /* /Header top menu phone*/
+  #menu_btn.opened {	border:none; height:100%; top:0;}
+  #menu_btn.closed {	border:none; height:100%; top:0;}
+  #menu_btn.opened .exit {background:none; border-bottom: 1px solid #ddd;}
+  #menu_btn.closed .exit {background:none; border-bottom: 1px solid #ddd;}
+  #menu_btn.closed .submenu {top: 0px;}
+  #menu_btn.opened .submenu {top: 0px;}  
   
   #header .logo {
     width: 100px;
@@ -1038,19 +956,17 @@ TEXTAREA:focus{
   } 
 
 
-  /* obratnaya_svyaz */
+  /* feedback */
 
   #content .title.no-ico{
     margin: 0;
     padding: 0;
-    margin-bottom: 4px;
-  
+    margin-bottom: 4px;  
     padding-left: 20px;
     height: 36px;
 }
   #content .title.no-ico h1{
-    font-size: 1.125em;
-  
+    font-size: 1.125em;  
     margin-top: 0;
 }
 
@@ -1065,30 +981,26 @@ TEXTAREA:focus{
     padding: 20px 0px 10px 20px;
     margin-bottom: 18px;
   }
+  
   .obratnaya_svyaz FIELDSET H3{
     margin-bottom: 16px;
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.2em;
   }
-  
-  .obratnaya_svyaz{
-    
-  }
 
   INPUT.big{
-    height: 38px;
-  
+    height: 38px;  
     font-size: 12px;
     padding: 0 12px;
     margin-bottom: 6px;
-}
-  TEXTAREA{
-    min-height: 88px;
+  }
   
+  TEXTAREA{
+    min-height: 88px; 
     font-size: 12px;
     padding: 8px 10px;
-}
+  }
 
   INPUT:focus,
   TEXTAREA:focus{
@@ -1221,7 +1133,7 @@ TEXTAREA:focus{
   
     font-weight: bold;
     margin-top: 6px;
-}
+  }
   .file_progress .file_error:before{
     content: '';
     background: url('../img/mobile/ico_stop.png') no-repeat center;
@@ -1243,8 +1155,6 @@ TEXTAREA:focus{
   .send_btn{
     margin-right: 20px;  
   }
-
-  /* /obratnaya_svyaz */
   
   #footer .bottom_link {
     width: 285px;
@@ -1286,8 +1196,5 @@ TEXTAREA:focus{
     font-size:70%;
   }  
      
-.test-css_git{
-
-}
 } 
 
