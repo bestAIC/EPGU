@@ -173,18 +173,22 @@ function PlaceSmall() {
 
 function MenuShow() {
 
-$('html').click(function(){
-	$('#menu_btn').addClass('closed').removeClass('opened');
-	})
-
-$('#menu_btn a.exit').click(function(event){
-	event.stopPropagation();
-	if ($('#menu_btn').hasClass('closed')) {$('#menu_btn').addClass('opened').removeClass('closed');} else {$('#menu_btn').addClass('closed').removeClass('opened');}
-})
-
-$('#menu_btn').click(function(event){
-	event.stopPropagation();
-})
+  $('html').click(function(){
+  	$('#menu_btn').addClass('closed').removeClass('opened');
+  })
+  
+  $('#menu_btn .exit').click(function(event){
+  	event.stopPropagation();
+  	if ($('#menu_btn').hasClass('closed')) {
+      $('#menu_btn').addClass('opened').removeClass('closed');
+    } else {
+      $('#menu_btn').addClass('closed').removeClass('opened');
+    }
+  })
+  
+  $('#menu_btn').click(function(event){
+  	event.stopPropagation();
+  })
 	
 }
 

@@ -30,25 +30,18 @@ function RetinaDisplay() {
 // Top menu mobile
 
 function MenuShowMobile(){
-  $('html').click(function(){
-    $('#menu_top_btn').addClass('closed').removeClass('opened');
-  })
-/*
-  $('.exit_phone').on('click', function(){
-    event.stopPropagation();
-    if ($('#menu_top_btn').hasClass('closed')) {
-      $('#menu_top_btn').addClass('opened').removeClass('closed').animate({right: '0px'});
-      $('#wrap').animate({left: '-244px'}); 
-    } else {
-      $('#menu_top_btn').addClass('closed').removeClass('opened').animate({right: '-244px'}); 
-      $('#wrap').animate({left: '0'});
-    }
-  })
 
-  $(window).on('resize', function(){
-    $('#menu_top_btn').css({right: '0'});
+  $('#header .menu').on('click', function(){  
+  	if ($(this).hasClass('closed')) {
+      $(this).addClass('opened').removeClass('closed');  
+      $('#wrap').animate({left:-250});
+      $('.menu_btn_cover').animate({right:0});       
+    } else {
+      $(this).addClass('closed').removeClass('opened');
+      $('#wrap').animate({left:0});
+      $('.menu_btn_cover').animate({right:-250});       
+    }   
   })
-*/  
-  
+   
 }
 
