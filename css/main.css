@@ -1,7 +1,7 @@
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#f6f6f6; color:#000; font:100% 'Arial', 'Helvetica', 'sans-serif'; min-width:1200px;}
+BODY {height:100%; background:#fff; color:#000; font:100% 'Arial', 'Helvetica', 'sans-serif'; min-width:1200px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG,FIELDSET {border:none;}
@@ -77,7 +77,7 @@ EM {font-style:normal;}
 .bg_c0 {background:#ffffff;}
 .bg_c1 {background:#f9bdbc;}
 .bg_c2 {background:#cfd8dc;}
-.bg_c3 {background:#a2c4e6;}
+.bg_c3 {background:#cad8e7;}
 .bg_c4 {background:#e6ee9c;}
 .bg_c5 {background:#e6ebec;}
 .bg_c6 {background:#f6f6f6;}
@@ -198,7 +198,7 @@ float: right;
 
 #header .logo {
   display:block;
-  width:203px;
+  width:202px;
   height:50px;
   margin:5px 0 0 0;
 }
@@ -287,7 +287,7 @@ float: right;
 
 #header .bottom {
 	  behavior: url(PIE.htc);
-  border-bottom:1px solid #eee;
+  border-bottom:3px solid #51b1eb;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;     
 }
 
@@ -309,9 +309,9 @@ float: right;
 #header .breadcrumbs LI A,
 #header .breadcrumbs LI SPAN {
   display:inline-block;
-  height:44px;
-  line-height:44px;
-  padding:0 30px 0 13px;    
+  height:45px;
+  line-height:45px;
+  padding:0 30px 0 15px;    
   position:relative;
   font-size:80%;       
 }
@@ -325,7 +325,7 @@ float: right;
 }
 
 #header .breadcrumbs .first A {
-  padding:0 35px 0 20px;   
+  padding:0 30px 0 30px;   
 }
 
 #header .breadcrumbs .first IMG {
@@ -341,18 +341,20 @@ float: right;
 /**/
 
 #content {
-  width:925px;
-  padding:0 255px 0 0;
+  width:900px;
+  padding:0 280px 0 0;
   position:relative;
   margin:0 auto;  
 }
 
 #content .title {
+  width: 1080px;
   height:76px;
   display:table;
   vertical-align:middle;
-  margin:30px -255px 30px 0;
-  padding:0 0 0 101px;
+  margin:41px -255px 0px 0;
+  padding:0 0 40px 100px;
+  border-bottom:1px solid #dbe2e6;
 }
 
 #content .title IMG {
@@ -366,20 +368,20 @@ float: right;
 }
 
 #content .title H1 {
-  font:265% 'etelka_thinregular';
+  font:250% 'etelka_thinregular';
   margin:0.35em 0 0 0;
 }
 
 #content .title H2 {
-  font:135% 'etelka_thinregular';
-  margin:0 0 0.3em 0;  
+  font:120% 'etelka_thinregular';
+  margin:0.1em 0 0 0;  
 }
 
 #content .info_column {
-  width:235px;
+  width:260px;
   position:absolute;
-  right:-255px;
-  top:0;
+  right:-280px;
+  top:40px;
   font-size:95%;    
 }
 
@@ -389,8 +391,22 @@ float: right;
   margin:0 0 20px 0;   
 }
 
+#content .info_block {
+  padding:25px 20px;
+  position:relative;
+  margin:0 0 20px 0;   
+}
+
+.type_1 {
+  border:1px solid #dbe2e6;
+  box-shadow: 0px 8px 0px -4px rgba(248, 121, 117, 1) inset; 
+  behavior: url(PIE.htc);  
+}
+
 #content .info_block H4 {
-  margin:0 0 1em 0;    
+  margin:0 0 1.3em 0;
+  font-size:100%;
+  border:none;    
 }
 
 #content .info_block P {
@@ -409,9 +425,10 @@ float: right;
   height:21px;
   border:1px solid #d0d0d0;
   border-radius:12px;
+  top:-2px;
   text-align:center;
   background:#fff;
-  font:bold 12px/21px 'Arial', 'Helvetica', 'sans-serif';
+  font:bold 12px/22px 'Arial', 'Helvetica', 'sans-serif';
   cursor:pointer;
   z-index:3; 
 }
@@ -438,13 +455,21 @@ float: right;
   content:'';
   left:-10px;
   top:20px;
-  width:10px;
-  height:17px;
-  background: url('../img/blue_corner.png') 0 0 no-repeat;    
+  width:20px;
+  height:20px;
+  background: url('../img/corners_cloud_2.png') 0 0 no-repeat;    
 }
 
 #content .q:hover DIV {
   display:block;
+}
+
+#content .q H4 {
+
+}
+
+#content .q P {
+
 }
 
 #content .main {
@@ -454,16 +479,19 @@ float: right;
 #content .main FIELDSET {
   position:relative;
   display:block;
-  padding:25px 15px 25px 88px;
+  padding:40px 10px 25px 65px;
   background:#fff;
   margin:0 0 40px 0;  
 }
 
 .main FIELDSET H3 {
-  margin:12px 0 37px 0;
-  font:105% 'etelka_mediumregular';   
+  margin:20px 0 40px 0;
+  font:115% 'etelka_mediumregular';   
 }
 
+.main FIELDSET H3 A {
+  font: 75%/21px 'Arial', 'Helvetica', 'sans-serif';   
+}
 
 .placeholder_small {
   position:absolute;
@@ -510,8 +538,7 @@ float: right;
   display:block;
   position:absolute;
   text-align:center;
-  width:40px;
-  left:18px;
+  left:0px;
   font:265% 'etelka_thinregular';  
 }
 
@@ -542,7 +569,7 @@ float: right;
 }
 
 .load_photo {
-  background:#ececec;
+  background:#e4f6ff;
   padding:15px 20px;
   margin:0 20px 0 0;
   position:relative;
@@ -550,8 +577,8 @@ float: right;
 }
 
 .load_photo .photo_brd {
-  width:81px;
-  border:7px solid #79c7ef;
+  width:156px;
+  border:7px solid #c1d7e6;
   line-height:0;
   margin:20px auto;
 }
@@ -568,9 +595,9 @@ float: right;
 
 .fields_cover {
   position:relative;
-  background:#ececec;
-  margin: 0 -15px 30px -85px;
-  padding: 25px 15px 10px 85px;      
+  background:#e4f6ff;
+  margin: -10px -10px 30px -20px;
+  padding: 25px 10px 10px 20px;      
 }
 
 .fields_cover:before {
@@ -579,21 +606,32 @@ float: right;
   content:'';
   width:20px;
   height:20px;
-  left:85px;
+  left:20px;
   top:-10px;
-  background: url('../img/corners_gray.png') 0 0 no-repeat;         
+  background: url('../img/corners_cloud.png') 0 0 no-repeat;         
 }
 
 H4 {
   font-size:90%;
-  margin:0 0 25px 0;    
+  margin:10px 20px 20px 0;
+  border-bottom:1px solid #dbe2e6;  
+  padding:0 0 10px 0;    
 }
 
 .fields_cover H4 {
-  margin:0.5em 0 2em 0;     
+  font-size:90%;
+  padding:0 0 10px 0;
+  margin:10px 20px 20px 0;
+  border-bottom:1px solid #c0e8ff;        
 }
 
 .cover_info_title {
+  margin:0 0 30px 0;
+}
+
+.map_cover {
+  border:1px solid #dbe2e6;
+  line-height:0;
   margin:0 0 30px 0;
 }
 
@@ -954,20 +992,27 @@ H4 {
 
 .zamena_pasporta_pol #content .main FIELDSET {
   margin:0;
-  border-bottom:1px solid #eee; 
+  border-bottom:1px solid #dbe2e6; 
 }
 
 .zamena_pasporta_pol #content .group_11 .col_left {
-  width: 380px; 
+  width: 380px;
+  padding:20px; 
 }
 
 .zamena_pasporta_pol #content .group_11 .col_right {
   width: 395px;
-  padding:10px 20px 20px 0;  
+  padding:0;  
 }
 
-.zamena_pasporta_pol #content .main .group_12 {
-  margin:0 0 40px 0;
+.zamena_pasporta_pol #content .group_12 {
+  margin:0 0 40px 0!important;
+}
+
+.zamena_pasporta_pol #content .group_3 H4 {
+  border-bottom:1px solid #d0d0d0;
+  padding:0 0 10px 0;
+  margin:0 0 20px 0;
 }
 
 /*Field & Button*/
@@ -976,7 +1021,7 @@ INPUT {
   width:100%;
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
-  font-size:115%;
+  font-size:110%;
   outline: 0;
 }
 
@@ -999,7 +1044,7 @@ INPUT::-ms-clear {
 
 INPUT.big {
   height:54px;
-  padding:0px 20px;
+  padding:0 20px;
 }
 
 TEXTAREA.big {
