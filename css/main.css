@@ -822,19 +822,19 @@ H4 {
   margin:0 0 1em 0;
 } 
 
-.advice .social {
+.social {
   display:table;
   vertical-align:middle;
   height:40px;
   margin:0 0 10px 0;
 }
 
-.advice .social A {
+.social A {
   display:inline-block;
   margin:0 0 0 15px;
 }
 
-.advice IMG { 
+.social IMG { 
   position:relative;
   top:0.9em;  
   width:40px;

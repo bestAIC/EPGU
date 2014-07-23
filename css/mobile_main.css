@@ -170,10 +170,11 @@ BODY {
 
 /* feedback */
 
-#content .title.no-ico{
+#content .title.no-ico.medium{
   margin: 0;
   padding: 0;
-  margin-bottom: 4px;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
 
 #content .title.medium{
@@ -222,13 +223,24 @@ TEXTAREA:focus{
 .big_inp-form INPUT{
    height: 60px;
 }
+.big_inp-form INPUT.btn{
+    height: 42px;
+}
 
-.big_inp-form fieldset h3{
+.big_inp-form FIELDSET H3{
     margin: 12px 0 20px 0;
 }
 
+.big_inp-form .selector LI{
+    padding: 12px 20px;
+}
+
+.big_inp-form .cover_info_title{
+    margin-bottom: 14px;
+}
+
 .big_inp-form .point_num{
-    left: -7px;
+    left: -12px;
     font-size: 32px;
 }
 
@@ -256,6 +268,95 @@ TEXTAREA:focus{
 .main.big_inp-form .q .ico{
     vertical-align: middle;
     line-height: 36px;
+}
+
+
+
+.big_inp-form .ticket {
+    padding: 26px 0px 30px 0px;
+    margin: 0 -15px 0 0px;
+    font-size: 15px;
+}
+.big_inp-form .ticket .btn_cover_r{
+    right: 8px;
+}
+.big_inp-form .ticket .sub_title{
+    margin-bottom: 20px;
+}
+.big_inp-form .ticket dt{
+    width: 225px;
+}
+.big_inp-form .ticket dt,
+.big_inp-form .ticket dd{
+    padding-bottom: 20px;
+}
+.big_inp-form .slide_up:after, .big_inp-form .slide_down:after{
+    right: -24px;
+}
+.big_inp-form  .ticket .money{
+    font-size: 18px;
+}
+
+
+.switcher_cont{
+    padding: 20px 0;
+    white-space: nowrap;
+}
+.switcher_cont .switcher_h{
+    display: inline-block;
+    line-height: 42px;
+    margin: 0;
+    margin-right: 30px;
+    vertical-align: top;
+    font-size: 15px;
+}
+.switcher_cont .switcher{
+    position: relative;
+    left: 0;
+    width: 86px;
+}
+.switcher_cont .switcher .cover DIV{
+    height: 36px;
+}
+.switcher_cont .left, .switcher_cont .right{
+    width: 46px;
+}
+.switcher_cont .switcher_txt{
+    display: inline-block;
+    white-space: normal;
+    font-size: 14px;
+    color: #A5AEB3;
+    margin-left: 24px;
+}
+
+
+.social_wrap-b{
+    border-top: 1px solid #DBE2E6;
+    padding-left: 30px;
+}
+.social_wrap-b .social{
+    height: 60px;
+    padding: 40px 0;
+    display: inline-block;
+} 
+.social_wrap-b A{
+    margin-left: 30px;
+}
+.social_wrap-b B{
+    color: #74777F;
+    font-size: 15px;
+}
+.social_wrap-b IMG{
+    height: 56px;
+    width: 56px;
+    top: 0;
+    vertical-align: middle;
+}
+
+#content .advice h2{
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 32px;
 }
 
 
@@ -414,8 +515,10 @@ TEXTAREA:focus{
   padding: 0;
 }
 .gibdd_shtrafy-tablet FORM{
-  border-top: 1px solid #eff2f4;
   margin: 12px 0px 10px;
+}
+.gibdd_shtrafy-tablet FIELDSET{
+    border-top: 1px solid #DBE2E6;
 }
 .gibdd_shtrafy-tablet .field_name{
     margin-top: 4px;
