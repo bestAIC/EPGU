@@ -168,11 +168,8 @@ BODY {
 
 
 
-<<<<<<< HEAD
-=======
 /* feedback */
 
->>>>>>> FETCH_HEAD
 #content .title.no-ico{
   margin: 0;
   padding: 0;
@@ -401,7 +398,6 @@ TEXTAREA:focus{
   display: block;
 }
 
-<<<<<<< HEAD
 
 /* obratnaya_svyaz */
 
@@ -433,8 +429,7 @@ TEXTAREA:focus{
 /* /gibdd_shtrafy-tablet */
 
 
-=======
->>>>>>> FETCH_HEAD
+
 #footer UL {
   width: 945px;
 }
