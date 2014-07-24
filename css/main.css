@@ -66,6 +66,7 @@ EM {font-style:normal;}
 }
 
 .l_100 {width:100%;}
+.l_90 {width:90%;}
 .l_83 {width:83.33333%;}
 .l_75 {width:75%;}
 .l_66 {width:66.66666%;}
@@ -81,6 +82,7 @@ EM {font-style:normal;}
 .bg_c4 {background:#e6ee9c;}
 .bg_c5 {background:#e6ebec;}
 .bg_c6 {background:#f6f6f6;}
+
 
 .list {
   padding:0 0 1em 0;

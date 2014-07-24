@@ -200,7 +200,7 @@ FORM .wrapper{
   margin: 0 0 14px 0;
 }
 
-FORM.big_inp-form .wrapper{
+.big_inp-form .wrapper{
   margin: 16px 0 14px 0;
 }
 
@@ -223,7 +223,11 @@ TEXTAREA:focus{
 .big_inp-form INPUT{
    height: 60px;
 }
-.big_inp-form INPUT.btn{
+.big_inp-form INPUT.btn.big{
+    height: 52px;
+    font-size: 
+}
+.big_inp-form INPUT.btn.small{
     height: 42px;
 }
 
@@ -275,7 +279,7 @@ TEXTAREA:focus{
 .big_inp-form .ticket {
     padding: 26px 0px 30px 0px;
     margin: 0 -15px 0 0px;
-    font-size: 15px;
+    font-size: 0.94em;
 }
 .big_inp-form .ticket .btn_cover_r{
     right: 8px;
@@ -299,8 +303,9 @@ TEXTAREA:focus{
 
 
 .switcher_cont{
-    padding: 20px 0;
+    padding: 34px 0 40px 30px;
     white-space: nowrap;
+    border-top: 1px solid #DBE2E6;
 }
 .switcher_cont .switcher_h{
     display: inline-block;
@@ -308,7 +313,7 @@ TEXTAREA:focus{
     margin: 0;
     margin-right: 30px;
     vertical-align: top;
-    font-size: 15px;
+    font-size: 0.94em;
 }
 .switcher_cont .switcher{
     position: relative;
@@ -332,19 +337,21 @@ TEXTAREA:focus{
 
 .social_wrap-b{
     border-top: 1px solid #DBE2E6;
-    padding-left: 30px;
 }
 .social_wrap-b .social{
     height: 60px;
     padding: 40px 0;
     display: inline-block;
+    white-space: nowrap;
 } 
 .social_wrap-b A{
     margin-left: 30px;
 }
 .social_wrap-b B{
     color: #74777F;
-    font-size: 15px;
+    font-size: 0.94em;
+    display: inline-block;
+    white-space: normal;
 }
 .social_wrap-b IMG{
     height: 56px;
@@ -353,10 +360,31 @@ TEXTAREA:focus{
     vertical-align: middle;
 }
 
+#content .advice{
+    border-top: 1px solid #DBE2E6;
+    padding: 52px 0px 25px 157px;
+    background-position: 50px 26px;
+    margin: 0; 
+}
 #content .advice h2{
     text-align: left;
     font-size: 30px;
     margin-bottom: 32px;
+}
+#content .advice p{
+    color: #5A6473;
+    font-size: 1em;
+    line-height: 1.63em;
+}
+#content .advice FORM{
+    margin: 25px 0 15px;
+}
+#content .advice INPUT{
+    height: 60px;
+}
+
+.form_pl{
+    padding-left: 30px;
 }
 
 
@@ -864,6 +892,31 @@ TEXTAREA:focus{
     margin-top: 28px;
     display: block;
   }
+
+
+  #content .title.medium{
+    margin-top: 30px;
+  }
+  .gibdd_shtrafy-tablet #content FIELDSET{
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  .field_cont .l_33{
+    width: 100%;
+  }
+
+  .ticket .sub_title .fl{
+    width: 370px;
+  }
+  .big_inp-form .ticket .sub_title{
+    padding-right: 146px;
+  }
+
+  .social_wrap-b B{
+      width: 30%;
+  }
+
  
 
   #footer .bottom_link {
