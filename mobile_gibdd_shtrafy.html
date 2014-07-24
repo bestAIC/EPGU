@@ -70,13 +70,17 @@
                         </em><i class="q"><span class="ico">?</span><div class="bg_c3"><img src="img/doc_group_1.png" alt=""/></div></i><br/>
                             
                         <div class="field_name">Номер транспортного средства</div>
-                        <em class="wrapper l_100">
-                          <select>
-                            <option>А777АА 777</option>
-                            <option>А999АА 999</option>
-                          </select>                  
-                        </em>
+                        <div class="field_cont">
+                            <em class="wrapper l_100">
+                              <select>
+                                <option>А777АА 777</option>
+                                <option>А999АА 999</option>
+                              </select>                  
+                            </em>
+                        </div>
                     </fieldset>
+
+                    <div class="clear"><span class="fr"><input class="big btn" type="submit" value="Изменить данные" disabled="disabled"></span></div>
 
                     <fieldset class="group_2">                  
                         <span class="point_num">2</span>
@@ -250,25 +254,23 @@
                           </div>                                         
                         </div>                                      
                     </fieldset>
-
-                    <fieldset class="group_3">
-                        <div class="switcher_cont">
-                            <h4 class="switcher_h">Информер</h4>
-                            <div class="switcher active">
-                              <div class="cover">
-                                <div class="left active">Вкл</div>
-                                <div class="movable"></div>                  
-                                <div class="right">Откл</div>
-                              </div>
-                            </div>
-                            <div class="switcher_txt l_66">
-                                <p>Подключите информер, и информация о штрафах будет отображаться на главной странице портала.</p>
-                            </div>
-                        </div><!-- switcher_cont -->
-                    </fieldset>
                 </form>
+
+                <div class="switcher_cont">
+                    <h4 class="switcher_h">Информер</h4>
+                    <div class="switcher active">
+                      <div class="cover">
+                        <div class="left active">Вкл</div>
+                        <div class="movable"></div>                  
+                        <div class="right">Откл</div>
+                      </div>
+                    </div>
+                    <div class="switcher_txt l_66">
+                        <p>Подключите информер, и информация о штрафах будет отображаться на главной странице портала.</p>
+                    </div>
+                </div><!-- switcher_cont -->
                 
-                <div class="social_wrap-b">
+                <div class="social_wrap-b form_pl">
                     <div class="social">
                         <b>Поделись удобным сервисом с друзьями:</b>
                         <a href="#"><img src="img/ico_soc_vk.png"></a>
@@ -287,8 +289,12 @@
                   <p>После восстановления работоспособности сервиса вам будет отправлено автоматическое уведомление по указаным вами контактным данным, 
                   и вы сможете вернутся к получению услуги.</p> 
                 </div>
-                
-                <div class="social_wrap-b">
+
+                <div class="advice type_like">
+                  <h2 class="advice_h">Штрафы не найдены</h2>
+                </div>
+
+                <div class="social_wrap-b form_pl">
                     <div class="social">
                         <b>Поделись удобным сервисом с друзьями:</b>
                         <a href="#"><img src="img/ico_soc_vk.png"></a>
@@ -296,6 +302,34 @@
                         <a href="#"><img src="img/ico_soc_tw.png"></a>
                         <a href="#"><img src="img/ico_soc_ok.png"></a>
                     </div>
+                </div>
+
+                <div class="switcher_cont">
+                    <h4 class="switcher_h">Информер</h4>
+                    <div class="switcher active">
+                      <div class="cover">
+                        <div class="left active">Вкл</div>
+                        <div class="movable"></div>                  
+                        <div class="right">Откл</div>
+                      </div>
+                    </div>
+                    <div class="switcher_txt l_66">
+                        <p>Подключите информер, и информация о штрафах будет отображаться на главной странице портала.</p>
+                    </div>
+                </div><!-- switcher_cont -->
+
+                <div class="clear form_pl">
+                    <a href="#" class="btn white fl"><b>Перейти на главную</b></a>
+                </div>
+
+                <div class="advice type_not">
+                  <h2 class="advice_h">Что-то пошло не так</h2>
+                  <p>К сожалению, сервис недоступен. Попробуйте ещё раз позднее. Вы можете подписаться на разовое уведомление о восстановлении работоспособности сервиса. Выберите, как вам отправить уведомление:</p>
+
+                  <form>
+                      <em class="wrapper l_90"><div class="placeholder_small">E-mail</div><input type="text" placeholder="E-mail" value="test@test.ru" class="big btn" disabled="disabled">
+                      </em><input type="checkbox" checked="checked" /><em class="wrapper l_90"><div class="placeholder_small">Контактный телефон</div><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
+                    </form>
                 </div>
 
                 <!-- /version 2 -->
