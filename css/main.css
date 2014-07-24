@@ -1,7 +1,7 @@
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:100% 'Helvetica', 'Arial', 'sans-serif'; min-width:1200px;}
+BODY {height:100%; background:#fff; color:#000; font:15px 'Arial', 'Helvetica', 'sans-serif'; min-width:1200px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG,FIELDSET {border:none;}
@@ -140,17 +140,17 @@ EM {font-style:normal;}
 }
 
 .popup H2 {
-  font:350% 'etelka_thinregular';
+  font:40px 'etelka_thinregular';
   margin:8px 0 25px 0; 
 }
 
-.popup H4 {
+.popup H3 {
   margin:0 0 0.5em 0;
 }
 
 .popup P {
   margin:0 0 0.5em 0;
-  font-size:105%;
+  font-size:17px;
 }
 
 .popup .btn,
@@ -315,7 +315,7 @@ float: right;
   line-height:45px;
   padding:0 30px 0 15px;    
   position:relative;
-  font-size:80%;       
+  font-size:12px;       
 }
 
 #header .breadcrumbs LI A {
@@ -370,12 +370,12 @@ float: right;
 }
 
 #content .title H1 {
-  font:250% 'etelka_thinregular';
+  font:40px 'etelka_thinregular';
   margin:0.35em 0 0 0;
 }
 
 #content .title H2 {
-  font:120% 'etelka_thinregular';
+  font:20px 'etelka_thinregular';
   margin:0.1em 0 0 0;  
 }
 
@@ -383,36 +383,33 @@ float: right;
   width:260px;
   position:absolute;
   right:-280px;
-  top:40px;
-  font-size:95%;    
-}
-
-#content .info_block {
-  padding:17px 20px;
-  position:relative;
-  margin:0 0 20px 0;   
+  top:40px;   
 }
 
 #content .info_block {
   padding:25px 20px;
   position:relative;
-  margin:0 0 20px 0;   
+  margin:0 0 20px 0; 
+  border:1px solid #dbe2e6;    
 }
 
 .type_1 {
-  border:1px solid #dbe2e6;
-  box-shadow: 0px 8px 0px -4px rgba(248, 121, 117, 1) inset; 
-  behavior: url(PIE.htc);  
+  box-shadow: 0px 8px 0px -4px rgba(248, 121, 117, 1) inset;
+  behavior: url(PIE.htc);     
+}
+
+.type_2 {
+  box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;
+  behavior: url(PIE.htc);     
 }
 
 #content .info_block H4 {
   margin:0 0 1em 0;
-  font-size:100%;
   border:none;    
 }
 
 #content .info_block P {
-  font-size:90%;  
+  font-size:14px;  
 }
 
 #content .info_block .add_pad {
@@ -447,8 +444,7 @@ float: right;
   padding:20px;
   display:none;
   min-width:195px;
-  text-align:left;
-  font:100% 'Arial', 'Helvetica', 'sans-serif';   
+  text-align:left;  
   z-index: 101;
 }
 
@@ -468,12 +464,13 @@ float: right;
 }
 
 #content .q H4 {
-  font-size:100%;
+  font:bold 12px 'Arial', 'Helvetica', 'sans-serif';
   margin:0;
   border:none;
 }
 
 #content .q P {
+  font:12px 'Arial', 'Helvetica', 'sans-serif';
   margin:0 0 1em 0;
 }
 
@@ -486,16 +483,21 @@ float: right;
   display:block;
   padding:40px 10px 25px 65px;
   background:#fff;
-  margin:0 0 40px 0;  
+  /*margin:0 0 40px 0;*/
+  border-bottom:1px solid #dbe2e6;    
 }
 
 .main FIELDSET H3 {
   margin:20px 0 40px 0;
-  font:115% 'etelka_mediumregular';   
+  font:18px 'etelka_mediumregular';   
 }
 
 .main FIELDSET H3 A {
   font: 75%/21px 'Arial', 'Helvetica', 'sans-serif';   
+}
+
+.main FIELDSET .clear .fr {
+  padding:0 20px 0 0;  
 }
 
 .placeholder_small {
@@ -544,7 +546,7 @@ float: right;
   position:absolute;
   text-align:center;
   left:0px;
-  font:265% 'etelka_thinregular';  
+  font:40px 'etelka_thinregular';  
 }
 
 #content .point_num IMG {
@@ -618,14 +620,13 @@ float: right;
 }
 
 H4 {
-  font-size:90%;
+  font:bold 14px 'Arial', 'Helvetica', 'sans-serif'; 
   margin:10px 20px 20px 0;
   border-bottom:1px solid #dbe2e6;  
   padding:0 0 10px 0;    
 }
 
 .fields_cover H4 {
-  font-size:90%;
   padding:0 0 10px 0;
   margin:10px 20px 20px 0;
   border-bottom:1px solid #c0e8ff;        
@@ -744,18 +745,17 @@ H4 {
 /**/
 
 .ticket {
-  width:100%;
-  padding: 30px 15px 30px 85px;
+  padding: 30px 0px;
   border-top:1px solid #d0d0d0;
   position:relative;
-  margin:0 -15px 0 -85px; 
+  margin:0 20px 0 0; 
 }
 
 .ticket .sub_title {
   position:relative;
-  padding:0 150px 0 0;
-  font-weight:bold;
+  padding:0 110px 0 0;
   margin:0 0 30px 0;
+  font:bold 100% 'Arial', 'Helvetica', 'sans-serif';  
 }
 
 .ticket .sub_title .fl {
@@ -765,13 +765,13 @@ H4 {
 .ticket .sub_title .btn_cover_r {
   position:absolute;
   top:-12px;
-  right:20px;
+  right:0px;
 }
 
 .ticket .status {
   float:right;
   position:relative;
-  right:-130px;
+  right:-110px;
 }
 
 .ticket .status.pd {
@@ -788,6 +788,7 @@ H4 {
 
 .ticket DL {
   display:table;
+  font: 100% 'Arial', 'Helvetica', 'sans-serif';    
 }
 
 .ticket DT {
@@ -795,13 +796,14 @@ H4 {
   width:295px;
   font-weight:bold;
   color:#5c5c5c;
-  padding:0 0 25px 0;
+  padding:0 0 20px 0;
+  
 }
 
 .ticket DD {
   display:table-cell;
   width:405px;
-  padding:0 0 25px 0;
+  padding:0 0 20px 0;
   color:#5c5c5c;
   line-height:1.5em;  
 }
@@ -854,6 +856,8 @@ H4 {
   background:#fff;
   padding:58px 85px 40px 187px;
   background:#fff 87px 40px no-repeat;
+  border-top:1px solid #dbe2e6;
+  border-bottom:1px solid #dbe2e6;
 } 
 
 .advice H2 {
@@ -981,15 +985,15 @@ H4 {
 /*Variable data*/
 
 .gibdd_shtrafy #content .main FIELDSET {
-  padding:25px 15px 5px 88px;  
+  /*padding:25px 15px 5px 88px;*/  
 }
 
 .nalogovaya_zadoljennost #content .main FIELDSET {
-  padding:25px 15px 0px 88px;  
+  /*padding:25px 15px 0px 88px;*/  
 }
 
 .nalogovaya_zadoljennost #content .ticket {
-  padding: 30px 15px 0px 88px;
+  /*padding: 30px 15px 0px 88px;*/
 }
 
 .proverka_sudebnyh_zadoljennostey {
@@ -997,8 +1001,7 @@ H4 {
 }
 
 .zamena_pasporta_pol #content .main FIELDSET {
-  margin:0;
-  border-bottom:1px solid #dbe2e6; 
+  margin:0; 
 }
 
 .zamena_pasporta_pol #content .group_11 .col_left {
@@ -1027,7 +1030,7 @@ INPUT {
   width:100%;
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
-  font-size:110%;
+  font-size:17px;
   outline: 0;
 }
 
@@ -1092,7 +1095,7 @@ TEXTAREA:focus{
 .btn {
   behavior: url(PIE.htc);
   display:inline-block;
-  margin:0 0 30px 0;
+  margin:0 20px 30px 0;
   border-radius:4px;
   line-height:1em;
   background:#0063b0;
@@ -1119,7 +1122,7 @@ INPUT.btn.big {
 }
 
 INPUT.btn.small {
-  padding:0 20px;
+  /*padding:0 10px;*/
 }
 
 .btn:hover {
