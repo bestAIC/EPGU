@@ -406,7 +406,7 @@ float: right;
 }
 
 #content .info_block H4 {
-  margin:0 0 1.3em 0;
+  margin:0 0 1em 0;
   font-size:100%;
   border:none;    
 }
@@ -468,11 +468,13 @@ float: right;
 }
 
 #content .q H4 {
-
+  font-size:100%;
+  margin:0;
+  border:none;
 }
 
 #content .q P {
-
+  margin:0 0 1em 0;
 }
 
 #content .main {
@@ -597,6 +599,7 @@ float: right;
 }
 
 .fields_cover {
+  display:none;
   position:relative;
   background:#e4f6ff;
   margin: -10px -10px 30px -20px;

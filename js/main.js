@@ -20,7 +20,27 @@ function SForm() {
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
 
+    /*выпадающие поля при выборе пункта*/                
+    $('.jq-radio').click(function(){
+      
+      var root = $(this).parent();
+      var currentIndex = root.index();              
+      var group = root.parent().children().eq(currentIndex+1);
+      
+      if(!$(this).hasClass('lock')){            
+        root.parent().find('.jq-radio').removeClass('lock');     
+        root.parent().find('.fields_cover').slideUp();              
+        if(group.hasClass('fields_cover')){
+          group.slideDown();
+        }                  
+      }
+            
+      $(this).addClass('lock');             
+    });
+                    
+    $('.jq-radio.checked').click();           
 
+     
     
 	}); 
 
@@ -89,6 +109,7 @@ function HideShow(){
     }    
   
   });
+      
 }
 
 function AccordiOn(){

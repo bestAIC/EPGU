@@ -93,8 +93,8 @@
             </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
             </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
             
-            <em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Мужской</label>
-            </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/>
+            <em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Мужской</label>
+            </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Женский</label></em><br/>
             
             <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                                   
           </fieldset>
@@ -144,7 +144,9 @@
 
             <h3>Имеется ли у вас действующий в настоящий момент загранпаспорт?</h3>          
             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="pass" /><label>Да</label></em>
+            <em class="wrapper l_100"><input type="radio" name="pass" checked="checked" id="p_1"/><label for="p_1">Нет</label></em>  
+                        
+            <em class="wrapper l_100"><input type="radio" name="pass" id="p_2"/><label for="p_2">Да</label></em>
             
             <div class="fields_cover">
               <h4>Данные вашего загранпаспорта</h4>
@@ -159,8 +161,7 @@
               <em class="wrapper l_33"><input type="text" placeholder="Действителен до" class="big" /></em>
             
             </div>
-            
-            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Нет</label></em>                               
+                             
           </fieldset>          
                     
           
@@ -169,9 +170,9 @@
 
             <h3>Есть или было ли у вас гражданство другого государства?</h3>          
             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="citizenship" /><label>Нет, я никогда не имел гражданство другого государства</label></em>
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="citizenship" id="c_1"/><label for="c_1">Нет, я никогда не имел гражданство другого государства</label></em>
             
-            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Да, у меня имеется по настоящее время гражданство другого государства</label></em>
+            <em class="wrapper l_100"><input type="radio" name="citizenship" id="c_2"/><label for="c_2">Да, у меня имеется по настоящее время гражданство другого государства</label></em>
             <div class="fields_cover">
               <h4>Укажите страну, и дату получения другого гражданства</h4>
               
@@ -198,7 +199,7 @@
             </div>            
             
             
-            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Да, ранее у меня имелось гражданство другого государства</label></em>
+            <em class="wrapper l_100"><input type="radio" name="citizenship" id="c_3" /><label for="c_3">Да, ранее у меня имелось гражданство другого государства</label></em>
             <div class="fields_cover">
               <h4>Укажите страну, и дату получения другого гражданства</h4>
               
@@ -224,7 +225,7 @@
             
             </div>
             
-            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Я являюсь лицом без гражданства</label></em>           
+            <em class="wrapper l_100"><input type="radio" name="citizenship" id="c_4" /><label for="c_4">Я являюсь лицом без гражданства</label></em>           
                                
           </fieldset> 
           
@@ -240,9 +241,9 @@
               </div></i>
             </h3> 
             
-            <em class="wrapper l_100"><input type="radio" name="family_status" checked="checked" /><label>Никогда не был женат</label></em>                     
+            <em class="wrapper l_100"><input type="radio" name="family_status" checked="checked" id="f_s_1"/><label for="f_s_1">Никогда не был женат</label></em>                     
             
-            <em class="wrapper l_100"><input type="radio" name="family_status" /><label>Женат</label></em>
+            <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_2"/><label for="f_s_2">Женат</label></em>
             <div class="fields_cover">
               <h4>Персональные данные супруга</h4>
               
@@ -265,7 +266,7 @@
             
             </div>                        
             
-            <em class="wrapper l_100"><input type="radio" name="family_status" /><label>Вдовец</label></em>
+            <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_3"/><label for="f_s_3">Вдовец</label></em>
             <div class="fields_cover">
               <h4>Персональные данные супруга</h4>
               
@@ -278,7 +279,7 @@
             
             </div>              
 
-            <em class="wrapper l_100"><input type="radio" name="family_status" /><label>Разведен</label></em>
+            <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_4"/><label for="f_s_4">Разведен</label></em>
             <div class="fields_cover">
               <h4>Персональные данные супруга</h4>
               
@@ -306,9 +307,11 @@
           <fieldset class="group_8">                      
             <span class="point_num">8</span>
 
-            <h3>Есть ли у вас несовершеннолетние дети?</h3>          
+            <h3>Есть ли у вас несовершеннолетние дети?</h3> 
             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="chaild" /><label>Да</label></em>
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="chaild" id="ch_1"/><label for="ch_1">Нет</label></em>                       
+            
+            <em class="wrapper l_100"><input type="radio" name="chaild" id="ch_2"/><label for="ch_2">Да</label></em>
             
             <div class="fields_cover">
               <h4>Укажите страну ФИО ребенка</h4>
@@ -326,8 +329,7 @@
               </a>
             
             </div>
-            
-            <em class="wrapper l_100"><input type="radio" name="citizenship" /><label>Нет</label></em>                               
+                             
           </fieldset>                     
           
           <fieldset class="group_9">                    
@@ -366,7 +368,7 @@
 
             <h3>Куда вы будете подавать оригиналы документов?</h3>          
             
-            <em class="wrapper l_100"><input type="radio" name="place" /><label>по месту жительства (как в паспорте), срок оказания услуги составит 10 дней</label></em>
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="pl_1" /><label for="pl_1">по месту жительства (как в паспорте), срок оказания услуги составит 10 дней</label></em>
             <div class="fields_cover">
 
               <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
@@ -381,7 +383,7 @@
             
             </div>            
             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="place" /><label>по месту пребывания, срок оказания услуги составит до 2-x месяцев</label></em>                        
+            <em class="wrapper l_100"><input type="radio" name="place" id="pl_2" /><label for="pl_2">по месту пребывания, срок оказания услуги составит до 2-x месяцев</label></em>                        
             <div class="fields_cover">
 
               <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
@@ -396,7 +398,7 @@
             
             </div>
             
-            <em class="wrapper l_100"><input type="radio" name="place" /><label>по месту фактического проживания, срок оказания услуги составит 2 месяца</label></em> 
+            <em class="wrapper l_100"><input type="radio" name="place" id="pl_3" /><label for="pl_3">по месту фактического проживания, срок оказания услуги составит 2 месяца</label></em> 
             <div class="fields_cover">
 
               <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
