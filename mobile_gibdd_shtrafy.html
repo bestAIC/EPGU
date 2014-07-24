@@ -61,26 +61,29 @@
                         </div>
 
                         <div class="field_cont">
-                            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big"/>
-                            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big"/>
-                            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big"/></em><br/>
+                            <em class="wrapper l_33 name_inp"><label for="settings01">Водитель / Владелец</label><input id="settings01" type="text" placeholder="Фамилия" value="Константинопольский" class="big"/></em><br/>
                         </div>
 
-                        <em class="wrapper l_83"><input type="text" placeholder="Номер водительского удостоверения" class="big"/>
-                        </em><i class="q"><span class="ico">?</span><div class="bg_c3"><img src="img/doc_group_1.png" alt=""/></div></i><br/>
+                        <em class="wrapper l_83"><label for="settings02">Водительское удостоверение</label><input type="text" placeholder="Номер водительского удостоверения" class="big"/>
+                        </em>
+                        <i class="q"><span class="ico">?</span>
+                            <div>
+                                <img src="img/doc_group_1.png" alt="">
+                            </div>
+                        </i><br/>
                             
-                        <div class="field_name">Номер транспортного средства</div>
                         <div class="field_cont">
                             <em class="wrapper l_100">
-                              <select>
-                                <option>А777АА 777</option>
-                                <option>А999АА 999</option>
-                              </select>                  
+                            <label class="field_name">Номер транспортного средства</label>
+                                <select>
+                                    <option>А777АА 777</option>
+                                    <option>А999АА 999</option>
+                                </select>
                             </em>
                         </div>
                     </fieldset>
 
-                    <div class="clear"><span class="fr"><input class="big btn" type="submit" value="Изменить данные" disabled="disabled"></span></div>
+                    <div class="clear"><span class="fr btn-mr20_phone"><input class="big btn" type="submit" value="Изменить данные" disabled="disabled"></span></div>
 
                     <fieldset class="group_2">                  
                         <span class="point_num">2</span>
@@ -95,7 +98,7 @@
                           </ul>
                         </div>            
                         <div class="ticket">
-                          <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="money fr">5000&nbsp;<nobr class="rouble">Р</nobr></span> <span class="btn_cover_r"><input class="small btn" type="submit" value="Оплатить"></span></div>
+                          <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="money fr">5 000&nbsp;<nobr class="rouble">Р</nobr></span> <span class="btn_cover_r"><input class="small btn" type="submit" value="Оплатить"></span></div>
                           <dl>
                             <dt>Дата и время нарушения</dt>
                             <dd>26.05.2013 в 11:47</dd>
@@ -273,34 +276,44 @@
                 <div class="social_wrap-b form_pl">
                     <div class="social">
                         <b>Поделись удобным сервисом с друзьями:</b>
-                        <a href="#"><img src="img/ico_soc_vk.png"></a>
-                        <a href="#"><img src="img/ico_soc_fb.png"></a>
-                        <a href="#"><img src="img/ico_soc_tw.png"></a>
-                        <a href="#"><img src="img/ico_soc_ok.png"></a>
+                        <div class="social-ico_cont">
+                            <a href="#"><img src="img/ico_soc_vk.png"></a>
+                            <a href="#"><img src="img/ico_soc_fb.png"></a>
+                            <a href="#"><img src="img/ico_soc_tw.png"></a>
+                            <a href="#"><img src="img/ico_soc_ok.png"></a>
+                        </div>
                     </div>
                 </div>
 
 
-
-                <!-- version 2 -->
-
+                <!-- advice type_ok -->
                 <div class="advice type_ok">
                   <h2 class="advice_h">Вы подписаны на уведомление</h2>
                   <p>После восстановления работоспособности сервиса вам будет отправлено автоматическое уведомление по указаным вами контактным данным, 
                   и вы сможете вернутся к получению услуги.</p> 
                 </div>
 
+                <br/>
+                <br/>
+
+                <!-- advice type_like -->
                 <div class="advice type_like">
                   <h2 class="advice_h">Штрафы не найдены</h2>
                 </div>
 
+                <br/>
+                <br/>
+                
+
                 <div class="social_wrap-b form_pl">
                     <div class="social">
                         <b>Поделись удобным сервисом с друзьями:</b>
-                        <a href="#"><img src="img/ico_soc_vk.png"></a>
-                        <a href="#"><img src="img/ico_soc_fb.png"></a>
-                        <a href="#"><img src="img/ico_soc_tw.png"></a>
-                        <a href="#"><img src="img/ico_soc_ok.png"></a>
+                        <div class="social-ico_cont">
+                            <a href="#"><img src="img/ico_soc_vk.png"></a>
+                            <a href="#"><img src="img/ico_soc_fb.png"></a>
+                            <a href="#"><img src="img/ico_soc_tw.png"></a>
+                            <a href="#"><img src="img/ico_soc_ok.png"></a>
+                        </div>
                     </div>
                 </div>
 
@@ -318,21 +331,23 @@
                     </div>
                 </div><!-- switcher_cont -->
 
-                <div class="clear form_pl">
-                    <a href="#" class="btn white fl"><b>Перейти на главную</b></a>
-                </div>
-
+                <!-- advice type_not -->
                 <div class="advice type_not">
                   <h2 class="advice_h">Что-то пошло не так</h2>
                   <p>К сожалению, сервис недоступен. Попробуйте ещё раз позднее. Вы можете подписаться на разовое уведомление о восстановлении работоспособности сервиса. Выберите, как вам отправить уведомление:</p>
 
-                  <form>
-                      <em class="wrapper l_90"><div class="placeholder_small">E-mail</div><input type="text" placeholder="E-mail" value="test@test.ru" class="big btn" disabled="disabled">
-                      </em><input type="checkbox" checked="checked" /><em class="wrapper l_90"><div class="placeholder_small">Контактный телефон</div><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
+                    <form>
+                        <fieldset>
+                          <em class="wrapper l_90"><label for="">Прислать сообщение на телефон</label><div class="placeholder_small">E-mail</div><input type="text" placeholder="E-mail" value="test@test.ru" class="big btn" disabled="disabled">
+                          </em><input type="checkbox" checked="checked" /><em class="wrapper l_90"><label for="">или отправить письмо на почту</label><div class="placeholder_small">Контактный телефон</div><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
+                        </fieldset>
                     </form>
                 </div>
 
-                <!-- /version 2 -->
+                <div class="clear btn-cont_bottom">
+                    <a href="#" class="btn white fl"><b>Перейти на главную</b></a>
+                    <span class="fr"><input class="big btn" type="submit" value="Получить уведомления"></span>
+                </div>
 
             </div><!-- content -->
     </div><!-- cover -->
