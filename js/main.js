@@ -7,6 +7,7 @@ $(document).ready(function() {
   SwitchPoint();  
   PlaceSmall();
   MenuShow();
+  QGalleryMobile();  // галерея при вопросе
 });
 
 
@@ -213,6 +214,22 @@ function MenuShow() {
 	
 }
 
+// question ico mobile
+
+
+function QGalleryMobile(){
+  var quest = $('.js-q_mobile'),
+      cont = $('.js-q_cont')
+
+  quest.on('click', function(){
+    if(quest.hasClass('closed')){
+      quest.addClass('opened').removeClass('closed');
+    } else{
+      quest.addClass('closed').removeClass('opened');
+    }
+  })
+  
+}
 
 
 
