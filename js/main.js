@@ -157,11 +157,11 @@ function PlaceSmall() {
   
   lock_phs = 0;
   
-  $('em.wrapper input').focus(function(){
+  $('em.wrapper input:text').focus(function(){
     lock_phs = 0;
   });    
  
-  $('em.wrapper input').keyup(function(){
+  $('em.wrapper input:text').keyup(function(){
   
       var phs = $(this).attr('placeholder');
     
@@ -178,7 +178,7 @@ function PlaceSmall() {
   });
   
 
-  $('em.wrapper input').blur(function(){
+  $('em.wrapper input:text').blur(function(){
     if (this.value == '') {
       lock_phs = 0;
       $(this).parent().find('.placeholder_small').remove();  
