@@ -22,6 +22,10 @@ BODY {
   z-index: 9;
 } 
 
+#menu_btn .exit{
+  white-space: nowrap;
+}
+
 #header .menu {
   display:none;
 }
@@ -341,15 +345,11 @@ INPUT.btn.small{
 }
 .switcher_cont .switcher{
     position: relative;
-    left: 0;
     top: 4px;
-    width: 86px;
+    left: 0;
 }
 .switcher_cont .switcher .cover DIV{
     height: 36px;
-}
-.switcher_cont .left, .switcher_cont .right{
-    width: 46px;
 }
 .switcher_cont .switcher_txt{
     display: inline-block;
@@ -366,6 +366,9 @@ INPUT.btn.small{
     display: inline-block;
     white-space: nowrap;
 } 
+.social-ico_cont{
+  display: inline-block;
+}
 .social_wrap-b A{
     margin-left: 30px;
 }
@@ -405,6 +408,9 @@ INPUT.btn.small{
 }
 #content .advice INPUT{
     height: 60px;
+}
+#content FIELDSET LABEL{
+  display: none;
 }
 
 
@@ -1295,6 +1301,7 @@ INPUT.btn.small{
   .social-ico_cont{
     margin-left: -20px;
     margin-top: 16px;
+    display: block;
   }
 
 
@@ -1303,21 +1310,39 @@ INPUT.btn.small{
   }
   #content .advice H2{
     font-size: 1.3125em; /*21px*/
-    padding-left: 70px;
+    padding-left: 62px;
     margin-bottom: 12px;
-    min-height: 47px;
+    height: 48px;
   }
   #content .advice P{
     font-size: 0.88em; /*14px*/
+    margin-top: 16px;
     line-height: 1.57em; /*22px*/
+  }
+
+  #content .advice.type_ok H2,
+  #content .advice.type_like H2,
+  #content .advice.type_not H2{
+    background-position: 0 50%;
+    background-size: 17%;
+    background-repeat: no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .type_ok H2{
+    background-image: url('../img/ico_round_ok.png');
+  }
+  .type_like H2{
+    background-image: url('../img/ico_round_like.png');
+  }
+  .type_not H2{
+    background-image: url('../img/ico_round_not.png');
   }
   #content .advice.type_ok,
   #content .advice.type_like,
   #content .advice.type_not{
-    background-position: 30px 20px;
-    background-size: 14%;
-  
-}
+    background: none;
+  }
   .gibdd_shtrafy-tablet #content .advice FORM{
     margin-top: 20px;
   
