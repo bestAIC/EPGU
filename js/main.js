@@ -58,7 +58,7 @@ function PopUp() {
 		}
 	});
  
-  $('.popup_link em').click(function(e) {
+  $('.popup_link .popup_map').click(function(e) {
   
     var choise = "";
   

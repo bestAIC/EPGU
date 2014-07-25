@@ -218,20 +218,28 @@ FORM .wrapper{
     margin-bottom: 20px;
 }
 
-INPUT:focus,
-TEXTAREA:focus{
+#content INPUT:focus,
+#content TEXTAREA:focus{
   behavior: url(PIE.htc);
   box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
   border: 1px solid #addeff;
 }
 
-INPUT.btn.big{
+#content INPUT.btn.big{
   height: 52px;
   margin-bottom: 40px;
+  margin-top: 30px;
+}
+#content INPUT.btn.small{
+  margin-top: 0;
+  font-size: 16px;
+  padding: 0 18px;
+}
+#content FORM .btn.big{
   margin-top: 12px;
 }
-INPUT.btn.small{
-  margin-top: 0;
+#content FIELDSET LABEL{
+  display: none;
 }
 
 .jq-selectbox{
@@ -263,6 +271,12 @@ INPUT.btn.small{
 
 .big_inp-form .cover_info_title{
     margin-bottom: 14px;
+}
+.big_inp-form .cover_info_title p{
+    margin-top: 20px;
+}
+.big_inp-form .cover_info_title .selector{
+    margin-top: 28px;
 }
 
 .big_inp-form .point_num{
@@ -352,15 +366,17 @@ INPUT.btn.small{
 
 
 .big_inp-form .ticket {
-    padding: 26px 0px 30px 0px;
+    padding: 30px 0;
     margin: 0 -15px 0 0px;
-    font-size: 0.94em;
+    font-size: 15px;
 }
-.big_inp-form .ticket .btn_cover_r{
-    right: 8px;
+.ticket .sub_title .btn_cover_r{
+    right: 12px;
+    top: -10px;
 }
 .big_inp-form .ticket .sub_title{
     margin-bottom: 20px;
+    padding-right: 126px;
 }
 .big_inp-form .ticket dt{
     width: 225px;
@@ -368,6 +384,21 @@ INPUT.btn.small{
 .big_inp-form .ticket dt,
 .big_inp-form .ticket dd{
     padding-bottom: 20px;
+    position: relative;
+}
+.big_inp-form dd .popup_link{
+  position: absolute;
+  top: 0;
+  right: -132px;
+  margin: 0;
+}
+.big_inp-form dd .popup_link .btn{
+  padding: ;
+}
+.big_inp-form dd .popup_link B{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 18px;
 }
 .big_inp-form .slide_up:after, .big_inp-form .slide_down:after{
     right: -24px;
@@ -452,17 +483,25 @@ INPUT.btn.small{
 }
 #content .advice P{
     color: #5A6473;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.63em;
+    margin-bottom: 30px;
 }
 #content .advice FORM{
-    margin: 25px 0 15px;   
+    margin: 12px 0 0px;   
+}
+#content .advice FIELDSET{
+  border-top: none;
+  margin-bottom: 18px;
+}
+#content .advice .wrapper{
+  margin-top: 30px;
+}
+#content .advice .wrapper:first-child{
+  margin-top: 0px;
 }
 #content .advice INPUT{
     height: 60px;
-}
-#content FIELDSET LABEL{
-  display: none;
 }
 
 
