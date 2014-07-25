@@ -291,13 +291,51 @@ INPUT.btn.small{
 .main.big_inp-form .q .ico{
     vertical-align: middle;
     line-height: 36px;
+    padding: 14px;
 }
 
-.q_cont-tablet{
-  display: none;
+.main.big_inp-form .ico.opened + DIV{
+  display: block;
+  left: -645px;
+  width: 770px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  top: 54px;
 }
+.main.big_inp-form .ico.opened + DIV:before{
+  position: absolute;
+  display: block;
+  content: '';
+  left: 85%;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: url('../img/corners_cloud_2.png') 0 0 no-repeat;
+}
+
+
+/* q_jcarousel */
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+}
+
+/* q_jcarousel */
+
 
 /* /quest-block */
+
 
 
 

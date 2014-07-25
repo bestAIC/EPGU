@@ -7,7 +7,7 @@ $(document).ready(function() {
   SwitchPoint();  
   PlaceSmall();
   MenuShow();
-  QGalleryMobile();  // галерея при вопросе
+  ResponseGallery(); // Slick Galery
 });
 
 
@@ -218,18 +218,58 @@ function MenuShow() {
 
 
 function QGalleryMobile(){
-  var quest = $('.js-q_mobile'),
-      cont = $('.js-q_cont')
+  var quest = $('.js-q-ico'),
+      cont = $('.js-q div')
 
   quest.on('click', function(){
     if(quest.hasClass('closed')){
-      quest.addClass('opened').removeClass('closed');
+      quest.addClass('opened').removeClass('closed'); 
+
     } else{
       quest.addClass('closed').removeClass('opened');
     }
   })
   
 }
+
+
+
+function ResponseGallery(){
+  $('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+}
+
+
 
 
 
