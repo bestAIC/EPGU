@@ -12,6 +12,7 @@
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/mobile_main.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 
 </head>
 <body>
@@ -56,20 +57,28 @@
                         <span class="point_num">1</span>
                         <h3>Персональные данные</h3>
 
-                        <div class="info_bloc-w100 yellow">
-                            <p><b>Обратите внимание</b></p>
-                            <p>Чтобы получить полную информацию о штрафах, рекомендуем заполнить все поля</p>
-                        </div>
-
                         <div class="field_cont">
-                            <em class="wrapper l_33 name_inp"><label for="settings01">Водитель / Владелец</label><input id="settings01" type="text" placeholder="Фамилия" value="Константинопольский" class="big"/></em><br/>
+                            <em class="wrapper l_100 name_inp"><label for="settings01">Водитель / Владелец</label><input id="settings01" type="text" placeholder="Фамилия" value="Константинопольский" class="big"/></em><br/>
+                        </div>
+                        
+                        <div class="info-block_wrap">
+                            <div class="info_bloc-w100 yellow">
+                                <p class="info-block_h"><b>Обратите внимание</b></p>
+                                <p>Чтобы получить полную информацию о штрафах, рекомендуем заполнить все поля</p>
+                                <span class="icomoon">"</span>
+                            </div>
                         </div>
 
                         <em class="wrapper l_83"><label for="settings02">Водительское удостоверение</label><input type="text" placeholder="Номер водительского удостоверения" class="big"/>
                         </em>
-                        <i class="q"><span class="ico">?</span>
-                            <div>
-                                <img src="img/doc_group_1.png" alt="">
+                        <i class="q"><span class="ico js-q-ico closed">?</span>
+                            <div class="bg_c3 q_jcarousel js-q_slick slick">
+                                <div><img src="pic/pic_1.jpg" alt="" /></div>
+                                <div><img src="pic/pic_2.jpg" alt="" /></div>
+                                <div><img src="pic/pic_3.jpg" alt="" /></div>
+                                <div><img src="pic/pic_1.jpg" alt="" /></div>
+                                <div><img src="pic/pic_2.jpg" alt="" /></div>
+                                <div><img src="pic/pic_3.jpg" alt="" /></div>
                             </div>
                         </i><br/>
                             
@@ -107,7 +116,7 @@
                           <dl>
                             <dt>Место нарушения</dt>
                             <dd>г.Москва, Садовое кольцо, внутрен., Самотечная эстакада, Садово-Сухаревская ул. д. 4
-                              <p><span class="pseudo popup_link"><em class="popup_map">На карте</em></span></p>
+                              <a href="#" class="btn white popup_link"><b class="popup_map">На карте</b></a>
                             </dd>
                           </dl>
 
@@ -147,7 +156,7 @@
                           <dl>
                             <dt>Место нарушения</dt>
                             <dd>г.Москва, Садовое кольцо, внутрен., Самотечная эстакада, Садово-Сухаревская ул. д. 4
-                              <p><span class="pseudo popup_link"><em class="popup_map">На карте</em></span></p>
+                              <a href="#" class="btn white popup_link"><b class="popup_map">На карте</b></a>
                             </dd>
                           </dl>
 
@@ -187,7 +196,7 @@
                           <dl>
                             <dt>Место нарушения</dt>
                             <dd>г.Москва, Садовое кольцо, внутрен., Самотечная эстакада, Садово-Сухаревская ул. д. 4
-                              <p><span class="pseudo popup_link"><em class="popup_map">На карте</em></span></p>
+                              <a href="#" class="btn white popup_link"><b class="popup_map">На карте</b></a>
                             </dd>
                           </dl>
 
@@ -227,7 +236,7 @@
                           <dl>
                             <dt>Место нарушения</dt>
                             <dd>г.Москва, Садовое кольцо, внутрен., Самотечная эстакада, Садово-Сухаревская ул. д. 4
-                              <p><span class="pseudo popup_link"><em class="popup_map">На карте</em></span></p>
+                              <a href="#" class="btn white popup_link"><b class="popup_map">На карте</b></a>
                             </dd>
                           </dl>
 
@@ -278,10 +287,10 @@
                     <div class="social">
                         <b>Поделись удобным сервисом с друзьями:</b>
                         <div class="social-ico_cont">
-                            <a href="#"><img src="img/ico_soc_vk.png"></a>
-                            <a href="#"><img src="img/ico_soc_fb.png"></a>
-                            <a href="#"><img src="img/ico_soc_tw.png"></a>
-                            <a href="#"><img src="img/ico_soc_ok.png"></a>
+                            <a href="#"><span class="icomoon">#</span></a>
+                            <a href="#"><span class="icomoon">$</span></a>
+                            <a href="#"><span class="icomoon">%</span></a>
+                            <a href="#"><span class="icomoon">&</span></a>
                         </div>
                     </div>
                 </div>
@@ -301,19 +310,16 @@
                 <div class="advice type_like">
                   <h2 class="advice_h">Штрафы не найдены</h2>
                 </div>
-
-                <br/>
-                <br/>
                 
 
                 <div class="social_wrap-b form_pl">
                     <div class="social">
                         <b>Поделись удобным сервисом с друзьями:</b>
                         <div class="social-ico_cont">
-                            <a href="#"><img src="img/ico_soc_vk.png"></a>
-                            <a href="#"><img src="img/ico_soc_fb.png"></a>
-                            <a href="#"><img src="img/ico_soc_tw.png"></a>
-                            <a href="#"><img src="img/ico_soc_ok.png"></a>
+                            <a href="#"><span class="icomoon">#</span></a>
+                            <a href="#"><span class="icomoon">$</span></a>
+                            <a href="#"><span class="icomoon">%</span></a>
+                            <a href="#"><span class="icomoon">&</span></a>
                         </div>
                     </div>
                 </div>
@@ -328,19 +334,18 @@
                       </div>
                     </div>
                     <div class="switcher_txt l_66">
-                        <p>Подключите информер, и информация о штрафах будет отображаться на главной странице портала.</p>
+                        <p>Включите, чтобы всегда видеть штрафы на главной странице</p>
                     </div>
                 </div><!-- switcher_cont -->
 
                 <!-- advice type_not -->
                 <div class="advice type_not">
                   <h2 class="advice_h">Что-то пошло не так</h2>
-                  <p>К сожалению, сервис недоступен. Попробуйте ещё раз позднее. Вы можете подписаться на разовое уведомление о восстановлении работоспособности сервиса. Выберите, как вам отправить уведомление:</p>
+                  <p>К сожалению, сейчас услуга недоступна. Попробуйте позднее или подпишитесь на разовое уведомление - мы оповестим вас, как только услуга заработает</p>
 
                     <form>
                         <fieldset>
-                          <em class="wrapper l_90"><label for="">Прислать сообщение на телефон</label><div class="placeholder_small">E-mail</div><input type="text" placeholder="E-mail" value="test@test.ru" class="big btn" disabled="disabled">
-                          </em><input type="checkbox" checked="checked" /><em class="wrapper l_90"><label for="">или отправить письмо на почту</label><div class="placeholder_small">Контактный телефон</div><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
+                          <em class="wrapper l_90"><label for="">Прислать сообщение на телефон</label><div class="placeholder_small">E-mail</div><input type="text" placeholder="E-mail" value="test@test.ru" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" /><em class="wrapper l_90"><label for="">или отправить письмо на почту</label><div class="placeholder_small">Контактный телефон</div><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
                         </fieldset>
                     </form>
                 </div>
