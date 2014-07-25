@@ -1056,12 +1056,6 @@ INPUT.big {
   padding:0 20px;
 }
 
-TEXTAREA.big {
-  height:54px;
-  padding:0px 20px;
-  outline: 0;
-}
-
 INPUT.small {
   height:40px;
   padding:0px 10px;
@@ -1072,17 +1066,25 @@ TEXTAREA{
   behavior: url(PIE.htc);
   resize: none;
   width: 100%;
-  min-height: 152px;
+  min-height: 215px;
   box-sizing: border-box;
+  -moz-box-sizing:border-box;  
   font-size: 115%;
-  padding: 14px 20px;
+  padding: 15px 20px;
   border: 1px solid #d0d0d0;
   outline: none;
 }
+
 TEXTAREA:focus{
   behavior: url(PIE.htc);
   box-shadow: 0px 0px 0px 4px rgba(173, 222, 255, 1);
   border: 1px solid #addeff;
+}
+
+TEXTAREA.big {
+  height:54px;
+  padding:0px 20px;
+  outline: 0;
 }
 
 .btn.small B {
@@ -1164,6 +1166,12 @@ INPUT.btn.small {
 
 LABEL {
   margin:0 0 0 15px;
+}
+
+#drop_zone {
+  min-height:100px;
+  padding:15px 20px;
+  border:1px dashed #d0d0d0;
 }
 
 
