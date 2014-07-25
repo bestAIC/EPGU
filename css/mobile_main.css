@@ -30,8 +30,11 @@ BODY {
   display:none;
 }
 
-#header .top {
+#header .top.blue {
   border-bottom: 4px solid #257CB1;
+}
+#header .top.magenta{
+  border-bottom: 4px solid #c00e4b;
 }
 
 #header .logo {
@@ -213,6 +216,9 @@ FORM .wrapper{
   padding: 42px 0px 0px 50px;
   border-bottom: none;
 }
+.main FIELDSET:last-of-type{
+  border-top: 1px solid #DBE2E6;
+}
 
 .main .big_inp-form FIELDSET{
     margin-bottom: 20px;
@@ -244,8 +250,14 @@ FORM .wrapper{
 .btn.larr{
   margin-top: 12px;
 }
+#content FORM .btn-mr20_phone{
+  margin-right: -20px;
+}
 #content FIELDSET LABEL{
   display: none;
+}
+.main FIELDSET .fr.btn_field{
+  padding-right: 0;
 }
 
 .jq-selectbox{
@@ -307,6 +319,9 @@ FORM .wrapper{
   margin-top: 16px;
   margin-bottom: 14px;
 }
+.info-block_wrap + .ticket{
+  margin-top: 30px;
+}
 #content .info-block_wrap .info_block{
     padding: 15px 68px 18px 20px;
     position: relative;
@@ -326,8 +341,13 @@ FORM .wrapper{
   position: absolute;
   right: 10px;
   top: 15px;
-  color: #FFC200;
   font-size: 30px;
+}
+.info-block_wrap .type_1 span.icomoon{
+  color: #f77975;
+}
+.info-block_wrap .type_2 span.icomoon{
+  color: #FFC200;
 }
 
 
@@ -375,7 +395,7 @@ FORM .wrapper{
 
 .ticket {
     padding: 30px 0;
-    margin: 0 -15px 0 0px;
+    margin: 0;
     font-size: 15px;
 }
 .ticket .sub_title .btn_cover_r{
@@ -397,7 +417,7 @@ FORM .wrapper{
 dd .popup_link{
   position: absolute;
   top: 0;
-  right: -132px;
+  right: -116px;
   margin: 0;
 }
 .ticket dd .popup_link .btn{
@@ -419,7 +439,7 @@ dd .popup_link{
 
 
 .switcher_cont{
-    padding: 40px 0 40px 30px;
+    padding: 40px 0 40px 50px;
     white-space: nowrap;
     border-top: 1px solid #DBE2E6;
     border-bottom: 1px solid #DBE2E6;
@@ -454,7 +474,6 @@ dd .popup_link{
 .social_wrap-b .social{
     height: 56px;
     padding: 40px 0;
-    padding-left: 20px;
     display: inline-block;
     white-space: nowrap;
     margin-bottom: 0;
@@ -516,8 +535,7 @@ dd .popup_link{
     height: 60px;
 }
 
-
-.form_pl{
+.social_wrap-b{
     padding-left: 50px;
 }
 
@@ -681,6 +699,7 @@ dd .popup_link{
 
 #content{
   padding: 0;
+  margin-bottom: 40px;
 }
 
 FIELDSET{
@@ -1050,8 +1069,8 @@ FIELDSET{
     margin-top: 30px;
   }
   
-  .form_pl{
-    padding-left: 28px;
+  .social_wrap-b{
+    padding-left: 50px;
   }
 
   .field_cont .l_33{
@@ -1059,10 +1078,11 @@ FIELDSET{
   }
 
   .ticket .sub_title .fl{
-    width: 370px;
+    width: 350px;
+    line-height: 22px;
   }
   .ticket .sub_title{
-    padding-right: 120px;
+    padding-right: 130px;
   }
 
   .social_wrap-b B{
@@ -1070,7 +1090,7 @@ FIELDSET{
   }
 
   .switcher_cont{
-    padding: 40px 0 26px 48px;
+    padding: 40px 0 26px 50px;
   }
 
  
@@ -1222,7 +1242,7 @@ FIELDSET{
   }
   
   #content {
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
     width: 320px;
   }      
 
@@ -1273,7 +1293,7 @@ FIELDSET{
   #content .title.medium{
     padding-left: 0;
     height: 100%;
-    margin: 20px 0;
+    margin: 0px 0 20px;
     padding: 0 20px;
   }
   #content .title.medium IMG{
@@ -1311,6 +1331,9 @@ FIELDSET{
     height: 50px;
     padding: 0 15px;
   }
+  #content FORM .btn-mr20_phone{
+    margin-right: 0;
+  }
   .jq-selectbox__select{
     line-height: 54px;
   }
@@ -1322,11 +1345,7 @@ FIELDSET{
   }
   
 
-  #content .main FIELDSET{
-    padding: 20px 0px 10px 20px;
-    margin-bottom: 18px;
-  }
-  .gibdd_shtrafy-tablet #content FIELDSET{
+  #content FIELDSET{
     padding: 26px 0px 10px;
     margin-bottom: 0;
     border-top: 1px solid #DBE2E6;
@@ -1361,11 +1380,7 @@ FIELDSET{
   
   .mobile_nalogovaya_zadoljennost .clear .fr {
     float:none;
-  }
-  
-  .mobile_nalogovaya_zadoljennost .clear {
-    padding: 0 20px 0 0;
-  }            
+  }        
 
   FORM .wrapper{
     margin: 0 0 8px 0;
@@ -1391,6 +1406,7 @@ FIELDSET{
     font-size: 18px;
     padding: 0 20px;
     margin-bottom: 32px;
+    margin-top: 24px;
   }
   
   TEXTAREA{
@@ -1474,6 +1490,7 @@ FIELDSET{
     position: relative;
     padding: 38px 0 54px;
     padding-left: 20px;
+    margin-right: 0;
   }
   .ticket .sub_title{
     position: static;
@@ -1492,7 +1509,7 @@ FIELDSET{
   .ticket .sub_title .btn_cover_r{
     position: absolute;
     bottom: 20px;
-    right: 36px;
+    right: 20px;
     top: auto;
   }
   .ticket .sub_title .btn_cover_r INPUT{
@@ -1518,17 +1535,17 @@ FIELDSET{
   }
   .ticket .status.pd{
     position: absolute;
-    right: 36px;
+    right: 20px;
     bottom: 22px;
   }
   .ticket .status.processing{
     position: absolute;
+    right: 20px;
     bottom: 22px;
-    right: 36px;
   }
 
 
-  .social_wrap-b.form_pl{
+  .social_wrap-b{
     padding-left: 0;
   }
   .social_wrap-b .social{
@@ -1612,16 +1629,16 @@ FIELDSET{
     display: none;
   }
   
-  .btn-cont_bottom{
+  .btn-cont_inner{
     padding: 0 20px;
     margin-top: -1px;
     border-top: 1px solid #fff;
 }
-  .btn-cont_bottom .btn{
+  .btn-cont_inner .btn{
     width: 280px;
     float: none;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
