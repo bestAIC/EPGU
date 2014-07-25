@@ -305,11 +305,11 @@ FORM .wrapper{
   margin-top: 16px;
   margin-bottom: 14px;
 }
-.info-block_wrap .info_bloc-w100.yellow{
+#content .info-block_wrap .info_block{
     padding: 15px 68px 18px 20px;
-    border-top: 4px solid #FFC200;
-    margin-top: -1px;
     position: relative;
+    margin: 0;
+    border: 0;
 }
 .info-block_wrap .info-block_h{
   margin-bottom: 16px;
@@ -376,7 +376,7 @@ FORM .wrapper{
 
 
 
-.big_inp-form .ticket {
+.ticket {
     padding: 30px 0;
     margin: 0 -15px 0 0px;
     font-size: 15px;
@@ -385,28 +385,28 @@ FORM .wrapper{
     right: 12px;
     top: -10px;
 }
-.big_inp-form .ticket .sub_title{
+.ticket .sub_title{
     margin-bottom: 20px;
     padding-right: 126px;
 }
-.big_inp-form .ticket dt{
+.ticket dt{
     width: 225px;
 }
-.big_inp-form .ticket dt,
-.big_inp-form .ticket dd{
+.ticket dt,
+.ticket dd{
     padding-bottom: 20px;
     position: relative;
 }
-.big_inp-form dd .popup_link{
+dd .popup_link{
   position: absolute;
   top: 0;
   right: -132px;
   margin: 0;
 }
-.big_inp-form dd .popup_link .btn{
+.ticket dd .popup_link .btn{
   padding: ;
 }
-.big_inp-form dd .popup_link B{
+.ticket dd .popup_link B{
   height: 40px;
   line-height: 40px;
   padding: 0 18px;
@@ -914,10 +914,10 @@ FORM .wrapper{
     border: 1px solid #addeff;
   }
 
-  .big_inp-form .ticket dt{
+  .ticket dt{
     width: 225px;
   }
-  .big_inp-form .ticket dd{
+  .ticket dd{
     width: 245px;
   }
 
@@ -1062,7 +1062,7 @@ FORM .wrapper{
   .ticket .sub_title .fl{
     width: 370px;
   }
-  .big_inp-form .ticket .sub_title{
+  .ticket .sub_title{
     padding-right: 140px;
   }
 
@@ -1409,6 +1409,44 @@ FORM .wrapper{
     margin-left: 0;
     margin-top: 20px;
     width: 100%;
+  }
+
+  .ticket{
+    position: relative;
+    padding: 16px 0 54px;
+  }
+  .ticket .sub_title{
+    position: static;
+    padding-right: 0;
+  }
+  .ticket .sub_title .fl{
+    width: 250px;
+  }
+  .ticket .money{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+  }
+  .ticket .sub_title .btn_cover_r{
+    position: absolute;
+    bottom: 20px;
+    right: -2px;
+    top: auto;
+  }
+  .ticket .sub_title .btn_cover_r INPUT{
+    margin-bottom: 0;
+  }
+  .ticket DL DT{
+    display: none;
+  }
+  .ticket DL DD .popup_link{
+    display: none;
+  }
+  .ticket DL.ticket_date DD{
+    font-size: 12px;
+  }
+  .ticket .more_info{
+    display: none;
   }
 
 

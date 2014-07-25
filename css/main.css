@@ -428,6 +428,10 @@ float: right;
   box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;
   behavior: url(PIE.htc);     
 }
+.color_type {
+  box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;
+  behavior: url(PIE.htc);     
+}
 
 #content .info_block H4 {
   margin:0 0 1em 0;
