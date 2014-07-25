@@ -31,7 +31,7 @@ BODY {
 }
 
 #header .top {
-  border-bottom: 1px solid #eee;
+  border-bottom: 4px solid #257CB1;
 }
 
 #header .logo {
@@ -45,7 +45,7 @@ BODY {
 }
 
 #header .nav LI {
-  height: 70px;
+  height: 66px;
 }
 
 
@@ -185,7 +185,7 @@ BODY {
   height: 38px;
   display: table;
   vertical-align: middle;
-  margin: 20px -255px 20px 0;
+  margin: 30px -255px 30px 0;
   padding: 0 0 0 46px;
   border-bottom: none;
 }
@@ -210,7 +210,7 @@ FORM .wrapper{
 }
 
 .main FIELDSET{
-  padding: 20px 10px 4px 30px;
+  padding: 42px 0px 4px 50px;
   margin-bottom: 10px;
 }
 
@@ -234,7 +234,7 @@ INPUT.btn.small{
 }
 
 .big_inp-form INPUT{
-   height: 50px;
+   height: 60px;
 }
 
 .big_inp-form INPUT.btn.small{
@@ -245,7 +245,7 @@ INPUT.btn.small{
 }
 
 .big_inp-form FIELDSET H3{
-    margin: 12px 0 20px 0;
+    margin: 12px 0 3px 0;
 }
 
 .big_inp-form .selector LI{
@@ -265,15 +265,32 @@ INPUT.btn.small{
     margin-right: -20px;
 }
 
-.info_bloc-w100.yellow{
-    background: #FFF3AC;
-    padding: 15px 68px 20px 20px;
-    margin-bottom: 14px;
+
+.info-block_wrap{
+  border: 1px solid #d0d0d0;
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+.info-block_wrap .info_bloc-w100.yellow{
+    padding: 15px 68px 18px 20px;
+    border-top: 4px solid #FFC200;
+    margin-top: -1px;
+    position: relative;
+}
+.info-block_wrap .info-block_h{
+  margin-bottom: 16px;
 }
 
 .big_inp-form .field_name{
     color: #A5AEB3;
     font-size: 12px;
+}
+.info-block_wrap span.icomoon{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #FFC200;
+  font-size: 30px;
 }
 
 
@@ -316,20 +333,6 @@ INPUT.btn.small{
 
 /* q_jcarousel */
 
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-}
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.jcarousel li {
-    float: left;
-}
 
 /* q_jcarousel */
 

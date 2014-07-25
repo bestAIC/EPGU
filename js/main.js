@@ -235,7 +235,7 @@ function QGalleryMobile(){
 
 
 function ResponseGallery(){
-  $('.responsive').slick({
+  $('.js-q_slick').slick({
     dots: true,
     infinite: false,
     speed: 300,
