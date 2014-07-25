@@ -1,7 +1,8 @@
 // Inits
 $(document).ready(function() {
   RetinaDisplay(); 
-  MenuShowMobile();   
+  MenuShowMobile();
+  ResponseGallery(); // Slick Galery    
 });
 
 
@@ -43,5 +44,46 @@ function MenuShowMobile(){
     }   
   })
    
+}
+
+// question ico mobile
+function ResponseGallery(){
+
+if($('.js-q_slick').length) {
+
+  $('.js-q_slick').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+}  
+  
 }
 

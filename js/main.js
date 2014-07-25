@@ -3,11 +3,9 @@ $(document).ready(function() {
   SForm(); 
   PopUp();
   HideShow();
-  AccordiOn();
   SwitchPoint();  
   PlaceSmall();
   MenuShow();
-  ResponseGallery(); // Slick Galery
 });
 
 
@@ -113,22 +111,6 @@ function HideShow(){
       
 }
 
-function AccordiOn(){
-  $('.accordion dt').click(function(){
-    var root = $(this).parent();
-    if($(this).hasClass('active')){
-      root.find('dd').slideUp();
-      root.find('dt').removeClass('active');
-    } else {
-      var currentIndex = $(this).index();
-      root.find('dd').slideUp();
-      root.find('dt').removeClass('active');
-      $(this).addClass('active');
-      root.children().eq(currentIndex+1).slideDown();
-    }
-  });
-}
-
 function SwitchPoint(){
   $('.selector li').click(function(){
     $(this).parent().find('li').removeClass('active');
@@ -212,61 +194,6 @@ function MenuShow() {
   	event.stopPropagation();
   })
 	
-}
-
-// question ico mobile
-
-
-function QGalleryMobile(){
-  var quest = $('.js-q-ico'),
-      cont = $('.js-q div')
-
-  quest.on('click', function(){
-    if(quest.hasClass('closed')){
-      quest.addClass('opened').removeClass('closed'); 
-
-    } else{
-      quest.addClass('closed').removeClass('opened');
-    }
-  })
-  
-}
-
-
-
-function ResponseGallery(){
-  $('.js-q_slick').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
 }
 
 
