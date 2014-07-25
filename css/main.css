@@ -514,6 +514,10 @@ float: right;
   border-bottom:1px solid #dbe2e6;    
 }
 
+.main FIELDSET:last-of-type {
+  border:none;
+}
+
 .main FIELDSET H3 {
   margin:20px 0 40px 0;
   font:18px 'etelka_mediumregular';   
@@ -566,6 +570,10 @@ float: right;
   color:#485158;
   right:20px;
   bottom:-20px;
+}
+
+#content .wrapper + H3 {
+  margin:10px 0 30px 0;
 }
 
 .point_num {
@@ -1096,7 +1104,7 @@ TEXTAREA{
   min-height: 215px;
   box-sizing: border-box;
   -moz-box-sizing:border-box;  
-  font-size: 115%;
+  font: 115% 'Arial', 'Helvetica', 'sans-serif';  
   padding: 15px 20px;
   border: 1px solid #d0d0d0;
   outline: none;
@@ -1197,8 +1205,107 @@ LABEL {
 
 #drop_zone {
   min-height:100px;
-  padding:15px 20px;
+  padding:20px 45px;
   border:1px dashed #d0d0d0;
+}
+
+#drop_zone H4 {
+  position:relative;
+  color:#b1b2b4;
+  border:none;
+  margin:0 0 10px 0;     
+}
+
+#drop_zone H4:before {
+  position:absolute;
+  display:inline-block;
+  left:-45px;
+  font:50px 'icomoon-epga'; 
+  content:"\'";
+  top:-18px;
+  color:#b1b2b4;  
+}
+
+#drop_zone P {
+  position:relative;
+  font-weight:bold;
+  color:#b1b2b4;
+  margin:0 0 15px 0;
+  padding:0 0 0 20px; 
+}
+
+#drop_zone P:before {
+  position:absolute;
+  display:inline-block;
+  left:0px;
+  font:10px 'icomoon-epga'; 
+  content:"(";
+  top:5px;
+  color:#be081e;
+  cursor:pointer;  
+}
+
+#drop_zone P:last-of-type {
+  color:#000;
+}
+
+#drop_zone .file_progress_line {
+  border: 1px solid #eeeff0;
+  border-radius: 5px;
+  display:inline-block;
+  height: 8px;
+  width: 65px;
+  margin:0 0 0 10px;
+}
+
+#drop_zone .file_progress_line SPAN {
+  background: none repeat scroll 0 0 #689f38;
+  border-radius: 5px;
+  display: block;
+  height: 10px;
+  margin-top: -1px;
+}
+
+#drop_zone .file_error {
+  color: #d0021b;
+  font-size: 14px;
+  line-height: 1;
+  position:relative;
+  padding:0 0 0 20px; 
+  margin:0 0 0 10px;
+  font-weight:normal;   
+}
+
+#drop_zone .file_error:before {
+  position:absolute;
+  display:inline-block;
+  left:1px;
+  font:12px 'icomoon-epga'; 
+  content:"*";
+  top:1px;
+  color:#be081e;
+  cursor:pointer;  
+}
+
+#drop_zone .file_done {
+  color:#b1b2b4;
+  font-size: 14px;
+  line-height: 1;
+  position:relative;
+  padding:0 0 0 20px; 
+  margin:0 0 0 10px;
+  font-weight:normal;   
+}
+
+#drop_zone .file_done:before {
+  position:absolute;
+  display:inline-block;
+  left:0px;
+  font:10px 'icomoon-epga'; 
+  content:")";
+  top:3px;
+  color:#67a039;
+  cursor:pointer;  
 }
 
 
