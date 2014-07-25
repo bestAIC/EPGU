@@ -240,7 +240,8 @@ FORM .wrapper{
   font-size: 16px;
   padding: 0 18px;
 }
-#content FORM .btn.big{
+#content FORM .btn.big, 
+.btn.larr{
   margin-top: 12px;
 }
 #content FIELDSET LABEL{
@@ -291,7 +292,7 @@ FORM .wrapper{
 }
 
 .big_inp-form .point_num{
-    left: -12px;
+    /*left: -12px;*/
     font-size: 32px;
 }
 
@@ -365,12 +366,6 @@ FORM .wrapper{
 }
 
 
-/* q_jcarousel */
-
-
-/* q_jcarousel */
-
-
 /* /quest-block */
 
 
@@ -404,7 +399,7 @@ dd .popup_link{
   margin: 0;
 }
 .ticket dd .popup_link .btn{
-  padding: ;
+
 }
 .ticket dd .popup_link B{
   height: 40px;
@@ -682,22 +677,17 @@ dd .popup_link{
 /* /obratnaya_svyaz */
 
 
-/* gibdd_shtrafy-tablet */
-
-.gibdd_shtrafy-tablet #content{
+#content{
   padding: 0;
 }
-.gibdd_shtrafy-tablet FORM{
-  margin: 12px 0px 10px;
-}
-.gibdd_shtrafy-tablet FIELDSET{
+
+FIELDSET{
     border-top: 1px solid #DBE2E6;
 }
-.gibdd_shtrafy-tablet .field_name{
+.field_name{
     margin-top: 4px;
 }
 
-/* /gibdd_shtrafy-tablet */
 
 
 
@@ -789,6 +779,10 @@ dd .popup_link{
 .btn B {
   height:50px;
   line-height:50px;  
+}
+
+.wrapper .btn {
+  margin:0px;
 }
 
 
@@ -1327,11 +1321,38 @@ dd .popup_link{
   .info-block_wrap{
     display: none;
   }
+  
+  .mobile_proverka_sudebnyh_zadoljennostey .wrapper.l_33{
+    width:100%;
+  }
+  
+  .mobile_nalogovaya_zadoljennost .wrapper.l_33,
+  .mobile_nalogovaya_zadoljennost .wrapper.l_50 {
+    width:100%;
+  }
+  
+  .mobile_nalogovaya_zadoljennost .wrapper .btn {
+    width:100%;
+    text-align:center;
+  }
+  
+  .mobile_nalogovaya_zadoljennost .btn.larr {
+    width:100%;
+    text-align:center;
+  }  
+  
+  .mobile_nalogovaya_zadoljennost .clear .fr {
+    float:none;
+  }
+  
+  .mobile_nalogovaya_zadoljennost .clear {
+    padding: 0 20px 0 0;
+  }            
 
   FORM .wrapper{
     margin: 0 0 8px 0;
   }
-  FORM .wrapper.l_50{
+  .gibdd_shtrafy-tablet .wrapper.l_50{
     width: 100%;
   }
   FORM.big_inp-form .wrapper{

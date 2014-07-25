@@ -1142,6 +1142,8 @@ TEXTAREA.big {
   color:#fff;
   cursor:pointer;  
   outline: 0;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;   
 }
 
 .btn B {
