@@ -41,7 +41,7 @@ BODY {
 }
 
 #header .nav {
-  width: 945px;
+  width: 808px;
 }
 
 #header .nav LI {
@@ -221,8 +221,13 @@ FORM .wrapper{
 #content INPUT:focus,
 #content TEXTAREA:focus{
   behavior: url(PIE.htc);
-  box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
+  box-shadow: 0px 0px 0px 4px rgba(173, 222, 255, 1);
   border: 1px solid #addeff;
+}
+
+#content INPUT.btn:focus{
+  border: 1px solid transparent;
+  box-shadow: none;
 }
 
 #content INPUT.btn.big{
@@ -247,6 +252,9 @@ FORM .wrapper{
 }
 .jq-selectbox__select{
   border-radius: 0;
+  height: 60px;
+}
+.jq-selectbox__select-text{
   height: 60px;
 }
 
@@ -274,6 +282,9 @@ FORM .wrapper{
 }
 .big_inp-form .cover_info_title p{
     margin-top: 20px;
+}
+.big_inp-form .cover_info_title .price{
+  display: inline-block;
 }
 .big_inp-form .cover_info_title .selector{
     margin-top: 28px;
@@ -399,6 +410,8 @@ FORM .wrapper{
   height: 40px;
   line-height: 40px;
   padding: 0 18px;
+  min-width: 111px;
+  text-align: center;
 }
 .big_inp-form .slide_up:after, .big_inp-form .slide_down:after{
     right: -24px;
@@ -454,15 +467,17 @@ FORM .wrapper{
 }
 .social_wrap-b B{
     color: #74777F;
-    font-size: 0.94em;
+    font-size: 15px;
     display: inline-block;
     white-space: normal;
     vertical-align: middle;
+    padding-right: 26px;
 }
 .social_wrap-b A{
-    margin-left: 26px;
     border: 1px solid #DBE2E6;
     border-radius: 4px;
+    margin-left: 0;
+    margin-right: 26px;
 }
 .social_wrap-b SPAN{
     font-size: 56px;
@@ -785,7 +800,7 @@ FORM .wrapper{
   }
 
   #header .nav {
-    width: 600px;
+    width: 648px;
   }
 
   #intro .txt {
@@ -888,9 +903,6 @@ FORM .wrapper{
     margin: 0 0 14px 0;
   }
 
-  #content .main FIELDSET{
-    padding: 30px 10px 30px 30px;
-  }
   .obratnaya_svyaz FIELDSET H3{
     margin-bottom: 18px;
   }
@@ -900,6 +912,13 @@ FORM .wrapper{
     behavior: url(PIE.htc);
     box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
     border: 1px solid #addeff;
+  }
+
+  .big_inp-form .ticket dt{
+    width: 225px;
+  }
+  .big_inp-form .ticket dd{
+    width: 245px;
   }
 
   .jq-file{
@@ -1031,13 +1050,9 @@ FORM .wrapper{
   #content .title.medium{
     margin-top: 30px;
   }
-  .gibdd_shtrafy-tablet #content FIELDSET{
-    padding-bottom: 0;
-    padding-top: 20px;
-  }
   
   .form_pl{
-    padding-left: 48px;
+    padding-left: 28px;
   }
 
   .field_cont .l_33{
@@ -1286,8 +1301,14 @@ FORM .wrapper{
     color: #A5AEB3;
   }
 
+  .big_inp-form INPUT,
+  .jq-selectbox__select-text,
+  .jq-selectbox__select{
+    height: 50px;
+  }
+
   .big_inp-form FIELDSET H3{
-    font-size: 0.88em; /*14px*/
+    font-size: 14px; /*14px*/
     margin-top: -3px;
     margin-left: 20px;
   }
@@ -1298,16 +1319,13 @@ FORM .wrapper{
     margin-bottom: 18px;
   }
   .gibdd_shtrafy-tablet #content FIELDSET{
-    padding: 20px 20px 10px;
+    padding: 26px 20px 10px;
     margin-bottom: 12px;
   }
-  #content .info_bloc-w100.yellow{
-    padding: 12px 8px 10px 14px;
-    margin-bottom: 8px;
-  }
-  #content .info_bloc-w100.yellow P{
-    font-size: 0.875em; /*14px*/
-    margin-bottom: 4px;
+
+
+  .info-block_wrap{
+    display: none;
   }
 
   FORM .wrapper{
@@ -1353,6 +1371,28 @@ FORM .wrapper{
     margin-right: 20px;
   }
 
+
+  .big_inp-form .cover_info_title p{
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .big_inp-form .cover_info_title .price{
+    display: block;
+  
+    font-size: 18px;
+}
+  .big_inp-form .cover_info_title .selector{
+    margin-top: 20px;
+    margin-left: -12px;
+  }
+  .big_inp-form .selector LI{
+    padding: 8px 8px;
+    min-width: 84px;
+  }
+  .big_inp-form .selector .num{
+    display: none;
+  }
 
   .switcher_cont{
     padding: 24px 20px;
