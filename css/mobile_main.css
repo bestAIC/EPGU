@@ -1380,7 +1380,6 @@ FIELDSET{
   
   .mobile_nalogovaya_zadoljennost .clear .fr {
     float:none;
-  }        
 
   FORM .wrapper{
     margin: 0 0 8px 0;
@@ -1391,7 +1390,7 @@ FIELDSET{
   FORM.big_inp-form .wrapper{
     margin-bottom: 2px;
     margin-top: 14px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
   }
 
   .obratnaya_svyaz FIELDSET H3{
