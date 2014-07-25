@@ -210,8 +210,8 @@ FORM .wrapper{
 }
 
 .main FIELDSET{
-  padding: 42px 0px 4px 50px;
-  margin-bottom: 10px;
+  padding: 42px 0px 0px 50px;
+  border-bottom: none;
 }
 
 .main .big_inp-form FIELDSET{
@@ -227,10 +227,19 @@ TEXTAREA:focus{
 
 INPUT.btn.big{
   height: 52px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 12px;
 }
 INPUT.btn.small{
   margin-top: 0;
+}
+
+.jq-selectbox{
+  border-radius: 0;
+}
+.jq-selectbox__select{
+  border-radius: 0;
+  height: 60px;
 }
 
 .big_inp-form INPUT{
@@ -369,7 +378,7 @@ INPUT.btn.small{
 
 
 .switcher_cont{
-    padding: 34px 0 40px 30px;
+    padding: 40px 0 40px 30px;
     white-space: nowrap;
     border-top: 1px solid #DBE2E6;
     border-bottom: 1px solid #DBE2E6;
@@ -404,14 +413,13 @@ INPUT.btn.small{
 .social_wrap-b .social{
     height: 56px;
     padding: 40px 0;
+    padding-left: 20px;
     display: inline-block;
     white-space: nowrap;
+    margin-bottom: 0;
 } 
 .social-ico_cont{
   display: inline-block;
-}
-.social_wrap-b A{
-    margin-left: 30px;
 }
 .social_wrap-b B{
     color: #74777F;
@@ -420,18 +428,21 @@ INPUT.btn.small{
     white-space: normal;
     vertical-align: middle;
 }
-.social_wrap-b IMG{
-    height: 56px;
-    width: 56px;
-    top: 0;
-    vertical-align: middle;
+.social_wrap-b A{
+    margin-left: 26px;
+    border: 1px solid #DBE2E6;
+    border-radius: 4px;
+}
+.social_wrap-b SPAN{
+    font-size: 56px;
+    color: #565656;
 }
 
 #content .advice{
     border-top: 1px solid #DBE2E6;
     border-bottom: 1px solid #DBE2E6;
-    padding: 52px 0px 20px 157px;
-    background-position: 50px 26px;
+    padding: 64px 0px 22px 157px;
+    background-position: 50px 40px;
     margin: 0; 
 }
 #content .advice H2{
@@ -456,7 +467,7 @@ INPUT.btn.small{
 
 
 .form_pl{
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 
