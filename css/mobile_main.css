@@ -544,17 +544,16 @@ dd .popup_link{
 .popup .ticket .brd {
   border-top:1px solid #C8C7CC;
 }
-.popup .ticket .brd DD{
-  position: relative;
-}
+
 .popup .ticket .brd DD:after{
   content: "";
   position: absolute;
-  right: 10px;
-  top: 26px;
+  right: 30px;
+  top: 50%;
   background: url('../img/rarr.png') no-repeat;
   width: 13px;
   height: 21px;
+  margin-top:-8px;
   background-size: 65%;
 }
 
@@ -1409,7 +1408,14 @@ FIELDSET{
     display:block;
     padding:0px;
     width:100%;    
-  }     
+  } 
+  
+
+  .popup .ticket .brd DD:after {
+      margin-top: 3px;
+      right: -30px;
+      top: 0%;
+  }      
 
   /* Header top menu */
   
