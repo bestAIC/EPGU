@@ -1394,7 +1394,7 @@ FIELDSET{
   FORM .wrapper{
     margin: 0 0 8px 0;
   }
-  .gibdd_shtrafy_shtrafy .wrapper.l_50{
+  .mobile_gibdd_shtrafy .wrapper.l_50{
     width: 100%;
   }
   FORM.big_inp-form .wrapper{
@@ -1620,11 +1620,11 @@ FIELDSET{
   #content .advice.type_not{
     background: none;
   }
-  .gibdd_shtrafy_shtrafy #content .advice FORM{
+  .mobile_gibdd_shtrafy #content .advice FORM{
     margin-top: 14px;  
     margin-bottom: 0;
   }
-  .gibdd_shtrafy_shtrafy #content .advice FIELDSET{
+  .mobile_gibdd_shtrafy #content .advice FIELDSET{
     border-top: none;
     padding: 0;
     margin-bottom: 0;
