@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon-epga';
-	src:url('fonts/icomoon-epga.eot?na0wv2');
-	src:url('fonts/icomoon-epga.eot?#iefixna0wv2') format('embedded-opentype'),
-		url('fonts/icomoon-epga.woff?na0wv2') format('woff'),
-		url('fonts/icomoon-epga.ttf?na0wv2') format('truetype'),
-		url('fonts/icomoon-epga.svg?na0wv2#icomoon-epga') format('svg');
+	src:url('fonts/icomoon-epga.eot?-26wb0h');
+	src:url('fonts/icomoon-epga.eot?#iefix-26wb0h') format('embedded-opentype'),
+		url('fonts/icomoon-epga.woff?-26wb0h') format('woff'),
+		url('fonts/icomoon-epga.ttf?-26wb0h') format('truetype'),
+		url('fonts/icomoon-epga.svg?-26wb0h#icomoon-epga') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -82,4 +82,10 @@
 }
 .icon-svg20:before {
 	content: "\34";
+}
+.icon-svg21:before {
+	content: "\35";
+}
+.icon-svg22:before {
+	content: "\36";
 }
