@@ -10,7 +10,7 @@ BODY {
 }
 
 .menu_btn_cover {
-  width: 1024px;
+  width: 808px;
   margin: 0 auto;
   position: relative;
 }
@@ -30,10 +30,10 @@ BODY {
   display:none;
 }
 
-#header .top.blue {
+#header .top.type_1 {
   border-bottom: 4px solid #257CB1;
 }
-#header .top.magenta{
+#header .top.type_2{
   border-bottom: 4px solid #c00e4b;
 }
 
@@ -1354,6 +1354,7 @@ FIELDSET{
 
   .info-block_wrap{
     margin: 16px 20px 14px;
+    margin-left: 0;
   }
   #content .info-block_wrap .info_block{
     padding: 15px;
@@ -1469,11 +1470,13 @@ FIELDSET{
 
   .switcher_cont{
     padding: 24px 20px;
+    overflow: hidden;
   }
   .switcher_cont .switcher_h{
     height: 38px;
     padding: 0;
     font-size: 15px;
+    float: left;
   }
   .switcher_cont .switcher{
     float: right;
@@ -1483,6 +1486,7 @@ FIELDSET{
     margin-left: 0;
     margin-top: 20px;
     width: 100%;
+    float: left;
   }
 
   .ticket{
