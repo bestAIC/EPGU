@@ -1530,6 +1530,52 @@ FIELDSET{
   .mobile_gibdd_shtrafy .wrapper.l_50{
     width: 100%;
   }
+
+  .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf{
+    position: relative;
+    height: 168px;
+  }
+    .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr{
+      position: absolute;
+      bottom: 20px;
+      width: 280px;
+      background-image: url('../img/larr.png')!important;
+      box-sizing: border-box;
+    }
+    .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .fr{
+      position: absolute;
+      top: 0;
+    }
+  .mobile_nalogovaya_zadoljennost .mobile_morpf{
+    height: 50px;
+  }
+  .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf{
+    border: 1px solid #d0d0d0;
+    background: #fff;    
+    text-align: center;
+    position: absolute;
+    width: 1024px;
+    margin-left: -517px;
+    left: 50%;
+  }
+  .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf b{
+    color: #565656;
+    text-align: center;
+    margin-left: -170px;
+  }
+  .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf  b:after{
+    content: '5';
+    font: 14px 'icomoon-epga';
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: 130px;
+  }
+    .mobile_nalogovaya_zadoljennost #content .mobile_morpf + .btn-cont_inner input{
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+
   FORM.big_inp-form .wrapper{
     margin-bottom: 2px;
     margin-top: 14px;
