@@ -426,14 +426,7 @@ FORM .wrapper{
 .main.big_inp-form .q.opened .slick-prev{
   left: 160px; 
 }
-<<<<<<< HEAD
-  .main.big_inp-form .q.opened .slick-prev:before{
-    content: '6';
-    font: 20px 'icomoon-epga';  
-    color: #fff;
-  }
-=======
->>>>>>> e1cfdbdee4576fc8df90b68281a4e6ea80591275
+
 .main.big_inp-form .q.opened .slick-next{
   right: 160px;
 } 
@@ -441,13 +434,7 @@ FORM .wrapper{
     background: url('../img/mobile/larr_white.png');
   }
   .main.big_inp-form .q.opened .slick-next:before{
-<<<<<<< HEAD
-    content: '5';
-    font: 20px 'icomoon-epga';  
-    color: #fff;
-=======
     background: url('../img/mobile/rarr_white.png');
->>>>>>> e1cfdbdee4576fc8df90b68281a4e6ea80591275
   }
 .main.big_inp-form .q.opened .slick-dots{
   bottom: auto;
