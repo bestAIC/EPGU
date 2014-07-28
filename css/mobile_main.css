@@ -1272,6 +1272,19 @@ FIELDSET{
   #footer LI.right {
     width:55px; 
   }  
+  .main.big_inp-form .q.opened .slick-slider{
+    width: 602px;
+    left: -504px;
+  }
+  .main.big_inp-form .q.opened .slick-next{
+    right: 90px;
+  }
+  .main.big_inp-form .q.opened .slick-prev{
+    left: 90px;
+  }
+  .main.big_inp-form .q.opened .slick-dots{
+    left: 100px;
+  }
 
 }  
 
@@ -1487,7 +1500,6 @@ FIELDSET{
 
   .info-block_wrap{
     margin: 16px 20px 14px;
-    margin-left: 0;
   }
   #content .info-block_wrap .info_block{
     padding: 15px;
@@ -1515,16 +1527,13 @@ FIELDSET{
   .mobile_nalogovaya_zadoljennost .clear .fr {
     float:none;
 }
-  FORM .wrapper{
-    margin: 0 0 8px 0;
-  }
   .mobile_gibdd_shtrafy .wrapper.l_50{
     width: 100%;
   }
   FORM.big_inp-form .wrapper{
     margin-bottom: 2px;
     margin-top: 14px;
-    /*padding-left: 20px;*/
+    padding-left: 20px;
   }
 
   .obratnaya_svyaz FIELDSET H3{
@@ -1965,6 +1974,27 @@ FIELDSET{
     text-align:center;
     font-size:70%;
   }  
+
+
+
+  .main.big_inp-form .q.opened .slick-slider{
+    width: 400px;
+    left: -294px;
+  }
+  .main.big_inp-form .q.opened .slick-slider img{
+    width: 70%;
+    display: inline-block;
+
+  }
+  .main.big_inp-form .q.opened .slick-next{
+    right: 50px;
+  }
+  .main.big_inp-form .q.opened .slick-prev{
+    left: 50px;
+  }
+  .main.big_inp-form .q.opened .slick-dots{
+    left: 50px;
+  }
      
 } 
 
