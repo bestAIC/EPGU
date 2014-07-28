@@ -1065,7 +1065,7 @@ H4 {
 }
 
 /*Field & Button*/
-INPUT {
+INPUT { 
   border:1px solid #d0d0d0;
   width:100%;
   -moz-box-sizing: border-box; 
@@ -1163,11 +1163,12 @@ TEXTAREA.big {
 }
 
 INPUT.btn.big {
+  border:none;
   padding:0 25px;
 }
 
 INPUT.btn.small {
-  /*padding:0 10px;*/
+  border:none;
 }
 
 .btn:hover {
