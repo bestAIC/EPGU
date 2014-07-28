@@ -32,17 +32,27 @@ function RetinaDisplay() {
 
 function MenuShowMobile(){
 
-  $('#header .menu').on('click', function(){  
-  	if ($(this).hasClass('closed')) {
+  $('#header .menu').on('click', function(){ 
+    $('.menu_btn_cover').removeClass('hide');   
+  	if ($(this).hasClass('closed')) {     
       $(this).addClass('opened').removeClass('closed');  
       $('#wrap').animate({left:-250});
       $('.menu_btn_cover').animate({right:0});       
-    } else {
+    } else { 
       $(this).addClass('closed').removeClass('opened');
       $('#wrap').animate({left:0});
       $('.menu_btn_cover').animate({right:-250});       
     }   
-  })
+  });
+  
+  $(window).on('resize', function(){
+    $('.menu_btn_cover').addClass('hide');   
+    if ($('#header .menu').hasClass('opened')) {  
+      $(this).addClass('closed').removeClass('opened');
+      $('#wrap').css({left:0});
+      $('.menu_btn_cover').css({right:-250});         
+    }      
+  }).resize();  
    
 }
 

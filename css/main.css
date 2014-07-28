@@ -461,7 +461,7 @@ float: right;
   background:#fff;
   font:bold 12px/22px 'Arial', 'Helvetica', 'sans-serif';
   cursor:pointer;
-  z-index:101; 
+  z-index:100; 
 }
 
 .main .q:hover {

@@ -26,6 +26,10 @@ BODY {
   white-space: nowrap;
 }
 
+.menu_btn_cover.hide {
+  right:0px!important;
+} 
+
 #header .menu {
   display:none;
 }
@@ -1279,6 +1283,10 @@ FIELDSET{
 /*Phone Portrait*/
 @media (max-width:640px) {
 
+  BODY {
+    overflow-x:hidden;
+  }
+
   #header .nav {
     width: 280px;
   }
@@ -1299,6 +1307,10 @@ FIELDSET{
     position:absolute;
     right:-250px;
   } 
+  
+  .menu_btn_cover.hide {
+    right:-250px!important;
+  }   
 
   .menu {
     margin:12px 0 0 0;
