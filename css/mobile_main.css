@@ -176,30 +176,23 @@ BODY {
 
 
 /* feedback */
-
-#content .title.no-ico.medium{
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  margin-top: -10px;
-}
-
-#content .title.medium{
+#content .title {
   height: 38px;
-  display: table;
-  vertical-align: middle;
-  margin: 30px -255px 30px 0;
+  margin: 30px 0;
   padding: 0 0 0 46px;
   border-bottom: none;
+  width:100%;
+	border-radius: 4px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;  
 }
 
-#content .title.medium IMG{
+#content .title IMG{
   width: 36px;
   height: 38px
 }
 
-#content .title.medium.no-ico H1,
-#content .title.medium H1{
+#content .title H1{
   font-size: 2em;
   margin: 0;
 }
@@ -444,6 +437,65 @@ dd .popup_link{
 }
 .big_inp-form  .ticket .money{
     font-size: 18px;
+}
+
+.popup H2 {
+  padding:0 60px;
+}
+
+
+.popup .ticket {
+  border:none;
+  position:relative;
+  margin:0 -40px;
+  padding:30px 0 0 0;
+}
+
+.popup .ticket DL {
+  width:100%;
+}
+
+.popup .ticket .brd {
+  border-top:1px solid #C8C7CC;
+}
+
+.popup .ticket .brd + DIV {
+  border-bottom:1px solid #C8C7CC;
+  border-top:1px solid #C8C7CC; 
+  margin:0 0 20px 0; 
+}
+
+.popup .ticket .brd DT {
+  padding-top:20px;
+  color:#000; 
+}
+
+.popup .ticket .brd DD {
+  padding-top:20px;
+}
+
+.popup .ticket DT {
+  padding:0px 40px 20px 40px; 
+  text-align:left;
+}
+
+.popup .ticket DD {
+  padding:0px 60px 20px 0px;
+  text-align:left;  
+}
+
+.popup .clear.brd {
+  padding:20px 40px 0 40px; 
+}
+
+.popup .clear.brd B {
+  line-height:40px;
+  font-size:18px;
+  padding:0 20px 0 0;
+}
+
+.popup .clear.brd .btn {
+  margin:0; 
 }
 
 
@@ -819,26 +871,25 @@ FIELDSET{
 /*Tablet Portrait*/
 @media (max-width:1024px){
 
-  .menu_btn_cover {
+  .menu_btn_cover,
+  #header .nav,
+  #content {
     width: 648px;
   }
-
-  #header .nav {
-    width: 648px;
-  }
+  
+  .popup {
+    width: 608px;
+    margin: 0 0 0 -344px;
+  }  
 
   #intro .txt {
       margin: 0 auto;
       width: 600px;
   }
   
-  #content {
-    width:648px;
-  }
-  
   #content h2 {
     margin:0 auto;
-    width:600px;
+    /*width:600px;*/
   } 
   
   #content .new_service {

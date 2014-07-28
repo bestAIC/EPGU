@@ -56,11 +56,11 @@ function PopUp() {
 		}
 	});
  
-  $('.popup_link .popup_map').click(function(e) {
+  $('.popup_link').click(function(e) {
   
     var choise = "";
   
-    choise = $(this).attr('class');
+    choise = $(this).children().attr('class');
   
     var $message = $('#'+choise);
     $('#wrap').prepend('<div id="popup_fade"></div>');
