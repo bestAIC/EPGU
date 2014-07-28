@@ -186,9 +186,10 @@ BODY {
   padding: 0 0 0 46px;
   border-bottom: none;
   width:100%;
-	border-radius: 4px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;  
+  border-radius: 4px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;  
 }
 
 #content .title IMG{
@@ -332,7 +333,6 @@ FORM .wrapper{
 
 .big_inp-form .field_name{
     color: #A5AEB3;
-    font-size: 12px;
 }
 .info-block_wrap span.icomoon{
   position: absolute;
@@ -416,27 +416,45 @@ FORM .wrapper{
   height: 100%;
   top: 0;
 }
+.main.big_inp-form .q.opened .slick-prev:before,
+.main.big_inp-form .q.opened .slick-next:before{
+    content: '';
+    width: 12px;
+    height: 20px;
+    display: inline-block;
+  }
 .main.big_inp-form .q.opened .slick-prev{
   left: 160px; 
 }
+<<<<<<< HEAD
   .main.big_inp-form .q.opened .slick-prev:before{
     content: '6';
     font: 20px 'icomoon-epga';  
     color: #fff;
   }
+=======
+>>>>>>> e1cfdbdee4576fc8df90b68281a4e6ea80591275
 .main.big_inp-form .q.opened .slick-next{
   right: 160px;
-}
+} 
+  .main.big_inp-form .q.opened .slick-prev:before{
+    background: url('../img/mobile/larr_white.png');
+  }
   .main.big_inp-form .q.opened .slick-next:before{
+<<<<<<< HEAD
     content: '5';
     font: 20px 'icomoon-epga';  
     color: #fff;
+=======
+    background: url('../img/mobile/rarr_white.png');
+>>>>>>> e1cfdbdee4576fc8df90b68281a4e6ea80591275
   }
 .main.big_inp-form .q.opened .slick-dots{
   bottom: auto;
   top: 24px;
   left: 160px;
   text-align: left;
+  white-space: nowrap;
 }
 .main.big_inp-form .q.opened .slick-dots li{
   display: none;
@@ -445,21 +463,26 @@ FORM .wrapper{
 .main.big_inp-form .q.opened .slick-dots li.slick-active,
 .main.big_inp-form .q.opened .slick-dots .dots-length{
   display: inline-block;
+  padding-right: 4px;
+  position: relative;
 }
 .main.big_inp-form .q.opened .slick-dots .dots-length{
   color: #fff;
   font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-left: 4px;
 }
 .main.big_inp-form .q.opened .slick-dots li.slick-active button:after{
   content: '/';
   display: inline-block;
-  margin-left: 3px;
+  /* margin-right: 3px; */
+  position: absolute;
+  right: 0;
 }
 .main.big_inp-form .q.opened .slick-dots button{
   color: #fff;
   font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding: 0;
-  text-align: left;
+  text-align: right;
 }
 .main.big_inp-form .q.opened .slick-dots button:before{
   content: "";
@@ -605,6 +628,11 @@ dd .popup_link{
     font-size: 14px;
     color: #A5AEB3;
     margin-left: 24px;
+    vertical-align: middle;
+    height: 38px;
+}
+.switcher_cont .switcher_txt p{
+  display: inline-block;
 }
 
 
@@ -1475,6 +1503,26 @@ FIELDSET{
     padding: 20px 0 0 0;
     width: 320px;
   }      
+  #content .title{
+    padding-left: 0;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  #content .title IMG{
+    width: 32px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: static;
+    display: inline-block;
+  }
+  #content .title H1{
+    font-size: 21px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 80%;
+  }
 
   #content H2 {
     font-size:100%;
@@ -1526,12 +1574,6 @@ FIELDSET{
     margin: 0px 0 20px;
     padding: 0 20px;
   }
-  #content .title.medium IMG{
-    display: none;
-  }
-  #content .title.medium H1{
-    font-size: 1.31em; /*21px*/
-  }
   
   .big_inp-form .point_num{
     font-size: 21px;
@@ -1552,8 +1594,8 @@ FIELDSET{
   #content FIELDSET LABEL{
     display: block;
     margin: 0 0 6px 0;
-    font-size: 14px;
     color: #A5AEB3;
+    font-size: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 
   .big_inp-form INPUT,
@@ -1804,6 +1846,9 @@ FIELDSET{
     position: absolute;
     top: 12px;
     left: 20px;
+  }
+  .ticket .pseudo.popup_link{
+    display: none;
   }
   .ticket .more_info{
     display: none;
