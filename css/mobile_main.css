@@ -557,6 +557,19 @@ dd .popup_link{
 .popup .ticket .brd {
   border-top:1px solid #C8C7CC;
 }
+.popup .ticket .brd DD{
+  position: relative;
+}
+.popup .ticket .brd DD:after{
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 26px;
+  background: url('../img/rarr.png') no-repeat;
+  width: 13px;
+  height: 21px;
+  background-size: 65%;
+}
 
 .popup .ticket .brd + DIV {
   border-bottom:1px solid #C8C7CC;
