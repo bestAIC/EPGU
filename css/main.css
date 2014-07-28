@@ -467,7 +467,7 @@ float: right;
   background:#f5f5f5;
 }
 
-.main .q DIV {
+.main .q .q_hover{
   position:absolute;
   top:-17px;
   left:43px;
@@ -479,7 +479,7 @@ float: right;
   z-index: 101;
 }
 
-.main .q DIV:before {
+.main .q .q_hover:before {
   position:absolute;
   display:block;
   content:'';
@@ -490,7 +490,7 @@ float: right;
   background: url('../img/corners_cloud_2.png') 0 0 no-repeat;    
 }
 
-.main .q:hover DIV {
+.main .q:hover .q_hover {
   display:block;
 }
 

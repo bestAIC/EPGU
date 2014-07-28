@@ -48,42 +48,52 @@ function MenuShowMobile(){
 
 // question ico mobile
 function ResponseGallery(){
+  var cont = $('.js-q')
+      lnk = $('.js-q_ico'),
+      gallery = $('.js-q_slick');
 
-if($('.js-q_slick').length) {
-
-  $('.js-q_slick').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+  lnk.on('click', function(){
+    if(cont.hasClass('closed')){
+      cont.addClass('opened').removeClass('closed');
+    } else {
+      cont.addClass('closed').removeClass('opened');
+    }
+    if(cont.hasClass('opened')){
+      gallery.slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+      });
+    } else if (cont.hasClass('closed')) {
+      gallery.unslick();
+    }
   });
-}  
-  
 }
 
