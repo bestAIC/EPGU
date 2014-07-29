@@ -6,7 +6,21 @@ BODY {
 }
 
 .cover {
-  margin:0;
+  margin:0;                
+}
+
+.limiter {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position:relative;
+  margin:0 auto;
+  max-width: 945px; 
+  padding:0 0 0 50px;
+  width: 90%;
+}
+
+.point_num {
+  top:-10px;
 }
 
 .menu_btn_cover {
@@ -123,9 +137,11 @@ BODY {
   background:none; 
 }
 
-
+                         
 #content {
-  padding:50px 0 80px 0;
+  /*padding:50px 0 80px 0;*/
+  padding:0;
+  width:auto;
 }
 
 #content H2{
@@ -193,7 +209,7 @@ BODY {
 #content .title {
   height: 38px;
   margin: 30px 0;
-  padding: 0 0 0 46px;
+  padding: 0px;
   border-bottom: none;
   width:100%;
   border-radius: 4px;
@@ -212,16 +228,9 @@ BODY {
   margin: 0;
 }
 
-FORM .wrapper{
-  margin: 0 0 14px 0;
-}
-
-.big_inp-form .wrapper{
-  margin: 16px 0 14px 0;
-}
 
 .main FIELDSET{
-  padding: 42px 0px 0px 50px;
+  padding: 40px 0px 0px 0px;
   border-bottom: none;
 }
 .main FIELDSET:last-of-type{
@@ -247,17 +256,13 @@ FORM .wrapper{
 #content INPUT.btn.big{
   height: 52px;
   margin-bottom: 40px;
-  margin-top: 30px;
 }
 #content INPUT.btn.small{
   margin-top: 0;
   font-size: 16px;
   padding: 0 18px;
 }
-#content FORM .btn.big, 
-.btn.larr{
-  margin-top: 12px;
-}
+
 #content FORM .btn-mr20_phone{
   margin-right: 0px;
 }
@@ -288,7 +293,7 @@ FORM .wrapper{
 }
 
 .big_inp-form FIELDSET H3{
-    margin: 12px 0 3px 0;
+    margin: 12px 0 30px 0;
 }
 
 .big_inp-form .selector LI{
@@ -314,24 +319,24 @@ FORM .wrapper{
 }
 
 .big_inp-form .field_cont{
-    margin-right: -20px;
+    /*margin-right: -20px;*/
 }
 
 
 .info-block_wrap{
-  border: 1px solid #d0d0d0;
-  margin-top: 16px;
-  margin-bottom: 14px;
+  margin:0 0 30px 0;
+  padding:0 20px 0 0;
 }
+
 .info-block_wrap + .ticket{
   margin-top: 30px;
 }
 #content .info-block_wrap .info_block{
-    padding: 15px 68px 18px 20px;
-    position: relative;
-    margin: 0;
-    border: 0;
-    margin-top: -1px;
+  border: 1px solid #d0d0d0;
+  padding: 15px 68px 18px 20px;
+  position: relative;
+  margin: 0;
+  margin-top: -1px;
 }
 .info-block_wrap .info-block_h{
   margin-bottom: 16px;
@@ -488,21 +493,46 @@ FORM .wrapper{
 
 
 .ticket {
-    padding: 30px 0;
     margin: 0;
+    padding:0;
     font-size: 15px;
+    border:none;
 }
+
+.ticket .limiter {
+    position:relative;
+    padding: 30px 20px 30px 50px;
+}
+
+.ticket .limiter:before {
+    display:block;
+    position:relative; 
+    top:-30px;
+    content:'';
+    border-top:1px solid #C8C7CC;
+}
+
 .ticket .sub_title .btn_cover_r{
-    right: 12px;
     top: -10px;
 }
 .ticket .sub_title{
     margin-bottom: 20px;
     padding-right: 126px;
 }
-.ticket dt{
-    width: 225px;
+
+
+.ticket DL {
+  width:100%;
 }
+.ticket DT{
+    width:50%;
+    max-width:150px;
+}
+
+.ticket DD{
+  padding: 0 220px 0 40px;
+}
+
 .ticket dt,
 .ticket dd{
     padding-bottom: 20px;
@@ -607,37 +637,42 @@ dd .popup_link{
 
 
 .switcher_cont{
-    padding: 40px 0 40px 50px;
+    padding: 40px 0;
     white-space: nowrap;
     border-top: 1px solid #DBE2E6;
     border-bottom: 1px solid #DBE2E6;
-    margin-bottom: -1px;
 }
+
+.switcher_cont .limiter{
+    display:table;
+}
+
 .switcher_cont .switcher_h{
-    display: inline-block;
-    line-height: 42px;
+    display: table-cell;
     margin: 0;
-    margin-right: 30px;
-    vertical-align: top;
+    vertical-align: middle;
     font-size: 0.94em;
     border-bottom: none;
 }
+.switcher_cont EM{
+    display: table-cell;
+    vertical-align: middle;
+    padding:0 30px;    
+}
+
 .switcher_cont .switcher{
     position: relative;
-    top: 4px;
+    top: 0;
     left: 0;
 }
-.switcher_cont .switcher .cover DIV{
-    height: 36px;
-}
+
 .switcher_cont .switcher_txt{
-    display: inline-block;
+    width:100%;
+    display: table-cell;
     white-space: normal;
     font-size: 14px;
     color: #A5AEB3;
-    margin-left: 24px;
     vertical-align: middle;
-    height: 38px;
 }
 .switcher_cont .switcher_txt p{
   display: inline-block;
@@ -718,9 +753,6 @@ dd .popup_link{
     height: 60px;
 }
 
-.social_wrap-b{
-    padding-left: 50px;
-}
 
 
 
@@ -977,7 +1009,7 @@ FIELDSET{
 }
 
 .btn{
-  margin: 30px 0;
+  margin:0;
 }
 
 .btn B {
@@ -985,16 +1017,19 @@ FIELDSET{
   line-height:50px;  
 }
 
-.wrapper .btn {
-  margin:0px;
+.btn-cont_inner .limiter {
+  padding:0;
+}
+
+#content .wrapper .btn {
+  margin:0px!important;
 }
 
 
 
 
   .menu_btn_cover,
-  #header .nav,
-  #content {
+  #header .nav {
   max-width:945px;
   width: 90%;
   }
@@ -1094,10 +1129,6 @@ FIELDSET{
   }
   .big_inp-form .point_num{
     left: 0;
-  }
-
-  FORM .wrapper{
-    margin: 0 0 14px 0;
   }
 
   .obratnaya_svyaz FIELDSET H3{
@@ -1247,17 +1278,13 @@ FIELDSET{
   #content .title.medium{
     margin-top: 30px;
   }
-  
-  .social_wrap-b{
-    padding-left: 50px;
-  }
 
   .field_cont .l_33{
     width: 100%;
   }
 
   .ticket .sub_title .fl{
-    width: 350px;
+    width: 65%;
     line-height: 22px;
   }
   .ticket .sub_title{
@@ -1266,13 +1293,6 @@ FIELDSET{
 
   .social_wrap-b B{
       width: 30%;
-  }
-
-  .switcher_cont{
-    padding: 40px 0 26px 50px;
-  }
-  .switcher_cont .switcher_txt{
-    width: 350px;
   }
 
   #footer .bottom_link {
