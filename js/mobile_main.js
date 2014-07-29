@@ -2,7 +2,8 @@
 $(document).ready(function() {
   RetinaDisplay(); 
   MenuShowMobile();
-  ResponseGallery(); // Slick Galery    
+  ResponseGallery(); // Slick Galery 
+  EasterEggs();   
 });
 
 
@@ -92,5 +93,24 @@ function ResponseGallery(){
   });
 }
 
+// Easter Eggs
 
+function EasterEggs(){
+
+$('#intro .ee').click(function() {
+    var $div = $(this);
+    $div.toggleClass('go');
+    if ($div.hasClass('go')) {
+        var img = document.createElement('img');
+        img.src = "img/mobile/epgu_animation.gif";
+        $(img).load(function(){
+            $div.css({backgroundImage: "url("+img.src+")"});
+        });    
+    } else {
+       $div.css({backgroundImage: "none"});
+    }
+})
+ 
+   
+}
 
