@@ -10,7 +10,6 @@ BODY {
 }
 
 .menu_btn_cover {
-  width: 808px;
   margin: 0 auto;
   position: relative;
 }
@@ -48,7 +47,7 @@ BODY {
 }
 
 #header .nav {
-  width: 808px;
+
 }
 
 #header .nav LI {
@@ -82,7 +81,6 @@ BODY {
 }
 
 #intro .txt {
-  width:808px;
   margin:0 auto; 
 }
 
@@ -127,7 +125,6 @@ BODY {
 
 
 #content {
-  width:808px;
   padding:50px 0 80px 0;
 }
 
@@ -987,23 +984,25 @@ FIELDSET{
 }
 
 
-/*Tablet Portrait*/
-@media (max-width:1024px){
+
 
   .menu_btn_cover,
   #header .nav,
   #content {
-    width: 648px;
+  max-width:945px;
+  width: 90%;
   }
   
   .popup {
-    width: 608px;
+  max-width:945px;
+  width: 90%;
     margin: 0 0 0 -344px;
   }  
 
   #intro .txt {
       margin: 0 auto;
-      width: 600px;
+  max-width:945px;
+  width: 90%;
   }
   
   #content h2 {
@@ -1276,7 +1275,8 @@ FIELDSET{
   }
 
   #footer .bottom_link {
-    width: 600px;
+  max-width:945px;
+  width: 90%;
   }
   
   #footer .bottom_link .cover {
@@ -1304,7 +1304,8 @@ FIELDSET{
        
 
   #footer UL {
-    width: 600px;
+  max-width:945px;
+  width: 90%;
     font-size:110%;
   }
   
@@ -1313,7 +1314,9 @@ FIELDSET{
   }  
   
   #footer LI.left {
-    width:600px;   
+    max-width:945px;
+    width: 90%;
+    text-align: center;  
   }
   
   #footer LI.right {
@@ -1333,7 +1336,7 @@ FIELDSET{
     left: 100px;
   }
 
-}  
+ 
 
 
 /*Phone Portrait*/

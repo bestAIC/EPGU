@@ -78,6 +78,13 @@ function PopUp() {
               $(document).unbind('click.event');
               $('#popup_fade').remove();
             });
+            
+            $('.popup .back').click(function(){
+              $('#'+choise).hide();
+              $(document).unbind('click.event');
+              $('#popup_fade').remove();
+            });            
+            
             firstClick = false;
         });
     }
