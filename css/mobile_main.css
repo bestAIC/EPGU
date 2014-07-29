@@ -1690,10 +1690,22 @@ FIELDSET{
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr{
       position: absolute;
       bottom: 20px;
-      width: 280px;
-      background-image: url('../img/larr.png')!important;
-      box-sizing: border-box;
+      width: 1024px;
+      margin-left: -517px;
+      left: 50%;
     }
+    .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr:after{
+      content: '6';
+      font: 14px 'icomoon-epga';
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      margin-left: -130px;
+    }
+    .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr B{
+      margin-left: 70px;
+    }
+
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .fr{
       position: absolute;
       top: 0;
@@ -1977,8 +1989,6 @@ FIELDSET{
   
   .btn-cont_inner{
     padding: 0 20px;
-    margin-top: -1px;
-    border-top: 1px solid #fff;
 }
   .btn-cont_inner .btn{
     width: 280px;
