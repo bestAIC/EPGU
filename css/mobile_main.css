@@ -268,11 +268,7 @@ FORM .wrapper{
   padding-right: 0;
 }
 
-.jq-selectbox{
-  border-radius: 0;
-}
 .jq-selectbox__select{
-  border-radius: 0;
   height: 60px;
   line-height: 60px;
 }
@@ -677,38 +673,48 @@ dd .popup_link{
     color: #565656;
 }
 
-#content .advice{
+.advice{
     border-top: 1px solid #DBE2E6;
     border-bottom: 1px solid #DBE2E6;
     padding: 64px 0px 22px 157px;
     background-position: 50px 40px;
     margin: 0; 
 }
-#content .advice H2{
-    text-align: left;
-    font-size: 30px;
-    margin-bottom: 32px;
+.advice .advice_h{
+  margin-left: -90px;
 }
-#content .advice P{
+.advice_ico{
+  height: 74px;
+  width: 74px;
+  border-radius: 36px;
+}
+.advice SPAN.icomoon{
+  line-height: 50px;
+}
+#content .advice H2{
+  margin-left: 90px;
+  text-align: left;
+}
+.advice P{
     color: #5A6473;
     font-size: 16px;
     line-height: 1.63em;
     margin-bottom: 30px;
 }
-#content .advice FORM{
+.advice FORM{
     margin: 12px 0 0px;   
 }
-#content .advice FIELDSET{
+.advice FIELDSET{
   border-top: none;
   margin-bottom: 18px;
 }
-#content .advice .wrapper{
+.advice .wrapper{
   margin-top: 30px;
 }
-#content .advice .wrapper:first-child{
+.advice .wrapper:first-child{
   margin-top: 0px;
 }
-#content .advice INPUT{
+.advice INPUT{
     height: 60px;
 }
 
@@ -1004,11 +1010,6 @@ FIELDSET{
   max-width:945px;
   width: 90%;
   }
-  
-  #content h2 {
-    margin:0 auto;
-    /*width:600px;*/
-  } 
   
   #content .new_service {
     width:100%;
@@ -1632,6 +1633,12 @@ FIELDSET{
     height: 50px;
     padding: 0 15px;
   }
+  .big_inp-form INPUT::-webkit-input-placeholder{
+    color: transparent;
+  }
+  .big_inp-form INPUT:-moz-placeholder{
+    color: transparent;
+  }
   #content FORM .btn-mr20_phone{
     margin-right: 20px;
   }
@@ -1930,45 +1937,50 @@ FIELDSET{
   }
 
 
-  #content .advice{
-    padding: 20px 10px 20px 20px;
+  .advice{
+    padding: 22px 10px 20px 20px;
+  }
+  .advice .advice_h{
+    margin-bottom: 12px;
+    margin-left: 0px;
   }
   #content .advice H2{
-    font-size: 1.3125em; /*21px*/
-    padding-left: 62px;
-    margin-bottom: 12px;
-    height: 48px;
+    font-size: 21px;
+    margin-left: 64px;
+    line-height: 54px;
   }
-  #content .advice P{
+  #content .advice H2 SPAN{
+    line-height: 24px;
+    vertical-align: middle;  
+    display: inline-block;
+}
+  .advice P{
     font-size: 14px; 
     margin-top: 16px;
     line-height: 22px;
     margin-bottom: 0; 
   }
+  .advice_ico{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    border-width: 8px;
+    margin-top: 0;
+  }
+  .advice SPAN.icomoon{
+    line-height: 32px;
+  }
+    .advice.type_not SPAN.icomoon{
+      font-size: 20px;
+    }
+    .advice.type_like SPAN.icomoon{
+      font-size: 22px;
+    }
+    .advice.type_ok SPAN.icomoon{
+      font-size: 18px;
+    }
 
-  #content .advice.type_ok H2,
-  #content .advice.type_like H2,
-  #content .advice.type_not H2{
-    background-position: 0 50%;
-    background-size: 17%;
-    background-repeat: no-repeat;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .type_ok H2{
-    background-image: url('../img/ico_round_ok.png');
-  }
-  .type_like H2{
-    background-image: url('../img/ico_round_like.png');
-  }
-  .type_not H2{
-    background-image: url('../img/ico_round_not.png');
-  }
-  #content .advice.type_ok,
-  #content .advice.type_like,
-  #content .advice.type_not{
-    background: none;
-  }
+  
   .mobile_gibdd_shtrafy #content .advice FORM{
     margin-top: 14px;  
     margin-bottom: 0;

@@ -64,6 +64,10 @@ function ResponseGallery(){
       lnk = $('.js-q_ico'),
       gallery = $('.js-q_slick');
 
+  // $('html').click(function(){
+  //   cont.addClass('closed').removeClass('opened');
+  // });
+
   lnk.on('click', function(){
     cont.css({'z-index': 101})
     if(cont.hasClass('closed')){
