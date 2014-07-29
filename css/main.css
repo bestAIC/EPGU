@@ -1853,3 +1853,23 @@ input[type="submit"].styler[disabled] {
 
 
 /* Slick Gallery */
+
+
+/* links html */
+
+.links_html{
+    width: 780px;
+    margin: 20px 50px;
+}
+.links_html td{
+    padding: 6px 0px;
+    width: 230px;
+}
+.links_html th{
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* /links html */
+
