@@ -511,10 +511,13 @@ float: right;
   font:bold 12px/22px 'Arial', 'Helvetica', 'sans-serif';
   cursor:pointer;
   z-index:100; 
+  transition: background-color .25s;
+  -webkit-transition: background-color .25s;
 }
 
-.main .q:hover {
-  background:#f5f5f5;
+.main .q:hover,
+.main .q:focus {
+  background-color:#f5f5f5;
 }
 
 .main .q .q_hover{
@@ -750,6 +753,8 @@ H4 {
   min-width:115px;
   text-align:center;
   cursor:pointer;      
+  transition: background-color .15s;
+  -webkit-transition: background-color .15s;
 }
 
 .selector LI.first {
@@ -994,7 +999,6 @@ H4 {
 .social {
   display:table;
   vertical-align:middle;
-  height:40px;
   margin: 10px 0 0;
 }
 .social B,
@@ -1005,10 +1009,10 @@ H4 {
 .social-ico_cont SPAN.icomoon{
     font-size: 36px;
     color: #565656;
-    height: 36px;
     line-height: 36px;
 }
-.social-ico_cont A:hover SPAN.icomoon{
+.social-ico_cont A:hover SPAN.icomoon,
+.social-ico_cont A:focus SPAN.icomoon{
     background: #f5f5f5;
     transition: background-color .15s;
     -webkit-transition: background-color .15s;
