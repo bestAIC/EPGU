@@ -11,9 +11,8 @@ formsTimeTrack.debugIsOn = true;
  * @param item      Textarea or input as DOM-node or jQuery element
  * @param category  Category for UA
  * @param action    Action for UA
- * @param label     Label for UA
  */
-formsTimeTrack.bindTrack = function(item, category, action, label){
+formsTimeTrack.bindTrack = function(item, category, action){
     $(item).on('focus', function(){
         var itemName = formsTimeTrack.getItemHash(this);
         if(itemName){
@@ -28,7 +27,7 @@ formsTimeTrack.bindTrack = function(item, category, action, label){
         var itemName = formsTimeTrack.getItemHash(this);
         if(itemName && typeof formsTimeTrack.timeTrackArr[itemName] !== 'undefined'){
             var calculatedTime = (new Date).getTime() - formsTimeTrack.timeTrackArr[itemName];
-            ga('send', 'event', category, action, label, calculatedTime);
+            ga('send', 'event', category, action, calculatedTime);
             //DEBUG
             if(formsTimeTrack.debugIsOn && typeof console !== 'undefined' && typeof console.log !== 'undefined'){
                 console.log('[FormsTimeTrack] End input: ' + itemName + ' = ' + calculatedTime);

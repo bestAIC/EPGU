@@ -24,6 +24,12 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+  formsTimeTrack.bindTrack($('input[name="name_1"]'), 'inputСomplete', 'personName'); //analiyics
+  formsTimeTrack.bindTrack($('input[name="name_2"]'), 'inputСomplete', 'personName'); //analiyics
+  formsTimeTrack.bindTrack($('input[name="name_3"]'), 'inputСomplete', 'personName'); //analiyics
+</script>
 </head>
 <body>
   <div id="wrap" class="zamena_pasporta_pol">
@@ -43,15 +49,15 @@
                 <a class="exit">Константинопольский К. К.</a>
                 
                 <ul class="submenu">
-                	<li class='ico_lk'><a href="#">Личный кабинет</a></li>
-                	<li class='ico_contact'><a href="#">Свяжитесь с нами</a></li>
-                	<li class='ico_exit'><a href="#">Выход</a></li>
+                	<li class='ico_lk'><a href="#"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
+                	<li class='ico_contact'><a href="#"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
+                	<li class='ico_exit'><a href="#"><span class="icomoon">;</span><span>Выход</span></a></li>
                 </ul>
               </div>
             </li>                                    
           </ul>      
         </div>
-        <div class="bottom">
+        <div class="bottom type_1">
           <ul class="breadcrumbs">
             <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>
             <li ><a href="#">Личные документы</a></li>          
@@ -141,15 +147,15 @@
 
             <h3>Сведения о паспорте, подлежащем замене</h3>          
             
-            <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-            </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-            </em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" class="big" />            
-            </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
+            <em class="wrapper l_16"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_25"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>            
+            </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
             
-            <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" />
+            <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big"/>
             </em><br/>
             
-            <em class="wrapper l_100"><input type="text" placeholder="Место рождения как в паспорте" class="big" /></em>                                       
+            <em class="wrapper l_100"><input type="text" placeholder="Место рождения как в паспорте" value="город Москва" class="big" disabled="disabled"/></em>                                       
           </fieldset> 
           
           <fieldset class="group_5">                      
@@ -164,7 +170,7 @@
             <div class="fields_cover">
               <h4>Данные вашего загранпаспорта</h4>
               
-              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
+              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big"/>
               </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
               </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
               
@@ -199,7 +205,8 @@
                 <input type="text" placeholder="Дата вступления" class="big" />  
               </em><br/>
               
-              <a class="btn white" href="#">
+              <a class="btn white plus" href="#">
+                <span class="icomoon">8</span>
                 <b>Добавить данные</b>
               </a>
               
@@ -226,7 +233,8 @@
                 <input type="text" placeholder="Дата" class="big" />  
               </em><br/>
               
-              <a class="btn white" href="#">
+              <a class="btn white plus" href="#">
+                <span class="icomoon">8</span>
                 <b>Добавить данные</b>
               </a>
               
@@ -337,7 +345,8 @@
               </em><em class="wrapper l_16"><input type="radio" checked="checked" name="chaild_sex" /><label>Мужской</label>
               </em><em class="wrapper l_16"><input type="radio" name="chaild_sex" /><label>Женский</label></em><br/>
               
-              <a class="btn white" href="#">
+              <a class="btn white plus" href="#">
+                <span class="icomoon">8</span>
                 <b>Добавить данные</b>
               </a>
             
@@ -463,7 +472,9 @@
           </fieldset>                                                                                               
           
           <span class="fr">
-            <input class="big btn" type="submit" value="Отправить">
+            <a class="btn big" href="presentation_step_4.html"><b>Отправить</b></a>
+              <!-- <input class="big btn" type="submit" value="Отправить">
+               -->
           </span>                     
                              
         </form>                      
@@ -479,9 +490,11 @@
           <span class="phones">
             8 800 100-70-10<br/>
             +7 499 550-18-39
-          </span><a href="#" class="feedback_btn">
-            Обратная связь
-          </a>
+          </span>
+          <div class="foot_lnk">
+            <a href="#">support@gosuslugi.ru</a><br/>
+            <a href="#">Оставить отзыв</a>
+          </div>
         </li>
       </ul>
     </div>  

@@ -40,6 +40,16 @@ EM {font-style:normal;}
     url('../fonts/icomoon-epga.svg?-za0wj4#icomoon-epga') format('svg');
   font-weight: normal;
 }
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('../fonts/rouble-webfont.eot');
+    src: url('../fonts/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rouble-webfont.woff') format('woff'),
+         url('../fonts/rouble-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .icomoon{
   font-family: 'icomoon-epga';
   speak: none;
@@ -70,15 +80,16 @@ SPAN.icomoon{
 .fl {float:left;}
 
 .rouble {
-  display: inline-block;
-  position: relative;
-}
-
-.rouble:before {
-  display: block;
-  content: "–";
-  position: absolute;
-  top: 0.06em;
+    font-family: 'als_rublregular';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .pseudo {
@@ -283,7 +294,7 @@ float: right;
     position: relative;
     margin:0;
     display: inline-block;
-    padding: 20px 12px 20px 0;
+    padding: 26px 12px 26px 0;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
@@ -302,7 +313,7 @@ float: right;
     height: 20px;
     font-size: 14px;
     font-weight: bold;
-    margin: 8px 0px;
+    margin: 8px 0px 14px;
     padding-left:28px;
     background-repeat: no-repeat; 
 }
@@ -314,18 +325,43 @@ float: right;
 #menu_btn.closed .submenu {top: -120px;}
 #menu_btn.opened .submenu {top: 0px;}
 
-#menu_btn .submenu .ico_lk {background-position: 3px 0px; background-image:url(../img/ico_empty_photo.png);}
-#menu_btn .submenu .ico_contact {background-position: 2px 0px; background-image:url(../img/ico_cloud_dotted.png);}
-#menu_btn .submenu .ico_exit {background-position: 0px 0px; background-image:url(../img/ico_exit.png);}
-
-#menu_btn .submenu .ico_lk:hover {background-position: 3px 0px; background-image:url(../img/ico_empty_photo_hover.png);}
-#menu_btn .submenu .ico_contact:hover {background-position: 2px 0px; background-image:url(../img/ico_cloud_dotted_hover.png);}
-#menu_btn .submenu .ico_exit:hover {background-position: 0px 0px; background-image:url(../img/ico_exit_hover.png);}
+#menu_btn .submenu LI A{
+    position: relative;
+    display: block;
+}
+#menu_btn .submenu .icomoon{
+    position: absolute;
+    top: -5px;
+    right: 100%;
+    transition: background-color .25s
+}
+#menu_btn .submenu .ico_lk .icomoon{
+    font-size: 25px;
+    margin-right: 4px;
+}
+#menu_btn .submenu .ico_contact .icomoon{
+    font-size: 25px;
+    margin-right: 6px;
+}
+#menu_btn .submenu .ico_exit .icomoon{
+    font-size: 25px;
+    margin-right: 7px;
+}
 
 #header .bottom {
-      behavior: url(PIE.htc);
-  border-bottom:3px solid #51b1eb;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;     
+    behavior: url(PIE.htc);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;     
+    background-color: #f6f6f6;
+}
+
+#header .bottom.type_1{
+    border-bottom: 4px solid #BD0037;
+}
+#header .bottom.type_2{
+    border-bottom: 4px solid #257cb1; 
+}
+#header .bottom.type_3{
+    border-bottom: 4px solid #8d1e8b; 
 }
 
 #header .breadcrumbs {
@@ -942,15 +978,15 @@ H4 {
 .advice SPAN.icomoon{
     line-height: 56px;
 }
-.advice.type_ok SPAN.icomoon{
+.type_ok .advice_h SPAN.icomoon{
     color: #86D464;
     font-size: 28px;
 }
-.advice.type_like SPAN.icomoon{
+.type_like .advice_h SPAN.icomoon{
     color: #4185D5;
     font-size: 32px;
 }
-.advice.type_not SPAN.icomoon{
+.type_not .advice_h SPAN.icomoon{
     color: #EA405A;
     font-size: 28px;
 }
@@ -974,6 +1010,8 @@ H4 {
 }
 .social-ico_cont A:hover SPAN.icomoon{
     background: #f5f5f5;
+    transition: background-color .15s;
+    -webkit-transition: background-color .15s;
 }
 
 .social A {
@@ -1050,8 +1088,17 @@ H4 {
 }
 #footer LI.right .foot_lnk{
     display: inline-block;
+    vertical-align: sub;
+}
+#footer LI.right .foot_lnk a{
     color: #576472;
-    font: 16px 'etelka_thinregular', sans-serif;
+    font: 16px/20px 'etelka_thinregular', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+#footer LI.right .foot_lnk a:hover{
+    text-decoration: none;
 }
 
 #footer .feedback_btn {
@@ -1258,6 +1305,20 @@ INPUT.btn.small {
 
 .btn.white:active {
   background:#e0e0e0;
+}
+
+.btn.white.plus{
+    padding: 0 25px;
+}
+.btn.white.plus .icomoon{
+    font-size: 23px;
+    margin-right: 14px;
+    line-height: 56px;
+}
+.btn.white.plus B{
+    display: inline;
+    padding: 0;    
+    vertical-align: middle;
 }
 
 .btn.larr {
