@@ -1,6 +1,6 @@
 // Inits
 $(document).ready(function() {
-  RetinaDisplay(); 
+  MPopUp(); 
   MenuShowMobile();
   ResponseGallery(); // Slick Galery 
   EasterEggs();   
@@ -8,25 +8,49 @@ $(document).ready(function() {
 
 
 
-// Retina
-function RetinaDisplay() {
-
-  var retina = window.devicePixelRatio > 1 ? true : false;
+// Popup
+function MPopUp() {
+  $(window).on('resize', function(){
+    if($('#content .ticket .popup_link:hidden').length){  
+      $('#content .ticket .popup_link').parent().addClass('go_more');
+    } else { 
+      $('.limiter').removeClass('go_more');
+    } 
+  }).resize(); 
   
-  if (retina) {
-    $('html').addClass('retina');
-  }
+  $('.go_more').on('click', function(e) {
   
-/*    
-  $(window).load(function() {
-    var images = $('img');
-      images.each(function(i) {
-        $(this).width($(this).width() / 2);
-      });
-  });
-*/
+    var $message = $('#popup_more_info');
+        
+    $('#wrap').prepend('<div id="popup_fade"></div>');
+    if ($message.css('display') != 'block') {
+        $message.show();
+        var firstClick = true;
+        $(document).bind('click.event', function(e) {
+            if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
+                $message.hide();
+                $(document).unbind('click.event');
+                $('#popup_fade').remove();
+            }
+            $('.close_popup_x').click(function(){
+              $message.hide();
+              $(document).unbind('click.event');
+              $('#popup_fade').remove();
+            });
+            
+            $('.popup .back').click(function(){
+              $message.hide();
+              $(document).unbind('click.event');
+              $('#popup_fade').remove();
+            });            
+            
+            firstClick = false;
+        });
+    }
+    e.preventDefault();
+  });   
   
-
+        
 }
 
 // Top menu mobile

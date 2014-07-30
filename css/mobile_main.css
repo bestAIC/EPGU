@@ -570,10 +570,6 @@ dd .popup_link{
   padding:0 60px;
 }
 
-.popup .white.btn {
-  display:none;
-}
-
 .popup .ticket {
   border:none;
   position:relative;
@@ -1034,9 +1030,10 @@ FIELDSET{
   }
   
   .popup {
-  max-width:945px;
-  width: 90%;
-    margin: 0 0 0 -344px;
+    max-width:640px;
+    margin: 0 0 0 -320px;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;    
   }  
 
   #intro .txt {
@@ -1273,6 +1270,14 @@ FIELDSET{
     display: block;
   }
 
+  .go_more:after {
+    content: "5";
+    font: 14px 'icomoon-epga';
+    right: 0;
+    top:50%;
+    position: absolute;
+    margin:-10px -15px 0 0;
+  }
 
   #content .title.medium{
     margin-top: 30px;
@@ -1470,7 +1475,7 @@ FIELDSET{
 
   .popup .ticket .brd DT,
   .popup .ticket .brd DD {
-    padding-top: 10px;
+    padding: 10px 0 0 0!important;
   } 
   
   .popup .ticket .brd + DIV {
@@ -1479,18 +1484,18 @@ FIELDSET{
   
   .popup .ticket DL {
     width:auto;
-    padding:10px 20px;
+    padding:10px 20px 10px 0!important;
   }  
   
   .popup .ticket DL DT {
     display:block;
-    padding:0px;
+    padding:0px!important;
     width:100%;
   } 
   
   .popup .ticket DL DD {
     display:block;
-    padding:0px;
+    padding:0px!important;
     width:100%;    
   } 
   
