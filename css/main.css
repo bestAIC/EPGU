@@ -1051,6 +1051,7 @@ H4 {
 #footer LI.right .foot_lnk{
     display: inline-block;
     color: #576472;
+    font: 16px 'etelka_thinregular', sans-serif;
 }
 
 #footer .feedback_btn {
