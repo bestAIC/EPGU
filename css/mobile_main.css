@@ -48,10 +48,13 @@ BODY {
 }
 
 #header .top.type_1 {
-  border-bottom: 4px solid #257CB1;
+  border-bottom: 4px solid #BD0037;
 }
 #header .top.type_2{
-  border-bottom: 4px solid #c00e4b;
+  border-bottom: 4px solid #257cb1; 
+}
+#header .top.type_3{
+  border-bottom: 4px solid #8d1e8b;  
 }
 
 #header .logo {
@@ -60,12 +63,16 @@ BODY {
   margin:16px 0 0 0;
 }
 
-#header .nav {
-
+#menu_btn{
+  top: 3px;
 }
 
 #header .nav LI {
   height: 66px;
+}
+
+#menu_btn .exit{
+  padding: 22px 12px 22px 0;
 }
 
 
@@ -280,6 +287,10 @@ BODY {
 .jq-selectbox__select-text{
   height: 60px;
 }
+.jq-selectbox__trigger-arrow,
+.jq-selectbox:hover .jq-selectbox__trigger-arrow{
+  top: 24px;
+}
 
 .big_inp-form INPUT{
    height: 60px;
@@ -369,10 +380,11 @@ BODY {
 .main.big_inp-form .q:hover .q_hover{
   display: none;
 }
-.main.big_inp-form .q .ico{
-    vertical-align: middle;
-    line-height: 36px;
-    padding: 14px;
+.main.big_inp-form .q .icomoon{
+  vertical-align: middle;
+  line-height: 36px;
+  font-size: 18px;
+  color: #565656;
 }
 .main.big_inp-form .q.closed .q_slick_wrap{
   display: none;
@@ -686,14 +698,13 @@ dd .popup_link{
 
 
 .social_wrap-b .social{
-    height: 56px;
     padding: 40px 0;
-    display: inline-block;
+    display: table;
     white-space: nowrap;
-    margin-bottom: 0;
 } 
-.social-ico_cont{
-  display: inline-block;
+.social-ico_cont SPAN.icomoon{
+  line-height: 55px;
+  font-size: 55px;
 }
 .social_wrap-b B{
     color: #74777F;
@@ -701,17 +712,14 @@ dd .popup_link{
     display: table-cell;
     white-space: normal;
     vertical-align: middle;
-    padding-right: 26px;
+    padding-right: 30px;
+    min-width: 170px;
 }
 .social_wrap-b A{
     border: 1px solid #DBE2E6;
     border-radius: 4px;
     margin-left: 0;
     margin-right: 26px;
-}
-.social_wrap-b SPAN{
-    font-size: 56px;
-    color: #565656;
 }
 
 .advice{
@@ -1184,8 +1192,7 @@ FIELDSET{
     margin-left: 90px;
     margin-top: 16px;
   }
-  .file-sidebar_right LABEL{
-    margin: 0;
+  #content .file-sidebar_right LABEL{
     display: block;
   }
   .file-sidebar_right .sub_txt{
@@ -1271,11 +1278,6 @@ FIELDSET{
     color: #dd191d;
     margin-top: 28px;
     display: block;
-  }
-
-
-  #content .title.medium{
-    margin-top: 30px;
   }
 
   .field_cont .l_33{
@@ -1516,13 +1518,21 @@ FIELDSET{
   }   
 
   .menu {
-    margin:12px 0 0 0;
+    margin:14px 0 0 0;
     padding: 0 0 0 20px; 
-    background: url('../img/mobile/ico_mobile_menu.png') 0 5px no-repeat; 
     background-size: 12px 12px;   
     display: inline-block!important;
     cursor: pointer;
-    font-size:115%;     
+    font-size:18px;     
+    vertical-align: baseline;
+  }
+  .menu SPAN.icomoon{
+    font-size: 14px;
+    margin-right: 10px;
+    line-height: 18px;
+  }
+  .menu SPAN{
+    vertical-align: baseline;
   }
   
   #menu_btn.opened,
@@ -1843,15 +1853,25 @@ FIELDSET{
   
   TEXTAREA::-webkit-input-placeholder,
   INPUT::-webkit-input-placeholder {color:#fff;}
+  
 
+  .jq-selectbox__select-text{
+    height: 50px;
+  }
+  .jq-selectbox__trigger-arrow,
+  .jq-selectbox:hover .jq-selectbox__trigger-arrow{
+    top: 20px;
+    background-size: 90%;
+  }
 
   .main.big_inp-form .q{
     width: 34px;
     height: 34px;
     left:5px;
   }
-  .main.big_inp-form .q .ico{
+  .main.big_inp-form .q .icomoon{
     line-height: 34px;
+    font-size: 20px;
   }
 
 
@@ -1994,12 +2014,12 @@ FIELDSET{
     margin:0 0 15px 0;
   }
   .social_wrap-b B{
-    width:100%;
     line-height: 18px;
     display:block;
-    margin:15px 0;
+    margin: 20px 0 16px;
+    font-size: 14px;
   }
-  .social-ico_cont{
+  .social .social-ico_cont{
     margin-left: 0px;
     margin-top: 16px;
     display: block;
