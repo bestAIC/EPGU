@@ -255,8 +255,8 @@ BODY {
 
 #content INPUT.btn.big{
   height: 52px;
-  margin-bottom: 40px;
 }
+
 #content INPUT.btn.small{
   margin-top: 0;
   font-size: 16px;
@@ -336,7 +336,6 @@ BODY {
   padding: 15px 68px 18px 20px;
   position: relative;
   margin: 0;
-  margin-top: -1px;
 }
 .info-block_wrap .info-block_h{
   margin-bottom: 16px;
@@ -490,7 +489,9 @@ BODY {
 /* /quest-block */
 
 
-
+.main FIELDSET .clear .fr {
+    padding: 0;
+}
 
 .ticket {
     margin: 0;
@@ -531,6 +532,10 @@ BODY {
 
 .ticket DD{
   padding: 0 220px 0 40px;
+}
+
+.mobile_proverka_sudebnyh_zadoljennostey .ticket DD{
+  padding:0 0 20px 0;
 }
 
 .ticket dt,
@@ -637,14 +642,15 @@ dd .popup_link{
 
 
 .switcher_cont{
-    padding: 40px 0;
-    white-space: nowrap;
-    border-top: 1px solid #DBE2E6;
-    border-bottom: 1px solid #DBE2E6;
+  padding: 40px 0;
+  white-space: nowrap;
+  border-top: 1px solid #DBE2E6;
+  border-bottom: 1px solid #DBE2E6;
+  height: 38px;  
 }
 
 .switcher_cont .limiter{
-    display:table;
+    display:table; 
 }
 
 .switcher_cont .switcher_h{
@@ -692,7 +698,7 @@ dd .popup_link{
 .social_wrap-b B{
     color: #74777F;
     font-size: 15px;
-    display: inline-block;
+    display: table-cell;
     white-space: normal;
     vertical-align: middle;
     padding-right: 26px;
@@ -1021,13 +1027,6 @@ FIELDSET{
   padding:0;
 }
 
-#content .wrapper .btn {
-  margin:0px!important;
-}
-
-
-
-
   .menu_btn_cover,
   #header .nav {
   max-width:945px;
@@ -1291,9 +1290,6 @@ FIELDSET{
     padding-right: 130px;
   }
 
-  .social_wrap-b B{
-      width: 30%;
-  }
 
   #footer .bottom_link {
   max-width:945px;
@@ -1360,12 +1356,56 @@ FIELDSET{
  
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Phone Portrait*/
 @media (max-width:640px) {
 
   BODY {
     overflow-x:hidden;
   }
+  
+
+  .limiter {
+    width: 280px;
+    padding:0;
+  }  
 
   #header .nav {
     width: 280px;
@@ -1551,18 +1591,16 @@ FIELDSET{
   
   #content {
     padding: 20px 0 0 0;
-    width: 320px;
+    /*width: 320px;*/
   }      
   #content .title{
-    padding-left: 0;
-    margin-left: 10px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    padding: 0;
+    margin:0 0 20px 0;
   }
   #content .title IMG{
     width: 32px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 15px;
     vertical-align: middle;
     position: static;
     display: inline-block;
@@ -1571,7 +1609,7 @@ FIELDSET{
     font-size: 21px;
     display: inline-block;
     vertical-align: text-top;
-    width: 80%;
+    width:225px;
   }
 
   #content H2 {
@@ -1618,23 +1656,10 @@ FIELDSET{
     margin-top: 0;
   }
 
-  #content .title.medium{
-    padding-left: 0;
-    height: 100%;
-    margin: 0px 0 20px;
-    padding: 0 20px;
-  }
   
   .big_inp-form .point_num{
-    font-size: 21px;
-    left: -2px;
-    font-size: 1.31em;
-    left: -2px;
-    float: left;
-    position: relative;
-    margin-top: -4px;
-    padding-left: 20px;
-    margin-right: 8px;
+    font-size: 22px;
+    top: -3px;
   }
 
   #content .field_cont{
@@ -1659,17 +1684,14 @@ FIELDSET{
   .big_inp-form INPUT:-moz-placeholder{
     color: transparent;
   }
-  #content FORM .btn-mr20_phone{
-    margin-right: 20px;
-  }
+
   .jq-selectbox__select{
     line-height: 54px;
   }
 
   .big_inp-form FIELDSET H3{
-    font-size: 14px; /*14px*/
-    margin-top: -3px;
-    margin-left: 20px;
+    font-size: 17px;
+    margin:0 0 20px 30px;
   }
   
 
@@ -1681,7 +1703,8 @@ FIELDSET{
 
 
   .info-block_wrap{
-    margin: 16px 20px 14px;
+    margin: 0 0 15px 0;
+    padding:0;
   }
   #content .info-block_wrap .info_block{
     padding: 15px;
@@ -1715,13 +1738,13 @@ FIELDSET{
 
   .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf{
     position: relative;
-    height: 168px;
+    height: 148px;
   }
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr{
       position: absolute;
       bottom: 20px;
       width: 1024px;
-      margin-left: -517px;
+      margin-left: -525px;
       left: 50%;
     }
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr:after{
@@ -1733,7 +1756,8 @@ FIELDSET{
       margin-left: -130px;
     }
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr B{
-      margin-left: 70px;
+      text-align: right;
+      width: 280px;      
     }
 
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .fr{
@@ -1742,6 +1766,7 @@ FIELDSET{
     }
   .mobile_nalogovaya_zadoljennost .mobile_morpf{
     height: 50px;
+    margin: 5px 0 15px;
   }
   .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf{
     border: 1px solid #d0d0d0;
@@ -1770,10 +1795,13 @@ FIELDSET{
       margin-bottom: 24px;
     }
 
-  FORM.big_inp-form .wrapper{
-    margin-bottom: 2px;
-    margin-top: 14px;
-    padding-left: 20px;
+  .mobile_nalogovaya_zadoljennost #content .mobile_morpf .wrapper {
+    position:static;
+  }
+
+  .wrapper{
+    margin:0 0 15px 0;
+    padding:0px;
   }
 
   .obratnaya_svyaz FIELDSET H3{
@@ -1787,9 +1815,13 @@ FIELDSET{
     height: 50px;
     font-size: 18px;
     padding: 0 20px;
-    margin-bottom: 32px;
-    margin-top: 24px;
+    margin:5px 0 15px 0;
   }
+  
+
+  #content FIELDSET .btn_field {
+    width:100%;
+  }  
   
   TEXTAREA{
     min-height: 88px; 
@@ -1799,19 +1831,24 @@ FIELDSET{
 
   INPUT:focus,
   TEXTAREA:focus{
-    behavior: url(PIE.htc);
     box-shadow: 0px 0px 0px 1px rgba(173, 222, 255, 1);
     border: 1px solid #addeff;
   }
+  
+  TEXTAREA:-ms-input-placeholder,
+  INPUT:-ms-input-placeholder {color:#fff;}  
+  
+  TEXTAREA::-moz-placeholder,
+  INPUT::-moz-placeholder {color:#fff;}
+  
+  TEXTAREA::-webkit-input-placeholder,
+  INPUT::-webkit-input-placeholder {color:#fff;}
 
-  FORM .btn-mr20_phone{
-    margin-right: 20px;
-    margin-top: -10px;
-  }
+
   .main.big_inp-form .q{
-    margin-left: -14px;
     width: 34px;
     height: 34px;
+    left:5px;
   }
   .main.big_inp-form .q .ico{
     line-height: 34px;
@@ -1819,12 +1856,12 @@ FIELDSET{
 
 
   .big_inp-form .cover_info_title{
-    padding-left: 20px;
+    margin:0;
   }
   .big_inp-form .cover_info_title p{
     display: block;
     font-size: 14px;
-    margin-top: 25px;
+    margin:0 0 15px 0;
   }
   .big_inp-form .cover_info_title .price{
     display: block;
@@ -1832,9 +1869,8 @@ FIELDSET{
     padding-top: 4px;
 }
   .big_inp-form .cover_info_title .selector{
-    margin-top: 20px;
+    margin:15px 0 15px -10px;
     white-space: nowrap;
-    margin-left: -12px;
   }
   .big_inp-form .selector LI:first-child{
     margin-left: 0;
@@ -1858,10 +1894,10 @@ FIELDSET{
     height: 38px;
     padding: 0;
     font-size: 15px;
-    float: left;
   }
   .switcher_cont .switcher{
     float: right;
+    width:86px;
   }
   .switcher_cont .switcher_txt{
     display: block;
@@ -1869,32 +1905,38 @@ FIELDSET{
     margin-top: 20px;
     width: 100%;
     float: left;
-  }
+  } 
+  
+  .switcher_cont EM {
+      padding: 0;
+      width: 100%;
+  }  
 
   .ticket{
     position: relative;
-    padding: 38px 0 54px;
-    padding-left: 20px;
+    padding: 0;
     margin-right: 0;
+    border-top: 1px solid #d0d0d0;    
   }
   .ticket .sub_title{
     position: static;
     padding-right: 0;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 16px;
   }
   .ticket .sub_title .fl{
-    width: 250px;
+    width: 280px;
+    line-height: 20px;    
   }
   .ticket .money{
     position: absolute;
     bottom: 30px;
-    left: 20px;
+    left: 0px;
   }
   .ticket .sub_title .btn_cover_r{
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 0px;
     top: auto;
   }
   .ticket .sub_title .btn_cover_r INPUT{
@@ -1902,6 +1944,9 @@ FIELDSET{
   }
   .ticket DL DD{
     width: 255px;
+    display:block;
+    padding:0 0 40px 0!important;
+    line-height: 21px;    
   }
   .ticket DL DT{
     display: none;
@@ -1913,7 +1958,6 @@ FIELDSET{
     font-size: 12px;
     position: absolute;
     top: 12px;
-    left: 20px;
   }
   .ticket .pseudo.popup_link{
     display: none;
@@ -1924,25 +1968,36 @@ FIELDSET{
   .ticket .status.pd{
     position: absolute;
     right: 20px;
-    bottom: 22px;
+    bottom: 25px;
   }
   .ticket .status.processing{
     position: absolute;
     right: 20px;
-    bottom: 22px;
+    bottom: 25px;
   }
+  
+  .ticket .limiter {
+      padding: 35px 0;
+      position: relative;
+  }  
 
+  .ticket .limiter:before {
+      display: none;
+  }
 
   .social_wrap-b{
-    padding-left: 0;
+    margin: 0 0 15px 0;
   }
   .social_wrap-b .social{
-    height: 112px;
-    padding: 20px 20px 30px;
+    height: auto;
+    padding:0;
+    margin:0 0 15px 0;
   }
   .social_wrap-b B{
-    width: 100%;
+    width:100%;
     line-height: 18px;
+    display:block;
+    margin:15px 0;
   }
   .social-ico_cont{
     margin-left: 0px;
@@ -1955,7 +2010,21 @@ FIELDSET{
   .social_wrap-b A{
     margin-right: 16px;
   }
+  
+  
 
+  .switcher .cover DIV {
+      height: 34px;
+  }
+  .switcher .left, .switcher .right {
+      line-height: 34px;
+      width:50px;
+  }
+  
+  .switcher .movable {
+      height: 34px;
+      width: 34px;
+  }    
 
   .advice{
     padding: 22px 10px 20px 20px;
@@ -2022,16 +2091,9 @@ FIELDSET{
     display: none;
   }
   
-  .btn-cont_inner{
-    padding: 0 20px;
-}
   .btn-cont_inner .btn{
-    width: 280px;
-    float: none;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
+
+  }
 
 
   .jq-file{

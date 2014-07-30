@@ -125,8 +125,9 @@ function SwitchPoint(){
   });
   
   $('.switcher').click(function(){
+    var width = $(this).find('.left').width();
     if($(this).hasClass('active')){
-      $(this).find('.cover').animate({left:-55}, 200);
+      $(this).find('.cover').animate({left:-width}, 200);
       $(this).removeClass('active');          
     } else {
       $(this).find('.cover').animate({left:0}, 200);
