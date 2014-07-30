@@ -1050,6 +1050,7 @@ H4 {
 }
 #footer LI.right .foot_lnk{
     display: inline-block;
+    color: #576472;
 }
 
 #footer .feedback_btn {
