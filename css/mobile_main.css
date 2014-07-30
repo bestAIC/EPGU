@@ -1843,6 +1843,16 @@ FIELDSET{
   
   TEXTAREA::-webkit-input-placeholder,
   INPUT::-webkit-input-placeholder {color:#fff;}
+  
+  
+  TEXTAREA[disabled]:-ms-input-placeholder,
+  INPUT[disabled]:-ms-input-placeholder {color:#eaeef1;}  
+  
+  TEXTAREA[disabled]::-moz-placeholder,
+  INPUT[disabled]::-moz-placeholder {color:#eaeef1;}
+  
+  TEXTAREA[disabled]::-webkit-input-placeholder,
+  INPUT[disabled]::-webkit-input-placeholder {color:#eaeef1;}  
 
 
   .main.big_inp-form .q{
