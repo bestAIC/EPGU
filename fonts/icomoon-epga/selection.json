@@ -18,8 +18,8 @@
 				{}
 			],
 			"properties": {
-				"order": 31,
-				"id": 29,
+				"order": 94,
+				"id": 30,
 				"prevSize": 32,
 				"code": 33,
 				"name": "svg",
@@ -48,8 +48,8 @@
 				{}
 			],
 			"properties": {
-				"order": 32,
-				"id": 28,
+				"order": 95,
+				"id": 29,
 				"prevSize": 32,
 				"code": 34,
 				"name": "svg2",
@@ -75,8 +75,8 @@
 				{}
 			],
 			"properties": {
-				"order": 33,
-				"id": 27,
+				"order": 96,
+				"id": 28,
 				"prevSize": 32,
 				"code": 35,
 				"name": "svg3",
@@ -102,8 +102,8 @@
 				{}
 			],
 			"properties": {
-				"order": 34,
-				"id": 26,
+				"order": 97,
+				"id": 27,
 				"prevSize": 32,
 				"code": 36,
 				"name": "svg4",
@@ -129,8 +129,8 @@
 				{}
 			],
 			"properties": {
-				"order": 35,
-				"id": 25,
+				"order": 98,
+				"id": 26,
 				"prevSize": 32,
 				"code": 37,
 				"name": "svg5",
@@ -156,8 +156,8 @@
 				{}
 			],
 			"properties": {
-				"order": 36,
-				"id": 24,
+				"order": 99,
+				"id": 25,
 				"prevSize": 32,
 				"code": 38,
 				"name": "svg6",
@@ -189,8 +189,8 @@
 				{}
 			],
 			"properties": {
-				"order": 37,
-				"id": 23,
+				"order": 100,
+				"id": 24,
 				"prevSize": 32,
 				"code": 39,
 				"name": "svg7",
@@ -216,8 +216,8 @@
 				{}
 			],
 			"properties": {
-				"order": 38,
-				"id": 22,
+				"order": 101,
+				"id": 23,
 				"prevSize": 32,
 				"code": 40,
 				"name": "svg8",
@@ -244,8 +244,8 @@
 				{}
 			],
 			"properties": {
-				"order": 39,
-				"id": 21,
+				"order": 102,
+				"id": 22,
 				"prevSize": 32,
 				"code": 41,
 				"name": "svg9",
@@ -271,8 +271,8 @@
 				{}
 			],
 			"properties": {
-				"order": 40,
-				"id": 20,
+				"order": 103,
+				"id": 21,
 				"prevSize": 32,
 				"code": 42,
 				"name": "svg10",
@@ -302,8 +302,8 @@
 				{}
 			],
 			"properties": {
-				"order": 41,
-				"id": 19,
+				"order": 104,
+				"id": 20,
 				"prevSize": 32,
 				"code": 43,
 				"name": "svg11",
@@ -329,8 +329,8 @@
 				{}
 			],
 			"properties": {
-				"order": 42,
-				"id": 18,
+				"order": 105,
+				"id": 19,
 				"prevSize": 32,
 				"code": 44,
 				"name": "svg12",
@@ -363,8 +363,8 @@
 				{}
 			],
 			"properties": {
-				"order": 43,
-				"id": 17,
+				"order": 106,
+				"id": 18,
 				"prevSize": 32,
 				"code": 45,
 				"name": "svg13",
@@ -391,8 +391,8 @@
 				{}
 			],
 			"properties": {
-				"order": 44,
-				"id": 16,
+				"order": 107,
+				"id": 17,
 				"prevSize": 32,
 				"code": 46,
 				"name": "svg14",
@@ -418,8 +418,8 @@
 				{}
 			],
 			"properties": {
-				"order": 45,
-				"id": 15,
+				"order": 108,
+				"id": 16,
 				"prevSize": 32,
 				"code": 47,
 				"name": "svg15",
@@ -445,8 +445,8 @@
 				{}
 			],
 			"properties": {
-				"order": 46,
-				"id": 14,
+				"order": 109,
+				"id": 15,
 				"prevSize": 32,
 				"code": 48,
 				"name": "svg16",
@@ -473,8 +473,8 @@
 				{}
 			],
 			"properties": {
-				"order": 47,
-				"id": 13,
+				"order": 110,
+				"id": 14,
 				"prevSize": 32,
 				"code": 49,
 				"name": "svg17",
@@ -504,8 +504,8 @@
 				{}
 			],
 			"properties": {
-				"order": 48,
-				"id": 12,
+				"order": 111,
+				"id": 13,
 				"prevSize": 32,
 				"code": 50,
 				"name": "svg18",
@@ -531,8 +531,8 @@
 				{}
 			],
 			"properties": {
-				"order": 49,
-				"id": 11,
+				"order": 112,
+				"id": 12,
 				"prevSize": 32,
 				"code": 51,
 				"name": "svg19",
@@ -559,8 +559,8 @@
 				{}
 			],
 			"properties": {
-				"order": 50,
-				"id": 10,
+				"order": 113,
+				"id": 11,
 				"prevSize": 32,
 				"code": 52,
 				"name": "svg20",
@@ -587,8 +587,8 @@
 				{}
 			],
 			"properties": {
-				"order": 51,
-				"id": 9,
+				"order": 114,
+				"id": 10,
 				"prevSize": 32,
 				"code": 53,
 				"name": "svg21",
@@ -615,8 +615,8 @@
 				{}
 			],
 			"properties": {
-				"order": 52,
-				"id": 8,
+				"order": 115,
+				"id": 9,
 				"prevSize": 32,
 				"code": 54,
 				"name": "svg22",
@@ -642,8 +642,8 @@
 				{}
 			],
 			"properties": {
-				"order": 53,
-				"id": 7,
+				"order": 116,
+				"id": 8,
 				"prevSize": 32,
 				"code": 55,
 				"name": "svg23",
@@ -675,8 +675,8 @@
 				{}
 			],
 			"properties": {
-				"order": 54,
-				"id": 6,
+				"order": 117,
+				"id": 7,
 				"prevSize": 32,
 				"code": 56,
 				"name": "svg24",
@@ -705,8 +705,8 @@
 				{}
 			],
 			"properties": {
-				"order": 55,
-				"id": 5,
+				"order": 118,
+				"id": 6,
 				"prevSize": 32,
 				"code": 57,
 				"name": "svg25",
@@ -741,8 +741,8 @@
 				{}
 			],
 			"properties": {
-				"order": 56,
-				"id": 4,
+				"order": 119,
+				"id": 5,
 				"prevSize": 32,
 				"code": 58,
 				"name": "svg26",
@@ -771,8 +771,8 @@
 				{}
 			],
 			"properties": {
-				"order": 57,
-				"id": 3,
+				"order": 120,
+				"id": 4,
 				"prevSize": 32,
 				"code": 59,
 				"name": "svg27",
@@ -798,8 +798,8 @@
 				{}
 			],
 			"properties": {
-				"order": 58,
-				"id": 2,
+				"order": 121,
+				"id": 3,
 				"prevSize": 32,
 				"code": 60,
 				"name": "svg28",
@@ -825,8 +825,8 @@
 				{}
 			],
 			"properties": {
-				"order": 59,
-				"id": 1,
+				"order": 122,
+				"id": 2,
 				"prevSize": 32,
 				"code": 61,
 				"name": "svg29",
@@ -852,8 +852,8 @@
 				{}
 			],
 			"properties": {
-				"order": 60,
-				"id": 0,
+				"order": 123,
+				"id": 1,
 				"prevSize": 32,
 				"code": 62,
 				"name": "svg30",
@@ -861,6 +861,51 @@
 			},
 			"setIdx": 0,
 			"iconIdx": 29
+		},
+		{
+			"icon": {
+				"paths": [
+					"M957.217 512c0 245.887-199.331 445.217-445.217 445.217s-445.217-199.331-445.217-445.217c0-245.887 199.331-445.217 445.217-445.217s445.217 199.331 445.217 445.217z",
+					"M512 1024c-282.312 0-512-229.688-512-512s229.688-512 512-512c282.312 0 512 229.688 512 512s-229.688 512-512 512zM512 133.565c-208.673 0-378.435 169.761-378.435 378.435s169.761 378.435 378.435 378.435c208.673 0 378.435-169.761 378.435-378.435s-169.761-378.435-378.435-378.435z",
+					"M512 690.087c98.349 0 178.087-79.738 178.087-178.087s-79.738-178.087-178.087-178.087-178.087 79.738-178.087 178.087 79.738 178.087 178.087 178.087z"
+				],
+				"attrs": [
+					{
+						"fill": "#FFFFFF"
+					},
+					{
+						"fill": "#6CA9D2"
+					},
+					{
+						"fill": "#6CA9D2"
+					}
+				],
+				"grid": 0,
+				"tags": [
+					"svg"
+				]
+			},
+			"attrs": [
+				{
+					"fill": "#FFFFFF"
+				},
+				{
+					"fill": "#6CA9D2"
+				},
+				{
+					"fill": "#6CA9D2"
+				}
+			],
+			"properties": {
+				"order": 124,
+				"id": 0,
+				"prevSize": 32,
+				"code": 63,
+				"name": "svg31",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 30
 		}
 	],
 	"height": 1024,

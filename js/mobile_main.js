@@ -83,9 +83,9 @@ function MenuShowMobile(){
 
 // question ico mobile
 function ResponseGallery(){
-  var cont = $('.js-q'),
-      wrap = $('.js-q_slick_wrap'),
-      lnk = $('.js-q_ico'),
+  var cont = $('.js-q_slick'),
+      wrap = $('.js-q_slick_wrap').parent(),
+      lnk = $('.js-q'),
       gallery = $('.js-q_slick');
 
   // $('html').click(function(){
@@ -94,13 +94,8 @@ function ResponseGallery(){
 
   lnk.on('click', function(){
     cont.css({'z-index': 101})
-    if(cont.hasClass('closed')){
-      cont.addClass('opened').removeClass('closed');
-    } else {
-      cont.addClass('closed').removeClass('opened');
-    }
-    if(cont.hasClass('opened')){
-      wrap.show();
+    if($('.q_slick_cont:visible')){
+      wrap.slideToggle();
       gallery.slick({
             dots: true,
             speed: 300,
@@ -115,8 +110,6 @@ function ResponseGallery(){
           
           dots.append('<li class="dots-length">' + dotsLng + '</li>');
 
-    } else if (cont.hasClass('closed')) {
-      gallery.unslick();
     }
   });
 }
