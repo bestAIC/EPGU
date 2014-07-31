@@ -243,15 +243,7 @@ float: right;
 #header .logo SVG{
     width: 196px;
 }
-.no-js .lt-ie9 #header .logo SVG{
-    display: none;
-}
-.no-js .lt-ie9 #header .logo{
-    background: url('../img/logo.png');
-    width: 150px;
-    height: auto;
-    margin: 16px 0 0 0;
-}
+
 
 
 #header .catalog_btn {
