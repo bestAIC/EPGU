@@ -39,11 +39,19 @@ function SForm() {
                     
     $('.jq-radio.checked').click();           
 
-     
+    $(function() {
+        if (window.PIE) {
+            $('.btn, .q, .jq-selectbox, .jq-selectbox__select, .catalog_btn, #menu_btn').each(function() {
+                PIE.attach(this);
+            });
+        }
+    });      
     
   }); 
+   
 
 }
+
 
 // Popup
 function PopUp() {
