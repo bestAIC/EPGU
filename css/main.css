@@ -235,10 +235,9 @@ SPAN.icomoon{
 #header LI.col_3 {
 float: right;
 }
-#header .logo SVG{
-    width: 196px;
-    display:block;
-  margin:7px 0 0 0;
+#header .logo{
+    margin:7px 0 0 0;
+    display: inline-block;
 }
 
 

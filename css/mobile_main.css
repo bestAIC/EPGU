@@ -56,11 +56,12 @@ BODY {
 #header .top.type_3{
   border-bottom: 4px solid #8d1e8b;  
 }
-
+#header .logo {
+  margin:16px 0 0 0;
+}
 #header .logo SVG{
   width: 150px;
   height:34px;
-  margin:16px 0 0 0;
 }
 
 #menu_btn{
@@ -1574,11 +1575,13 @@ FIELDSET{
   #menu_btn.closed .submenu,
   #menu_btn.opened .submenu {top: 0px;}  
   
-  #header .logo SVG{
-    width: 100px;
-    height: 23px;
+  #header .logo{
     margin: 12px 0 0 0;
-    display: block;
+    display: inline-block;
+  }
+  #header .logo SVG{
+    width: 100px !important;
+    height: 23px !important;
   } 
   
   #header .nav LI {
