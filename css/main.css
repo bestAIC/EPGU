@@ -235,13 +235,10 @@ SPAN.icomoon{
 #header LI.col_3 {
 float: right;
 }
-
-#header .logo {
-  display:block;
-  margin:7px 0 0 0;
-}
 #header .logo SVG{
     width: 196px;
+    display:block;
+  margin:7px 0 0 0;
 }
 
 
@@ -442,9 +439,7 @@ float: right;
 #content .title IMG,
 #content .title SPAN.icomoon {
     position:absolute;
-    display:block; 
-    width:76px;
-    height:76px;
+    display:block;
     left:0px;
     top:0px;
     font-size: 76px;
@@ -483,13 +478,15 @@ float: right;
   border:1px solid #dbe2e6;    
 }
 
-.info_block.type_1 {
-  box-shadow: 0px 8px 0px -4px rgba(248, 121, 117, 1) inset;
+#content .info_block.type_1 {
+  box-shadow: 0px 6px 0px 0px #EE3F58 inset;
+  border-top: none; 
        
 }
 
-.info_block.type_2{
-  box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;      
+#content .info_block.type_2{
+  box-shadow: 0px 6px 0px 0px #FEC202 inset;      
+  border-top: none;
 }
 
 #content .info_block H4 {
@@ -2003,7 +2000,7 @@ input[type="submit"].styler[disabled] {
 /* links html */
 
 .links_html{
-    width: 780px;
+    width: 945px;
     margin: 20px 50px;
 }
 .links_html td{

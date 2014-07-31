@@ -1,52 +1,7 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Обратная связь</title>
-
-  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-  <link rel="stylesheet" type="text/css" href="css/mobile_main.css" media="all">
-  <script type="text/javascript" src="js/device.min.js"></script>
-  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" src="js/jquery.formstyler.js"></script>
-  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/mobile_main.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-
-</head>
-
-<body>
-  <div class="menu_btn_cover">
-    <div class="closed" id="menu_btn">
-      <a class="exit">Константинопольский К. К.</a>
-
-      <ul class="submenu">
-        <li class='ico_lk'><a href="#"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
-        <li class='ico_contact'><a href="#"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
-        <li class='ico_exit'><a href="#"><span class="icomoon">;</span><span>Выход</span></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div id="wrap" class="obratnaya_svyaz">
-    <div class="cover">
-      <div id="header">
-        <div class="top type_1">
-          <ul class="nav clear">
-            <li class="col_1">
-              <img src="img/mobile/logo.png" alt="" class="logo" />
-            </li>
-            <li class="col_2">
-              <a href="#" class="catalog_link">Основной портал</a>
-            </li>
-            <li class="col_3">
-              <a class="menu closed" href="#"><span class="icomoon">0</span><span>Меню</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<?
+$pagename = 'mobile_obratnaya_svyaz';
+include('include/mobile_head.php');
+?>
 
       <div id="content">
 

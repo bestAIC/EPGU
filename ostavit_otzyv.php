@@ -1,51 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Оставить отзыв</title>
-
-<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-<script type="text/javascript" src="js/device.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.formstyler.js"></script>
-<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-
-</head>
-<body>
-  <div id="wrap" class="ostavit_otzyv">
-   
-    <div class="cover">
-      <div id="header">
-        <div class="top">
-          <ul class="nav clear">
-            <li class="col_1">
-              <img src="img/logo.png" alt="" class="logo"/>
-            </li>
-            <li class="col_2">
-              <span class="catalog_btn"><i class="icomoon">6</i>Перейти на основной портал</span>
-            </li>
-            <li class="col_3">
-              <div id="menu_btn" class="closed">
-                <a class="exit">Константинопольский К. К.</a>
-                
-                <ul class="submenu">
-                  <li class='ico_lk'><a href="#">Личный кабинет</a></li>
-                  <li class='ico_contact'><a href="#">Свяжитесь с нами</a></li>
-                  <li class='ico_exit'><a href="#">Выход</a></li>
-                </ul>
-              </div>
-            </li>                                    
-          </ul>      
-        </div>
-        <div class="bottom type_2">
-          <ul class="breadcrumbs">
-            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>
-            <li ><a href="#">Личные документы</a></li>          
-            <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>                                       
-          </ul>          
-        </div>
-      </div>
+<?
+$pagename = 'ostavit_otzyv';
+$pagetitle = 'Оставить отзыв';
+include('include/head.php');
+?>
 
       <div id="content">
         <div class="title">

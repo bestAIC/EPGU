@@ -1,76 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Замена паспорта гражданина Российской Федерации</title>
-
-<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-<script type="text/javascript" src="js/device.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.formstyler.js"></script>
-<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-
-<script type="text/javascript" src="js/plugins/analitics.js"></script>
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53313434-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<script>
-  formsTimeTrack.bindTrack($('input[name="name_1"]'), 'inputСomplete', 'personName'); //analiyics
-  formsTimeTrack.bindTrack($('input[name="name_2"]'), 'inputСomplete', 'personName'); //analiyics
-  formsTimeTrack.bindTrack($('input[name="name_3"]'), 'inputСomplete', 'personName'); //analiyics
-</script>
-
-
-  <link rel="stylesheet" type="text/css" href="css/ie8.css" media="all">
-  <script type="text/javascript" src="js/PIE.js"></script>
-
-
-</head>
-<body>
-  <div id="wrap" class="zamena_pasporta_pol">
-  
-    <div class="cover">
-      <div id="header">
-        <div class="top">
-          <ul class="nav clear">
-            <li class="col_1">
-              <img src="img/logo.png" alt="" class="logo"/>
-            </li>
-            <li class="col_2">
-              <span class="catalog_btn"><i class="icomoon">6</i>Перейти на основной портал</span>
-            </li>
-            <li class="col_3">
-              <div id="menu_btn" class="closed">
-                <a class="exit">Константинопольский К. К.</a>
-                
-                <ul class="submenu">
-                	<li class='ico_lk'><a href="#"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
-                	<li class='ico_contact'><a href="#"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
-                	<li class='ico_exit'><a href="#"><span class="icomoon">;</span><span>Выход</span></a></li>
-                </ul>
-              </div>
-            </li>                                    
-          </ul>      
-        </div>
-        <div class="bottom type_3">
-          <ul class="breadcrumbs">
-            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>
-            <li ><a href="#">Личные документы</a></li>          
-            <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>                                       
-          </ul>          
-        </div>
-      </div>
+<?
+$pagename = 'zamena_psporta_pol';
+$pagetitle = 'Замена паспорта';
+include('include/head.php');
+?>
 
       <div id="content">
         <div class="title">
@@ -487,26 +419,7 @@
         </form>                      
         
       </div>
-    </div>  
-    <div id="footer">
-      <ul class="col_cover">
-        <li class="left">
-          <p>Официальный интернет-портал<br/>Российской Федерации, 2014 г.</p>
-        </li>
-        <li class="right">
-          <span class="phones">
-            8 800 100-70-10<br/>
-            +7 499 550-18-39
-          </span>
-          <div class="foot_lnk">
-            <a href="#">support@gosuslugi.ru</a><br/>
-            <a href="#">Оставить отзыв</a>
-          </div>
-        </li>
-      </ul>
-    </div>  
-  </div>
-  
-<script src="js/jquery.placeholders.min.js"></script>  
-</body>
-</html>
+
+<?
+include('include/footer.php');
+?> 

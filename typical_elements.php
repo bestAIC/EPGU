@@ -1,68 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Типовые элементы - desk</title>
-
-<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-<script type="text/javascript" src="js/device.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.formstyler.js"></script>
-<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-
-</head>
-<body>
-  <div id="wrap" class="gibdd_shtrafy">
-  
-    <div id="popup_rules" class="popup">
-      <b class="close_popup_x"></b>
-      <h2>Статья 12.9</h2>
-      <h3>Превышение установленной скорости движения, пункт 2</h3>
-      <p>Превышение установленной скорости движения транспортного средства на&nbsp;величину более&nbsp;20, 
-      но&nbsp;не&nbsp;более 40&nbsp;километров в&nbsp;час&nbsp;&mdash; влечет наложение административного штрафа в&nbsp;размере пятисот рублей.</p>
-      <span class="btn"><b>Продолжить</b></span>
-    </div>  
-  
-    <div id="popup_map" class="popup">
-      <b class="close_popup_x"></b>
-      <h2>Место нарушения</h2>
-      <p>172 КМ 95 М А/Д Москва-Минск</p>
-      <img src="img/map.jpg" />
-    </div>   
-  
-  
-    <div class="cover">
-      <div id="header">
-        <div class="top">
-          <ul class="nav clear">
-            <li class="col_1">
-              <img src="img/logo.png" alt="" class="logo"/>
-            </li>
-            <li class="col_2">
-              <span class="catalog_btn"><i class="icomoon">6</i>Перейти на основной портал</span>
-            </li>
-            <li class="col_3">
-              <div id="menu_btn" class="closed">
-                <a class="exit">Константинопольский К. К.</a>
-                
-                <ul class="submenu">
-                  <li class='ico_lk'><a href="#"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
-                  <li class='ico_contact'><a href="#"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
-                  <li class='ico_exit'><a href="#"><span class="icomoon">;</span><span>Выход</span></a></li>
-                </ul>
-              </div>
-            </li>                                    
-          </ul>      
-        </div>
-        <div class="bottom type_2">
-          <ul class="breadcrumbs">
-            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>
-            <li ><a href="#">Личные документы</a></li>          
-            <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>                                       
-          </ul>          
-        </div>
-      </div>
+<?
+$pagename = 'typical_elements';
+$pagetitle = 'Типовые элементы';
+include('include/head.php');
+?>
 
       <div id="content">
         <div class="title">
