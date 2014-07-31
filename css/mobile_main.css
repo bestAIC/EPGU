@@ -498,7 +498,7 @@ BODY {
   position: relative;
 }
 .main.big_inp-form .q_slick_cont .slick-dots .dots-length{
-  font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-left: 4px;
   color: #fff;
 }
@@ -509,7 +509,7 @@ BODY {
   right: 0;
 }
 .main.big_inp-form .q_slick_cont .slick-dots button{
-  font: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 0;
   color: #fff;
   text-align: right;
@@ -1704,7 +1704,7 @@ FIELDSET{
     display: block;
     margin: 0 0 6px 0;
     color: #A5AEB3;
-    font-size: 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   .big_inp-form INPUT,
