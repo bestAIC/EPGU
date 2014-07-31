@@ -29,9 +29,68 @@ INPUT.btn {
 
 #content .info_block.type_1 {
   border-top:4px solid #f87975;
-       
 }
 
-#content .info_block.type_2{
+#content .info_block.type_2 {
   border-top:4px solid #fec202;      
+}       
+
+.jq-radio.checked .jq-radio__div,
+.jq-radio .jq-radio__div,
+.jq-radio.disabled .jq-radio__div,
+.jq-radio.disabled.checked .jq-radio__div{
+	border: none;
+	background: none;
+	width: 23px;
+	height: 23px;
 }
+.jq-radio .jq-radio__div:after{
+	content: "@";
+	color: #CDD1D4;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	font: 20px 'icomoon-epga';
+	background: none;
+	height: 23px;
+	width: 23px;
+}
+.jq-radio.checked .jq-radio__div:after{
+	content: "?";
+	color: #6CA9D2;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	font: 20px 'icomoon-epga';
+	background: none;
+	height: 23px;
+	width: 23px;
+}
+.jq-radio.disabled .jq-radio__div:after{
+	content: "A";
+	font: 20px 'icomoon-epga';
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	font: 20px 'icomoon-epga';
+	background: none;
+	height: 23px;
+	width: 23px;
+}
+.jq-radio.disabled.checked .jq-radio__div:after{
+	content: "?";
+	color: #97A1A7;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	font: 20px 'icomoon-epga';
+	background: none;
+	height: 23px;
+	width: 23px;
+}
+
+
