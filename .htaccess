@@ -1,0 +1,13 @@
+#AuthType Basic   
+#AuthName aic.ru 
+#AuthUserFile /var/www/bitrix/epgu/.htpasswd
+#require valid-user
+#AuthType Basic
+#AuthName "Password-protected Area"
+#Require valid-user
+
+<FilesMatch ".(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
