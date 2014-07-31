@@ -238,10 +238,21 @@ float: right;
 
 #header .logo {
   display:block;
-  width:202px;
-  height:50px;
-  margin:5px 0 0 0;
+  margin:7px 0 0 0;
 }
+#header .logo SVG{
+    width: 196px;
+}
+.no-js .lt-ie9 #header .logo SVG{
+    display: none;
+}
+.no-js .lt-ie9 #header .logo{
+    background: url('../img/logo.png');
+    width: 150px;
+    height: auto;
+    margin: 16px 0 0 0;
+}
+
 
 #header .catalog_btn {
   position:relative;
@@ -356,13 +367,13 @@ float: right;
 }
 
 #header .bottom.type_1{
-    border-bottom: 4px solid #BD0037;
+    border-bottom: 4px solid #277CB1;
 }
 #header .bottom.type_2{
-    border-bottom: 4px solid #257cb1; 
+    border-bottom: 4px solid #892781; 
 }
 #header .bottom.type_3{
-    border-bottom: 4px solid #8d1e8b; 
+    border-bottom: 4px solid #C41E51; 
 }
 
 #header .breadcrumbs {
@@ -436,15 +447,25 @@ float: right;
   border-bottom:1px solid #dbe2e6;
 }
 
-#content .title IMG {
-  position:absolute;
-  display:block; 
-  width:72px;
-  height:76px;
-  left:0px;
-  top:0px;   
-  line-height:0; 
+#content .title IMG,
+#content .title SPAN.icomoon {
+    position:absolute;
+    display:block; 
+    width:76px;
+    height:76px;
+    left:0px;
+    top:0px;
+    font-size: 76px;
 }
+    #content .title SPAN.icomoon.color_1 {
+        color: #277CB1;
+    }
+    #content .title SPAN.icomoon.color_2 {
+        color: #892781;
+    }
+    #content .title SPAN.icomoon.color_3 {
+        color: #C41E51;
+    }
 
 #content .title H1 {
   font:40px 'etelka_thinregular';
