@@ -3,12 +3,35 @@ INPUT.big {
   line-height:54px;
 }
 
-INPUT.small {
-  line-height:40px;
-}
-
 INPUT {
   color:#333!important;
 }
 
+INPUT.small {
+  line-height:40px;
+}
 
+INPUT.btn {
+  color:#fff!important;
+}
+
+.main FIELDSET.last {
+  border-bottom:none!important;    
+}
+
+.switcher .left {
+  border-radius:4px 0 0 4px;
+}
+
+.switcher .right {
+  border-radius:0 4px 4px 0;
+}
+
+#content .info_block.type_1 {
+  border-top:4px solid #f87975;
+       
+}
+
+#content .info_block.type_2{
+  border-top:4px solid #fec202;      
+}

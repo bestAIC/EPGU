@@ -139,7 +139,7 @@ SPAN.icomoon{
   width:100%;
   height:100%;
   z-index:101;
-  background:rgba( 27, 34, 44, 0.8);  
+  background: url('../img/pattern.png');  
 }
 
 .popup {
@@ -476,13 +476,7 @@ float: right;
 }
 
 .info_block.type_2{
-  box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;
-  border-top: 1px solid #FFC200;
-      
-}
-.color_type {
-  box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;
-      
+  box-shadow: 0px 8px 0px -4px rgba(254, 194, 2, 1) inset;      
 }
 
 #content .info_block H4 {
@@ -756,6 +750,7 @@ H4 {
   cursor:pointer;      
   transition: background-color .15s;
   -webkit-transition: background-color .15s;
+  position:relative;
 }
 
 .selector LI.first {
@@ -776,21 +771,20 @@ H4 {
   cursor:default;   
 }
 
-/**/
+/**/ 
 
 .switcher {
   display:inline-block;
   position:absolute;
   overflow:hidden;
   width:95px;
-  border-radius:4px;
   right:20px;
   font-size:85%;
   font-weight:bold; 
-        
-}
+  border-radius:4px;        
+} 
 
-.switcher .cover {
+.switcher .cover { 
   margin:0;
   width:150px;
   position:relative;
@@ -803,6 +797,7 @@ H4 {
 
 .switcher .left,
 .switcher .right {
+  position:relative;  
   width:55px;
   line-height:38px;
   text-align:center;
@@ -810,6 +805,7 @@ H4 {
 }
 
 .switcher .left {
+  border-radius:4px 0 0 4px;
   background:#69abce;
   border:1px solid #69abce;  
   color:#fff;
@@ -817,6 +813,7 @@ H4 {
 }
 
 .switcher .right {
+  border-radius:0 4px 4px 0;
   background:#e0e0e0;
   border:1px solid #d0d0d0;     
   border-left:none;
@@ -1025,6 +1022,7 @@ H4 {
   margin-left: 0px;
   margin-right: 15px;
   display: inline-block;
+  position:relative;
 }
 
 .social IMG { 
@@ -1185,11 +1183,11 @@ INPUT {
      
 }
 
-INPUT[disabled] {
-  border:1px solid #eaeef1!important;
-  background:#eaeef1!important;
-  color:#999!important;
-  cursor:default!important;
+#wrap INPUT[disabled] {
+  border:1px solid #eaeef1;
+  background:#eaeef1;
+  color:#999;
+  cursor:default;
 }
 
 INPUT:focus {
@@ -1262,7 +1260,7 @@ TEXTAREA.big {
   -moz-box-sizing:border-box;   
   transition: background .2s;
   -webkit-transition: background .2s;
-  behavior: url('../css/PIE.htc');      
+  position:relative;    
 }
 
 .btn B {
@@ -1297,7 +1295,7 @@ INPUT.btn.small {
 }
 
 .btn.white {
-  border: 1px solid #d0d0d0 !important;
+  border: 1px solid #d0d0d0;
   background:#fff;
   color:#565656;
 }
