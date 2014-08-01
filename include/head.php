@@ -76,7 +76,7 @@
             </li>                                      
           </ul>      
         </div>
-        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv') { ?>
+        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">

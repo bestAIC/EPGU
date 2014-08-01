@@ -17,6 +17,7 @@ include('include/head.php');
               <li class="info_block type_1">
                 <h4>Обратите внимание</h4>
                 <p>Чтобы получить полную информацию обо всех ваших штрафах, рекомендуем вам ввести данные во все поля.</p>
+                <span class="icomoon">"</span>
               </li>
             </ul>  
           
@@ -58,6 +59,7 @@ include('include/head.php');
               <li class="info_block type_2">
                 <h4>Обратите внимание</h4>
                 <p>Оплата штрафа производится в течение 2&nbsp;часов.</p>
+                <span class="icomoon">"</span>
               </li>
             </ul>                      
             <span class="point_num">2</span>

@@ -59,7 +59,7 @@ BODY {
 #header .logo {
   margin:16px 0 0 0;
 }
-#header .logo SVG{
+#header .logo #logo_svg{
   width: 150px;
   height:34px;
 }
@@ -292,7 +292,7 @@ BODY {
 }
 .jq-selectbox__trigger-arrow,
 .jq-selectbox:hover .jq-selectbox__trigger-arrow{
-  top: 24px;
+  top: 20px;
 }
 
 .big_inp-form INPUT{
@@ -345,37 +345,13 @@ BODY {
 .info-block_wrap + .ticket{
   margin-top: 30px;
 }
-#content .info-block_wrap .info_block{
-  border: 1px solid #d0d0d0;
-  padding: 15px 68px 18px 20px;
-  position: relative;
-  margin: 0;
-}
-.info-block_wrap .info-block_h{
+.info_block .info-block_h{
   margin-bottom: 16px;
 }
 
 .big_inp-form .field_name{
     color: #A5AEB3;
 }
-#content .info-block_wrap .info_block.type_1,
-#content .info-block_wrap .info_block.type_2{
-  padding: 19px 20px 19px 53px;
-  border-top: none;
-}
-.info-block_wrap span.icomoon{
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  font-size: 30px;
-}
-.info-block_wrap .type_1 span.icomoon{
-  color: #f77975;
-}
-.info-block_wrap .type_2 span.icomoon{
-  color: #FFC200;
-}
-
 
 /* GALLERY BLOCK */
 
@@ -409,15 +385,6 @@ BODY {
   position: relative;
   margin-top: 28px;
 }
-/*.main.big_inp-form .q_slick_wrap .corner{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: 50%;
-  background: red;
-}*/
 .main.big_inp-form .q_slick_wrap:before{
   position: absolute;
   display: block;
@@ -1331,6 +1298,10 @@ FIELDSET{
     padding-right: 130px;
   }
 
+  .jq-selectbox__dropdown{
+    top: 60px !important;
+  }
+
 
   #footer .bottom_link {
   max-width:945px;
@@ -1576,10 +1547,10 @@ FIELDSET{
   #menu_btn.opened .submenu {top: 0px;}  
   
   #header .logo{
-    margin: 12px 0 0 0;
+    margin: 14px 0 0 0;
     display: inline-block;
   }
-  #header .logo SVG{
+  #header .logo #logo_svg{
     width: 100px !important;
     height: 23px !important;
   } 
@@ -1654,6 +1625,7 @@ FIELDSET{
     display: inline-block;
     vertical-align: top;
     width: 200px;
+    margin-top: 6px;
   }
 
   #content H2 {
@@ -1722,6 +1694,16 @@ FIELDSET{
     height: 50px;
     padding: 0 15px;
   }
+
+  .jq-selectbox__dropdown{
+    top: 50px !important;
+    background: #fff;
+    margin-left: -1px;
+  }
+  .jq-selectbox__dropdown .jq-selectbox ul li{
+    background: #fff;
+  }
+
   .big_inp-form INPUT::-webkit-input-placeholder{
     color: transparent;
   }
@@ -1750,12 +1732,16 @@ FIELDSET{
     margin: 0 0 15px 0;
     padding:0;
   }
-  #content .info-block_wrap .info_block{
+  #content .info_block{
     padding: 15px;
   }
-  #content .info-block_wrap .info_block.type_1,
-  #content .info-block_wrap .info_block.type_2{
+  #content .info_block.type_1,
+  #content .info_block.type_2{
     padding: 19px 30px 19px 50px;
+  }
+  #content .info_block .icomoon{
+    font-size: 26px;
+    top: 18px;
   }
   
   .mobile_proverka_sudebnyh_zadoljennostey .wrapper.l_33{
@@ -1906,7 +1892,7 @@ FIELDSET{
   }
   .jq-selectbox__trigger-arrow,
   .jq-selectbox:hover .jq-selectbox__trigger-arrow{
-    top: 20px;
+    top: 16px;
     background-size: 90%;
   }
 
