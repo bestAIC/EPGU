@@ -1,5 +1,6 @@
 <?
 $pagename = 'mobile_nalogovaya_zadoljennost';
+$pagetitle = 'Налоговая задолженность';
 include('include/mobile_head.php');
 ?>
 

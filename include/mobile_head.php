@@ -32,8 +32,22 @@ include('include/mobile_popup.php');
       </ul>
     </div>
   </div>
+    
 
-    <div id="wrap" class="mobile_gibdd_shtrafy">
+    <? if($pagename == 'mobile_nalogovaya_zadoljennost') { ?>
+        <div id="wrap" class="mobile_nalogovaya_zadoljennost">
+    <? } else if ($pagename == 'mobile_gibdd_shtrafy') { ?> 
+        <div id="wrap" class="mobile_gibdd_shtrafy">
+    <? } else if ($pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?> 
+        <div id="wrap" class="mobile_proverka_sudebnyh_zadoljennostey">
+    <? } else if ($pagename == 'mobile_obratnaya_svyaz') { ?> 
+        <div id="wrap" class="mobile_obratnaya_svyaz">
+    <? } else if ($pagename == 'mobile_typical_elements') { ?> 
+        <div id="wrap" class="mobile_typical_elements">
+    <? } else if ($pagename == 'links') { ?> 
+        <div id="wrap">
+    <? } ?>
+
         <div class="cover">
             <div id="header">
 
