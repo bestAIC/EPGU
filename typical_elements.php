@@ -64,7 +64,7 @@ include('include/head.php');
 
             <div class="advice type_info">
               <div class="advice_h">
-                <div class="advice_ico"><span class="icomoon">3</span></div>
+                <div class="advice_ico"><span class="icomoon">H</span></div>
                 <h2><span>Нет доступа к информации</span></h2>
               </div>
               <p>По указанным вами данным ИНН не найден.</p> 

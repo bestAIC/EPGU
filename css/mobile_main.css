@@ -379,11 +379,12 @@ BODY {
   max-width: 945px;
   padding: 0 20px 0 50px;
   width: 90%;
-  margin: 0 auto 30px;
+  margin: 0 auto 50px;
 }
 .main.big_inp-form .q_slick_wrap{
   position: relative;
-  margin-top: 28px;
+  margin-top: 18px;
+  margin-bottom: 10px; 
 }
 .main.big_inp-form .q_slick_wrap:before{
   position: absolute;
@@ -968,6 +969,9 @@ FIELDSET{
 #footer .bottom_link A {
   padding:0 0 0 30px;
   position:relative;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
 }
 
 #footer .call_link {
@@ -977,10 +981,8 @@ FIELDSET{
 #footer .call_link:before {
   position:absolute;
   display:block;
-  content:'';
-  width:17px;
-  height:17px;
-  background: url('../img/mobile/ico_call.png') 0 0 no-repeat; 
+  content:',';
+  font: 17px 'icomoon-epga';
   background-size: cover;
   left:0px;
   top:2px;
@@ -993,11 +995,8 @@ FIELDSET{
 #footer .feedback_link:before {
   position:absolute;
   display:block;
-  content:'';
-  width:17px;
-  height:16px;
-  background: url('../img/mobile/ico_cloud_txt.png') 0 0 no-repeat; 
-  background-size: cover;
+  content:'-';
+  font: 17px 'icomoon-epga';
   left:0px;
   top:2px;
 }
@@ -1005,11 +1004,8 @@ FIELDSET{
 #footer .mail_link:before {
   position:absolute;
   display:block;
-  content:'';
-  width:17px;
-  height:14px;
-  background: url('../img/mobile/ico_mail.png') 0 0 no-repeat; 
-  background-size: 17px 14px;
+  content:'.';
+  font: 14px 'icomoon-epga';
   left:0px;
   top:2px;
 }
@@ -1990,6 +1986,7 @@ FIELDSET{
     bottom: 20px;
     right: 0px;
     top: auto;
+    z-index: 1;
   }
   .ticket .sub_title .btn_cover_r INPUT{
     margin-bottom: 0;
@@ -2355,9 +2352,15 @@ FIELDSET{
   .main.big_inp-form .q_slick_cont .slick-prev{
     margin-left: -150px;
   }
-  .main.big_inp-form .q_slick_cont .slick-slider img{
-    width: 73%;
+  .main.big_inp-form .q_slick_cont .slick-slider SVG.rule_hor{
+    width: 260px;
     height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .main.big_inp-form .q_slick_cont .slick-slider SVG.rule_vert{
+    width: 210px;
+    height: 290px;
     margin: 0 auto;
     display: block;
   }
