@@ -210,7 +210,15 @@ include('include/head.php');
               <em class="wrapper l_100"><input type="text" placeholder="Кем выдано" class="big" /></em>                                                        
             </div>             
             <em class="wrapper l_100"><input type="radio" name="g_7" id="f_28"/><label for="f_28">По решению суда</label></em>
-            <em class="wrapper l_100"><input type="radio" name="g_7" id="f_29"/><label for="f_29">Иное</label></em>                 
+            <div class="fields_cover">                           
+              <em class="wrapper l_50"><input type="text" placeholder="Номер документа" class="big" />
+              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em> 
+            </div>
+                        
+            <em class="wrapper l_100"><input type="radio" name="g_7" id="f_29"/><label for="f_29">Иное</label></em>
+            <div class="fields_cover">                           
+              <em class="wrapper l_100"><input type="text" placeholder="Пояснение" class="big" /></em> 
+            </div>                             
           </fieldset> 
 
           <fieldset class="group_12">                      
