@@ -1,5 +1,6 @@
 <?
 $pagename = 'mobile_proverka_sudebnyh_zadoljennostey';
+$pagetitle = 'Проверка судебных задолженнностей';
 include('include/mobile_head.php');
 ?>
 

@@ -1,5 +1,6 @@
 <?
 $pagename = 'mobile_obratnaya_svyaz';
+$pagetitle = 'Обратная связь';
 include('include/mobile_head.php');
 ?>
 

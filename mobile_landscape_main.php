@@ -1,5 +1,6 @@
 <?
 $pagename = 'mobile_landscape_main';
+$pagetitle = 'Главная';
 include('include/mobile_head_main.php');
 ?>
 

@@ -16,7 +16,25 @@
 <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-  <div id="wrap" class="gibdd_shtrafy">
+
+  <? if($pagename == 'gibdd_shtrafy') { ?>
+      <div id="wrap" class="gibdd_shtrafy">
+  <? } else if ($pagename == 'ostavit_otzyv') { ?> 
+      <div id="wrap" class="ostavit_otzyv">
+  <? } else if ($pagename == 'postanovka_na_registraciu') { ?> 
+      <div id="wrap" class="postanovka_na_registraciu">
+  <? } else if ($pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
+      <div id="wrap" class="proverka_sudebnyh_zadoljennostey">
+  <? } else if ($pagename == 'snatie_s_registracii') { ?> 
+      <div id="wrap" class="snatie_s_registracii">
+  <? } else if ($pagename == 'typical_elements') { ?> 
+      <div id="wrap" class="typical_elements">
+  <? } else if ($pagename == 'zamena_psporta_pol') { ?> 
+      <div id="wrap" class="zamena_psporta_pol">
+  <? } else if ($pagename == 'nalogovaya_zadoljennost') { ?> 
+      <div id="wrap" class="nalogovaya_zadoljennost">
+  <? } ?>
+
   
     <div id="popup_rules" class="popup">
       <b class="close_popup_x"></b>
