@@ -56,7 +56,7 @@ include('include/head.php');
               <p>К сожалению, сервис недоступен. Попробуйте еще раз позднее. Вы можете подписаться на разовое уведомление о восстановлении работоспособности сервиса.
               Данные будут отправлены на почту или телефон, указанные в вашем личном кабинете.</p>
               <form>
-                <em class="wrapper l_66"><input type="text" placeholder="E-mail" value="test@test.ru" class="big btn" disabled="disabled"/>
+                <em class="wrapper l_66"><input type="text" placeholder="E-mail" value="test@test.ru" class="big" disabled="disabled"/>
                 </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"/></em>
               </form>
             </div>

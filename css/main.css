@@ -1654,8 +1654,13 @@ LABEL {
     border: 1px solid #CCC;
     border-radius: 4px;
     position:relative;
-    top:-2px; 
-        
+    top:-2px;   
+    -webkit-transition: border-color .25s;
+    -o-transition: border-color .25s;
+    transition: border-color .25s;
+}
+.jq-selectbox.focused{
+    border-color: transparent;
 }
 .jq-selectbox__select {
     height: 54px;
@@ -1676,9 +1681,7 @@ LABEL {
 .jq-selectbox__select:active {
     background: #dadbe2;
 }
-.jq-selectbox.focused .jq-selectbox__select {
 
-}
 .jq-selectbox.disabled .jq-selectbox__select {
     border-color: #CCC;
     background: #F5F5F5;
