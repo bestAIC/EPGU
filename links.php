@@ -46,6 +46,11 @@ include('include/mobile_head.php');
 						<td><a href="typical_elements.php">Типовые элементы</a></td>
 						<td><a href="typical_elements.php">typical_elements.php</a></td>
 					</tr>
+
+					<tr>
+						<td><a href="404.php">404</a></td>
+						<td><a href="404.php">404.php</a></td>
+					</tr>
 				</tbody>
 				<thead>
 					<tr>

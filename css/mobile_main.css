@@ -425,8 +425,9 @@ BODY {
 .main.big_inp-form .q_slick_cont .slick-slider span{
   display: inline-block;  
 }
-.main.big_inp-form .q_slick_cont .slick-slider img{
-  border-radius: 8px;
+.main.big_inp-form .q_slick_cont .slick-slider .rule_hor{
+  width: 397px;
+  height: 253px;
 }
 .main.big_inp-form .q_slick_cont .slick-prev,
 .main.big_inp-form .q_slick_cont .slick-next{
@@ -2353,13 +2354,13 @@ FIELDSET{
   .main.big_inp-form .q_slick_cont .slick-prev{
     margin-left: -150px;
   }
-  .main.big_inp-form .q_slick_cont .slick-slider SVG.rule_hor{
+  .main.big_inp-form .q_slick_cont .slick-slider .rule_hor{
     width: 260px;
     height: auto;
     margin: 0 auto;
     display: block;
   }
-  .main.big_inp-form .q_slick_cont .slick-slider SVG.rule_vert{
+  .main.big_inp-form .q_slick_cont .slick-slider .rule_vert{
     width: 210px;
     height: 290px;
     margin: 0 auto;
