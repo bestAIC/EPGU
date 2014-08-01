@@ -1655,9 +1655,9 @@ LABEL {
     border-radius: 4px;
     position:relative;
     top:-2px;   
-    -webkit-transition: border-color .25s;
-    -o-transition: border-color .25s;
-    transition: border-color .25s;
+    -webkit-transition: border-color .25s, box-shadow .25s;
+    -o-transition: border-color .25s, box-shadow .25s;
+    transition: border-color .25s, box-shadow .25s;
 }
 .jq-selectbox.focused{
     border-color: transparent;

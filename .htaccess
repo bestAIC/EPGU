@@ -1,3 +1,10 @@
+AddDefaultCharset utf-8
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+AddType image/svg+xml .svg
+
 #AuthType Basic   
 #AuthName aic.ru 
 #AuthUserFile /var/www/bitrix/epgu/.htpasswd
