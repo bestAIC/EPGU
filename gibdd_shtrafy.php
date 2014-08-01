@@ -4,6 +4,13 @@ $pagetitle = 'Штрафы ГИБДД';
 include('include/head.php');
 ?>
 
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="last"><span>Штрафы ГИБДД</span></li>                                       
+          </ul>          
+        </div>
+      </div>
+
       <div id="content">
         <div class="title">
           <span class="icomoon color_1">B</span><h1>Штрафы ГИБДД</h1>

@@ -4,6 +4,13 @@ $pagetitle = 'Налоговая задолженность';
 include('include/head.php');
 ?>
 
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="last"><span>Налоговая задолженность</span></li>                                       
+          </ul>          
+        </div>
+      </div>
+
       <div id="content">
         <div class="title">
           <span class="icomoon color_2">C</span><h1>Налоговая задолженность</h1>

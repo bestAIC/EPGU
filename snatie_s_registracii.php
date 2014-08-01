@@ -3,6 +3,12 @@ $pagename = 'snatie_s_registracii';
 $pagetitle = 'Снятие с регистрационного учета';
 include('include/head.php');
 ?>
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="last"><span>Снятие с регистрации</span></li>
+          </ul>          
+        </div>
+      </div>
 
       <div id="content">
         <div class="title">

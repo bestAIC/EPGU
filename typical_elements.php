@@ -4,6 +4,13 @@ $pagetitle = 'Типовые элементы';
 include('include/head.php');
 ?>
 
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="last"><span>Типовые элементы</span></li>
+          </ul>          
+        </div>
+      </div>
+
       <div id="content">
         <div class="title">
           <h1>Типовые элементы - desktop</h1>

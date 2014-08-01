@@ -3,6 +3,12 @@ $pagename = 'ostavit_otzyv';
 $pagetitle = 'Оставить отзыв';
 include('include/head.php');
 ?>
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="last"><span>Оставить отзыв</span></li>
+          </ul>          
+        </div>
+      </div>
 
       <div id="content">
         <div class="title">

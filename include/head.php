@@ -33,7 +33,10 @@
       <div id="wrap" class="zamena_psporta_pol">
   <? } else if ($pagename == 'nalogovaya_zadoljennost') { ?> 
       <div id="wrap" class="nalogovaya_zadoljennost">
+  <? } else { ?>
+      <div id="wrap">
   <? } ?>
+
 
   
     <div id="popup_rules" class="popup">
@@ -100,11 +103,8 @@
             <div class="bottom type_2">
         <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'typical_elements') { ?>
             <div class="bottom type_3">
+        <? } else if ($pagename == '404') { ?>
+            <div class="bottom type_non">
         <? } ?>
         
-          <ul class="breadcrumbs">
-            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
-            <li class="last"><span>Штрафы ГИБДД</span></li>                                       
-          </ul>          
-        </div>
-      </div>
+          

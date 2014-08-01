@@ -4,6 +4,13 @@ $pagetitle = 'Постановка на регистрационный учет'
 include('include/head.php');
 ?>
 
+          <ul class="breadcrumbs">
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="last"><span>Постановка на регистрацию</span></li>
+          </ul>          
+        </div>
+      </div>
+
       <div id="content">
         <div class="title">
           <span class="icomoon color_3">G</span><h1>Регистрация граждан</h1>
