@@ -21,7 +21,6 @@ function MPopUp() {
   $('.go_more').on('click', function(e) {
   
     var $message = $('#popup_more_info');
-
         
     $('#wrap').prepend('<div id="popup_fade"></div>');
     if ($message.css('display') != 'block') {

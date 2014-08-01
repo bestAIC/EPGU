@@ -136,9 +136,10 @@ include('include/head.php');
               
               <em class="wrapper l_66">
                 <select>
-                  <option>Гражданство</option>                
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
+                  <option value="" disabled="disabled">Гражданство</option>
+                  <option value="1">Белоруссия</option>            
+                  <option value="2">Белоруссия</option>
+                  <option value="3">Украина</option>
                 </select>                  
               </em><em class="wrapper l_33">
                 <input type="text" placeholder="Дата вступления" class="big" />  
