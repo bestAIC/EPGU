@@ -1368,7 +1368,7 @@ FIELDSET{
  
 
   .page_404 #content{
-    width: 845px;
+    width: 945px;
   }
   .img_404,
   .text_404{
@@ -2410,6 +2410,7 @@ FIELDSET{
   .nav_404{
     position: relative;
     height: 148px;
+    margin-top: 48px;
   }
   .nav_404 .btn.back{
     border: 1px solid #d0d0d0;
@@ -2435,7 +2436,7 @@ FIELDSET{
     text-align: right;
     height: 50px;
     line-height: 50px;
-    width: 280px;
+    width: 260px;
   } 
   .nav_404 .btn.back B:before{
     position: absolute;
@@ -2459,5 +2460,8 @@ FIELDSET{
   .nav_404 .btn.error B{
     height: 50px;
     line-height: 50px;
+  }
+  .text_404 H1{
+    min-width: 320px;
   }
 }

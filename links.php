@@ -51,6 +51,10 @@ include('include/mobile_head.php');
 						<td><a href="404.php">404</a></td>
 						<td><a href="404.php">404.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="500.php">500</a></td>
+						<td><a href="500.php">500.php</a></td>
+					</tr>
 				</tbody>
 				<thead>
 					<tr>
@@ -86,6 +90,10 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_404.php">404 - Mobile</a></td>
 						<td><a href="mobile_404.php">mobile_404.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="mobile_500.php">500 - Mobile</a></td>
+						<td><a href="mobile_500.php">mobile_500.php</a></td>
 					</tr>
 				</tbody>
 			</table>

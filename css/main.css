@@ -2127,6 +2127,7 @@ input[type="submit"].styler[disabled] {
 }
 .wrapout_404{
   height: 100%;
+  width: 100%;
   display: table;
 }
 .container_404{
@@ -2140,6 +2141,7 @@ input[type="submit"].styler[disabled] {
 .img_404{
   width: 30%;
   float: right;
+  margin-top: -70px;
 }
 .text_404 H1{
     font: 42px/48px 'etelka_thinregular';
@@ -2155,7 +2157,7 @@ input[type="submit"].styler[disabled] {
   font-size: 14px;
 }
 .nav_404{
-  margin-top: 48px;
+  margin-top: 100px;
 }
 .nav_404 .btn B{
   height: 42px;
