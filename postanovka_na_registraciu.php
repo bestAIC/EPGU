@@ -380,6 +380,13 @@ include('include/head.php');
                 </ul>
               </div>
             </div>
+            <style>
+                    #map {
+                        width: 100%;
+                        height: 90%;
+                    }
+                </style>
+            <div id="map"></div>
                                                  
           </fieldset> 
 
