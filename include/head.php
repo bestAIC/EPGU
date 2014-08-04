@@ -33,6 +33,8 @@
       <div id="wrap" class="zamena_psporta_pol">
   <? } else if ($pagename == 'nalogovaya_zadoljennost') { ?> 
       <div id="wrap" class="nalogovaya_zadoljennost">
+  <? } else if ($pagename == '404') { ?>
+      <div id="wrap" class="page_404">
   <? } else { ?>
       <div id="wrap">
   <? } ?>

@@ -2114,31 +2114,29 @@ input[type="submit"].styler[disabled] {
 
 /* 404 Page */
 
-.page_404{
-    width: 900px;
-    margin: 0 auto;
+.page_404 .cover{
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
+.page_404 #content{
+  height: 100%;
+  padding: 0;
+  margin-top: -100px;
+}
 .wrapout_404{
-    position: absolute;
-    top: 70px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  height: 100%;
+  display: table;
 }
 .container_404{
-    display: table;
-    width: 100%;
-    height: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
-.block_404{
-    display: table-cell;
-    vertical-align: middle;
+
+.page_404 #footer{
+  height: 100px;
 }
-.error_404{
-    display: inline-block;
-    position: relative;
-}
+
 .text_404,
 .img_404 {
     display: inline-block;
