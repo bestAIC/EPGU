@@ -1407,7 +1407,7 @@ INPUT.btn.small {
   padding: 0 25px 0 50px;
   position: relative;
 }
-.btn.larr:before{
+.btn.larr B:before{
     content: "6";
     font: 20px 'icomoon-epga';
     color: #565656;
@@ -2123,6 +2123,7 @@ input[type="submit"].styler[disabled] {
   height: 100%;
   padding: 0;
   margin-top: -100px;
+  width: 1180px;
 }
 .wrapout_404{
   height: 100%;
@@ -2132,37 +2133,37 @@ input[type="submit"].styler[disabled] {
   display: table-cell;
   vertical-align: middle;
 }
-
-.page_404 #footer{
-  height: 100px;
-}
-
-.text_404,
-.img_404 {
-    display: inline-block;
-    vertical-align: middle;
-}
-.text_404 {
-    width: 70%;
-    margin-left: -5px;
+.text_404{
+  width: 70%;
+  float: left;
 }
 .img_404{
-    width: 30%;
+  width: 30%;
+  float: right;
 }
 .text_404 H1{
     font: 42px/48px 'etelka_thinregular';
     color: #2a2c2b;
-    margin-bottom: 54px;
-    padding-right: 150px;
+    margin-bottom: 42px;
 }
 .text_404 P{
-    color: #e1e1e1;
-    font: 18px/30px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #5a5a5a;
+    font: 18px/30px  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.img_404 IMG{
-    width: 100%;
-    height: auto;
+.page_404 .btn.larr b:before{
+  top: 15px;
+  font-size: 14px;
 }
-
+.nav_404{
+  margin-top: 48px;
+}
+.nav_404 .btn B{
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+}
+.page_404 #footer{
+  height: 100px;
+}
 /* /404 Page */
 

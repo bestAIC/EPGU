@@ -1,15 +1,9 @@
 <?
-$pagename = '404';
-$pagetitle = '404';
-include('include/head.php');
+$pagename = 'mobile_404';
+$pagetitle = 'mobile_404';
+include('include/mobile_head.php');
 ?>
-	<ul class="breadcrumbs">
-	  <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
-	  <li class="last"><span></span></li>                                       
-	</ul>          
-	</div>
-</div>
-
+    
 <div id="content">
 	<div class="wrapout_404">
 		<div class="container_404">
@@ -19,8 +13,8 @@ include('include/head.php');
 					<h1>404. Неверный адрес страницы  или такой страницы не существует</h1>
 					<p>Убедитесь, пожалуйста, что вы ввели верный адрес. Если вы считаете, что это проблема в работе портала, скопируйте и пришлите нам адрес данной страницы.</p>
 					<div class="nav_404 clear">
-						<a href="#" class="btn white larr fl back"><b>На главную</b></a>
-						<a href="#" class="btn white fl"><b>Сообщить об ошибке</b></a>
+						<a href="#" class="btn white larr back"><b>На главную</b></a>
+						<a href="#" class="btn white error"><b>Сообщить об ошибке</b></a>
 					</div>
 				</div>
 			</div>
@@ -29,5 +23,5 @@ include('include/head.php');
 </div>
 
 <?
-include('include/footer.php');
+include('include/mobile_footer.php');
 ?>   

@@ -13,7 +13,7 @@ include('include/head.php');
 
       <div id="content">
         <div class="title">
-          <span class="icomoon color_3">G</span><h1>Регистрация граждан</h1>
+          <span class="icomoon color_3">O</span><h1>Регистрация граждан</h1>
           <h2>по месту жительства</h2>
         </div>
         
@@ -380,6 +380,13 @@ include('include/head.php');
                 </ul>
               </div>
             </div>
+            <style>
+                    #map {
+                        width: 100%;
+                        height: 90%;
+                    }
+                </style>
+            <div id="map"></div>
                                                  
           </fieldset> 
 
