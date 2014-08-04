@@ -99,11 +99,11 @@
             </li>                                      
           </ul>      
         </div>
-        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
+        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv') { ?>
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">
-        <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'typical_elements') { ?>
+        <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
             <div class="bottom type_3">
         <? } else if ($pagename == '404') { ?>
             <div class="bottom type_non">

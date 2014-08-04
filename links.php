@@ -83,6 +83,10 @@ include('include/mobile_head.php');
 						<td><a href="mobile_typical_elements.php">Типовые элементы - мобильная версия</a></td>
 						<td><a href="mobile_typical_elements.php">mobile_typical_elements.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="mobile_404.php">404 - Mobile</a></td>
+						<td><a href="mobile_404.php">mobile_404.php</a></td>
+					</tr>
 				</tbody>
 			</table>
 		</div>

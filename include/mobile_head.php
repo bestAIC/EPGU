@@ -44,6 +44,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_obratnaya_svyaz">
     <? } else if ($pagename == 'mobile_typical_elements') { ?> 
         <div id="wrap" class="mobile_typical_elements">
+    <? } else if ($pagename == 'mobile_404') { ?> 
+        <div id="wrap" class="page_404">
     <? } else if ($pagename == 'links') { ?> 
         <div id="wrap">
     <? } ?>
@@ -57,6 +59,8 @@ include('include/mobile_popup.php');
                   <div class="top type_2"> 
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  
+              <? } else if ($pagename == 'mobile_404') { ?>
+                  <div class="top type_non">  
               <? } ?>
 
 

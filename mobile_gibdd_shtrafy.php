@@ -1289,9 +1289,7 @@ include('include/mobile_head.php');
                   <em class="wrapper l_100"><span class="fr btn_field"><input class="big btn" type="submit" value="Найти штрафы" ></span></em>
                 </div>
             </fieldset>
-
             
-
             <fieldset class="group_2">
               <div class="limiter">                  
                 <span class="point_num">2</span>
