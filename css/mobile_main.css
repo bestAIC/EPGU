@@ -1381,6 +1381,15 @@ FIELDSET{
   .text_404{
     margin: 0 auto;
   }
+  .error_404{
+    padding: 0;
+    margin: 0 auto; 
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .nav_404 .btn{
+    margin-right: 10px;
+  }
 
 
 
@@ -2386,6 +2395,7 @@ FIELDSET{
   .page_404 #content{
     width: 320px;
   }
+
   .img_404,
   .text_404{
     width: 100%;
@@ -2393,7 +2403,6 @@ FIELDSET{
   }
   .img_404{
     text-align: center;
-    padding-top: 100px;
   }
   .text_404{
     margin: 0 auto;
