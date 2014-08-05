@@ -19,6 +19,19 @@ function SForm() {
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
 
+    /* placeholder  для select */
+
+
+    $('.select_choice').change(function(){
+      var select = parseInt($('.select_choice option:selected').val());
+      
+
+        $('.jq-selectbox__select-text').css({
+          color: 'black'
+        });
+
+    })
+
     /*выпадающие поля при выборе пункта*/                
     $('.jq-radio').click(function(){
       
@@ -211,4 +224,5 @@ function MenuShow() {
   })
 
 }
+
 
