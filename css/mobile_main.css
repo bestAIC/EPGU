@@ -241,6 +241,9 @@ BODY {
   margin: 0;
 }
 
+#content .title H2{
+  text-align:left;
+}
 
 .main FIELDSET{
   padding: 40px 0px 0px 0px;
@@ -282,8 +285,16 @@ BODY {
 #content FIELDSET LABEL{
   display: none;
 }
+
+#content FIELDSET LABEL.flag_label {
+    display: inline-block;
+}
 .main FIELDSET .fr.btn_field{
   padding-right: 0;
+}
+
+.fields_cover_inner {
+  display:none;
 }
 
 .jq-selectbox__select{
