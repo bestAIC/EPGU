@@ -222,6 +222,11 @@ SPAN.icomoon{
   margin:0 0 60px 0;
 }
 
+#header {
+  z-index: 1;
+  position: relative;
+}
+
 #header .top {
   background:#fff;
 }
@@ -1713,6 +1718,13 @@ LABEL {
     -o-transition: border-color .25s, box-shadow .25s;
     transition: border-color .25s, box-shadow .25s;
 }
+.jq-selectbox .selected_one{
+  color: #fff;
+  font-size: 0;
+  display: none !important;
+}
+
+
 .jq-selectbox.focused{
     border-color: transparent;
 }
@@ -1749,7 +1761,8 @@ LABEL {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  font-size:115%; 
+    font-size:115%; 
+    color: #d0d0d0;
          
 }
 .jq-selectbox__trigger {
@@ -2116,30 +2129,32 @@ input[type="submit"].styler[disabled] {
 
 .page_404 .cover{
     height: 100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 .page_404 #content{
-  height: 100%;
-  padding: 0;
-  margin-top: -100px;
-  width: 1180px;
+    padding-right: 0;
+    height: 100%;
 }
 .wrapout_404{
-  height: 100%;
-  display: table;
+    height: 100%;
+    display: table;
+    /* vertical-align: middle; */
 }
 .container_404{
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 .text_404{
   width: 70%;
   float: left;
+  padding: 100px 0;
 }
 .img_404{
   width: 30%;
   float: right;
+  margin-top: -70px;
+  padding: 100px 0;
 }
 .text_404 H1{
     font: 42px/48px 'etelka_thinregular';
@@ -2155,7 +2170,7 @@ input[type="submit"].styler[disabled] {
   font-size: 14px;
 }
 .nav_404{
-  margin-top: 48px;
+  margin-top: 100px;
 }
 .nav_404 .btn B{
   height: 42px;

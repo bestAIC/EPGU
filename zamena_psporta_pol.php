@@ -142,10 +142,10 @@ include('include/head.php');
               <h4>Укажите страну, и дату получения другого гражданства</h4>
               
               <em class="wrapper l_66">
-                <select>
-                  <option value="" disabled="disabled">Гражданство</option>
+                <select class="select_choice">
+                  <option value="0" selected="selected" class="selected_one">Гражданство</option>
                   <option value="1">Белоруссия</option>            
-                  <option value="2">Белоруссия</option>
+                  <option value="2">Белоруссия 2</option>
                   <option value="3">Украина</option>
                 </select>                  
               </em><em class="wrapper l_33">

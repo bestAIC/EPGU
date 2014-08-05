@@ -16,9 +16,18 @@ function SForm() {
   $(function() {
     /*стилизация элементов*/
     $('input, select').styler();
+    
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
 
+    /* placeholder  для select */
+    $('.select_choice').change(function(){
+      var select = parseInt($('.select_choice option:selected').val());
+      $('.jq-selectbox__select-text').css({
+        color: 'black'
+      });
+    });
+    
     /*выпадающие поля при выборе пункта*/ 
     
     $('.fields_cover .jq-radio').click(function(){      
@@ -33,8 +42,8 @@ function SForm() {
           group.slideDown();
         }                                                               
       }           
-    });    
-                   
+    });
+     
     $('.jq-radio').click(function(){
       
       var root = $(this).parent();
@@ -58,8 +67,7 @@ function SForm() {
           if(group.hasClass('fields_cover')){
             group.slideDown();
           }                                        
-        }
-                        
+        }                        
       }
             
       $(this).addClass('lock');             
@@ -238,4 +246,10 @@ function MenuShow() {
     event.stopPropagation();
   })
 
+<<<<<<< HEAD
 }
+=======
+}
+
+
+>>>>>>> 98b4783c97690bb4344dd7c743d3550b33d35289

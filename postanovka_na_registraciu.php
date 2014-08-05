@@ -380,13 +380,28 @@ include('include/head.php');
                 </ul>
               </div>
             </div>
-            <style>
-                    #map {
-                        width: 100%;
-                        height: 90%;
-                    }
-                </style>
-            <div id="map"></div>
+            
+
+            <div class="map_cont">
+              <div id="map"></div>
+              <div class="map_nav">
+                <h4>Доступны подразделения:</h4>
+                <ul class="map_list">
+                  <li class="map_list_item">
+                    <p><a href="#">ИФНС России №1 по г.Москве</a></p>
+                    <p>Москва, Неглинная, 23</p>
+                  </li>
+                  <li class="map_list_item">
+                    <p><a href="#">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</a></p>
+                    <p>В составе ИФНС по России № 1 по г. Москве. Москва. Походный пр-д, д. 3, стр. 2</p>
+                  </li>
+                  <li class="map_list_item">
+                    <p><a href="#">ИФНС России № 34 по г. Москве</a></p>
+                    <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
                                                  
           </fieldset> 
 
