@@ -252,9 +252,11 @@ function MenuShow() {
 
 
 function MapShow(){
-  // Дождёмся загрузки API и готовности DOM.
-  ymaps.ready(init);
-
+  if($('#map').length){
+    // Дождёмся загрузки API и готовности DOM.
+    ymaps.ready(init);
+  }
+  
   function init () {
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
@@ -280,6 +282,16 @@ function MapShow(){
         iconImageHref: 'img/ico_1.png',
         iconImageSize: [38, 54],
         iconImageOffset: [-10, -42]
+    }, {
+        balloonContentBody: [
+          '<address>',
+          '<strong>Офис Яндекса в Москве</strong>',
+          '<br/>',
+          'Адрес: 119021, Москва, ул. Льва Толстого, 16',
+          '<br/>',
+          'Подробнее: <a href="http://company.yandex.ru/">http://company.yandex.ru</a>',
+          '</address>'
+        ]
     });
     
     myMap.geoObjects.add(myPlacemark);
