@@ -6,6 +6,8 @@ $(document).ready(function() {
   SwitchPoint();  
   PlaceSmall();
   MenuShow();
+  MapShow();
+  MapControls();
 });
 
 
@@ -246,10 +248,46 @@ function MenuShow() {
     event.stopPropagation();
   })
 
-<<<<<<< HEAD
-}
-=======
 }
 
 
->>>>>>> 98b4783c97690bb4344dd7c743d3550b33d35289
+function MapShow(){
+  var myMap;
+
+  // Дождёмся загрузки API и готовности DOM.
+  ymaps.ready(init);
+
+  function init () {
+      // Создание экземпляра карты и его привязка к контейнеру с
+      // заданным id ("map").
+      myMap = new ymaps.Map('map', {
+          // При инициализации карты обязательно нужно указать
+          // её центр и коэффициент масштабирования.
+          center: [55.76, 37.64], // Москва
+          zoom: 10,
+          controls: []
+      });
+
+  }
+}
+
+function MapControls(){
+  var $cont = $('.map_nav'),
+      $lnk = $('.map_list_item a'),
+      $block = $('.map_ballon_block');
+      $close = $('.map_ballon_close');
+
+
+      $lnk.each(function(i,e){
+        $(this).on('click', function(e){
+          e.preventDefault();
+          $block.fadeIn();
+          $close.on('click', function(){
+            e.preventDefault();
+            $block.fadeOut();
+          })
+        });
+      });
+
+
+}
