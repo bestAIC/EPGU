@@ -864,7 +864,7 @@ H4 {
 .map_ballon_close{
   position: absolute;
   right: -10px;
-  top: -10px;
+  top: -10px; 
   cursor: pointer;
 }
 .map_ballon_close .icomoon{
@@ -1680,6 +1680,12 @@ LABEL {
 
 .jq-radio {
   margin:0 0 -0.25em 0;
+  float: left;
+  margin-top: -1px;
+}
+.jq-radio + label{
+  margin-left: 35px;
+  display: block;
 }
 
 .jq-radio .jq-radio__div{
@@ -1874,7 +1880,7 @@ LABEL {
 .jq-selectbox__trigger-arrow {
     position: absolute;
     top: 16px;
-    right: 31px;
+    right: 20px;
     width: 20px;
     height: 21px;
     overflow: hidden;
@@ -1935,13 +1941,50 @@ LABEL {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==) no-repeat 100% 50%;
     box-shadow: inset 1px 1px #F1F1F1;
     color: #333;
-    -webkit-appearance: textfield;
-       
+    -webkit-appearance: textfield;  
 }
 .jq-selectbox__search input::-webkit-search-cancel-button,
 .jq-selectbox__search input::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
+.jq-selectbox__dropdown .jq-selectbox__search{
+  height: 54px;
+  width: 101%;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 0;
+  margin: 0;
+  margin-left: -2px;
+  border: 0;
+}
+.jq-selectbox__dropdown .jq-selectbox__search:before{
+  content: "P";
+  font: 24px 'icomoon-epga';
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  color: #565656;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+.jq-selectbox__dropdown .jq-selectbox__search:before{
+  color: #565656;
+}
+.jq-selectbox__dropdown .jq-selectbox__search input{
+  height: 56px;
+  background: #fff;
+  margin-top: -2px;
+  margin-left: -1px;
+  padding: 0 24px;
+}
+.jq-selectbox__dropdown .jq-selectbox__not-found{
+  background-color: #6ba9d2;
+  color: #fff;
+}
+
 .jq-selectbox__not-found {
     margin: 5px;
     padding: 5px 8px 6px;

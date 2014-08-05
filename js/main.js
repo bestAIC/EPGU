@@ -252,34 +252,50 @@ function MenuShow() {
 
 
 function MapShow(){
-  var myMap;
-
   // Дождёмся загрузки API и готовности DOM.
   ymaps.ready(init);
 
   function init () {
-      // Создание экземпляра карты и его привязка к контейнеру с
-      // заданным id ("map").
-      myMap = new ymaps.Map('map', {
-          // При инициализации карты обязательно нужно указать
-          // её центр и коэффициент масштабирования.
-          center: [55.76, 37.64], // Москва
-          zoom: 10,
-          controls: []
+    // Создание экземпляра карты и его привязка к контейнеру с
+    // заданным id ("map").
+    var myMap = new ymaps.Map('map', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center: [55.76, 37.64], // Москва
+        zoom: 10,
+        controls: []
       });
+      
 
+
+
+    var myPlacemark = new ymaps.Placemark([55.758007, 37.844264], {
+        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+        balloonContentHeader: "Балун метки",
+        balloonContentBody: "Содержимое <em>балуна</em> метки",
+        balloonContentFooter: "Подвал",
+        hintContent: "Хинт метки"
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/ico_1.png',
+        iconImageSize: [38, 54],
+        iconImageOffset: [-10, -42]
+    });
+    
+    myMap.geoObjects.add(myPlacemark);
   }
 }
 
 function MapControls(){
   var $cont = $('.map_nav'),
-      $lnk = $('.map_list_item a'),
+      $lnk = $('.map_list_item', $cont),
       $block = $('.map_ballon_block');
-      $close = $('.map_ballon_close');
+      $close = $('.map_ballon_close', $block);
 
 
       $lnk.each(function(i,e){
         $(this).on('click', function(e){
+          $lnk.toggleClass('active');
           e.preventDefault();
           $block.fadeIn();
           $close.on('click', function(){
@@ -288,6 +304,4 @@ function MapControls(){
           })
         });
       });
-
-
 }

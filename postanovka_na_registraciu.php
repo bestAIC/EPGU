@@ -240,6 +240,14 @@ include('include/head.php');
                   <option>Гражданство</option>                
                   <option>Белоруссия</option>
                   <option>Украина</option>
+                  <option>Белоруссия</option>
+                  <option>Украина</option>
+                  <option>Белоруссия</option>
+                  <option>Украина</option>
+                  <option>Белоруссия</option>
+                  <option>Украина</option>
+                  <option>Белоруссия</option>
+                  <option>Украина</option>
                 </select>                  
               </em><em class="wrapper l_33"><input type="text" placeholder="Дата вступления" class="big" /></em><br/>              
               <em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>               
