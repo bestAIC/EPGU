@@ -1441,6 +1441,7 @@ FIELDSET{
 @media (max-width:640px) {
 
   BODY {
+    width:100%;
     overflow-x:hidden;
   }
   
@@ -1664,6 +1665,12 @@ FIELDSET{
     width: 200px;
     margin-top: 6px;
   }
+  
+  #content .title H2 {
+    font-size: 15px;
+    width: 200px;
+    padding:0 0 0 55px;
+  }  
 
   #content H2 {
     font-size:100%;
