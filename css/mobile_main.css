@@ -42,10 +42,7 @@ BODY {
 .menu_btn_cover.hide {
   right:0px!important;
 } 
-#header {
-  z-index: 1;
-  position: relative;
-}
+
 #header .menu {
   display:none;
 }
@@ -244,10 +241,10 @@ BODY {
   margin: 0;
 }
 
-#content .title H2{
+#content .title H2 {
   text-align:left;
 }
-
+                              
 .main FIELDSET{
   padding: 40px 0px 0px 0px;
   border-bottom: none;
@@ -289,9 +286,10 @@ BODY {
   display: none;
 }
 
-#content FIELDSET LABEL.flag_label {
-    display: inline-block;
+#content FIELDSET LABEL.flag_label{
+  display: inline-block;
 }
+
 .main FIELDSET .fr.btn_field{
   padding-right: 0;
 }
@@ -1379,7 +1377,9 @@ FIELDSET{
  
 
   .page_404 #content{
-    width: 845px;
+    width: 945px;
+    margin: 0 auto 0px;
+    padding: 0;
   }
   .img_404,
   .text_404{
@@ -1388,9 +1388,13 @@ FIELDSET{
   }
   .img_404{
     text-align: center;
+    padding-top: 64px;
+    padding-bottom: 0;
   }
   .text_404{
     margin: 0 auto;
+    padding-bottom: 136px;
+    padding-top: 0;
   }
   .error_404{
     padding: 0;
@@ -2403,24 +2407,34 @@ FIELDSET{
     display: block;
   }
 
+
   .page_404 #content{
     width: 320px;
+    margin-bottom: 50px;
   }
-
+  .error_404{
+    padding: 60px 0px;
+  }
   .img_404,
   .text_404{
     width: 100%;
     float: none;
   }
   .img_404{
+    padding-top: 0;
     text-align: center;
+  }
+  .img_404 img{
+    width: 210px;
   }
   .text_404{
     margin: 0 auto;
+    padding-bottom: 0;
   }
   .nav_404{
     position: relative;
     height: 148px;
+    margin-top: 48px;
   }
   .nav_404 .btn.back{
     border: 1px solid #d0d0d0;
@@ -2436,6 +2450,7 @@ FIELDSET{
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 34px;
+    min-width: 320px;
   }
   .text_404 P{
     font-size: 15px;
@@ -2446,13 +2461,13 @@ FIELDSET{
     text-align: right;
     height: 50px;
     line-height: 50px;
-    width: 280px;
+    width: 250px;
   } 
   .nav_404 .btn.back B:before{
     position: absolute;
     top: 18px;
     left: 50%;
-    margin-left: -130px;
+    margin-left: -138px;
   }
   .nav_404 .btn.back{
     position: absolute;
@@ -2466,7 +2481,10 @@ FIELDSET{
     top: 0;
     width: 280px;
     text-align: center;
-  }
+  
+    margin: 0;
+    box-sizing: border-box;
+}
   .nav_404 .btn.error B{
     height: 50px;
     line-height: 50px;

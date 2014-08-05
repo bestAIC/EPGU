@@ -19,25 +19,53 @@ function SForm() {
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
 
-    /*выпадающие поля при выборе пункта*/                
+    /*выпадающие поля при выборе пункта*/ 
+    
+    $('.fields_cover .jq-radio').click(function(){      
+      var root = $(this).parent();
+      var currentIndex = root.index();              
+      var group = root.parent().children().eq(currentIndex+1);    
+
+      if(!$(this).hasClass('lock')){
+        root.parent().find('.jq-radio').removeClass('lock');     
+        root.parent().find('.fields_cover_inner').slideUp();
+        if(group.hasClass('fields_cover_inner')){
+          group.slideDown();
+        }                                                               
+      }           
+    });    
+                   
     $('.jq-radio').click(function(){
       
       var root = $(this).parent();
       var currentIndex = root.index();              
       var group = root.parent().children().eq(currentIndex+1);
       
-      if(!$(this).hasClass('lock')){            
-        root.parent().find('.jq-radio').removeClass('lock');     
-        root.parent().find('.fields_cover').slideUp();              
-        if(group.hasClass('fields_cover')){
-          group.slideDown();
-        }                  
+      var mobile_root = root.parent();
+      var mobile_currentIndex = mobile_root.index();              
+      var mobile_group = mobile_root.parent().children().eq(mobile_currentIndex+1);       
+ 
+      if(!$(this).hasClass('lock')){
+        if(mobile_root.hasClass('limiter')){            
+          mobile_root.parent().find('.jq-radio').removeClass('lock');     
+          mobile_root.parent().find('.fields_cover').slideUp();
+          if(mobile_group.hasClass('fields_cover')){
+            mobile_group.slideDown();
+          }             
+        } else {
+          root.parent().find('.jq-radio').removeClass('lock');     
+          root.parent().find('.fields_cover').slideUp();
+          if(group.hasClass('fields_cover')){
+            group.slideDown();
+          }                                        
+        }
+                        
       }
             
       $(this).addClass('lock');             
-    });
-                    
-    $('.jq-radio.checked').click();           
+    });                                     
+
+    $('.jq-radio.checked').click(); 
 
     $(function() {
         if (window.PIE) {
@@ -209,26 +237,5 @@ function MenuShow() {
   $('#menu_btn').click(function(event){
     event.stopPropagation();
   })
-
-}
-
-
-
-// Yandex MAP
-
-var myMap;
-
-// Дождёмся загрузки API и готовности DOM.
-ymaps.ready(init);
-
-function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
-    myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.76, 37.64], // Москва
-        zoom: 10
-    });
 
 }
