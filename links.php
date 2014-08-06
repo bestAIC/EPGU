@@ -34,6 +34,10 @@ include('include/mobile_head.php');
 						<td><a href="zamena_psporta_pol.php">zamena_psporta_pol.php</a></td>
 					</tr>
 					<tr>
+						<td><a href="zamena_pasporta_neprigodnost.php">Замена паспорта гражданина Российской Федерации (в связи с непригодностью)</a></td>
+						<td><a href="zamena_pasporta_neprigodnost.php">zamena_pasporta_neprigodnost.php</a></td>
+					</tr>
+					<tr>
 						<td><a href="postanovka_na_registraciu.php">Постановка на регистрационный учет</a></td>
 						<td><a href="postanovka_na_registraciu.php">postanovka_na_registraciu.php</a></td>
 					</tr>

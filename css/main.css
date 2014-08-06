@@ -123,12 +123,15 @@ SPAN.icomoon{
 
 
 .list {
-  padding:0 0 1em 0;
+  padding: 0 0 8px 0;
 }
 
 .list LI {
-  margin:0 0 1em 1.5em;
+  margin:0 0 20px 24px;
   list-style-type:disc;
+  font-size: 16px;
+  line-height: 20px;
+  color: #535B63;
 }
 
 /* Popup */ 
@@ -712,30 +715,84 @@ float: right;
   margin:0 20px 0 0;
 }
 
+#content .col_top{
+  margin-bottom: 32px;
+}
+
 #content .col_left {
-  width:250px;
+  width:450px;
   float:left;
 }
 
 #content .col_right {
-  width:500px;
+  width:374px;
   float:right;
 }
 
 .load_photo {
   background:#e4f6ff;
-  padding:15px 20px;
+  padding:10px 20px;
   margin:0 20px 0 0;
   position:relative;
-  text-align:center;
+  text-align:left;
 }
 
 .load_photo .photo_brd {
-  width:156px;
+  width:180px;
   border:7px solid #c1d7e6;
   line-height:0;
-  margin:20px auto;
+  margin: 20px 0;
+  position: relative;
+  display: inline-block;
 }
+
+.load_photo-sub{
+  position: absolute;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  width: 362px;
+}
+.load_photo-sub .sub_wrap{
+  text-align: left;
+  display: block;
+  position: relative;
+}
+.load_photo-sub .sub_line{
+  border-bottom: 1px dashed #82939E;
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.load_photo-sub .sub_line_1{
+  position: absolute;
+  top: -4px;
+}
+.load_photo-sub .sub_line_2{
+  position: absolute;
+  top: 60px;
+}
+.load_photo-sub .sub_line_3{
+  position: absolute;
+  top: 158px;
+}
+.load_photo-sub .sub_txt{
+  padding: 0 14px 0 20px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 13px;
+  color: #535B60;
+  padding: 0 0 5px 210px;
+}
+
+.load_photo-btn{
+  text-align: center;
+  display: inline-block;
+}
+.load_photo-btn A{
+  min-width: 194px;
+}
+
 
 #content .load_photo .q {
   top:0;
@@ -745,6 +802,47 @@ float: right;
 
 #content .load_photo .btn {
   margin:0 0 10px 0;
+}
+
+#content .list.edit_list LI{
+  margin-left: 0;
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.list.edit_list LI A{
+  color: #535B63;
+  display: inline-block;
+}
+.list.edit_list LI A .txt{
+  color: #535B63;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0);
+}
+.list.edit_list LI A:hover .txt{
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.2);
+}
+
+.list.edit_list LI A .icomoon{
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(86,86,86,0.5);
+  border-radius: 4px;
+  line-height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 23px;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.0);
+  -webkit-transition: border-color .25s, text-shadow .25s;
+  -o-transition: border-color .25s, text-shadow .25s;
+  transition: border-color .25s, text-shadow .25s;
+}
+.list.edit_list LI A:hover .icomoon{
+  border-color: rgba(86,86,86,0.7);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#content .edit_list LI SPAN.txt{
+  margin-left: 18px;
 }
 
 .fields_cover {
@@ -2255,7 +2353,7 @@ input[type="submit"].styler[disabled] {
     margin: 20px 50px;
 }
 .links_html td{
-    padding: 6px 0px;
+    padding: 6px 30px 6px 0px;
     width: 230px;
 }
 .links_html th{

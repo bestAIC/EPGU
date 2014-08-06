@@ -3,7 +3,7 @@ $(document).ready(function() {
   MPopUp(); 
   MenuShowMobile();
   ResponseGallery(); // Slick Galery 
-  EasterEggs();   
+  EasterEggs(); 
 });
 
 
@@ -51,6 +51,10 @@ function MPopUp() {
   });   
   
         
+}
+
+$.fn.function(){
+
 }
 
 // Top menu mobile
