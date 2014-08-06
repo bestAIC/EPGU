@@ -1277,13 +1277,18 @@ include('include/mobile_head.php');
                 </div>
                     
                 <div class="limiter">
+                  <label>Номер транспортного средства</label>
                   <em class="wrapper l_100">
-                  <label class="field_name">Номер транспортного средства</label>
-                      <select>
-                          <option>А777АА 777</option>
-                          <option>А999АА 999</option>
-                      </select>
-                  </em>
+                    <select class="select_choice">
+                      <option value="0" class="selected_one" name="Номер транспортного средства">Номер транспортного средства</option>
+                      <option value="1" selected="selected">Номер не задан</option>            
+                      <option value="2">А777АА 777</option>
+                      <option value="3">А999АА 999</option>
+                      <option id="new_auto">Новый автомобиль...</option>
+                    </select>                             
+                  </em><br/>
+                  
+                  <div class="wrapper l_100 new_auto"><label>Введите номер</label><input type="text" placeholder="Введите номер" class="big" /></div>
 
 
                   <em class="wrapper l_100"><span class="fr btn_field"><input class="big btn" type="submit" value="Найти штрафы" ></span></em>

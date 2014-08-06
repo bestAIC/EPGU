@@ -287,11 +287,16 @@ BODY {
 }
 
 #content FIELDSET LABEL.flag_label{
-  display: inline-block;
+  display: block;
 }
 
 .main FIELDSET .fr.btn_field{
   padding-right: 0;
+}
+
+.fields_cover {
+  margin: -10px 0 30px;
+  padding: 25px 0 10px;
 }
 
 .fields_cover_inner {

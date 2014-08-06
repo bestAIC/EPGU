@@ -161,9 +161,18 @@ function HideShow(){
     }    
   
   });
+  
+  $('.select_choice').change(function(){
+    if($('#new_auto').attr('selected') == 'selected'){
+      $('.new_auto').slideDown();
+    } else {
+      $('.new_auto').slideUp();
+    }
+  });   
       
 }
 
+// Switch Point
 function SwitchPoint(){
   $('.selector li').click(function(){
     $(this).parent().find('li').removeClass('active');
@@ -221,8 +230,33 @@ function PlaceSmall() {
       $(this).parent().find('.placeholder_small').remove();  
     }
   });
-    
-   
+
+
+  $('option.selected_one').each(function(indx, element){
+    if($(this).attr('selected') == 'selected'){
+      lock_phs = 0; 
+      $(this).parent().parent().find('.placeholder_small').remove();  
+    } else {
+      var psmall = $(this).text();
+      if(lock_phs == 0){
+        lock_phs = 1;           
+        $(this).parent().parent().prepend('<div class="placeholder_small">'+ psmall +'</div>');
+      }    
+    }   
+  });
+
+  $('.select_choice').change(function(){
+    if($(this).find('.selected_one').attr('selected') == 'selected'){
+      lock_phs = 0;  
+      $(this).parent().find('.placeholder_small').remove();
+    } else {
+      var psmall = $(this).find('.selected_one').text();
+      if(lock_phs == 0){
+        lock_phs = 1;           
+        $(this).parent().prepend('<div class="placeholder_small">'+ psmall +'</div>');
+      }      
+    }
+  });    
        
 }
 

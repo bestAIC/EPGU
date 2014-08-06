@@ -649,6 +649,7 @@ float: right;
   left:22px;
   font-size:70%;
   color:#777;
+  z-index:101;
 }
 
 .wrapper {
@@ -1643,6 +1644,10 @@ LABEL {
   cursor:pointer;  
 }
 
+.new_auto {
+  display:none;
+}
+
 
 /*SForm*/
 .jq-checkbox {
@@ -1835,7 +1840,7 @@ LABEL {
 }
 .jq-selectbox__select {
     height: 54px;
-    padding: 0 62px 0 25px;
+    padding: 0 62px 0 20px;
     background: #fff;
     color: #333;
     font: 14px/54px Arial, sans-serif;
@@ -1867,7 +1872,7 @@ LABEL {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size:115%; 
-    color: #d0d0d0;
+    color: #333;
          
 }
 .jq-selectbox__trigger {
