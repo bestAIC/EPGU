@@ -733,6 +733,11 @@ dd .popup_link{
     margin-right: 26px;
 }
 
+
+.advice .wrapper { 
+  margin:0;
+}
+
 .advice{
     border-top: 1px solid #DBE2E6;
     border-bottom: 1px solid #DBE2E6;
@@ -740,6 +745,7 @@ dd .popup_link{
     background-position: 50px 40px;
     margin: 0; 
 }
+
 .advice .advice_h{
   margin-left: -90px;
 }

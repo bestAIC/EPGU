@@ -53,7 +53,7 @@ include('include/mobile_head.php');
 
 					    <form>
 					        <fieldset>
-					          <em class="wrapper l_83"><label for="">Прислать СМС на номер</label><div class="placeholder_small">E-mail</div><input type="text" placeholder="E-mail" value="test@test.ru" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" /><em class="wrapper l_83"><label for="">Отправить письмо на почту</label><div class="placeholder_small">Контактный телефон</div><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
+					          <em class="wrapper l_83"><label for="">Прислать СМС на номер</label><input type="text" placeholder="Электронная почта" value="test@test.ru" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" /><em class="wrapper l_83"><label for="">Отправить письмо на почту</label><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"></em><input type="checkbox" checked="checked" />
 					        </fieldset>
 					    </form>
 						</div>
@@ -63,7 +63,7 @@ include('include/mobile_head.php');
 				<div class="social_wrap-b">
 					<div class="limiter">
 					    <div class="social">
-					        <b>Поделись удобным сервисом с друзьями:</b>
+					        <b>Поделись удобным сервисом с друзьями</b>
 					        <div class="social-ico_cont">
 					            <a href="#"><span class="icomoon">#</span></a>
 					            <a href="#"><span class="icomoon">$</span></a>

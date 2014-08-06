@@ -27,7 +27,7 @@ include('include/head.php');
               <p>После восстановления работоспособности сервиса вам будет отправлено автоматическое уведомление по указаным вами контактным данным, 
               и вы сможете вернутся к получению услуги.</p>
               <div class="social">
-                  <b>Поделись удобным сервисом с друзьями:</b>
+                  <b>Поделись удобным сервисом с друзьями</b>
                   <div class="social-ico_cont">
                       <a href="#"><span class="icomoon">#</span></a>
                       <a href="#"><span class="icomoon">$</span></a>
@@ -44,7 +44,7 @@ include('include/head.php');
               </div>
               <p>С радостью сообщаем, что в доступных нам базах данных не найдено ни одной вашей задолженности. Это означает, что вам не о чем беспокоится.</p>
               <div class="social">
-                  <b>Поделись удобным сервисом с друзьями:</b>
+                  <b>Поделись удобным сервисом с друзьями</b>
                   <div class="social-ico_cont">
                       <a href="#"><span class="icomoon">#</span></a>
                       <a href="#"><span class="icomoon">$</span></a>
@@ -63,8 +63,11 @@ include('include/head.php');
               <p>К сожалению, сервис недоступен. Попробуйте еще раз позднее. Вы можете подписаться на разовое уведомление о восстановлении работоспособности сервиса.
               Данные будут отправлены на почту или телефон, указанные в вашем личном кабинете.</p>
               <form>
-                <em class="wrapper l_66"><input type="text" placeholder="E-mail" value="test@test.ru" class="big" disabled="disabled"/>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"/></em>
+                <em class="wrapper l_50"><input type="checkbox" checked="checked" /><label>Прислать СМС на номер</label>
+                </em><em class="wrapper l_50"><input type="text" placeholder="Контактный телефон" value="+7 912 200-00-02" class="big" disabled="disabled"/></em><br/>
+                
+                <em class="wrapper l_50"><input type="checkbox" checked="checked" /><label>Отправить письмо на почту</label>
+                </em><em class="wrapper l_50"><input type="text" placeholder="Электронная почта" value="test@test.ru" class="big" disabled="disabled"/></em>
               </form>
             </div>
 
@@ -78,7 +81,7 @@ include('include/head.php');
             </div>
             
             <div class="clear">
-              <a href="#" class="btn white fr"><b>Ввести ИНН вручную</b></a>
+              <a href="#" class="btn white fl"><b>На главную</b></a>
             </div>  
         
       </div>
