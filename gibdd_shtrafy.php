@@ -38,11 +38,16 @@ include('include/head.php');
             </em><i class="q">?<div class="bg_c3 q_hover"><img src="img/doc_group_1.png" alt=""/></div></i><br/>
             
             <em class="wrapper l_50">
-              <select>            
-                <option>А777АА 777</option>
-                <option>А999АА 999</option>
-              </select>                  
-            </em><em class="wrapper l_50"><input type="checkbox"><label>Не использовать поле</label></em>
+              <select class="select_choice">
+                <option value="0" class="selected_one" name="Номер транспортного средства">Номер транспортного средства</option>
+                <option value="1" selected="selected">Номер не задан</option>            
+                <option value="2">А777АА 777</option>
+                <option value="3">А999АА 999</option>
+                <option id="new_auto">Новый автомобиль...</option>
+              </select>                             
+            </em><br/>
+            
+            <div class="wrapper l_50 new_auto"><input type="text" placeholder="Введите номер" class="big" /></div>
 
             <div class="clear"><span class="fr"><input class="big btn" type="submit" value="Найти штрафы" disabled="disabled"/></span></div>
             
