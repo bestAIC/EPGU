@@ -405,9 +405,6 @@ include('include/head.php');
                     <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
                   </ul>
                 </div>
-                <div class="map_placemark">
-                  <img src="svg/4.svg" alt="">
-                </div>
               </div><!-- map_ballon_block -->
             </div><!-- map_cover -->
                                                  

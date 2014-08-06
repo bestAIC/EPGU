@@ -35,6 +35,8 @@
       <div id="wrap" class="zamena_psporta_pol">
   <? } else if ($pagename == 'nalogovaya_zadoljennost') { ?> 
       <div id="wrap" class="nalogovaya_zadoljennost">
+  <? } else if ($pagename == 'zamena_pasporta_neprigodnost') { ?> 
+      <div id="wrap" class="zamena_pasporta_neprigodnost">
   <? } else if ($pagename == '404') { ?>
       <div id="wrap" class="page_404">
   <? } else { ?>

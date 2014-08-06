@@ -47,14 +47,18 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_typical_elements">
     <? } else if ($pagename == 'mobile_404') { ?> 
         <div id="wrap" class="page_404">
-    <? } else if ($pagename == 'links') { ?> 
+    <? } else if ($pagename == 'mobile_postanovka_na_registraciu') { ?> 
+        <div id="wrap" class='mobile_postanovka_na_registraciu'>
+    <? } else if ($pagename == 'mobile_snatie_s_registracii') { ?> 
+        <div id="wrap" class="mobile_snatie_s_registracii">
+    <? } else { ?> 
         <div id="wrap">
     <? } ?>
 
         <div class="cover">
             <div id="header">
 
-              <? if($pagename == 'mobile_obratnaya_svyaz') { ?>
+              <? if($pagename == 'mobile_obratnaya_svyaz' || $pagename == 'mobile_postanovka_na_registraciu' || $pagename == 'mobile_snatie_s_registracii') { ?>
                   <div class="top type_1"> 
               <? } else if ($pagename == 'mobile_gibdd_shtrafy' || $pagename == 'links' || $pagename == 'mobile_typical_elements') { ?> 
                   <div class="top type_2"> 
