@@ -119,12 +119,12 @@ INPUT.btn {
 
 .load_photo .photo_brd{
 	background: url('../pic/pic_5.png');
-	height: 223px;
+	height: 236px;
 	width: 180px;
 }
 .load_photo.error .photo_brd{
 	background: url('../pic/pic_6.png');
-	height: 223px;
+	height: 236px;
 	width: 180px;
 }
 

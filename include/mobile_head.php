@@ -48,6 +48,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_proverka_sudebnyh_zadoljennostey">
     <? } else if ($pagename == 'mobile_obratnaya_svyaz') { ?> 
         <div id="wrap" class="mobile_obratnaya_svyaz">
+    <? } else if ($pagename == 'mobile_zamena_pasporta_neprigodnost') { ?> 
+        <div id="wrap" class="mobile_zamena_pasporta_neprigodnost">
     <? } else if ($pagename == 'mobile_typical_elements') { ?> 
         <div id="wrap" class="mobile_typical_elements">
     <? } else if ($pagename == 'mobile_404') { ?> 
@@ -63,7 +65,7 @@ include('include/mobile_popup.php');
         <div class="cover">
             <div id="header">
 
-              <? if($pagename == 'mobile_obratnaya_svyaz' || $pagename == 'mobile_postanovka_na_registraciu' || $pagename == 'mobile_snatie_s_registracii') { ?>
+              <? if($pagename == 'mobile_obratnaya_svyaz' || $pagename == 'mobile_zamena_pasporta_neprigodnost' || $pagename == 'mobile_postanovka_na_registraciu' || $pagename == 'mobile_snatie_s_registracii') { ?>
                   <div class="top type_1"> 
               <? } else if ($pagename == 'mobile_gibdd_shtrafy' || $pagename == 'links' || $pagename == 'mobile_typical_elements') { ?> 
                   <div class="top type_2"> 
