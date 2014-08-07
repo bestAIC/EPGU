@@ -1,6 +1,6 @@
 <?
 $pagename = 'zamena_psporta_pol';
-$pagetitle = 'Замена паспорта';
+$pagetitle = 'Замена паспорта :: В связи с изменением пола';
 include('include/head.php');
 ?>
 
@@ -32,7 +32,7 @@ include('include/head.php');
             </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
             </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
             
-            <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" value="09.09.1989" disabled="disabled"/>
+            <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" value="09.09.1989" disabled="disabled"/>
             </em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" checked="checked" /><label>Мужской</label>
             </em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" /><label>Женский</label></em><br/>
             
@@ -48,6 +48,7 @@ include('include/head.php');
                 <p>Заявление на&nbsp;получение паспорта гражданина&nbsp;РФ будет формироваться от&nbsp;лица гражданина, имеющего данные, указываемые вами в&nbsp;блоке 2. 
                 Пожалуйста заполняйте только те&nbsp;данные, которые изменились. 
                 Остальные данные будут взяты из&nbsp;блока&nbsp;1</p>
+                <span class="icomoon">"</span>
               </li>
             </ul>                      
             <span class="point_num">2</span>
@@ -57,35 +58,57 @@ include('include/head.php');
             </em><em class="wrapper l_33"><input name="name_2" type="text" placeholder="Имя" class="big" />
             </em><em class="wrapper l_33"><input name="name_3" type="text" placeholder="Отчество" class="big" /></em><br/>
             
-            <em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Мужской</label>
-            </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Женский</label></em><br/>
+            <em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Мужской</label>
+            </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/>
             
             <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                                   
           </fieldset>
           
           <fieldset class="group_3">                     
-            <span class="point_num">3</span>
-            <h3>Загрузите фотографию</h3>          
-            <div class="col_left">            
-              <div class="load_photo">
-                <div class="photo_brd">
-                  <img src="img/empty_photo.png" alt=""/>
-                </div>
-                <a class="btn white small" href="#">
-                  <b>Загрузить фотографию</b>
-                </a>            
-                
+              <span class="point_num">3</span>
+              <h3>Загрузите свою фотографию</h3>          
+              <div class="col_top">                         
+                <h4>Требования к фотографии</h4>
+                <ul class="list">
+                  <li>Черно-белая или цветная фотография формата JPEG. Размер файла 200–500 кБ.</li>
+                  <li>Фон: белый, светло-голубой или светло-серый.</li>
+                  <li>Головные уборы допускаются (по религиозным причинам), но они не должны скрывать овал лица.</li>
+                </ul>
+                <div class="more_info">
+                <span class="pseudo">Все требования</span>
               </div>
-            </div>
-            <div class="col_right">                         
-              <h4>Технические требования к фотографии</h4>
-              <ul class="list">
-                <li>Формат файла: JPEG</li>
-                <li>Максимальный размер файла: 300 Кб</li>
-                <li>Размеры фотографии 350 х 450 пикселей (ширина к высоте)</li>
-                <li>Соотношение сторон фотографии 35 х 45 (не более 12%)</li>
-              </ul>
-            </div>                                    
+              </div>
+              <div class="col_left">            
+                <div class="load_photo">
+                  <div class="photo_brd">
+                    <img src="pic/svg/5.svg"/>
+                    <div class="load_photo-sub">
+                      <div class="sub_wrap">
+                        <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
+                      </div>
+                      <div class="sub_wrap">
+                        <div class="sub_line sub_line_2"><span class="sub_txt">Глаза должны быть на уровне этой линии</span></div>
+                      </div>
+                      <div class="sub_wrap">
+                        <div class="sub_line sub_line_3"><span class="sub_txt">Плечи должны быть на уровне этой линии</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="load_photo-btn">
+                    <a class="btn white small" href="#">
+                      <b>Загрузить фотографию</b>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col_right">
+                <ul class="list edit_list">
+                  <li><a href="#"><span class="icomoon">Q</span><span class="txt">Повернуть по часовой</span></a></li>
+                  <li><a href="#"><span class="icomoon">R</span><span class="txt">Повернуть против часовой</span></a></li>
+                  <li><a href="#"><span class="icomoon">S</span><span class="txt">Обрезать фотографию</span></a></li>
+                  <li><a href="#"><span class="icomoon">T</span><span class="txt">Отменить последнее действие</span></a></li>
+              </div>                                  
           </fieldset>
           
           <fieldset class="group_4">                      
@@ -96,7 +119,7 @@ include('include/head.php');
             <em class="wrapper l_16"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
             </em><em class="wrapper l_25"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
             </em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>            
-            </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
+            </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
             
             <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big"/>
             </em><br/>
@@ -118,12 +141,12 @@ include('include/head.php');
               
               <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big"/>
               </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
+              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
               
               <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" />
               </em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Действителен до" class="big" /></em>
+              <em class="wrapper l_25"><input type="text" placeholder="Действителен до" class="big" /></em>
             
             </div>
                              
@@ -148,7 +171,7 @@ include('include/head.php');
                   <option value="2">Белоруссия 2</option>
                   <option value="3">Украина</option>
                 </select>                  
-              </em><em class="wrapper l_33">
+              </em><em class="wrapper l_25">
                 <input type="text" placeholder="Дата вступления" class="big" />  
               </em><br/>
               
@@ -159,7 +182,7 @@ include('include/head.php');
               
               <h4>Укажите дату вступления в гражданство РФ</h4>
               
-              <em class="wrapper l_33">
+              <em class="wrapper l_25">
                 <input type="text" placeholder="Дата вступления" class="big" />  
               </em>             
             
@@ -187,7 +210,7 @@ include('include/head.php');
               
               <h4>Укажите дату вступления в гражданство РФ</h4>
               
-              <em class="wrapper l_33">
+              <em class="wrapper l_25">
                 <input type="text" placeholder="Дата вступления" class="big" />  
               </em>               
             
@@ -219,7 +242,7 @@ include('include/head.php');
               </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
               </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
               </em>
               
               <h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
@@ -228,7 +251,7 @@ include('include/head.php');
               </em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
               </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
               </em><em class="wrapper l_25"><input type="text" placeholder="Актовая запись" class="big" /></em><br/>
-              <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
+              <em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
               </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" />
               </em>             
             
@@ -242,7 +265,7 @@ include('include/head.php');
               </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
               </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
               </em>          
             
             </div>              
@@ -255,7 +278,7 @@ include('include/head.php');
               </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
               </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
               </em>
               
               <h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
@@ -264,7 +287,7 @@ include('include/head.php');
               </em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
               </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
               </em><em class="wrapper l_25"><input type="text" placeholder="Актовая запись" class="big" /></em><br/>
-              <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
+              <em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
               </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" />
               </em>             
             
@@ -288,7 +311,7 @@ include('include/head.php');
               </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
               </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
               </em><em class="wrapper l_16"><input type="radio" checked="checked" name="chaild_sex" /><label>Мужской</label>
               </em><em class="wrapper l_16"><input type="radio" name="chaild_sex" /><label>Женский</label></em><br/>
               
@@ -317,7 +340,7 @@ include('include/head.php');
             </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
             </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
             
-            <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+            <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
             </em><br/>
 
             <h4>Сведения о матери</h4>         
@@ -325,19 +348,17 @@ include('include/head.php');
             </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
             </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
             
-            <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+            <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
             </em>            
                                                 
-          </fieldset> 
-                    
-                   
+          </fieldset>                   
           
           <fieldset class="group_10">                      
             <span class="point_num">10</span>
 
             <h3>Куда вы будете подавать оригиналы документов?</h3>          
             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="pl_1" /><label for="pl_1">по месту жительства (как в паспорте), срок оказания услуги составит 10 дней</label></em>
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="pl_1" /><label for="pl_1">По месту жительства, как в паспорте (срок оказания услуги составит 10 дней)</label></em>
             <div class="fields_cover">
 
               <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
@@ -352,7 +373,7 @@ include('include/head.php');
             
             </div>            
             
-            <em class="wrapper l_100"><input type="radio" name="place" id="pl_2" /><label for="pl_2">по месту пребывания, срок оказания услуги составит до 2-x месяцев</label></em>                        
+            <em class="wrapper l_100"><input type="radio" name="place" id="pl_2" /><label for="pl_2">По месту пребывания (срок оказания услуги составит до 2-x месяцев)</label></em>                        
             <div class="fields_cover">
 
               <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
@@ -367,7 +388,7 @@ include('include/head.php');
             
             </div>
             
-            <em class="wrapper l_100"><input type="radio" name="place" id="pl_3" /><label for="pl_3">по месту фактического проживания, срок оказания услуги составит 2 месяца</label></em> 
+            <em class="wrapper l_100"><input type="radio" name="place" id="pl_3" /><label for="pl_3">По месту фактического проживания (срок оказания услуги составит 2 месяца)</label></em> 
             <div class="fields_cover">
 
               <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
