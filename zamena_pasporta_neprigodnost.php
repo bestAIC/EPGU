@@ -57,7 +57,18 @@ include('include/head.php');
 		  <div class="col_left">            
 		    <div class="load_photo">
 		      <div class="photo_brd">
-		        <img src="pic/svg/5.svg"/>
+		        <svg version="1.1" id="Layer_1"
+		        	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 792"
+		        	 enable-background="new 0 0 612 792" xml:space="preserve">
+		        <title>Imported Layers</title>
+		        <desc>Created with Sketch.</desc>
+		        <path fill="#C1D7E6" d="M612.5,750.2v-46.6c-62.6-36.7-155.7-70.7-155.7-70.7s-30.9-11.2-47.3-17.7v-85.3
+		        	c10.9-11.9,38.1-46.6,40.5-101c7.5-5.8,13.3-16.7,17-30.9c5.4-23.5,2.7-50.7-14.3-66c1.4-2.7,2.7-6.8,3.7-9.9
+		        	c12.9-32,36-90.8,26.9-137c-10.5-52-86-75.1-156.4-75.1c-51.3,0-113.9,12.9-131.9,48.6c-19.7,2-34.7,9.5-44.9,23.5
+		        	c-27.9,37.7-7.5,105.7,3.7,142.5c0.7,2.7,1.7,5.4,2.4,7.8c-17.7,15.3-20.4,43.2-15,66.3c3.4,14.6,9.2,25.2,17,30.9
+		        	c2.7,53,28.9,84.7,40.5,95.5v90.1c-16.3,6.1-32.3,11.9-47.3,17.7C89.6,656,37.2,674.7-0.2,696.1c0,13.9,0,26.2,0,40.8
+		        	c0,8.8,0,12.2,0,15c0,7.5-0.7,35.4,0,40.1h612.7C612.5,783.2,612.5,757.7,612.5,750.2z"/>
+		        </svg>
 		        <div class="load_photo-sub">
 		        	<div class="sub_wrap">
 		        		<div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
