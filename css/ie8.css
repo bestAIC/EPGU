@@ -117,4 +117,11 @@ INPUT.btn {
   padding:0 95px 0 0px;     
 }
 
+.load_photo .photo_brd{
+	background: url('../pic/pic_6.gif');
+	height: 223px;
+}
+.load_photo .photo_brd IMG{
+	display: none;
+}
 

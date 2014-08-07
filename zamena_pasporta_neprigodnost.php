@@ -57,16 +57,7 @@ include('include/head.php');
 		  <div class="col_left">            
 		    <div class="load_photo">
 		      <div class="photo_brd">
-		        <svg version="1.1" id="Слой_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-		        	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="216 282 180 228"
-		        	 enable-background="new 216 282 180 228" xml:space="preserve">
-		        <path fill="#C1D7E6" d="M396.1,497.7V484c-18.4-10.8-45.8-20.8-45.8-20.8s-9.1-3.3-13.9-5.2v-25.1c3.2-3.5,11.2-13.7,11.9-29.7
-		        	c2.2-1.7,3.9-4.9,5-9.1c1.6-6.9,0.8-14.9-4.2-19.4c0.4-0.8,0.8-2,1.1-2.9c3.8-9.4,10.6-26.7,7.9-40.3c-3.1-15.3-25.3-22.1-46-22.1
-		        	c-15.1,0-33.5,3.8-38.8,14.3c-5.8,0.6-10.2,2.8-13.2,6.9c-8.2,11.1-2.2,31.1,1.1,41.9c0.2,0.8,0.5,1.6,0.7,2.3
-		        	c-5.2,4.5-6,12.7-4.4,19.5c1,4.3,2.7,7.4,5,9.1c0.8,15.6,8.5,24.9,11.9,28.1V458c-4.8,1.8-9.5,3.5-13.9,5.2
-		        	c-18.2,6.8-33.6,12.3-44.6,18.6c0,4.1,0,7.7,0,12c0,2.6,0,3.6,0,4.4c0,2.2-0.2,10.4,0,11.8h180.2
-		        	C396.1,507.4,396.1,499.9,396.1,497.7z"/>
-		        </svg>
+		        <img src="pic/svg/5.svg"/>
 		        <div class="load_photo-sub">
 		        	<div class="sub_wrap">
 		        		<div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
