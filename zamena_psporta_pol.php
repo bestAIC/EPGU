@@ -64,50 +64,65 @@ include('include/head.php');
             <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                                   
           </fieldset>
           
-          <fieldset class="group_3">                     
-              <span class="point_num">3</span>
-              <h3>Загрузите свою фотографию</h3>          
-              <div class="col_top">                         
-                <h4>Требования к фотографии</h4>
-                <ul class="list">
-                  <li>Черно-белая или цветная фотография формата JPEG. Размер файла 200–500 кБ.</li>
-                  <li>Фон: белый, светло-голубой или светло-серый.</li>
-                  <li>Головные уборы допускаются (по религиозным причинам), но они не должны скрывать овал лица.</li>
-                </ul>
-                <div class="more_info">
-                <span class="pseudo">Все требования</span>
-              </div>
-              </div>
-              <div class="col_left">            
-                <div class="load_photo">
-                  <div class="photo_brd">
-                    <div class="load_photo-sub">
-                      <div class="sub_wrap">
-                        <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
-                      </div>
-                      <div class="sub_wrap">
-                        <div class="sub_line sub_line_2"><span class="sub_txt">Глаза должны быть на уровне этой линии</span></div>
-                      </div>
-                      <div class="sub_wrap">
-                        <div class="sub_line sub_line_3"><span class="sub_txt">Плечи должны быть на уровне этой линии</span></div>
-                      </div>
+          <fieldset class="group_3">
+            <span class="point_num">3</span>
+            <h3>Загрузите свою фотографию</h3>          
+            <div class="col_top">                         
+              <h4>Требования к фотографии</h4>
+              <ul class="list">
+                <li>Черно-белая или цветная фотография формата JPEG. Размер файла 200–500 кБ.</li>
+                <li>Фон: белый, светло-голубой или светло-серый.</li>
+                <li>Головные уборы допускаются (по религиозным причинам), но они не должны скрывать овал лица.</li>
+              </ul>
+              <div class="more_info">
+              <span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
+            </div>
+            </div>
+            <div class="col_left">
+              <div class="load_photo upload">
+                <div class="photo_brd">
+                  <img src="pic/pic_7.jpg" alt="" width="180" height="236">
+                  <div class="load_photo-sub">
+                    <div class="sub_wrap">
+                      <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
+                    </div>
+                    <div class="sub_wrap">
+                      <div class="sub_line sub_line_2"><span class="sub_txt">Глаза должны быть на уровне этой линии</span></div>
+                    </div>
+                    <div class="sub_wrap">
+                      <div class="sub_line sub_line_3"><span class="sub_txt">Плечи должны быть на уровне этой линии</span></div>
                     </div>
                   </div>
-                  <div class="load_photo-btn">
-                    <a class="btn white small" href="#">
-                      <b>Загрузить фотографию</b>
-                    </a>
-                  </div>
-                  
+                </div>
+                <div class="load_photo-btn">
+                  <a class="btn white small" href="#">
+                    <b>Загрузить фотографию</b>
+                  </a>
                 </div>
               </div>
-              <div class="col_right">
-                <ul class="list edit_list">
-                  <li><a href="#"><span class="icomoon">Q</span><span class="txt">Повернуть по часовой</span></a></li>
-                  <li><a href="#"><span class="icomoon">R</span><span class="txt">Повернуть против часовой</span></a></li>
-                  <li><a href="#"><span class="icomoon">S</span><span class="txt">Обрезать фотографию</span></a></li>
-                  <li><a href="#"><span class="icomoon">T</span><span class="txt">Отменить последнее действие</span></a></li>
-              </div>                                  
+              <!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
+              <div class="advice_upload">
+                <div class="advice type_not">
+                  <div class="advice_h">
+                        <div class="advice_ico"><span class="icomoon">3</span></div>
+                        <h2><span>Извините, ваша фотография не подходит</span></h2>
+                    </div>
+                </div>
+                <div class="advice type_ok">
+                  <div class="advice_h">
+                        <div class="advice_ico"><span class="icomoon">4</span></div>
+                        <h2><span>Ваша фотография успшно загружена</span></h2>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col_right">
+              <ul class="list edit_list">
+                <li><a href="#"><span class="icomoon">Q</span><span class="txt">Повернуть по часовой</span></a></li>
+                <li><a href="#"><span class="icomoon">R</span><span class="txt">Повернуть против часовой</span></a></li>
+                <li><a href="#"><span class="icomoon">S</span><span class="txt">Обрезать фотографию</span></a></li>
+                <li><a href="#"><span class="icomoon">T</span><span class="txt">Отменить последнее действие</span></a></li>
+            </div>
           </fieldset>
           
           <fieldset class="group_4">                      
