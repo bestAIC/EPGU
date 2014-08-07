@@ -120,8 +120,11 @@ INPUT.btn {
 .load_photo .photo_brd{
 	background: url('../pic/pic_5.png');
 	height: 223px;
+	width: 180px;
 }
-.load_photo .photo_brd IMG{
-	display: none;
+.load_photo.error .photo_brd{
+	background: url('../pic/pic_6.png');
+	height: 223px;
+	width: 180px;
 }
 

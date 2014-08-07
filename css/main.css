@@ -851,6 +851,7 @@ float: right;
 }
 
 .list.edit_list LI A .icomoon{
+  position: relative;
   width: 34px;
   height: 34px;
   border: 1px solid #CDD1D4;
