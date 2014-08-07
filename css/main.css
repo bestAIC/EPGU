@@ -1632,6 +1632,10 @@ INPUT.btn.big {
   border:none;
   padding:0 25px;
 }
+INPUT.btn.big.white {
+  border: 1px solid #d0d0d0;
+  padding:0 25px;
+}
 
 INPUT.btn.small {
   border:none;

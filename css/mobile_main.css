@@ -240,6 +240,9 @@ BODY {
   font-size: 2em;
   margin: 0;
 }
+#content .title H1 .reverse_title_min{
+  display: none;
+}
 
 #content .title H2 {
   text-align:left;
@@ -265,7 +268,11 @@ BODY {
 }
 
 #content INPUT.btn:focus{
-  border: 1px solid transparent;
+  border: none;
+  box-shadow: none;
+}
+#content INPUT.btn.white:focus{
+  border: 1px solid #d0d0d0;
   box-shadow: none;
 }
 
@@ -310,6 +317,19 @@ BODY {
 .jq-selectbox__select-text{
   height: 60px;
 }
+
+.jq-selectbox__dropdown .jq-selectbox__search {
+  height: 60px;
+  width: 100%;
+}
+.jq-selectbox__dropdown .jq-selectbox__search input{
+  margin-top: -2px;
+  height: 62px;
+  margin-left: -2px;
+  width: 101%
+}
+
+
 .jq-selectbox__trigger-arrow,
 .jq-selectbox:hover .jq-selectbox__trigger-arrow{
   top: 20px;
@@ -1675,6 +1695,12 @@ FIELDSET{
     vertical-align: top;
     width: 200px;
     margin-top: 6px;
+  }
+  #content .title H1 .reverse_title_max{
+    display: none;
+  }
+  #content .title H1 .reverse_title_min{
+    display: inline;
   }
   
   #content .title H2 {

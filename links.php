@@ -86,6 +86,10 @@ include('include/mobile_head.php');
 						<td><a href="mobile_proverka_sudebnyh_zadoljennostey.php">Cудебная задолженность</a></td>
 						<td><a href="mobile_proverka_sudebnyh_zadoljennostey.php">mobile_proverka_sudebnyh_zadoljennostey.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="mobile_zamena_pasporta_neprigodnost.php">Замена паспорта гражданина Российской Федерации (в связи с непригодностью)</a></td>
+						<td><a href="mobile_zamena_pasporta_neprigodnost.php">mobile_zamena_pasporta_neprigodnost.php</a></td>
+					</tr>
 					<!-- Типовые элементы - моб -->
 					<tr>
 						<td><a href="mobile_typical_elements.php">Типовые элементы - мобильная версия</a></td>

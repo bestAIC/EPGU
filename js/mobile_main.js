@@ -53,10 +53,6 @@ function MPopUp() {
         
 }
 
-$.fn.function(){
-
-}
-
 // Top menu mobile
 
 function MenuShowMobile(){
