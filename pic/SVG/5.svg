@@ -2,13 +2,21 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Слой_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="216 284.5 180 223"
-	 enable-background="new 216 284.5 180 223" xml:space="preserve">
-<title>Imported Layers</title>
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -14 180 236"
+	 enable-background="new 0 -14 180 236" xml:space="preserve">
+<title>Rectangle 38</title>
 <desc>Created with Sketch.</desc>
-<path fill="#C1D7E6" d="M396,495.2v-13.7c-18.4-10.8-45.7-20.8-45.7-20.8s-9.1-3.3-13.9-5.2v-25.1c3.2-3.5,11.2-13.7,11.9-29.7
-	c2.2-1.7,3.9-4.9,5-9.1c1.6-6.9,0.8-14.9-4.2-19.4c0.4-0.8,0.8-2,1.1-2.9c3.8-9.4,10.6-26.7,7.9-40.2c-3.1-15.3-25.3-22.1-45.9-22.1
-	c-15.1,0-33.4,3.8-38.7,14.3c-5.8,0.6-10.2,2.8-13.2,6.9c-8.2,11.1-2.2,31.1,1.1,41.8c0.2,0.8,0.5,1.6,0.7,2.3
-	c-5.2,4.5-6,12.7-4.4,19.5c1,4.3,2.7,7.4,5,9.1c0.8,15.6,8.5,24.9,11.9,28.1v26.5c-4.8,1.8-9.5,3.5-13.9,5.2
-	c-18.2,6.8-33.5,12.3-44.5,18.6c0,4.1,0,7.7,0,12c0,2.6,0,3.6,0,4.4c0,2.2-0.2,10.4,0,11.8H396C396,504.9,396,497.4,396,495.2z"/>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="foto" transform="translate(-2153.000000, -417.000000)" sketch:type="MSArtboardGroup">
+		<g id="Container-_x2B_-Counter-7" transform="translate(1938.000000, 25.000000)" sketch:type="MSLayerGroup">
+			<g id="фото" transform="translate(64.000000, 306.000000)" sketch:type="MSShapeGroup">
+				<path id="Rectangle-38" fill="#C1D7E6" d="M151,281.3V308h180v-25.5c-18.8-9.9-41.8-18.3-41.8-18.3s-9.7-3.5-14.8-5.5v-26.7
+					c3.4-3.7,11.9-14.6,12.7-31.6c2.3-1.8,4.2-5.2,5.3-9.7c1.7-7.3,0.8-15.9-4.5-20.7c0.4-0.9,0.8-2.1,1.2-3.1
+					c4-10,11.3-28.5,8.4-42.9c-3.3-16.3-27-23.6-49-23.6c-16.1,0-35.7,4-41.3,15.2c-6.2,0.6-10.9,3-14.1,7.3
+					c-8.7,11.8-2.3,33.1,1.2,44.6c0.2,0.8,0.5,1.7,0.7,2.4c-5.5,4.8-6.4,13.5-4.7,20.8c1.1,4.6,2.9,7.9,5.3,9.7
+					c0.8,16.6,9.1,26.5,12.7,29.9v28.4c-5.1,1.9-10.1,3.7-14.8,5.5C176.7,270.4,162.2,275.7,151,281.3z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

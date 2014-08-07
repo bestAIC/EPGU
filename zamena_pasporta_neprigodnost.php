@@ -54,9 +54,10 @@ include('include/head.php');
 				<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
 			</div>
 		  </div>
-		  <div class="col_left">            
+		  <div class="col_left">
 		    <div class="load_photo">
 		      <div class="photo_brd">
+		      	<img src="pic/pic_7.jpg" alt="" width="180" height="236">
 		        <div class="load_photo-sub">
 		        	<div class="sub_wrap">
 		        		<div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
@@ -74,7 +75,21 @@ include('include/head.php');
 		      	  <b>Загрузить фотографию</b>
 		      	</a>
 		      </div>
-		      
+		    </div>
+		    <!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
+		    <div class="advice_upload">
+		    	<div class="advice type_not">
+		    		<div class="advice_h">
+		    	        <div class="advice_ico"><span class="icomoon">3</span></div>
+		    	        <h2><span>Извините, ваша фотография не подходит</span></h2>
+		    	    </div>
+		    	</div>
+		    	<div class="advice type_ok">
+		    		<div class="advice_h">
+		    	        <div class="advice_ico"><span class="icomoon">4</span></div>
+		    	        <h2><span>Ваша фотография успшно загружена</span></h2>
+		    	    </div>
+		    	</div>
 		    </div>
 		  </div>
 		  <div class="col_right">

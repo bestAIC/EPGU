@@ -752,7 +752,7 @@ float: right;
 
 .load_photo {
   background:#e4f6ff;
-  padding:10px 20px;
+  padding:10px 32px 18px;
   margin:0 20px 0 0;
   position:relative;
   text-align:left;
@@ -760,11 +760,11 @@ float: right;
 
 .load_photo .photo_brd {
   width:180px;
-  height: 223px;
+  height: 236px;
   background: url('../pic/svg/5.svg') bottom center no-repeat;
   border:7px solid #c1d7e6;
   line-height:0;
-  margin: 20px 0;
+  margin: 20px 0 26px;
   position: relative;
   display: inline-block;
 }
@@ -772,7 +772,46 @@ float: right;
   border-color: #ea6b74;
   background: #F7E9EB url('../pic/svg/6.svg') bottom center no-repeat;
 }
+.load_photo .photo_brd IMG,
+.load_photo.error .photo_brd IMG{
+  display: none;
+}
+.load_photo.upload .photo_brd IMG{
+  display: inline-block;
+}
 
+.load_photo + .advice_upload .advice{
+  display: none;
+}
+.load_photo.error + .advice_upload .advice.type_not{
+  display: block;
+}
+.load_photo.upload + .advice_upload .advice.type_ok{
+  display: block;
+}
+.load_photo + .advice_upload .advice{
+  width: 800px;
+  padding: 0;
+  border: none;
+  margin-top: 40px;
+}
+.load_photo + .advice_upload .advice .advice_h{
+  margin: 0;
+}
+.load_photo + .advice_upload .advice .advice_ico{
+  width: 45px;
+  height: 45px;
+  border-width: 6px;
+  margin-top: -10px;
+}
+.load_photo + .advice_upload .advice .icomoon{
+  font-size: 18px;
+  line-height: 33px;
+}
+.load_photo + .advice_upload .advice H2{
+  font-size: 20px;
+  margin-left: 64px;
+}
   
 .load_photo-sub{
   position: absolute;
@@ -794,7 +833,7 @@ float: right;
 }
 .load_photo-sub .sub_line_1{
   position: absolute;
-  top: 1px;
+  top: -3px;
 }
 .load_photo-sub .sub_line_2{
   position: absolute;
@@ -802,10 +841,10 @@ float: right;
 }
 .load_photo-sub .sub_line_3{
   position: absolute;
-  top: 164px;
+  top: 168px;
 }
 .load_photo-sub .sub_txt{
-  padding: 0 14px 0 20px;
+  padding: 0 0 5px 205px;
   display: inline-block;
   font-size: 12px;
   line-height: 13px;
