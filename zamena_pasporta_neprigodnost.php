@@ -57,7 +57,6 @@ include('include/head.php');
 		  <div class="col_left">            
 		    <div class="load_photo">
 		      <div class="photo_brd">
-		        <img src="pic/svg/5.svg"/>
 		        <div class="load_photo-sub">
 		        	<div class="sub_wrap">
 		        		<div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
