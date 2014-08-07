@@ -760,12 +760,19 @@ float: right;
 
 .load_photo .photo_brd {
   width:180px;
+  height: 223px;
+  background: url('../pic/svg/5.svg') bottom center no-repeat;
   border:7px solid #c1d7e6;
   line-height:0;
   margin: 20px 0;
   position: relative;
   display: inline-block;
 }
+.load_photo.error .photo_brd{
+  border-color: #ea6b74;
+  background: #F7E9EB url('../pic/svg/6.svg') bottom center no-repeat;
+}
+
   
 .load_photo-sub{
   position: absolute;
