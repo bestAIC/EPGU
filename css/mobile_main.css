@@ -297,6 +297,22 @@ BODY {
 .fields_cover {
   margin: -10px 0 30px;
   padding: 25px 0 10px;
+  position:relative;
+}
+
+.fields_cover:before {
+  display:none;  
+}
+
+.fields_cover .limiter:before {
+  background: url("../img/corners_cloud.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  height: 20px;
+  left: 50px;
+  position: absolute;
+  top: -35px;
+  width: 20px;
 }
 
 .fields_cover_inner {
@@ -1736,12 +1752,16 @@ FIELDSET{
   #content .field_cont{
     margin-right: 0;
   }
+  
+  FIELDSET LABEL{
+    padding:0;  
+  }
 
   #content FIELDSET LABEL{
     display: block;
     margin: 0 0 6px 0;
     color: #A5AEB3;
-    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font: 14px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   .big_inp-form INPUT,
@@ -1798,6 +1818,11 @@ FIELDSET{
     font-size: 26px;
     top: 18px;
   }
+  
+
+  .fields_cover .limiter:before {
+    left: 0px;
+  }  
   
   .mobile_proverka_sudebnyh_zadoljennostey .wrapper.l_33{
     width:100%;
@@ -1887,6 +1912,16 @@ FIELDSET{
   .mobile_nalogovaya_zadoljennost #content .mobile_morpf .wrapper {
     position:static;
   }
+  
+  .mobile_postanovka_na_registraciu .wrapper.l_33,
+  .mobile_postanovka_na_registraciu .wrapper.l_50,
+  .mobile_postanovka_na_registraciu .wrapper.l_66 {
+    width:100%;
+  } 
+  
+  .mobile_postanovka_na_registraciu .wrapper.l_25 {
+    width:50%;
+  }   
 
   .wrapper{
     margin:0 0 15px 0;

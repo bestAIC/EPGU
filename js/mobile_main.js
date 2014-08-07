@@ -18,44 +18,36 @@ function MPopUp() {
     } 
   }).resize(); 
   
-  $('.go_more').on('click', function(e) {
-  
-    var $message = $('#popup_more_info');
-        
-    $('#wrap').prepend('<div id="popup_fade"></div>');
-    if ($message.css('display') != 'block') {
-        $message.show();
-        var firstClick = true;
-        $(document).bind('click.event', function(e) {
-            if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
-                $message.hide();
+
+  $('.limiter').on('click', function(e) {
+    if($(this).hasClass('go_more')){
+      var $message = $('#popup_more_info');
+          
+      $('#wrap').prepend('<div id="popup_fade"></div>');
+      if ($message.css('display') != 'block') {
+          $message.show();
+          var firstClick = true;
+          $(document).bind('click.event', function(e) {
+              if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
+                  $message.hide();
+                  $('#popup_fade').remove();                                    
+                  $(document).unbind('click.event');
+              }
+              $('.close_popup_x, .popup .back').click(function(){
+                $message.hide(); 
+                $('#popup_fade').remove();                                
                 $(document).unbind('click.event');
-                $('#popup_fade').remove();
-            }
-            $('.close_popup_x').click(function(){
-              $message.hide();
-              $(document).unbind('click.event');
-              $('#popup_fade').remove();
-            });
-            
-            $('.popup .back').click(function(){
-              $message.hide();
-              $(document).unbind('click.event');
-              $('#popup_fade').remove();
-            });            
-            
-            firstClick = false;
-        });
+              });           
+              
+              firstClick = false;
+          });
+      }
+      e.preventDefault(); 
     }
-    e.preventDefault();
-  });   
-  
-        
+  });    
+          
 }
 
-$.fn.function(){
-
-}
 
 // Top menu mobile
 
