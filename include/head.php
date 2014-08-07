@@ -44,22 +44,10 @@
   <? } ?>
 
 
-  
-    <div id="popup_rules" class="popup">
-      <b class="close_popup_x"></b>
-      <h2>Статья 12.9</h2>
-      <h3>Превышение установленной скорости движения, пункт 2</h3>
-      <p>Превышение установленной скорости движения транспортного средства на&nbsp;величину более&nbsp;20, 
-      но&nbsp;не&nbsp;более 40&nbsp;километров в&nbsp;час&nbsp;&mdash; влечет наложение административного штрафа в&nbsp;размере пятисот рублей.</p>
-      <span class="btn"><b>Продолжить</b></span>
-    </div>  
-  
-    <div id="popup_map" class="popup">
-      <b class="close_popup_x"></b>
-      <h2>Место нарушения</h2>
-      <p>172 КМ 95 М А/Д Москва-Минск</p>
-      <img src="img/map.jpg" />
-    </div>   
+
+  <?
+  include('include/popup.php');
+  ?>
   
   
     <div class="cover">

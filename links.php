@@ -30,7 +30,7 @@ include('include/mobile_head.php');
 						<td><a href="proverka_sudebnyh_zadoljennostey.php">proverka_sudebnyh_zadoljennostey.php</a></td>
 					</tr>
 					<tr>
-						<td><a href="zamena_psporta_pol.php">Замена паспорта гражданина Российской Федерации</a></td>
+						<td><a href="zamena_psporta_pol.php">Замена паспорта гражданина Российской Федерации (в связи с изменением пола)</a></td>
 						<td><a href="zamena_psporta_pol.php">zamena_psporta_pol.php</a></td>
 					</tr>
 					<tr>

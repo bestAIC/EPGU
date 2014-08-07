@@ -249,7 +249,7 @@ include('include/head.php');
                   <option>Белоруссия</option>
                   <option>Украина</option>
                 </select>                  
-              </em><em class="wrapper l_33"><input type="text" placeholder="Дата вступления" class="big" /></em><br/>              
+              </em><em class="wrapper l_25"><input type="text" placeholder="Дата вступления" class="big" /></em><br/>              
               <em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>               
               <h4>Укажите дату вступления в гражданство РФ</h4>              
               <em class="wrapper l_25"><input type="text" placeholder="Дата вступления" class="big" /></em>                         
@@ -416,9 +416,9 @@ include('include/head.php');
 
             <h3>Согласие на обработку персональных данных</h3>          
             
-            <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Согласен на обработку персональных данных</label></em>
+            <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_39"/><label for="f_39">Согласен на обработку персональных данных</label></em>
             
-            <em class="wrapper skew l_100"><input type="checkbox" checked="checked" /><label>Об ответственности за предоставление заведомо ложных сведений,
+            <em class="wrapper skew l_100"><input type="checkbox" checked="checked" id="f_40" /><label for="f_40">Об ответственности за предоставление заведомо ложных сведений,
              либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>           
                                                    
           </fieldset>                                                                                               
