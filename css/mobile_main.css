@@ -27,6 +27,28 @@ BODY {
   max-width: 945px; 
   padding:0 0 0 50px;
   width: 90%;
+  height: 1px;
+}
+.map_nav_h{
+  margin-left: -50px;
+}
+.map_list{
+  height: 268px;
+  overflow-x: hidden;   
+}
+.map_list_item:hover{
+  background-color: transparent;
+  -webkit-transition: background-color .15s;
+  -o-transition: background-color .15s;
+  transition: background-color .15s;
+}
+.map_list_item:active,
+.map_list_item:focus{
+  background-color: #E2F6FF;
+  -webkit-transition: background-color .15s;
+  -o-transition: background-color .15s;
+  transition: background-color .15s;
+  outline: none;
 }
 
 .point_num {
@@ -1513,10 +1535,13 @@ FIELDSET{
   .limiter {
     width: 280px;
     padding:0;
+    margin: 0 20px;
   }  
 
   #header .nav {
     width: 280px;
+    margin: 0 20px;
+    padding: 0;
   }
   
   #header LI.col_2,
@@ -1856,7 +1881,7 @@ FIELDSET{
 
 
   .info-block_wrap{
-    margin: 0 0 15px 0;
+    margin: 5px 0 15px 0;
     padding:0;
   }
   #content .info_block{
@@ -1974,6 +1999,16 @@ FIELDSET{
   .mobile_postanovka_na_registraciu .wrapper.l_25 {
     width:50%;
   }   
+
+  .mobile_zamena_pasporta_neprigodnost .wrapper.l_33,
+  .mobile_zamena_pasporta_neprigodnost .wrapper.l_50,
+  .mobile_zamena_pasporta_neprigodnost .wrapper.l_66{
+    width: 100%;
+  }
+
+  .mobile_zamena_pasporta_neprigodnost .wrapper.l_25{
+    width: 50%;
+  }
 
   .wrapper{
     margin:0 0 15px 0;

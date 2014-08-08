@@ -22,8 +22,8 @@ include('include/mobile_head.php');
 				<em class="wrapper l_50"><label for="settings01">Отчество</label><input id="settings01" type="text" placeholder="Отчество" value="Андреевич" class="big"/ disabled="disabled"></em><br/>
 
 				<em class="wrapper l_33"><label>Дата рождения</label><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
-				</em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label class="flag_label" >Мужской</label>
-				</em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label class="flag_label"  class="flag_label">Женский</label></em><br/>
+				</em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label class="flag_label" >Мужской</label>
+				</em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" /><label class="flag_label"  class="flag_label">Женский</label></em><br/>
 
 				<em class="wrapper l_50"><label for="settings01">Адрес электронной почты</label><input id="settings01" type="text" placeholder="Адрес электронной почты" value="30.09.1992" disabled="disabled" class="big" disabled="disabled" /></em><em class="wrapper l_50"><label for="settings01">Контактный телефон</label><input id="settings01" type="text" placeholder="Контактный телефон" value="+7 931 123-33-44" disabled="disabled" class="big" disabled="disabled" /></em>
 				
@@ -45,10 +45,11 @@ include('include/mobile_head.php');
 				<h3>Сведения о паспорте, подлежащем замене</h3>
 			</div>
 			<div class="limiter">
-				<em class="wrapper l_16"><label for="settings02">Серия</label><input type="text" placeholder="Серия" class="big" value="17 08" disabled="disabled"/>
-				</em><em class="wrapper l_25"><label for="settings02">Номер</label><input type="text" placeholder="Номер" value="949485" class="big" disabled="disabled"/>
-				</em><em class="wrapper l_25"><label for="settings02">Дата выдачи</label><input type="text" placeholder="Дата выдачи" value="07.12.2004" class="big" disabled="disabled" /></em><em class="wrapper l_33"><label for="settings02">Код подразделения</label><input type="text" placeholder="Код подразделения" class="big" value="330-009" disabled="disabled" /></em><br/>
+				<em class="wrapper l_33"><label for="settings02">Серия</label><input type="text" placeholder="Серия" class="big" value="17 08" disabled="disabled"/>
+				</em><em class="wrapper l_33"><label for="settings02">Номер</label><input type="text" placeholder="Номер" value="949485" class="big" disabled="disabled"/>
+				</em><em class="wrapper l_33"><label for="settings02">Дата выдачи</label><input type="text" placeholder="Дата выдачи" value="07.12.2004" class="big" disabled="disabled" /></em><em class="wrapper l_33"><label for="settings02">Код подразделения</label><input type="text" placeholder="Код подразделения" class="big" value="330-009" disabled="disabled" /></em><br/>
 				<em class="wrapper l_100"><label for="settings02">Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России по Свердловской области в Октябрьс…" disabled="disabled" /></em>
+				<br/>
 				<div class="info-block_wrap">
 					<div class="info_block type_2">
 						<p class="info-block_h"><b>Обратите внимание</b></p>
@@ -241,10 +242,10 @@ include('include/mobile_head.php');
 				<div class="limiter">
 					<h4>Персональные данные супруга</h4>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" /></em><br/>
-					<em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" /></em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+					<em class="wrapper l_50"><label for="">Фамилия</label><input type="text" placeholder="Фамилия" class="big" /></em><br/>
+					<em class="wrapper l_50"><label for="">Имя</label><input type="text" placeholder="Имя" class="big" /></em><em class="wrapper l_50"><label for="">Отчество</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 					
-					<em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
+					<em class="wrapper l_25"><label for="">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 					</em>
 					
 					<h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
@@ -428,13 +429,81 @@ include('include/mobile_head.php');
 			<div class="limiter">
 				<h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
 			</div>
+
+				<div class="map_cover">
+				  <div class="map_block" id="map"></div>
+				    <div class="address_list">               
+				      <div class="map_nav">
+				        <div class="limiter">
+				        <h4 class="map_nav_h">Доступны подразделения:</h4>
+				        </div>
+				        <ul class="map_list">
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+				            <p>Москва, Неглинная, 23</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+				            <p>Москва, Неглинная, 23</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+				            <p>Москва, Неглинная, 23</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+				          </li>
+				          <li class="map_list_item">
+				            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+				          </li>
+				        </ul>
+				      </div><!-- map_nav -->
+				      <div class="map_ballon_block">
+				        <div class="map_ballon_wrap">
+				          <a class="map_ballon_close"><span class="icomoon">L</span></a>
+				          <div class="map_ballon_h">
+				            <p><strong>МИФНС России №46 по г. Москве</strong></p>
+				            <p>В составе ИФНС России № 1 по г. Москве</p>
+				          </div>
+				          <ul class="map_ballon_list">
+				            <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+				            <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+				            <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+				            <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+				            <li class="map_ballon_item">Как добраться:</li>
+				            <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
+				            <li class="map_ballon_item">Мякинино, Тушинская</li>
+				            <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+				          </ul>
+				        </div>
+				      </div><!-- map_ballon_block --> 
+				    </div>                 
+				</div><!-- map_cover -->
 		</fieldset>
 
 		<fieldset class="group_16">
 		    <div class="limiter">
 		        <h3>Согласие на обработку персональных данных</h3>
-		        <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label class="flag_label">Согласен на обработку персональных данных</label></em>
-		        <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
+		        <em class="wrapper l_100"><input id="f_22" type="checkbox" checked="checked" /><label for="f_22" class="flag_label">Согласен на обработку персональных данных</label></em>
+		        <em class="wrapper l_100"><input id="f_23" type="checkbox" checked="checked" /><label for="f_23" class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
 		        либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>
 		    </div>
 		</fieldset>

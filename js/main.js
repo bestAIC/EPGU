@@ -307,10 +307,12 @@ function MapShow(){
 
     var myPlacemark = new ymaps.Placemark([55.758007, 37.844264], {
         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-        balloonContentHeader: "Балун метки",
-        balloonContentBody: "Содержимое <em>балуна</em> метки",
+        balloonContentHeader: "<p><strong>МИФНС России №46 по г. Москве</strong></p> <p>В составе ИФНС России № 1 по г. Москве</p>",
+        balloonContentBody: "<p>Адрес: Москва, Походный пр-д, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
         balloonContentFooter: "Подвал",
-        hintContent: "Хинт метки"
+        hintContent: "Хинт метки",
+        balloonMaxWidth: 250,
+        balloonMinWidth: 250
     }, {
         iconLayout: 'default#image',
         iconImageHref: 'img/ico_1.png',

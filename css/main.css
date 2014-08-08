@@ -1994,9 +1994,10 @@ LABEL {
     border-color: #CCC;
     background: #F5F5F5;
     box-shadow: none;
-    color: #888;
-       
+    color: #888;       
 }
+
+
 
 .jq-selectbox {
     vertical-align: middle;
