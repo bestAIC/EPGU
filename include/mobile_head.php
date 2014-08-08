@@ -15,6 +15,8 @@
 <script type="text/javascript" src="js/mobile_main.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/ie8.css" media="all">
   <script type="text/javascript" src="js/PIE.js"></script>

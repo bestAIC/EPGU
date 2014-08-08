@@ -963,18 +963,22 @@ H4 {
   border:1px solid #dbe2e6;
   margin:0 0 30px 0;
   position: relative;
+  min-height: 467px;  
 }
 .map_block{
-  width: 855px;
-  height: 467px;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
 }
 .map_nav{
-  width: 360px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  width: 50%;
+  max-width:550px;
+  position: relative;
   background: #fff;
   padding: 6px 0 20px;
+  margin:20px;
 }
 .map_nav_h{
   margin: 20px;
@@ -1028,6 +1032,7 @@ H4 {
   background: #fff;
   display: none;
   padding: 20px;
+  width: 30%;
 }
 .map_ballon_wrap{
   position: relative;
@@ -2050,7 +2055,7 @@ LABEL {
 }
 .jq-selectbox__select-text {
     display: block;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

@@ -321,10 +321,11 @@ include('include/mobile_head.php');
               <div class="limiter">
                 <h4>Укажите страну, и дату получения другого гражданства</h4>              
                 <em class="wrapper l_66">
-                  <select>
-                    <option>Гражданство</option>                
-                    <option>Белоруссия</option>
-                    <option>Украина</option>
+                  <label>Гражданство</label>
+                  <select class="select_choice">
+                    <option value="0" class="selected_one" name="Гражданство">Гражданство</option>                
+                    <option value="1" >Белоруссия</option>
+                    <option value="2" >Украина</option>
                   </select>                  
                 </em><em class="wrapper l_33"><label>Дата вступления</label><input type="text" placeholder="Дата вступления" class="big" /></em><br/>              
                 <em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>               
@@ -339,10 +340,11 @@ include('include/mobile_head.php');
               <div class="limiter">
                 <h4>Укажите страну, и дату получения другого гражданства</h4>              
                 <em class="wrapper l_66">
-                  <select>
-                    <option>Гражданство</option>                
-                    <option>Белоруссия</option>
-                    <option>Украина</option>
+                  <label>Гражданство</label>
+                  <select class="select_choice">
+                    <option value="0" class="selected_one" name="Гражданство">Гражданство</option>                
+                    <option value="1" >Белоруссия</option>
+                    <option value="2" >Украина</option>
                   </select>                  
                 </em><em class="wrapper l_33"><label>Дата</label><input type="text" placeholder="Дата" class="big" /></em><br/>              
                 <em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>              
@@ -362,40 +364,54 @@ include('include/mobile_head.php');
             </div>
             <div class="limiter">    
               <em class="wrapper l_100">
-                <select>
-                  <option>Основная причина переселения</option>                
+                <label>Основная причина переселения</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Основная причина переселения">Основная причина переселения</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>                  
               </em>
               <h4>Информация о работе</h4>
               <em class="wrapper l_100">
-                <select>
-                  <option>Сфера деятельности по последнему месту жительства</option>                
+                <label>Сфера деятельности по последнему месту жительства</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Сфера деятельности по последнему месту жительства">Сфера деятельности по последнему месту жительства</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>                  
               </em>
               <em class="wrapper l_100">
-                <select>
-                  <option>Вид занятости</option>                
+                <label>Вид занятости</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Вид занятости">Вид занятости</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>                  
               </em>
               <h4>Социальное обеспечение</h4>
               <em class="wrapper l_100">
-                <select>
-                  <option>Вид соцобеспечения по последнему месту жительства</option>                
+                <label>Вид соцобеспечения по последнему месту жительства</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Вид соцобеспечения по последнему месту жительства">Вид соцобеспечения по последнему месту жительства</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>                  
               </em>
               <h4>Личная информация</h4>
               <em class="wrapper l_50">
-                <select>
-                  <option>Образование</option>                
+                <label>Образование</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Образование">Образование</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>                  
               </em><em class="wrapper l_50">
-                <select>
-                  <option>Состояние в браке</option>                
+                <label>Состояние в браке</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Состояние в браке">Состояние в браке</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>                  
               </em><br/>
               <em class="wrapper l_100">
-                <select>
-                  <option>Если до переселения проживал с семьёй, то прибыл</option>                
+                <label>Если до переселения проживал с семьёй, то прибыл</label>
+                <select class="select_choice">
+                  <option value="0" class="selected_one" name="Если до переселения проживал с семьёй, то прибыл">Если до переселения проживал с семьёй, то прибыл</option>
+                  <option value="1" selected="selected">текст</option>                
                 </select>
                 <i class="not">необязательно</i>                  
               </em>
@@ -466,31 +482,54 @@ include('include/mobile_head.php');
                  </em><em class="wrapper l_33"><label>Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
               </div>       
             </div>
-            <div class="limiter">
-              <h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
-              <div class="map_cover clear">
-               <div class="find_result">
-                <h4>Доступные подразделения</h4>
-                <ul>
-                 <li>
-                  <span class="list_num">1</span>
-                  <h5>ИФНС России №1 по г.Москве</h5>
-                  <p>Москва, Ниглинная, 23</p>
-                 </li>
-                 <li>
-                  <span class="list_num">2</span>
-                  <h5>ИФНС России №1 по г.Москве</h5>
-                  <p>Москва, Ниглинная, 23</p>
-                 </li>
-                 <li>
-                  <span class="list_num">3</span>
-                  <h5>ИФНС России №1 по г.Москве</h5>
-                  <p>Москва, Ниглинная, 23</p>
-                 </li>                  
-                </ul>
-               </div>
+              <div class="limiter">
+                <h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
               </div>
-            </div>             
+
+              <div class="map_cover">
+                <div class="map_block" id="map"></div>
+                  <div class="address_list">               
+                    <div class="map_nav">
+                      <div class="limiter">
+                      <h4 class="map_nav_h">Доступны подразделения:</h4>
+                      </div>
+                      <ul class="map_list">
+                        <li class="map_list_item">
+                          <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+                          <p>Москва, Неглинная, 23</p>
+                        </li>
+                        <li class="map_list_item">
+                          <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+                          <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+                        </li>
+                        <li class="map_list_item">
+                          <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+                          <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                        </li>
+                      </ul>
+                    </div><!-- map_nav -->
+                    <div class="map_ballon_block">
+                      <div class="map_ballon_wrap">
+                        <a class="map_ballon_close"><span class="icomoon">L</span></a>
+                        <div class="map_ballon_h">
+                          <p><strong>МИФНС России №46 по г. Москве</strong></p>
+                          <p>В составе ИФНС России № 1 по г. Москве</p>
+                        </div>
+                        <ul class="map_ballon_list">
+                          <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+                          <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+                          <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+                          <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+                          <li class="map_ballon_item">Как добраться:</li>
+                          <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
+                          <li class="map_ballon_item">Мякинино, Тушинская</li>
+                          <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+                        </ul>
+                      </div>
+                    </div><!-- map_ballon_block --> 
+                  </div>                 
+              </div><!-- map_cover -->
+            
          </fieldset> 
     
     
