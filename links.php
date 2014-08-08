@@ -90,6 +90,10 @@ include('include/mobile_head.php');
 						<td><a href="mobile_zamena_pasporta_neprigodnost.php">Замена паспорта гражданина Российской Федерации (в связи с непригодностью)</a></td>
 						<td><a href="mobile_zamena_pasporta_neprigodnost.php">mobile_zamena_pasporta_neprigodnost.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="mobile_postanovka_na_registraciu.php">Постановка на регистрацию</a></td>
+						<td><a href="mobile_postanovka_na_registraciu.php">mobile_postanovka_na_registraciu.php</a></td>
+					</tr>
 					<!-- Типовые элементы - моб -->
 					<tr>
 						<td><a href="mobile_typical_elements.php">Типовые элементы - мобильная версия</a></td>

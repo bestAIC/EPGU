@@ -297,6 +297,12 @@ BODY {
   display: block;
 }
 
+#content .jq-checkbox + label.flag_label{
+  padding-left: 35px;
+  margin-left: 0;
+  margin-top: 2px;
+}
+
 .main FIELDSET .fr.btn_field{
   padding-right: 0;
 }
@@ -336,13 +342,9 @@ BODY {
 
 .jq-selectbox__dropdown .jq-selectbox__search {
   height: 60px;
-  width: 100%;
 }
 .jq-selectbox__dropdown .jq-selectbox__search input{
-  margin-top: -2px;
   height: 62px;
-  margin-left: -2px;
-  width: 101%
 }
 
 

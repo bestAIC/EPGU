@@ -1870,12 +1870,6 @@ LABEL {
   display: block;
 }
 
-.jq-checkbox + label{
-  padding-left: 35px;
-  margin-left: 0;
-  display: block;
-}
-
 .jq-radio .jq-radio__div{
   width: 18px;
    height: 18px;
