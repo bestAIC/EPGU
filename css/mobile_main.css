@@ -19,6 +19,16 @@ BODY {
   width: 90%;
 }
 
+.address_list {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position:relative;
+  margin:0 auto;
+  max-width: 945px; 
+  padding:0 0 0 50px;
+  width: 90%;
+}
+
 .point_num {
   top:-10px;
 }
@@ -823,8 +833,13 @@ dd .popup_link{
 }
 
 
+.map_nav {
+  margin:20px 0;
+}
 
-
+.map_cover {
+  margin:0;
+}
 
 .jq-file{
   box-shadow: none;
@@ -1782,13 +1797,22 @@ FIELDSET{
   }
   
   FIELDSET LABEL{
-    padding:0;  
+    padding:0; 
+    color: #A5AEB3;     
   }
+  
+  .jq-checkbox + label,
+  .jq-radio + label {
+    color:#000;
+  }  
+  
+  FIELDSET LABEL{  
 
+  }
+  
   #content FIELDSET LABEL{
     display: block;
     margin: 0 0 6px 0;
-    color: #A5AEB3;
     font: 14px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
@@ -1825,7 +1849,7 @@ FIELDSET{
   
 
   #content FIELDSET{
-    padding: 26px 0px 10px;
+    padding: 25px 0px 10px;
     margin-bottom: 0;
     border-top: 1px solid #DBE2E6;
   }
@@ -2081,7 +2105,47 @@ FIELDSET{
   .switcher_cont EM {
       padding: 0;
       width: 100%;
+  }
+  
+  
+  .address_list {
+    max-width:100%;
+    padding: 0;
+    width: 100%;
   }  
+
+  .map_cover {
+    min-height:100%;
+    border:none;
+  }  
+  
+  .map_block{
+    display:none;
+  }
+  
+  .map_nav{
+    width:100%;
+    padding:0px;
+    margin:0px;
+    max-width:100%;    
+  }
+  
+  .map_ballon_block {
+    display:none!important;
+  }
+  
+  .map_list_item .map_num {
+    display:none;
+  }  
+
+  .map_list_item P {
+    width:280px;
+    margin:0 auto;
+  }        
+
+  .map_nav_h {
+    display:none;
+  }        
 
   .ticket{
     position: relative;
@@ -2241,6 +2305,18 @@ FIELDSET{
       font-size: 18px;
     }
 
+  .mobile_postanovka_na_registraciu #content .group_15 {
+    padding:25px 0 0 0;
+  }
+  
+  .mobile_postanovka_na_registraciu #content .group_15 H4 {
+    border:none;
+    margin:0;
+  }  
+  
+  .mobile_postanovka_na_registraciu #content .group_16 {
+    border-top:none;
+  }  
   
   .mobile_gibdd_shtrafy #content .advice FORM{
     margin-top: 14px;  
