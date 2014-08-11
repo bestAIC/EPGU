@@ -14,7 +14,7 @@
       <p>172 КМ 95 М А/Д Москва-Минск</p>
       <img src="img/map.jpg" />
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
-    </div>
+    </div>   
 
     <div id="popup_more_info" class="popup">
       <b class="close_popup_x"></b>
@@ -134,4 +134,20 @@
       </div>
     </div> 
      
-    <? } ?>
+
+<? else if($pagename == 'mobile_postanovka_na_registraciu') {?>
+    <div id="popup_map_address" class="popup">
+      <b class="close_popup_x"></b>
+      <h2>МИФНС России №46 по г.Москве</h2>
+      <h3>В составе ИФНС России №1 по г.Москве</h3>
+      <div class="clear"><a class="btn big" href="#"><b>Выбрать подразделение</b></a></div>
+      <p>Адрес: Москва, Походный пр-д. 3, стр. 2</p>
+      <p>Режим работы: Пн-Пт 9:00-18:00</p>
+      <p>Обед: 12:30-13:30</p>
+      <p>Телефон: +7(495)913-00-09</p>
+      <p>Ближайшее метро: Волоколамская, Мякинино, Тушинская</p>
+      <p>E-mail: test@test.ru</p>
+      <img src="img/map.jpg" />
+      <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
+    </div>
+<? } ?>   

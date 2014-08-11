@@ -17,6 +17,13 @@ function MPopUp() {
     } else { 
       $('.limiter, .map_list').removeClass('go_more');
     } 
+
+    if($('#map:hidden').length){  
+      $('.map_list li').addClass('go_more');
+    } else { 
+      $('.limiter').removeClass('go_more');
+    } 
+
   }).resize(); 
   
 
@@ -45,7 +52,34 @@ function MPopUp() {
       }
       e.preventDefault(); 
     }
-  });    
+  });
+
+  $('.map_list li').on('click', function(e) {
+    if($(this).hasClass('go_more')){
+      var $message = $('#popup_map_address');
+          
+      $('#wrap').prepend('<div id="popup_fade"></div>');
+      if ($message.css('display') != 'block') {
+          $message.show();
+          var firstClick = true;
+          $(document).bind('click.event', function(e) {
+              if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
+                  $message.hide();
+                  $('#popup_fade').remove();                                    
+                  $(document).unbind('click.event');
+              }
+              $('.close_popup_x, .popup .back').click(function(){
+                $message.hide(); 
+                $('#popup_fade').remove();                                
+                $(document).unbind('click.event');
+              });           
+              
+              firstClick = false;
+          });
+      }
+      e.preventDefault(); 
+    }
+  });        
           
 }
 
