@@ -451,6 +451,9 @@ BODY {
 .main.big_inp-form .q:hover .q_hover{
   display: none;
 }
+.main.big_inp-form .q.active .q_hover{
+  display: block;
+}
 .main.big_inp-form .q .icomoon{
   vertical-align: middle;
   line-height: 36px;
@@ -581,6 +584,131 @@ BODY {
 .main.big_inp-form .q_slick_cont .slick-dots button:before{
   content: "";
   display: none;
+}
+
+.load_photo{
+  background: none;
+  padding: 0px 0px 18px;
+  margin: 0;
+}
+.load_photo .photo_brd{
+  margin-top: 0;
+  border-width: 4px;
+}
+.load_photo-wrap{
+  vertical-align: top;
+}
+#content .load_photo_cols.col_left,
+#content .load_photo_cols.col_right{
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -2px;
+}
+#content .load_photo_cols.col_left{
+  width: 40%;
+}
+#content .load_photo_cols.col_right{
+  width: 60%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.load_photo-btn A{
+  min-width: 188px;
+}
+.load_photo-btn .btn.small B{
+  height: 50px;
+  line-height: 50px;
+}
+#content .load_photo_cols.col_right H4{
+  margin-top: 0;
+}
+#content .load_photo_cols.col_right .list{
+  margin-top: 0px;
+}
+#content .load_photo_cols.col_right .list LI{
+  margin-left: 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #74777F;
+  margin-left: 0;
+}
+.list.edit_list LI .lnk .icomoon{
+  float: left;
+}
+#content .load_photo_cols.col_right .more_info{
+  text-align: right;
+}
+
+.load_photo-sub{
+  opacity: 0;
+}
+
+
+.load_photo-wrap{
+  overflow: hidden;
+}
+.load_photo-wrap .require,
+.load_photo-wrap .edit_wrap{
+  float: left;
+  overflow: hidden;
+}
+.load_photo-wrap .require{
+  width: 100%;
+  -webkit-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+.load_photo-wrap .current .require{
+  width: 0;
+}
+.load_photo-wrap .edit_wrap{
+  width: 0;
+  -webkit-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+.load_photo-wrap .current .edit_wrap{
+  width: 100%;
+}
+
+#content .upload .load_photo_cols.col_left{
+  width: 70%;
+  max-width: 430px;
+}
+#content .upload .load_photo_cols.col_right{
+  width: 30%;
+}
+.load_photo-wrap.upload .load_photo{
+  background: #e4f6ff;
+  padding: 30px;
+}
+.load_photo-sub .sub_line{
+  width: 308px;
+}
+.load_photo-sub .sub_line_1{
+  top: -7px;
+}
+.load_photo-sub .sub_line_2{
+  top: 84px;
+}
+.load_photo-sub .sub_line_3{
+  top: 216px;
+}
+
+#content .edit_list LI SPAN.txt{
+  display: block;
+  width: 50%;
+  font-size: 12px;
+  margin-left: 56px;
+}
+
+.main.big_inp-form .q .hover{
+  display: none;
+}
+.main.big_inp-form .q.active .hover{
+  display: block;
 }
 
 /* /GALLERY BLOCK */
@@ -1817,6 +1945,9 @@ FIELDSET{
     font-size: 22px;
     top: -2px;
   }
+  .big_inp-form .point_num + H3 .q{
+    display: none;
+  }
 
   #content .field_cont{
     margin-right: 0;
@@ -1960,7 +2091,7 @@ FIELDSET{
     height: 50px;
     margin: 5px 0 15px;
   }
-  .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf{
+  .mobile_nalogovaya_zadoljennost .btn.mobile_morpf{
     border: 1px solid #d0d0d0;
     background: #fff;    
     text-align: center;
@@ -1969,12 +2100,12 @@ FIELDSET{
     margin-left: -517px;
     left: 50%;
   }
-  .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf b{
+  .mobile_nalogovaya_zadoljennost .btn.mobile_morpf b{
     color: #565656;
     text-align: center;
     margin-left: -170px;
   }
-  .mobile_nalogovaya_zadoljennost .mobile_morpf .btn.mobile_morpf  b:after{
+  .mobile_nalogovaya_zadoljennost .btn.mobile_morpf  b:after{
     content: '5';
     font: 14px 'icomoon-epga';
     position: absolute;
@@ -1986,6 +2117,30 @@ FIELDSET{
       margin-top: 12px;
       margin-bottom: 24px;
     }
+
+  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf{
+    background: #fff;
+    text-align: center;
+    width: 1024px;
+    position: relative;
+    left: 50%;
+    height: 50px;
+    margin-left: -517px;
+  }
+  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf:after{
+    content: '5';
+    font: 14px 'icomoon-epga';
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: 130px;
+  }
+  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf INPUT.btn.big{
+    margin: 0;
+    margin-left: -120px;
+    height: 50px;
+    font-size: 17px;
+  }
 
   .mobile_nalogovaya_zadoljennost #content .mobile_morpf .wrapper {
     position:static;
@@ -2168,6 +2323,31 @@ FIELDSET{
     padding:0px;
     margin:0px;
     max-width:100%;    
+  }
+
+  .map_list{
+    height: 100%;
+    overflow: visible;
+    border-bottom: 0;
+  }
+  .map_list_item .popup_link{
+    display: none;
+  }
+  .map_list_item P A{
+    font-weight: bold;
+    color: #000;
+  }
+  .map_list_item:focus P A,
+  .map_list_item:active P A{
+    color: #0173c1;
+  }
+  .map_list_item:after{
+    content: "5";
+    font: 14px 'icomoon-epga';
+    right: 10px;
+    top: 45%;
+    position: absolute;
+    margin: 0;
   }
   
   .map_ballon_block {
@@ -2532,6 +2712,15 @@ FIELDSET{
   }
   .jq-file.disabled + .file-sidebar_right LABEL B{
     display: block;
+  }
+
+  .jq-selectbox__dropdown .jq-selectbox__search{
+    height: 52px;
+  }
+  .jq-selectbox__dropdown .jq-selectbox__search input{
+    height: 54px;
+    margin-left: 1px;
+    margin-top: 0px;
   }
 
   .send_btn{

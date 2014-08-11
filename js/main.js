@@ -343,7 +343,7 @@ function MapControls(){
 
       $lnk.each(function(i,e){
         $(this).on('click', function(e){
-          $lnk.toggleClass('active');
+          $lnk.parent().toggleClass('active');
           e.preventDefault();
           $block.fadeIn();
           $close.on('click', function(){

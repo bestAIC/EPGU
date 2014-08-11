@@ -62,4 +62,76 @@
         
       </div>   
     </div>  
-<? } ?>
+
+    <? } else if($pagename == 'mobile_zamena_pasporta_neprigodnost') {?>
+
+    <div id="popup_technical" class="popup popup_technical">
+      <b class="close_popup_x"></b>
+      <h3>Технические требования к фотографии</h3>
+      <div class="list_wrap">
+        <ul class="list">
+          <li>Черно-белая или цветная фотография формата JPEG.</li>
+          <li>Разрешение фотографии не меньше 450 dpi, размер файла 200–500 кБ.</li>
+          <li>Фон: белый, светло-голубой или светло-серый.</li>
+          <li>Головные уборы, темные очки не допускаются (за исключением случаев, когда  ношение головных уборов обусловлено религиозными убеждениями).</li>
+          <li>Фотографии в форменной одежде не принимаются.</li>
+          <li>Не принимаются фотографии в темных очках. Если человек обычно носит очки, то он должен быть в очках и когда его фотографируют.</li>
+          <li>Изображение должно быть четкое, строго анфас, плечи должны быть развернуты на камеру.</li>
+          <li>Выражение лица должно быть нейтральное</li>
+          <li>Черно-белая или цветная фотография формата JPEG.</li>
+          <li>Разрешение фотографии не меньше 450 dpi, размер файла 200–500 кБ.</li>
+          <li>Фон: белый, светло-голубой или светло-серый.</li>
+          <li>Головные уборы, темные очки не допускаются (за исключением случаев, когда  ношение головных уборов обусловлено религиозными убеждениями).</li>
+          <li>Фотографии в форменной одежде не принимаются.</li>
+          <li>Не принимаются фотографии в темных очках. Если человек обычно носит очки, то он должен быть в очках и когда его фотографируют.</li>
+          <li>Изображение должно быть четкое, строго анфас, плечи должны быть развернуты на камеру.</li>
+          <li>Выражение лица должно быть нейтральное</li>
+        </ul>
+      </div>
+    </div> 
+
+    <div id="popup_load-photo" class="popup popup_load-photo">
+      <div class="col_left">
+        <div class="load_photo">
+          <div class="photo_brd">
+            <img src="pic/pic_7.jpg" alt="" width="180" height="236">
+            <div class="load_photo-sub">
+              <div class="sub_wrap">
+                <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
+              </div>
+              <div class="sub_wrap">
+                <div class="sub_line sub_line_2"><span class="sub_txt">Глаза должны быть на уровне этой линии</span></div>
+              </div>
+              <div class="sub_wrap">
+                <div class="sub_line sub_line_3"><span class="sub_txt">Плечи должны быть на уровне этой линии</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
+        <div class="advice_upload">
+          <div class="advice type_not">
+            <div class="advice_h">
+              <div class="advice_ico"><span class="icomoon">3</span></div>
+              <h2><span>Извините, ваша фотография не подходит</span></h2>
+            </div>
+          </div>
+          <div class="advice type_ok">
+            <div class="advice_h">
+              <div class="advice_ico"><span class="icomoon">4</span></div>
+              <h2><span>Ваша фотография успшно загружена</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_right">
+        <ul class="list edit_list">
+          <li><a href="#"><span class="icomoon">Q</span><span class="txt">Повернуть по часовой</span></a></li>
+          <li><a href="#"><span class="icomoon">R</span><span class="txt">Повернуть против часовой</span></a></li>
+          <li><a href="#"><span class="icomoon">S</span><span class="txt">Обрезать фотографию</span></a></li>
+          <li><a href="#"><span class="icomoon">T</span><span class="txt">Отменить последнее действие</span></a></li>
+        </ul>
+      </div>
+    </div> 
+     
+    <? } ?>

@@ -4,6 +4,7 @@ $(document).ready(function() {
   MenuShowMobile();
   ResponseGallery(); // Slick Galery 
   EasterEggs(); 
+  LoadPhoto();
 });
 
 
@@ -11,15 +12,15 @@ $(document).ready(function() {
 // Popup
 function MPopUp() {
   $(window).on('resize', function(){
-    if($('#content .ticket .popup_link:hidden').length){  
-      $('#content .ticket .popup_link').parent().addClass('go_more');
+    if($('#content .ticket .popup_link:hidden, #content .map_list .popup_link:hidden').length){  
+      $('#content .ticket .popup_link, #content .map_list_item').parent().addClass('go_more');
     } else { 
-      $('.limiter').removeClass('go_more');
+      $('.limiter, .map_list').removeClass('go_more');
     } 
   }).resize(); 
   
 
-  $('.limiter').on('click', function(e) {
+  $('.limiter, .map_list.go_more').on('click', function(e) {
     if($(this).hasClass('go_more')){
       var $message = $('#popup_more_info');
           
@@ -86,27 +87,27 @@ function ResponseGallery(){
   // $('html').click(function(){
   //   cont.addClass('closed').removeClass('opened');
   // });
+    lnk.on('click', function(){
+      $(this).toggleClass('active');
+      cont.css({'z-index': 101})
+      if($('.q_slick_cont:visible')){
+        wrap.slideToggle();
+        gallery.slick({
+              dots: true,
+              speed: 300,
+              slidesToShow: 1,
+              slidesToScroll: 1
+        });
+        
+        $('.dots-length').remove();
 
-  lnk.on('click', function(){
-    cont.css({'z-index': 101})
-    if($('.q_slick_cont:visible')){
-      wrap.slideToggle();
-      gallery.slick({
-            dots: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1
-      });
-      
-      $('.dots-length').remove();
+        var dots = $('.slick-dots'),
+            dotsLng = $('.slick-dots li', cont).length;
+            
+            dots.append('<li class="dots-length">' + dotsLng + '</li>');
 
-      var dots = $('.slick-dots'),
-          dotsLng = $('.slick-dots li', cont).length;
-          
-          dots.append('<li class="dots-length">' + dotsLng + '</li>');
-
-    }
-  });
+      }
+    })
 }
 
 // Easter Eggs
@@ -126,6 +127,25 @@ $('#intro .ee').click(function() {
        $div.css({backgroundImage: "none"});
     }
 })
- 
-   
+}
+
+
+
+function LoadPhoto(){
+  var $cont = $('.load_photo-wrap'),
+      $lnk = $('.load_photo-btn', $cont);
+
+      $(window).on('load resize', function(e){
+        var $contRight = $('.col_right.load_photo_cols'),
+            $contRightWidth = $('.col_right.load_photo_cols').width(),
+            $require = $('.require_wrap');
+            
+        $require.width($contRightWidth);
+      })
+
+      $lnk.on('click', function(e){
+        e.preventDefault();
+        $cont.addClass('upload');
+        $cont.find('.col_right.load_photo_cols').toggleClass('current');
+      })
 }

@@ -34,10 +34,83 @@ include('include/mobile_head.php');
 						<span class="icomoon">"</span>
 					</div>
 				</div>
-				<em class="wrapper l_100"><span class="fl btn_field"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
 			</div>
 		</fieldset>
 
+		<fieldset class="group_2">
+			<div class="limiter">
+				<span class="point_num">2</span>
+				<h3>Загрузите свою фотографию</h3>
+			</div>
+
+
+			<div class="limiter">
+				<div class="load_photo-wrap">
+					<div class="col_left load_photo_cols">
+						<div class="load_photo">
+							<div class="photo_brd">
+								<img src="pic/pic_7.jpg" alt="" width="180" height="236">
+								<div class="load_photo-sub">
+								  <div class="sub_wrap">
+								    <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
+								  </div>
+								  <div class="sub_wrap">
+								    <div class="sub_line sub_line_2"><span class="sub_txt">Глаза должны быть на уровне этой линии</span></div>
+								  </div>
+								  <div class="sub_wrap">
+								    <div class="sub_line sub_line_3"><span class="sub_txt">Плечи должны быть на уровне этой линии</span></div>
+								  </div>
+								</div>
+							</div>
+							<div class="load_photo-btn">
+								<a class="btn small" href="#">
+									<b>Загрузить фотографию</b>
+								</a>
+							</div>
+						</div>
+						<!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
+						<div class="advice_upload">
+							<div class="advice type_not">
+								<div class="advice_h">
+									<div class="advice_ico"><span class="icomoon">3</span></div>
+									<h2><span>Извините, ваша фотография не подходит</span></h2>
+								</div>
+							</div>
+							<div class="advice type_ok">
+								<div class="advice_h">
+									<div class="advice_ico"><span class="icomoon">4</span></div>
+									<h2><span>Ваша фотография успшно загружена</span></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col_right load_photo_cols">
+						<div class="require">
+							<div class="require_wrap">
+								<h4>Требования к фотографии</h4>
+								<ul class="list clear">
+									<li>Черно-белая или цветная фотография формата JPEG. Размер файла 200–500 кБ.</li>
+									<li>Фон: белый, светло-голубой или светло-серый.</li>
+									<li>Головные уборы допускаются (по религиозным причинам), но они не должны скрывать овал лица.</li>
+								</ul>
+								<div class="more_info">
+									<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
+								</div>
+							</div>
+						</div>
+						<div class="edit_wrap">
+							<ul class="list edit_list">
+								<li><div class="lnk"><button class="icomoon">Q</button><span class="txt">Повернуть по часовой</span></div></li>
+								<li><div class="lnk"><button class="icomoon">R</button><span class="txt">Повернуть против часовой</span></div></li>
+								<li><div class="lnk"><button class="icomoon">S</button><span class="txt">Обрезать фотографию</span></div></li>
+								<li><div class="lnk"><button class="icomoon">T</button><span class="txt">Отменить последнее действие</span></div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
 
 		<fieldset class="group_3">
 			<div class="limiter">
@@ -57,7 +130,7 @@ include('include/mobile_head.php');
 						<span class="icomoon">"</span>
 					</div>
 				</div>
-				<em class="wrapper l_100"><span class="fl btn_field"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
 				<em class="wrapper l_100">
 				<select class="select_choice">
 					<option value="0" class="selected_one" name="Номер транспортного средства">Номер транспортного средства</option>
@@ -227,7 +300,7 @@ include('include/mobile_head.php');
 		<fieldset class="group_6">
 			<div class="limiter">
 				<span class="point_num">6</span>
-				<h3>Семейное положение</h3>
+				<h3>Семейное положение <i class="q js-q"><span class="ico js-q_ico icomoon">&gt;</span><div class="bg_c3 q_hover"><img src="img/doc_group_1.png" alt="" width="335" height="221"></div></i></h3>
 			</div>
 
 			<div class="limiter">
@@ -342,7 +415,7 @@ include('include/mobile_head.php');
 		<fieldset class="group_8">
 			<div class="limiter">
 				<span class="point_num">8</span>
-				<h3>Укажите данные родителей как в свидетельстве о рождении <i class="q">?</i></h3>
+				<h3>Укажите данные родителей как в свидетельстве о рождении <i class="q js-q"><span class="ico js-q_ico icomoon">&gt;</span><div class="bg_c3 q_hover"><img src="img/doc_group_1.png" alt="" width="335" height="221"></div></i></h3>
 			</div>
 			
 			<div class="limiter">
@@ -588,6 +661,7 @@ include('include/mobile_head.php');
 				          <li class="map_list_item">
 				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 				            <p>Москва, Неглинная, 23</p>
+				            <span class="pseudo popup_link"><em class="popup_more_info">Подробнее</em></span>
 				          </li>
 				          <li class="map_list_item">
 				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>

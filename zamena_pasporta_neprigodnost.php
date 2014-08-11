@@ -89,10 +89,10 @@ include('include/head.php');
 				</div>
 				<div class="col_right">
 					<ul class="list edit_list">
-						<li><a href="#"><span class="icomoon">Q</span><span class="txt">Повернуть по часовой</span></a></li>
-						<li><a href="#"><span class="icomoon">R</span><span class="txt">Повернуть против часовой</span></a></li>
-						<li><a href="#"><span class="icomoon">S</span><span class="txt">Обрезать фотографию</span></a></li>
-						<li><a href="#"><span class="icomoon">T</span><span class="txt">Отменить последнее действие</span></a></li>
+						<li><div class="lnk"><button class="icomoon">Q</button><span class="txt">Повернуть по часовой</span></div></li>
+						<li><div class="lnk"><button class="icomoon">R</button><span class="txt">Повернуть против часовой</span></div></li>
+						<li><div class="lnk"><button class="icomoon">S</button><span class="txt">Обрезать фотографию</span></div></li>
+						<li><div class="lnk"><button class="icomoon">T</button><span class="txt">Отменить последнее действие</span></div></li>
 					</ul>
 				</div>
 			</fieldset>
