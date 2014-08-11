@@ -2184,6 +2184,10 @@ FIELDSET{
   .map_list_item P {
     width:280px;
     margin:0 auto;
+  }
+
+  .map_list .go_more:after {
+    margin: -10px 20px 0 0;
   }        
 
   .map_nav_h {
