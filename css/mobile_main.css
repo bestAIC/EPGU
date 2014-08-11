@@ -2376,8 +2376,11 @@ FIELDSET{
   
   #content .advice .jq-checkbox{
     margin-left: 10px;
-  }
+  }  
 
+  .address_list {
+    height: auto;
+  }
 
   .jq-file{
     box-shadow: none;
