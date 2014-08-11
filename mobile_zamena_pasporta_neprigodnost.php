@@ -90,8 +90,8 @@ include('include/mobile_head.php');
 
 					<h4>Данные вашего загранпаспорта</h4>
 
-					<em class="wrapper l_16"><label>Серия</label><input type="text" placeholder="Серия" class="big" />
-					</em><em class="wrapper l_16"><label>Номер</label><input type="text" placeholder="Номер" class="big" />
+					<em class="wrapper l_33"><label>Серия</label><input type="text" placeholder="Серия" class="big" />
+					</em><em class="wrapper l_33"><label>Номер</label><input type="text" placeholder="Номер" class="big" />
 					</em><em class="wrapper l_33"><label>Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
 					</em><em class="wrapper l_33"><label>Действителен до</label><input type="text" placeholder="Действителен до" class="big" /></em>
 
@@ -245,17 +245,17 @@ include('include/mobile_head.php');
 					<em class="wrapper l_50"><label for="">Фамилия</label><input type="text" placeholder="Фамилия" class="big" /></em><br/>
 					<em class="wrapper l_50"><label for="">Имя</label><input type="text" placeholder="Имя" class="big" /></em><em class="wrapper l_50"><label for="">Отчество</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 					
-					<em class="wrapper l_25"><label for="">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
+					<em class="wrapper l_33"><label for="">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 					</em>
 					
 					<h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
 					
-					<em class="wrapper l_33"><input type="text" placeholder="Дата вступления в брак" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Номер" class="big" />
-					</em><em class="wrapper l_33"><input type="text" placeholder="Номер актовой записи" class="big" />
-					</em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
-					</em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" /></em>
+					<em class="wrapper l_33"><label for="">Дата вступления в брак</label><input type="text" placeholder="Дата вступления в брак" class="big" />
+					</em><em class="wrapper l_33"><label for="">Серия</label><input type="text" placeholder="Серия" class="big" />
+					</em><em class="wrapper l_33"><label for="">Номер</label><input type="text" placeholder="Номер" class="big" />
+					</em><em class="wrapper l_66"><label for="">Номер актовой записи</label><input type="text" placeholder="Номер актовой записи" class="big" />
+					</em><em class="wrapper l_33"><label for="">Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
+					</em><em class="wrapper l_66"><label for="">Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" /></em>
 				</div>
 			</div>
 
@@ -267,12 +267,12 @@ include('include/mobile_head.php');
 				<div class="limiter">
 					<h4>Персональные данные супруга</h4>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
+					<em class="wrapper l_50"><label for="#">Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
 					</em><br/>
-					<em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+					<em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Имя" class="big" />
+					</em><em class="wrapper l_50"><label for="#">Отчество</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 					
-					<em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+					<em class="wrapper l_33"><label for="#">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 					</em>
 				</div>
 			</div>
@@ -295,12 +295,12 @@ include('include/mobile_head.php');
 					
 					<h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
 					
-					<em class="wrapper l_33"><input type="text" placeholder="Дата вступления в брак" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Номер" class="big" />
-					</em><em class="wrapper l_33"><input type="text" placeholder="Номер актовой записи" class="big" />
-					</em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
-					</em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" /></em>
+					<em class="wrapper l_33"><label for="">Дата вступления в брак</label><input type="text" placeholder="Дата вступления в брак" class="big" />
+					</em><em class="wrapper l_33"><label for="">Серия</label><input type="text" placeholder="Серия" class="big" />
+					</em><em class="wrapper l_33"><label for="">Номер</label><input type="text" placeholder="Номер" class="big" />
+					</em><em class="wrapper l_66"><label for="">Номер актовой записи</label><input type="text" placeholder="Номер актовой записи" class="big" />
+					</em><em class="wrapper l_33"><label for="">Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
+					</em><em class="wrapper l_66"><label for="">Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" /></em>
 				</div>
 			</div>
 		</fieldset>
@@ -323,13 +323,13 @@ include('include/mobile_head.php');
 				<div class="limiter">
 					<h4>Укажите страну ФИО ребенка</h4>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
-					</em><br/><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /></em><br/>
+					<em class="wrapper l_50"><label for="#">Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
+					</em><br/><em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Имя" class="big" />
+					</em><em class="wrapper l_50"><label for="#">Отчество</label><input type="text" placeholder="Отчество" class="big" /></em><br/>
 					
 					<em class="wrapper l_33"><label>Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
-					</em><em class="wrapper l_16"><input id="ch_6" type="radio" name="sex_2" checked="checked" /><label for="ch_6" class="flag_label" >Мужской</label>
-					</em><em class="wrapper l_16"><input id="ch_7" type="radio" name="sex_2" /><label for="ch_7" class="flag_label"  class="flag_label">Женский</label></em><br/>					
+					</em><em class="wrapper l_25"><input type="radio" name="sex_3" checked="checked" /><label class="flag_label">Мужской</label>
+                	</em><em class="wrapper l_25"><input type="radio" name="sex_3" /><label class="flag_label">Женский</label></em><br/>					
 					
 					<a class="btn white plus" href="#">
 						<span class="icomoon">8</span>
@@ -347,21 +347,21 @@ include('include/mobile_head.php');
 			
 			<div class="limiter">
 				<h4>Сведения об отце</h4>
-				<em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
-				</em><br/><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-				</em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+				<em class="wrapper l_50"><label for="#">Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
+				</em><br/><em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Имя" class="big" />
+				</em><em class="wrapper l_50"><label for="#">Отчество</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 				
-				<em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+				<em class="wrapper l_33"><label for="#">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 				</em><br/>
 
 				<em class="wrapper l_100"><input type="checkbox" id="f_21" /><label class="flag_label" for="f_21">Нет сведений об отце</label></em>
 
 				<h4>Сведения о матери</h4>
-				<em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
-				</em><br/><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-				</em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+				<em class="wrapper l_50"><label for="#">Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
+				</em><br/><em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Имя" class="big" />
+				</em><em class="wrapper l_50"><label for="#">Отчетсво</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 				
-				<em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+				<em class="wrapper l_33"><label for="#">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 				</em>
 			</div>
 		</fieldset>
