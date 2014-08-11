@@ -378,15 +378,64 @@ include('include/mobile_head.php');
 
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<label for="#">Регион</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Регион">Регион</option>
+							<option value="2">Россия</option>
+							<option value="3">Белорусия</option>
+							<option value="4">Россия</option>
+							<option value="5">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="7">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="8">Белорусия</option>
+							<option value="9">Белорусия</option>
+							<option value="10">Россия</option>
+							<option value="11">Белорусия</option>
+						</select>
+					</em>
+
+					<em class="wrapper l_100">
+						<label for="#">Район</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Район">Район</option>
+							<option value="2">Собинский район</option>
+							<option value="3">Собинский район</option>
+							<option value="4">Собинский район</option>
+							<option value="5">Собинский район</option>
+							<option value="6">Собинский район</option>
+							<option value="7">Собинский район</option>
+							<option value="6">Собинский район</option>
+							<option value="8">Собинский район</option>
+							<option value="9">Собинский район</option>
+							<option value="10">Собинский район</option>
+							<option value="11">Собинский район</option>
+						</select>
+					</em>
+
+					<em class="wrapper l_100">
+						<label for="#">Населенный пункт</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Населенный пункт">Населенный пункт</option>
+							<option value="2">Ставрово</option>
+							<option value="3">Белорусия</option>
+							<option value="4">Россия</option>
+							<option value="5">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="7">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="8">Белорусия</option>
+							<option value="9">Белорусия</option>
+							<option value="10">Россия</option>
+							<option value="11">Белорусия</option>
+						</select>
+					</em>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-					
-					<em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_50"><label for="#">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="#">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="#">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="#">Квартира</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
 			</div>
 			
@@ -396,15 +445,64 @@ include('include/mobile_head.php');
 
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<label for="#">Регион</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Регион">Регион</option>
+							<option value="2">Россия</option>
+							<option value="3">Белорусия</option>
+							<option value="4">Россия</option>
+							<option value="5">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="7">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="8">Белорусия</option>
+							<option value="9">Белорусия</option>
+							<option value="10">Россия</option>
+							<option value="11">Белорусия</option>
+						</select>
+					</em>
+
+					<em class="wrapper l_100">
+						<label for="#">Район</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Район">Район</option>
+							<option value="2">Собинский район</option>
+							<option value="3">Собинский район</option>
+							<option value="4">Собинский район</option>
+							<option value="5">Собинский район</option>
+							<option value="6">Собинский район</option>
+							<option value="7">Собинский район</option>
+							<option value="6">Собинский район</option>
+							<option value="8">Собинский район</option>
+							<option value="9">Собинский район</option>
+							<option value="10">Собинский район</option>
+							<option value="11">Собинский район</option>
+						</select>
+					</em>
+
+					<em class="wrapper l_100">
+						<label for="#">Населенный пункт</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Населенный пункт">Населенный пункт</option>
+							<option value="2">Ставрово</option>
+							<option value="3">Белорусия</option>
+							<option value="4">Россия</option>
+							<option value="5">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="7">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="8">Белорусия</option>
+							<option value="9">Белорусия</option>
+							<option value="10">Россия</option>
+							<option value="11">Белорусия</option>
+						</select>
+					</em>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-					
-					<em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_50"><label for="#">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="#">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="#">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="#">Квартира</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
 			</div>
 			
@@ -414,15 +512,64 @@ include('include/mobile_head.php');
 
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<label for="#">Регион</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Регион">Регион</option>
+							<option value="2">Россия</option>
+							<option value="3">Белорусия</option>
+							<option value="4">Россия</option>
+							<option value="5">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="7">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="8">Белорусия</option>
+							<option value="9">Белорусия</option>
+							<option value="10">Россия</option>
+							<option value="11">Белорусия</option>
+						</select>
+					</em>
+
+					<em class="wrapper l_100">
+						<label for="#">Район</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Район">Район</option>
+							<option value="2">Собинский район</option>
+							<option value="3">Собинский район</option>
+							<option value="4">Собинский район</option>
+							<option value="5">Собинский район</option>
+							<option value="6">Собинский район</option>
+							<option value="7">Собинский район</option>
+							<option value="6">Собинский район</option>
+							<option value="8">Собинский район</option>
+							<option value="9">Собинский район</option>
+							<option value="10">Собинский район</option>
+							<option value="11">Собинский район</option>
+						</select>
+					</em>
+
+					<em class="wrapper l_100">
+						<label for="#">Населенный пункт</label>
+						<select class="select_choice">
+							<option value="0" class="selected_one" name="Населенный пункт">Населенный пункт</option>
+							<option value="2">Ставрово</option>
+							<option value="3">Белорусия</option>
+							<option value="4">Россия</option>
+							<option value="5">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="7">Белорусия</option>
+							<option value="6">Россия</option>
+							<option value="8">Белорусия</option>
+							<option value="9">Белорусия</option>
+							<option value="10">Россия</option>
+							<option value="11">Белорусия</option>
+						</select>
+					</em>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-					
-					<em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_50"><label for="#">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="#">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="#">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="#">Квартира</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
 			</div>
 
