@@ -135,7 +135,7 @@
     </div> 
      
 
-<? else if($pagename == 'mobile_postanovka_na_registraciu') {?>
+<? } else if($pagename == 'mobile_postanovka_na_registraciu') {?>
     <div id="popup_map_address" class="popup">
       <b class="close_popup_x"></b>
       <h2>МИФНС России №46 по г.Москве</h2>
