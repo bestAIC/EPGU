@@ -1523,6 +1523,7 @@ FIELDSET{
 
 
 
+
 /*Phone Portrait*/
 @media (max-width:640px) {
 
@@ -1535,12 +1536,12 @@ FIELDSET{
   .limiter {
     width: 280px;
     padding:0;
-    margin: 0 20px;
+    margin: 0 auto;
   }  
 
   #header .nav {
     width: 280px;
-    margin: 0 20px;
+    margin: 0 auto;
     padding: 0;
   }
   
@@ -2171,6 +2172,10 @@ FIELDSET{
   .map_ballon_block {
     display:none!important;
   }
+
+  .map_list_item {
+    padding: 20px 0px;  
+  } 
   
   .map_list_item .map_num {
     display:none;
