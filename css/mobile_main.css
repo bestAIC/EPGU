@@ -1814,7 +1814,7 @@ FIELDSET{
   
   .big_inp-form .point_num{
     font-size: 22px;
-    top: -3px;
+    top: -2px;
   }
 
   #content .field_cont{
@@ -2013,6 +2013,9 @@ FIELDSET{
   .wrapper{
     margin:0 0 15px 0;
     padding:0px;
+  }
+  .wrapper .not{
+    display: none;
   }
 
 
