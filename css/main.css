@@ -547,7 +547,11 @@ float: right;
   box-shadow: 0px 6px 0px 0px #FEC202 inset;      
   border-top: none;
 }
-
+#content .info_block.type_3{
+  padding: 19px 20px;
+  box-shadow: 0px 6px 0px 0px #e4e4e4 inset;      
+  border-top: none;
+}
 .info_block .icomoon{
     position: absolute;
     left: 10px;
@@ -1298,7 +1302,7 @@ H4 {
 .advice {
   margin:30px 0;
   background:#fff;
-  padding:58px 85px 40px 187px;
+  padding:58px 85px 40px 100px;
   background:#fff 87px 40px no-repeat;
   border-top:1px solid #dbe2e6;
   border-bottom:1px solid #dbe2e6;
@@ -1313,6 +1317,14 @@ H4 {
   display: block;
   margin-left: 96px;
 }
+
+.advice H3 {
+  display: block;
+  margin:0 0 60px 96px;
+  position:relative;
+  top:10px;
+}
+
 .advice P {
   margin:0 0 1em 0;
 } 
@@ -1503,6 +1515,28 @@ H4 {
 
 .zamena_pasporta_pol #content .main FIELDSET {
   margin:0; 
+}
+
+.zamena_pasporta_pol_ok #content .main FIELDSET {
+  padding:0; 
+}
+
+.zamena_pasporta_pol_ok #content .advice {
+  border:none; 
+  padding: 20px 85px 30px 100px;
+}
+
+.zamena_pasporta_pol_ok #content .type_ok {
+  border-bottom:1px solid #ddd; 
+}
+
+.zamena_pasporta_pol_ok #content .advice .wrapper {
+    margin: 0 0 30px 0;
+}
+
+.zamena_pasporta_pol_ok .note {
+  line-height: 54px;
+  margin:0 0 0 20px;
 }
 
 .zamena_pasporta_pol #content .group_11 .col_left {
