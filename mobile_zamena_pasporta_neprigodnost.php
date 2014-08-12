@@ -46,7 +46,7 @@ include('include/mobile_head.php');
 
 
 			<div class="limiter">
-				<div class="load_photo-wrap">
+				<div class="load_photo-wrap clear">
 					<div class="col_left load_photo_cols">
 						<div class="load_photo">
 							<div class="photo_brd">
@@ -64,7 +64,7 @@ include('include/mobile_head.php');
 								</div>
 							</div>
 							<div class="load_photo-btn">
-								<a class="btn small" href="#">
+								<a class="btn big" href="#">
 									<b>Загрузить фотографию</b>
 								</a>
 							</div>
@@ -84,7 +84,7 @@ include('include/mobile_head.php');
 								</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- col_left -->
 					<div class="col_right load_photo_cols">
 						<div class="require">
 							<div class="require_wrap">
@@ -107,8 +107,12 @@ include('include/mobile_head.php');
 								<li><div class="lnk"><button class="icomoon">T</button><span class="txt">Отменить последнее действие</span></div></li>
 							</ul>
 						</div>
+					</div><!-- col_right -->
+					<div class="col_bottom load_photo_cols clear">
+						<a class="btn white larr fl back big" href="#"><b>Вернуться назад</b></a>
+						<a class="btn fr big" href="#"><b>Загрузить фотографию</b></a>
 					</div>
-				</div>
+				</div><!-- load_photo-wrap -->
 			</div>
 		</fieldset>
 

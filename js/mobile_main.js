@@ -167,19 +167,26 @@ $('#intro .ee').click(function() {
 
 function LoadPhoto(){
   var $cont = $('.load_photo-wrap'),
-      $lnk = $('.load_photo-btn', $cont);
+      $lnk = $('.load_photo-btn', $cont),
+      $back = $('.col_bottom .back', $cont);
 
       $(window).on('load resize', function(e){
         var $contRight = $('.col_right.load_photo_cols'),
-            $contRightWidth = $('.col_right.load_photo_cols').width(),
+            $contRightWidth = $contRight.width(),
             $require = $('.require_wrap');
             
         $require.width($contRightWidth);
-      })
+      });
 
       $lnk.on('click', function(e){
         e.preventDefault();
         $cont.addClass('upload');
         $cont.find('.col_right.load_photo_cols').toggleClass('current');
-      })
+      });
+
+      $back.on('click', function(e){
+        e.preventDefault();
+        $cont.removeClass('upload');
+        $cont.find('.col_right.load_photo_cols').toggleClass('current');
+      });
 }
