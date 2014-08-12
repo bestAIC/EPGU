@@ -50,7 +50,7 @@ include('include/mobile_head.php');
 					<div class="col_left load_photo_cols">
 						<div class="load_photo">
 							<div class="photo_brd">
-								<img src="pic/pic_7.jpg" alt="" width="180" height="236">
+								<img src="pic/pic_8.jpg" alt="" width="245" height="314">
 								<div class="load_photo-sub">
 								  <div class="sub_wrap">
 								    <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
@@ -63,27 +63,8 @@ include('include/mobile_head.php');
 								  </div>
 								</div>
 							</div>
-							<div class="load_photo-btn">
-								<a class="btn big" href="#">
-									<b>Загрузить фотографию</b>
-								</a>
-							</div>
 						</div>
-						<!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
-						<div class="advice_upload">
-							<div class="advice type_not">
-								<div class="advice_h">
-									<div class="advice_ico"><span class="icomoon">3</span></div>
-									<h2><span>Извините, ваша фотография не подходит</span></h2>
-								</div>
-							</div>
-							<div class="advice type_ok">
-								<div class="advice_h">
-									<div class="advice_ico"><span class="icomoon">4</span></div>
-									<h2><span>Ваша фотография успшно загружена</span></h2>
-								</div>
-							</div>
-						</div>
+						
 					</div><!-- col_left -->
 					<div class="col_right load_photo_cols">
 						<div class="require">
@@ -108,11 +89,37 @@ include('include/mobile_head.php');
 							</ul>
 						</div>
 					</div><!-- col_right -->
-					<div class="col_bottom load_photo_cols clear">
-						<a class="btn white larr fl back big" href="#"><b>Вернуться назад</b></a>
-						<a class="btn fr big" href="#"><b>Загрузить фотографию</b></a>
-					</div>
 				</div><!-- load_photo-wrap -->
+				<div class="col_bottom load_photo_cols clear">
+					<div class="clear">
+						<span class="btn big download_photo" href="#"><b>Загрузить фотографию</b></span>
+					</div>
+
+					<div class="clear">
+						<span class="btn white fl big change_photo" href="#"><b>Изменить фотографию</b></span>
+					</div>
+
+					<div class="clear">
+						<span class="btn white larr fl big back_photo" href="#"><b>Вернуться назад</b></span>
+						<span class="btn fr big done_photo" href="#"><b>Фотография готова</b></span>
+					</div>
+
+					<!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
+					<div class="advice_upload">
+						<div class="advice type_ok">
+							<div class="advice_h">
+								<div class="advice_ico"><span class="icomoon">4</span></div>
+								<h2><span>Ваша фотография успшно загружена</span></h2>
+							</div>
+						</div>
+						<div class="advice type_not">
+							<div class="advice_h">
+								<div class="advice_ico"><span class="icomoon">3</span></div>
+								<h2><span>Извините, ваша фотография не подходит</span></h2>
+							</div>
+						</div>
+					</div><!-- advice_upload -->
+				</div>
 			</div>
 		</fieldset>
 
