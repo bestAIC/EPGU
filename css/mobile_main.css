@@ -592,21 +592,19 @@ BODY {
 
 /* LOAD PHOTO */
 .load_photo-wrap{
-  margin-bottom: 40px;
-  vertical-align: top;
+  min-height: 355px;
 }
-  .upload.load_photo-wrap{
-    padding-top: 0;
-  }
+.uploader.load_photo-wrap{
+  padding-top: 0;
+}
 #content .load_photo_cols.col_left,
 #content .load_photo_cols.col_right{
   float: left;
   display: inline-block;
-  vertical-align: top;
   padding-top: 20px;
 }
-  #content .upload .load_photo_cols.col_left,
-  #content .upload .load_photo_cols.col_right{
+  #content .uploader .load_photo_cols.col_left,
+  #content .uploader .load_photo_cols.col_right{
     padding-top: 0;
   }
 #content .load_photo_cols.col_left{
@@ -619,16 +617,6 @@ BODY {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-#content .load_photo_cols.col_bottom{
-  clear: both;
-  padding-top: 30px;
-  display: none;
-}
-  #content .upload .load_photo_cols.col_bottom{
-    display: block;
-    position: relative;
-    left: -20px;
-  }
 .load_photo{
   background: none;
   padding: 0;
@@ -636,16 +624,21 @@ BODY {
 }
 .load_photo .photo_brd{
   margin-top: 0;
+  margin-bottom: 0px;
   border-width: 4px;
   width: 236px;
-  height: 310px;
+  height: 302px;
 }
-    .upload .load_photo .photo_brd{
-        margin-bottom: 0;
-    }
-    .upload .load_photo-btn{
-      display: none;
-    }
+  .uploader .load_photo .photo_brd{
+      margin-bottom: 0;
+  }
+  .uploader .load_photo-btn{
+    display: none;
+  }
+#content .load_photo-btn,
+.load_photo_cols.col_bottom .btn{
+  margin-bottom: 40px;
+}
 #content .load_photo-btn .btn{
   margin: 0;
 }
@@ -682,7 +675,7 @@ line-height: 50px;
   -o-transition: opacity .25s;
   transition: opacity .25s;
 }
-  .upload .load_photo-sub{
+  .uploader .load_photo-sub{
     opacity: 1;
   }
 
@@ -697,7 +690,7 @@ line-height: 50px;
   -o-transition: width .25s;
   transition: width .25s;
 }
-.load_photo-wrap .current .require{
+.load_photo-wrap.uploader .require{
   width: 0;
 }
 .load_photo-wrap .edit_wrap{
@@ -706,19 +699,19 @@ line-height: 50px;
   -o-transition: width .25s;
   transition: width .25s;
 }
-.load_photo-wrap .current .edit_wrap{
+.load_photo-wrap.uploader .edit_wrap{
   width: 100%;
 }
 
-#content .upload .load_photo_cols.col_left{
+#content .uploader .load_photo_cols.col_left{
   width: 74%;
   max-width: 430px;
 }
-#content .upload .load_photo_cols.col_right{
+#content .uploader .load_photo_cols.col_right{
   width: 26%;
   padding-left: 0;
 }
-.load_photo-wrap.upload .load_photo{
+.load_photo-wrap.uploader .load_photo{
   background: #e4f6ff;
   padding: 20px;
   left: -20px;
@@ -738,9 +731,6 @@ line-height: 50px;
 #content .load_photo-sub .sub_txt{
   padding: 0 0 5px 255px;
 }
-
-
-
 #content .edit_list LI SPAN.txt{
   display: block;
   font-size: 12px;
@@ -752,6 +742,71 @@ line-height: 50px;
 }
 .main.big_inp-form .q.active .hover{
   display: block;
+}
+
+.load_photo + .advice_upload{
+  position: relative;
+  left: -20px;
+}
+.load_photo + .advice_upload .advice .advice_h{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+
+
+#content .load_photo_cols.col_bottom{
+  clear: both;
+  padding-top: 30px;
+}
+#content .load_photo_cols.col_bottom{
+  left: 0;
+  -webkit-transition: left .25s;
+  -o-transition: left .25s;
+  transition: left .25s;
+}
+  #content .uploader .load_photo_cols.col_bottom{
+    display: block;
+    position: relative;
+    left: -20px;
+  }
+
+
+.load_photo_cols.col_bottom .btn{
+  display: none;
+}
+.load_photo_cols.col_bottom .download_photo{ 
+  display: inline-block;
+}
+.load_photo_cols.col_bottom .advice.type_ok,
+.load_photo_cols.col_bottom .advice.type_not{
+  display: none;
+}
+
+.load_photo_cols.col_bottom .advice_upload .advice{
+  width: 800px;
+  padding: 0;
+  border: none;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.load_photo_cols.col_bottom .advice_upload .advice .advice_h{
+  margin: 0;
+}
+.load_photo_cols.col_bottom .advice_upload .advice .advice_ico{
+  width: 45px;
+  height: 45px;
+  border-width: 6px;
+  margin-top: -10px;
+}
+.load_photo_cols.col_bottom .advice_upload .advice .icomoon{
+  font-size: 18px;
+  line-height: 33px;
+}
+#content .load_photo_cols.col_bottom .advice_upload .advice H2{
+  font-size: 20px;
+  margin-left: 64px;
 }
 /* /LOAD PHOTO */
 

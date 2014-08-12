@@ -167,26 +167,38 @@ $('#intro .ee').click(function() {
 
 function LoadPhoto(){
   var $cont = $('.load_photo-wrap'),
-      $lnk = $('.load_photo-btn', $cont),
-      $back = $('.col_bottom .back', $cont);
+      $contBottom = $('.col_bottom.load_photo_cols'),
+      $back = $('.col_bottom .back', $contBottom),
+      $btn = $('.btn', $contBottom);
 
       $(window).on('load resize', function(e){
         var $contRight = $('.col_right.load_photo_cols'),
             $contRightWidth = $contRight.width(),
             $require = $('.require_wrap');
-            
-        $require.width($contRightWidth);
-      });
 
-      $lnk.on('click', function(e){
-        e.preventDefault();
-        $cont.addClass('upload');
-        $cont.find('.col_right.load_photo_cols').toggleClass('current');
+          $require.width($contRightWidth);
       });
-
-      $back.on('click', function(e){
-        e.preventDefault();
-        $cont.removeClass('upload');
-        $cont.find('.col_right.load_photo_cols').toggleClass('current');
-      });
+      
+      $btn.each(function(){  
+        $btn.on('click', function(){
+          if($(this).hasClass('download_photo')){
+            $('.download_photo, .change_photo').hide();
+            $('.done_photo, .back_photo').show();
+            $cont.addClass('uploader');
+          } else if($(this).hasClass('back_photo')){
+            $('.done_photo, .back_photo, .change_photo').hide();
+            $('.download_photo').show();
+            $cont.removeClass('uploader');
+          } else if($(this).hasClass('done_photo')){
+            $('.download_photo, .back_photo, .done_photo').hide();
+            $('.change_photo, .advice.type_ok').show();
+            $cont.find('.load_photo').addClass('upload');
+          } else if($(this).hasClass('change_photo')){
+            $('.download_photo, .change_photo, .advice.type_ok').hide();
+            $('.done_photo, .back_photo').show();
+            $cont.addClass('uploader');
+            $cont.find('.load_photo').removeClass('upload');
+          }
+        });
+      })
 }
