@@ -92,6 +92,11 @@ include('include/mobile_head.php');
 				</div><!-- load_photo-wrap -->
 				<div class="col_bottom load_photo_cols clear">
 					<div class="clear">
+						<div class="more_info">
+							<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
+						</div>
+					</div>
+					<div class="clear">
 						<span class="btn big download_photo" href="#"><b>Загрузить фотографию</b></span>
 					</div>
 

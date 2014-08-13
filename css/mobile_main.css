@@ -651,6 +651,8 @@ BODY {
 }
 #content .load_photo_cols.col_right .list{
   margin-top: 0px;
+  list-style: disc;
+  padding-left: 20px;
 }
 #content .load_photo_cols.col_right .list LI{
   margin-left: 16px;
@@ -665,7 +667,7 @@ width: 50px;
 height: 50px;
 line-height: 50px;
 }
-#content .load_photo_cols.col_right .more_info{
+.load_photo_cols.col_right .more_info{
   text-align: right;
 }
 
@@ -760,19 +762,9 @@ line-height: 50px;
   clear: both;
   padding-top: 30px;
 }
-#content .load_photo_cols.col_bottom{
-  left: 0;
-  -webkit-transition: left .25s;
-  -o-transition: left .25s;
-  transition: left .25s;
+#content .load_photo_cols.col_bottom .more_info{
+  display: none;
 }
-  #content .uploader .load_photo_cols.col_bottom{
-    display: block;
-    position: relative;
-    left: -20px;
-  }
-
-
 .load_photo_cols.col_bottom .btn{
   display: none;
 }
@@ -2226,9 +2218,9 @@ FIELDSET{
   }
   .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf:after{
     content: '5';
-    font: 14px 'icomoon-epga';
+    font: 12px 'icomoon-epga';
     position: absolute;
-    top: 18px;
+    top: 20px;
     left: 50%;
     margin-left: 130px;
   }
@@ -2982,5 +2974,97 @@ FIELDSET{
   .nav_404 .btn.error B{
     height: 50px;
     line-height: 50px;
+  }
+
+
+  #content .load_photo_cols.col_left, #content .load_photo_cols.col_right{
+    float: none;
+    padding-top: 0;
+    top: 0px;
+    position: relative;
+  }
+  #content .load_photo_cols.col_left{
+    width: 100%;
+    max-width: 280px;
+  }
+  #content .load_photo_cols.col_right{
+    width: 100%;
+    padding-left: 0;
+    top: 96px;
+  }
+  .load_photo .photo_brd{
+    width: 208px;
+    height: 274px;
+  }
+  .load_photo{
+    text-align: center;
+  }
+
+  .load_photo_cols.col_bottom{
+    position: relative;
+    padding-top: 42px;
+    padding-bottom: 20px;
+  }
+  .load_photo_cols.col_bottom .download_photo{ 
+    position: absolute;
+    top: -270px;
+    left: 0;
+    width: 280px;
+    text-align: center;
+  }
+
+
+  #content .load_photo_cols.col_right .more_info{
+    display: none;
+  }
+  #content .load_photo_cols.col_bottom .more_info{
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    width: 1024px;
+    position: relative;
+    left: 50%;
+    height: 50px;
+    margin-left: -517px;
+    margin-top: 20px;
+    border: 1px solid #d0d0d0;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color .25s;
+    -o-transition: background-color .25s;
+    transition: background-color .25s;
+  }
+  #content .load_photo_cols.col_bottom .more_info:hover,
+  #content .load_photo_cols.col_bottom .more_info:focus{
+    background-color: #f5f5f5;
+  }
+  #content .load_photo_cols.col_bottom .more_info:active{
+    background-color: #e0e0e0;
+  }
+  .load_photo_cols .pseudo{
+    margin-left: -120px;
+    padding: 0 20px;
+    font-size: 17px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    color: #565656;
+  }
+  .load_photo_cols .pseudo:after{
+    content: '5';
+    font: 12px 'icomoon-epga';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: 120px;
+  }
+
+  #content .load_photo_cols.col_right .edit_list LI{
+    float: left;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  #content .edit_list LI SPAN.txt{
+    display: none;
   }
 }
