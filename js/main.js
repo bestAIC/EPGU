@@ -8,9 +8,8 @@ $(document).ready(function() {
   MenuShow();
   MapShow();
   MapControls();
+  FieldSlide();
 });
-
-
 
 // Styler
 function SForm() {
@@ -353,3 +352,18 @@ function MapControls(){
         });
       });
 }
+
+function FieldSlide(){
+  var $wrap = $('.js-field_slide-wrap');      
+
+    $wrap.find('.filed_slide').each(function(){
+      var $cont = $(this),
+          $close = $('.close', $cont);
+
+    $close.on('click', function(e){
+      e.preventDefault();
+      $cont.remove();
+    })
+  });
+}
+

@@ -7,7 +7,7 @@ $(document).ready(function() {
   LoadPhoto();
 });
 
-
+lock = 0;
 
 // Popup
 function MPopUp() {
@@ -173,32 +173,59 @@ function LoadPhoto(){
 
       $(window).on('load resize', function(e){
         var $contRight = $('.col_right.load_photo_cols'),
-            $contRightWidth = $contRight.width(),
-            $require = $('.require_wrap');
+            contRightWidth = $contRight.width(),
+            $require = $('.require_wrap'),
+            bodyPhone = parseInt($('body').width());
 
-          $require.width($contRightWidth);
+            $require.width(contRightWidth);
+
+            $btn.on('click', function(){
+              if($(this).hasClass('download_photo')){
+                $('.download_photo, .change_photo').hide();
+                $('.done_photo, .back_photo').show();
+                $cont.addClass('uploader');
+              } else if($(this).hasClass('back_photo')){
+                $('.done_photo, .back_photo, .change_photo').hide();
+                $('.download_photo').show();
+                $cont.removeClass('uploader');
+              } else if($(this).hasClass('done_photo')){
+                $('.download_photo, .back_photo, .done_photo').hide();
+                $('.change_photo, .advice.type_ok').show();
+                $cont.find('.load_photo').addClass('upload');
+              } else if($(this).hasClass('change_photo')){
+                $('.download_photo, .change_photo, .advice.type_ok').hide();
+                $('.done_photo, .back_photo').show();
+                $cont.addClass('uploader');
+                $cont.find('.load_photo').removeClass('upload');
+              }
+            });
+          
+        if(lock == 0){
+          if(bodyPhone <= 640){
+            $btn.on('click', function(){
+              lock = 1;
+              if($(this).hasClass('download_photo')){
+                $cont.find('.require').slideUp();
+                $cont.find('.edit_wrap').slideDown();
+                $contBottom.find('.more_info').hide();
+              } else if($(this).hasClass('back_photo')){
+                $cont.find('.edit_wrap').slideUp();
+                $cont.find('.require').slideDown();
+                $contBottom.find('.more_info').show();
+              } else if($(this).hasClass('done_photo')){
+                $cont.find('.edit_wrap').slideUp();
+                $cont.find('.require').slideUp();
+                $contBottom.animate({'padding-top': '0'});
+              } else if($(this).hasClass('change_photo')){
+                $cont.find('.edit_wrap').slideDown();
+                $contBottom.animate({'padding-top': '72px'})
+              }
+            }) 
+          }
+        }
       });
       
-      $btn.each(function(){  
-        $btn.on('click', function(){
-          if($(this).hasClass('download_photo')){
-            $('.download_photo, .change_photo').hide();
-            $('.done_photo, .back_photo').show();
-            $cont.addClass('uploader');
-          } else if($(this).hasClass('back_photo')){
-            $('.done_photo, .back_photo, .change_photo').hide();
-            $('.download_photo').show();
-            $cont.removeClass('uploader');
-          } else if($(this).hasClass('done_photo')){
-            $('.download_photo, .back_photo, .done_photo').hide();
-            $('.change_photo, .advice.type_ok').show();
-            $cont.find('.load_photo').addClass('upload');
-          } else if($(this).hasClass('change_photo')){
-            $('.download_photo, .change_photo, .advice.type_ok').hide();
-            $('.done_photo, .back_photo').show();
-            $cont.addClass('uploader');
-            $cont.find('.load_photo').removeClass('upload');
-          }
-        });
-      })
+      
+
+
 }

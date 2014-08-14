@@ -219,7 +219,7 @@ SPAN.icomoon{
   text-align: left;
 }
 
-.popup .list_wrap{
+.popup_technical .list_wrap{
   padding: 30px 10px 25px 20px;
   margin-top: 26px;
   border: 1px solid #CDD1D4;
@@ -1864,16 +1864,73 @@ LABEL {
   display:none;
 }
 
+/* field_prelude */
+.field_prelude LI{
+  list-style: none;
+  margin-left: 0;
+}
+.field_prelude LI .icomoon{
+  display: block;
+  float: left;
+  font-size: 22px;
+}
+.field_prelude LI .sub_txt{
+  margin-left: 40px;
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* /field_prelude */
+
+/* filed_slide */
+
+.filed_slide{
+  position: relative;
+  background: #e4f6ff;
+  margin: 0px -10px 0px -20px;
+  padding: 40px 10px 10px 20px;
+}
+.filed_slide + .filed_slide{
+  border-top: 1px solid #88C5E7;
+}
+.filed_slide A.close{
+  display: block;
+  margin-bottom: 10px;
+}
+.filed_slide A.close .icomoon{
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: baseline;
+}
+.filed_slide A.close .sub_txt{
+  border-bottom: 1px dashed #0173C1;
+  margin-left: 5px;
+}
+.filed_slide A:hover.close .sub_txt{
+  border-bottom: 1px solid transparent;
+}
+.filed_slide .chk_50{
+  position: relative;
+  top: -20px;
+  margin-left: 50%;
+  margin-bottom: 8px;
+}
+.filed_slide .l_16 .jq-selectbox__select-text{
+  width: 100%;
+  text-overflow: clip;
+}
+/* /filed_slide */
 
 /*SForm*/
 .jq-checkbox {
-    top: -1px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #CDD1D4;
-    background: #fff;
-    vertical-align: middle;
-    cursor: pointer;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CDD1D4;
+  background: #fff;
+  vertical-align: middle;
+  cursor: pointer;
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   border-radius:3px;

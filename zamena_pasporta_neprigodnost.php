@@ -33,7 +33,7 @@ include('include/head.php');
 				</em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" checked="checked" /><label>Женский</label></em><br/>
 				
 				<em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="alexandra_k@bestmail.ru" disabled="disabled"/>
-				</em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>
+				</em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926) 867 09 09" disabled="disabled"/></em><br/>
 			</fieldset>
 			<fieldset class="group_2">
 				<span class="point_num">2</span>

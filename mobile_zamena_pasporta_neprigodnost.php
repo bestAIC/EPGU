@@ -50,7 +50,7 @@ include('include/mobile_head.php');
 					<div class="col_left load_photo_cols">
 						<div class="load_photo">
 							<div class="photo_brd">
-								<img src="pic/pic_8.jpg" alt="" width="245" height="314">
+								<img src="pic/pic_8.jpg" alt="">
 								<div class="load_photo-sub">
 								  <div class="sub_wrap">
 								    <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
@@ -81,7 +81,7 @@ include('include/mobile_head.php');
 							</div>
 						</div>
 						<div class="edit_wrap">
-							<ul class="list edit_list">
+							<ul class="list edit_list clear">
 								<li><div class="lnk"><button class="icomoon">Q</button><span class="txt">Повернуть по часовой</span></div></li>
 								<li><div class="lnk"><button class="icomoon">R</button><span class="txt">Повернуть против часовой</span></div></li>
 								<li><div class="lnk"><button class="icomoon">S</button><span class="txt">Обрезать фотографию</span></div></li>
@@ -114,7 +114,7 @@ include('include/mobile_head.php');
 						<div class="advice type_ok">
 							<div class="advice_h">
 								<div class="advice_ico"><span class="icomoon">4</span></div>
-								<h2><span>Ваша фотография успшно загружена</span></h2>
+								<h2><span>Ваша фотография успшно загружена!</span></h2>
 							</div>
 						</div>
 						<div class="advice type_not">
@@ -179,12 +179,12 @@ include('include/mobile_head.php');
 
 					<h4>Данные вашего загранпаспорта</h4>
 
-					<em class="wrapper l_33"><label>Серия</label><input type="text" placeholder="Серия" class="big" />
-					</em><em class="wrapper l_33"><label>Номер</label><input type="text" placeholder="Номер" class="big" />
-					</em><em class="wrapper l_33"><label>Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
-					</em><em class="wrapper l_33"><label>Действителен до</label><input type="text" placeholder="Действителен до" class="big" /></em>
+					<em class="wrapper l_33"><label for="f_2_0">Серия</label><input id="f_2_0" type="text" placeholder="Серия" class="big" />
+					</em><em class="wrapper l_33"><label for="f_2_1">Номер</label><input id="f_2_1" type="text" placeholder="Номер" class="big" />
+					</em><em class="wrapper l_33"><label for="f_2_2">Дата выдачи</label><input id="f_2_2" type="text" placeholder="Дата выдачи" class="big" />
+					</em><em class="wrapper l_33"><label for="f_2_3">Действителен до</label><input id="f_2_3" type="text" placeholder="Действителен до" class="big" /></em>
 
-					<em class="wrapper l_100"><label>Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" /></em>
+					<em class="wrapper l_100"><label for="f_2_4">Кем выдан</label><input id="f_2_4" type="text" placeholder="Кем выдан" class="big" /></em>
 				</div>
 			</div><!-- fields_cover -->
 		</fieldset>
@@ -676,8 +676,8 @@ include('include/mobile_head.php');
 				        <ul class="map_list">
 				          <li class="map_list_item">
 				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-				            <p>Москва, Неглинная, 23</p>
-				            <span class="pseudo popup_link"><em class="popup_more_info">Подробнее</em></span>
+				            <p>Москва, Неглинная, 23</p> 
+				            <span class="pseudo popup_link"><em class="popup_map">Подробнее</em></span>
 				          </li>
 				          <li class="map_list_item">
 				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
@@ -746,6 +746,6 @@ include('include/mobile_head.php');
 		</fieldset>
 	</form>
 	</div><!-- content -->
-	<?
-	include('include/mobile_footer.php');
-	?>
+<?
+include('include/mobile_footer.php');
+?>
