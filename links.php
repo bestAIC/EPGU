@@ -42,6 +42,10 @@ include('include/mobile_head.php');
 						<td><a href="zamena_psporta_pol_ok.php">zamena_psporta_pol_ok.php</a></td>
 					</tr>
 					<tr>
+						<td><a href="mobile_zagran_pasport_nov_18_plus.php">Оформление загранпаспорта нового образца</a></td>
+						<td><a href="mobile_zagran_pasport_nov_18_plus.php">mobile_zagran_pasport_nov_18_plus.php</a></td>
+					</tr>
+					<tr>
 						<td><a href="postanovka_na_registraciu.php">Постановка на регистрационный учет</a></td>
 						<td><a href="postanovka_na_registraciu.php">postanovka_na_registraciu.php</a></td>
 					</tr>
@@ -93,6 +97,10 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_zamena_pasporta_neprigodnost.php">Замена паспорта гражданина Российской Федерации (в связи с непригодностью)</a></td>
 						<td><a href="mobile_zamena_pasporta_neprigodnost.php">mobile_zamena_pasporta_neprigodnost.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="mobile_zagran_pasport_nov_18_plus.php">Оформление загранпаспорта нового образца</a></td>
+						<td><a href="mobile_zagran_pasport_nov_18_plus.php">mobile_zagran_pasport_nov_18_plus.php</a></td>
 					</tr>
 					<tr>
 						<td><a href="mobile_postanovka_na_registraciu.php">Постановка на регистрацию</a></td>

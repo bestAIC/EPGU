@@ -139,6 +139,23 @@ include('include/mobile_head.php');
 				</em><em class="wrapper l_33"><label for="settings02">Дата выдачи</label><input type="text" placeholder="Дата выдачи" value="07.12.2004" class="big" disabled="disabled" /></em><em class="wrapper l_33"><label for="settings02">Код подразделения</label><input type="text" placeholder="Код подразделения" class="big" value="330-009" disabled="disabled" /></em><br/>
 				<em class="wrapper l_100"><label for="settings02">Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России по Свердловской области в Октябрьс…" disabled="disabled" /></em>
 				<br/>
+				<em class="wrapper l_100">
+					<select class="select_choice">
+						<option value="0" selected="selected" class="selected_one">Страна рождения</option>
+						<option value="1">Белоруссия</option>
+						<option value="2">Белоруссия</option>
+						<option value="3">Украина</option>
+						<option value="4">Белоруссия</option>
+						<option value="5">Белоруссия</option>
+						<option value="6">Украина</option>
+						<option value="7">Украина</option>
+						<option value="8">Белоруссия</option>
+						<option value="9">Украина</option>
+						<option value="10">Украина</option>
+					</select>
+				</em>
+
+				<em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
 				<div class="info-block_wrap">
 					<div class="info_block type_2">
 						<p class="info-block_h"><b>Обратите внимание</b></p>
@@ -147,22 +164,10 @@ include('include/mobile_head.php');
 					</div>
 				</div>
 				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
-				<em class="wrapper l_100">
-				<select class="select_choice">
-					<option value="0" class="selected_one" name="Номер транспортного средства">Номер транспортного средства</option>
-					<option value="1" >Номер не задан</option>
-					<option value="2">А777АА 777</option>
-					<option value="3">А999АА 999</option>
-					<option value="4">А777АА 777</option>
-					<option value="5">А999АА 999</option>
-					<option value="6">А777АА 777</option>
-					<option value="7">А999АА 999</option>
-					<option value="6">А777АА 777</option>
-					<option value="7">А999АА 999</option>
-				</select>
-				</em>
+
 			</div>
 		</fieldset>
+
 		<fieldset class="group_4">
 			<div class="limiter">
 				<span class="point_num">4</span>
@@ -188,6 +193,7 @@ include('include/mobile_head.php');
 				</div>
 			</div><!-- fields_cover -->
 		</fieldset>
+
 		<fieldset class="group_5">
 			<div class="limiter">
 				<span class="point_num">5</span>

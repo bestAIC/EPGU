@@ -525,7 +525,6 @@ include('include/head.php');
 				</div>
 
 			</div>
-
 		</fieldset>
 
 		<fieldset class="group_9">
