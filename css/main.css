@@ -1755,6 +1755,11 @@ LABEL {
   padding-left: 15px;
 }
 
+.slash {
+  position:absolute;
+  margin:15px 0 0 -12px;
+}
+
 #drop_zone {
   min-height:100px;
   padding:20px 45px;
@@ -1864,6 +1869,7 @@ LABEL {
   display:none;
 }
 
+
 /* field_prelude */
 .field_prelude LI{
   list-style: none;
@@ -1921,6 +1927,18 @@ LABEL {
   text-overflow: clip;
 }
 /* /filed_slide */
+
+.pay_card_bg {
+  position: absolute;
+  margin:-40px 0 0 -35px;
+}
+
+.cw_cvc {
+  position: relative;
+  top:-23px;
+  right: -30px;
+}
+
 
 /*SForm*/
 .jq-checkbox {

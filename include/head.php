@@ -23,6 +23,8 @@
 
   <? if($pagename == 'gibdd_shtrafy') { ?>
       <div id="wrap" class="gibdd_shtrafy">
+  <? } else if ($pagename == 'oplata_uniteller') { ?> 
+      <div id="wrap" class="oplata_uniteller">      
   <? } else if ($pagename == 'ostavit_otzyv') { ?> 
       <div id="wrap" class="ostavit_otzyv">
   <? } else if ($pagename == 'postanovka_na_registraciu') { ?> 
@@ -97,7 +99,7 @@
             </li>                                      
           </ul>      
         </div>
-        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv') { ?>
+        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller') { ?>
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">
