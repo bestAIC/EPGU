@@ -255,22 +255,19 @@ include('include/head.php');
 
 		<fieldset class="group_8">
 			<span class="point_num">8</span>
-			<!--[if IE]><script type="text/javascript" src="./js/libs/excanvas.js"></script><![endif]-->
-			<script src="./js/plugins/jquery.knob.js"></script>
 			<ul class="info_column">           
 			  <li class="info_block type_1">
 			    <h4>Внимание!</h4>
 			    <p>Трудовая деятельность заполняется в соответствии с записями в трудовой книжке, а также включая учёбу в учебных заведениях и военную службу, без сокращений. Юридические адреса мест работы указываются полностью.</p>
 			    <span class="icomoon">"</span>
 			  </li>
-			  <li class="yaer_box">
-			  	<input type="text">
+			  <li>
+			  	<img src="pic/pic_9.png" alt="" width="261" height="446">
 			  </li>
-			  <li class="info_block">
+			  <li class="info_block type_no-ico">
 			    <h4>Дополнительная информация</h4>
 			    <p>Вы не заполнили промежуток: с мая 2013 по сентябрь 2013</p>
 			    <p>Вы не заполнили промежуток: с ноября 2013 по сентябрь 2014</p>
-			    <span class="icomoon">"</span>
 			  </li>
 			</ul>
 

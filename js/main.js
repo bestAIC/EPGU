@@ -354,7 +354,7 @@ function MapControls(){
 }
 
 function FieldSlide(){
-  var $wrap = $('.js-field_slide-wrap');      
+  var $wrap = $('.js-field_slide-wrap');
 
     $wrap.find('.filed_slide').each(function(){
       var $cont = $(this),
@@ -366,4 +366,5 @@ function FieldSlide(){
     })
   });
 }
+
 
