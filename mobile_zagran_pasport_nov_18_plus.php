@@ -1,6 +1,6 @@
 <?
 	$pagename = 'mobile_zagran_pasport_nov_18_plus';
-	$pagetitle = 'Замена паспорта :: В связи с непригодностью к использованию';
+	$pagetitle = 'Загранпаспорт :: Для лиц достигших 18 летнего врозраста';
 	include('include/mobile_head.php');
 ?>
 
@@ -375,11 +375,13 @@
 
 				<div class="filed_slide">
 					<div class="limiter">
-						<em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_15" checked="checked" /><label class="flag_label" for="f_2_15">Я работал</label>
-						</em><em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_16"/><label class="flag_label" for="f_2_16">Я учился</label>
-						</em><em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_17"/><label class="flag_label" for="f_2_17">Я служил</label>
-						</em><em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_18"/><label class="flag_label" for="f_2_18">Я не работал (иное)</label>
-						</em>
+						<div class="radio_group">
+							<em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_15" checked="checked" /><label class="flag_label" for="f_2_15">Я работал</label>
+							</em><em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_16"/><label class="flag_label" for="f_2_16">Я учился</label>
+							</em><em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_17"/><label class="flag_label" for="f_2_17">Я служил</label>
+							</em><em class="wrapper l_25"><input type="radio" name="g_5_1" id="f_2_18"/><label class="flag_label" for="f_2_18">Я не работал (иное)</label>
+							</em>
+						</div>
 										
 						<em class="wrapper l_50">
 							<select class="select_choice">
@@ -448,21 +450,24 @@
 										
 						<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
 						</em>
+
+						<div class="wrapper l_100">
+							<a href="#" class="btn white close"><span class="icomoon">L</span><b>Удалить данные</b></a>
+						</div>
 					</div>
 				</div>
 
 				<div class="filed_slide">
 					<div class="limiter">
-						<div class="clear">
-							<a href="#" class="close fr"><span class="icomoon">L</span><span class="sub_txt">Удалить данные</span></a>
+						<div class="radio_group">
+							<em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_19" checked="checked" /><label class="flag_label" for="f_2_19">Я работал</label>
+							</em><em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_20"/><label class="flag_label" for="f_2_20">Я учился</label>
+							</em><em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_21"/><label class="flag_label" for="f_2_21">Я служил</label>
+							</em><em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_22"/><label class="flag_label" for="f_2_22">Я не работал (иное)</label>
+							</em>
 						</div>
-						<em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_1" checked="checked" /><label for="f_1">Я работал</label>
-						</em><em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">Я учился</label>
-						</em><em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">Я служил</label>
-						</em><em class="wrapper l_25"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">Я не работал (иное)</label>
-						</em>
 										
-						<em class="wrapper l_33">
+						<em class="wrapper l_50">
 							<select class="select_choice">
 								<option value="0" selected="selected" class="selected_one">С какого месяца</option>
 								<option value="1">Белоруссия</option>
@@ -476,7 +481,7 @@
 								<option value="9">Украина</option>
 								<option value="10">Украина</option>
 							</select>
-						</em><em class="wrapper l_16">
+						</em><em class="wrapper l_33">
 							<select class="select_choice">
 								<option value="0" selected="selected" class="selected_one">Года</option>
 								<option value="1">2014</option>
@@ -490,7 +495,7 @@
 								<option value="9">2006</option>
 								<option value="10">2005</option>
 							</select>
-						</em><em class="wrapper l_33">
+						</em><em class="wrapper l_50">
 							<select class="select_choice">
 								<option value="0" selected="selected" class="selected_one">По какой месяц</option>
 								<option value="1">Белоруссия</option>
@@ -504,7 +509,7 @@
 								<option value="9">Украина</option>
 								<option value="10">Украина</option>
 							</select>
-						</em><em class="wrapper l_16">
+						</em><em class="wrapper l_33">
 							<select class="select_choice">
 								<option value="0" selected="selected" class="selected_one">Год</option>
 								<option value="1">2014</option>
@@ -520,7 +525,7 @@
 							</select>
 						</em>
 										
-						<em class="wrapper l_50 chk_50"><input type="checkbox" id="f_36"/><label for="f_36">По настоящее время</label></em>
+						<em class="wrapper l_50 chk_50"><input type="checkbox" id="f_36"/><label class="flag_label" for="f_36">По настоящее время</label></em>
 										
 						<em class="wrapper l_50"><input type="text" placeholder="Ваша должность" class="big"/>
 						</em><em class="wrapper l_50"><input type="text" placeholder="Место работы" class="big" />
@@ -528,6 +533,10 @@
 										
 						<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
 						</em>
+
+						<div class="wrapper l_100">
+							<a href="#" class="btn white close"><span class="icomoon">L</span><b>Удалить данные</b></a>
+						</div>
 					</div>
 				</div>
 

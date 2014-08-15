@@ -42,8 +42,8 @@ include('include/mobile_head.php');
 						<td><a href="zamena_psporta_pol_ok.php">zamena_psporta_pol_ok.php</a></td>
 					</tr>
 					<tr>
-						<td><a href="mobile_zagran_pasport_nov_18_plus.php">Оформление загранпаспорта нового образца</a></td>
-						<td><a href="mobile_zagran_pasport_nov_18_plus.php">mobile_zagran_pasport_nov_18_plus.php</a></td>
+						<td><a href="zagran_pasport_nov_18_plus.php">Оформление загранпаспорта нового образца</a></td>
+						<td><a href="zagran_pasport_nov_18_plus.php">zagran_pasport_nov_18_plus.php</a></td>
 					</tr>
 					<tr>
 						<td><a href="postanovka_na_registraciu.php">Постановка на регистрационный учет</a></td>

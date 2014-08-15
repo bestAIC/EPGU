@@ -361,16 +361,18 @@ include('include/head.php');
 				
 					<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
 					</em>
+
+
 				</div>
 
-				<div class="filed_slide">
+				<!-- <div class="filed_slide">
 					<div class="clear">
 						<a href="#" class="close fr"><span class="icomoon">L</span><span class="sub_txt">Удалить данные</span></a>
 					</div>
-					<em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_1" checked="checked" /><label for="f_1">Я работал</label>
-					</em><em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">Я учился</label>
-					</em><em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">Я служил</label>
-					</em><em class="wrapper l_25"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">Я не работал (иное)</label>
+					<em class="wrapper l_16"><input type="radio" name="g_1_2" id="f_5" checked="checked" /><label for="f_5">Я работал</label>
+					</em><em class="wrapper l_16"><input type="radio" name="g_1_2" id="f_6"/><label for="f_6">Я учился</label>
+					</em><em class="wrapper l_16"><input type="radio" name="g_1_2" id="f_7"/><label for="f_7">Я служил</label>
+					</em><em class="wrapper l_25"><input type="radio" name="g_1_2" id="f_8"/><label for="f_8">Я не работал (иное)</label>
 					</em>
 				
 					<em class="wrapper l_33">
@@ -439,16 +441,21 @@ include('include/head.php');
 				
 					<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
 					</em>
+
+					<a class="btn white plus" href="#">
+						<span class="icomoon">8</span>
+						<b>Добавить данные</b>
+					</a>
 				</div>
 				
 				<div class="filed_slide">
 					<div class="clear">
 						<a href="#" class="close fr"><span class="icomoon">L</span><span class="sub_txt">Удалить данные</span></a>
 					</div>
-					<em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_1" checked="checked" /><label for="f_1">Я работал</label>
-					</em><em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">Я учился</label>
-					</em><em class="wrapper l_16"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">Я служил</label>
-					</em><em class="wrapper l_25"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">Я не работал (иное)</label>
+					<em class="wrapper l_16"><input type="radio" name="g_1_3" id="f_9" checked="checked" /><label for="f_9">Я работал</label>
+					</em><em class="wrapper l_16"><input type="radio" name="g_1_3" id="f_10"/><label for="f_10">Я учился</label>
+					</em><em class="wrapper l_16"><input type="radio" name="g_1_3" id="f_11"/><label for="f_11">Я служил</label>
+					</em><em class="wrapper l_25"><input type="radio" name="g_1_3" id="f_12"/><label for="f_12">Я не работал (иное)</label>
 					</em>
 				
 					<em class="wrapper l_33">
@@ -517,13 +524,20 @@ include('include/head.php');
 				
 					<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
 					</em>
-				
+
 					<a class="btn white plus" href="#">
 						<span class="icomoon">8</span>
 						<b>Добавить данные</b>
 					</a>
-				</div>
+				</div> -->
+				
+			</div>
 
+			<div class="l_100 btn_add-slide">
+				<a class="btn white plus" href="#">
+					<span class="icomoon">8</span>
+					<b>Добавить данные</b>
+				</a>
 			</div>
 		</fieldset>
 

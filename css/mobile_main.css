@@ -1708,8 +1708,32 @@ FIELDSET{
   }
 
 
+  .filed_slide .radio_group .wrapper{ 
+    vertical-align: top;
+  }
+  .filed_slide A.close{
+    padding: 0 25px;
+  }
+  .filed_slide A.close .icomoon{
+    font-size: 10px;
+    margin-right: 14px;
+    vertical-align: middle;
+    border: 1px solid #565656;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+  }
 
-
+  .filed_slide A.close B{
+    display: inline;
+    padding: 0;
+    vertical-align: middle;
+  }
+  .filed_slide .chk_50{
+    margin-left: 0;
+  }
 
 
 
