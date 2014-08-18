@@ -2303,7 +2303,6 @@ FIELDSET{
     width: 50%;
   }
 
-<<<<<<< HEAD
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_16,
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_33,
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_50,
@@ -2312,7 +2311,7 @@ FIELDSET{
   }
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_25{
     width: 50%;
-=======
+  }
   .mobile_oplata_uniteller .wrapper.l_66 {
     width:100%;
   } 
@@ -2340,7 +2339,6 @@ FIELDSET{
   .slash {
       margin: 45px 0 0 -12px;
       position: absolute;
->>>>>>> FETCH_HEAD
   }
 
   .wrapper{
