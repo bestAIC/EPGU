@@ -236,8 +236,8 @@ include('include/head.php');
             <div class="fields_cover">
               <h4>Укажите страну, и дату получения другого гражданства</h4>              
               <em class="wrapper l_66">
-                <select>
-                  <option>Гражданство</option>                
+                <select class="select_choice">
+                  <option value="0" selected="selected" class="selected_one">Гражданство</option>                
                   <option>Белоруссия</option>
                   <option>Украина</option>
                   <option>Белоруссия</option>
