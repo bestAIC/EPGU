@@ -407,6 +407,9 @@ float: right;
 #header .bottom.type_3{
     border-bottom: 4px solid #C41E51; 
 }
+#header .bottom.type_4{
+    border-bottom: 4px solid #57c5cc; 
+}
 #header .bottom.type_non{
     border-bottom: 1px solid #e1e1e1; 
 }
