@@ -62,6 +62,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class='mobile_postanovka_na_registraciu'>
     <? } else if ($pagename == 'mobile_snatie_s_registracii') { ?> 
         <div id="wrap" class="mobile_snatie_s_registracii">
+    <? } else if ($pagename == 'mobile_zagran_pasport_nov_18_plus') { ?> 
+        <div id="wrap" class="mobile_zagran_pasport_nov_18_plus">
     <? } else { ?> 
         <div id="wrap">
     <? } ?>
@@ -69,7 +71,7 @@ include('include/mobile_popup.php');
         <div class="cover">
             <div id="header">
 
-              <? if($pagename == 'mobile_obratnaya_svyaz' || $pagename == 'mobile_zamena_pasporta_neprigodnost' || $pagename == 'mobile_postanovka_na_registraciu' || $pagename == 'mobile_snatie_s_registracii') { ?>
+              <? if($pagename == 'mobile_obratnaya_svyaz' || $pagename == 'mobile_zagran_pasport_nov_18_plus' || $pagename == 'mobile_zamena_pasporta_neprigodnost' || $pagename == 'mobile_postanovka_na_registraciu' || $pagename == 'mobile_snatie_s_registracii') { ?>
                   <div class="top type_1"> 
               <? } else if ($pagename == 'mobile_gibdd_shtrafy' || $pagename == 'mobile_oplata_uniteller' || $pagename == 'links' || $pagename == 'mobile_typical_elements') { ?> 
                   <div class="top type_2"> 

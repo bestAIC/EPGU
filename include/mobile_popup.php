@@ -1,20 +1,4 @@
 <? if($pagename == 'mobile_gibdd_shtrafy') {?>
-    <div id="popup_rules" class="popup">
-      <b class="close_popup_x"></b>
-      <h2>Статья 12.9</h2>
-      <h3>Превышение установленной скорости движения, пункт 2</h3>
-      <p>Превышение установленной скорости движения транспортного средства на&nbsp;величину более&nbsp;20, 
-      но&nbsp;не&nbsp;более 40&nbsp;километров в&nbsp;час&nbsp;&mdash; влечет наложение административного штрафа в&nbsp;размере пятисот рублей.</p>
-      <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
-    </div> 
-
-    <div id="popup_map" class="popup">
-      <b class="close_popup_x"></b>
-      <h2>Место нарушения</h2>
-      <p>172 КМ 95 М А/Д Москва-Минск</p>
-      <img src="img/map.jpg" />
-      <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
-    </div>   
 
     <div id="popup_more_info" class="popup">
       <b class="close_popup_x"></b>
@@ -61,9 +45,25 @@
         <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>       
         
       </div>   
-    </div>  
+  
+    <div id="popup_map" class="popup">
+      <b class="close_popup_x"></b>
+        <h2>Место нарушения</h2>
+        <p>172 КМ 95 М А/Д Москва-Минск</p>
+        <img src="img/map.jpg" />
+      <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
+    </div>    
 
-    <? } else if($pagename == 'mobile_zamena_pasporta_neprigodnost') {?>
+    <div id="popup_rules" class="popup">
+      <b class="close_popup_x"></b>
+      <h2>Статья 12.9</h2>
+      <h3>Превышение установленной скорости движения, пункт 2</h3>
+      <p>Превышение установленной скорости движения транспортного средства на&nbsp;величину более&nbsp;20, 
+      но&nbsp;не&nbsp;более 40&nbsp;километров в&nbsp;час&nbsp;&mdash; влечет наложение административного штрафа в&nbsp;размере пятисот рублей.</p>
+      <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
+    </div> 
+
+<? } else if($pagename == 'mobile_zamena_pasporta_neprigodnost') {?>
 
     <div id="popup_technical" class="popup popup_technical">
       <b class="close_popup_x"></b>
@@ -90,49 +90,13 @@
       </div>
     </div> 
 
-    <div id="popup_load-photo" class="popup popup_load-photo">
-      <div class="col_left">
-        <div class="load_photo">
-          <div class="photo_brd">
-            <img src="pic/pic_7.jpg" alt="" width="180" height="236">
-            <div class="load_photo-sub">
-              <div class="sub_wrap">
-                <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
-              </div>
-              <div class="sub_wrap">
-                <div class="sub_line sub_line_2"><span class="sub_txt">Глаза должны быть на уровне этой линии</span></div>
-              </div>
-              <div class="sub_wrap">
-                <div class="sub_line sub_line_3"><span class="sub_txt">Плечи должны быть на уровне этой линии</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
-        <div class="advice_upload">
-          <div class="advice type_not">
-            <div class="advice_h">
-              <div class="advice_ico"><span class="icomoon">3</span></div>
-              <h2><span>Извините, ваша фотография не подходит</span></h2>
-            </div>
-          </div>
-          <div class="advice type_ok">
-            <div class="advice_h">
-              <div class="advice_ico"><span class="icomoon">4</span></div>
-              <h2><span>Ваша фотография успшно загружена</span></h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col_right">
-        <ul class="list edit_list">
-          <li><a href="#"><span class="icomoon">Q</span><span class="txt">Повернуть по часовой</span></a></li>
-          <li><a href="#"><span class="icomoon">R</span><span class="txt">Повернуть против часовой</span></a></li>
-          <li><a href="#"><span class="icomoon">S</span><span class="txt">Обрезать фотографию</span></a></li>
-          <li><a href="#"><span class="icomoon">T</span><span class="txt">Отменить последнее действие</span></a></li>
-        </ul>
-      </div>
-    </div> 
+    <div id="popup_map" class="popup">
+      <b class="close_popup_x"></b>
+        <h2>Место нарушения</h2>
+        <p>172 КМ 95 М А/Д Москва-Минск</p>
+        <img src="img/map.jpg" />
+      <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
+    </div>
      
 
 <? } else if($pagename == 'mobile_postanovka_na_registraciu') {?>

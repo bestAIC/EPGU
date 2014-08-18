@@ -5,7 +5,7 @@ BODY {height:100%; background:#fff; color:#000; font:15px 'Helvetica Neue', Helv
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG,FIELDSET {border:none;}
-IMG {max-width:100%; height:auto;}
+IMG {max-width:100%; height:auto;vertical-align: bottom;}
 A {text-decoration:none; color:#0173c1;}
 A:hover {color:#013e83;}
 P {line-height:1.5em;}
@@ -219,7 +219,7 @@ SPAN.icomoon{
   text-align: left;
 }
 
-.popup .list_wrap{
+.popup_technical .list_wrap{
   padding: 30px 10px 25px 20px;
   margin-top: 26px;
   border: 1px solid #CDD1D4;
@@ -551,6 +551,12 @@ float: right;
   padding: 19px 20px;
   box-shadow: 0px 6px 0px 0px #e4e4e4 inset;      
   border-top: none;
+}
+#content .info_block.type_no-ico p:first-child{
+  margin-top: 0;
+}
+#content .info_block.type_no-ico p{
+  margin-top: 20px;
 }
 .info_block .icomoon{
     position: absolute;
@@ -1869,6 +1875,77 @@ LABEL {
   display:none;
 }
 
+
+/* field_prelude */
+.field_prelude LI{
+  list-style: none;
+  margin-left: 0;
+}
+.field_prelude LI .icomoon{
+  display: block;
+  float: left;
+  font-size: 22px;
+}
+.field_prelude LI .sub_txt{
+  margin-left: 40px;
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* /field_prelude */
+
+/* filed_slide */
+
+.filed_slide{
+  position: relative;
+  background: #e4f6ff;
+  margin: 0px -10px 0px -20px;
+  padding: 40px 10px 10px 20px;
+}
+.filed_slide + .filed_slide{
+  border-top: 1px solid #88C5E7;
+}
+.filed_slide A.close{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.filed_slide A.close .icomoon{
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: baseline;
+}
+.filed_slide A.close .sub_txt{
+  border-bottom: 1px dashed #0173C1;
+  margin-left: 5px;
+}
+.filed_slide A:hover.close .sub_txt{
+  border-bottom: 1px solid transparent;
+}
+.filed_slide .chk_50{
+  position: relative;
+  top: -20px;
+  margin-left: 50%;
+  margin-bottom: 8px;
+}
+.filed_slide .l_16 .jq-selectbox__select-text{
+  width: 100%;
+  text-overflow: clip;
+}
+.filed_slide A.close{
+  display: none;
+}
+.filed_slide.filed_slide-clone A.close{
+  display: block;
+}
+.btn_add-slide{
+  position: relative;
+  background: #e4f6ff;
+  margin: -40px -10px 0px -20px;
+  padding: 40px 10px 10px 20px;
+}
+/* /filed_slide */
+
 .pay_card_bg {
   position: absolute;
   margin:-40px 0 0 -35px;
@@ -1883,13 +1960,13 @@ LABEL {
 
 /*SForm*/
 .jq-checkbox {
-    top: -1px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #CDD1D4;
-    background: #fff;
-    vertical-align: middle;
-    cursor: pointer;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CDD1D4;
+  background: #fff;
+  vertical-align: middle;
+  cursor: pointer;
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   border-radius:3px;

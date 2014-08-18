@@ -8,9 +8,8 @@ $(document).ready(function() {
   MenuShow();
   MapShow();
   MapControls();
+  FieldSlide();
 });
-
-
 
 // Styler
 function SForm() {
@@ -353,3 +352,44 @@ function MapControls(){
         });
       });
 }
+
+function FieldSlide(){
+  var $wrap = $('.js-field_slide-wrap'),
+      $close = $('.close', $wrap),
+      $cont = $('.filed_slide', $wrap);
+
+    $close.on('click', function(){
+        var contLength = $('.filed_slide', $wrap).length - 1;
+
+        if(contLength <= 1){
+          $close.slideUp(400, function(){
+            $(this).remove();
+          })
+        }
+    });
+
+
+    $('.btn.plus', $('.btn_add-slide')).click(function(e){
+        e.preventDefault();
+        var template = $cont;
+        var count = template.length + 1;
+        for(var i = count; i < count+1; i++){    
+            template.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
+          }
+
+        $wrap.find('.filed_slide').each(function(){
+          var that = $(this),
+              $close = $('.close', that);
+
+          $close.on('click', function(e){
+            console.log(111);
+            e.preventDefault();
+            that.slideUp(400, function(){
+              that.remove();
+            });
+          });
+    })
+  });
+}
+
+

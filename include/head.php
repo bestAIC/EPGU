@@ -43,6 +43,8 @@
       <div id="wrap" class="nalogovaya_zadoljennost">
   <? } else if ($pagename == 'zamena_pasporta_neprigodnost') { ?> 
       <div id="wrap" class="zamena_pasporta_neprigodnost">
+  <? } else if ($pagename == 'zagran_pasport_nov_18_plus') { ?> 
+      <div id="wrap" class="zagran_pasport_nov_18_plus">
   <? } else if ($pagename == '404') { ?>
       <div id="wrap" class="page_404">
   <? } else { ?>
@@ -101,7 +103,7 @@
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">
-        <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'zamena_pasporta_pol_ok' || $pagename == 'zamena_pasporta_neprigodnost' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
+        <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'zamena_pasporta_pol_ok' || $pagename == 'zagran_pasport_nov_18_plus' || $pagename == 'zamena_pasporta_neprigodnost' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
             <div class="bottom type_3">
         <? } else if ($pagename == '404') { ?>
             <div class="bottom type_non">
