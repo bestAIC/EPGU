@@ -325,6 +325,7 @@ BODY {
 
 #content FIELDSET LABEL.flag_label{
   display: block;
+  line-height: 20px;
 }
 
 #content .jq-checkbox + label.flag_label{
@@ -1739,10 +1740,22 @@ FIELDSET{
     margin-left: 0;
   }
 
+  .btn_add-slide{
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 
 
-
-
+  .field_prelude UL{
+    padding-left: 20px;
+  }
+  .field_prelude UL LI{
+    list-style: circle;
+    margin-left: 0;
+  }
+  .field_prelude LI .sub_txt{
+    margin-left: 0;
+  }
 
 
 
@@ -2242,7 +2255,7 @@ FIELDSET{
       margin-bottom: 24px;
     }
 
-  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf{
+  #content FIELDSET .btn_field.mobile_morpf{
     background: #fff;
     text-align: center;
     width: 1024px;
@@ -2251,7 +2264,7 @@ FIELDSET{
     height: 50px;
     margin-left: -517px;
   }
-  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf:after{
+  #content FIELDSET .btn_field.mobile_morpf:after{
     content: '5';
     font: 12px 'icomoon-epga';
     position: absolute;
@@ -2259,7 +2272,7 @@ FIELDSET{
     left: 50%;
     margin-left: 130px;
   }
-  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf INPUT.btn.big{
+  #content FIELDSET .btn_field.mobile_morpf INPUT.btn.big{
     margin: 0;
     margin-left: -120px;
     height: 50px;
@@ -2286,11 +2299,19 @@ FIELDSET{
   .mobile_zamena_pasporta_neprigodnost .wrapper.l_66{
     width: 100%;
   }
-
   .mobile_zamena_pasporta_neprigodnost .wrapper.l_25{
     width: 50%;
   }
 
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_16,
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_33,
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_50,
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_66{
+    width: 100%;
+  }
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_25{
+    width: 50%;
+  }
   .mobile_oplata_uniteller .wrapper.l_66 {
     width:100%;
   } 
@@ -3231,7 +3252,21 @@ FIELDSET{
     margin-left: 60px;
     width: 220px;
   }
-
+  
+  .filed_slide .radio_group .l_25{
+    width: 100%;
+  }
+  .filed_slide .chk_50{
+    margin-top: 20px;
+  }
+  .btn_add-slide{
+    padding-top: 0;
+    margin-top: -10px;
+  }
+  .btn_add-slide .btn.big{
+    width: 100%;
+    text-align: center;
+  }
 
 
 

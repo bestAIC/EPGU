@@ -64,7 +64,6 @@ include('include/mobile_head.php');
 								</div>
 							</div>
 						</div>
-						
 					</div><!-- col_left -->
 					<div class="col_right load_photo_cols">
 						<div class="require">

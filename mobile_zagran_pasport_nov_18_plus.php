@@ -450,98 +450,252 @@
 										
 						<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
 						</em>
-
-						<div class="wrapper l_100">
-							<a href="#" class="btn white close"><span class="icomoon">L</span><b>Удалить данные</b></a>
-						</div>
 					</div>
-				</div>
-
-				<div class="filed_slide">
 					<div class="limiter">
-						<div class="radio_group">
-							<em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_19" checked="checked" /><label class="flag_label" for="f_2_19">Я работал</label>
-							</em><em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_20"/><label class="flag_label" for="f_2_20">Я учился</label>
-							</em><em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_21"/><label class="flag_label" for="f_2_21">Я служил</label>
-							</em><em class="wrapper l_25"><input type="radio" name="g_6_1" id="f_2_22"/><label class="flag_label" for="f_2_22">Я не работал (иное)</label>
-							</em>
-						</div>
-										
-						<em class="wrapper l_50">
-							<select class="select_choice">
-								<option value="0" selected="selected" class="selected_one">С какого месяца</option>
-								<option value="1">Белоруссия</option>
-								<option value="2">Белоруссия</option>
-								<option value="3">Украина</option>
-								<option value="4">Белоруссия</option>
-								<option value="5">Белоруссия</option>
-								<option value="6">Украина</option>
-								<option value="7">Украина</option>
-								<option value="8">Белоруссия</option>
-								<option value="9">Украина</option>
-								<option value="10">Украина</option>
-							</select>
-						</em><em class="wrapper l_33">
-							<select class="select_choice">
-								<option value="0" selected="selected" class="selected_one">Года</option>
-								<option value="1">2014</option>
-								<option value="2">2013</option>
-								<option value="3">2012</option>
-								<option value="4">2011</option>
-								<option value="5">2010</option>
-								<option value="6">2009</option>
-								<option value="7">2008</option>
-								<option value="8">2007</option>
-								<option value="9">2006</option>
-								<option value="10">2005</option>
-							</select>
-						</em><em class="wrapper l_50">
-							<select class="select_choice">
-								<option value="0" selected="selected" class="selected_one">По какой месяц</option>
-								<option value="1">Белоруссия</option>
-								<option value="2">Белоруссия</option>
-								<option value="3">Украина</option>
-								<option value="4">Белоруссия</option>
-								<option value="5">Белоруссия</option>
-								<option value="6">Украина</option>
-								<option value="7">Украина</option>
-								<option value="8">Белоруссия</option>
-								<option value="9">Украина</option>
-								<option value="10">Украина</option>
-							</select>
-						</em><em class="wrapper l_33">
-							<select class="select_choice">
-								<option value="0" selected="selected" class="selected_one">Год</option>
-								<option value="1">2014</option>
-								<option value="2">2013</option>
-								<option value="3">2012</option>
-								<option value="4">2011</option>
-								<option value="5">2010</option>
-								<option value="6">2009</option>
-								<option value="7">2008</option>
-								<option value="8">2007</option>
-								<option value="9">2006</option>
-								<option value="10">2005</option>
-							</select>
-						</em>
-										
-						<em class="wrapper l_50 chk_50"><input type="checkbox" id="f_36"/><label class="flag_label" for="f_36">По настоящее время</label></em>
-										
-						<em class="wrapper l_50"><input type="text" placeholder="Ваша должность" class="big"/>
-						</em><em class="wrapper l_50"><input type="text" placeholder="Место работы" class="big" />
-						</em>
-										
-						<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
-						</em>
-
 						<div class="wrapper l_100">
 							<a href="#" class="btn white close"><span class="icomoon">L</span><b>Удалить данные</b></a>
 						</div>
 					</div>
+				</div><!-- filed_slide -->
+			</div><!-- field_slide_wrap -->
+			<div class="l_100 btn_add-slide">
+				<div class="limiter">
+					<a class="btn big plus" href="#">
+						<b>Добавить данные</b>
+					</a>
 				</div>
-
 			</div>
 		</fieldset>
+
+		<fieldset class="group_9">
+			<div class="limiter">
+				<span class="point_num">9</span>
+				<h3>Имели ли вы допуск к сведениям особой важности или совершенно секретным сведениям?</h3>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_6" checked="checked" id="f_11"/><label class="flag_label" for="f_11">Нет</label></em>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_6" id="f_12"/><label class="flag_label" for="f_12">Да</label></em>
+			</div>
+			
+			
+			<div class="fields_cover">
+				<div class="limiter">
+					<em class="wrapper l_75"><input type="text" placeholder="По какой линии организации" class="big"/>
+					</em><em class="wrapper l_25"><input type="text" placeholder="Год" class="big" />
+					</em>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="group_10">
+			<div class="limiter">
+				<span class="point_num">10</span>
+				<h3>Имеете ли вы договорные контрактные обязательства, препядствующие выезду за границу?</h3>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_7" checked="checked" id="f_13"/><label class="flag_label" for="f_13">Нет</label></em>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_7" id="f_14"/><label class="flag_label" for="f_14">Да</label></em>
+			</div>
+			
+			
+			<div class="fields_cover">
+				<div class="limiter">
+					<em class="wrapper l_75"><input type="text" placeholder="По какой линии организации" class="big"/>
+					</em><em class="wrapper l_25"><input type="text" placeholder="Год" class="big" />
+					</em>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="group_11">
+			<div class="limiter">
+				<span class="point_num">11</span>
+				<h3>Имеете ли вы судимость или не привлечены в качестве обвиняемого?</h3>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_8" checked="checked" id="f_15"/><label class="flag_label" for="f_15">Нет</label></em>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_8" id="f_16"/><label class="flag_label" for="f_16">Да</label></em>
+			</div>
+		</fieldset>
+
+		<fieldset class="group_12">
+			<div class="limiter">
+				<span class="point_num">12</span>
+				<h3>Призывались ли вы на военную службу или альтернативную гражданскую службу?</h3>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_9" checked="checked" id="f_17"/><label class="flag_label" for="f_17">Нет</label></em>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_9" id="f_18"/><label class="flag_label" for="f_18">Да</label></em>
+			</div>
+		</fieldset>
+
+		<fieldset class="group_13">
+			<div class="limiter">
+				<span class="point_num">13</span>
+				<h3>Не уклонялись ли вы от исполнения обязательств, наложенных судом?</h3>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_10" checked="checked" id="f_19"/><label class="flag_label" for="f_19">Нет</label></em>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="g_10" id="f_20"/><label class="flag_label" for="f_20">Да</label></em>
+			</div>
+		</fieldset>
+
+		<fieldset class="group_15">
+			<div class="limiter">
+				<span class="point_num">15</span>
+				<h3>Куда вы будете подавать оригиналы документов?</h3>
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="p_21" /><label class="flag_label" for="p_21">По месту постоянной регистрации, как в паспорте (срок оказания услуги – 2 месяца)</label></em>
+			</div>
+			<div class="fields_cover">
+				<div class="limiter">
+					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
+					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+				</div>
+				
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="place" id="p_22" /><label class="flag_label" for="p_22">По месту временного нахождения (срок оказания услуги – 4 месяца) </label></em>
+			</div>
+			<div class="fields_cover">
+				<div class="limiter">
+					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
+					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+				</div>
+				
+			</div>
+			
+			<div class="limiter">
+				<em class="wrapper l_100"><input type="radio" name="place" id="p_23" /><label class="flag_label" for="p_23">По месту временной регистрации (срок оказания услуги – 4 месяца)</label></em>
+			</div>
+			<div class="fields_cover">
+				<div class="limiter">
+					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
+					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+				</div>
+				
+			</div>
+			<div class="limiter">
+				<h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
+			</div>
+			
+			<div class="map_cover">
+			  <div class="map_block" id="map"></div>
+			    <div class="address_list">               
+			      <div class="map_nav">
+			        <div class="limiter">
+			        <h4 class="map_nav_h">Доступны подразделения:</h4>
+			        </div>
+			        <ul class="map_list">
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			            <p>Москва, Неглинная, 23</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			            <p>Москва, Неглинная, 23</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			          </li>
+			        </ul>
+			      </div><!-- map_nav -->
+			      <div class="map_ballon_block">
+			        <div class="map_ballon_wrap">
+			          <a class="map_ballon_close"><span class="icomoon">L</span></a>
+			          <div class="map_ballon_h">
+			            <p><strong>МИФНС России №46 по г. Москве</strong></p>
+			            <p>В составе ИФНС России № 1 по г. Москве</p>
+			          </div>
+			          <ul class="map_ballon_list">
+			            <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+			            <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+			            <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+			            <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+			            <li class="map_ballon_item">Как добраться:</li>
+			            <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
+			            <li class="map_ballon_item">Мякинино, Тушинская</li>
+			            <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+			          </ul>
+			        </div>
+			      </div><!-- map_ballon_block --> 
+			    </div>                 
+			</div><!-- map_cover -->
+		</fieldset>
+
+		 <fieldset class="group_16">           
+		  <div class="limiter">    
+		    <h3>Согласие на обработку персональных данных</h3>     
+		    
+		    <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label class="flag_label">Согласен на обработку персональных данных</label></em>
+		    
+		    <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
+		     либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>      
+		  </div>                   
+		 </fieldset>                                                
+		
+		<div class="limiter">
+		 <span class="fr">
+		   <input class="big btn" type="submit" value="Отправить">
+		 </span>
+		</div>  
 	</form>
 </div>
 
