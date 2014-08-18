@@ -1936,7 +1936,7 @@ LABEL {
   display: none;
 }
 .filed_slide.filed_slide-clone A.close{
-  display: block;
+  display: inline-block;
 }
 .btn_add-slide{
   position: relative;
