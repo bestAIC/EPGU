@@ -46,6 +46,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_nalogovaya_zadoljennost">
     <? } else if ($pagename == 'mobile_gibdd_shtrafy') { ?> 
         <div id="wrap" class="mobile_gibdd_shtrafy">
+    <? } else if ($pagename == 'mobile_oplata_uniteller') { ?> 
+        <div id="wrap" class="mobile_oplata_uniteller">        
     <? } else if ($pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?> 
         <div id="wrap" class="mobile_proverka_sudebnyh_zadoljennostey">
     <? } else if ($pagename == 'mobile_obratnaya_svyaz') { ?> 
@@ -69,7 +71,7 @@ include('include/mobile_popup.php');
 
               <? if($pagename == 'mobile_obratnaya_svyaz' || $pagename == 'mobile_zamena_pasporta_neprigodnost' || $pagename == 'mobile_postanovka_na_registraciu' || $pagename == 'mobile_snatie_s_registracii') { ?>
                   <div class="top type_1"> 
-              <? } else if ($pagename == 'mobile_gibdd_shtrafy' || $pagename == 'links' || $pagename == 'mobile_typical_elements') { ?> 
+              <? } else if ($pagename == 'mobile_gibdd_shtrafy' || $pagename == 'mobile_oplata_uniteller' || $pagename == 'links' || $pagename == 'mobile_typical_elements') { ?> 
                   <div class="top type_2"> 
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  

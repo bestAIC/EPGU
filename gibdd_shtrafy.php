@@ -85,7 +85,7 @@ include('include/head.php');
               </ul>
             </div>            
             <div class="ticket">
-              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="fr">5000&nbsp;<nobr class="rouble">p</nobr></span> <span class="btn_cover_r"><input class="small btn" type="submit" value="Оплатить" /></span></div>
+              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="fr">5000&nbsp;<nobr class="rouble">p</nobr></span> <a href="/oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
               <dl>
                 <dt>Дата и время нарушения</dt>
                 <dd>26.05.2013 в 11:47</dd>
@@ -126,7 +126,7 @@ include('include/head.php');
             </div>
             
             <div class="ticket">
-              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="fr">10 000&nbsp;<nobr class="rouble">p</nobr></span> <span class="btn_cover_r"><input class="small btn" type="submit" value="Оплатить" /></span></div>
+              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="fr">10 000&nbsp;<nobr class="rouble">p</nobr></span> <a href="/oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
               <dl>
                 <dt>Дата и время нарушения</dt>
                 <dd>26.05.2013 в 11:47</dd>

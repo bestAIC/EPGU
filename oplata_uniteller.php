@@ -28,8 +28,7 @@ include('include/head.php');
                 <dt>Наименование оплачиваемой услуги</dt>
                 <dd>Штрафы ГИБДД</dd>
               </dl>
-              <dl>
-              </dl>  
+              <dl> 
                 <dt>Номер платежа</dt>
                 <dd>2014-08-11-799490</dd>
               </dl>
@@ -97,7 +96,7 @@ include('include/head.php');
         
         
         <div class="clear">
-          <a href="#" class="btn fr"><b>Оплатить</b></a>
+          <a href="/gibdd_shtrafy.php" class="btn fr"><b>Оплатить</b></a>
         </div>        
         
       </div>
