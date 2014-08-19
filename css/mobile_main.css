@@ -1757,6 +1757,16 @@ FIELDSET{
     margin-left: 0;
   }
 
+  .last-btn_cover{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    max-width: 945px;
+    padding: 0 0 0 50px;
+    width: 90%;
+  }
+
 
 
 
@@ -3285,13 +3295,8 @@ FIELDSET{
   }
 
 
-  .last-btn_cover{
-    width: 100%;
-    margin:0 auto;
-    border-top: 1px solid #DBE2E6;
-  }
   .last-btn_cont{
-    max-width: 280px;
+    margin-right: 20px;
     padding-top: 15px;
   }
 
