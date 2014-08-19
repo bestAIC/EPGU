@@ -16,7 +16,10 @@ function SForm() {
 
   $(function() {
     /*стилизация элементов*/
-    $('input, select').styler();
+    $('input, select').styler({
+      selectSearchLimit: 13,
+      selectSmartPositioning: false
+    });
     
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
@@ -124,13 +127,14 @@ function PopUp() {
               $('#popup_fade').remove();
             });
             
-            $('.popup .back').click(function(){
+            $('.popup .back').click(function(e){
+              e.preventDefault();
               $('#'+choise).hide();
               $(document).unbind('click.event');
               $('#popup_fade').remove();
             });            
             
-            firstClick = false;
+            
         });
     }
     e.preventDefault();
@@ -336,7 +340,7 @@ function MapShow(){
 function MapControls(){
   var $cont = $('.map_nav'),
       $lnk = $('.map_list_item', $cont),
-      $block = $('.map_ballon_block');
+      $block = $('.map_ballon_block'),
       $close = $('.map_ballon_close', $block);
 
 
@@ -368,28 +372,67 @@ function FieldSlide(){
         }
     });
 
+    
 
-    $('.btn.plus', $('.btn_add-slide')).click(function(e){
+    $('.btn.plus', $('.btn_add-slide')).on('click', function(e){
         e.preventDefault();
-        var template = $cont;
-        var count = template.length + 1;
+        var count = $cont.length + 1;
         for(var i = count; i < count+1; i++){    
-            template.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
+            $cont.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
           }
 
-        $wrap.find('.filed_slide').each(function(){
-          var that = $(this),
-              $close = $('.close', that);
+            function getRandomArbitary(min, max) {
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
 
-          $close.on('click', function(e){
-            console.log(111);
-            e.preventDefault();
-            that.slideUp(400, function(){
-              that.remove();
-            });
-          });
+              var $inp = $('input, select', $cont);
+              function checkId(){
+                $inp.each(function(){
+                    var idRandom = $(this).attr('id', getRandomArbitary(1, 1000));
+                        return idRandom;
+                    var idNew = $(this).attr('id'),
+                        label = $(this).parents('.wrapper').find('label').attr('for', idNew);
+                        return label;
+
+
+                  if($(':radio, :checkbox')){
+                    var that = $(this),
+                        group = that.attr('name', function(i, val){
+                          return that.attr('name') + '_2';
+                        });
+
+                      that.parent().attr('id', function(i, val){
+                        return that.attr('id') + '-styler';
+                      });
+                  }
+                });
+              }
+
+              checkId();
+
+              $('input', '.filed_slide').on('click', function(){
+                $(this).styler();
+                console.log('id: ' + ($(this).attr('id')));
+              })
+
+              $('label', '.filed_slide').on('click', function(){
+                console.log('for: ' + ($(this).attr('for')));
+              })      
+
+              $wrap.find('.filed_slide').each(function(){
+                var that = $(this),
+                    $close = $('.close', that);
+
+                  $close.on('click', function(e){
+                    e.preventDefault();
+                    that.slideUp(400, function(){
+                      that.remove();
+                    });
+                });
     })
   });
 }
+
+
 
 

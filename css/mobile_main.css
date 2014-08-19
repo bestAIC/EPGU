@@ -2140,6 +2140,9 @@ FIELDSET{
     font-size: 17px;
     margin:0 0 20px 30px;
   }
+  .big_inp-form FIELDSET H3.ml0{
+    margin-left: 0;
+  }
   
 
   #content FIELDSET{
@@ -2306,7 +2309,8 @@ FIELDSET{
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_16,
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_33,
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_50,
-  .mobile_zagran_pasport_nov_18_plus .wrapper.l_66{
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_66,
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_75{
     width: 100%;
   }
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_25{
@@ -2487,6 +2491,14 @@ FIELDSET{
     min-height:100%;
     border:none;
   }  
+  .map-h_wrap{
+    width: 100%;
+  }
+  .map-h_wrap h4{
+    margin: 20px auto 10px;
+    border-bottom: 0;
+    padding-right: 20px;
+  }
   
   .map_block{
     display:none;
@@ -2518,7 +2530,7 @@ FIELDSET{
   .map_list_item:after{
     content: "5";
     font: 14px 'icomoon-epga';
-    right: 10px;
+    right: 20px;
     top: 45%;
     position: absolute;
     margin: 0;
@@ -2539,6 +2551,9 @@ FIELDSET{
   .map_list_item P {
     width:280px;
     margin:0 auto;
+    padding-right: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 
   .map_list .go_more:after {
@@ -3262,6 +3277,7 @@ FIELDSET{
   .btn_add-slide{
     padding-top: 0;
     margin-top: -10px;
+    margin-bottom: 15px;
   }
   .btn_add-slide .btn.big{
     width: 100%;
@@ -3269,5 +3285,26 @@ FIELDSET{
   }
 
 
+  .last-btn_cover{
+    width: 100%;
+    margin:0 auto;
+    border-top: 1px solid #DBE2E6;
+  }
+  .last-btn_cont{
+    max-width: 280px;
+    padding-top: 15px;
+  }
+
+  .map_ballon_item{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  .popup_map_adress-phone{
+    width: 320px;
+    height: 400px;
+    margin-top: 20px;
+  }
 
 }

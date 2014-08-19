@@ -298,16 +298,18 @@ include('include/head.php');
 					<em class="wrapper l_33">
 						<select class="select_choice">
 							<option value="0" selected="selected" class="selected_one">С какого месяца</option>
-							<option value="1">Белоруссия</option>
-							<option value="2">Белоруссия</option>
-							<option value="3">Украина</option>
-							<option value="4">Белоруссия</option>
-							<option value="5">Белоруссия</option>
-							<option value="6">Украина</option>
-							<option value="7">Украина</option>
-							<option value="8">Белоруссия</option>
-							<option value="9">Украина</option>
-							<option value="10">Украина</option>
+							<option value="Январь">Январь</option> 
+							<option value="Февраль">Февраль</option> 
+							<option value="Март">Март</option> 
+							<option value="Апрель">Апрель</option> 
+							<option value="Май">Май</option> 
+							<option value="Июнь">Июнь</option> 
+							<option value="Июль">Июль</option> 
+							<option value="Август">Август</option> 
+							<option value="Сентябрь">Сентябрь</option> 
+							<option value="Октябрь">Октябрь</option> 
+							<option value="Ноябрь">Ноябрь</option> 
+							<option value="Декабрь">Декабрь</option>>
 						</select>
 					</em><em class="wrapper l_16">
 						<select class="select_choice">
@@ -326,16 +328,18 @@ include('include/head.php');
 					</em><em class="wrapper l_33">
 						<select class="select_choice">
 							<option value="0" selected="selected" class="selected_one">По какой месяц</option>
-							<option value="1">Белоруссия</option>
-							<option value="2">Белоруссия</option>
-							<option value="3">Украина</option>
-							<option value="4">Белоруссия</option>
-							<option value="5">Белоруссия</option>
-							<option value="6">Украина</option>
-							<option value="7">Украина</option>
-							<option value="8">Белоруссия</option>
-							<option value="9">Украина</option>
-							<option value="10">Украина</option>
+							<option value="Январь">Январь</option> 
+							<option value="Февраль">Февраль</option> 
+							<option value="Март">Март</option> 
+							<option value="Апрель">Апрель</option> 
+							<option value="Май">Май</option> 
+							<option value="Июнь">Июнь</option> 
+							<option value="Июль">Июль</option> 
+							<option value="Август">Август</option> 
+							<option value="Сентябрь">Сентябрь</option> 
+							<option value="Октябрь">Октябрь</option> 
+							<option value="Ноябрь">Ноябрь</option> 
+							<option value="Декабрь">Декабрь</option>
 						</select>
 					</em><em class="wrapper l_16">
 						<select class="select_choice">

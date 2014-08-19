@@ -9,6 +9,7 @@ $(document).ready(function() {
 
 lock = 0;
 
+
 // Popup
 function MPopUp() {
   $(window).on('resize', function(){
@@ -18,18 +19,16 @@ function MPopUp() {
       $('.limiter, .map_list').removeClass('go_more');
     } 
 
-    if($('#map:hidden').length){  
-      $('.map_list li').addClass('go_more');
-    } else { 
-      $('.limiter').removeClass('go_more');
-    } 
-
   }).resize(); 
+
+
   
 
   $('.limiter, .map_list.go_more').on('click', function(e) {
     if($(this).hasClass('go_more')){
       var $message = $('#popup_more_info');
+
+
           
       $('#wrap').prepend('<div id="popup_fade"></div>');
       if ($message.css('display') != 'block') {
@@ -46,8 +45,7 @@ function MPopUp() {
                 $('#popup_fade').remove();                                
                 $(document).unbind('click.event');
               });           
-              
-              firstClick = false;
+            
           });
       }
       e.preventDefault(); 

@@ -121,6 +121,9 @@ SPAN.icomoon{
 .bg_c6 {background:#f6f6f6;}
 .bg_c7 {background:#7a96ab;}
 
+.ml0{
+  margin-left: 0;
+}
 
 .list {
   padding: 0 0 8px 0;
