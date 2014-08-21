@@ -31,7 +31,7 @@ function SForm() {
     
     /*выпадающие поля при выборе пункта*/ 
     
-    $('.fields_cover .jq-radio').click(function(){      
+    $('fieldset .jq-radio').click(function(){      
       var root = $(this).parent();
       var currentIndex = root.index();              
       var group = root.parent().children().eq(currentIndex+1);    
@@ -44,6 +44,23 @@ function SForm() {
         }                                                               
       }           
     });
+
+    $('fieldset .jq-checkbox').on('click', function(){      
+      var root = $(this).parent();
+      var currentIndex = root.index();              
+      var group = root.parent().children().eq(currentIndex+1);    
+
+      if($(this).hasClass('checked')){
+        if(group.hasClass('fields_cover_inner')){
+          group.slideDown();
+        }
+      } else {
+        if(group.hasClass('fields_cover_inner')){
+          group.slideUp();
+        }        
+      }                                                              
+          
+    });    
      
     $('.jq-radio').click(function(){
       
@@ -167,8 +184,7 @@ function HideShow(){
     } else {
       $('.new_auto').slideUp();
     }
-  });   
-      
+  });      
 }
 
 // Switch Point

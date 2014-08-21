@@ -13,8 +13,7 @@ include('include/head.php');
 
       <div id="content">
         <div class="title">
-          <span class="icomoon color_3">O</span><h1>Регистрация граждан</h1>
-          <h2>по месту жительства</h2>
+          <span class="icomoon color_4">Y</span><h1>Запись в детский сад</h1>
         </div>
         
           
@@ -22,29 +21,10 @@ include('include/head.php');
               
           <fieldset class="group_1">         
             <span class="point_num">1</span>
-            <h3>Тип заявителя</h3>          
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Я подаю заявление за самого себя, мне есть 18 лет</label></em>  
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Я подаю заявление за самого себя, мне нет 18 лет (14-18)</label></em>                         
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"/><label for="f_3">Я - законный представитель несовершеннолетнего</label></em>            
-            <div class="fields_cover">
-              <h4>Кем вы приходитесь получателю услуги?</h4>                            
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">Отец</label></em>              
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_5"/><label for="f_5">Мать</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_6"/><label for="f_6">Опекун</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_7"/><label for="f_7">Попечитель</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_8"/><label for="f_8">Иное</label></em>
-              <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" disabled="disabled"/></em>
-            </div>            
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_9"/><label for="f_9">Я - законный представитель недееспособного, либо иного лица</label></em>
-            <div class="fields_cover">
-              <h4>Кем вы приходитесь получателю услуги?</h4>                            
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_10"/><label for="f_10">Отец</label></em>              
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_11"/><label for="f_11">Мать</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_12"/><label for="f_12">Опекун</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_13"/><label for="f_13">Попечитель</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_14"/><label for="f_14">Иное</label></em>
-              <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" disabled="disabled"/></em>
-            </div>                                                      
+            <h3>Выберете ребенка</h3>          
+            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Константинопольский Константин Константинович, 5 лет</label></em>  
+            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Константинопольский Евгений Константинович, 3 года</label></em>                         
+            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"/><label for="f_3">Константинопольская Татьяна Константиновна, 2 года</label></em>                                                                            
           </fieldset>
                      
           <fieldset class="group_2">                   
@@ -62,7 +42,8 @@ include('include/head.php');
             
             <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
             </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Мужской</label>
-            </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/>            
+            </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label>
+            </em><em class="wrapper l_33 fr"><input type="text" placeholder="СНИЛС" class="big" value="152-676-184 70" disabled="disabled"/></em><br/>            
             
             <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
             </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>                                 
@@ -82,307 +63,110 @@ include('include/head.php');
           
           <fieldset class="group_4">                      
             <span class="point_num">4</span>
-            <h3>Персональные данные получателя услуги</h3>          
-            <em class="wrapper l_33"><input type="text" placeholder="Фамилия"  class="big" />
-            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
-            
-            <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-            </em><em class="wrapper l_16"><input type="radio" name="sex_1" checked="checked" /><label>Мужской</label>
-            </em><em class="wrapper l_16"><input type="radio" name="sex_1" /><label>Женский</label></em><br/>
-            
-            <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" />
-            </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" /></em><br/>                                                             
+            <h3>Кем вы приходитесь ребенку?</h3>                                  
+            <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_10"/><label for="f_10">Отец</label></em>              
+            <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_11"/><label for="f_11">Мать</label></em>
+            <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_12"/><label for="f_12">Опекун</label></em>
+            <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_13"/><label for="f_13">Попечитель</label></em>
+            <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_14"/><label for="f_14">Иное</label></em>
+            <div class="fields_cover_inner">
+              <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" /></em>                
+            </div>                                                              
           </fieldset> 
           
           <fieldset class="group_5">                      
             <span class="point_num">5</span>
-            <h3>Документ, удостоверяющий личность получателя услуги</h3>          
-            <em class="wrapper l_100"><input type="radio" name="g_2" id="f_15" checked="checked" /><label for="f_15">Паспорт</label></em>
-            <div class="fields_cover">
-              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" class="big" />            
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" /></em> 
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                          
-            </div>               
-            <em class="wrapper l_100"><input type="radio" name="g_2" id="f_16"/><label for="f_16">Свидетельство о рождении</label></em>                                  
-            <div class="fields_cover">
-              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Номер акт. записи" class="big" />            
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Кем выдано" class="big" /></em> 
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                            
-            </div>                                         
+            <h3>Персональные данные ребенка</h3>          
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
+            
+            <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big"  />
+            </em><em class="wrapper l_16"><input type="radio" name="sex_4" checked="checked" /><label>Мужской</label>
+            </em><em class="wrapper l_16"><input type="radio" name="sex_4" /><label>Женский</label>
+            </em><em class="wrapper l_33 fr"><input type="text" placeholder="СНИЛС" class="big" /><i class="not">необязательно</i></em><br/>                                         
           </fieldset>          
                               
           <fieldset class="group_6">                      
             <span class="point_num">6</span>
-            <h3>Имеет ли получатель услуги постоянную регистрацию?</h3>          
-            <em class="wrapper l_100"><input type="radio" name="g_3" id="f_17" checked="checked"/><label for="f_17">Да</label></em>
+            <h3>Данные свидетельства о рождении ребенка</h3>          
+            <em class="wrapper l_100"><input type="radio" name="g_3" id="f_17" checked="checked"/><label for="f_17">Российской Федерации</label></em>
             <div class="fields_cover">
-              <h4>Адрес текущего места постоянной регистрации <i class="q">?
-              <div class="bg_c3 q_hover">
-                <h4>Тест</h4>
-                <p>тест</p>                               
-              </div></i></h4>                            
-              <em class="wrapper l_100"><input type="text" placeholder="Выберите регион" class="big" /></em>
+              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
+              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />          
+              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Номер акт. записи" class="big" /></em>
               
-              <em class="wrapper l_25"><input type="text" placeholder="Дата регистрации" class="big" /></em> 
-            </div>           
-            <em class="wrapper l_100"><input type="radio" name="g_3" id="f_18"/><label for="f_18">Нет</label></em>                   
+              <em class="wrapper l_100"><input type="text" placeholder="Кем выдано" class="big" /></em>
+              <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>                                                         
+            </div>
+            <em class="wrapper l_100"><input type="radio" name="g_3" id="f_18"/><label for="f_18">Иного государства</label></em>
+            <div class="fields_cover">                           
+              <em class="wrapper l_75"><input type="text" placeholder="Наименование документа" class="big" />
+              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" /></em> 
+            </div>                    
           </fieldset> 
                     
           <fieldset class="group_7">                      
             <span class="point_num">7</span>
-            <h3>Новый адрес регистрации</h3> 
-            <em class="wrapper l_100"><input type="text" placeholder="Выберите регион" class="big" /></em>                                           
+            <h3>Место проживания ребёнка совпадает с местом регистрации?</h3>             
+            <em class="wrapper l_100"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">Да</label></em>                                   
+            <em class="wrapper l_100"><input type="radio" name="g_4" id="f_20"/><label for="f_20">Нет</label></em>
+            <div class="fields_cover">                           
+              <em class="wrapper l_100"><input type="text" placeholder="Выберите регион" class="big" /></em>    
+            </div>                                      
           </fieldset>
           
           <fieldset class="group_8">                      
             <span class="point_num">8</span>
-            <h3>Снялся ли получатель услуги с регистрационного учёта по прежнему месту жительства?</h3>             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">Да</label></em>                                   
-            <em class="wrapper l_100"><input type="radio" name="g_4" id="f_20"/><label for="f_20">Нет</label></em>                             
-          </fieldset>                     
-          
-          <fieldset class="group_9">                    
-            <span class="point_num">9</span>
-            <h3>Регистрация производится на вашу жилплощадь?</h3>             
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">Да</label></em>                                   
-            <em class="wrapper l_100"><input type="radio" name="g_5" id="f_22"/><label for="f_22">Нет</label></em>
-            <div class="fields_cover">
-              <h4>Персональные данные владельца жилого помещения</h4>          
-              <em class="wrapper l_33"><input type="text" placeholder="Фамилия"  class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
-              
-              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-              </em><em class="wrapper l_16"><input type="radio" name="sex_3" checked="checked" /><label>Мужской</label>
-              </em><em class="wrapper l_16"><input type="radio" name="sex_3" /><label>Женский</label></em><br/>
-              
-              <h4>Кем получатель услуги приходится владельцу жилого помещения?</h4>          
-              <em class="wrapper l_50">
+            <h3>Параметры для выбора детского сада</h3>
+            <em class="wrapper l_16">Отображать по:
+            </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">месту регистрации</label>
+            </em><em class="wrapper l_25"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
+            
+            <em class="wrapper l_25"><input type="text" placeholder="Дата зачисления" class="big" />
+            </em><em class="wrapper l_25">
                 <select>            
-                  <option>Выберете степень родства</option>
+                  <option>Возрастная группа</option>
                 </select>                  
-              </em>
-              <h4>Контактные данные владельца жилого помещения</h4>            
-                <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" /></em>
-              <h4>Паспортные данные владельца жилого помещения</h4> 
-              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" class="big" />            
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" /></em>                                                        
-            </div>                                                      
-          </fieldset> 
-                                                 
-          <fieldset class="group_10">                      
-            <span class="point_num">10</span>
-            <h3>Тип жилищного фонда</h3>          
-            <em class="wrapper l_100"><input type="radio" name="g_6" id="f_23"/><label for="f_23">Жильё муниципального фонда</label></em>              
-            <em class="wrapper l_100"><input type="radio" name="g_6" id="f_24"/><label for="f_24">Жильё государственного фонда</label></em>
-            <div class="fields_cover">              
-              <em class="wrapper l_100"><input type="text" placeholder="Организация" class="big" /></em>                            
-            </div>
-            <em class="wrapper l_100"><input type="radio" name="g_6" id="f_25" checked="checked"/><label for="f_25">Жильё частной формы собственности</label></em>                                                       
-          </fieldset>
-          
-          <fieldset class="group_11">                      
-            <span class="point_num">11</span>
-            <h3>Распоряжение помещением на основании</h3>                               
-            <em class="wrapper l_100"><input type="radio" name="g_7" id="f_26" checked="checked"/><label for="f_26">Свидетельства собственности</label></em>
-            <div class="fields_cover">
-              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />          
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Кем выдано" class="big" /></em>                                                        
-            </div>             
-            <em class="wrapper l_100"><input type="radio" name="g_7" id="f_27"/><label for="f_27">Договора социального найма</label></em>
-            <div class="fields_cover">
-              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />          
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
-              
-              <em class="wrapper l_100"><input type="text" placeholder="Кем выдано" class="big" /></em>                                                        
-            </div>             
-            <em class="wrapper l_100"><input type="radio" name="g_7" id="f_28"/><label for="f_28">По решению суда</label></em>
-            <div class="fields_cover">                           
-              <em class="wrapper l_50"><input type="text" placeholder="Номер документа" class="big" />
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em> 
-            </div>
-                        
-            <em class="wrapper l_100"><input type="radio" name="g_7" id="f_29"/><label for="f_29">Иное</label></em>
-            <div class="fields_cover">                           
-              <em class="wrapper l_100"><input type="text" placeholder="Пояснение" class="big" /></em> 
-            </div>                             
-          </fieldset> 
+              </em> 
 
-          <fieldset class="group_12">                      
-            <span class="point_num">12</span>
-            <h3>Есть или было ли у вас гражданство другого государства?</h3>                      
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="g_8" id="f_30"/><label for="f_30">Нет, я никогда не имел гражданство другого государства</label></em>            
-            <em class="wrapper l_100"><input type="radio" name="g_8" id="f_31"/><label for="f_31">Да, у меня имеется по настоящее время гражданство другого государства</label></em>
-            <div class="fields_cover">
-              <h4>Укажите страну, и дату получения другого гражданства</h4>              
-              <em class="wrapper l_66">
-                <select class="select_choice">
-                  <option value="0" selected="selected" class="selected_one">Гражданство</option>                
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
-                </select>                  
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата вступления" class="big" /></em><br/>              
-              <em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>               
-              <h4>Укажите дату вступления в гражданство РФ</h4>              
-              <em class="wrapper l_25"><input type="text" placeholder="Дата вступления" class="big" /></em>                         
-            </div>            
-                                    
-            <em class="wrapper l_100"><input type="radio" name="g_8" id="f_32" /><label for="f_32">Да, ранее у меня имелось гражданство другого государства</label></em>
-            <div class="fields_cover">
-              <h4>Укажите страну, и дату получения другого гражданства</h4>              
-              <em class="wrapper l_75">
-                <select>
-                  <option>Гражданство</option>                
-                  <option>Белоруссия</option>
-                  <option>Украина</option>
-                </select>                  
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата" class="big" /></em><br/>              
-              <em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>              
-              <h4>Укажите дату вступления в гражданство РФ</h4>              
-              <em class="wrapper l_25"><input type="text" placeholder="Дата вступления" class="big" /></em>                           
-            </div>
-                        
-            <em class="wrapper l_100"><input type="radio" name="g_8" id="f_33" /><label for="f_33">Я являюсь лицом без гражданства</label></em>                                          
-          </fieldset> 
+            <em class="wrapper l_100">
+              <select>            
+                <option>Потребность по здоровью</option>
+              </select>                  
+            </em>                                             
+          </fieldset>                     
+        
 
-          <fieldset class="group_13">                      
-            <span class="point_num">13</span>
-            <h3>Дополнительные данные получателя услуги</h3>  
-            <em class="wrapper l_100">
-              <select>
-                <option>Основная причина переселения</option>                
-              </select>                  
-            </em>
-            <h4>Информация о работе</h4>
-            <em class="wrapper l_100">
-              <select>
-                <option>Сфера деятельности по последнему месту жительства</option>                
-              </select>                  
-            </em>
-            <em class="wrapper l_100">
-              <select>
-                <option>Вид занятости</option>                
-              </select>                  
-            </em>
-            <h4>Социальное обеспечение</h4>
-            <em class="wrapper l_100">
-              <select>
-                <option>Вид соцобеспечения по последнему месту жительства</option>                
-              </select>                  
-            </em>
-            <h4>Личная информация</h4>
-            <em class="wrapper l_50">
-              <select>
-                <option>Образование</option>                
-              </select>                  
-            </em><em class="wrapper l_50">
-              <select>
-                <option>Состояние в браке</option>                
-              </select>                  
-            </em><br/>
-            <em class="wrapper l_100">
-              <select>
-                <option>Если до переселения проживал с семьёй, то прибыл</option>                
-              </select>
-              <i class="not">необязательно</i>                  
-            </em>                         
-          </fieldset> 
-
-          <fieldset class="group_14">                      
-            <span class="point_num">14</span>
-            <h3>Часть семьи получателя услуги уже проживает по этому адресу?</h3>
-            <em class="wrapper l_100"><input type="radio" name="g_9" id="f_34" checked="checked"/><label for="f_34">Да</label></em> 
-            <em class="wrapper l_100"><input type="radio" name="g_9" id="f_35" /><label for="f_35">Нет</label></em>               
-          </fieldset> 
-
-          <fieldset class="group_15">                      
-            <span class="point_num">15</span>
-            <h3>Куда вы будете подавать оригиналы документов?</h3>                      
-            <em class="wrapper l_100"><input type="radio" checked="checked" name="g_10" id="f_36" /><label for="f_36">по месту жительства (как в паспорте), срок оказания услуги составит 10 дней</label></em>
-            <div class="fields_cover">
-              <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
-              </em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
-              </em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-              </em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>            
-            </div>            
-            
-            <em class="wrapper l_100"><input type="radio" name="g_10" id="f_37" /><label for="f_37">по месту пребывания, срок оказания услуги составит до 2-x месяцев</label></em>                        
-            <div class="fields_cover">
-              <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
-              </em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
-              </em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-              </em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>            
-            </div>
-            
-            <em class="wrapper l_100"><input type="radio" name="g_10" id="f_38" /><label for="f_38">по месту фактического проживания, срок оказания услуги составит 2 месяца</label></em> 
-            <div class="fields_cover">
-              <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
-              </em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
-              </em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-              </em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>            
-            </div>
-            
-            <h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
+          <fieldset class="group_9">                      
+            <span class="point_num">9</span>
+            <h3>Выберете желаемый и дополнительные детские сады</h3>                      
+            <em class="wrapper l_100"><input type="text" placeholder="Поиск по адресу" class="big" /></em> 
+            <em class="wrapper l_16">Сортировать по:
+            </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">удалённости</label>
+            </em><em class="wrapper l_33"><input type="radio" name="g_5" id="f_22"/><label for="f_22">количеству человек в очереди</label></em><br/>
             
             <div class="map_cover">
               <div class="map_block" id="map"></div>
               <div class="map_nav">
-                <h4 class="map_nav_h">Доступны подразделения:</h4>
+                <h4 class="map_nav_h">Выберите детские сады:</h4>
+                <p>Максимум 4: 1 предпочтительный и 3 дополнительных</p>
                 <ul class="map_list">
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+                    <p><a href="#"><span class="map_num">1</span><span class="map_txt">Детсикй сад №2293</span></a></p>
                     <p>Москва, Неглинная, 23</p>
+                    <p>В очереди 5 человек</p>
                   </li>
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-                    <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+                    <p><a href="#"><span class="map_num">2</span><span class="map_txt">Детсикй сад №2285</span></a></p>
+                    <p>Москва, Походный пр-д, 3, стр. 2</p>
+                    <p>В очереди 40 человек</p>
                   </li>
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+                    <p><a href="#"><span class="map_num">3</span><span class="map_txt">Детсикй сад №1732</span></a></p>
                     <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                    <p>В очереди 12 человек</p>
                   </li>
                 </ul>
               </div><!-- map_nav -->
@@ -410,9 +194,24 @@ include('include/head.php');
                                                  
           </fieldset> 
 
-
+          <fieldset class="group_10">                      
+            <span class="point_num">10</span>
+            <h3>Есть ли у вас льготы?</h3>
+            <em class="wrapper l_100"><input type="radio" name="g_9" id="f_34" /><label for="f_34">Да</label></em>
+            <div class="fields_cover">
+              <h4>Укажите какие</h4>
+              <em class="wrapper l_100"><input type="checkbox" id="f_41"/><label for="f_41">Дети из многодетной семьи</label></em>
+              <em class="wrapper l_100"><input type="checkbox" id="f_42"/><label for="f_42">Дети инвалиды и дети, один из родителей которых является инвалидом</label></em>
+              <em class="wrapper l_100"><input type="checkbox" id="f_43"/><label for="f_43">Дети, братья и сестры которых посещают данное образовательное учреждение</label></em>
+              <em class="wrapper l_100"><input type="checkbox" id="f_45"/><label for="f_45">Иные льготы</label></em>
+              <div class="fields_cover_inner">
+                <em class="wrapper l_100"><input type="text" placeholder="Название льготы" class="big" /></em>                
+              </div>                                                                   
+            </div>             
+            <em class="wrapper l_100"><input type="radio" name="g_9" id="f_35" checked="checked"/><label for="f_35">Нет</label></em>               
+          </fieldset> 
           
-          <fieldset class="group_16">                      
+          <fieldset class="group_11">                      
 
             <h3>Согласие на обработку персональных данных</h3>          
             
