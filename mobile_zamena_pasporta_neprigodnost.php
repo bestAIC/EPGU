@@ -50,7 +50,7 @@ include('include/mobile_head.php');
 					<div class="col_left load_photo_cols">
 						<div class="load_photo">
 							<div class="photo_brd">
-								<img src="pic/pic_8.jpg" alt="">
+								<img src="pic/pic_8.jpg" alt="" >
 								<div class="load_photo-sub">
 								  <div class="sub_wrap">
 								    <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
@@ -91,24 +91,13 @@ include('include/mobile_head.php');
 				</div><!-- load_photo-wrap -->
 				<div class="col_bottom load_photo_cols clear">
 					<div class="clear">
-						<div class="more_info">
-							<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
-						</div>
-					</div>
-					<div class="clear">
-						<span class="btn big download_photo" href="#"><b>Загрузить фотографию</b></span>
+						<span class="btn big download_photo fl" data-class="download_photo" href="#"><b>Загрузить фотографию</b></span>
 					</div>
 
 					<div class="clear">
-						<span class="btn white fl big change_photo" href="#"><b>Изменить фотографию</b></span>
+						<span class="btn white fl big change_photo" data-class="change_photo" href="#"><b>Изменить фотографию</b></span>
 					</div>
 
-					<div class="clear">
-						<span class="btn white larr fl big back_photo" href="#"><b>Вернуться назад</b></span>
-						<span class="btn fr big done_photo" href="#"><b>Фотография готова</b></span>
-					</div>
-
-					<!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
 					<div class="advice_upload">
 						<div class="advice type_ok">
 							<div class="advice_h">
@@ -123,6 +112,17 @@ include('include/mobile_head.php');
 							</div>
 						</div>
 					</div><!-- advice_upload -->
+
+					<div class="clear">
+						<span class="btn white larr fl big back_photo" data-class="back_photo" href="#"><b>Вернуться назад</b></span>
+						<span class="btn fr big done_photo" data-class="done_photo" href="#"><b>Фотография готова</b></span>
+					</div>
+
+					<div class="clear">
+						<div class="more_info">
+							<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</fieldset>
@@ -533,28 +533,28 @@ include('include/mobile_head.php');
 			        <h4 class="map_nav_h">Доступны подразделения:</h4>
 			        </div>
 			        <ul class="map_list">
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 			            <p>Москва, Неглинная, 23</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
 			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
 			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 			            <p>Москва, Неглинная, 23</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
 			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
 			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
 			          </li>
 			        </ul>

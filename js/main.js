@@ -92,49 +92,47 @@ function SForm() {
 
 }
 
-
 // Popup
 function PopUp() {
 
-  $(document).keyup(function(d) {
+  $(document).on('keyup', function(d) {
     if (d.keyCode == 27) {
       $('.popup').hide();
-      $(document).unbind('click.event');
+      $(document).off('click');
       $('#popup_fade').remove();
     }
   });
  
-  $('.popup_link').click(function(e) {
-  
+  $('.popup_link').on('click', function(e) {
+    
     var choise = "";
   
     choise = $(this).children().attr('class');
   
     var $message = $('#'+choise);
-    $('#wrap').prepend('<div id="popup_fade"></div>');
+    
     if ($message.css('display') != 'block') {
         $message.show();
         var firstClick = true;
-        $(document).bind('click.event', function(e) {
+        $(document).on('click', function(e) {
+          $('#wrap').prepend('<div id="popup_fade"></div>');
             if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
                 $message.hide();
-                $(document).unbind('click.event');
+                $(document).off('click');
                 $('#popup_fade').remove();
             }
             $('.close_popup_x').click(function(){
               $('#'+choise).hide();
-              $(document).unbind('click.event');
+              $(document).off('click');
               $('#popup_fade').remove();
             });
             
             $('.popup .back').click(function(e){
               e.preventDefault();
               $('#'+choise).hide();
-              $(document).unbind('click.event');
+              $(document).off('click');
               $('#popup_fade').remove();
-            });            
-            
-            
+            });             
         });
     }
     e.preventDefault();
@@ -341,20 +339,26 @@ function MapControls(){
   var $cont = $('.map_nav'),
       $lnk = $('.map_list_item', $cont),
       $block = $('.map_ballon_block'),
-      $close = $('.map_ballon_close', $block);
+      $close = $('.map_ballon_close', $block),
+      bodyPhone = parseInt($('body').width());
 
 
-      $lnk.each(function(i,e){
-        $(this).on('click', function(e){
-          $lnk.parent().toggleClass('active');
-          e.preventDefault();
-          $block.fadeIn();
-          $close.on('click', function(){
-            e.preventDefault();
-            $block.fadeOut();
-          })
+    // $(window).on('load resize', function(){
+    //   if(bodyPhone > 640){
+        // console.log('Больше: ' + bodyPhone);
+        $lnk.each(function(i,e){
+            $(this).on('click', function(e){
+                e.preventDefault();
+                $lnk.parent().toggleClass('active');
+                $block.fadeIn();
+                $close.on('click', function(){
+                  e.preventDefault();
+                  $block.fadeOut();
+                })
+            });
         });
-      });
+    //   }
+    // });
 }
 
 function FieldSlide(){
