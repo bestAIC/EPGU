@@ -94,7 +94,47 @@ function SForm() {
       $(this).addClass('lock');             
     });                                     
 
-    $('.jq-radio.checked').click(); 
+    $('.jq-radio.checked').click();
+
+    /*выбор детского садика*/
+    $('.map_list .jq-checkbox').on('click', function(){
+
+      if($('.map_list .jq-checkbox.checked').length){
+        $('.select_item_cover').slideDown();
+      } else {
+        $('.select_item_cover').slideUp();
+      }
+
+      if($('.map_list .jq-checkbox.checked').length==4){
+        $('.map_list .jq-checkbox:not(.checked)').addClass('disabled'); 
+      } else {
+        $('.map_list .jq-checkbox').removeClass('disabled'); 
+      }
+
+      var root = $(this).parent();
+      var currentIndex = root.parent().index();
+      var item = root.parent().find('.map_txt').text();
+      if (!$(this).hasClass('checked')){
+        $('#cfp_'+ currentIndex).remove();
+        if(!$('.select_item_list em .jq-radio.checked').length){
+
+          $('.select_item_list em:first label').click();
+        }        
+      } else {
+        $(".select_item_list").append('<em id="cfp_'+ currentIndex +'" class="wrapper l_100"><input type="radio" name="g_11" id="fp_'+ currentIndex +'"/><label for="fp_'+ currentIndex +'"><span class="pseudo">'+ item +'</span></label></em>');
+        $('input').styler();
+        if(!$('.select_item_list em .jq-radio.checked').length){
+
+          $('.select_item_list em:first label').click();
+        }
+
+      }  
+    });
+
+    $(document).on('click','.select_item_list label',function(e){
+       $('.map_ballon_block').show();
+    });  
+
 
     $(function() {
         if (window.PIE) {

@@ -979,7 +979,9 @@ H4 {
     display: none;
 }
 
-
+SPAN.subtitle {
+  font-size:12px;
+}
 
 
 /* map_cover */
@@ -1017,6 +1019,7 @@ H4 {
   border-top: 1px solid #dbe2e6;
   padding: 20px 58px;
   position: relative;
+  overflow: hidden;
 }
 .map_list_item:hover{
   background-color: #E2F6FF;
@@ -1049,6 +1052,21 @@ H4 {
   border-color: #EB4960;
 }
 
+.map_list_item .left{
+  display:table-cell;
+  width:95%;
+}
+
+.map_list_item .right{
+  display:table-cell;
+  width:5%;
+  vertical-align: middle;
+}
+
+.select_item_cover {
+  display: none;
+  padding:10px 0 0 0;
+}
 
 .map_ballon_block{
   position: absolute;

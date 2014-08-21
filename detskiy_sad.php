@@ -150,24 +150,59 @@ include('include/head.php');
             <div class="map_cover">
               <div class="map_block" id="map"></div>
               <div class="map_nav">
-                <h4 class="map_nav_h">Выберите детские сады:</h4>
-                <p>Максимум 4: 1 предпочтительный и 3 дополнительных</p>
+                <h4 class="map_nav_h">Выберите детские сады:<br/><span class="subtitle">Максимум 4: 1 предпочтительный и 3 дополнительных</span></h4>
+
                 <ul class="map_list">
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">1</span><span class="map_txt">Детсикй сад №2293</span></a></p>
-                    <p>Москва, Неглинная, 23</p>
-                    <p>В очереди 5 человек</p>
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">1</span><span class="map_txt">Детский сад №2293</span></a></p>
+                      <p>Москва, Неглинная, 23</p>
+                      <p>В очереди 5 человек</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>  
                   </li>
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">2</span><span class="map_txt">Детсикй сад №2285</span></a></p>
-                    <p>Москва, Походный пр-д, 3, стр. 2</p>
-                    <p>В очереди 40 человек</p>
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">2</span><span class="map_txt">Детский сад №2285</span></a></p>
+                      <p>Москва, Походный пр-д, 3, стр. 2</p>
+                      <p>В очереди 40 человек</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
                   </li>
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">3</span><span class="map_txt">Детсикй сад №1732</span></a></p>
-                    <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
-                    <p>В очереди 12 человек</p>
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">3</span><span class="map_txt">Детский сад №1732</span></a></p>
+                      <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                      <p>В очереди 12 человек</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
                   </li>
+                  <li class="map_list_item">
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">4</span><span class="map_txt">Детский сад №1952</span></a></p>
+                      <p>Москва, Широкий 2-й пр-д, 8, стр. 1</p>
+                      <p>В очереди 20 человек</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
+                  </li>
+                  <li class="map_list_item">
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">5</span><span class="map_txt">Детский сад №1977</span></a></p>
+                      <p>Москва, Нагорный 2-й пр-д, 8, стр. 1</p>
+                      <p>В очереди 3 человека</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
+                  </li>                                    
                 </ul>
               </div><!-- map_nav -->
 
@@ -175,8 +210,7 @@ include('include/head.php');
                 <div class="map_ballon_wrap">
                   <a class="map_ballon_close"><span class="icomoon">L</span></a>
                   <div class="map_ballon_h">
-                    <p><strong>МИФНС России №46 по г. Москве</strong></p>
-                    <p>В составе ИФНС России № 1 по г. Москве</p>
+                    <p><strong>Детский сад №2285</strong></p>
                   </div>
                   <ul class="map_ballon_list">
                     <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
@@ -191,7 +225,15 @@ include('include/head.php');
                 </div>
               </div><!-- map_ballon_block -->
             </div><!-- map_cover -->
-                                                 
+            
+            <div class="select_item_cover">  
+            <h4>Какой из выбранных детских садов сделать предпочтительным?</h4>
+            <div class="select_item_list">
+              
+            </div>
+
+            <em class="wrapper l_100"><input type="checkbox" id="f_35"/><label for="f_35">Если в выбранных мною детских садах не будет мест, прошу предложить мне доступный для записи садик</label></em>
+            </div>                                     
           </fieldset> 
 
           <fieldset class="group_10">                      
