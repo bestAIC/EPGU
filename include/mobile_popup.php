@@ -63,7 +63,7 @@
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div> 
 
-<? } else if($pagename == 'mobile_zamena_pasporta_neprigodnost') {?>
+<? } else if($pagename == 'mobile_zamena_pasporta_neprigodnost' || $pagename == 'mobile_zagran_pasport_nov_18_plus') {?>
 
     <div id="popup_technical" class="popup popup_technical">
       <b class="close_popup_x"></b>
@@ -90,11 +90,21 @@
       </div>
     </div> 
 
-    <div id="popup_map" class="popup">
+    <div id="popup_map_adress" class="popup popup_map_adress">
       <b class="close_popup_x"></b>
-        <h2>Место нарушения</h2>
-        <p>172 КМ 95 М А/Д Москва-Минск</p>
-        <img src="img/map.jpg" />
+        <h2>МИФНС России №46 по г. Москве</h2>
+        <p>В составе ИФНС России № 1 по г. Москве</p>
+        <ul class="map_ballon_list">
+          <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+          <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+          <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+          <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+          <li class="map_ballon_item">Как добраться:</li>
+          <li class="map_ballon_item">Ближайшее метро&nbsp;-&nbsp;Волоколамская,</li>
+          <li class="map_ballon_item">Мякинино, Тушинская</li>
+          <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+        </ul>
+        <img src="img/map_3.jpg" width="615" height="627" />
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div>
      
@@ -114,4 +124,4 @@
       <img src="img/map.jpg" />
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div>
-<? } ?>   
+<? } ?>

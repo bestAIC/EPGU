@@ -52,6 +52,7 @@
 				<br/>
 				
 				<em class="wrapper l_100">
+					<label for="">Страна рождения</label>
 					<select class="select_choice">
 						<option value="0" selected="selected" class="selected_one">Страна рождения</option>
 						<option value="1">Белоруссия</option>
@@ -67,7 +68,7 @@
 					</select>
 				</em>
 
-				<em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
+				<em class="wrapper l_100"><label for="">Место рождения</label><input type="text" placeholder="Место рождения" class="big" /></em>
 
 				<div class="info-block_wrap">
 					<div class="info_block type_2">
@@ -192,7 +193,8 @@
 					<em class="wrapper l_25"><label for="f_2_3">Дата изменения</label><input id="f_2_3" type="text" placeholder="Дата изменения" class="big" /></em>
 
 					<em class="wrapper l_100">
-						<select class="select_choice">
+						<label for="">Адрес изменения</label>
+						<select id="" class="select_choice">
 							<option value="0" selected="selected" class="selected_one">Адрес изменения</option>
 							<option value="1">Белоруссия</option>
 							<option value="2">Белоруссия</option>
@@ -226,6 +228,7 @@
 			<div class="fields_cover">
 				<div class="limiter">
 					<em class="wrapper l_100">
+						<label for="">Выберите страну</label>
 						<select class="select_choice">
 							<option value="0" selected="selected" class="selected_one">Выберите страну</option>
 							<option value="1">Белоруссия</option>
@@ -318,6 +321,7 @@
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
+					<label for="">Выберите страну</label>
 					<em class="wrapper l_100">
 						<select class="select_choice">
 							<option value="0" selected="selected" class="selected_one">Выберите страну</option>
@@ -384,21 +388,25 @@
 						</div>
 										
 						<em class="wrapper l_50">
-							<select class="select_choice">
+							<label for="f_31">С какого месяца</label>
+							<select class="select_choice" id="f_31">
 								<option value="0" selected="selected" class="selected_one">С какого месяца</option>
-								<option value="1">Белоруссия</option>
-								<option value="2">Белоруссия</option>
-								<option value="3">Украина</option>
-								<option value="4">Белоруссия</option>
-								<option value="5">Белоруссия</option>
-								<option value="6">Украина</option>
-								<option value="7">Украина</option>
-								<option value="8">Белоруссия</option>
-								<option value="9">Украина</option>
-								<option value="10">Украина</option>
+								<option value="Январь">Январь</option> 
+								<option value="Февраль">Февраль</option> 
+								<option value="Март">Март</option> 
+								<option value="Апрель">Апрель</option> 
+								<option value="Май">Май</option> 
+								<option value="Июнь">Июнь</option> 
+								<option value="Июль">Июль</option> 
+								<option value="Август">Август</option> 
+								<option value="Сентябрь">Сентябрь</option> 
+								<option value="Октябрь">Октябрь</option> 
+								<option value="Ноябрь">Ноябрь</option> 
+								<option value="Декабрь">Декабрь</option>
 							</select>
 						</em><em class="wrapper l_33">
-							<select class="select_choice">
+							<label for="f_32">Года</label>
+							<select class="select_choice" id="f_32">
 								<option value="0" selected="selected" class="selected_one">Года</option>
 								<option value="1">2014</option>
 								<option value="2">2013</option>
@@ -412,21 +420,25 @@
 								<option value="10">2005</option>
 							</select>
 						</em><em class="wrapper l_50">
-							<select class="select_choice">
+							<label for="f_33">По какой месяц</label>
+							<select class="select_choice" id="f_33">
 								<option value="0" selected="selected" class="selected_one">По какой месяц</option>
-								<option value="1">Белоруссия</option>
-								<option value="2">Белоруссия</option>
-								<option value="3">Украина</option>
-								<option value="4">Белоруссия</option>
-								<option value="5">Белоруссия</option>
-								<option value="6">Украина</option>
-								<option value="7">Украина</option>
-								<option value="8">Белоруссия</option>
-								<option value="9">Украина</option>
-								<option value="10">Украина</option>
+								<option value="Январь">Январь</option> 
+								<option value="Февраль">Февраль</option> 
+								<option value="Март">Март</option> 
+								<option value="Апрель">Апрель</option> 
+								<option value="Май">Май</option> 
+								<option value="Июнь">Июнь</option> 
+								<option value="Июль">Июль</option> 
+								<option value="Август">Август</option> 
+								<option value="Сентябрь">Сентябрь</option> 
+								<option value="Октябрь">Октябрь</option> 
+								<option value="Ноябрь">Ноябрь</option> 
+								<option value="Декабрь">Декабрь</option>
 							</select>
 						</em><em class="wrapper l_33">
-							<select class="select_choice">
+							<label for="f_34">Год</label>
+							<select class="select_choice" id="f_34">
 								<option value="0" selected="selected" class="selected_one">Год</option>
 								<option value="1">2014</option>
 								<option value="2">2013</option>
@@ -443,12 +455,12 @@
 										
 						<em class="wrapper l_100 chk_50"><input type="checkbox" id="f_35"/><label class="flag_label" for="f_35">По настоящее время</label></em>
 										
-						<em class="wrapper l_100"><input type="text" placeholder="Ваша должность" class="big"/>
+						<em class="wrapper l_100"><label for="f_36">Ваша должность</label><input id="f_36" type="text" placeholder="Ваша должность" class="big"/>
 						</em>
-						<em class="wrapper l_100"><input type="text" placeholder="Место работы" class="big" />
+						<em class="wrapper l_100"><label for="f_37">Место работы</label><input id="f_37" type="text" placeholder="Место работы" class="big" />
 						</em>
 										
-						<em class="wrapper l_100"><input type="text" placeholder="Укажите адрес" class="big"/>
+						<em class="wrapper l_100"><label for="f_38">Укажите адрес</label><input id="f_38" type="text" placeholder="Укажите адрес" class="big"/>
 						</em>
 					</div>
 					<div class="limiter">
@@ -484,8 +496,8 @@
 			
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_75"><input type="text" placeholder="По какой линии организации" class="big"/>
-					</em><em class="wrapper l_25"><input type="text" placeholder="Год" class="big" />
+					<em class="wrapper l_75"><label for="">По какой линии организации</label><input type="text" placeholder="По какой линии организации" class="big"/>
+					</em><em class="wrapper l_25"><label for="">Год</label><input type="text" placeholder="Год" class="big" />
 					</em>
 				</div>
 			</div>
@@ -508,8 +520,8 @@
 			
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_75"><input type="text" placeholder="По какой линии организации" class="big"/>
-					</em><em class="wrapper l_25"><input type="text" placeholder="Год" class="big" />
+					<em class="wrapper l_75"><label for="">По какой линии организации</label><input type="text" placeholder="По какой линии организации" class="big"/>
+					</em><em class="wrapper l_25"><label for="">Год</label><input type="text" placeholder="Год" class="big" />
 					</em>
 				</div>
 			</div>
@@ -620,7 +632,9 @@
 				
 			</div>
 			<div class="limiter">
-				<h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
+				<div class="map-h_wrap">
+					<h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
+				</div>
 			</div>
 			
 			<div class="map_cover">
@@ -631,28 +645,28 @@
 			        <h4 class="map_nav_h">Доступны подразделения:</h4>
 			        </div>
 			        <ul class="map_list">
-			          <li class="map_list_item">
-			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			          <li class="map_list_item popup_link">
+			            <p class="popup_map_adress"><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 			            <p>Москва, Неглинная, 23</p>
 			          </li>
-			          <li class="map_list_item">
-			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			          <li class="map_list_item popup_link">
+			            <p class="popup_map_adress"><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
 			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
 			          </li>
-			          <li class="map_list_item">
-			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			          <li class="map_list_item popup_link">
+			            <p class="popup_map_adress"><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
 			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
 			          </li>
-			          <li class="map_list_item">
-			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			          <li class="map_list_item popup_link">
+			            <p class="popup_map_adress"><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 			            <p>Москва, Неглинная, 23</p>
 			          </li>
-			          <li class="map_list_item">
-			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			          <li class="map_list_item popup_link">
+			            <p class="popup_map_adress"><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
 			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
 			          </li>
-			          <li class="map_list_item">
-			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			          <li class="map_list_item popup_link">
+			            <p class="popup_map_adress"><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
 			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
 			          </li>
 			        </ul>
@@ -682,19 +696,21 @@
 
 		 <fieldset class="group_16">           
 		  <div class="limiter">    
-		    <h3>Согласие на обработку персональных данных</h3>     
+		    <h3 class="ml0">Согласие на обработку персональных данных</h3>     
 		    
-		    <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label class="flag_label">Согласен на обработку персональных данных</label></em>
+		    <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_40" /><label for="f_40" class="flag_label">Согласен на обработку персональных данных</label></em>
 		    
-		    <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
+		    <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_41" /><label for="f_41" class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
 		     либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>      
 		  </div>                   
 		 </fieldset>                                                
 		
-		<div class="limiter">
-		 <span class="fr">
-		   <input class="big btn" type="submit" value="Отправить">
-		 </span>
+		<div class="last-btn_cover">
+		 <div class="last-btn_cont clear">
+		 	<span class="fr">
+		 	  <input class="big btn" type="submit" value="Отправить">
+		 	</span>
+		 </div>
 		</div>  
 	</form>
 </div>

@@ -50,7 +50,7 @@ include('include/mobile_head.php');
 					<div class="col_left load_photo_cols">
 						<div class="load_photo">
 							<div class="photo_brd">
-								<img src="pic/pic_8.jpg" alt="">
+								<img src="pic/pic_8.jpg" alt="" >
 								<div class="load_photo-sub">
 								  <div class="sub_wrap">
 								    <div class="sub_line sub_line_1"><span class="sub_txt">Голова не должна быть выше этой линии</span></div>
@@ -91,24 +91,13 @@ include('include/mobile_head.php');
 				</div><!-- load_photo-wrap -->
 				<div class="col_bottom load_photo_cols clear">
 					<div class="clear">
-						<div class="more_info">
-							<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
-						</div>
-					</div>
-					<div class="clear">
-						<span class="btn big download_photo" href="#"><b>Загрузить фотографию</b></span>
+						<span class="btn big download_photo fl" data-class="download_photo" href="#"><b>Загрузить фотографию</b></span>
 					</div>
 
 					<div class="clear">
-						<span class="btn white fl big change_photo" href="#"><b>Изменить фотографию</b></span>
+						<span class="btn white fl big change_photo" data-class="change_photo" href="#"><b>Изменить фотографию</b></span>
 					</div>
 
-					<div class="clear">
-						<span class="btn white larr fl big back_photo" href="#"><b>Вернуться назад</b></span>
-						<span class="btn fr big done_photo" href="#"><b>Фотография готова</b></span>
-					</div>
-
-					<!-- При ошибке к классу .advice_upload необходимо добавить класс .error; При успешной загрузке, класс .upload -->
 					<div class="advice_upload">
 						<div class="advice type_ok">
 							<div class="advice_h">
@@ -123,6 +112,17 @@ include('include/mobile_head.php');
 							</div>
 						</div>
 					</div><!-- advice_upload -->
+
+					<div class="clear">
+						<span class="btn white larr fl big back_photo" data-class="back_photo" href="#"><b>Вернуться назад</b></span>
+						<span class="btn fr big done_photo" data-class="done_photo" href="#"><b>Фотография готова</b></span>
+					</div>
+
+					<div class="clear">
+						<div class="more_info">
+							<span class="pseudo popup_link"><em class="popup_technical">Все требования</em></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</fieldset>
@@ -460,295 +460,146 @@ include('include/mobile_head.php');
 			</div>
 		</fieldset>
 
-		<fieldset class="group_9">
+		<fieldset class="group_15">
 			<div class="limiter">
-				<span class="point_num">9</span>
+				<span class="point_num">15</span>
 				<h3>Куда вы будете подавать оригиналы документов?</h3>
 			</div>
 			
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="pl_1" /><label class="flag_label" for="pl_1">По месту жительства, как в паспорте (срок оказания услуги составит 10 дней)</label></em>
+				<em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="p_21" /><label class="flag_label" for="p_21">По месту постоянной регистрации, как в паспорте (срок оказания услуги – 2 месяца)</label></em>
 			</div>
-
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100">
-						<label for="#">Регион</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Регион">Регион</option>
-							<option value="2">Россия</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="8">Белорусия</option>
-							<option value="9">Белорусия</option>
-							<option value="10">Россия</option>
-							<option value="11">Белорусия</option>
-						</select>
-					</em>
-
-					<em class="wrapper l_100">
-						<label for="#">Район</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Район">Район</option>
-							<option value="2">Собинский район</option>
-							<option value="3">Собинский район</option>
-							<option value="4">Собинский район</option>
-							<option value="5">Собинский район</option>
-							<option value="6">Собинский район</option>
-							<option value="7">Собинский район</option>
-							<option value="6">Собинский район</option>
-							<option value="8">Собинский район</option>
-							<option value="9">Собинский район</option>
-							<option value="10">Собинский район</option>
-							<option value="11">Собинский район</option>
-						</select>
-					</em>
-
-					<em class="wrapper l_100">
-						<label for="#">Населенный пункт</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Населенный пункт">Населенный пункт</option>
-							<option value="2">Ставрово</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="8">Белорусия</option>
-							<option value="9">Белорусия</option>
-							<option value="10">Россия</option>
-							<option value="11">Белорусия</option>
-						</select>
-					</em>
+					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
 					
-					<em class="wrapper l_50"><label for="#">Улица</label><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><label for="#">Дом</label><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><label for="#">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><label for="#">Квартира</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
+					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
+				
 			</div>
 			
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" name="place" id="pl_2" /><label class="flag_label" for="pl_2">По месту пребывания (срок оказания услуги составит до 2-x месяцев)</label></em>
+				<em class="wrapper l_100"><input type="radio" name="place" id="p_22" /><label class="flag_label" for="p_22">По месту временного нахождения (срок оказания услуги – 4 месяца) </label></em>
 			</div>
-
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100">
-						<label for="#">Регион</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Регион">Регион</option>
-							<option value="2">Россия</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="8">Белорусия</option>
-							<option value="9">Белорусия</option>
-							<option value="10">Россия</option>
-							<option value="11">Белорусия</option>
-						</select>
-					</em>
-
-					<em class="wrapper l_100">
-						<label for="#">Район</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Район">Район</option>
-							<option value="2">Собинский район</option>
-							<option value="3">Собинский район</option>
-							<option value="4">Собинский район</option>
-							<option value="5">Собинский район</option>
-							<option value="6">Собинский район</option>
-							<option value="7">Собинский район</option>
-							<option value="6">Собинский район</option>
-							<option value="8">Собинский район</option>
-							<option value="9">Собинский район</option>
-							<option value="10">Собинский район</option>
-							<option value="11">Собинский район</option>
-						</select>
-					</em>
-
-					<em class="wrapper l_100">
-						<label for="#">Населенный пункт</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Населенный пункт">Населенный пункт</option>
-							<option value="2">Ставрово</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="8">Белорусия</option>
-							<option value="9">Белорусия</option>
-							<option value="10">Россия</option>
-							<option value="11">Белорусия</option>
-						</select>
-					</em>
+					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
 					
-					<em class="wrapper l_50"><label for="#">Улица</label><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><label for="#">Дом</label><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><label for="#">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><label for="#">Квартира</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
+					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
+				
 			</div>
 			
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" name="place" id="pl_3" /><label class="flag_label" for="pl_3">По месту фактического проживания (срок оказания услуги составит 2 месяца)</label></em>
+				<em class="wrapper l_100"><input type="radio" name="place" id="p_23" /><label class="flag_label" for="p_23">По месту временной регистрации (срок оказания услуги – 4 месяца)</label></em>
 			</div>
-
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100">
-						<label for="#">Регион</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Регион">Регион</option>
-							<option value="2">Россия</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="8">Белорусия</option>
-							<option value="9">Белорусия</option>
-							<option value="10">Россия</option>
-							<option value="11">Белорусия</option>
-						</select>
-					</em>
-
-					<em class="wrapper l_100">
-						<label for="#">Район</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Район">Район</option>
-							<option value="2">Собинский район</option>
-							<option value="3">Собинский район</option>
-							<option value="4">Собинский район</option>
-							<option value="5">Собинский район</option>
-							<option value="6">Собинский район</option>
-							<option value="7">Собинский район</option>
-							<option value="6">Собинский район</option>
-							<option value="8">Собинский район</option>
-							<option value="9">Собинский район</option>
-							<option value="10">Собинский район</option>
-							<option value="11">Собинский район</option>
-						</select>
-					</em>
-
-					<em class="wrapper l_100">
-						<label for="#">Населенный пункт</label>
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Населенный пункт">Населенный пункт</option>
-							<option value="2">Ставрово</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="8">Белорусия</option>
-							<option value="9">Белорусия</option>
-							<option value="10">Россия</option>
-							<option value="11">Белорусия</option>
-						</select>
-					</em>
+					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
 					
-					<em class="wrapper l_50"><label for="#">Улица</label><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><label for="#">Дом</label><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><label for="#">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><label for="#">Квартира</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
+					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					
+					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+				</div>
+				
+			</div>
+			<div class="limiter">
+				<div class="map-h_wrap">
+					<h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
 				</div>
 			</div>
-
-			<div class="limiter">
-				<h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
-			</div>
-
-				<div class="map_cover">
-				  <div class="map_block" id="map"></div>
-				    <div class="address_list">               
-				      <div class="map_nav">
-				        <div class="limiter">
-				        <h4 class="map_nav_h">Доступны подразделения:</h4>
-				        </div>
-				        <ul class="map_list">
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-				            <p>Москва, Неглинная, 23</p> 
-				            <span class="pseudo popup_link"><em class="popup_map">Подробнее</em></span>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
-				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-				            <p>Москва, Неглинная, 23</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
-				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-				            <p>Москва, Неглинная, 23</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
-				          </li>
-				          <li class="map_list_item">
-				            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
-				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
-				          </li>
-				        </ul>
-				      </div><!-- map_nav -->
-				      <div class="map_ballon_block">
-				        <div class="map_ballon_wrap">
-				          <a class="map_ballon_close"><span class="icomoon">L</span></a>
-				          <div class="map_ballon_h">
-				            <p><strong>МИФНС России №46 по г. Москве</strong></p>
-				            <p>В составе ИФНС России № 1 по г. Москве</p>
-				          </div>
-				          <ul class="map_ballon_list">
-				            <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
-				            <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
-				            <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
-				            <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
-				            <li class="map_ballon_item">Как добраться:</li>
-				            <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
-				            <li class="map_ballon_item">Мякинино, Тушинская</li>
-				            <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
-				          </ul>
-				        </div>
-				      </div><!-- map_ballon_block --> 
-				    </div>                 
-				</div><!-- map_cover -->
+			
+			<div class="map_cover">
+			  <div class="map_block" id="map"></div>
+			    <div class="address_list">               
+			      <div class="map_nav">
+			        <div class="limiter">
+			        <h4 class="map_nav_h">Доступны подразделения:</h4>
+			        </div>
+			        <ul class="map_list">
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			            <p>Москва, Неглинная, 23</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			            <p>Москва, Неглинная, 23</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			          </li>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			          </li>
+			        </ul>
+			      </div><!-- map_nav -->
+			      <div class="map_ballon_block">
+			        <div class="map_ballon_wrap">
+			          <a class="map_ballon_close"><span class="icomoon">L</span></a>
+			          <div class="map_ballon_h">
+			            <p><strong>МИФНС России №46 по г. Москве</strong></p>
+			            <p>В составе ИФНС России № 1 по г. Москве</p>
+			          </div>
+			          <ul class="map_ballon_list">
+			            <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+			            <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+			            <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+			            <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+			            <li class="map_ballon_item">Как добраться:</li>
+			            <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
+			            <li class="map_ballon_item">Мякинино, Тушинская</li>
+			            <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+			          </ul>
+			        </div>
+			      </div><!-- map_ballon_block --> 
+			    </div>                 
+			</div><!-- map_cover -->
 		</fieldset>
 
-		<fieldset class="group_16">
-		    <div class="limiter">
-		        <h3>Согласие на обработку персональных данных</h3>
-		        <em class="wrapper l_100"><input id="f_22" type="checkbox" checked="checked" /><label for="f_22" class="flag_label">Согласен на обработку персональных данных</label></em>
-		        <em class="wrapper l_100"><input id="f_23" type="checkbox" checked="checked" /><label for="f_23" class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
-		        либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>
-		    </div>
-		</fieldset>
+		 <fieldset class="group_16">           
+		  <div class="limiter">    
+		    <h3 class="ml0">Согласие на обработку персональных данных</h3>     
+		    
+		    <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_40" /><label for="f_40" class="flag_label">Согласен на обработку персональных данных</label></em>
+		    
+		    <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_41" /><label for="f_41" class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
+		     либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>      
+		  </div>                   
+		 </fieldset>                                                
+		
+		<div class="last-btn_cover">
+		 <div class="last-btn_cont clear">
+		 	<span class="fr">
+		 	  <input class="big btn" type="submit" value="Отправить">
+		 	</span>
+		 </div>
+		</div> 
 	</form>
 	</div><!-- content -->
 <?

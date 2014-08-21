@@ -16,7 +16,10 @@ function SForm() {
 
   $(function() {
     /*стилизация элементов*/
-    $('input, select').styler();
+    $('input, select').styler({
+      selectSearchLimit: 13,
+      selectSmartPositioning: false
+    });
     
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
@@ -106,48 +109,47 @@ function SForm() {
 
 }
 
-
 // Popup
 function PopUp() {
 
-  $(document).keyup(function(d) {
+  $(document).on('keyup', function(d) {
     if (d.keyCode == 27) {
       $('.popup').hide();
-      $(document).unbind('click.event');
+      $(document).off('click');
       $('#popup_fade').remove();
     }
   });
  
-  $('.popup_link').click(function(e) {
-  
+  $('.popup_link').on('click', function(e) {
+    
     var choise = "";
   
     choise = $(this).children().attr('class');
   
     var $message = $('#'+choise);
-    $('#wrap').prepend('<div id="popup_fade"></div>');
+    
     if ($message.css('display') != 'block') {
         $message.show();
         var firstClick = true;
-        $(document).bind('click.event', function(e) {
+        $(document).on('click', function(e) {
+          $('#wrap').prepend('<div id="popup_fade"></div>');
             if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
                 $message.hide();
-                $(document).unbind('click.event');
+                $(document).off('click');
                 $('#popup_fade').remove();
             }
             $('.close_popup_x').click(function(){
               $('#'+choise).hide();
-              $(document).unbind('click.event');
+              $(document).off('click');
               $('#popup_fade').remove();
             });
             
-            $('.popup .back').click(function(){
+            $('.popup .back').click(function(e){
+              e.preventDefault();
               $('#'+choise).hide();
-              $(document).unbind('click.event');
+              $(document).off('click');
               $('#popup_fade').remove();
-            });            
-            
-            firstClick = false;
+            });             
         });
     }
     e.preventDefault();
@@ -352,21 +354,27 @@ function MapShow(){
 function MapControls(){
   var $cont = $('.map_nav'),
       $lnk = $('.map_list_item', $cont),
-      $block = $('.map_ballon_block');
-      $close = $('.map_ballon_close', $block);
+      $block = $('.map_ballon_block'),
+      $close = $('.map_ballon_close', $block),
+      bodyPhone = parseInt($('body').width());
 
 
-      $lnk.each(function(i,e){
-        $(this).on('click', function(e){
-          $lnk.parent().toggleClass('active');
-          e.preventDefault();
-          $block.fadeIn();
-          $close.on('click', function(){
-            e.preventDefault();
-            $block.fadeOut();
-          })
+    // $(window).on('load resize', function(){
+    //   if(bodyPhone > 640){
+        // console.log('Больше: ' + bodyPhone);
+        $lnk.each(function(i,e){
+            $(this).on('click', function(e){
+                e.preventDefault();
+                $lnk.parent().toggleClass('active');
+                $block.fadeIn();
+                $close.on('click', function(){
+                  e.preventDefault();
+                  $block.fadeOut();
+                })
+            });
         });
-      });
+    //   }
+    // });
 }
 
 function FieldSlide(){
@@ -384,28 +392,67 @@ function FieldSlide(){
         }
     });
 
+    
 
-    $('.btn.plus', $('.btn_add-slide')).click(function(e){
+    $('.btn.plus', $('.btn_add-slide')).on('click', function(e){
         e.preventDefault();
-        var template = $cont;
-        var count = template.length + 1;
+        var count = $cont.length + 1;
         for(var i = count; i < count+1; i++){    
-            template.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
+            $cont.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
           }
 
-        $wrap.find('.filed_slide').each(function(){
-          var that = $(this),
-              $close = $('.close', that);
+            function getRandomArbitary(min, max) {
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
 
-          $close.on('click', function(e){
-            console.log(111);
-            e.preventDefault();
-            that.slideUp(400, function(){
-              that.remove();
-            });
-          });
+              var $inp = $('input, select', $cont);
+              function checkId(){
+                $inp.each(function(){
+                    var idRandom = $(this).attr('id', getRandomArbitary(1, 1000));
+                        return idRandom;
+                    var idNew = $(this).attr('id'),
+                        label = $(this).parents('.wrapper').find('label').attr('for', idNew);
+                        return label;
+
+
+                  if($(':radio, :checkbox')){
+                    var that = $(this),
+                        group = that.attr('name', function(i, val){
+                          return that.attr('name') + '_2';
+                        });
+
+                      that.parent().attr('id', function(i, val){
+                        return that.attr('id') + '-styler';
+                      });
+                  }
+                });
+              }
+
+              checkId();
+
+              $('input', '.filed_slide').on('click', function(){
+                $(this).styler();
+                console.log('id: ' + ($(this).attr('id')));
+              })
+
+              $('label', '.filed_slide').on('click', function(){
+                console.log('for: ' + ($(this).attr('for')));
+              })      
+
+              $wrap.find('.filed_slide').each(function(){
+                var that = $(this),
+                    $close = $('.close', that);
+
+                  $close.on('click', function(e){
+                    e.preventDefault();
+                    that.slideUp(400, function(){
+                      that.remove();
+                    });
+                });
     })
   });
 }
+
+
 
 

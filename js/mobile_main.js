@@ -5,9 +5,11 @@ $(document).ready(function() {
   ResponseGallery(); // Slick Galery 
   EasterEggs(); 
   LoadPhoto();
+  MMapShow();
 });
 
 lock = 0;
+
 
 // Popup
 function MPopUp() {
@@ -18,18 +20,16 @@ function MPopUp() {
       $('.limiter, .map_list').removeClass('go_more');
     } 
 
-    if($('#map:hidden').length){  
-      $('.map_list li').addClass('go_more');
-    } else { 
-      $('.limiter').removeClass('go_more');
-    } 
-
   }).resize(); 
+
+
   
 
   $('.limiter, .map_list.go_more').on('click', function(e) {
     if($(this).hasClass('go_more')){
       var $message = $('#popup_more_info');
+
+
           
       $('#wrap').prepend('<div id="popup_fade"></div>');
       if ($message.css('display') != 'block') {
@@ -46,8 +46,7 @@ function MPopUp() {
                 $('#popup_fade').remove();                                
                 $(document).unbind('click.event');
               });           
-              
-              firstClick = false;
+            
           });
       }
       e.preventDefault(); 
@@ -73,7 +72,6 @@ function MPopUp() {
                 $('#popup_fade').remove();                                
                 $(document).unbind('click.event');
               });           
-              
               firstClick = false;
           });
       }
@@ -146,21 +144,25 @@ function ResponseGallery(){
 
 // Easter Eggs
 
-function EasterEggs(){
+function EasterEggs() {
 
-$('#intro .ee').click(function() {
+  $('#intro .ee').click(function() {
     var $div = $(this);
     $div.toggleClass('go');
     if ($div.hasClass('go')) {
-        var img = document.createElement('img');
-        img.src = "img/mobile/epgu_animation.gif";
-        $(img).load(function(){
-            $div.css({backgroundImage: "url("+img.src+")"});
-        });    
+      var img = document.createElement('img');
+      img.src = "img/mobile/epgu_animation.gif";
+      $(img).load(function() {
+        $div.css({
+          backgroundImage: "url(" + img.src + ")"
+        });
+      });
     } else {
-       $div.css({backgroundImage: "none"});
+      $div.css({
+        backgroundImage: "none"
+      });
     }
-})
+  })
 }
 
 
@@ -168,6 +170,8 @@ $('#intro .ee').click(function() {
 function LoadPhoto(){
   var $cont = $('.load_photo-wrap'),
       $contBottom = $('.col_bottom.load_photo_cols'),
+      $contLeft = $('.col_left.load_photo_cols'),
+      $contRight = $('.col_right.load_photo_cols'),
       $back = $('.col_bottom .back', $contBottom),
       $btn = $('.btn', $contBottom);
 
@@ -177,55 +181,154 @@ function LoadPhoto(){
             $require = $('.require_wrap'),
             bodyPhone = parseInt($('body').width());
 
-            $require.width(contRightWidth);
 
-            $btn.on('click', function(){
-              if($(this).hasClass('download_photo')){
-                $('.download_photo, .change_photo').hide();
-                $('.done_photo, .back_photo').show();
-                $cont.addClass('uploader');
-              } else if($(this).hasClass('back_photo')){
-                $('.done_photo, .back_photo, .change_photo').hide();
-                $('.download_photo').show();
-                $cont.removeClass('uploader');
-              } else if($(this).hasClass('done_photo')){
-                $('.download_photo, .back_photo, .done_photo').hide();
-                $('.change_photo, .advice.type_ok').show();
-                $cont.find('.load_photo').addClass('upload');
-              } else if($(this).hasClass('change_photo')){
-                $('.download_photo, .change_photo, .advice.type_ok').hide();
-                $('.done_photo, .back_photo').show();
-                $cont.addClass('uploader');
-                $cont.find('.load_photo').removeClass('upload');
+            // $require.width(contRightWidth);
+
+            if(bodyPhone > 640){
+              if($('.download_photo:visible').length || $('.change_photo:visible').length){
+                $('.more_info', $contBottom).hide();
+                $('.more_info', $contRight).show();
+              } 
+              if($('.change_photo:visible').length){
+                $('.require', $contRight).append($('.require_wrap'));
+                $contBottom.append($('.change_photo').parent(), $('.advice.type_ok').parent());
               }
-            });
-          
-        if(lock == 0){
-          if(bodyPhone <= 640){
-            $btn.on('click', function(){
-              lock = 1;
-              if($(this).hasClass('download_photo')){
-                $cont.find('.require').slideUp();
-                $cont.find('.edit_wrap').slideDown();
-                $contBottom.find('.more_info').hide();
-              } else if($(this).hasClass('back_photo')){
-                $cont.find('.edit_wrap').slideUp();
-                $cont.find('.require').slideDown();
-                $contBottom.find('.more_info').show();
-              } else if($(this).hasClass('done_photo')){
-                $cont.find('.edit_wrap').slideUp();
-                $cont.find('.require').slideUp();
-                $contBottom.animate({'padding-top': '0'});
-              } else if($(this).hasClass('change_photo')){
-                $cont.find('.edit_wrap').slideDown();
-                $contBottom.animate({'padding-top': '72px'})
-              }
-            }) 
-          }
+            } else if (bodyPhone < 640 && !$cont.hasClass('uploader')){
+              if($('.download_photo:visible').length || $('.change_photo:visible').length){
+                $('.more_info', $contBottom).show();
+                $('.more_info', $contRight).hide();
+                $contBottom.css({'padding-top': '72px'});
+              } 
+              if($('.change_photo:visible').length){
+                $cont.append($('.require_wrap'));
+                $contLeft.append($('.change_photo').parent(), $('.advice.type_ok').parent()).addClass('load_photo-face');
+              } 
+            }
+
+              $btn.on('click', function(){
+                var that = $(this).data('class');
+
+                switch(that) {
+
+                  case 'download_photo':
+                    $('.done_photo, .back_photo, .edit_wrap').show();
+                    $('.download_photo, .change_photo, .require').hide();
+                    $cont.addClass('uploader');
+                      if(bodyPhone <= 640){
+                        $('.require', $cont).hide();
+                        $('.edit_wrap', $cont).show();
+                        $('.more_info', $contBottom).hide();
+                      }
+                    break;
+
+                  case 'back_photo':
+                    $('.done_photo, .back_photo, .change_photo', $contBottom).hide();
+                    $('.edit_wrap').hide();
+                    $('.download_photo, .require, .require_wrap').show();
+                    $cont.removeClass('uploader');
+                      if(bodyPhone <= 640){
+                        $('.edit_wrap', $cont).hide();
+                        $('.require, .require_wrap', $cont).show();
+                        $('.more_info', $contBottom).show();
+                        $('.more_info', $contRight).hide();
+                      } else if (bodyPhone > 640){
+                        $('.more_info', $contBottom).hide();
+                        $('.more_info', $contRight).show();
+                      }
+                    break;
+
+                  case 'done_photo':
+                    $('.download_photo, .back_photo, .done_photo, .edit_wrap').hide();
+                    $('.change_photo, .advice.type_ok, .require_wrap').show();
+                    $cont.removeClass('uploader');
+                    $('.load_photo, .advice.type_not', $cont).addClass('upload');
+                    $('.require').show();
+                    if(bodyPhone <= 640){
+                      $('.edit_wrap', $cont).hide();
+                      $contBottom.css({'padding-top': '0'});
+                      $cont.append($('.require_wrap'));
+                      $contLeft.append($('.change_photo').parent(), $('.advice.type_ok').parent()).addClass('load_photo-face');
+                      $('.more_info', $contBottom).show();
+                      $('.require_wrap .more_info').hide();
+                    } else if (bodyPhone > 640){
+                      $('.require', $contRight).append($('.require_wrap'));
+                      $contBottom.append($('.change_photo').parent(), $('.advice.type_ok').parent());
+                      $('.more_info', $contBottom).hide();
+                    }
+                    break;
+
+                  case 'change_photo':
+                    $('.download_photo, .change_photo, .advice.type_ok, .require_wrap').hide();
+                    $('.done_photo, .back_photo, .edit_wrap').show();
+                    $cont.addClass('uploader');
+                    $('.load_photo', $cont).removeClass('upload');
+                    $('.require', $contRight).append($('.require_wrap'));
+                    $contBottom.append($('.change_photo').parent(), $('.advice.type_ok').parent());
+                    $contLeft.removeClass('load_photo-face');
+                    if(bodyPhone <= 640){
+                      $('.edit_wrap', $cont).show();
+                      $contBottom.css({'padding-top': '72px'});
+                      $('.more_info', $contBottom).hide();
+                    }
+                    break;
+
+                  default:
+                    alert(111);
+                    break;
+                }
+              });
+      });
+}
+
+function MMapShow(){
+  $(window).on('load resize', function(){  
+    var bodyPhone = parseInt($('body').width()),
+        $mapItem = $('.map_list_item');
+
+      $mapItem.each(function(e) {
+        var that = $(this);
+        if(bodyPhone <= 640){
+            that.addClass('popup_link');
+            that.children().first().addClass('popup_map_adress');
+        } else {
+            that.removeClass('popup_link');
+            that.children().first().removeClass('popup_map_adress');
         }
       });
+    });
+    $('.map_list_item').on('click', function(e) {
+      if($(this).hasClass('popup_link')){
+        var choise = "";
       
+        choise = $(this).children().attr('class');
       
-
-
+        var $message = $('#'+choise);
+        
+        if ($message.css('display') != 'block') {
+            $message.show();
+            var firstClick = true;
+            $(document).on('click', function(e) {
+              $('#wrap').prepend('<div id="popup_fade"></div>');
+                if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
+                    $message.hide();
+                    $(document).off('click');
+                    $('#popup_fade').remove();
+                }
+                $('.close_popup_x').click(function(){
+                  $('#'+choise).hide();
+                  $(document).off('click');
+                  $('#popup_fade').remove();
+                });
+                
+                $('.popup .back').click(function(e){
+                  e.preventDefault();
+                  $('#'+choise).hide();
+                  $(document).off('click');
+                  $('#popup_fade').remove();
+                });             
+            });
+        }
+        e.preventDefault();
+      }
+    }); 
 }

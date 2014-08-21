@@ -113,7 +113,7 @@ BODY {
 #header .catalog_link {
   display: inline-block;
   margin:25px 0 0 0;
-  background: url('../img/mobile/link_larr.png') 0 4px no-repeat; 
+  background: url('../img/mobile/link_larr.png') 0 3px no-repeat; 
   background-size: 8px 12px;
   padding:0 0 0 15px;   
 }
@@ -645,14 +645,14 @@ BODY {
 .load_photo-btn A{
   min-width: 188px;
 }
-#content .load_photo_cols.col_right H4{
+#content .require_wrap H4{
   margin-top: 0;
 }
-#content .load_photo_cols.col_right .list{
+#content .require_wrap .list{
   margin-top: 0px;
   list-style: disc;
 }
-#content .load_photo_cols.col_right .list LI{
+#content .require_wrap .list LI{
   margin-left: 16px;
   margin-bottom: 24px;
   font-size: 14px;
@@ -668,6 +668,13 @@ BODY {
 }
 .load_photo_cols.col_right .more_info{
   text-align: right;
+}
+.load_photo_cols.col_right .more_info span{
+  display: inline-block;
+}
+.load_photo_cols.col_right .more_info span:focus,
+.load_photo_cols.col_right .more_info span:active{
+  border-bottom: none;
 }
 
 .load_photo-sub{
@@ -685,23 +692,15 @@ BODY {
   float: left;
   overflow: hidden;
 }
-.load_photo-wrap .require{
+.load_photo-wrap .require,
+.load_photo-wrap .edit_wrap{
   width: 100%;
-  -webkit-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
 }
-.load_photo-wrap.uploader .require{
-  width: 0;
+.load_photo-wrap .require{
+  display: block;
 }
 .load_photo-wrap .edit_wrap{
-  width: 0;
-  -webkit-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
-}
-.load_photo-wrap.uploader .edit_wrap{
-  width: 100%;
+  display: none;
 }
 
 #content .uploader .load_photo_cols.col_left{
@@ -767,6 +766,9 @@ BODY {
 .load_photo_cols.col_bottom .btn{
   display: none;
 }
+.load_photo_cols.col_bottom .change_photo{
+  display: none;
+}
 .load_photo_cols.col_bottom .download_photo{ 
   display: inline-block;
 }
@@ -775,27 +777,27 @@ BODY {
   display: none;
 }
 
-.load_photo_cols.col_bottom .advice_upload .advice{
+.load_photo_cols.col_bottom .advice{
   width: 800px;
   padding: 0;
   border: none;
   margin-top: 0px;
   margin-bottom: 40px;
 }
-.load_photo_cols.col_bottom .advice_upload .advice .advice_h{
+.load_photo_cols.col_bottom .advice .advice_h{
   margin: 0;
 }
-.load_photo_cols.col_bottom .advice_upload .advice .advice_ico{
+.load_photo_cols.col_bottom .advice .advice_ico{
   width: 45px;
   height: 45px;
   border-width: 6px;
   margin-top: -10px;
 }
-.load_photo_cols.col_bottom .advice_upload .advice .icomoon{
+.load_photo_cols.col_bottom .advice .icomoon{
   font-size: 18px;
   line-height: 33px;
 }
-#content .load_photo_cols.col_bottom .advice_upload .advice H2{
+#content .load_photo_cols.col_bottom .advice H2{
   font-size: 20px;
   margin-left: 64px;
 }
@@ -1757,6 +1759,16 @@ FIELDSET{
     margin-left: 0;
   }
 
+  .last-btn_cover{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    max-width: 945px;
+    padding: 0 0 0 50px;
+    width: 90%;
+  }
+
 
 
 
@@ -2140,6 +2152,9 @@ FIELDSET{
     font-size: 17px;
     margin:0 0 20px 30px;
   }
+  .big_inp-form FIELDSET H3.ml0{
+    margin-left: 0;
+  }
   
 
   #content FIELDSET{
@@ -2306,7 +2321,8 @@ FIELDSET{
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_16,
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_33,
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_50,
-  .mobile_zagran_pasport_nov_18_plus .wrapper.l_66{
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_66,
+  .mobile_zagran_pasport_nov_18_plus .wrapper.l_75{
     width: 100%;
   }
   .mobile_zagran_pasport_nov_18_plus .wrapper.l_25{
@@ -2487,6 +2503,14 @@ FIELDSET{
     min-height:100%;
     border:none;
   }  
+  .map-h_wrap{
+    width: 100%;
+  }
+  .map-h_wrap h4{
+    margin: 20px auto 10px;
+    border-bottom: 0;
+    padding-right: 20px;
+  }
   
   .map_block{
     display:none;
@@ -2518,7 +2542,7 @@ FIELDSET{
   .map_list_item:after{
     content: "5";
     font: 14px 'icomoon-epga';
-    right: 10px;
+    right: 20px;
     top: 45%;
     position: absolute;
     margin: 0;
@@ -2539,6 +2563,9 @@ FIELDSET{
   .map_list_item P {
     width:280px;
     margin:0 auto;
+    padding-right: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
 
   .map_list .go_more:after {
@@ -3081,6 +3108,10 @@ FIELDSET{
     top: 20px;
   }
 
+  .load_photo_cols.col_right + .require_wrap UL{
+    margin-left: 20px;
+  }
+
 
   .load_photo{
     text-align: center;
@@ -3127,6 +3158,11 @@ FIELDSET{
   }
   .load_photo-wrap .require .list{
     margin-left: 20px;
+  }
+  .load_photo-face .change_photo{
+    margin-top: 20px;
+    width: 280px;
+    text-align: center;
   }
 
 
@@ -3247,10 +3283,18 @@ FIELDSET{
   .load_photo_cols.col_bottom .advice_upload .advice .advice_ico{
     margin: 0;
   }
-  #content .load_photo_cols.col_bottom .advice_upload .advice H2{
+  #content .load_photo_cols.col_bottom .advice H2,
+  #content .load_photo_cols.col_left .advice H2{
     font-size: 20px;
     margin-left: 60px;
     width: 220px;
+  }
+  #content .load_photo_cols.col_left .advice{
+    border: none;
+    padding: 17px 0 0px;
+  }
+  #content .load_photo_cols.col_left .advice.type_not{
+    display: none;
   }
   
   .filed_slide .radio_group .l_25{
@@ -3262,6 +3306,7 @@ FIELDSET{
   .btn_add-slide{
     padding-top: 0;
     margin-top: -10px;
+    margin-bottom: 15px;
   }
   .btn_add-slide .btn.big{
     width: 100%;
@@ -3269,5 +3314,21 @@ FIELDSET{
   }
 
 
+  .last-btn_cont{
+    margin-right: 20px;
+    padding-top: 15px;
+  }
+
+  .map_ballon_item{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  .popup_map_adress-phone{
+    width: 320px;
+    height: 400px;
+    margin-top: 20px;
+  }
 
 }
