@@ -53,6 +53,20 @@ include('include/mobile_head.php');
 						<td><a href="snatie_s_registracii.php">Снятие с регистрационного учета</a></td>
 						<td><a href="snatie_s_registracii.php">snatie_s_registracii.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="detskiy_sad.php">Запись в детский сад</a></td>
+						<td><a href="detskiy_sad.php">detskiy_sad.php</a></td>
+					</tr>
+					<tr>
+						<td>
+							<p><a href="detskiy_sad_proverka_ocheredy_1.php">Проверка очереди в десткий сад (шаг 1)</a></p>
+							<p><a href="detskiy_sad_proverka_ocheredy_2.php">Проверка очереди в десткий сад (шаг 2)</a></p>
+						</td>
+						<td>
+							<p><a href="detskiy_sad_proverka_ocheredy_1.php">detskiy_sad_proverka_ocheredy_1.php</a></p>
+							<p><a href="detskiy_sad_proverka_ocheredy_2.php">detskiy_sad_proverka_ocheredy_2.php</a></p>
+						</td>
+					</tr>
 					<!-- Типовые элементы -->
 					<tr>
 						<td><a href="typical_elements.php">Типовые элементы</a></td>

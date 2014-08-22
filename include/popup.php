@@ -43,4 +43,11 @@
 	  </div>
 	</div>	
 		
+<? } else if ($pagename == 'detskiy_sad') { ?>
+	<div id="popup_map" class="popup">
+	  <b class="close_popup_x"></b>
+	  <h2>Детский сад № 11301 </h2>
+	  <p>172 КМ 95 М А/Д Москва-Минск</p>
+	  <img src="img/map.jpg" />
+	</div>
 <? } ?>
