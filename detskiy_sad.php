@@ -241,10 +241,17 @@ include('include/head.php');
             <h3>Есть ли у вас льготы?</h3>
             <em class="wrapper l_100"><input type="radio" name="g_9" id="f_34" /><label for="f_34">Да</label></em>
             <div class="fields_cover">
-              <h4>Укажите какие</h4>
-              <em class="wrapper l_100"><input type="checkbox" id="f_41"/><label for="f_41">Дети из многодетной семьи</label></em>
-              <em class="wrapper l_100"><input type="checkbox" id="f_42"/><label for="f_42">Дети инвалиды и дети, один из родителей которых является инвалидом</label></em>
-              <em class="wrapper l_100"><input type="checkbox" id="f_43"/><label for="f_43">Дети, братья и сестры которых посещают данное образовательное учреждение</label></em>
+              <em class="wrapper l_100"><input type="search" placeholder="Название льготы" class="big" /><input type="button" class="search_btn" value="P"/></em>
+              <div class="facility"> 
+                <h5>Первоочередные</h5>
+                <br/>
+                <em class="wrapper l_100"><input type="checkbox" id="f_40"/><label for="f_40">Дети судей, прокуроров, следователей</label></em>
+                <em class="wrapper l_100"><input type="checkbox" id="f_42"/><label for="f_42">Дети инвалиды и дети, один из родителей которых является инвалидом</label></em>
+                <h5>Приоритетные</h5>
+                <br/>
+                <em class="wrapper l_100"><input type="checkbox" id="f_41"/><label for="f_41">Дети из многодетной семьи</label></em>
+                <em class="wrapper l_100"><input type="checkbox" id="f_43"/><label for="f_43">Дети, братья и сестры которых посещают данное образовательное учреждение</label></em>
+              </div>
               <em class="wrapper l_100"><input type="checkbox" id="f_45"/><label for="f_45">Иные льготы</label></em>
               <div class="fields_cover_inner">
                 <em class="wrapper l_100"><input type="text" placeholder="Название льготы" class="big" /></em>                
