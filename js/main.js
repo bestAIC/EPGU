@@ -519,7 +519,7 @@ function tableAsynchron(){
       var lastTr = $('tr:last-child', $tbody);
       $tbody.animate({
         scrollTop: lastTr.offset().top
-      }, 400)
+      }, 400) 
       return;
     }
 }
