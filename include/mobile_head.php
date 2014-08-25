@@ -56,6 +56,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_zamena_pasporta_neprigodnost">
     <? } else if ($pagename == 'mobile_typical_elements') { ?> 
         <div id="wrap" class="mobile_typical_elements">
+    <? } else if ($pagename == 'mobile_detskiy_sad') { ?> 
+        <div id="wrap" class="mobile_detskiy_sad">        
     <? } else if ($pagename == 'mobile_404') { ?> 
         <div id="wrap" class="page_404">
     <? } else if ($pagename == 'mobile_postanovka_na_registraciu') { ?> 

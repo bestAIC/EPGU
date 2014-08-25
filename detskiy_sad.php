@@ -121,8 +121,8 @@ include('include/head.php');
             <span class="point_num">8</span>
             <h3>Параметры для выбора детского сада</h3>
             <em class="wrapper l_16">Отображать по:
-            </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">месту регистрации</label>
-            </em><em class="wrapper l_25"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
+            </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_44" id="f_19"/><label for="f_19">месту регистрации</label>
+            </em><em class="wrapper l_25"><input type="radio" name="g_44" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
             
             <em class="wrapper l_25"><input type="text" placeholder="Дата зачисления" class="big" />
             </em><em class="wrapper l_25">
