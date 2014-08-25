@@ -407,6 +407,9 @@ float: right;
 #header .bottom.type_3{
     border-bottom: 4px solid #C41E51; 
 }
+#header .bottom.type_4{
+    border-bottom: 4px solid #57c5cc; 
+}
 #header .bottom.type_non{
     border-bottom: 1px solid #e1e1e1; 
 }
@@ -508,6 +511,9 @@ float: right;
     #content .title SPAN.icomoon.color_3 {
         color: #C41E51;
     }
+    #content .title SPAN.icomoon.color_4 {
+        color: #57c5cc;
+    }     
 
 #content .title H1 {
   font:40px 'etelka_thinregular';
@@ -1036,6 +1042,21 @@ H4 {
   border-color: #EB4960;
 }
 
+.map_list_item .left{
+  display:table-cell;
+  width:95%;
+}
+
+.map_list_item .right{
+  display:table-cell;
+  width:5%;
+  vertical-align: middle;
+}
+
+.select_item_cover {
+  display: none;
+  padding:10px 0 0 0;
+}
 
 .map_ballon_block{
   position: absolute;
