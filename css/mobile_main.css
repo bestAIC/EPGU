@@ -86,6 +86,9 @@ BODY {
 #header .top.type_3{
   border-bottom: 4px solid #8d1e8b;  
 }
+#header .top.type_4{
+  border-bottom: 4px solid #57c5cc;  
+}
 #header .top.type_non{
   border-bottom: 1px solid #e1e1e1;  
 }
@@ -319,7 +322,8 @@ BODY {
 #content FORM .btn-mr20_phone{
   margin-right: 0px;
 }
-#content FIELDSET LABEL{
+
+FIELDSET LABEL{
   display: none;
 }
 
@@ -385,6 +389,10 @@ BODY {
 
 .big_inp-form INPUT{
    height: 60px;
+}
+
+INPUT.search_btn {
+  top: 0px;
 }
 
 .big_inp-form INPUT.btn.small{
@@ -1739,6 +1747,19 @@ FIELDSET{
     margin-left: 0;
   }
 
+.map_list_item .map_check{
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+LABEL.map_txt {
+  padding-left: 0;
+  display:block;
+  color: #0173c1;
+  cursor:pointer;
+}
 
 
 
@@ -2301,6 +2322,25 @@ FIELDSET{
 
   .mobile_oplata_uniteller .ticket {
     border:none;
+  }
+ 
+  .mobile_detskiy_sad .wrapper.l_33,
+  .mobile_detskiy_sad .wrapper.l_50,
+  .mobile_detskiy_sad .wrapper.l_66 {
+    width: 100%;
+  } 
+
+  .mobile_detskiy_sad .wrapper.l_25 {
+    width: 50%;
+  }
+
+  .mobile_detskiy_sad .map_list_item P {
+    padding: 0 0 0 40px;
+    width: 180px;
+  }
+
+  .map_list_item .map_check{
+    left: 0px;
   }
 
   .blue_cover {

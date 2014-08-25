@@ -1436,7 +1436,14 @@ H4 {
   padding:25px 85px 40px 85px;
 }
 
-
+.facility {
+  max-height: 300px;
+  padding:30px 0 0 0;
+  margin: 0 0 30px 0;
+  border-top:1px solid #c0e8ff;
+  border-bottom:1px solid #c0e8ff;
+  overflow-x:hidden;  
+}
 
 /**/
 
@@ -1621,6 +1628,26 @@ INPUT.btn:focus {
 
 INPUT::-ms-clear {
    display: none;
+}
+
+INPUT[type="search"] {
+    padding: 0 50px 0 20px!important;
+}
+
+INPUT.search_btn {
+  position: absolute;
+  width: 1.4em;
+  right:30px;
+  top:14px;
+  color: #565656;
+  font: 24px 'icomoon-epga';
+  border:none!important;
+  background:none!important; 
+  box-shadow:none!important;
+  cursor: pointer;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;  
 }
 
 INPUT.big {
@@ -2019,7 +2046,14 @@ LABEL {
   float: left;
   margin-top: -1px;
 }
+
 .jq-radio + label{
+  padding-left: 35px;
+  margin-left: 0;
+  display: block;
+}
+
+.jq-checkbox + label{
   padding-left: 35px;
   margin-left: 0;
   display: block;
