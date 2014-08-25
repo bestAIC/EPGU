@@ -121,9 +121,6 @@ SPAN.icomoon{
 .bg_c6 {background:#f6f6f6;}
 .bg_c7 {background:#7a96ab;}
 
-.ml0{
-  margin-left: 0;
-}
 
 .list {
   padding: 0 0 8px 0;
@@ -534,7 +531,7 @@ float: right;
     }
     #content .title SPAN.icomoon.color_4 {
         color: #57c5cc;
-    }    
+    }     
 
 #content .title H1 {
   font:40px 'etelka_thinregular';
@@ -676,10 +673,6 @@ float: right;
 #content .main {
   display:block;
 }
-#content FORM.main + .clear{
-  padding-top: 50px;
-  border-top: 1px solid #dbe2e6;
-}
 
 .main FIELDSET {
   position:relative;
@@ -703,7 +696,7 @@ float: right;
   font: 75%/21px 'Helvetica Neue', Helvetica, Arial, sans-serif;   
 }
 
-.main FIELDSET .sub_title .fr {
+.main FIELDSET .clear .fr {
   padding:0 20px 0 0;  
 }
 
@@ -997,13 +990,7 @@ H4 {
   margin:0 0 30px 0;
 }
 
-.fields_cover_inner {
-    display: none;
-}
 
-SPAN.subtitle {
-  font-size:12px;
-}
 
 
 /* map_cover */
@@ -1041,7 +1028,6 @@ SPAN.subtitle {
   border-top: 1px solid #dbe2e6;
   padding: 20px 58px;
   position: relative;
-  overflow: hidden;
 }
 .map_list_item:hover{
   background-color: #E2F6FF;
@@ -1468,15 +1454,6 @@ SPAN.subtitle {
   padding:25px 85px 40px 85px;
 }
 
-.facility {
-  height: 200px;
-  padding:30px 0 0 0;
-  margin: 0 0 30px 0;
-  border-top:1px solid #c0e8ff;
-  border-bottom:1px solid #c0e8ff;
-  overflow-x:hidden;  
-}
-
 
 
 /**/
@@ -1662,26 +1639,6 @@ INPUT.btn:focus {
 
 INPUT::-ms-clear {
    display: none;
-}
-
-INPUT[type="search"] {
-    padding: 0 50px 0 20px!important;
-}
-
-INPUT.search_btn {
-  position: absolute;
-  width: 1.4em;
-  right:30px;
-  top:14px;
-  color: #565656;
-  font: 24px 'icomoon-epga';
-  border:none!important;
-  background:none!important; 
-  box-shadow:none!important;
-  cursor: pointer;
-  -webkit-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;  
 }
 
 INPUT.big {
@@ -2022,7 +1979,7 @@ LABEL {
   display: none;
 }
 .filed_slide.filed_slide-clone A.close{
-  display: inline-block;
+  display: block;
 }
 .btn_add-slide{
   position: relative;
@@ -2060,15 +2017,18 @@ LABEL {
   vertical-align: top;
   margin-left: -2px;
   margin-bottom: 22px;
+  box-sizing: border-box;
 }
 .form_person-descr dt{
   width: 23%;
+  padding-right: 20px;
 }
 .form_person-descr dd{
   width: 77%;
 }
 
 /* /form_person-descr */
+
 
 .jq-checkbox {
   top: -1px;
@@ -2113,19 +2073,7 @@ LABEL {
   padding-left: 35px;
   margin-left: 0;
   display: block;
-  color: #535B63;
 }
-.jq-radio + label p{
-  margin-top: -4px;
-  line-height: 24px;
-}
-.jq-radio + label strong{
-  font-size: 16px;
-}
-.jq-radio + label p.xs_txt{
-  font-size: 14px;
-}
-
 
 .jq-radio .jq-radio__div{
   width: 18px;
@@ -2399,7 +2347,7 @@ LABEL {
   margin-left: -2px;
   border: 0;
 }
-.jq-selectbox__dropdown .jq-selectbox__search:before {
+.jq-selectbox__dropdown .jq-selectbox__search:before{
   content: "P";
   font: 24px 'icomoon-epga';
   position: absolute;
@@ -2764,6 +2712,7 @@ input[type="submit"].styler[disabled] {
 }
 /* /404 Page */
 
+
 /* table_prelude-block */
 
 .table_prelude-block{
@@ -2889,12 +2838,15 @@ input[type="submit"].styler[disabled] {
   color: #535B63;
   font-size: 15px;
 }
-.form_info-more{
+.form_info-list span.pseudo{
+  margin-left: 0;
+}
+.form_info-list .form_info-more{
   color: #72767D;
   font-size: 15px;
   margin-left: 10px;
 }
-.form_info-more:after{
+.form_info-list .form_info-more:after{
   content: "[";
   font: 14px 'icomoon-epga';
   display: inline-block;
@@ -2911,13 +2863,27 @@ input[type="submit"].styler[disabled] {
   font-size: 17px;
 }
 .form_info-choice DD{
-  clear: both;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: #535B63;
   font-size: 15px;
+  white-space: nowrap;
 }
+.form_info-choice DD .sub_txt,
 .form_info-choice DD .btn{
-  margin-top: -24px;
+  margin-left: -2px;
+  display: inline-block;
+}
+.form_info-choice DD .sub_txt{
+  width: 78%;
+  white-space: normal;
 }
 
 /* .form_info-choice */
+
+.mobile_detskiy_sad .status_txt{
+  color: #74777F;
+  margin-bottom: 30px;
+}
+.mobile_detskiy_sad .status_txt + .clear{
+  margin-bottom: 40px;
+}

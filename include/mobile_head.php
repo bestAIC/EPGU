@@ -64,6 +64,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_snatie_s_registracii">
     <? } else if ($pagename == 'mobile_zagran_pasport_nov_18_plus') { ?> 
         <div id="wrap" class="mobile_zagran_pasport_nov_18_plus">
+    <? } else if ($pagename == 'mobile_detskiy_sad') { ?> 
+        <div id="wrap" class="mobile_detskiy_sad">
     <? } else { ?> 
         <div id="wrap">
     <? } ?>
@@ -77,6 +79,8 @@ include('include/mobile_popup.php');
                   <div class="top type_2"> 
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  
+              <? } else if ($pagename == 'mobile_detskiy_sad') { ?>
+                  <div class="top type_4">  
               <? } else if ($pagename == 'mobile_404') { ?>
                   <div class="top type_non">  
               <? } ?>

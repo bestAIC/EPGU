@@ -33,7 +33,7 @@ function SForm() {
       });
     });
     
-    /*выпадающие поля при выборе пункта*/ 
+     /*выпадающие поля при выборе пункта*/ 
     
     $('fieldset .jq-radio').click(function(){      
       var root = $(this).parent();
@@ -150,6 +150,7 @@ function SForm() {
 
 }
 
+
 // Popup
 function PopUp() {
 
@@ -227,7 +228,21 @@ function HideShow(){
     } else {
       $('.new_auto').slideUp();
     }
-  });      
+  });
+  
+  /*pay*/
+  $('.selector li').click(function(){
+    if($(this).attr('id') == 'pay'){
+      $('.ticket').hide();
+      $('.pay').show();
+    } else if ($(this).attr('id') == 'not_pay') {
+      $('.ticket').hide();
+      $('.not_pay').show();
+    } else {
+      $('.ticket').show();
+    }
+  });   
+      
 }
 
 // Switch Point
@@ -395,27 +410,21 @@ function MapShow(){
 function MapControls(){
   var $cont = $('.map_nav'),
       $lnk = $('.map_list_item', $cont),
-      $block = $('.map_ballon_block'),
-      $close = $('.map_ballon_close', $block),
-      bodyPhone = parseInt($('body').width());
+      $block = $('.map_ballon_block');
+      $close = $('.map_ballon_close', $block);
 
 
-    // $(window).on('load resize', function(){
-    //   if(bodyPhone > 640){
-        // console.log('Больше: ' + bodyPhone);
-        $lnk.each(function(i,e){
-            $(this).on('click', function(e){
-                e.preventDefault();
-                $lnk.parent().toggleClass('active');
-                $block.fadeIn();
-                $close.on('click', function(){
-                  e.preventDefault();
-                  $block.fadeOut();
-                })
-            });
+      $lnk.each(function(i,e){
+        $(this).on('click', function(e){
+          $lnk.parent().toggleClass('active');
+          e.preventDefault();
+          $block.fadeIn();
+          $close.on('click', function(){
+            e.preventDefault();
+            $block.fadeOut();
+          })
         });
-    //   }
-    // });
+      });
 }
 
 function FieldSlide(){
@@ -433,7 +442,6 @@ function FieldSlide(){
         }
     });
 
-    
 
     $('.btn.plus', $('.btn_add-slide')).on('click', function(e){
         e.preventDefault();
@@ -522,7 +530,4 @@ function tableAsynchron(){
       return;
     }
 }
-
-
-
 

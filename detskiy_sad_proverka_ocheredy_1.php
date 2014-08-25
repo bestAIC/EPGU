@@ -26,11 +26,11 @@ include('include/head.php');
 			<div class="form_info-choice">
 				<dl>
 					<dt>Заявление № 424134 от 29.08.2014</dt>
-					<dd><span><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+					<dd><span class="sub_txt"><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span><span class="btn white small"><b>Проверить очередь</b></span></dd>
 					<dt>Заявление № 341455 от 28.08.2014</dt>
-					<dd><span><b>Статус:</b> Ожидает рассмотрения</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+					<dd><span class="sub_txt"><b>Статус:</b> Ожидает рассмотрения</span><span class="btn white small"><b>Проверить очередь</b></span></dd>
 					<dt>Заявление № 1341414 от 20.08.2014</dt>
-					<dd><span><b>Статус:</b> Не явился</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+					<dd><span class="sub_txt"><b>Статус:</b> Не явился</span><span class="btn white small"><b>Проверить очередь</b></span></dd>
 				</dl>
 			</div>
 		</fieldset>

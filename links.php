@@ -61,10 +61,14 @@ include('include/mobile_head.php');
 						<td>
 							<p><a href="detskiy_sad_proverka_ocheredy_1.php">Проверка очереди в десткий сад (шаг 1)</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_2.php">Проверка очереди в десткий сад (шаг 2)</a></p>
+							<p><a href="detskiy_sad_proverka_ocheredy_2_1.php">Проверка очереди в десткий сад (шаг 2_1)</a></p>
+							<p><a href="detskiy_sad_proverka_ocheredy_3.php">Проверка очереди в десткий сад (шаг 3)</a></p>
 						</td>
 						<td>
 							<p><a href="detskiy_sad_proverka_ocheredy_1.php">detskiy_sad_proverka_ocheredy_1.php</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_2.php">detskiy_sad_proverka_ocheredy_2.php</a></p>
+							<p><a href="detskiy_sad_proverka_ocheredy_2_1.php">detskiy_sad_proverka_ocheredy_2_1.php</a></p>
+							<p><a href="detskiy_sad_proverka_ocheredy_3.php">detskiy_sad_proverka_ocheredy_3.php</a></p>
 						</td>
 					</tr>
 					<!-- Типовые элементы -->
