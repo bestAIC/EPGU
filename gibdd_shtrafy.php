@@ -30,9 +30,9 @@ include('include/head.php');
           
             <span class="point_num">1</span>
             <h3>Водитель / Владелец</h3>          
-            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
-            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
-            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
+            <em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Иванов" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Имя" value="Иван" class="big" disabled="disabled"/>
+            </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" value="Иванович" class="big" disabled="disabled"/></em><br/>
             
             <em class="wrapper l_50"><input type="text" placeholder="Номер водительского удостоверения" class="big"/>
             </em><i class="q">?<div class="bg_c3 q_hover"><img src="img/doc_group_1.png" alt=""/></div></i><br/>
@@ -49,7 +49,7 @@ include('include/head.php');
             
             <div class="wrapper l_50 new_auto"><input type="text" placeholder="Введите номер" class="big" /></div>
 
-            <div class="clear"><span class="fr"><input class="big btn" type="submit" value="Найти штрафы" disabled="disabled"/></span></div>
+            <div class="clear"><span class="fr"><a href="#fine" class="big btn" /><b>Найти штрафы</b></a></div>
             
           </fieldset> 
 
@@ -74,18 +74,18 @@ include('include/head.php');
                 <span class="icomoon">"</span>
               </li>
             </ul>                      
-            <span class="point_num">2</span>
+            <span id="fine" class="point_num">2</span>
             <div class="cover_info_title">
               <h3>Ваши штрафы</h3>          
               <p>Общая сумма неоплаченных штрафов: <b>150 000</b> <strong class="rouble">p</strong></p>  
               <ul class="selector">
-                <li class="first">К оплате (107)</li>
-                <li >Оплаченные (170)</li>
-                <li class="last active">Все (277)</li>
+                <li class="first" id="not_pay">К оплате (107)</li>
+                <li id="pay">Оплаченные (170)</li>
+                <li id="all" class="last active">Все (277)</li>
               </ul>
             </div>            
-            <div class="ticket">
-              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="fr">5000&nbsp;<nobr class="rouble">p</nobr></span> <a href="/oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
+            <div class="ticket not_pay">
+              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="fr">500&nbsp;<nobr class="rouble">p</nobr></span> <a href="oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
               <dl>
                 <dt>Дата и время нарушения</dt>
                 <dd>26.05.2013 в 11:47</dd>
@@ -125,8 +125,8 @@ include('include/head.php');
                
             </div>
             
-            <div class="ticket">
-              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="fr">10 000&nbsp;<nobr class="rouble">p</nobr></span> <a href="/oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
+            <div class="ticket not_pay">
+              <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="fr">3 000&nbsp;<nobr class="rouble">p</nobr></span> <a href="oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
               <dl>
                 <dt>Дата и время нарушения</dt>
                 <dd>26.05.2013 в 11:47</dd>
@@ -166,7 +166,7 @@ include('include/head.php');
                
             </div>
             
-            <div class="ticket">
+            <div class="ticket pay">
               <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="status pd">Оплачено</span></div>
               <dl>
                 <dt>Дата и время нарушения</dt>

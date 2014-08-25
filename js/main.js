@@ -9,7 +9,6 @@ $(document).ready(function() {
   MapShow();
   MapControls();
   FieldSlide();
-  tableAsynchron();
 });
 
 // Styler
@@ -17,10 +16,7 @@ function SForm() {
 
   $(function() {
     /*стилизация элементов*/
-    $('input, select').styler({
-      selectSearchLimit: 13,
-      selectSmartPositioning: false
-    });
+    $('input, select').styler();
     
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
@@ -35,7 +31,7 @@ function SForm() {
     
     /*выпадающие поля при выборе пункта*/ 
     
-    $('fieldset .jq-radio').click(function(){      
+    $('.fields_cover .jq-radio').click(function(){      
       var root = $(this).parent();
       var currentIndex = root.index();              
       var group = root.parent().children().eq(currentIndex+1);    
@@ -48,23 +44,6 @@ function SForm() {
         }                                                               
       }           
     });
-
-    $('fieldset .jq-checkbox').on('click', function(){      
-      var root = $(this).parent();
-      var currentIndex = root.index();              
-      var group = root.parent().children().eq(currentIndex+1);    
-
-      if($(this).hasClass('checked')){
-        if(group.hasClass('fields_cover_inner')){
-          group.slideDown();
-        }
-      } else {
-        if(group.hasClass('fields_cover_inner')){
-          group.slideUp();
-        }        
-      }                                                              
-          
-    });    
      
     $('.jq-radio').click(function(){
       
@@ -95,47 +74,7 @@ function SForm() {
       $(this).addClass('lock');             
     });                                     
 
-    $('.jq-radio.checked').click();
-
-    /*выбор детского садика*/
-    $('.map_list .jq-checkbox').on('click', function(){
-
-      if($('.map_list .jq-checkbox.checked').length){
-        $('.select_item_cover').slideDown();
-      } else {
-        $('.select_item_cover').slideUp();
-      }
-
-      if($('.map_list .jq-checkbox.checked').length==4){
-        $('.map_list .jq-checkbox:not(.checked)').addClass('disabled'); 
-      } else {
-        $('.map_list .jq-checkbox').removeClass('disabled'); 
-      }
-
-      var root = $(this).parent();
-      var currentIndex = root.parent().index();
-      var item = root.parent().find('.map_txt').text();
-      if (!$(this).hasClass('checked')){
-        $('#cfp_'+ currentIndex).remove();
-        if(!$('.select_item_list em .jq-radio.checked').length){
-
-          $('.select_item_list em:first label').click();
-        }        
-      } else {
-        $(".select_item_list").append('<em id="cfp_'+ currentIndex +'" class="wrapper l_100"><input type="radio" name="g_11" id="fp_'+ currentIndex +'"/><label for="fp_'+ currentIndex +'"><span class="pseudo">'+ item +'</span></label></em>');
-        $('input').styler();
-        if(!$('.select_item_list em .jq-radio.checked').length){
-
-          $('.select_item_list em:first label').click();
-        }
-
-      }  
-    });
-
-    $(document).on('click','.select_item_list label',function(e){
-       $('.map_ballon_block').show();
-    });  
-
+    $('.jq-radio.checked').click(); 
 
     $(function() {
         if (window.PIE) {
@@ -150,47 +89,48 @@ function SForm() {
 
 }
 
+
 // Popup
 function PopUp() {
 
-  $(document).on('keyup', function(d) {
+  $(document).keyup(function(d) {
     if (d.keyCode == 27) {
       $('.popup').hide();
-      $(document).off('click');
+      $(document).unbind('click.event');
       $('#popup_fade').remove();
     }
   });
  
-  $('.popup_link').on('click', function(e) {
-    
+  $('.popup_link').click(function(e) {
+  
     var choise = "";
   
     choise = $(this).children().attr('class');
   
     var $message = $('#'+choise);
-    
+    $('#wrap').prepend('<div id="popup_fade"></div>');
     if ($message.css('display') != 'block') {
         $message.show();
         var firstClick = true;
-        $(document).on('click', function(e) {
-          $('#wrap').prepend('<div id="popup_fade"></div>');
+        $(document).bind('click.event', function(e) {
             if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
                 $message.hide();
-                $(document).off('click');
+                $(document).unbind('click.event');
                 $('#popup_fade').remove();
             }
             $('.close_popup_x').click(function(){
               $('#'+choise).hide();
-              $(document).off('click');
+              $(document).unbind('click.event');
               $('#popup_fade').remove();
             });
             
-            $('.popup .back').click(function(e){
-              e.preventDefault();
+            $('.popup .back').click(function(){
               $('#'+choise).hide();
-              $(document).off('click');
+              $(document).unbind('click.event');
               $('#popup_fade').remove();
-            });             
+            });            
+            
+            firstClick = false;
         });
     }
     e.preventDefault();
@@ -227,7 +167,21 @@ function HideShow(){
     } else {
       $('.new_auto').slideUp();
     }
-  });      
+  });
+  
+  /*pay*/
+  $('.selector li').click(function(){
+    if($(this).attr('id') == 'pay'){
+      $('.ticket').hide();
+      $('.pay').show();
+    } else if ($(this).attr('id') == 'not_pay') {
+      $('.ticket').hide();
+      $('.not_pay').show();
+    } else {
+      $('.ticket').show();
+    }
+  });   
+      
 }
 
 // Switch Point
@@ -395,27 +349,21 @@ function MapShow(){
 function MapControls(){
   var $cont = $('.map_nav'),
       $lnk = $('.map_list_item', $cont),
-      $block = $('.map_ballon_block'),
-      $close = $('.map_ballon_close', $block),
-      bodyPhone = parseInt($('body').width());
+      $block = $('.map_ballon_block');
+      $close = $('.map_ballon_close', $block);
 
 
-    // $(window).on('load resize', function(){
-    //   if(bodyPhone > 640){
-        // console.log('Больше: ' + bodyPhone);
-        $lnk.each(function(i,e){
-            $(this).on('click', function(e){
-                e.preventDefault();
-                $lnk.parent().toggleClass('active');
-                $block.fadeIn();
-                $close.on('click', function(){
-                  e.preventDefault();
-                  $block.fadeOut();
-                })
-            });
+      $lnk.each(function(i,e){
+        $(this).on('click', function(e){
+          $lnk.parent().toggleClass('active');
+          e.preventDefault();
+          $block.fadeIn();
+          $close.on('click', function(){
+            e.preventDefault();
+            $block.fadeOut();
+          })
         });
-    //   }
-    // });
+      });
 }
 
 function FieldSlide(){
@@ -433,97 +381,28 @@ function FieldSlide(){
         }
     });
 
-    
 
-    $('.btn.plus', $('.btn_add-slide')).on('click', function(e){
+    $('.btn.plus', $('.btn_add-slide')).click(function(e){
         e.preventDefault();
-        var count = $cont.length + 1;
+        var template = $cont;
+        var count = template.length + 1;
         for(var i = count; i < count+1; i++){    
-            $cont.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
+            template.eq(0).clone().addClass('filed_slide-clone').appendTo($wrap);
           }
 
-            function getRandomArbitary(min, max) {
-              return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
+        $wrap.find('.filed_slide').each(function(){
+          var that = $(this),
+              $close = $('.close', that);
 
-              var $inp = $('input, select', $cont);
-              function checkId(){
-                $inp.each(function(){
-                    var idRandom = $(this).attr('id', getRandomArbitary(1, 1000));
-                        return idRandom;
-                    var idNew = $(this).attr('id'),
-                        label = $(this).parents('.wrapper').find('label').attr('for', idNew);
-                        return label;
-
-
-                  if($(':radio, :checkbox')){
-                    var that = $(this),
-                        group = that.attr('name', function(i, val){
-                          return that.attr('name') + '_2';
-                        });
-
-                      that.parent().attr('id', function(i, val){
-                        return that.attr('id') + '-styler';
-                      });
-                  }
-                });
-              }
-
-              checkId();
-
-              $('input', '.filed_slide').on('click', function(){
-                $(this).styler();
-                console.log('id: ' + ($(this).attr('id')));
-              })
-
-              $('label', '.filed_slide').on('click', function(){
-                console.log('for: ' + ($(this).attr('for')));
-              })      
-
-              $wrap.find('.filed_slide').each(function(){
-                var that = $(this),
-                    $close = $('.close', that);
-
-                  $close.on('click', function(e){
-                    e.preventDefault();
-                    that.slideUp(400, function(){
-                      that.remove();
-                    });
-                });
+          $close.on('click', function(e){
+            console.log(111);
+            e.preventDefault();
+            that.slideUp(400, function(){
+              that.remove();
+            });
+          });
     })
   });
 }
-
-
-function tableAsynchron(){
-  var $tbl = $('.asynchron-tbl'),
-      $thead = $('thead', $tbl),
-      $tbody = $('tbody', $tbl),
-      $lnk = $('.js-asynchron-tbl button', $tbl);
-      tHeight = $tbody.height();
-
-    $lnk.on('click', function(e){
-      e.preventDefault();
-      $.ajax({
-        url: "ajax/table.html",
-        cache: false,
-        success: function(html){
-          $tbody.append(html);
-          bodyHeight();
-        }
-      });
-      this.scrollIntoView(true);
-    });
-
-    function bodyHeight(e){
-      var lastTr = $('tr:last-child', $tbody);
-      $tbody.animate({
-        scrollTop: lastTr.offset().top
-      }, 400)
-      return;
-    }
-}
-
-
 
 

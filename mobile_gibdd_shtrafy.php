@@ -17,7 +17,7 @@ include('include/mobile_head.php');
                   <h3>Персональные данные</h3>
                 </div>
                 <div class="limiter">
-                  <em class="wrapper l_100"><label for="settings01">Водитель / Владелец</label><input id="settings01" type="text" placeholder="Фамилия" value="Константинопольский" class="big"/></em>
+                  <em class="wrapper l_100"><label for="settings01">Водитель / Владелец</label><input id="settings01" type="text" placeholder="ФИО" value="Иванов Иван Иванович" class="big"/></em>
 
                   
                   <div class="info-block_wrap">
@@ -674,28 +674,28 @@ include('include/mobile_head.php');
                   <div class="wrapper l_100 new_auto"><label>Введите номер</label><input type="text" placeholder="Введите номер" class="big" /></div>
 
 
-                  <em class="wrapper l_100"><span class="fr btn_field"><input class="big btn" type="submit" value="Найти штрафы" ></span></em>
+                  <em class="wrapper l_100"><span class="fr btn_field"><a href="#fine" class="big btn" /><b>Найти штрафы</b></a></span></em>
                 </div>
             </fieldset>
             
             <fieldset class="group_2">
               <div class="limiter">                  
                 <span class="point_num">2</span>
-                <h3>Ваши штрафы</h3>
+                <h3 id="fine">Ваши штрафы</h3>
               </div>
               <div class="limiter">
                 <div class="cover_info_title">          
                   <p>Общая сумма неоплаченных штрафов: <span class="price"><b>150 000</b> <strong class="rouble">p</strong></span></p>  
-                  <ul class="selector">
-                    <li class="first active">К оплате <span class="num">(107)</span></li>
-                    <li class="">Оплаченные <span class="num">(170)</span></li>
-                    <li class="last">Все <span class="num">(277)</span></li>
-                  </ul>
+              <ul class="selector">
+                <li class="first" id="not_pay">К оплате (107)</li>
+                <li id="pay">Оплаченные (170)</li>
+                <li id="all" class="last active">Все (277)</li>
+              </ul>
                 </div>
               </div>              
-                <div class="ticket">
+                <div class="ticket not_pay">
                   <div class="limiter">
-                    <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="money fr">5 000&nbsp;<nobr class="rouble">p</nobr></span> <a href="/mobile_oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
+                    <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 20 км/ч</span><span class="money fr">500&nbsp;<nobr class="rouble">p</nobr></span> <a href="mobile_oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
                     <dl class="ticket_date">
                       <dt>Дата и время нарушения</dt>
                       <dd>26.05.2013 в 11:47</dd>
@@ -710,9 +710,9 @@ include('include/mobile_head.php');
                   </div>            
                 </div>
                 
-                <div class="ticket">
+                <div class="ticket not_pay">
                   <div class="limiter">                        
-                  <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="money fr">10 000&nbsp;<nobr class="rouble">p</nobr></span> <a href="/mobile_oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
+                  <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="money fr">3 000&nbsp;<nobr class="rouble">p</nobr></span> <a href="mobile_oplata_uniteller.php" class="btn_cover_r small btn"><b class="">Оплатить</b></a></div>
                   <dl class="ticket_date">
                     <dt>Дата и время нарушения</dt>
                     <dd>26.05.2013 в 11:47</dd>
@@ -727,7 +727,7 @@ include('include/mobile_head.php');
                   </div>                                        
                 </div>
                 
-                <div class="ticket">
+                <div class="ticket pay">
                   <div class="limiter">                        
                     <div class="sub_title clear"><span class="fl">Превышение скорости более чем на 40 км/ч</span><span class="status pd">Оплачено</span></div>
                     <dl class="ticket_date">
