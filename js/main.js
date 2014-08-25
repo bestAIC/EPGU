@@ -405,4 +405,32 @@ function FieldSlide(){
   });
 }
 
+function tableAsynchron(){
+  var $tbl = $('.asynchron-tbl'),
+      $thead = $('thead', $tbl),
+      $tbody = $('tbody', $tbl),
+      $lnk = $('.js-asynchron-tbl button', $tbl);
+      tHeight = $tbody.height();
+
+    $lnk.on('click', function(e){
+      e.preventDefault();
+      $.ajax({
+        url: "ajax/table.html",
+        cache: false,
+        success: function(html){
+          $tbody.append(html);
+          bodyHeight();
+        }
+      });
+      this.scrollIntoView(true);
+    });
+
+    function bodyHeight(e){
+      var lastTr = $('tr:last-child', $tbody);
+      $tbody.animate({
+        scrollTop: lastTr.offset().top
+      }, 400) 
+      return;
+    }
+}
 

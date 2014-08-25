@@ -40,7 +40,7 @@ function MPopUp() {
                   $message.hide();
                   $('#popup_fade').remove();                                    
                   $(document).unbind('click.event');
-              }
+              } 
               $('.close_popup_x, .popup .back').click(function(){
                 $message.hide(); 
                 $('#popup_fade').remove();                                
