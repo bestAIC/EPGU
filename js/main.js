@@ -497,10 +497,8 @@ function FieldSlide(){
 
 function tableAsynchron(){
   var $tbl = $('.asynchron-tbl'),
-      $thead = $('thead', $tbl),
       $tbody = $('tbody', $tbl),
       $lnk = $('.js-asynchron-tbl button', $tbl);
-      tHeight = $tbody.height();
 
     $lnk.on('click', function(e){
       e.preventDefault();
@@ -509,17 +507,18 @@ function tableAsynchron(){
         cache: false,
         success: function(html){
           $tbody.append(html);
-          bodyHeight();
+            setTimeout(bodyHeight(), 100);
+            return;
         }
       });
-      this.scrollIntoView(true);
     });
 
     function bodyHeight(e){
-      var lastTr = $('tr:last-child', $tbody);
+      var lastTr = $('tr', $tbody).filter(':last').position();
+      
       $tbody.animate({
-        scrollTop: lastTr.offset().top
-      }, 400) 
+        scrollTop: lastTr.top
+      }, 400)
       return;
     }
 }

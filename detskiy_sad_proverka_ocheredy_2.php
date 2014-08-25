@@ -22,29 +22,52 @@ include('include/head.php');
 		<fieldset class="group_1">         
 			<span class="point_num">1</span>
 			<h3>Выберите заявление</h3>          
-			<em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" disabled="disabled" /><label for="f_1"><p><strong>Заявление №424134 от 29.08.2014</strong></p><p>
-			<b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</p></label>
-			</em>
-			<em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"  disabled="disabled"/><label for="f_2"><p><strong>Заявление № 341455 от 28.08.2014</strong></p><p>
-			<b>Статус:</b> Ожидает рассмотрения</p></label></em>
-			<em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"  disabled="disabled"/><label for="f_3"><p><strong>Заявление № 1341414 от 20.08.2014</strong></p><p>
-			<b>Статус:</b> Не явился</p></label></em>
+
+			<div class="form_info-choice">
+				<dl>
+					<dt>Заявление № 424134 от 29.08.2014</dt>
+					<dd><span><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+					<dt>Заявление № 341455 от 28.08.2014</dt>
+					<dd><span><b>Статус:</b> Ожидает рассмотрения</span><span class="btn white small fr disabled"><b>Проверить очередь</b></span></dd>
+					<dt>Заявление № 1341414 от 20.08.2014</dt>
+					<dd><span><b>Статус:</b> Не явился</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+				</dl>
+			</div>
 		</fieldset>
 
 		<fieldset class="group_2">
 			<span class="point_num">2</span>
-			<h3>Информация об очереди</h3>          
-			
-			<dl class="form_info-descr clear">
-				<dt><p>Детский сад №1131, Трифоновская ул., 34к2</p><p class="sub_txt">Предпочтительный детский сад</p></dt>
-				<dd><a href="#">Вы 15 в очереди</a></dd>
-				<dt><p>Детский сад №1214, Большой проспект Петроградской стороны, 3к5</p></dt>
-				<dd><a href="#">Вы 135 в очереди</a></dd>
-				<dt><p>Детский сад №542542, Большой коретный переулок, 12</p></dt>
-				<dd><a href="#">Вы 2 в очереди</a></dd>
-				<dt><p>Детский сад №231, ул. Карла-Маркса, 34</p></dt>
-				<dd><a href="#">Вы 452 в очереди</a></dd>
+			<h3>Информация об очереди</h3>
+
+			<dl class="form_person-descr clear">
+				<dt><b>ФИО</b></dt>
+				<dd>Константинопольский Константин Константинович</dd>
+				<dt><b>Возраст</b></dt>
+				<dd>5 лет</dd>
+				<dt><b>Дата зачисления</b></dt>
+				<dd>Сентябрь 2015</dd>
 			</dl>
+			
+			<div class="form_info-descr">
+				<ul class="list form_info-list">
+					<li>
+						<p><b>Вы 123-й в очереди.</b> Детский сад №1131, Трифоновская ул., 34к2. <a href="#" class="form_info-more">Проверить очередь</a></p>
+						<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a><span class="sub_txt">Предпочтительный детский сад</span></p>
+					</li>
+					<li>
+						<p><b>Вы 34-й в очереди.</b>  Бюджетное учреждение Муниципальная дошкольная образовательная организация общего воспитания Детский сад №1112 «Солнышко». <a href="#" class="form_info-more">Проверить очередь</a></p>
+						<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a></p>
+					</li>
+					<li>
+						<p><b>Вы 12-й в очереди</b> Детский сад №542542, Большой коретный переулок, 12. <a href="#" class="form_info-more">Проверить очередь</a></p>
+						<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a></p>
+					</li>
+					<li>
+						<p><b>Вы 12-й в очереди</b> в детский сад №231, ул. Карла-Маркса, 34. <a href="#" class="form_info-more">Проверить очередь</a></p>
+						<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a></p>
+					</li>
+				</ul>
+			</div>
 		</fieldset>
 	</form>
 	

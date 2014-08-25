@@ -22,15 +22,17 @@ include('include/head.php');
 		<fieldset class="group_1">
 		<span class="point_num">1</span>
 		<h3>Выберите заявление</h3>          
-			<em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1"><p><strong>Заявление №424134 от 29.08.2014</strong></p><p>
-			<b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</p></label>
-			</em>
-			<em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2"><p><strong>Заявление № 341455 от 28.08.2014</strong></p><p>
-			<b>Статус:</b> Ожидает рассмотрения</p></label></em>
-			<em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"/><label for="f_3"><p><strong>Заявление № 1341414 от 20.08.2014</strong></p><p>
-			<b>Статус:</b> Не явился</p></label></em>
-
-			<div class="clear"><span class="fr"><input class="big btn" type="submit" value="Проверить очередь" /></span></div>
+		
+			<div class="form_info-choice">
+				<dl>
+					<dt>Заявление № 424134 от 29.08.2014</dt>
+					<dd><span><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+					<dt>Заявление № 341455 от 28.08.2014</dt>
+					<dd><span><b>Статус:</b> Ожидает рассмотрения</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+					<dt>Заявление № 1341414 от 20.08.2014</dt>
+					<dd><span><b>Статус:</b> Не явился</span><span class="btn white small fr"><b>Проверить очередь</b></span></dd>
+				</dl>
+			</div>
 		</fieldset>
 	</form>
 </div>
