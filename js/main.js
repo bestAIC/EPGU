@@ -175,13 +175,14 @@ function PopUp() {
     choise = $(this).children().attr('class');
   
     var $message = $('#'+choise);
-    
+
+    $('#wrap').prepend('<div id="popup_fade"></div>'); 
+
     if ($message.css('display') != 'block') {
         $message.show();
         var firstClick = true;
         $(document).on('click', function(e) {
-          $('#wrap').prepend('<div id="popup_fade"></div>');
-            if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
+            if (!firstClick && $(e.target).closest('.popup').length == 0) {
                 $message.hide();
                 $(document).off('click');
                 $('#popup_fade').remove();
@@ -192,12 +193,13 @@ function PopUp() {
               $('#popup_fade').remove();
             });
             
-            $('.popup .back').click(function(e){
+            $('.popup .back, .popup .popup_map, .popup .popup_rules').click(function(e){
               e.preventDefault();
               $('#'+choise).hide();
               $(document).off('click');
               $('#popup_fade').remove();
-            });             
+            });
+            firstClick = false;             
         });
     }
     e.preventDefault();

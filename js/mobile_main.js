@@ -55,7 +55,7 @@ function MPopUp() {
     }
   });
 
-  /*проверка попапа*/
+  /*проверка попапа для детского сада*/
   $('.map_list li').on('click', function(e) {
     if($(this).hasClass('go_more')){
       var inp = $(this).find('input').attr('id');
