@@ -155,7 +155,7 @@ include('include/head.php');
                 <ul class="map_list">
                   <li class="map_list_item">
                     <div class="left">
-                      <p><a href="#"><span class="map_num">1</span><span class="map_txt">Детский сад №2293</span></a></p>
+                      <p><a href="#"><span class="map_num">1</span><span class="map_txt pseudo">Детский сад №2293</span></a></p>
                       <p>Москва, Неглинная, 23</p>
                       <p>В очереди 5 человек</p>
                     </div>
@@ -165,7 +165,7 @@ include('include/head.php');
                   </li>
                   <li class="map_list_item">
                     <div class="left">
-                      <p><a href="#"><span class="map_num">2</span><span class="map_txt">Детский сад №2285</span></a></p>
+                      <p><a href="#"><span class="map_num">2</span><span class="map_txt pseudo">Детский сад №2285</span></a></p>
                       <p>Москва, Походный пр-д, 3, стр. 2</p>
                       <p>В очереди 40 человек</p>
                     </div>
@@ -175,7 +175,7 @@ include('include/head.php');
                   </li>
                   <li class="map_list_item">
                     <div class="left">
-                      <p><a href="#"><span class="map_num">3</span><span class="map_txt">Детский сад №1732</span></a></p>
+                      <p><a href="#"><span class="map_num">3</span><span class="map_txt pseudo">Детский сад №1732</span></a></p>
                       <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
                       <p>В очереди 12 человек</p>
                     </div>
@@ -185,7 +185,7 @@ include('include/head.php');
                   </li>
                   <li class="map_list_item">
                     <div class="left">
-                      <p><a href="#"><span class="map_num">4</span><span class="map_txt">Детский сад №1952</span></a></p>
+                      <p><a href="#"><span class="map_num">4</span><span class="map_txt pseudo">Детский сад №1952</span></a></p>
                       <p>Москва, Широкий 2-й пр-д, 8, стр. 1</p>
                       <p>В очереди 20 человек</p>
                     </div>
@@ -195,7 +195,7 @@ include('include/head.php');
                   </li>
                   <li class="map_list_item">
                     <div class="left">
-                      <p><a href="#"><span class="map_num">5</span><span class="map_txt">Детский сад №1977</span></a></p>
+                      <p><a href="#"><span class="map_num">5</span><span class="map_txt pseudo">Детский сад №1977</span></a></p>
                       <p>Москва, Нагорный 2-й пр-д, 8, стр. 1</p>
                       <p>В очереди 3 человека</p>
                     </div>

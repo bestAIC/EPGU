@@ -22,12 +22,13 @@ function MPopUp() {
       $('.map_list li').addClass('go_more');
     } else { 
       $('.limiter').removeClass('go_more');
+      $('.map_list li').removeClass('go_more');
     } 
 
   }).resize(); 
   
 
-  $('.limiter, .map_list.go_more').on('click', function(e) {
+  $('.limiter, .map_list').on('click', function(e) {
     if($(this).hasClass('go_more')){
       var $message = $('#popup_more_info');
           

@@ -7,7 +7,7 @@ $(document).ready(function() {
   PlaceSmall();
   MenuShow();
   MapShow();
-  MapControls();
+  //MapControls();
   FieldSlide();
 });
 
@@ -113,7 +113,7 @@ function SForm() {
 
       var root = $(this).parent();
       var currentIndex = root.parent().index();
-      var item = root.parent().find('.map_txt').text();
+      var item = root.parent().find('.pseudo').text();
       if (!$(this).hasClass('checked')){
         $('#cfp_'+ currentIndex).remove();
         if(!$('.select_item_list em .jq-radio.checked').length){
@@ -131,9 +131,15 @@ function SForm() {
       }  
     });
 
-    $(document).on('click','.select_item_list label',function(e){
+    $(document).on('click','.map_list_item',function(e){
        $('.map_ballon_block').show();
-    });  
+    });
+
+    $(document).on('click','.map_ballon_close',function(e){
+       $('.map_ballon_block').hide();
+    });
+
+      
 
 
     $(function() {
@@ -406,25 +412,25 @@ function MapShow(){
   }
 }
 
-function MapControls(){
-  var $cont = $('.map_nav'),
-      $lnk = $('.map_list_item', $cont),
-      $block = $('.map_ballon_block');
-      $close = $('.map_ballon_close', $block);
+// function MapControls(){
+//   var $cont = $('.map_nav'),
+//       $lnk = $('.map_list_item', $cont),
+//       $block = $('.map_ballon_block');
+//       $close = $('.map_ballon_close', $block);
 
 
-      $lnk.each(function(i,e){
-        $(this).on('click', function(e){
-          $lnk.parent().toggleClass('active');
-          e.preventDefault();
-          $block.fadeIn();
-          $close.on('click', function(){
-            e.preventDefault();
-            $block.fadeOut();
-          })
-        });
-      });
-}
+//       $lnk.each(function(i,e){
+//         $(this).on('click', function(e){
+//           $lnk.parent().toggleClass('active');
+//           e.preventDefault();
+//           $block.fadeIn();
+//           $close.on('click', function(){
+//             e.preventDefault();
+//             $block.fadeOut();
+//           })
+//         });
+//       });
+// }
 
 function FieldSlide(){
   var $wrap = $('.js-field_slide-wrap'),

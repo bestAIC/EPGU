@@ -1003,6 +1003,11 @@ H4 {
   padding: 0;
   border: none;
 }
+
+.map-h_wrap H4 {
+  border:none;
+}
+
 .map_list{
   border-bottom: 1px solid #dbe2e6;
 }
@@ -1094,7 +1099,9 @@ H4 {
 .map_ballon_item{
   font-size: 12px;
   line-height: 18px;
+  margin:0 0 0.5em 0;
 }
+
 /* /map_cover */
 
 /**/
@@ -1445,6 +1452,11 @@ H4 {
   overflow-x:hidden;  
 }
 
+.subtitle {
+  font-size: 12px;
+  font-weight: normal;
+}
+
 /**/
 
 #footer {
@@ -1631,6 +1643,7 @@ INPUT::-ms-clear {
 }
 
 INPUT[type="search"] {
+    -webkit-appearance: textfield;
     padding: 0 50px 0 20px!important;
 }
 

@@ -190,76 +190,78 @@ include('include/mobile_head.php');
               <em class="wrapper l_33">Сортировать по:
               </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">удалённости</label>
               </em><em class="wrapper l_33"><input type="radio" name="g_5" id="f_22"/><label for="f_22">длине очереди</label></em><br/>
-              
-              <div class="map_cover">
-                <div class="map_block" id="map"></div>
-                <div class="map_nav">
-                  <h4 class="map_nav_h">Выберите детские сады:<br/><span class="subtitle">Максимум 4: 1 предпочтительный и 3 дополнительных</span></h4>
+            </div>  
+            <div class="map_cover">
+              <div class="map_block" id="map"></div>
+              <div class="address_list">
+              <div class="map_nav">
+                <h4 class="map_nav_h">Выберите детские сады:<br/><span class="subtitle">Максимум 4: 1 предпочтительный и 3 дополнительных</span></h4>
 
-                  <ul class="map_list">
-                    <li class="map_list_item">
-                      <span class="map_check"><input type="checkbox" id="ds_1"/></span>                    
-                      <div class="left">
-                        <p><label class="map_txt" for="ds_1">Детский сад №2293</label></p>
-                        <p>Москва, Неглинная, 23</p>
-                        <p>В очереди 5 человек</p>
-                      </div>  
-                    </li>
-                    <li class="map_list_item">
-                      <span class="map_check"><input type="checkbox" id="ds_2"/></span>                    
-                      <div class="left">
-                        <p><label class="map_txt" for="ds_2">Детский сад №2285</label></p>
-                        <p>Москва, Походный пр-д, 3, стр. 2</p>
-                        <p>В очереди 40 человек</p>
-                      </div>
-                    </li>
-                    <li class="map_list_item">
-                      <span class="map_check"><input type="checkbox" id="ds_3"/></span>
-                      <div class="left">
-                        <p><label class="map_txt" for="ds_3">Детский сад №1732</label></p>
-                        <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
-                        <p>В очереди 12 человек</p>
-                      </div>
-                    </li>
-                    <li class="map_list_item">
-                      <span class="map_check"><input type="checkbox" id="ds_4"/></span>                   
-                      <div class="left">
-                        <p><label class="map_txt" for="ds_4">Детский сад №1952</label></p>
-                        <p>Москва, Широкий 2-й пр-д, 8, стр. 1</p>
-                        <p>В очереди 20 человек</p>
-                      </div>
-                    </li>
-                    <li class="map_list_item">
-                      <span class="map_check"><input type="checkbox" id="ds_5"/></span>                   
-                      <div class="left">
-                        <p><label class="map_txt" for="ds_5">Детский сад №1977</label></p>
-                        <p>Москва, Нагорный 2-й пр-д, 8, стр. 1</p>
-                        <p>В очереди 3 человека</p>
-                      </div>
-                    </li>                                    
-                  </ul>
-                </div><!-- map_nav -->
-
-                <div class="map_ballon_block">
-                  <div class="map_ballon_wrap">
-                    <a class="map_ballon_close"><span class="icomoon">L</span></a>
-                    <div class="map_ballon_h">
-                      <p><strong>Детский сад №2285</strong></p>
+                <ul class="map_list">
+                  <li class="map_list_item">
+                    <span class="map_check"><input type="checkbox" id="ds_1"/></span>                    
+                    <div>
+                      <p><span class="pseudo">Детский сад №2293</span></p>
+                      <p>Москва, Неглинная, 23</p>
+                      <p>В очереди 5 человек</p>
+                    </div>  
+                  </li>
+                  <li class="map_list_item">
+                    <span class="map_check"><input type="checkbox" id="ds_2"/></span>                    
+                    <div>
+                      <p><span class="pseudo">Детский сад №2285</span></p>
+                      <p>Москва, Походный пр-д, 3, стр. 2</p>
+                      <p>В очереди 40 человек</p>
                     </div>
-                    <ul class="map_ballon_list">
-                      <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
-                      <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
-                      <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
-                      <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
-                      <li class="map_ballon_item">Как добраться:</li>
-                      <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
-                      <li class="map_ballon_item">Мякинино, Тушинская</li>
-                      <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
-                    </ul>
+                  </li>
+                  <li class="map_list_item">
+                    <span class="map_check"><input type="checkbox" id="ds_3"/></span>
+                    <div>
+                      <p><span class="pseudo">Детский сад №1732</span></p>
+                      <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                      <p>В очереди 12 человек</p>
+                    </div>
+                  </li>
+                  <li class="map_list_item">
+                    <span class="map_check"><input type="checkbox" id="ds_4"/></span>                   
+                    <div>
+                      <p><span class="pseudo">Детский сад №1952</span></p>
+                      <p>Москва, Широкий 2-й пр-д, 8, стр. 1</p>
+                      <p>В очереди 20 человек</p>
+                    </div>
+                  </li>
+                  <li class="map_list_item">
+                    <span class="map_check"><input type="checkbox" id="ds_5"/></span>                   
+                    <div>
+                      <p><span class="pseudo">Детский сад №1977</span></p>
+                      <p>Москва, Нагорный 2-й пр-д, 8, стр. 1</p>
+                      <p>В очереди 3 человека</p>
+                    </div>
+                  </li>                                    
+                </ul>
+              </div>  
+              </div><!-- map_nav -->
+
+              <div class="map_ballon_block">
+                <div class="map_ballon_wrap">
+                  <a class="map_ballon_close"><span class="icomoon">L</span></a>
+                  <div class="map_ballon_h">
+                    <p><strong>Детский сад №2285</strong></p>
                   </div>
-                </div><!-- map_ballon_block -->
-              </div><!-- map_cover -->
-              
+                  <ul class="map_ballon_list">
+                    <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+                    <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+                    <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+                    <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+                    <li class="map_ballon_item">Как добраться:</li>
+                    <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
+                    <li class="map_ballon_item">Мякинино, Тушинская</li>
+                    <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+                  </ul>
+                </div>
+              </div><!-- map_ballon_block -->
+            </div><!-- map_cover -->
+            <div class="limiter">  
               <div class="select_item_cover">  
               <h4>Какой из выбранных детских садов сделать предпочтительным?</h4>
               <div class="select_item_list">

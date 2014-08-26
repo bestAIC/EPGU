@@ -28,7 +28,7 @@ BODY {
   height: 1px;
 }
 .map_nav_h{
-  margin-left: -50px;
+  /*margin-left: -50px;*/
 }
 .map_list{
   height: 268px;
@@ -1338,7 +1338,13 @@ FIELDSET{
 
 .btn B {
   height:50px;
-  line-height:50px;  
+  line-height:50px; 
+  text-align: center; 
+}
+
+.map_ballon_block .btn B {
+  text-align: center;
+  font-size: 16px;
 }
 
 .btn-cont_inner .limiter {
@@ -2335,12 +2341,12 @@ LABEL.map_txt {
   }
 
   .mobile_detskiy_sad .map_list_item P {
-    padding: 0 0 0 40px;
-    width: 180px;
+    padding: 0 0 0 80px;
   }
 
   .map_list_item .map_check{
-    left: 0px;
+    left: 50%;
+    margin: 0 0 0 -140px;
   }
 
   .blue_cover {
@@ -2565,7 +2571,9 @@ LABEL.map_txt {
   }        
 
   .map_nav_h {
-    display:none;
+    /*display:none;*/
+    margin: 0 auto 20px;
+    width: 280px;
   }        
 
   .ticket{
