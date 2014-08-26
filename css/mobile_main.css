@@ -1,6 +1,7 @@
 BODY {
   background:#fff;
   min-width:320px;
+  font-weight: 300;
 }
 
 .cover {
@@ -387,6 +388,9 @@ FIELDSET LABEL{
   top: 20px;
 }
 
+INPUT{
+  font-weight: 300;
+}
 .big_inp-form INPUT{
    height: 60px;
 }
@@ -412,6 +416,7 @@ INPUT.search_btn {
 }
 .big_inp-form .cover_info_title p{
     margin-top: 20px;
+    font-weight: 300;
 }
 .big_inp-form .cover_info_title .price{
   display: inline-block;
@@ -1350,10 +1355,6 @@ FIELDSET{
 .btn-cont_inner .limiter {
   padding:0;
 }
-.last_btn-block{
-  border-top: 1px solid #DBE2E6;
-  padding-top: 40px;
-}
 
   .menu_btn_cover,
   #header .nav {
@@ -1475,6 +1476,7 @@ FIELDSET{
   }
   .ticket dd{
     width: 245px;
+    font-weight: 300;
   }
 
   .jq-file{
@@ -1643,6 +1645,7 @@ FIELDSET{
     border-bottom:1px solid #d0d0d0;
     height:60px;
     line-height:60px;
+    font-weight: normal;
   }
   
   #footer .bottom_link EM {
@@ -1757,9 +1760,7 @@ FIELDSET{
     margin-left: 0;
   }
 
-  .form_person-descr{
-    border-bottom: 1px solid #DBE2E6;
-  }
+ 
 
 .map_list_item .map_check{
   display: inline-block;
@@ -1775,23 +1776,103 @@ LABEL.map_txt {
   cursor:pointer;
 }
 
+.brd_w100{
+  display: block;
+  border: none;
+  border-top: 1px solid #DBE2E6;
+}
+.last_btn-block{
+  margin-top: 40px;
+}
+
+
+  .mobile_detskiy_sad .status_txt{
+    color: #74777F;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  .mobile_detskiy_sad .status_txt + .clear{
+    margin-bottom: 40px;
+  }
+
+  .form_person-descr{
+    margin-bottom: 8px;
+  }
+  .form_person-descr dt{
+    width: 42%;
+  }
+  .form_person-descr dd{
+    width: 58%;
+    font-weight: 300;
+  }
+
+  .form_info-descr{
+    margin-top: 0;
+  }
+  .form_info-descr h3{
+    font-size: 18px;
+    margin: 40px 0 30px;
+  }
   .form_info-list li{
-    border-bottom: 1px solid #DBE2E6;
-    padding-bottom: 30px;
+    border-top: 1px solid #DBE2E6;
+    padding-top: 24px;
+    margin-bottom: 28px;
   }
   .form_info-list p{
     font-size: 15px;
+    font-weight: 300;
   }
   .form_info-list p:first-child{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .form_info-list .form_info-more{
     font-size: 16px;
   }
+  .form_info-list .form_info-more{
+    color: #0173C1;
+  }
+  .form_info-list span{
+    color: #74777F;
+  }
 
-
-
-
+  .table_prelude-block{
+    border-top: 1px solid #DBE2E6;
+    padding-top: 40px;
+  }
+  .table_prelude-block .btn.larr B:before{
+    font-size: 12px;
+    top: 18px;
+  }
+  .table_prelude-h-rt{
+    margin-left: 174px;
+  }
+  .table_prelude-h-rt h3{
+    font-size: 18px;
+  }
+  .table_prelude-block .more_info{
+    border-top: 1px solid #DBE2E6;
+    border-bottom: 1px solid #DBE2E6;
+    margin: 30px 0 40px;
+    font-size: 18px;
+  }
+  .table_prelude-block .more_info a{
+    color: #000;
+    display: block;
+    position: relative;
+    padding: 30px 0;
+  }
+  .table_prelude-block .more_info a:after{
+    content: "[";
+    font: 14px 'icomoon-epga';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 38px;
+  }
+  .table_prelude-info p{
+    font-size: 15px;
+    line-height: 21px;
+  }
 
 
 
@@ -2314,34 +2395,18 @@ LABEL.map_txt {
     position:static;
   }
   
-  .mobile_postanovka_na_registraciu .wrapper.l_33,
-  .mobile_postanovka_na_registraciu .wrapper.l_50,
-  .mobile_postanovka_na_registraciu .wrapper.l_66 {
-    width:100%;
-  } 
   
-  .mobile_postanovka_na_registraciu .wrapper.l_25 {
-    width:50%;
-  }   
-  
-  .mobile_zamena_pasporta_neprigodnost .wrapper.l_16,
-  .mobile_zamena_pasporta_neprigodnost .wrapper.l_33,
-  .mobile_zamena_pasporta_neprigodnost .wrapper.l_50,
-  .mobile_zamena_pasporta_neprigodnost .wrapper.l_66{
+  .wrapper.l_16,
+  .wrapper.l_33,
+  .wrapper.l_50,
+  .wrapper.l_66{
     width: 100%;
   }
 
-  .mobile_zamena_pasporta_neprigodnost .wrapper.l_25{
+  .wrapper.l_25{
     width: 50%;
   }
 
-  .mobile_oplata_uniteller .wrapper.l_66 {
-    width:100%;
-  } 
-
-  .mobile_oplata_uniteller .wrapper.l_25 {
-    width:50%;
-  } 
 
   .mobile_oplata_uniteller .ticket {
     border:none;

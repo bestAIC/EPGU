@@ -1,5 +1,5 @@
 <?
-$pagename = 'mobile_detskiy_sad';
+$pagename = 'mobile_detskiy_sad_proverka_ocheredy';
 $pagetitle = 'Проверка очереди в детский сад';
 include('include/mobile_head.php');
 ?>
@@ -52,7 +52,7 @@ include('include/mobile_head.php');
 					<ul class="list form_info-list">
 						<li>
 							<p><b>Вы 123-й в очереди.</b><a href="#" class="form_info-more fr">Проверить список</a></p>
-							<p>Детский сад №1131, Трифоновская ул., 34к2.</p>
+							<p>Детский сад №1131, Трифоновская ул., 34к2.<span class="sub_txt">Предпочтительный детский сад</span></p>
 						</li>
 						<li>
 							<p><b>Вы 34-й в очереди.</b><a href="#" class="form_info-more fr">Проверить очередь</a></p>
@@ -70,7 +70,9 @@ include('include/mobile_head.php');
 				</div>
 			</div>
 		</fieldset>
-
+		
+		<hr class="brd_w100">
+		
 		<div class="limiter">
 			<div class="clear last_btn-block">
 			    <span class="btn white fr"><b>Изменить запись</b></span>

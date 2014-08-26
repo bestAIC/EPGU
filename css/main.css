@@ -2867,7 +2867,7 @@ input[type="submit"].styler[disabled] {
 .form_info-descr{
   margin-top: 28px;
 }
-.form_info-descr.form_info-descr h3{
+.form_info-descr h3{
   font-size: 24px;
   margin-bottom: 40px;
 }
@@ -2884,6 +2884,7 @@ input[type="submit"].styler[disabled] {
   margin-left: 20px;
   color: #535B63;
   font-size: 15px;
+  font-weight: 300;
 }
 .form_info-list span.pseudo{
   margin-left: 0;
@@ -2927,10 +2928,4 @@ input[type="submit"].styler[disabled] {
 
 /* .form_info-choice */
 
-.mobile_detskiy_sad .status_txt{
-  color: #74777F;
-  margin-bottom: 30px;
-}
-.mobile_detskiy_sad .status_txt + .clear{
-  margin-bottom: 40px;
-}
+
