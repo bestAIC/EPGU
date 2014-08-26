@@ -128,8 +128,31 @@
 <? } else if($pagename == 'mobile_detskiy_sad') {?>
     <div id="popup_map_address" class="popup">
       <b class="close_popup_x"></b>
-      <h2>Детский сад №2285</h2>
-      <p><label class="btn big l_100" for="ds_1"><b>Выбрать детский сад</b></label></p>
+      <div class="ds_cover_btn ds_1">
+        <h2>Детский сад №2293</h2>
+        <p><label class="btn big l_100" for="ds_1"><b>Выбрать детский сад</b></label>
+        <span class="not">Вы можете выбрать не более 4 детских садов</span></p>
+      </div>
+      <div class="ds_cover_btn ds_2">
+        <h2>Детский сад #2285</h2>
+        <p><label class="btn big l_100" for="ds_2"><b>Выбрать детский сад</b></label>
+        <span class="not">Вы можете выбрать не более 4 детских садов</span></p>
+      </div>
+      <div class="ds_cover_btn ds_3">
+        <h2>Детский сад №1732</h2>
+        <p><label class="btn big l_100" for="ds_3"><b>Выбрать детский сад</b></label>
+        <span class="not">Вы можете выбрать не более 4 детских садов</span></p>
+      </div>
+      <div class="ds_cover_btn ds_4">
+        <h2>Детский сад №1952</h2>
+        <p><label class="btn big l_100" for="ds_4"><b>Выбрать детский сад</b></label>
+        <span class="not">Вы можете выбрать не более 4 детских садов</span></p>
+      </div>
+      <div class="ds_cover_btn ds_5">
+        <h2>Детский сад №1977</h2>
+        <p><label class="btn big l_100" for="ds_5"><b>Выбрать детский сад</b></label>
+        <span class="not">Вы можете выбрать не более 4 детских садов</span></p>
+      </div>
       <br/>
       <p>Адрес: Москва, Походный пр-д. 3, стр. 2</p>
       <p>Режим работы: Пн-Пт 9:00-18:00</p>

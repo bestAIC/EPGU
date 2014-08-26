@@ -2582,8 +2582,22 @@ LABEL.map_txt {
       padding: 0;
       width: 100%;
   }
-  
-  
+
+  .ds_cover_btn {
+    display: none;
+  }
+
+  .ds_cover_btn .not {
+    display: none;
+  }
+
+  .ds_cover_btn .disabled + span {
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    text-align:right;
+  }  
+    
   .address_list {
     max-width:100%;
     padding: 0;

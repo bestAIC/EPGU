@@ -147,6 +147,7 @@ SPAN.icomoon{
 
 .popup {
   width:870px;
+  min-width: 320px;
   max-height:100%;
   display:none;
   position:fixed;
@@ -1751,7 +1752,7 @@ TEXTAREA.big {
   padding:0 25px;
   font-weight:normal;
   font-size: 115%; 
-     
+  white-space: nowrap;   
 }
 
 INPUT.btn.big {
@@ -1793,7 +1794,7 @@ INPUT.btn.small {
 .btn.white:active {
   background:#e0e0e0;
 }
-.btn.white.disabled{
+.btn.disabled{
   background-color: #e0e0e0;
   cursor: default;
 }

@@ -55,6 +55,21 @@ function MPopUp() {
     }
   });
 
+  /*проверка попапа*/
+  $('.map_list li').on('click', function(e) {
+    if($(this).hasClass('go_more')){
+      var inp = $(this).find('input').attr('id');
+      $('#popup_map_address .ds_cover_btn').hide();
+      $('#popup_map_address').find('.'+inp).show();
+      if($('.map_list .jq-checkbox.checked').length==4){
+        $('#popup_map_address').find('.'+inp+' label').addClass('disabled');
+      } else {
+        $('#popup_map_address').find('.'+inp+' label').removeClass('disabled');
+      }
+    }
+  });
+
+
   $('.map_list li').on('click', function(e) {
     if($(this).hasClass('go_more')){
       var $message = $('#popup_map_address');
