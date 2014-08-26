@@ -124,6 +124,7 @@
       <img src="img/map.jpg" />
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div>
+
 <? } else if($pagename == 'mobile_detskiy_sad') {?>
     <div id="popup_map_address" class="popup">
       <b class="close_popup_x"></b>
@@ -139,4 +140,26 @@
       <img src="img/map.jpg" />
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div>
+    
+    <div id="popup_map" class="popup left">
+      <b class="close_popup_x"></b>
+      <h2>Детский сад № 11301</h2>
+      <dl class="popup_info-descr">
+        <dt><b>Очередь</b></dt>
+        <dd>Всего 1245 человека, <b>вы 125</b></dd>
+        <dt><b>Адрес</b></dt>
+        <dd>Москва, Садово-Самотечная ул. 12к1</dd>
+        <dt><b>Режим работы</b></dt>
+        <dd>Пн-Пт: 9:00 - 18:00</dd>
+        <dt><b>Обед</b></dt>
+        <dd>12:30 - 13:30</dd>
+        <dt><b>Телефон</b></dt>
+        <dd>+7 (495) 913-00-09</dd>
+        <dt><b>Ближайшее метро</b></dt>
+        <dd>Волоколамская, Мякинино.</dd>
+      </dl>
+      <img src="img/map.jpg" />
+    </div>    
+    
 <? } ?>
+

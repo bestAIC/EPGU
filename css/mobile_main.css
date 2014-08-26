@@ -1350,6 +1350,10 @@ FIELDSET{
 .btn-cont_inner .limiter {
   padding:0;
 }
+.last_btn-block{
+  border-top: 1px solid #DBE2E6;
+  padding-top: 40px;
+}
 
   .menu_btn_cover,
   #header .nav {
@@ -1753,6 +1757,10 @@ FIELDSET{
     margin-left: 0;
   }
 
+  .form_person-descr{
+    border-bottom: 1px solid #DBE2E6;
+  }
+
 .map_list_item .map_check{
   display: inline-block;
   position: absolute;
@@ -1767,10 +1775,19 @@ LABEL.map_txt {
   cursor:pointer;
 }
 
-
-
-
-
+  .form_info-list li{
+    border-bottom: 1px solid #DBE2E6;
+    padding-bottom: 30px;
+  }
+  .form_info-list p{
+    font-size: 15px;
+  }
+  .form_info-list p:first-child{
+    margin-bottom: 10px;
+  }
+  .form_info-list .form_info-more{
+    font-size: 16px;
+  }
 
 
 
