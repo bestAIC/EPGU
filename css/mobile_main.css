@@ -3318,6 +3318,8 @@ LABEL.map_txt {
     line-height: 50px;
     border: none;
     color: #565656;
+    width: 100%;
+    display: inline-block;
   }
   .load_photo_cols .pseudo:after{
     content: '5';
