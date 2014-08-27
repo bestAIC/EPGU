@@ -1121,6 +1121,16 @@ H4 {
   line-height: 18px;
   margin:0 0 0.5em 0;
 }
+.popup_map_adress p{
+  text-align: left;
+}
+.popup_map_adress .map_ballon_list{
+  text-align: left;
+  margin-top: 20px;
+}
+.popup_map_adress .map_ballon_item{
+  font-size: 15px;
+}
 
 /* /map_cover */
 
@@ -1750,7 +1760,7 @@ TEXTAREA.big {
   background: #fff;
   border: 1px solid #CDD1D4;
   overflow-y: scroll;
-  top: 52px;
+  margin-top: -1px;
 }
 .autocomplete-suggestion{
   padding: 15px 20px;

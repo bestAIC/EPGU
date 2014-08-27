@@ -25,8 +25,8 @@ include('include/head.php');
 				</div></i>
 				</span></h3>
 				<em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
-				</em><em class="wrapper l_33"><input type="text" placeholder="Имя" value="Александра" class="big" disabled="disabled"/>
-				</em><em class="wrapper l_33"><input type="text" placeholder="Отчество" value="Константиновна" class="big" disabled="disabled"/></em><br/>
+				</em><em class="wrapper l_33"><input type="text" placeholder="Имя" value="Александр" class="big" disabled="disabled"/>
+				</em><em class="wrapper l_33"><input type="text" placeholder="Отчество" value="Андреевич" class="big" disabled="disabled"/></em><br/>
 				
 				<em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" value="09.09.1989" disabled="disabled"/>
 				</em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" /><label>Мужской</label>

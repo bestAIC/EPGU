@@ -67,7 +67,7 @@ function MPopUp() {
       } else {
         $('#popup_map_address').find('.'+inp+' label').removeClass('disabled');
       }
-    }
+    } 
   });
 
 

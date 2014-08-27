@@ -2237,6 +2237,12 @@ LABEL.map_txt {
     height: 50px;
     padding: 0 15px;
   }
+  .big_inp-form INPUT.search_btn{
+    padding: 0;
+  }
+  .selction_ajax-placeholder{
+    display: none;
+  }
 
   .jq-selectbox__dropdown{
     top: 50px !important;

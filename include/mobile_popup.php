@@ -93,7 +93,7 @@
     <div id="popup_map_adress" class="popup popup_map_adress">
       <b class="close_popup_x"></b>
         <h2>МИФНС России №46 по г. Москве</h2>
-        <p>В составе ИФНС России № 1 по г. Москве</p>
+        <p><b>В составе ИФНС России № 1 по г. Москве</b></p>
         <ul class="map_ballon_list">
           <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
           <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>

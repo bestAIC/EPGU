@@ -13,6 +13,7 @@ $(document).ready(function() {
   if($('.search_inp-ajax').length){
     selectRegion();
   }
+  avaLoad();
 });
 
 // Styler
@@ -561,3 +562,10 @@ function selectRegion(){
   });
 }
 
+function avaLoad(){
+  var btn = $('.list.edit_list .lnk, .load_photo-btn .btn');
+
+  btn.on('click', function(e){
+    e.preventDefault()
+  })
+}
