@@ -557,7 +557,7 @@ function selectRegion(){
         var obj = this.parentElement.lastElementChild;
           obj.innerHTML = this.getAttribute('placeholder');
       },
-      noSuggestionNotice: 'Нет подходящих результатов',
+      noSuggestionNotice: 'Нет подходящих результатов'
   });
 }
 

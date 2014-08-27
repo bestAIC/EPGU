@@ -29,7 +29,7 @@ BODY {
   height: 1px;
 }
 .map_nav_h{
-  /*margin-left: -50px;*/
+  margin-left: -50px;
 }
 .map_list{
   height: 268px;
@@ -1733,6 +1733,9 @@ FIELDSET{
     padding:30px 0 0; 
     margin:-30px 0 30px 0;
   }  
+  .field_slide-wrap + .btn_add-slide{
+    padding: 20px 10px 40px 20px;
+  }
   .filed_slide .radio_group .wrapper{ 
     vertical-align: top;
   }
@@ -2025,6 +2028,13 @@ LABEL.map_txt {
   .menu_btn_cover.hide {
     right:-250px!important;
   }   
+  .field_slide-wrap + .btn_add-slide{
+    margin-bottom: -10px;
+    margin-top: -20px;
+  }
+  .filed_slide .chk_50{
+    margin-top: 16px;
+  }
 
   .menu {
     margin:14px 0 0 0;

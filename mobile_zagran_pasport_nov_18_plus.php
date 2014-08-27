@@ -52,20 +52,11 @@
 				<br/>
 				
 				<em class="wrapper l_100">
-					<label for="">Страна рождения</label>
-					<select class="select_choice">
-						<option value="0" selected="selected" class="selected_one">Страна рождения</option>
-						<option value="1">Белоруссия</option>
-						<option value="2">Белоруссия</option>
-						<option value="3">Украина</option>
-						<option value="4">Белоруссия</option>
-						<option value="5">Белоруссия</option>
-						<option value="6">Украина</option>
-						<option value="7">Украина</option>
-						<option value="8">Белоруссия</option>
-						<option value="9">Украина</option>
-						<option value="10">Украина</option>
-					</select>
+					<div class="search_inp-block">
+						<input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+						<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+						<div class="selction_ajax-placeholder"></div>
+					</div>
 				</em>
 
 				<em class="wrapper l_100"><label for="">Место рождения</label><input type="text" placeholder="Место рождения" class="big" /></em>
@@ -193,20 +184,11 @@
 					<em class="wrapper l_25"><label for="f_2_3">Дата изменения</label><input id="f_2_3" type="text" placeholder="Дата изменения" class="big" /></em>
 
 					<em class="wrapper l_100">
-						<label for="">Адрес изменения</label>
-						<select id="" class="select_choice">
-							<option value="0" selected="selected" class="selected_one">Адрес изменения</option>
-							<option value="1">Белоруссия</option>
-							<option value="2">Белоруссия</option>
-							<option value="3">Украина</option>
-							<option value="4">Белоруссия</option>
-							<option value="5">Белоруссия</option>
-							<option value="6">Украина</option>
-							<option value="7">Украина</option>
-							<option value="8">Белоруссия</option>
-							<option value="9">Украина</option>
-							<option value="10">Украина</option>
-						</select>
+						<div class="search_inp-block">
+							<input type="search" placeholder="Адрес изменения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
 					</em>
 
 					<em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>

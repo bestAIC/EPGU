@@ -110,7 +110,7 @@ include('include/head.php');
 
 				<em class="wrapper l_66">
 					<div class="search_inp-block">
-						<input type="search" placeholder="Страна рождения" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+						<input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 						<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 						<div class="selction_ajax-placeholder"></div>
 					</div>
@@ -150,7 +150,7 @@ include('include/head.php');
 					
 					<em class="wrapper l_75">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Государство" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Государство" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
@@ -180,7 +180,7 @@ include('include/head.php');
 					
 					<em class="wrapper l_75">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Государство" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Государство" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
@@ -368,7 +368,7 @@ include('include/head.php');
 				<div class="fields_cover">
 					<em class="wrapper l_100">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Регион" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
@@ -376,13 +376,13 @@ include('include/head.php');
 					
 					<em class="wrapper l_50">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Район" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
 					</em><em class="wrapper l_50">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Населенный пункт" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
@@ -399,7 +399,7 @@ include('include/head.php');
 				<div class="fields_cover">
 					<em class="wrapper l_100">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Регион" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
@@ -407,13 +407,13 @@ include('include/head.php');
 					
 					<em class="wrapper l_50">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Район" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
 					</em><em class="wrapper l_50">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Населенный пункт" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 							<div class="selction_ajax-placeholder"></div>
 						</div>
