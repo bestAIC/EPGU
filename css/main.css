@@ -1666,9 +1666,16 @@ INPUT[type="search"] {
     -webkit-appearance: textfield;
     padding: 0 50px 0 20px!important;
 }
+INPUT[type="search"]::-webkit-search-decoration,
+INPUT[type="search"]::-webkit-search-cancel-button,
+INPUT[type="search"]::-webkit-search-results-button,
+INPUT[type="search"]::-webkit-search-results-decoration  {
+    -webkit-appearance: none;
+}
 
 INPUT.search_btn {
   position: absolute;
+  z-index: 3;
   width: 1.4em;
   right:10px;
   top:14px;
@@ -1719,6 +1726,23 @@ TEXTAREA.big {
   outline: 0;
 }
 
+
+.search_inp-block{
+  position: relative;
+  height: 54px;
+}
+.search_inp-ajax{
+  position: absolute;
+  z-index: 2;
+  background: #fff;
+}
+.search_inp-ajax-x{
+  color: #CCC;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+  height: 54px;
+}
 .autocomplete-suggestions{
   padding: 10px 0;
   max-height: 230px;
@@ -1735,6 +1759,7 @@ TEXTAREA.big {
   background: #6CA9D2;
   color: #fff;
 }
+.
 
 .btn.small B {
   height:40px;

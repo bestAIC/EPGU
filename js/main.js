@@ -542,4 +542,22 @@ function tableAsynchron(){
     }
 }
 
+function selectRegion(){
+  
+  var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
+  var citiesArray = $.map(cities, function (value, key) { return { value: value, data: key }; });
+
+
+
+  // Initialize autocomplete with local lookup:
+  $('.search_inp-ajax').autocomplete({
+      lookup: citiesArray,
+      minChars: 0,
+      onSelect: function (suggestion) {
+        var obj = this.parentElement.lastElementChild;
+          obj.innerHTML = this.getAttribute('placeholder');
+      },
+      noSuggestionNotice: 'Нет подходящих результатов',
+  });
+}
 

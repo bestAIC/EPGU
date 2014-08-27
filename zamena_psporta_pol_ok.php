@@ -14,7 +14,7 @@ include('include/head.php');
       <div id="content">
         <div class="title">
           <span class="icomoon color_3">G</span><h1>Замена паспорта гражданина Российской Федерации</h1>
-          <h2>В&nbsp;связи с&nbsp;изменением пола</h2>
+          <h2>В&nbsp;связи с&nbsp;непригодностью</h2>
         </div>
         
           

@@ -57,6 +57,7 @@ function MPopUp() {
 
   /*проверка попапа для детского сада*/
   $('.map_list li').on('click', function(e) {
+    e.preventDefault();
     if($(this).hasClass('go_more')){
       var inp = $(this).find('input').attr('id');
       $('#popup_map_address .ds_cover_btn').hide();

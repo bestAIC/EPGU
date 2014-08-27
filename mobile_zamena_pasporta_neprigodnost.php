@@ -138,20 +138,13 @@ include('include/mobile_head.php');
 				</em><em class="wrapper l_33"><label for="settings02">Дата выдачи</label><input type="text" placeholder="Дата выдачи" value="07.12.2004" class="big" disabled="disabled" /></em><em class="wrapper l_33"><label for="settings02">Код подразделения</label><input type="text" placeholder="Код подразделения" class="big" value="330-009" disabled="disabled" /></em><br/>
 				<em class="wrapper l_100"><label for="settings02">Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России по Свердловской области в Октябрьс…" disabled="disabled" /></em>
 				<br/>
-				<em class="wrapper l_100">
-					<select class="select_choice">
-						<option value="0" selected="selected" class="selected_one">Страна рождения</option>
-						<option value="1">Белоруссия</option>
-						<option value="2">Белоруссия</option>
-						<option value="3">Украина</option>
-						<option value="4">Белоруссия</option>
-						<option value="5">Белоруссия</option>
-						<option value="6">Украина</option>
-						<option value="7">Украина</option>
-						<option value="8">Белоруссия</option>
-						<option value="9">Украина</option>
-						<option value="10">Украина</option>
-					</select>
+				
+				<em class="wrapper l_66">
+					<div class="search_inp-block">
+						<input type="search" placeholder="Страна рождения" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+						<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+						<div class="selction_ajax-placeholder"></div>
+					</div>
 				</em>
 
 				<em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
@@ -207,20 +200,14 @@ include('include/mobile_head.php');
 			<div class="fields_cover">
 				<div class="limiter">
 
-					<h4>Данные вашего загранпаспорта</h4>
+					<h4>Укажите гражданство какого государства</h4>
 					
 					<em class="wrapper l_100">
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Номер транспортного средства">Гражданство</option>
-							<option value="2">Россия</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-						</select>
+						<div class="search_inp-block">
+							<input type="search" placeholder="Государство" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
 					</em>
 					<em class="wrapper l_33"><label>Дата вступления</label><input type="text" placeholder="Дата вступления" class="big" /></em>
 					<em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>
@@ -246,21 +233,16 @@ include('include/mobile_head.php');
 			<div class="fields_cover">
 				<div class="limiter">
 
-					<h4>Данные вашего загранпаспорта</h4>
+					<h4>Укажите гражданство какого государства</h4>
 					
 					<em class="wrapper l_100">
-						<select class="select_choice">
-							<option value="0" class="selected_one" name="Номер транспортного средства">Гражданство</option>
-							<option value="2">Россия</option>
-							<option value="3">Белорусия</option>
-							<option value="4">Россия</option>
-							<option value="5">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-							<option value="6">Россия</option>
-							<option value="7">Белорусия</option>
-						</select>
+						<div class="search_inp-block">
+							<input type="search" placeholder="Государство" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
 					</em>
+					
 					<em class="wrapper l_33"><label>Дата вступления</label><input type="text" placeholder="Дата вступления" class="big" /></em>
 					<em class="wrapper l_100"><a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a></em>
 
@@ -285,7 +267,7 @@ include('include/mobile_head.php');
 			<div class="fields_cover">
 				<div class="limiter">
 
-					<h4>Данные вашего загранпаспорта</h4>
+					<h4>Укажите гражданство какого государства</h4>
 					
 					<em class="wrapper l_100">
 						<select class="select_choice">
@@ -325,11 +307,11 @@ include('include/mobile_head.php');
 			</div>
 
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" name="family_status" checked="checked" id="f_s_1"/><label class="flag_label" for="f_s_1">Никогда не была замужем</label></em>
+				<em class="wrapper l_100"><input type="radio" name="family_status" checked="checked" id="f_s_1"/><label class="flag_label" for="f_s_1">Никогда не был(-а) женат / замужем</label></em>
 			</div>
 
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_2"/><label class="flag_label" for="f_s_2">Замужем</label></em>
+				<em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_2"/><label class="flag_label" for="f_s_2">Женат / замужем</label></em>
 			</div>
 
 			<div class="fields_cover">
@@ -354,7 +336,7 @@ include('include/mobile_head.php');
 			</div>
 
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_3"/><label class="flag_label" for="f_s_3">Вдова</label></em>
+				<em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_3"/><label class="flag_label" for="f_s_3">Вдова / вдовец</label></em>
 			</div>
 
 			<div class="fields_cover">
@@ -372,7 +354,7 @@ include('include/mobile_head.php');
 			</div>
 
 			<div class="limiter">
-				<em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_4"/><label class="flag_label" for="f_s_4">Разведена</label></em>
+				<em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_4"/><label class="flag_label" for="f_s_4">Разведен / разведена</label></em>
 			</div>
 
 			<div class="fields_cover">
@@ -460,9 +442,9 @@ include('include/mobile_head.php');
 			</div>
 		</fieldset>
 
-		<fieldset class="group_15">
+		<fieldset class="group_9">
 			<div class="limiter">
-				<span class="point_num">15</span>
+				<span class="point_num">9</span>
 				<h3>Куда вы будете подавать оригиналы документов?</h3>
 			</div>
 			
@@ -471,11 +453,28 @@ include('include/mobile_head.php');
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Регион" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
 					
-					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-					
+					<em class="wrapper l_50">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Район" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><em class="wrapper l_50">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Населенный пункт" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
+
 					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
 					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
@@ -489,11 +488,28 @@ include('include/mobile_head.php');
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Регион" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
 					
-					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-					
+					<em class="wrapper l_50">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Район" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><em class="wrapper l_50">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Населенный пункт" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
+
 					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
 					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
@@ -507,11 +523,28 @@ include('include/mobile_head.php');
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Регион" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
 					
-					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
-					
+					<em class="wrapper l_50">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Район" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><em class="wrapper l_50">
+						<div class="search_inp-block">
+							<input type="search" placeholder="Населенный пункт" name="country" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
+
 					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
 					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>

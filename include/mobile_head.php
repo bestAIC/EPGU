@@ -14,6 +14,9 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/mobile_main.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="js/plugins/countries.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mockjax.js"></script>
 
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
