@@ -1943,6 +1943,14 @@ LABEL.map_txt {
   .popup .close_popup_x  {
     display:none;
   }
+  .popup.popup_technical .close_popup_x{
+    display: inline-block;
+    right: 30px;
+    top: 10px;
+  }
+  .popup.popup_technical .close_popup_x + h3{
+    margin-top: 20px;
+  }
   
   .popup .white.btn {
     display:inline-block;

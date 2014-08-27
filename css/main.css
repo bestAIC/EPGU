@@ -173,7 +173,6 @@ SPAN.icomoon{
   right:25px;
   top:25px;
   cursor:pointer; 
-  background: url('../img/ico_close.png') 0 0 no-repeat;      
 }
 .popup .close_popup_x:before{
     content: 'L';
