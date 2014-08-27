@@ -1121,14 +1121,14 @@ H4 {
   line-height: 18px;
   margin:0 0 0.5em 0;
 }
-.popup_map_adress p{
+.popup_map_address p{
   text-align: left;
 }
-.popup_map_adress .map_ballon_list{
+.popup_map_address .map_ballon_list{
   text-align: left;
   margin-top: 20px;
 }
-.popup_map_adress .map_ballon_item{
+.popup_map_address .map_ballon_item{
   font-size: 15px;
 }
 
@@ -1268,6 +1268,9 @@ H4 {
   right:0px;
 }
 
+.ticket .money{
+  margin-right: 30px;
+}
 .ticket .status {
   float:right;
   position:relative;

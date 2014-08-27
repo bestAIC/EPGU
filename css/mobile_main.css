@@ -837,6 +837,9 @@ INPUT.search_btn {
     content:'';
     border-top:1px solid #C8C7CC;
 }
+.ticket .money{
+  margin-right: 10px;
+}
 
 .ticket .sub_title .btn_cover_r{
     top: -10px;
@@ -2564,7 +2567,7 @@ LABEL.map_txt {
   }
   .big_inp-form .selector LI{
     padding: 8px 8px;
-    min-width: 84px;
+    min-width: 68px;
     float: none;
     display: inline-block;
     margin-left: -4px;

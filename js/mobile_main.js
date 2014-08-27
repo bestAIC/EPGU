@@ -21,7 +21,7 @@ function MPopUp() {
     if($('#map:hidden').length){  
       $('.map_list li').addClass('go_more');
     } else { 
-      $('.limiter').removeClass('go_more');
+      // $('.limiter').removeClass('go_more');
       $('.map_list li').removeClass('go_more');
     } 
 
@@ -71,21 +71,26 @@ function MPopUp() {
   });
 
 
+  // попап для popup_map_address
   $('.map_list li').on('click', function(e) {
+    e.preventDefault();
     if($(this).hasClass('go_more')){
       var $message = $('#popup_map_address');
+
           
       $('#wrap').prepend('<div id="popup_fade"></div>');
       if ($message.css('display') != 'block') {
           $message.show();
           var firstClick = true;
           $(document).bind('click.event', function(e) {
+              e.preventDefault()
               if (!firstClick && $(e.target).closest('.popup_cover').length == 0) {
                   $message.hide();
                   $('#popup_fade').remove();                                    
                   $(document).unbind('click.event');
               }
-              $('.close_popup_x, .popup .back').click(function(){
+              $('.close_popup_x, .popup .back').click(function(e){
+                e.preventDefault()
                 $message.hide(); 
                 $('#popup_fade').remove();                                
                 $(document).unbind('click.event');
@@ -93,8 +98,7 @@ function MPopUp() {
               
               firstClick = false;
           });
-      }
-      e.preventDefault(); 
+      } 
     }
   });        
           

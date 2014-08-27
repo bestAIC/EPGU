@@ -90,7 +90,7 @@
       </div>
     </div> 
 
-    <div id="popup_map_adress" class="popup popup_map_adress">
+    <div id="popup_map_address" class="popup popup_map_address">
       <b class="close_popup_x"></b>
         <h2>МИФНС России №46 по г. Москве</h2>
         <p><b>В составе ИФНС России № 1 по г. Москве</b></p>

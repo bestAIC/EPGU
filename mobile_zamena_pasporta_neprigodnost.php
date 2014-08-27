@@ -344,7 +344,7 @@ include('include/mobile_head.php');
 					<em class="wrapper l_50"><label for="#">Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
 					</em><br/>
 					<em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Имя" class="big" />
-					</em><em class="wrapper l_50"><label for="#">Отчество</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+					</em><em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 					
 					<em class="wrapper l_33"><label for="#">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 					</em>
@@ -359,12 +359,12 @@ include('include/mobile_head.php');
 				<div class="limiter">
 					<h4>Персональные данные супруга</h4>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
+					<em class="wrapper l_50"><label for="#">Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
 					</em><br/>
-					<em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
+					<em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Имя" class="big" />
+					</em><em class="wrapper l_50"><label for="#">Имя</label><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
 					
-					<em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+					<em class="wrapper l_33"><label for="#">Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
 					</em>
 					
 					<h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
@@ -451,10 +451,30 @@ include('include/mobile_head.php');
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<label for="ser_05">Регион</label>
+						<div class="search_inp-block">
+							<input id="ser_05" type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><br/>
 					
-					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					<em class="wrapper l_50">
+						<label for="ser_06">Район</label>
+						<div class="search_inp-block">
+							<input id="ser_06" type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><em class="wrapper l_50">
+						<label for="ser_07">Населенный пункт</label>
+						<div class="search_inp-block">
+							<input id="ser_07" type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
 					
 					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
@@ -469,10 +489,30 @@ include('include/mobile_head.php');
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<label for="ser_08">Регион</label>
+						<div class="search_inp-block">
+							<input id="ser_08" type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><br/>
 					
-					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					<em class="wrapper l_50">
+						<label for="ser_09">Район</label>
+						<div class="search_inp-block">
+							<input id="ser_09" type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><em class="wrapper l_50">
+						<label for="ser_10">Населенный пункт</label>
+						<div class="search_inp-block">
+							<input id="ser_10" type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
 					
 					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
@@ -487,10 +527,30 @@ include('include/mobile_head.php');
 			</div>
 			<div class="fields_cover">
 				<div class="limiter">
-					<em class="wrapper l_100"><label for="">Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100">
+						<label for="ser_11">Регион</label>
+						<div class="search_inp-block">
+							<input id="ser_11" type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><br/>
 					
-					<em class="wrapper l_50"><label for="">Район</label><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><label for="">Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					<em class="wrapper l_50">
+						<label for="ser_12">Район</label>
+						<div class="search_inp-block">
+							<input id="ser_12" type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em><em class="wrapper l_50">
+						<label for="ser_13">Населенный пункт</label>
+						<div class="search_inp-block">
+							<input id="ser_13" type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+							<div class="selction_ajax-placeholder"></div>
+						</div>
+					</em>
 					
 					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
@@ -513,28 +573,28 @@ include('include/mobile_head.php');
 			        <h4 class="map_nav_h">Доступны подразделения:</h4>
 			        </div>
 			        <ul class="map_list">
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 			            <p>Москва, Неглинная, 23</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
 			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
 			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
 			            <p>Москва, Неглинная, 23</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
 			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
 			          </li>
-			          <li class="map_list_item popup_link">
-			            <p class="popup_map_adress"><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+			          <li class="map_list_item">
+			            <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
 			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
 			          </li>
 			        </ul>
