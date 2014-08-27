@@ -701,7 +701,8 @@ float: right;
   padding:0 20px 0 0;  
 }
 
-.placeholder_small {
+.placeholder_small,
+.selction_ajax-placeholder {
   position:absolute;
   top:3px;
   left:22px;
@@ -1669,7 +1670,7 @@ INPUT[type="search"] {
 INPUT.search_btn {
   position: absolute;
   width: 1.4em;
-  right:30px;
+  right:10px;
   top:14px;
   color: #565656;
   font: 24px 'icomoon-epga';
@@ -1716,6 +1717,23 @@ TEXTAREA.big {
   height:54px;
   padding:0px 20px;
   outline: 0;
+}
+
+.autocomplete-suggestions{
+  padding: 10px 0;
+  max-height: 230px;
+  font-size: 17px;
+  background: #fff;
+  border: 1px solid #CDD1D4;
+  overflow-y: scroll;
+  top: 52px;
+}
+.autocomplete-suggestion{
+  padding: 15px 20px;
+}
+.autocomplete-suggestion:hover{
+  background: #6CA9D2;
+  color: #fff;
 }
 
 .btn.small B {

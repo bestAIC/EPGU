@@ -105,25 +105,28 @@ include('include/head.php');
 				</em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>
 				</em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
 				
-				<em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big"/>
+				<em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" disabled="disabled" />
 				</em><br/>
+
 				<em class="wrapper l_66">
-				<select class="select_choice">
-					<option value="0" selected="selected" class="selected_one">Страна рождения</option>
-					<option value="1">Белоруссия</option>
-					<option value="2">Белоруссия</option>
-					<option value="3">Украина</option>
-					<option value="4">Белоруссия</option>
-					<option value="5">Белоруссия</option>
-					<option value="6">Украина</option>
-					<option value="7">Украина</option>
-					<option value="8">Белоруссия</option>
-					<option value="9">Украина</option>
-					<option value="10">Украина</option>
-				</select>
+					<div class="search_inp-block" style="position: relative; height: 54px;">
+						<input type="search" placeholder="Страна рождения" name="country" id="autocomplete-ajax" class="big search_inp search_inp-ajax" style="position: absolute; z-index: 2; background: transparent;"/><input type="button" class="search_btn" value="P">
+						<input type="search" name="country" id="autocomplete-ajax-x" disabled="disabled" class="big search_inp search_inp-ajax-x" style="color: #CCC; position: absolute; background: transparent; z-index: 1; height: 54px;"/>
+						<div class="selction_ajax-placeholder" id="selction-ajax"></div>
+
+					</div>
+				</em>
+
+				<em class="wrapper l_66">
+					<div class="search_inp-block" style="position: relative; height: 54px;">
+						<input type="search" placeholder="Государство" name="country" id="autocomplete-ajax_2" class="big search_inp search_inp-ajax" style="position: absolute; z-index: 2; background: transparent;"/><input type="button" class="search_btn" value="P">
+						<input type="search" name="country" id="autocomplete-ajax_2-x" disabled="disabled" class="big search_inp search_inp-ajax-x" style="color: #CCC; position: absolute; background: transparent; z-index: 1; height: 54px;"/>
+						<div class="selction_ajax-placeholder" id="selction-ajax_2"></div>
+
+					</div>
 				</em>
 				
-				<em class="wrapper l_100"><input type="text" placeholder="Место рождения как в паспорте" value="город Москва" class="big" disabled="disabled"/></em>
+				<em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
 			</fieldset>
 			<fieldset class="group_4">
 				<span class="point_num">4</span>
@@ -155,16 +158,7 @@ include('include/head.php');
 				<div class="fields_cover">
 					<h4>Укажите страну, и дату получения другого гражданства</h4>
 					
-					<em class="wrapper l_75">
-					<select class="select_choice">
-						<option value="0" selected="selected" class="selected_one">Гражданство</option>
-						<option value="1">Белоруссия</option>
-						<option value="2">Белоруссия 2</option>
-						<option value="3">Украина</option>
-						<option value="4">Белоруссия</option>
-						<option value="5">Белоруссия 2</option>
-						<option value="6">Украина</option>
-					</select>
+					<em class="wrapper l_75"><input type="search" placeholder="Государство" class="big search_inp"><input type="button" class="search_btn" value="P"></em>
 					</em>
 					
 					<a class="btn white plus" href="#">
@@ -189,17 +183,7 @@ include('include/head.php');
 				<div class="fields_cover">
 					<h4>Укажите страну, и дату получения другого гражданства</h4>
 					
-					<em class="wrapper l_75">
-					<select class="select_choice">
-						<option value="0" selected="selected" class="selected_one">Гражданство</option>
-						<option value="1">Белоруссия</option>
-						<option value="2">Белоруссия 2</option>
-						<option value="3">Украина</option>
-						<option value="4">Белоруссия</option>
-						<option value="5">Белоруссия 2</option>
-						<option value="6">Украина</option>
-					</select>
-					</em>
+					<em class="wrapper l_75"><input type="search" placeholder="Государство" class="big search_inp"><input type="button" class="search_btn" value="P"></em>
 					
 					<a class="btn white plus" href="#">
 						<span class="icomoon">8</span>
@@ -350,10 +334,10 @@ include('include/head.php');
 				
 				<em class="wrapper l_100"><input type="radio" checked="checked" name="place" id="pl_1" /><label for="pl_1">По месту жительства, как в паспорте (срок оказания услуги составит 10 дней)</label></em>
 				<div class="fields_cover">
-					<em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100"><input type="search" placeholder="Регион" class="big search_inp"><input type="button" class="search_btn" value="P"></em><br/>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					<em class="wrapper l_50"><input type="search" placeholder="Район" class="big search_inp"><input type="button" class="search_btn" value="P">
+					</em><em class="wrapper l_50"><input type="search" placeholder="Населенный пункт" class="big search_inp"><input type="button" class="search_btn" value="P"></em><br/>
 					
 					<em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
@@ -364,10 +348,10 @@ include('include/head.php');
 				
 				<em class="wrapper l_100"><input type="radio" name="place" id="pl_2" /><label for="pl_2">По месту пребывания (срок оказания услуги составит до 2-x месяцев)</label></em>
 				<div class="fields_cover">
-					<em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100"><input type="search" placeholder="Регион" class="big search_inp"><input type="button" class="search_btn" value="P"></em><br/>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					<em class="wrapper l_50"><input type="search" placeholder="Район" class="big search_inp"><input type="button" class="search_btn" value="P">
+					</em><em class="wrapper l_50"><input type="search" placeholder="Населенный пункт" class="big search_inp"><input type="button" class="search_btn" value="P"></em><br/>
 					
 					<em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
@@ -378,10 +362,10 @@ include('include/head.php');
 				
 				<em class="wrapper l_100"><input type="radio" name="place" id="pl_3" /><label for="pl_3">По месту фактического проживания (срок оказания услуги составит 2 месяца)</label></em>
 				<div class="fields_cover">
-					<em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+					<em class="wrapper l_100"><input type="search" placeholder="Регион" class="big search_inp"><input type="button" class="search_btn" value="P"></em><br/>
 					
-					<em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-					</em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+					<em class="wrapper l_50"><input type="search" placeholder="Район" class="big search_inp"><input type="button" class="search_btn" value="P">
+					</em><em class="wrapper l_50"><input type="search" placeholder="Населенный пункт" class="big search_inp"><input type="button" class="search_btn" value="P"></em><br/>
 					
 					<em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
 					</em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />

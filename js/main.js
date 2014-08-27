@@ -10,6 +10,9 @@ $(document).ready(function() {
   //MapControls();
   FieldSlide();
   tableAsynchron();
+  if($('.search_inp-ajax').length){
+    selectRegion();
+  }
 });
 
 // Styler
@@ -538,4 +541,5 @@ function tableAsynchron(){
       return;
     }
 }
+
 
