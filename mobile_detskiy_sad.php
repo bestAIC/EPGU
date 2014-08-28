@@ -61,10 +61,9 @@ include('include/mobile_head.php');
               <h3>Ваши паспортные данные</h3>
             </div>
             <div class="limiter">            
-              <em class="wrapper l_33"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/></em>
-
+              <em class="wrapper l_33"><label for="i_08">Серия</label><input id="i_08" type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><label for="i_09">Номер</label><input id="i_09" type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><label for="i_10">Код подраз-я</label><input id="i_10" type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/></em>
               <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
               </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
 
@@ -76,7 +75,6 @@ include('include/mobile_head.php');
                 </div>
               </div>
               <em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
-
             </div>                                      
           </fieldset>
           
