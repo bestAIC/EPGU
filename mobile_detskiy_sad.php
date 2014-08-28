@@ -31,18 +31,18 @@ include('include/mobile_head.php');
               <h3>Ваши персональные данные</h3>  
             </div>
             <div class="limiter">          
-              <em class="wrapper l_50"><label>Фамилия</label><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
+              <em class="wrapper l_50"><label for="i_01">Фамилия</label><input id="i_01" type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label for="i_02">Имя</label><input id="i_02" type="text" placeholder="Имя" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label for="i_03">Отчество</label><input id="i_03" type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
+              <em class="wrapper l_33"><label for="i_04">Дата рождения</label><input id="i_04" type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Мужской</label>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/> 
 
-              <em class="wrapper l_33"><input type="text" placeholder="СНИЛС" class="big" value="152-676-184 70" disabled="disabled"/></em><br/>            
+              <em class="wrapper l_33"><label for="i_05">СНИЛС</label><input id="i_05" type="text" placeholder="СНИЛС" class="big" value="152-676-184 70" disabled="disabled"/></em><br/>            
               
-              <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em>
+              <em class="wrapper l_50"><label for="i_06">Адрес электронной почты</label><input id="i_06" type="text" placeholder="Адрес электронной почты" class="big" value="therasmus30.09.1992@yandex.ru" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label for="i_07">Контактный телефон</label><input id="i_07" type="text" placeholder="Контактный телефон" class="big" value="+7 912 200-00-02" disabled="disabled"/></em>
               
               <div class="info-block_wrap">
                 <div class="info_block type_2">
@@ -199,7 +199,7 @@ include('include/mobile_head.php');
 
                 <ul class="map_list">
                   <li class="map_list_item">
-                    <span class="map_check"><input type="checkbox" id="ds_1"/></span>                    
+                    <span class="map_check"><input type="checkbox" id="ds_1"/></span>
                     <div>
                       <p><span class="pseudo">Детский сад №2293</span></p>
                       <p>Москва, Неглинная, 23</p>

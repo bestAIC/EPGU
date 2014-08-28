@@ -517,8 +517,10 @@ function FieldSlide(){
 
 function tableAsynchron(){
   var $tbl = $('.asynchron-tbl'),
-      $tbody = $('tbody', $tbl),
-      $lnk = $('.js-asynchron-tbl button', $tbl);
+      $tblGroup = $('.asynchron-tbl_group'),
+      $tblWrap = $('.asynchron-tbl_wrap'),
+      $tbody = $('tbody', $tblGroup),
+      $lnk = $('.js-asynchron-tbl button', $tblGroup);
 
     $lnk.on('click', function(e){
       e.preventDefault();
@@ -527,19 +529,19 @@ function tableAsynchron(){
         cache: false,
         success: function(html){
           $tbody.append(html);
-            setTimeout(bodyHeight(), 100);
+            bodyHeight();
             return;
         }
       });
     });
 
     function bodyHeight(e){
-      var lastTr = $('tr', $tbody).filter(':last').position();
-      
-      $tbody.animate({
-        scrollTop: lastTr.top
-      }, 400)
-      return;
+      var scrollToBlock = $tbl.height();
+
+        $tblWrap.animate({
+          scrollTop: scrollToBlock
+        }, 400)
+        return;
     }
 }
 

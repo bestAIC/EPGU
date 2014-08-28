@@ -31,90 +31,93 @@ include('include/head.php');
 		</div>
 	</div>
 
-	<table class="asynchron-tbl">
-		<thead>
-			<tr>
-				<th width="90">№</th>
-				<th width="270">ФИО</th>
-				<th width="180">Дата постановки</th>
-				<th width="162">СНИЛС</th>
-				<th width="180">Льготы</th>
-			</tr>
-			<tr class="asynchron_nav-tbl js-asynchron-tbl">
-				<td row="5"><button><span class="pseudo">Посмотреть еще 50 из 120</span></button></td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td width="90">117</td>
-				<td width="270">К********* К.</td>
-				<td width="180">28.07.2014</td>
-				<td width="162">***-***-123-**</td>
-				<td width="180">Внеочередная</td>
-			</tr>
-			<tr>
-				<td width="90">118</td>
-				<td width="270">А****** К.</td>
-				<td width="180">28.07.2014</td>
-				<td width="162">***-***-123-**</td>
-				<td width="180">Внеочередная</td>
-			</tr>
-			<tr>
-				<td width="90">119</td>
-				<td width="270">А************ У.А.</td>
-				<td width="180">28.07.2014</td>
-				<td width="162">***-***-123-**</td>
-				<td width="180">Внеочередная</td>
-			</tr>
-			<tr>
-				<td width="90">120</td>
-				<td width="270">А******* К.</td>
-				<td width="180">28.07.2014</td>
-				<td width="162">***-***-123-**</td>
-				<td width="180">Первоочередная</td>
-			</tr>
-			<tr>
-				<td width="90">121</td>
-				<td width="270">Ч****** У.С.</td>
-				<td width="180">28.07.2014</td>
-				<td width="162">***-***-123-**</td>
-				<td width="180">Первоочередная</td>
-			</tr>
-			<tr>
-				<td width="90">122</td>
-				<td width="270">Р*** В.В.</td>
-				<td width="180">28.06.2014</td>
-				<td width="162">***-***-341-**</td>
-				<td width="180">Приоритетная</td>
-			</tr>
-			<tr>
-				<td width="90">123</td>
-				<td width="270">Х******* В.Ф.</td>
-				<td width="180">29.06.2014</td>
-				<td width="162">Не указан</td>
-				<td width="180">Приоритетная</td>
-			</tr>
-			<tr>
-				<td width="90">124</td>
-				<td width="270">У*********************** Л.</td>
-				<td width="180">30.07.2014</td>
-				<td width="162">***-***-241-**</td>
-				<td width="180">Без льгот</td>
-			</tr>
-			<tr class="current">
-				<td width="90">125</td>
-				<td width="270">Константинопольский К.К</td>
-				<td width="180">28.06.2014</td>
-				<td width="162">***-***-341-**</td>
-				<td width="180">Без льгот</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td row="5">После вас 1120 человек</td>
-			</tr>
-		</tfoot>
-	</table>
+	<div class="asynchron-tbl_group">
+		<table class="asynchron-tbl_top">
+			<thead>
+				<tr>
+					<th>№</th>
+					<th>ФИО</th>
+					<th>Дата постановки</th>
+					<th>СНИЛС</th>
+					<th>Льготы</th>
+				</tr>
+				<tr class="asynchron_nav-tbl js-asynchron-tbl">
+					<td row="5"><button><span class="pseudo">Посмотреть еще 50 из 120</span></button></td>
+				</tr>
+			</thead>
+		</table>
+		<div class="asynchron-tbl_wrap">
+			<table class="asynchron-tbl">
+				<tbody>
+					<tr>
+						<td>117</td>
+						<td>К********* К.</td>
+						<td>28.07.2014</td>
+						<td>***-***-123-**</td>
+						<td>Внеочередная</td>
+					</tr>
+					<tr>
+						<td>118</td>
+						<td>А****** К.</td>
+						<td>28.07.2014</td>
+						<td>***-***-123-**</td>
+						<td>Внеочередная</td>
+					</tr>
+					<tr>
+						<td>119</td>
+						<td>А************ У.А.</td>
+						<td>28.07.2014</td>
+						<td>***-***-123-**</td>
+						<td>Внеочередная</td>
+					</tr>
+					<tr>
+						<td>120</td>
+						<td>А******* К.</td>
+						<td>28.07.2014</td>
+						<td>***-***-123-**</td>
+						<td>Первоочередная</td>
+					</tr>
+					<tr>
+						<td>121</td>
+						<td>Ч****** У.С.</td>
+						<td>28.07.2014</td>
+						<td>***-***-123-**</td>
+						<td>Первоочередная</td>
+					</tr>
+					<tr>
+						<td>122</td>
+						<td>Р*** В.В.</td>
+						<td>28.06.2014</td>
+						<td>***-***-341-**</td>
+						<td>Приоритетная</td>
+					</tr>
+					<tr>
+						<td>123</td>
+						<td>Х******* В.Ф.</td>
+						<td>29.06.2014</td>
+						<td>Не указан</td>
+						<td>Приоритетная</td>
+					</tr>
+					<tr>
+						<td>124</td>
+						<td>У*********************** Л.</td>
+						<td>30.07.2014</td>
+						<td>***-***-241-**</td>
+						<td>Без льгот</td>
+					</tr>
+					<tr class="current">
+						<td>125</td>
+						<td>Константинопольский К.К</td>
+						<td>28.06.2014</td>
+						<td>***-***-341-**</td>
+						<td>Без льгот</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="asynchron-tbl_scroll"></div>
+		</div>
+		<div class="asynchron-tbl_foot">После вас 1120 человек</div>
+	</div>
 
 	<div class="form_info-descr">
 		<h3>Информация об очереди в других детских садах</h3>

@@ -24,7 +24,7 @@ include('include/mobile_head.php');
 			<div class="limiter">
 				<p class="status_txt"><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</p>
 
-				<div class="clear">
+				<div class="clear back_btn">
 					<a href="#" class="btn larr white fl"><b>Вернуться к выбору</b></a>
 				</div>
 			</div>
