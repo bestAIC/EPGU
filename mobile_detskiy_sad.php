@@ -100,15 +100,15 @@ include('include/mobile_head.php');
               <h3>Персональные данные ребенка</h3>
             </div>
             <div class="limiter">            
-              <em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /></em><br/>
+              <em class="wrapper l_50"><label for="i_14">Фамилия</label><input id="i_14" type="text" placeholder="Фамилия" class="big" />
+              </em><em class="wrapper l_50"><label for="i_15">Имя</label><input id="i_15" type="text" placeholder="Имя" class="big" />
+              </em><em class="wrapper l_50"><label for="i_16">Отчество</label><input id="i_16" type="text" placeholder="Отчество" class="big" /></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big"  />
-              </em><em class="wrapper l_25"><input type="radio" name="sex_4" checked="checked" /><label>Мужской</label>
-              </em><em class="wrapper l_25"><input type="radio" name="sex_4" /><label>Женский</label></em><br/>
+              <em class="wrapper l_33"><label for="i_17">Дата рождения</label><input id="i_17" type="text" placeholder="Дата рождения" class="big"  />
+              </em><em class="wrapper l_25"><input id="i_18" type="radio" name="sex_4" checked="checked" /><label for="i_18">Мужской</label>
+              </em><em class="wrapper l_25"><input id="i_19" type="radio" name="sex_4" /><label for="i_19">Женский</label></em><br/>
 
-              <em class="wrapper l_33"><input type="text" placeholder="СНИЛС" class="big" /><i class="not">необязательно</i></em>
+              <em class="wrapper l_33"><label for="i_20">СНИЛС</label><input id="i_20" type="text" placeholder="СНИЛС" class="big" /><i class="not">необязательно</i></em>
             </div>                                           
           </fieldset>          
                               
