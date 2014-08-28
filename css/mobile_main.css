@@ -2461,7 +2461,8 @@ LABEL.map_txt {
       margin-bottom: 24px;
     }
 
-  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf{
+  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf,
+  .mobile_detskiy_sad #content .mobile_morpf{
     background: #fff;
     text-align: center;
     width: 1024px;
@@ -2470,7 +2471,8 @@ LABEL.map_txt {
     height: 50px;
     margin-left: -517px;
   }
-  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf:after{
+  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf:after,
+  .mobile_detskiy_sad #content .mobile_morpf:after{
     content: '5';
     font: 12px 'icomoon-epga';
     position: absolute;
@@ -2478,7 +2480,8 @@ LABEL.map_txt {
     left: 50%;
     margin-left: 130px;
   }
-  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf INPUT.btn.big{
+  .mobile_zamena_pasporta_neprigodnost #content .mobile_morpf INPUT.btn.big,
+  .mobile_detskiy_sad #content .mobile_morpf INPUT.btn.big{
     margin: 0;
     margin-left: -120px;
     height: 50px;
