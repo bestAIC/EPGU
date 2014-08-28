@@ -28,13 +28,14 @@ BODY {
   width: 90%;
   height: 1px;
 }
+
 .map_nav_h{
   /*margin-left: 0;*/
 }
 
-.limiter .map_nav_h {
-  margin-left: -50px;
-}
+  .limiter .map_nav_h{
+    margin-left: -50px;
+  }
 
 .map_list{
   height: 268px;
@@ -56,7 +57,8 @@ BODY {
 }
 
 .point_num {
-  top:-10px;
+  top:-8px;
+  font-size: 30px;
 }
 
 .menu_btn_cover {
@@ -1354,6 +1356,11 @@ FIELDSET{
   line-height:50px; 
   text-align: center; 
 }
+.btn.small B{
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
 
 .map_ballon_block .btn B {
   text-align: center;
@@ -1796,7 +1803,30 @@ LABEL.map_txt {
   margin-top: 40px;
 }
 
-
+  .form_info-choice dt{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form_info-choice dt span{
+    display: inline-block;
+  }
+  .form_info-choice dd{
+    margin-bottom: 22px;
+  }
+  .form_info-choice dt .sub_txt,
+  .form_info-choice dd .sub_txt{
+    width: 50%;
+    margin-right: 40px;
+  }
+  .form_info-choice dd .sub_txt{
+    position: relative;
+    top: -8px;
+  }
+  .form_info-choice dt .btn{
+    min-width: 194px;
+    position: relative;
+    top: 10px;
+  }
   .mobile_detskiy_sad .status_txt{
     color: #74777F;
     margin-bottom: 30px;
@@ -1865,6 +1895,16 @@ LABEL.map_txt {
     border-bottom: 1px solid #DBE2E6;
     margin: 40px 0 40px;
     font-size: 18px;
+    -webkit-transition: background-color .25s;
+    -o-transition: background-color .25s;
+    transition: background-color .25s;
+  }
+  .table_prelude-block .more_info:hover{
+    background-color: #f5f5f5;
+  }
+  .table_prelude-block .more_info:active,
+  .table_prelude-block .more_info:focus{
+    background-color: #e0e0e0;
   }
   .table_prelude-block .more_info a{
     color: #000;
@@ -1878,13 +1918,35 @@ LABEL.map_txt {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 34px;
+    top: 32px;
   }
   .table_prelude-info p{
     font-size: 15px;
     line-height: 21px;
   }
 
+  .mobile_detskiy_sad_proverka_ocheredy .status_txt{
+    color: #74777F;
+    margin-top: -12px;
+    margin-bottom: 28px;
+  }
+  .mobile_detskiy_sad_proverka_ocheredy .status_txt + .back_btn{
+    margin-bottom: 38px;
+  }
+  .form_wrap-descr{
+    border-top: 1px solid #DBE2E6;
+    margin-top: 40px;
+  }
+
+  /* asynchron-tbl */
+
+  .asynchron-tbl tbody{
+    color: #535B63;
+  }
+  .asynchron-tbl_foot{
+    color: #A5AEB3;
+  }
+  /* /asynchron-tbl */
 
 
 
@@ -2245,7 +2307,7 @@ LABEL.map_txt {
   #content FIELDSET LABEL{
     display: block;
     margin: 0 0 6px 0;
-    font: 14px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font: 300 14px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   .big_inp-form INPUT,

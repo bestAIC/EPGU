@@ -430,16 +430,31 @@ include('include/head.php');
                 <h4 class="map_nav_h">Доступны подразделения:</h4>
                 <ul class="map_list">
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-                    <p>Москва, Неглинная, 23</p>
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+                      <p>Москва, Неглинная, 23</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
                   </li>
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-                    <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+                      <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
                   </li>
                   <li class="map_list_item">
-                    <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
-                    <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+                      <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>    
+                    </div>
                   </li>
                 </ul>
               </div><!-- map_nav -->
