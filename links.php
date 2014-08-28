@@ -54,17 +54,15 @@ include('include/mobile_head.php');
 						<td><a href="snatie_s_registracii.php">snatie_s_registracii.php</a></td>
 					</tr>
 					<tr>
-						<td><a href="detskiy_sad.php">Запись в детский сад</a></td>
-						<td><a href="detskiy_sad.php">detskiy_sad.php</a></td>
-					</tr>
-					<tr>
-						<td>
+						<td style="padding: 20px 0;">
+							<p><a href="detskiy_sad.php">Запись в детский сад</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_1.php">Проверка очереди в десткий сад (шаг 1)</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_2.php">Проверка очереди в десткий сад (шаг 2)</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_2_1.php">Проверка очереди в десткий сад (шаг 2_1)</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_3.php">Проверка очереди в десткий сад (шаг 3)</a></p>
 						</td>
-						<td>
+						<td style="padding: 20px 0;">
+							<p><a href="detskiy_sad.php">detskiy_sad.php</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_1.php">detskiy_sad_proverka_ocheredy_1.php</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_2.php">detskiy_sad_proverka_ocheredy_2.php</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_2_1.php">detskiy_sad_proverka_ocheredy_2_1.php</a></p>
@@ -123,6 +121,22 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_postanovka_na_registraciu.php">Постановка на регистрацию</a></td>
 						<td><a href="mobile_postanovka_na_registraciu.php">mobile_postanovka_na_registraciu.php</a></td>
+					</tr>
+					<tr>
+						<td style="padding: 20px 0;">
+							<p><a href="mobile_detskiy_sad.php">Запись в детский сад</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_1.php">Проверка очереди в десткий сад (шаг 1)</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2.php">Проверка очереди в десткий сад (шаг 2)</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2_1.php">Проверка очереди в десткий сад (шаг 2_1)</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_3.php">Проверка очереди в десткий сад (шаг 3)</a></p>
+						</td>
+						<td style="padding: 20px 0;">
+							<p><a href="mobile_detskiy_sad.php">mobile_detskiy_sad.php</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_1.php">mobile_detskiy_sad_proverka_ocheredy_1.php</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2.php">mobile_detskiy_sad_proverka_ocheredy_2.php</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2_1.php">mobile_detskiy_sad_proverka_ocheredy_2_1.php</a></p>
+							<p><a href="mobile_detskiy_sad_proverka_ocheredy_3.php">mobile_detskiy_sad_proverka_ocheredy_3.php</a></p>
+						</td>
 					</tr>
 					<!-- Типовые элементы - моб -->
 					<tr>

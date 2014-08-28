@@ -1767,7 +1767,8 @@ TEXTAREA.big {
 .autocomplete-suggestion{
   padding: 15px 20px;
 }
-.autocomplete-suggestion:hover{
+.autocomplete-suggestion:hover,
+.autocomplete-selection{
   background: #6CA9D2;
   color: #fff;
 }

@@ -29,8 +29,11 @@ BODY {
   height: 1px;
 }
 .map_nav_h{
-  margin-left: -50px;
+  margin-left: 0;
 }
+  .limiter .map_nav_h{
+    margin-left: -50px;
+  }
 .map_list{
   height: 268px;
   overflow-x: hidden;   
