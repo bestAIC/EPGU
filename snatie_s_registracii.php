@@ -323,28 +323,61 @@ include('include/head.php');
             </div>
             
             <h4>Просим вас выбрать удобное подразделение для подачи документов</h4>
-            <div class="map_cover clear">
-              <div class="find_result">
-                <h4>Доступные подразделения</h4>
-                <ul>
-                  <li>
-                    <span class="list_num">1</span>
-                    <h5>ИФНС России №1 по г.Москве</h5>
-                    <p>Москва, Ниглинная, 23</p>
+            <div class="map_cover">
+              <div class="map_block" id="map"></div>
+              <div class="map_nav">
+                <h4 class="map_nav_h">Доступны подразделения:</h4>
+                <ul class="map_list">
+                  <li class="map_list_item">
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">1</span><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
+                      <p>Москва, Неглинная, 23</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>   
+                    </div>
                   </li>
-                  <li>
-                    <span class="list_num">2</span>
-                    <h5>ИФНС России №1 по г.Москве</h5>
-                    <p>Москва, Ниглинная, 23</p>
+                  <li class="map_list_item">
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">2</span><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+                      <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>   
+                    </div>
                   </li>
-                  <li>
-                    <span class="list_num">3</span>
-                    <h5>ИФНС России №1 по г.Москве</h5>
-                    <p>Москва, Ниглинная, 23</p>
-                  </li>                                    
+                  <li class="map_list_item">
+                    <div class="left">
+                      <p><a href="#"><span class="map_num">3</span><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
+                      <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+                    </div>
+                    <div class="right">
+                      <input type="checkbox"/>   
+                    </div>                    
+                  </li>
                 </ul>
-              </div>
-            </div>
+              </div><!-- map_nav -->
+
+              <div class="map_ballon_block">
+                <div class="map_ballon_wrap">
+                  <a class="map_ballon_close"><span class="icomoon">L</span></a>
+                  <div class="map_ballon_h">
+                    <p><strong>МИФНС России №46 по г. Москве</strong></p>
+                    <p>В составе ИФНС России № 1 по г. Москве</p>
+                  </div>
+                  <ul class="map_ballon_list">
+                    <li class="map_ballon_item">Адрес: Москва, Походный пр-д, 3, стр. 2</li>
+                    <li class="map_ballon_item">Режим работы: Пн-Пт: 9:00 - 18:00,</li>
+                    <li class="map_ballon_item">Обед: 12:30 - 13:30</li>
+                    <li class="map_ballon_item">Телефон: +7 (495) 913-00-09</li>
+                    <li class="map_ballon_item">Как добраться:</li>
+                    <li class="map_ballon_item">Ближайшее метро - Волоколамская,</li>
+                    <li class="map_ballon_item">Мякинино, Тушинская</li>
+                    <li class="map_ballon_item">E-mail: i010500@r01.nalog.ru</li>
+                  </ul>
+                </div>
+              </div><!-- map_ballon_block -->
+            </div><!-- map_cover -->
                                                  
           </fieldset> 
 

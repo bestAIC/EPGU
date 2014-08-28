@@ -428,6 +428,9 @@ float: right;
 #header .bottom.type_4{
     border-bottom: 4px solid #57c5cc; 
 }
+#header .bottom.type_5{
+    border-bottom: 4px solid #707a7e; 
+}
 #header .bottom.type_non{
     border-bottom: 1px solid #e1e1e1; 
 }
@@ -531,7 +534,10 @@ float: right;
     }
     #content .title SPAN.icomoon.color_4 {
         color: #57c5cc;
-    }     
+    }
+    #content .title SPAN.icomoon.color_5 {
+        color: #707a7e;
+    }         
 
 #content .title H1 {
   font:40px 'etelka_thinregular';
@@ -1744,7 +1750,7 @@ TEXTAREA.big {
   height: 54px;
 }
 .search_inp-ajax{
-  position: absolute;
+  position: relative;
   z-index: 2;
   background: #fff;
 }
@@ -1753,6 +1759,7 @@ TEXTAREA.big {
   position: absolute;
   background: transparent;
   z-index: 1;
+  left:0;
   height: 54px;
 }
 .autocomplete-suggestions{

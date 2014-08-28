@@ -1,20 +1,19 @@
 <?
-$pagename = 'postanovka_na_registraciu';
-$pagetitle = 'Постановка на регистрационный учет';
+$pagename = 'egrn';
+$pagetitle = 'Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ';
 include('include/head.php');
 ?>
 
           <ul class="breadcrumbs">
             <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
-            <li class="last"><span>Постановка на регистрацию</span></li>
+            <li class="last"><span>Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</span></li>
           </ul>          
         </div>
       </div>
 
       <div id="content">
         <div class="title">
-          <span class="icomoon color_3">O</span><h1>Регистрация граждан</h1>
-          <h2>по месту жительства</h2>
+          <span class="icomoon color_5">O</span><h1>Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</h1>
         </div>
         
           
@@ -22,29 +21,9 @@ include('include/head.php');
               
           <fieldset class="group_1">         
             <span class="point_num">1</span>
-            <h3>Тип заявителя</h3>          
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Я подаю заявление за самого себя, мне есть 18 лет</label></em>  
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Я подаю заявление за самого себя, мне нет 18 лет (14-18)</label></em>                         
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"/><label for="f_3">Я - законный представитель несовершеннолетнего</label></em>            
-            <div class="fields_cover">
-              <h4>Кем вы приходитесь получателю услуги?</h4>                            
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">Отец</label></em>              
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_5"/><label for="f_5">Мать</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_6"/><label for="f_6">Опекун</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_7"/><label for="f_7">Попечитель</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_8"/><label for="f_8">Иное</label></em>
-              <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" disabled="disabled"/></em>
-            </div>            
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_9"/><label for="f_9">Я - законный представитель недееспособного, либо иного лица</label></em>
-            <div class="fields_cover">
-              <h4>Кем вы приходитесь получателю услуги?</h4>                            
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_10"/><label for="f_10">Отец</label></em>              
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_11"/><label for="f_11">Мать</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_12"/><label for="f_12">Опекун</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_13"/><label for="f_13">Попечитель</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_14"/><label for="f_14">Иное</label></em>
-              <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" disabled="disabled"/></em>
-            </div>                                                      
+            <h3>Кто подаёт заявление</h3>          
+            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Лично</label></em>                          
+            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Я - представитель заявителя</label></em>                                                                
           </fieldset>
                      
           <fieldset class="group_2">                   
@@ -65,19 +44,59 @@ include('include/head.php');
             </em><em class="wrapper l_16"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/>            
             
             <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
-            </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>                                 
+            </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>
+
+            <em class="wrapper l_33"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
+            </em>                                 
           </fieldset>
-          
+
           <fieldset class="group_3">                     
             <span class="point_num">3</span>
-            <h3>Ваши паспортные данные</h3>          
+            <h3>Меняли ли вы фамилию, имя или отчество после 01.01.1996?</h3>          
+            <em class="wrapper l_100"><input type="radio" name="g_22" id="f_3" checked="checked" /><label for="f_3">Да</label></em>
+            <div class="fields_cover">
+              <em class="wrapper l_50"><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
+              </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+              <em class="wrapper l_50"><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
+              </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+              <em class="wrapper l_50"><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
+              </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+              <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
+            </div>                                      
+            <em class="wrapper l_100"><input type="radio" name="g_22" id="f_4"/><label for="f_4">Нет</label></em>                                    
+          </fieldset>          
+          
+          <fieldset class="group_4">                     
+            <span class="point_num">4</span>
+            <h3>Документ, удостоверяющий вашу личность</h3>
+            <em class="wrapper l_50">
+              <select class="select_choice">
+                <option value="0" selected="selected" class="selected_one">Тип документа</option>                
+                <option>Паспорт РФ</option>
+              </select>                  
+            </em><br/>
+
             <em class="wrapper l_16"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
             </em><em class="wrapper l_25"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
             </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>            
             </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
             
-            <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/>
-            </em>                                    
+            <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
+
+            <em class="wrapper l_66">
+              <div class="search_inp-block">
+                <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                <div class="selction_ajax-placeholder"></div>
+              </div>
+            </em><em class="wrapper l_33">
+              <select class="select_choice">
+                <option value="0" selected="selected" class="selected_one">Код страны</option>                
+                <option>007</option>
+              </select>
+            </em>
+
+            <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
           </fieldset>
           
           <fieldset class="group_4">                      
