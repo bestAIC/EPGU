@@ -63,12 +63,12 @@ include('include/mobile_head.php');
               <h3>Ваши паспортные данные</h3>
             </div>
             <div class="limiter">            
-              <em class="wrapper l_33"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/></em>
+              <em class="wrapper l_33"><label for="i_08">Серия</label><input id="i_08" type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><label for="i_09">Номер</label><input id="i_09" type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><label for="i_10">Код подраз-я</label><input id="i_10" type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/></em>
 
-              <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
-              </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
+              <em class="wrapper l_33"><label for="i_11">Дата выдачи</label><input id="i_11" type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
+              </em><em class="wrapper l_66"><label for="i_12">Кем выдан</label><input id="i_12" type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
             </div>                                      
           </fieldset>
           
@@ -84,7 +84,7 @@ include('include/mobile_head.php');
               <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_13"/><label for="f_13">Попечитель</label></em>
               <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_14"/><label for="f_14">Иное</label></em>
               <div class="fields_cover_inner">
-                <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" /></em>                
+                <em class="wrapper l_100"><label for="i_13">Ваш вариант</label><input id="i_13" type="text" placeholder="Ваш вариант" class="big" /></em>                
               </div>
             </div>                                                                
           </fieldset> 
