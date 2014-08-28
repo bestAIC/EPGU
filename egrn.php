@@ -5,7 +5,7 @@ include('include/head.php');
 ?>
 
           <ul class="breadcrumbs">
-            <li class="first"><a href="#"><span class="icomoon">5c</span>Главная</a></li>       
+            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
             <li class="last"><span>Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</span></li>
           </ul>          
         </div>
@@ -13,7 +13,7 @@ include('include/head.php');
 
       <div id="content">
         <div class="title">
-          <span class="icomoon color_5">O</span><h1>Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</h1>
+          <span class="icomoon color_5">\</span><h1>Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</h1>
         </div>
         
           
