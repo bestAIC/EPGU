@@ -1,5 +1,5 @@
 <?
-$pagename = 'mobile_detskiy_sad_proverka_ocheredy';
+$pagename = 'mobile_detskiy_sad';
 $pagetitle = 'Проверка очереди в детский сад';
 include('include/mobile_head.php');
 ?>
@@ -27,8 +27,24 @@ include('include/mobile_head.php');
 						<dl>
 							<dt><span class="sub_txt">Заявление № 424134 от 29.08.2014</span><span class="btn white small"><b>Проверить очередь</b></span></dt>
 							<dd><span class="sub_txt"><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="form_info-choice-brd">
+				<div class="limiter">
+					<div class="form_info-choice">
+						<dl>
 							<dt><span class="sub_txt">Заявление № 341455 от 28.08.2014</span><span class="btn white small"><b>Проверить очередь</b></span></dt>
 							<dd><span class="sub_txt"><b>Статус:</b> Ожидает рассмотрения</span></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="form_info-choice-brd">
+				<div class="limiter">
+					<div class="form_info-choice">
+						<dl>
 							<dt><span class="sub_txt">Заявление № 1341414 от 20.08.2014</span><span class="btn white small"><b>Проверить очередь</b></span></dt>
 							<dd><span class="sub_txt"><b>Статус:</b> Не явился</span></dd>
 						</dl>
@@ -36,6 +52,12 @@ include('include/mobile_head.php');
 				</div>
 			</div>
 		</fieldset>
+		  <div class="clear mobile_morpf btn-cont_inner">
+		    <em class="wrapper l_100">                        
+		      <a href="#" class="btn white larr fl"><b>Вернуться назад</b></a>                 
+		    </em>                              
+		  </div>
+		</div>
 	</form>
 </div>
 

@@ -2382,52 +2382,38 @@ LABEL.map_txt {
   .fields_cover .limiter:before {
     left: 0px;
   }  
-  
-  .mobile_proverka_sudebnyh_zadoljennostey .wrapper.l_33{
-    width:100%;
-  }
-  
-  .mobile_nalogovaya_zadoljennost .wrapper.l_33,
-  .mobile_nalogovaya_zadoljennost .wrapper.l_50 {
-    width:100%;
-  }
-  
-  .mobile_nalogovaya_zadoljennost .wrapper .btn {
-    width:100%;
-    text-align:center;
-  }
-  
-  .mobile_nalogovaya_zadoljennost .btn.larr {
-    width:100%;
-    text-align:center;
-  }  
-  
-  .mobile_nalogovaya_zadoljennost .clear .fr {
-    float:none;
-}
-  .mobile_gibdd_shtrafy .wrapper.l_50{
-    width: 100%;
-  }
 
-  .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf{
+
+  /* mobile_morpf */
+  
+  .mobile_morpf{
+    height: 50px;
+    margin: 5px 0 15px;
+  }
+  .mobile_morpf.btn-cont_inner{
     position: relative;
     height: 148px;
   }
-    .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr{
-      position: absolute;
-      bottom: 20px;
-      width: 1024px;
-      margin-left: -525px;
-      left: 50%;
-    }
-    .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr:after{
-      content: '6';
-      font: 14px 'icomoon-epga';
-      position: absolute;
-      top: 18px;
-      left: 50%;
-      margin-left: -130px;
-    }
+
+  .mobile_morpf .btn.larr{
+    text-align:center;
+    width: 100%;
+  }
+  .mobile_morpf.btn-cont_inner .btn.larr{
+    position: absolute;
+    bottom: 20px;
+    width: 1024px;
+    margin-left: -525px;
+    left: 50%;
+  }
+  .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr:after{
+    content: '6';
+    font: 14px 'icomoon-epga';
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: -130px;
+  }
     .mobile_nalogovaya_zadoljennost .btn-cont_inner.mobile_morpf .btn.larr B{
       text-align: right;
       width: 280px;      
@@ -2437,10 +2423,7 @@ LABEL.map_txt {
       position: absolute;
       top: 0;
     }
-  .mobile_nalogovaya_zadoljennost .mobile_morpf{
-    height: 50px;
-    margin: 5px 0 15px;
-  }
+  
   .mobile_nalogovaya_zadoljennost .btn.mobile_morpf{
     border: 1px solid #d0d0d0;
     background: #fff;    
@@ -3482,9 +3465,12 @@ LABEL.map_txt {
   }
 
   /* mobile_detskiy_sad_proverka_ocheredy */
-  .form_info-choice-brd{
-    border-top: 1px solid #DBE2E6;
+  .big_inp-form .form_info-choice-brd{
+    border-bottom: 1px solid #DBE2E6;
     padding-top: 20px;
+  }
+  .limiter + .form_info-choice-brd{
+    border-top: 1px solid #DBE2E6;
   }
   .form_info-choice dt .btn{
     display: none;

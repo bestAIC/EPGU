@@ -160,7 +160,7 @@ include('include/head.php');
 						<span class="icomoon">8</span>
 						<b>Добавить данные</b>
 					</a>
-					<h4>Кем вы приходитесь получателю услуги?</h4>
+					<h4>Основание приобретения гражданства РФ</h4>
 					<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1"/><label for="f_1">По рождению</label></em>
 					<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">Прием в гражданство</label></em>
 					<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">Восстановление в гражданстве</label></em>
@@ -190,7 +190,7 @@ include('include/head.php');
 						<span class="icomoon">8</span>
 						<b>Добавить данные</b>
 					</a>
-					<h4>Кем вы приходитесь получателю услуги?</h4>
+					<h4>Основание приобретения гражданства РФ</h4>
 					<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_5"/><label for="f_5">По рождению</label></em>
 					<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_6"/><label for="f_6">Прием в гражданство</label></em>
 					<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_7"/><label for="f_7">Восстановление в гражданстве</label></em>
@@ -284,7 +284,7 @@ include('include/head.php');
 				<em class="wrapper l_100"><input type="radio" name="chaild" id="ch_2"/><label for="ch_2">Да</label></em>
 				
 				<div class="fields_cover">
-					<h4>Укажите страну ФИО ребенка</h4>
+					<h4>Укажите ФИО ребенка</h4>
 					
 					<em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
 					</em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
