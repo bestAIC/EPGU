@@ -51,13 +51,12 @@ include('include/mobile_head.php');
 					</div>
 				</div>
 			</div>
+			<div class="clear mobile_morpf btn-cont_inner">
+				<em class="wrapper l_100">
+					<a href="#" class="btn white larr fl"><b>Вернуться назад</b></a>
+				</em>
+			</div>
 		</fieldset>
-		  <div class="clear mobile_morpf btn-cont_inner">
-		    <em class="wrapper l_100">                        
-		      <a href="#" class="btn white larr fl"><b>Вернуться назад</b></a>                 
-		    </em>                              
-		  </div>
-		</div>
 	</form>
 </div>
 

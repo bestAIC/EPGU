@@ -547,7 +547,7 @@ function tableAsynchron(){
 
 function selectRegion(){
   
-  var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
+  // var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
   var citiesArray = $.map(cities, function (value, key) { return { value: value, data: key }; });
 
 
@@ -565,7 +565,7 @@ function selectRegion(){
 }
 
 function ePrevent(){
-  var btn = $('.list.edit_list .lnk, .load_photo-btn .btn');
+  var btn = $('.list.edit_list .lnk, .load_photo-btn .btn, .btn.plus, .btn-cont_inner .btn');
 
   btn.on('click', function(e){
     e.preventDefault()

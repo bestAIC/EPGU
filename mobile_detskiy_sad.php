@@ -51,7 +51,11 @@ include('include/mobile_head.php');
                   <span class="icomoon">"</span>
                 </div>
               </div>
-              <em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+              <div class="clear mobile_morpf btn-cont_inner">
+                <em class="wrapper l_100">
+                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                </em>
+              </div>
             </div>
           </fieldset>
           
@@ -74,7 +78,11 @@ include('include/mobile_head.php');
                   <span class="icomoon">"</span>
                 </div>
               </div>
-              <em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+              <div class="clear mobile_morpf btn-cont_inner">
+                <em class="wrapper l_100">
+                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                </em>
+              </div>
             </div>                                      
           </fieldset>
           

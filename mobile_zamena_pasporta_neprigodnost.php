@@ -11,7 +11,7 @@ include('include/mobile_head.php');
 			<h2>В связи с непригодностью к использованию</h2>
 		</div>
 	</div>
-	<form action="#" class="main clear big_inp-form bt">
+	<form action="#" onsubmit="return false; mySubmit(this)" class="main clear big_inp-form bt">
 		<fieldset class="group_1">
 			<div class="limiter">
 				<span class="point_num">1</span>
@@ -25,7 +25,7 @@ include('include/mobile_head.php');
 				</em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label class="flag_label" >Мужской</label>
 				</em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" /><label class="flag_label"  class="flag_label">Женский</label></em><br/>
 
-				<em class="wrapper l_50"><label for="settings01">Адрес электронной почты</label><input id="settings01" type="text" placeholder="Адрес электронной почты" value="30.09.1992" disabled="disabled" class="big" disabled="disabled" /></em><em class="wrapper l_50"><label for="settings01">Контактный телефон</label><input id="settings01" type="text" placeholder="Контактный телефон" value="+7 931 123-33-44" disabled="disabled" class="big" disabled="disabled" /></em>
+				<em class="wrapper l_50"><label for="settings01">Адрес электронной почты</label><input id="settings01" type="text" placeholder="Адрес электронной почты" value="alexandr_k@bestmail.ru" disabled="disabled" class="big" disabled="disabled" /></em><em class="wrapper l_50"><label for="settings01">Контактный телефон</label><input id="settings01" type="text" placeholder="Контактный телефон" value="+7 931 123-33-44" disabled="disabled" class="big" disabled="disabled" /></em>
 				
 				<div class="info-block_wrap">
 					<div class="info_block type_2">
@@ -34,7 +34,11 @@ include('include/mobile_head.php');
 						<span class="icomoon">"</span>
 					</div>
 				</div>
-				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+				<div class="clear mobile_morpf btn-cont_inner">
+					<em class="wrapper l_100">
+						<a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+					</em>
+				</div>
 			</div>
 		</fieldset>
 
@@ -156,7 +160,11 @@ include('include/mobile_head.php');
 						<span class="icomoon">"</span>
 					</div>
 				</div>
-				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+				<div class="clear mobile_morpf btn-cont_inner">
+					<em class="wrapper l_100">
+						<a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+					</em>
+				</div>
 
 			</div>
 		</fieldset>
@@ -649,13 +657,13 @@ include('include/mobile_head.php');
 		  </div>                   
 		 </fieldset>                                                
 		
-		<div class="last-btn_cover">
-		 <div class="last-btn_cont clear">
-		 	<span class="fr">
-		 	  <input class="big btn" type="submit" value="Отправить">
-		 	</span>
-		 </div>
-		</div> 
+		<div class="limiter"><div class="last-btn_cover">
+			 <div class="last-btn_cont clear">
+			 	<span class="fr">
+			 	  <input class="big btn" type="submit" value="Отправить">
+			 	</span>
+			 </div>
+			</div> </div>
 	</form>
 	</div><!-- content -->
 <?

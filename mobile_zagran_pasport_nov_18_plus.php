@@ -35,7 +35,11 @@
 						<span class="icomoon">"</span>
 					</div>
 				</div>
-				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+				<div class="clear mobile_morpf btn-cont_inner">
+				  <em class="wrapper l_100">
+				    <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+				  </em>
+				</div>
 			</div>
 		</fieldset>
 
@@ -68,7 +72,11 @@
 						<span class="icomoon">"</span>
 					</div>
 				</div>
-				<em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+				<div class="clear mobile_morpf btn-cont_inner">
+				  <em class="wrapper l_100">
+				    <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+				  </em>
+				</div>
 				
 			</div>
 		</fieldset>
@@ -623,42 +631,53 @@
 			  <div class="map_block" id="map"></div>
 			    <div class="address_list">               
 			      <div class="map_nav">
-			        <div class="limiter">
 			        <h4 class="map_nav_h">Доступны подразделения:</h4>
-			        </div>
 			        <ul class="map_list">
 			          <li class="map_list_item">
 			          	<span class="map_check"><input type="checkbox"/></span>
-			            <p><a href="#"><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-			            <p>Москва, Неглинная, 23</p>
+			          	<div>
+				            <p><a href="#"><span>ИФНС России №1 по г.Москве</span></a></p>
+				            <p>Москва, Неглинная, 23</p>
+			            </div>
 			          </li>
 			          <li class="map_list_item">
 			          	<span class="map_check"><input type="checkbox"/></span>
-			            <p><a href="#"><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			          	<div>
+				            <p><a href="#"><span>МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			            </div>
 			          </li>
 			          <li class="map_list_item">
 			          	<span class="map_check"><input type="checkbox"/></span>
-			            <p><a href="#"><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
-			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			          	<div>
+				            <p><a href="#"><span>ИФНС России № 34 по г. Москве</span></a></p>
+				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			            </div>
 			          </li>
 			          <li class="map_list_item">
 			          	<span class="map_check"><input type="checkbox"/></span>
-			            <p><a href="#"><span class="map_txt">ИФНС России №1 по г.Москве</span></a></p>
-			            <p>Москва, Неглинная, 23</p>
+			          	<div>
+				            <p><a href="#"><span>ИФНС России №1 по г.Москве</span></a></p>
+				            <p>Москва, Неглинная, 23</p>
+			            </div>
 			          </li>
 			          <li class="map_list_item">
 			          	<span class="map_check"><input type="checkbox"/></span>
-			            <p><a href="#"><span class="map_txt">МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
-			            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			          	<div>
+				            <p><a href="#"><span>МИФНС России №46 по г.Москве (Залы обслуживания № 3,4,5)</span></a></p>
+				            <p>В составе ИФНС России № 1 по г. Москве. Москва. Походный пр-д, 3, стр. 2</p>
+			            </div>
 			          </li>
 			          <li class="map_list_item">
 			          	<span class="map_check"><input type="checkbox"/></span>
-			            <p><a href="#"><span class="map_txt">ИФНС России № 34 по г. Москве</span></a></p>
-			            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			          	<div>
+				            <p><a href="#"><span>ИФНС России № 34 по г. Москве</span></a></p>
+				            <p>Москва, Боткинский 2-й пр-д, 8, стр. 1</p>
+			            </div>
 			          </li>
 			        </ul>
 			      </div><!-- map_nav -->
+			      
 			      <div class="map_ballon_block">
 			        <div class="map_ballon_wrap">
 			          <a class="map_ballon_close"><span class="icomoon">L</span></a>
