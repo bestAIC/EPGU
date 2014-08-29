@@ -114,7 +114,7 @@ include('include/head.php');
 						<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
 						<div class="selction_ajax-placeholder"></div>
 					</div>
-				</em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
+				</em>
 				
 				<em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
 			</fieldset>

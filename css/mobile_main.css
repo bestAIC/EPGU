@@ -2346,6 +2346,13 @@ LABEL.map_txt {
     font-size: 17px;
     margin:0 0 20px 30px;
   }
+
+  .jq-selectbox.changed .jq-selectbox__select-text{
+    color: #000;
+  }
+  .jq-selectbox .jq-selectbox__select-text{
+    color: transparent
+  }
   
 
   #content FIELDSET{
@@ -2538,7 +2545,6 @@ LABEL.map_txt {
     max-width:100%;
     width:100%;
   }
-
   
   .slash {
       margin: 45px 0 0 -12px;
@@ -3475,7 +3481,22 @@ LABEL.map_txt {
     width: 220px;
   }
 
-
-
-
+  /* mobile_detskiy_sad_proverka_ocheredy */
+  .form_info-choice-brd{
+    border-top: 1px solid #DBE2E6;
+    padding-top: 20px;
+  }
+  .form_info-choice dt .btn{
+    display: none;
+  }
+  .form_info-choice dt .sub_txt, 
+  .form_info-choice dd .sub_txt{
+    width: 100%;
+  }
+  .form_info-choice dd .sub_txt{
+    top: 0;
+    margin-top: 15px;
+  }
+  
+  /* /mobile_detskiy_sad_proverka_ocheredy */
 }

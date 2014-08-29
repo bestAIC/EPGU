@@ -13,7 +13,7 @@ $(document).ready(function() {
   if($('.search_inp-ajax').length){
     selectRegion();
   }
-  avaLoad();
+  ePrevent();
 });
 
 // Styler
@@ -564,7 +564,7 @@ function selectRegion(){
   });
 }
 
-function avaLoad(){
+function ePrevent(){
   var btn = $('.list.edit_list .lnk, .load_photo-btn .btn');
 
   btn.on('click', function(e){
