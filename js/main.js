@@ -529,7 +529,7 @@ function tableAsynchron(){
         cache: false,
         success: function(html){
           $tbody.append(html);
-            bodyHeight();
+            bodyHeight();  
             return;
         }
       });
@@ -537,12 +537,27 @@ function tableAsynchron(){
 
     function bodyHeight(e){
       var scrollToBlock = $tbl.height();
-
+        $tblWrap.css('height', '550px');
         $tblWrap.animate({
           scrollTop: scrollToBlock
         }, 400)
         return;
     }
+
+
+    $(window).on('load', function(){
+      var bodyPhone = +($('body').width());
+      if (bodyPhone <= 640 && $tblWrap.length === 1) {
+        $tblWrap.css('height', '246px');
+        function bodyHeightPhone(){
+          var scrollToCurrent = $('.current', $tbl).position().top;
+          $tblWrap.animate({
+            scrollTop: scrollToCurrent
+          })
+        } 
+        bodyHeightPhone();
+      } 
+    })
 }
 
 function selectRegion(){

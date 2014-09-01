@@ -125,7 +125,7 @@
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div>
 
-<? } else if($pagename == 'mobile_detskiy_sad') {?>
+<? } else if($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy') {?>
     <div id="popup_map_address" class="popup">
       <b class="close_popup_x"></b>
       <div class="ds_cover_btn ds_1">
@@ -164,7 +164,7 @@
       <div class="clear"><a class="btn white larr fl back" href="#"><b>Вернуться назад</b></a></div>
     </div>
     
-    <div id="popup_map" class="popup left">
+    <div id="popup_map" class="popup left popup_map_kinder">
       <b class="close_popup_x"></b>
       <h2>Детский сад № 11301</h2>
       <dl class="popup_info-descr">
@@ -182,7 +182,25 @@
         <dd>Волоколамская, Мякинино.</dd>
       </dl>
       <img src="img/map.jpg" />
-    </div>    
+
+      <div class="clear mobile_morpf btn-cont_inner mt50">
+        <em class="wrapper l_100">
+          <a href="#" class="btn white larr fl back"><b>Вернуться назад</b></a>
+        </em>
+      </div>
+    </div>
+
+    <div id="popup_cancel_detsad" class="popup">
+      <h2>Вы действительно хотите отменить запись в детский сад?</h2>
+      <div class="clear mobile_morpf btn-cont_inner">
+          <em class="wrapper l_66">
+            <a href="#" class="btn white rarr fl back"><b>Нет</b></a>
+            <span class="fr">
+                <input class="big btn" type="submit" value="Да, отменить запись">
+            </span>
+          </em>
+      </div>
+    </div>
     
 <? } ?>
 
