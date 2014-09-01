@@ -51,7 +51,11 @@ include('include/mobile_head.php');
                   <span class="icomoon">"</span>
                 </div>
               </div>
-              <em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+              <div class="clear mobile_morpf btn-cont_inner">
+                <em class="wrapper l_100">
+                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                </em>
+              </div>
             </div>
           </fieldset>
           
@@ -64,8 +68,8 @@ include('include/mobile_head.php');
               <em class="wrapper l_33"><label for="i_08">Серия</label><input id="i_08" type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
               </em><em class="wrapper l_33"><label for="i_09">Номер</label><input id="i_09" type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
               </em><em class="wrapper l_33"><label for="i_10">Код подраз-я</label><input id="i_10" type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/></em>
-              <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
-              </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
+              <em class="wrapper l_33"><label for="i_10_1">Дата выдачи</label><input id="i_10_1" type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
+              </em><em class="wrapper l_66"><label for="i_10_2">Кем выдан</label><input id="i_10_2" type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
 
               <div class="info-block_wrap">
                 <div class="info_block type_2">
@@ -74,7 +78,11 @@ include('include/mobile_head.php');
                   <span class="icomoon">"</span>
                 </div>
               </div>
-              <em class="wrapper l_100"><span class="fl btn_field mobile_morpf"><input class="big btn white" type="submit" value="Изменить данные"></span></em>
+              <div class="clear mobile_morpf btn-cont_inner">
+                <em class="wrapper l_100">
+                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                </em>
+              </div>
             </div>                                      
           </fieldset>
           
@@ -84,14 +92,17 @@ include('include/mobile_head.php');
               <h3>Кем вы приходитесь ребенку?</h3>
             </div>
             <div class="limiter">                                    
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_10"/><label for="f_10">Отец</label></em>              
+              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_10" checked="checked" /><label for="f_10">Отец</label></em>              
               <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_11"/><label for="f_11">Мать</label></em>
-              <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_14"/><label for="f_14">Иное</label></em>
-              <div class="fields_cover_inner">
-                <em class="wrapper l_100"><input type="text" placeholder="Кем приходитесь" class="big" /></em> 
-                <em class="wrapper l_100"><input type="text" placeholder="На основании какого документа" class="big" /><i class="not">необязательно</i></em>                
+            </div>
+            <div class="limiter"><em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_13"/><label for="f_13">Иное</label></em></div>
+              <div class="fields_cover">
+                <div class="limiter">  
+                <em class="wrapper l_100"><label for="f_10_3">Кем приходитесь</label><input id="f_10_3" type="text" placeholder="Кем приходитесь" class="big" /></em> 
+                <em class="wrapper l_100"><label for="f_10_4">На основании какого документа</label><input id="f_10_4" type="text" placeholder="На основании какого документа" class="big" /><i class="not">необязательно</i></em>                
+                </div>
               </div>
-            </div>                                                                
+                                                                            
           </fieldset> 
           
           <fieldset class="group_5">
@@ -113,7 +124,7 @@ include('include/mobile_head.php');
           </fieldset>          
                               
           <fieldset class="group_6">
-            <div class="limiter">                      
+            <div class="limiter">
               <span class="point_num">6</span>
               <h3>Данные свидетельства о рождении ребенка</h3>
             </div>
@@ -122,12 +133,12 @@ include('include/mobile_head.php');
             </div>  
             <div class="fields_cover">
               <div class="limiter">
-                <em class="wrapper l_33"><input type="text" placeholder="Серия" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Номер" class="big" />          
-                </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Номер акт. записи" class="big" />
-                </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдано" class="big" /></em>
-                <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
+                <em class="wrapper l_33"><label for="i_21">Серия</label><input id="i_21" type="text" placeholder="Серия" class="big" />
+                </em><em class="wrapper l_33"><label for="i_22">Номер</label><input id="i_22" type="text" placeholder="Номер" class="big" />          
+                </em><em class="wrapper l_33"><label for="i_23">Дата выдачи</label><input id="i_23" type="text" placeholder="Дата выдачи" class="big" />
+                </em><em class="wrapper l_33"><label for="i_24">Номер акт. записи</label><input id="i_24" type="text" placeholder="Номер акт. записи" class="big" />
+                </em><em class="wrapper l_66"><label for="i_25">Кем выдано</label><input id="i_25" type="text" placeholder="Кем выдано" class="big" /></em>
+                <em class="wrapper l_100"><label for="i_26">Место рождения</label><input id="i_26" type="text" placeholder="Место рождения" class="big" /></em>
               </div>                                                         
             </div>
             <div class="limiter">
@@ -135,8 +146,8 @@ include('include/mobile_head.php');
             </div>  
             <div class="fields_cover">
               <div class="limiter">                           
-                <em class="wrapper l_66"><input type="text" placeholder="Наименование документа" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Номер" class="big" /></em>
+                <em class="wrapper l_66"><label for="i_27">Наименование документа</label><input id="i_27" type="text" placeholder="Наименование документа" class="big" />
+                </em><em class="wrapper l_33"><label for="i_28">Номер</label><input id="i_28" type="text" placeholder="Номер" class="big" /></em>
               </div>   
             </div>                    
           </fieldset> 
@@ -147,14 +158,14 @@ include('include/mobile_head.php');
               <h3>Место проживания ребёнка совпадает с местом регистрации?</h3>
             </div>
             <div class="limiter">               
-              <em class="wrapper l_100"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">Да</label></em>
+              <em class="wrapper l_100"><input type="radio" checked="checked" name="g_4_1" id="i_29"/><label for="i_29">Да</label></em>
             </div>
             <div class="limiter">                                                 
-              <em class="wrapper l_100"><input type="radio" name="g_4" id="f_20"/><label for="f_20">Нет</label></em>
+              <em class="wrapper l_100"><input type="radio" name="g_4_1" id="i_30"/><label for="i_30">Нет</label></em>
             </div>  
             <div class="fields_cover">
               <div class="limiter">                           
-                <em class="wrapper l_100"><input type="text" placeholder="Выберите регион" class="big" /></em>
+                <em class="wrapper l_100"><label for="i_31">Выберите регион</label><input id="i_31" type="text" placeholder="Выберите регион" class="big" /></em>
               </div>      
             </div>                            
           </fieldset>
@@ -169,20 +180,24 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">месту регистрации</label>
               </em><em class="wrapper l_33"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата зачисления" class="big" />
-              </em><em class="wrapper l_66">
-                  <select>            
-                    <option>Возрастная группа</option>
+              <em class="wrapper l_33"><label for="i_32">Дата зачисления</label><input id="i_32" type="text" placeholder="Дата зачисления" class="big" />
+              </em><label for="i_32_1">Возрастная группа</label><em class="wrapper l_66">
+                  <select id="i_32_1">
+                    <option value="0">Возрастная группа</option>
+                    <option value="1">Возрастная группа</option>
+                    <option value="2">Возрастная группа</option>
                   </select>                  
-                </em> 
+                </em>
 
               <em class="wrapper l_66">
-                <select>            
-                  <option>Потребность по здоровью</option>
-                </select>                  
+                <label for="i_33">Потребность по здоровью</label>
+                <select id="i_33">
+                  <option value="0">Потребность по здоровью</option>
+                  <option value="1">Потребность по здоровью</option>
+                </select>
               </em>
-            </div>                                               
-          </fieldset>                     
+            </div>                                        
+          </fieldset>
         
 
           <fieldset class="group_9">
@@ -191,7 +206,7 @@ include('include/mobile_head.php');
               <h3>Выберете желаемый и дополнительные детские сады</h3>
             </div>
             <div class="limiter">                        
-              <em class="wrapper l_100"><input type="text" placeholder="Поиск по адресу" class="big" /></em> 
+              <em class="wrapper l_100"><label for="i_34">Поиск по адресу</label><input id="i_34" type="text" placeholder="Поиск по адресу" class="big" /></em> 
               <em class="wrapper l_33">Сортировать по:
               </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">удалённости</label>
               </em><em class="wrapper l_33"><input type="radio" name="g_5" id="f_22"/><label for="f_22">длине очереди</label></em><br/>
@@ -283,13 +298,24 @@ include('include/mobile_head.php');
               <span class="point_num">10</span>
               <h3>Есть ли у вас льготы?</h3>
             </div>
+            <div class="limiter">             
+              <em class="wrapper l_100"><input type="radio" name="g_9" id="f_35" checked="checked"/><label for="f_35">Нет</label></em>
+            </div> 
             <div class="limiter">  
               <em class="wrapper l_100"><input type="radio" name="g_9" id="f_34" /><label for="f_34">Да</label></em>
             </div>
               
+
             <div class="fields_cover">
               <div class="limiter">
-                <em class="wrapper l_100"><input type="search" placeholder="Название льготы" class="big" /><input type="button" class="search_btn" value="P"/></em>
+              <em class="wrapper l_100">
+                  <label for="ser_12">Название льготы</label>
+                  <div class="search_inp-block">
+                    <input id="ser_12" type="search" placeholder="Название льготы" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em>
                 <div class="facility"> 
                   <h5>Первоочередные</h5>
                   <br/>
@@ -302,13 +328,10 @@ include('include/mobile_head.php');
                 </div>
                 <em class="wrapper l_100"><input type="checkbox" id="f_45"/><label for="f_45">Иные льготы</label></em>
                 <div class="fields_cover_inner">
-                  <em class="wrapper l_100"><input type="text" placeholder="Название льготы" class="big" /></em>                
+                  <em class="wrapper l_100"><label for="i_36">Название льготы</label><input id="i_36" type="text" placeholder="Название льготы" class="big" /></em>                
                 </div>
               </div>                                                                     
-            </div>
-            <div class="limiter">             
-              <em class="wrapper l_100"><input type="radio" name="g_9" id="f_35" checked="checked"/><label for="f_35">Нет</label></em>
-            </div>                   
+            </div>           
           </fieldset> 
           
           <fieldset class="group_11">                      

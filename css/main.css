@@ -1760,6 +1760,7 @@ TEXTAREA.big {
   background: transparent;
   z-index: 1;
   left:0;
+  top: 0;
   height: 54px;
 }
 .autocomplete-suggestions{
@@ -2332,7 +2333,13 @@ LABEL {
   font-size: 0;
   display: none !important;
 }
-
+.jq-selectbox .jq-selectbox__select-text{
+  color: #A5AEB3;
+  font-size: 17px;
+}
+.jq-selectbox.changed .jq-selectbox__select-text{
+  color: #000;
+}
 
 .jq-selectbox.focused{
     border-color: transparent;
@@ -2342,7 +2349,6 @@ LABEL {
     padding: 0 62px 0 20px;
     background: #fff;
     color: #333;
-    font: 14px/54px Arial, sans-serif;
     border-radius: 4px;  
         
 }
