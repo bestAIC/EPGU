@@ -73,6 +73,8 @@ include('include/mobile_popup.php');
         <div id="wrap" class="mobile_detskiy_sad">
     <? } else if ($pagename == 'mobile_detskiy_sad_proverka_ocheredy') { ?> 
         <div id="wrap" class="mobile_detskiy_sad_proverka_ocheredy">
+    <? } else if ($pagename == 'mobile_egrn') { ?> 
+        <div id="wrap" class="mobile_egrn">        
     <? } else { ?> 
         <div id="wrap">
     <? } ?>
@@ -87,7 +89,9 @@ include('include/mobile_popup.php');
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  
               <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy') { ?>
-                  <div class="top type_4">  
+                  <div class="top type_4">
+              <? } else if ($pagename == 'mobile_egrn') { ?>
+                  <div class="top type_5">                      
               <? } else if ($pagename == 'mobile_404') { ?>
                   <div class="top type_non">  
               <? } ?>

@@ -101,6 +101,9 @@ BODY {
 #header .top.type_4{
   border-bottom: 4px solid #57c5cc;  
 }
+#header .top.type_5{
+    border-bottom: 4px solid #707a7e; 
+}
 #header .top.type_non{
   border-bottom: 1px solid #e1e1e1;  
 }

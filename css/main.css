@@ -1643,6 +1643,13 @@ H4 {
   margin:0 0 20px 0;
 }
 
+.egrn .v_1, 
+.egrn .v_2,
+.mobile_egrn .v_1,
+.mobile_egrn .v_2 {
+  display:none;
+}
+
 /*Field & Button*/
 INPUT { 
   border:1px solid #d0d0d0;
@@ -2378,7 +2385,7 @@ LABEL {
     white-space: nowrap;
     font-size:115%; 
     color: #333;
-         
+    line-height: 54px;    
 }
 .jq-selectbox__trigger {
     position: absolute;

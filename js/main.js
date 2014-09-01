@@ -241,6 +241,18 @@ function HideShow(){
       $('.new_auto').slideUp();
     }
   });
+
+  /*подача документов лично/представителем */
+  $('.egrn .group_1 input, .mobile_egrn .group_1 input').change(function(){
+    if($('#f_1-styler').hasClass('checked')){
+      $('.v_2').hide();
+      $('.v_1').show();
+    } else {
+      $('.v_1').hide();      
+      $('.v_2').show();
+    }
+  });
+
   
   /*pay*/
   $('.selector li').click(function(){
