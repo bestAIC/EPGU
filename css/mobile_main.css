@@ -310,7 +310,6 @@ BODY {
 
 #content INPUT:focus,
 #content TEXTAREA:focus{
-  
   box-shadow: 0px 0px 0px 4px rgba(173, 222, 255, 1);
   border: 1px solid #addeff;
 }
@@ -1376,10 +1375,10 @@ FIELDSET{
 .btn-cont_inner .limiter {
   padding:0;
 }
-.mobile_morpf .btn.larr B:before,
+/*.mobile_morpf .btn.larr B:before,
 .mobile_morpf .btn.rarr B:before{
   content: "";
-}
+}*/
 .mobile_nalogovaya_zadoljennost .btn.rarr{
   padding-left: 25px;
 }
@@ -1962,11 +1961,33 @@ LABEL.map_txt {
   .asynchron-tbl_foot{
     color: #A5AEB3;
   }
+  .asynchron-tbl_wrap{
+    border-top: none;
+  }
+  .asynchron-tbl_wrap .asynchron-tbl{
+    border-top: 1px solid #E5E5E7;
+  }
   /* /asynchron-tbl */
 
-
-
-
+  .popup_map_kinder h2{
+    font-size: 22px;
+    padding: 0;
+  }
+  .popup_map_kinder dt,
+  .popup_map_kinder dd{
+    display: inline-block;
+    font-size: 15px;
+    color: #74777F;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .popup_info-descr dd b, 
+  .popup_info-descr dt b{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    color: #535B63;
+  }
+  .popup_map_kinder .mobile_morpf{
+    display: none;
+  }
 
 
 
@@ -2449,6 +2470,10 @@ LABEL.map_txt {
       }
   .mobile_morpf .btn b{
     padding: 0;
+  }
+  .form_info-choice-brd + .mobile_morpf.mt50{
+    margin-top: 50px;
+    display: block;
   }
   
 
@@ -3495,25 +3520,207 @@ LABEL.map_txt {
   .big_inp-form .form_info-choice-brd{
     border-bottom: 1px solid #DBE2E6;
     padding-top: 20px;
+    position: relative;
+  }
+  .form_info-choice-brd .limiter{
+    position: static;
   }
   .limiter + .form_info-choice-brd{
     border-top: 1px solid #DBE2E6;
   }
   .form_info-choice dt .btn{
-    display: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    text-indent: -9999px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
   }
+    .form_info-choice dt .btn:hover,
+    .form_info-choice dt .btn:active{
+      background: none;
+    }
+    .form_info-choice dt .btn:after{
+      content: "5";
+      font: 12px 'icomoon-epga';
+      right: 16px;
+      top: 24px;
+      text-indent: 0;
+      position: absolute;
+    }
   .form_info-choice dt .sub_txt, 
   .form_info-choice dd .sub_txt{
     width: 100%;
+    box-sizing: border-box;
   }
   .form_info-choice dd .sub_txt{
     top: 0;
     margin-top: 15px;
   }
-  .form_info-choice-brd + .mobile_morpf{
-    margin-top: 20px;
+
+  
+  .mobile_detskiy_sad_proverka_ocheredy .status_txt{
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  .form_person-descr dt,
+  .form_person-descr dd{
+    width: 100%;
+  }
+  .form_person-descr dt{
+    margin-bottom: 10px;
+  }
+  .form_info-list p:first-child{
+    margin-bottom: 16px;
+  }
+  .form_info-list p{
+    padding-right: 50px;
+  }
+  .form_info-list .sub_txt{
     display: block;
+    margin: 0;
+  }
+  .form_info-list li{
+    position: relative;
+    margin-bottom: 0;
+    padding: 22px 0;
+  }
+  .form_info-list li .limiter{
+    position: static;
+  }
+  .form_info-list .form_info-more{
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+  }
+  .form_info-list .form_info-more:after{
+    content: '5';
+    font: 12px 'icomoon-epga';
+    position: absolute;
+    top: 28px;
+    right: 26px;
+    text-indent: 0;
+    color: #74777F;
+  }
+
+  .table_prelude-block{
+    margin-top: 20px;
+    padding-top: 0;
+    border: none;
+  }
+  .table_prelude-block .mobile_morpf{
+    float: none;
+  }
+  .table_prelude-h-rt{
+    margin-left: 0;
+  }
+  .table_prelude-h-rt h3{
+    margin: 14px 0;
+  }
+  .table_prelude-block .more_info{
+    margin-top: 12px;
   }
   
+
+  .asynchron-tbl_top tr:first-child{
+    display: none;
+  }
+  .asynchron-tbl,
+  .asynchron-tbl tbody,
+  .asynchron-tbl tr,
+  .asynchron-tbl td{
+    display: block;
+  }
+  .asynchron-tbl_wrap{
+    border-top: 1px solid #E5E5E7;
+    height: 246px;
+  }
+  .asynchron-tbl_wrap .asynchron-tbl{
+    border-top: none;
+  }
+  .asynchron-tbl tr{
+    width: 280px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 26px;
+  }
+  .asynchron-tbl tr:before{
+    content: "";
+    width: 1024px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    border-bottom: 1px solid #DBE2E6;
+    margin-left: -517px;
+  }
+  .asynchron-tbl tr.current:before{
+    background-color: #E9F8FF;
+  }
+  .asynchron-tbl tbody td{
+    position: relative;
+    font-size: 15px;
+    width: 100%;
+    line-height: 1;
+    padding: 0 0 26px 52%;
+    border: none;
+  }
+  .asynchron-tbl td:nth-child(1),
+  .asynchron-tbl td:nth-child(2),
+  .asynchron-tbl td:nth-child(3),
+  .asynchron-tbl td:nth-child(4),
+  .asynchron-tbl td:nth-child(5){
+    width: 100%;
+  }
+  .asynchron-tbl tbody td:first-child{
+    padding-left: 50%;
+  }
+  .asynchron-tbl td:before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 48%;
+    padding-right: 10px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .asynchron-tbl td:nth-of-type(1):before { content: "№"; }
+  .asynchron-tbl td:nth-of-type(2):before { content: "ФИО"; }
+  .asynchron-tbl td:nth-of-type(3):before { content: "Дата постановки"; }
+  .asynchron-tbl td:nth-of-type(4):before { content: "СНИЛС"; }
+  .asynchron-tbl td:nth-of-type(5):before { content: "Льготы"; }
+
+
+  .popup_map_kinder dt,
+  .popup_map_kinder dd{
+    display: block;
+    font-size: 15px;
+    color: #74777F;
+    width: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .popup_map_kinder dt{
+    margin-bottom: 10px;
+  }
+  .popup_map_kinder dd{
+    margin-bottom: 21px;
+  }
+  .popup_map_kinder IMG{
+    margin-top: 0;
+  }
+  .popup_map_kinder .mobile_morpf{
+    display: block;
+  }
+
   /* /mobile_detskiy_sad_proverka_ocheredy */
 }

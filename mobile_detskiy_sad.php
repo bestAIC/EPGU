@@ -181,7 +181,7 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_33"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
               
               <em class="wrapper l_33"><label for="i_32">Дата зачисления</label><input id="i_32" type="text" placeholder="Дата зачисления" class="big" />
-              </em><label for="i_32_1">Возрастная группа</label><em class="wrapper l_66">
+              </em><em class="wrapper l_66"><label for="i_32_1">Возрастная группа</label>
                   <select id="i_32_1">
                     <option value="0">Возрастная группа</option>
                     <option value="1">Возрастная группа</option>

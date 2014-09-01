@@ -127,15 +127,15 @@ include('include/mobile_head.php');
 							<p><a href="mobile_detskiy_sad.php">Запись в детский сад</a></p>
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_1.php">Проверка очереди в десткий сад (шаг 1)</a></p>
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2.php">Проверка очереди в десткий сад (шаг 2)</a></p>
-							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2_1.php">Проверка очереди в десткий сад (шаг 2_1)</a></p>
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_3.php">Проверка очереди в десткий сад (шаг 3)</a></p>
+							<p><a href="mobile_izmenit_zapis_v_detskyy_sad.php">Проверка очереди в десткий сад (шаг 4)</a></p>
 						</td>
 						<td style="padding: 20px 0;">
 							<p><a href="mobile_detskiy_sad.php">mobile_detskiy_sad.php</a></p>
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_1.php">mobile_detskiy_sad_proverka_ocheredy_1.php</a></p>
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2.php">mobile_detskiy_sad_proverka_ocheredy_2.php</a></p>
-							<p><a href="mobile_detskiy_sad_proverka_ocheredy_2_1.php">mobile_detskiy_sad_proverka_ocheredy_2_1.php</a></p>
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_3.php">mobile_detskiy_sad_proverka_ocheredy_3.php</a></p>
+							<p><a href="mobile_izmenit_zapis_v_detskyy_sad.php">mobile_izmenit_zapis_v_detskyy_sad.php</a></p>
 						</td>
 					</tr>
 					<!-- Типовые элементы - моб -->

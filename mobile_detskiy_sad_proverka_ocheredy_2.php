@@ -13,7 +13,7 @@ include('include/mobile_head.php');
 	  </div>
 	</div>
 
-	<form class="main clear">
+	<form class="main clear big_inp-form bt">
 	      
 		<fieldset class="group_1">
 			<div class="limiter">
@@ -24,8 +24,10 @@ include('include/mobile_head.php');
 			<div class="limiter">
 				<p class="status_txt"><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</p>
 
-				<div class="clear back_btn">
-					<a href="#" class="btn larr white fl"><b>Вернуться к выбору</b></a>
+				<div class="clear mobile_morpf btn-cont_inner mt50">
+					<em class="wrapper l_100">
+						<a href="#" class="btn white larr fl"><b>Вернуться назад</b></a>
+					</em>
 				</div>
 			</div>
 		</fieldset>
@@ -47,27 +49,33 @@ include('include/mobile_head.php');
 				</dl>
 			</div>
 			
-			<div class="limiter">
-				<div class="form_info-descr">
-					<ul class="list form_info-list">
-						<li>
+			<div class="form_info-descr">
+				<ul class="list form_info-list">
+					<li>
+						<div class="limiter">
 							<p><b>Вы 123-й в очереди.</b><a href="#" class="form_info-more fr">Проверить список</a></p>
 							<p>Детский сад №1131, Трифоновская ул., 34к2.<span class="sub_txt">Предпочтительный детский сад</span></p>
-						</li>
-						<li>
+						</div>
+					</li>
+					<li>
+						<div class="limiter">
 							<p><b>Вы 34-й в очереди.</b><a href="#" class="form_info-more fr">Проверить очередь</a></p>
 							<p>Бюджетное учреждение Муниципальная дошкольная образовательная организация общего воспитания Детский сад №1112 «Солнышко».</p>
-						</li>
-						<li>
+						</div>
+					</li>
+					<li>
+						<div class="limiter">
 							<p><b>Вы 12-й в очереди</b><a href="#" class="form_info-more fr">Проверить очередь</a></p>
 							<p>Детский сад №542542, Большой коретный переулок, 12. </p>
-						</li>
-						<li>
+						</div>
+					</li>
+					<li>
+						<div class="limiter">
 							<p><b>Вы 12-й в очереди</b><a href="#" class="form_info-more fr">Проверить очередь</a></p>
 							<p>Детский сад №231, ул. Карла-Маркса, 34.</p>
-						</li>
-					</ul>
-				</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</fieldset>
 		
