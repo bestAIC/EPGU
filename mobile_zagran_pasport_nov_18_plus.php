@@ -712,13 +712,13 @@
 		  </div>                   
 		 </fieldset>                                                
 		
-		<div class="last-btn_cover">
-		 <div class="last-btn_cont clear">
-		 	<span class="fr">
-		 	  <input class="big btn" type="submit" value="Отправить">
-		 	</span>
-		 </div>
-		</div>  
+		<div class="clear last_btn-block">
+		  <div class="limiter">
+		    <span class="fr">
+		        <input class="big btn" type="submit" value="Отправить">
+		    </span>
+		  </div>
+		</div>
 	</form>
 </div>
 

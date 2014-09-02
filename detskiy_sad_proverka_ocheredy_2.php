@@ -25,12 +25,12 @@ include('include/head.php');
 
 			<div class="form_info-choice">
 				<dl>
-					<dt>Заявление № 424134 от 29.08.2014</dt>
-					<dd><span class="sub_txt"><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span><span class="btn white small"><b>Проверить очередь</b></span></dd>
-					<dt>Заявление № 341455 от 28.08.2014</dt>
-					<dd><span class="sub_txt"><b>Статус:</b> Ожидает рассмотрения</span><span class="btn white small disabled"><b>Проверить очередь</b></span></dd>
-					<dt>Заявление № 1341414 от 20.08.2014</dt>
-					<dd><span class="sub_txt"><b>Статус:</b> Не явился</span><span class="btn white small"><b>Проверить очередь</b></span></dd>
+					<dt><span class="sub_txt">Заявление № 424134 от 29.08.2014</span><span class="btn white small"><b>Проверить очередь</b></span></dt>
+					<dd><span class="sub_txt"><b>Статус:</b> Передача изменений Заявления по месту предоставления услуги</span></dd>
+					<dt><span class="sub_txt">Заявление № 341455 от 28.08.2014</span><span class="btn white small"><b>Проверить очередь</b></span></dt>
+					<dd><span class="sub_txt"><b>Статус:</b> Ожидает рассмотрения</span></dd>
+					<dt><span class="sub_txt">Заявление № 1341414 от 20.08.2014</span><span class="btn white small"><b>Проверить очередь</b></span></dt>
+					<dd><span class="sub_txt"><b>Статус:</b> Не явился</span></dd>
 				</dl>
 			</div>
 		</fieldset>
@@ -71,7 +71,7 @@ include('include/head.php');
 		</fieldset>
 	</form>
 	
-	<div class="clear">
+	<div class="clear last_btn-block">
       <span class="btn white fr"><b>Изменить запись</b></span>
     </div>
 </div>

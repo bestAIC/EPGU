@@ -574,11 +574,13 @@ include('include/mobile_head.php');
           </div>                   
          </fieldset>                                                
      
-        <div class="limiter">
-         <span class="fr">
-           <input class="big btn" type="submit" value="Отправить">
-         </span>
-        </div>            
+        <div class="clear last_btn-block">
+          <div class="limiter">
+            <span class="fr">
+                <input class="big btn" type="submit" value="Отправить">
+            </span>
+          </div>
+        </div>         
                
     </form>           
     

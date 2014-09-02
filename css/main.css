@@ -197,12 +197,13 @@ SPAN.icomoon{
 }
 
 .popup H2 {
-  font:40px 'etelka_thinregular';
+  font: 40px 'etelka_thinregular';
   margin:8px 0 25px 0; 
 }
 
 .popup H3 {
   margin:0 0 0.5em 0;
+  font: 30px 'etelka_thinregular';
 }
 
 .popup P {
@@ -1384,60 +1385,51 @@ H4 {
   border-bottom:1px solid #dbe2e6;
 } 
 .advice .advice_h{
-    margin-bottom: 25px;
-    margin-left: -96px;
+  margin-bottom: 25px;
+  position: relative;
 }
 .advice H2 {
-  font:265% 'etelka_thinregular';
-  margin: 0;
-  display: block;
-  margin-left: 96px;
+  font: 40px 'etelka_thinregular';
+  display: inline-block;
 }
-
-.advice H3 {
-  display: block;
-  margin:0 0 60px 96px;
-  position:relative;
-  top:10px;
-}
-
 .advice P {
   margin:0 0 1em 0;
 } 
 .advice_ico{
-    vertical-align: middle;
-    text-align: center;
-    height: 80px;
-    width: 80px;
-    border: 12px solid #E6EBEC;
-    border-radius: 40px;
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    box-sizing: border-box;
-    float: left;
-    margin-right: 0px;
-    margin-top: -18px;
+  vertical-align: top;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  border: 12px solid #E6EBEC;
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  box-sizing: border-box;
+  margin-top: -20px;
+  display: inline-block;
+  position: absolute;
+  left: -100px;
 }
-.advice SPAN.icomoon{
+  .advice .advice_ico .icomoon{
     line-height: 56px;
-}
-.type_ok .advice_h SPAN.icomoon{
+  }
+  .advice.type_ok .advice_ico .icomoon{
     color: #86D464;
     font-size: 28px;
-}
-.type_like .advice_h SPAN.icomoon{
+  }
+  .advice.type_like .advice_ico .icomoon{
     color: #4185D5;
     font-size: 32px;
-}
-.type_not .advice_h SPAN.icomoon{
+  }
+  .advice.type_not .advice_ico .icomoon{
     color: #EA405A;
     font-size: 28px;
-}
-.type_info .advice_h SPAN.icomoon{
+  }
+  .advice.type_info .advice_ico .icomoon{
     color: #E8405A;
     font-size: 60px;
     margin-left: -2px;
-}
+  }
 
 .social {
   display:table;
@@ -1919,6 +1911,17 @@ INPUT.btn.small {
 .btn.larr B {
   padding: 0;
 }
+.last_btn-block{
+  border-top: 1px solid #dbe2e6;
+  padding-top: 50px;
+}
+  .last_btn-block .btn{
+    margin-right: 0;
+  }
+  .advice + .last_btn-block{
+    border-top: none;
+    padding-top: 20px;
+  }
 
 LABEL {
   margin: 0;
@@ -2775,14 +2778,20 @@ input[type="submit"].styler[disabled] {
     width: 945px;
     margin: 20px 50px;
 }
-.links_html td{
-    padding: 6px 30px 6px 0px;
-    width: 230px;
-}
 .links_html th{
     font-size: 22px;
     padding-top: 20px;
     padding-bottom: 10px;
+}
+.links_html td{
+  padding: 10px 0;
+  padding-right: 20px;
+  width: 230px;
+  line-height: 26px;
+}
+.links_html td p{
+  margin: 8px 0;
+  line-height: 1;
 }
 
 /* /links html */

@@ -646,24 +646,24 @@ include('include/mobile_head.php');
 			</div><!-- map_cover -->
 		</fieldset>
 
-		 <fieldset class="group_16">           
-		  <div class="limiter">    
-		    <h3 class="ml0">Согласие на обработку персональных данных</h3>     
+		 <fieldset class="group_16">
+		  <div class="limiter">
+		    <h3 class="ml0">Согласие на обработку персональных данных</h3>
 		    
 		    <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_40" /><label for="f_40" class="flag_label">Согласен на обработку персональных данных</label></em>
 		    
 		    <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_41" /><label for="f_41" class="flag_label">Об ответственности за предоставление заведомо ложных сведений,
-		     либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>      
-		  </div>                   
-		 </fieldset>                                                
+		     либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>
+		  </div>               
+		 </fieldset>
 		
-		<div class="limiter"><div class="last-btn_cover">
-			 <div class="last-btn_cont clear">
-			 	<span class="fr">
-			 	  <input class="big btn" type="submit" value="Отправить">
-			 	</span>
-			 </div>
-			</div> </div>
+		<div class="clear last_btn-block">
+		  <div class="limiter">
+		    <span class="fr">
+		        <input class="big btn" type="submit" value="Отправить">
+		    </span>
+		  </div>
+		</div>
 	</form>
 	</div><!-- content -->
 <?

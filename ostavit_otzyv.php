@@ -38,7 +38,7 @@ include('include/head.php');
             </em><em class="wrapper l_25"><input type="text" placeholder="Телефон" class="big" /></em><br/>
             
             
-            <div class="clear">
+            <div class="clear last_btn-block">
               <span class="fr"><input class="big btn" type="submit" value="Отправить"></span>
             </div>             
             

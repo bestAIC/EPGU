@@ -492,11 +492,11 @@ include('include/head.php');
                                                    
           </fieldset>                                                                                               
           
-          <span class="fr">
-            <a class="btn big" href="presentation_step_4.html"><b>Отправить</b></a>
-              <!-- <input class="big btn" type="submit" value="Отправить">
-               -->
-          </span>                     
+          <div class="clear last_btn-block">
+            <span class="fr">
+                <a class="btn big" href="presentation_step_4.html"><b>Отправить</b></a>
+            </span>
+          </div>
                              
         </form>                      
         

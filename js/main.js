@@ -532,7 +532,8 @@ function tableAsynchron(){
       $tblGroup = $('.asynchron-tbl_group'),
       $tblWrap = $('.asynchron-tbl_wrap'),
       $tbody = $('tbody', $tblGroup),
-      $lnk = $('.js-asynchron-tbl button', $tblGroup);
+      $lnk = $('.js-asynchron-tbl button', $tblGroup),
+      bodyPhone = +($('body').width());
 
     $lnk.on('click', function(e){
       e.preventDefault();
@@ -549,7 +550,11 @@ function tableAsynchron(){
 
     function bodyHeight(e){
       var scrollToBlock = $tbl.height();
-        $tblWrap.css('height', '550px');
+        if(bodyPhone > 640){
+          $tblWrap.css('height', '550px');
+        } else {
+          $tblWrap.css('height', '462px');
+        }
         $tblWrap.animate({
           scrollTop: scrollToBlock
         }, 400)
@@ -558,7 +563,6 @@ function tableAsynchron(){
 
 
     $(window).on('load', function(){
-      var bodyPhone = +($('body').width());
       if (bodyPhone <= 640 && $tblWrap.length === 1) {
         $tblWrap.css('height', '246px');
         function bodyHeightPhone(){

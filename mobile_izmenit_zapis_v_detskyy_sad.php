@@ -404,15 +404,16 @@ include('include/mobile_head.php');
                   либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em> 
            </div>
        </fieldset>
-       <div class="limiter">
-       		<div class="clear mobile_morpf btn-cont_inner fl">
-       		    <em class="wrapper l_100">
-       		      <a href="#" class="btn white rarr fl popup_link"><b class="popup_cancel_detsad">Отменить запись</b></a>
-       		    </em>
-       		</div>
-           <span class="fr">
-               <input class="big btn" type="submit" value="Отправить">
-           </span>
+
+       <div class="clear last_btn-block reverse_btn">
+         <div class="limiter clear">
+             <span class="fl">
+                <a href="#" class="btn white popup_link"><b class="popup_cancel_detsad">Отменить запись</b></a>
+             </span>
+             <span class="fr">
+                 <input class="big btn" type="submit" value="Изменить">
+             </span>
+         </div>
        </div>
 	</form>
 </div>

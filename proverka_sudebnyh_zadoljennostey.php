@@ -156,7 +156,7 @@ include('include/head.php');
           </div>
         </div> 
         
-        <div class="clear">
+        <div class="clear last_btn-block">
           <a href="#" class="btn white fl"><b>На главную</b></a>
           <span class="btn fr"><b>Получить уведомление</b></span>
         </div>        

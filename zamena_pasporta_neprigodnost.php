@@ -491,9 +491,11 @@ include('include/head.php');
 				либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>
 			</fieldset>
 					
-			<span class="fr">
-				<input class="big btn" type="submit" value="Отправить">
-			</span>
+			<div class="clear last_btn-block">
+				<span class="fr">
+					<input class="big btn" type="submit" value="Отправить">
+				</span>
+			</div>
 		</form>
 	</div>
 	<?

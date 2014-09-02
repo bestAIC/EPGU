@@ -79,10 +79,8 @@ include('include/mobile_head.php');
 			</div>
 		</fieldset>
 		
-		<hr class="brd_w100">
-		
-		<div class="limiter">
-			<div class="clear last_btn-block">
+		<div class="clear last_btn-block">
+			<div class="limiter">
 			    <span class="btn white fr"><b>Изменить запись</b></span>
 			</div>
 		</div>

@@ -43,8 +43,9 @@ include('include/head.php');
                 <h2><span>Поздравляем!</span></h2>
               </div>
               <p>С радостью сообщаем, что в доступных нам базах данных не найдено ни одной вашей задолженности. Это означает, что вам не о чем беспокоится.</p>
+
               <div class="social">
-                  <b>Поделись удобным сервисом с друзьями</b>
+                  <b>Поделись удобным сервисом с друзьями:</b>
                   <div class="social-ico_cont">
                       <a href="#"><span class="icomoon">#</span></a>
                       <a href="#"><span class="icomoon">$</span></a>

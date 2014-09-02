@@ -389,15 +389,16 @@ include('include/head.php');
             
             <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Согласен на обработку персональных данных</label></em>
             
-            <em class="wrapper skew l_100"><input type="checkbox" checked="checked" /><label>Об ответственности за предоставление заведомо ложных сведений,
+            <em class="wrapper l_100"><input type="checkbox" checked="checked" /><label>Об ответственности за предоставление заведомо ложных сведений,
              либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>           
                                                    
           </fieldset>                                                                                               
           
-          <span class="fr">
-              <input class="big btn" type="submit" value="Отправить">
-          </span>                     
-                             
+          <div class="clear last_btn-block">
+            <span class="fr">
+                <input class="big btn" type="submit" value="Отправить">
+            </span>
+          </div>
         </form>                      
         
       </div>

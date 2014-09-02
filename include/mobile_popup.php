@@ -191,13 +191,11 @@
     </div>
 
     <div id="popup_cancel_detsad" class="popup">
-      <h2>Вы действительно хотите отменить запись в детский сад?</h2>
-      <div class="clear mobile_morpf btn-cont_inner">
+      <h3>Вы действительно хотите отменить запись в детский сад?</h3>
+      <div class="clear mobile_morpf">
           <em class="wrapper l_66">
             <a href="#" class="btn white rarr fl back"><b>Нет</b></a>
-            <span class="fr">
-                <input class="big btn" type="submit" value="Да, отменить запись">
-            </span>
+            <a href="mobile_detskiy_sad_proverka_ocheredy_approve.php" class="btn rarr fr"><b>Да, отменить запись</b></a>
           </em>
       </div>
     </div>

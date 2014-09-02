@@ -14,8 +14,7 @@ include('include/mobile_head.php');
 	</div>
 
 	<form class="main clear big_inp-form bt">
-	      
-		<fieldset class="group_1">
+	    <fieldset class="group_1">
 			<div class="limiter">
 				<span class="point_num">1</span>
 				<h3>Выберите заявление</h3>

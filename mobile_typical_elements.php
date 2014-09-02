@@ -4,24 +4,23 @@ $pagetitle = 'Типовые элементы - мобильная версия'
 include('include/mobile_head.php');
 ?>
 
-			<div id="content">
+	<div id="content">
 
-				<div class="title">
-				  <div class="limiter"><h1>Типовые элементы - mobile</h1></div>
+		<div class="title">
+			<div class="limiter"><h1>Типовые элементы - mobile</h1></div>
+		</div>
+				
+				
+		<!-- advice type_ok -->
+		<div class="advice type_ok">
+			<div class="limiter">
+				<div class="advice_h">
+					<div class="advice_ico"><span class="icomoon">4</span></div>
+					<h2><span>Вы подписаны на уведомление</span></h2>
 				</div>
-				
-				
-					<!-- advice type_ok -->
-					<div class="advice type_ok">
-						<div class="limiter">
-						  <div class="advice_h">
-                  <div class="advice_ico"><span class="icomoon">4</span></div>
-                  	<h2><span>Вы подписаны на уведомление</span></h2>
-                	</div>
-								  <p>После восстановления работоспособности сервиса вам будет отправлено автоматическое уведомление по указаным вами контактным данным, 
-								  и вы сможете вернутся к получению услуги.</p> 
-					  </div>
-					</div>
+				<p>После восстановления работоспособности сервиса вам будет отправлено автоматическое уведомление по указаным вами контактным данным, и вы сможете вернутся к получению услуги.</p> 
+			</div>
+		</div>
 				
 
 				<br/>

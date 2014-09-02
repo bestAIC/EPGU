@@ -53,19 +53,16 @@ include('include/head.php');
                 </div></i>
               </span>         
             </em>  
-            
-          </div> 
-          <div class="advice">
-            <div class="social">
-                <b>Поделись удобным сервисом с друзьями</b>
-                <div class="social-ico_cont">
-                    <a href="#"><span class="icomoon">#</span></a>
-                    <a href="#"><span class="icomoon">$</span></a>
-                    <a href="#"><span class="icomoon">%</span></a>
-                    <a href="#"><span class="icomoon">&amp;</span></a>
-                </div>
-            </div>                                   
-          </div>                                                                                                                                             
+              <div class="social">
+                  <b>Поделись удобным сервисом с друзьями:</b>
+                  <div class="social-ico_cont">
+                      <a href="#"><span class="icomoon">#</span></a>
+                      <a href="#"><span class="icomoon">$</span></a>
+                      <a href="#"><span class="icomoon">%</span></a>
+                      <a href="#"><span class="icomoon">&amp;</span></a>
+                  </div>
+              </div>
+          </div>
         </form>                      
         
       </div>

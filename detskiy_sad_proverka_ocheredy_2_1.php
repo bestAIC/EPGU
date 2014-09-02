@@ -60,7 +60,7 @@ include('include/head.php');
 		</fieldset>
 	</form>
 	
-	<div class="clear">
+	<div class="clear last_btn-block">
       <span class="btn white fr"><b>Изменить запись</b></span>
     </div>
 </div>
