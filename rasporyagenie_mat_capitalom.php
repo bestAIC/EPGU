@@ -20,21 +20,12 @@ include('include/head.php');
               
             <fieldset class="group_1">
                 <span class="point_num">1</span>
-                <h3>Кто подает заявление</h3>
+                <h3>Заявление подает</h3>
             
-                <em class="wrapper l_100"><input type="radio" name="g_1" checked="checked" id="c_1"/><label for="c_1">Лично</label></em>
-                <div class="fields_cover">
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1"/><label for="f_1">мать</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">отец</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1"/><label for="f_1">отец</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">мать</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">ребенок</label></em>
-                </div>
-                
-                <em class="wrapper l_100"><input type="radio" name="g_1" id="c_2"/><label for="c_2">Я представитель</label></em>
-                <div class="fields_cover">
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">мать</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_5"/><label for="f_5">отец</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_6"/><label for="f_6">ребенок</label></em>
-                </div>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3_n"/><label for="f_3_n">законный представитель</label></em>
             </fieldset>
 
             <fieldset class="group_2">
@@ -103,7 +94,7 @@ include('include/head.php');
                 
                 <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
                 </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em>
+                </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
                 
                 <em class="wrapper l_33"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
                 </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_7" /><label for="f_7">Мужской</label>
@@ -182,9 +173,9 @@ include('include/head.php');
                 <em class="wrapper l_100"><input type="radio" name="g_3" id="c_6" checked="checked" /><label for="c_6">да</label></em>
                 <div class="fields_cover">
                     <h4>Персональные данные владельца жилого помещения</h4>
-                    <em class="wrapper l_100"><input type="text" placeholder="Фамилия" class="big" /></em>
-                    <em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em>
+                    <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+                    </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
 
                     <em class="wrapper l_33"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
                     </em><em class="wrapper l_16"><input type="radio" name="sex_3" id="f_9" /><label for="f_9">Мужской</label>
@@ -193,13 +184,10 @@ include('include/head.php');
 
                 <em class="wrapper l_100"><input type="radio" name="g_3" id="c_7"/><label for="c_7">нет</label></em>
                 <div class="fields_cover">
-                    <h4>Договор на обучение</h4>
-                    <em class="wrapper l_100"><input type="text" placeholder="Введите название" class="big" /></em>
-
                     <h4>Персональные данные владельца жилого помещения</h4>
-                    <em class="wrapper l_100"><input type="text" placeholder="Фамилия" class="big" /></em>
-                    <em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em>
+                    <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+                    </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
 
                     <em class="wrapper l_33"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
                     </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="f_11" /><label for="f_11">Мужской</label>
