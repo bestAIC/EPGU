@@ -77,6 +77,10 @@ include('include/mobile_head.php');
 							<p><a href="detskiy_sad_proverka_ocheredy_approve.php">detskiy_sad_proverka_ocheredy_approve.php</a></p>
 						</td>
 					</tr>
+					<tr>
+						<td><a href="rasporyagenie_mat_capitalom.php">Распоряжение материнским капиталом</a></td>
+						<td><a href="rasporyagenie_mat_capitalom.php">rasporyagenie_mat_capitalom.php</a></td>
+					</tr>
 					<!-- Типовые элементы -->
 					<tr>
 						<td><a href="typical_elements.php">Типовые элементы</a></td>
