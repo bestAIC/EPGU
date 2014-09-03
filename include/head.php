@@ -114,7 +114,7 @@
             <div class="bottom type_2">
         <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'zamena_pasporta_pol_ok' || $pagename == 'zagran_pasport_nov_18_plus' || $pagename == 'zamena_pasporta_neprigodnost' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
             <div class="bottom type_3">
-        <? } else if ($pagename == 'detskiy_sad') { ?> 
+        <? } else if ($pagename == 'detskiy_sad' || $pagename == "mat_capital") { ?> 
             <div class="bottom type_4">
         <? } else if ($pagename == 'egrn') { ?> 
             <div class="bottom type_5">                          

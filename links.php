@@ -77,6 +77,16 @@ include('include/mobile_head.php');
 							<p><a href="detskiy_sad_proverka_ocheredy_approve.php">detskiy_sad_proverka_ocheredy_approve.php</a></p>
 						</td>
 					</tr>
+					<tr>
+						<td>
+							<p><a href="rasporyagenie_mat_capitalom.php">Распоряжение материнским капиталом</a></p>
+							<p><a href="rassmotreniye_zayavleniya_na_matcaputal.php">Рассмотрение заявление о выдаче государственного сертификата на материнский (семейный) капитал</a></p>
+						</td>
+						<td>
+							<p><a href="rasporyagenie_mat_capitalom.php">rasporyagenie_mat_capitalom.php</a></p>
+							<p><a href="rassmotreniye_zayavleniya_na_matcaputal.php">rassmotreniye_zayavleniya_na_matcaputal.php</a></p>
+						</td>
+					</tr>
 					<!-- Типовые элементы -->
 					<tr>
 						<td><a href="typical_elements.php">Типовые элементы</a></td>
