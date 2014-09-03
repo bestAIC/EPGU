@@ -31,19 +31,33 @@ include('include/mobile_head.php');
               <h3>Ваши персональные данные</h3>  
             </div>
             <div class="limiter">
-              <em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
+              <em class="wrapper l_50"><label>Фамилия</label><input type="text" placeholder="Фамилия" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label>Имя</label><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label>Отчество</label><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
+              <em class="wrapper l_33"><label>Дата рождения</label><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Мужской</label>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/>            
               
-              <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>
+              <em class="wrapper l_50"><label>Адрес электронной почты</label><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label>Контактный телефон</label><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>
 
-              <em class="wrapper l_50"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
-              </em> 
+              <em class="wrapper l_50"><label>ИНН</label><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
+              </em>
+
+              <div class="info-block_wrap">
+                <div class="info_block type_2">
+                  <p class="info-block_h"><b>Обратите внимание</b></p>
+                  <p>Чтобы получить полную информацию о штрафах, рекомендуем заполнить все поля</p>
+                  <span class="icomoon">"</span>
+                </div>
+              </div>
+              <div class="clear mobile_morpf btn-cont_inner">
+                <em class="wrapper l_100">
+                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                </em>
+              </div>
+
             </div>                                
           </fieldset>
 
@@ -57,12 +71,12 @@ include('include/mobile_head.php');
             </div>  
             <div class="fields_cover">
               <div class="limiter">  
-                <em class="wrapper l_50"><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Прежняя фамилия</label><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><label>Год изменения</label><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Прежнее имя</label><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><label>Год изменения</label><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Прежнее отчество</label><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><label>Год изменения</label><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
                 <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
               </div>
             </div>
@@ -78,33 +92,36 @@ include('include/mobile_head.php');
             </div>
             <div class="limiter">
               <em class="wrapper l_50">
+                <label>Тип документа</label>
                 <select class="select_choice">
                   <option value="0" selected="selected" class="selected_one">Тип документа</option>                
                   <option>Паспорт РФ</option>
                 </select>                  
               </em><br/>
 
-              <em class="wrapper l_33"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>            
+              <em class="wrapper l_33"><label>Серия</label><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><label>Номер</label><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><label>Код подразд-я</label><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>            
               </em><br/>
-              <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
-              </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
+              <em class="wrapper l_33"><label>Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/>
+              </em><em class="wrapper l_66"><label>Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
 
               <em class="wrapper l_66">
+                <label>Страна рождения</label>
                 <div class="search_inp-block">
                   <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
                   <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
                   <div class="selction_ajax-placeholder"></div>
                 </div>
               </em><em class="wrapper l_33">
+                <label>Код страны</label>
                 <select class="select_choice">
                   <option value="0" selected="selected" class="selected_one">Код страны</option>                
                   <option>007</option>
                 </select>
               </em>
 
-              <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
+              <em class="wrapper l_100"><label>Место рождения</label><input type="text" placeholder="Место рождения" class="big" /></em>
             </div>
           </fieldset>
           
@@ -121,18 +138,18 @@ include('include/mobile_head.php');
             </div>                          
             <div class="fields_cover">
               <div class="limiter">
-                <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+                <em class="wrapper l_100"><label>Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
                 
-                <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-                </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+                <em class="wrapper l_50"><label>Район</label><input type="text" placeholder="Район" class="big" />
+                </em><em class="wrapper l_50"><label>Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
                 
-                <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" /></em><br/>
-                <em class="wrapper l_33"><input type="text" placeholder="Дом" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Улица</label><input type="text" placeholder="Улица" class="big" /></em><br/>
+                <em class="wrapper l_33"><label>Дом</label><input type="text" placeholder="Дом" class="big" />
+                </em><em class="wrapper l_33"><label>Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+                </em><em class="wrapper l_33"><label>Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Период пребывания" class="big" /><i class="not">необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Код налогового органа" value="1234" class="big" disabled="disabled"/></em>
+                <em class="wrapper l_33"><label>Период пребывания</label><input type="text" placeholder="Период пребывания" class="big" /><i class="not">необязательно</i>
+                </em><em class="wrapper l_33"><label>Код налогового органа</label><input type="text" placeholder="Код налогового органа" value="1234" class="big" disabled="disabled"/></em>
               </div>             
             </div>                                         
           </fieldset>          
@@ -152,18 +169,19 @@ include('include/mobile_head.php');
               <div class="limiter">
                 <h4>Сведения о документе, подтверждающем регистрацию по месту жительства в РФ</h4>                            
                 <em class="wrapper l_50">
+                  <label>Тип документа</label>
                   <select class="select_choice">
                     <option value="0" selected="selected" class="selected_one">Тип документа</option>                
                     <option>Паспорт РФ</option>
                   </select>                  
                 </em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Серия" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Номер" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Регистрация до" class="big" /></em><br/>
+                <em class="wrapper l_33"><label>Серия</label><input type="text" placeholder="Серия" class="big" />
+                </em><em class="wrapper l_33"><label>Номер</label><input type="text" placeholder="Номер" class="big" />
+                </em><em class="wrapper l_33"><label>Регистрация до</label><input type="text" placeholder="Регистрация до" class="big" /></em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
-                </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big" /></em>
+                <em class="wrapper l_33"><label>Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
+                </em><em class="wrapper l_66"><label>Кем выдан</label><input type="text" placeholder="Кем выдан" class="big" /></em>
               </div>
             </div>                      
           </fieldset> 
@@ -179,6 +197,7 @@ include('include/mobile_head.php');
             <div class="fields_cover">
               <div class="limiter">
                 <em class="wrapper l_100">
+                  <label>Выберете регион</label>
                   <div class="search_inp-block">
                     <input type="search" placeholder="Выберете регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
                     <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
@@ -208,18 +227,18 @@ include('include/mobile_head.php');
               <h3>Персональные данные получателя услуги</h3>  
             </div>
             <div class="limiter">            
-              <em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" />
-              </em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" /></em><br/>
+              <em class="wrapper l_50"><label>Фамилия</label><input type="text" placeholder="Фамилия" class="big" />
+              </em><em class="wrapper l_50"><label>Имя</label><input type="text" placeholder="Имя" class="big" />
+              </em><em class="wrapper l_50"><label>Отчество</label><input type="text" placeholder="Отчество" class="big" /></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+              <em class="wrapper l_33"><label>Дата рождения</label><input type="text" placeholder="Дата рождения" class="big" />
               </em><em class="wrapper l_25"><input type="radio" name="sex_2_1" checked="checked" /><label>Мужской</label>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2_1" /><label>Женский</label></em><br/>            
               
-              <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Контактный телефон" class="big"/></em><br/>
+              <em class="wrapper l_50"><label>Адрес электронной почты</label><input type="text" placeholder="Адрес электронной почты" class="big"/>
+              </em><em class="wrapper l_50"><label>Контактный телефон</label><input type="text" placeholder="Контактный телефон" class="big"/></em><br/>
 
-              <em class="wrapper l_33"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
+              <em class="wrapper l_33"><label>ИНН</label><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
               </em>
             </div>                                 
           </fieldset>
@@ -230,19 +249,33 @@ include('include/mobile_head.php');
               <h3>Ваши персональные данные</h3>  
             </div>
             <div class="limiter">          
-              <em class="wrapper l_50"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
+              <em class="wrapper l_50"><label>Фамилия</label><input type="text" placeholder="Фамилия" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label>Имя</label><input type="text" placeholder="Имя" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label>Отчество</label><input type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
               
-              <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
+              <em class="wrapper l_33"><label>Дата рождения</label><input type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2_2" disabled="disabled" checked="checked" /><label>Мужской</label>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2_2" disabled="disabled" /><label>Женский</label></em><br/>            
               
-              <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
-              </em><em class="wrapper l_50"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>
+              <em class="wrapper l_50"><label>Адрес электронной почты</label><input type="text" placeholder="Адрес электронной почты" class="big" value="test@test.ru" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label>Контактный телефон</label><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>
 
-              <em class="wrapper l_33"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
+              <em class="wrapper l_33"><label>ИНН</label><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
               </em>
+
+              <div class="info-block_wrap">
+                <div class="info_block type_2">
+                  <p class="info-block_h"><b>Обратите внимание</b></p>
+                  <p>Чтобы получить полную информацию о штрафах, рекомендуем заполнить все поля</p>
+                  <span class="icomoon">"</span>
+                </div>
+              </div>
+              <div class="clear mobile_morpf btn-cont_inner">
+                <em class="wrapper l_100">
+                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                </em>
+              </div>
+                            
             </div>                                 
           </fieldset>
 
@@ -256,12 +289,12 @@ include('include/mobile_head.php');
             </div>
             <div class="fields_cover">
               <div class="limiter">
-                <em class="wrapper l_50"><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Прежняя фамилия</label><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><label>Год изменения</label><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Прежнее имя</label><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><label>Год изменения</label><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
+                <em class="wrapper l_50"><label>Прежнее отчество</label><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><label>Год изменения</label><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
                 <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
               </div> 
             </div>
@@ -277,33 +310,36 @@ include('include/mobile_head.php');
             </div>
             <div class="limiter">  
               <em class="wrapper l_50">
+                <label>Тип документа</label>
                 <select class="select_choice">
                   <option value="0" selected="selected" class="selected_one">Тип документа</option>                
                   <option>Паспорт РФ</option>
                 </select>                  
               </em><br/>
 
-              <em class="wrapper l_33"><input type="text" placeholder="Серия" class="big"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Номер" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" class="big"/>            
+              <em class="wrapper l_33"><label>Серия</label><input type="text" placeholder="Серия" class="big"/>
+              </em><em class="wrapper l_33"><label>Номер</label><input type="text" placeholder="Номер" class="big" />
+              </em><em class="wrapper l_33"><label>Код подразд-я</label><input type="text" placeholder="Код подразд-я" class="big"/>            
               </em><br/>
-              <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
-              </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big"/></em>
+              <em class="wrapper l_33"><label>Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
+              </em><em class="wrapper l_66"><label>Кем выдан</label><input type="text" placeholder="Кем выдан" class="big"/></em>
 
               <em class="wrapper l_66">
+                <label>Страна рождения</label>
                 <div class="search_inp-block">
                   <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
                   <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
                   <div class="selction_ajax-placeholder"></div>
                 </div>
               </em><em class="wrapper l_33">
+                <label>Код страны</label>
                 <select class="select_choice">
                   <option value="0" selected="selected" class="selected_one">Код страны</option>                
                   <option>007</option>
                 </select>
               </em>
 
-              <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
+              <em class="wrapper l_100"><label>Место рождения</label><input type="text" placeholder="Место рождения" class="big" /></em>
             </div>
           </fieldset>
           
@@ -320,19 +356,19 @@ include('include/mobile_head.php');
           </div>                          
             <div class="fields_cover">
               <div class="limiter">
-                <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
+                <em class="wrapper l_100"><label>Регион</label><input type="text" placeholder="Регион" class="big" /></em><br/>
                 
-                <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-                </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+                <em class="wrapper l_50"><label>Район</label><input type="text" placeholder="Район" class="big" />
+                </em><em class="wrapper l_50"><label>Населенный пункт</label><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
                 
-                <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" /></em><br/>
+                <em class="wrapper l_50"><label>Улица</label><input type="text" placeholder="Улица" class="big" /></em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Дом" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em><br/>
+                <em class="wrapper l_33"><label>Дом</label><input type="text" placeholder="Дом" class="big" />
+                </em><em class="wrapper l_33"><label>Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+                </em><em class="wrapper l_33"><label>Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Период пребывания" class="big" /><i class="not">необязательно</i>
-                </em><em class="wrapper l_33"><input type="text" placeholder="Код налогового органа" value="1234" class="big" disabled="disabled"/></em>
+                <em class="wrapper l_33"><label>Период пребывания</label><input type="text" placeholder="Период пребывания" class="big" /><i class="not">необязательно</i>
+                </em><em class="wrapper l_33"><label>Код налогового органа</label><input type="text" placeholder="Код налогового органа" value="1234" class="big" disabled="disabled"/></em>
               </div>              
             </div>                                         
           </fieldset>          
@@ -352,19 +388,20 @@ include('include/mobile_head.php');
               <div class="limiter">
                 <h4>Сведения о документе, подтверждающем регистрацию по месту жительства в РФ</h4>                            
                 <em class="wrapper l_50">
+                  <label>Тип документа</label>
                   <select class="select_choice">
                     <option value="0" selected="selected" class="selected_one">Тип документа</option>                
                     <option>Паспорт РФ</option>
                   </select>                  
                 </em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Серия" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Номер" class="big" />
-                </em><em class="wrapper l_33"><input type="text" placeholder="Регистрация до" class="big" />            
+                <em class="wrapper l_33"><label>Серия</label><input type="text" placeholder="Серия" class="big" />
+                </em><em class="wrapper l_33"><label>Номер</label><input type="text" placeholder="Номер" class="big" />
+                </em><em class="wrapper l_33"><label>Регистрация до</label><input type="text" placeholder="Регистрация до" class="big" />            
                 </em><br/>
 
-                <em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" />
-                </em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big"  /></em>
+                <em class="wrapper l_33"><label>Дата выдачи</label><input type="text" placeholder="Дата выдачи" class="big" />
+                </em><em class="wrapper l_66"><label>Кем выдан</label><input type="text" placeholder="Кем выдан" class="big"  /></em>
               </div>
             </div>                      
           </fieldset> 
@@ -380,6 +417,7 @@ include('include/mobile_head.php');
             <div class="fields_cover">
               <div class="limiter">
                 <em class="wrapper l_100">
+                  <label>Выберете регион</label>
                   <div class="search_inp-block">
                     <input type="search" placeholder="Выберете регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
                     <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />

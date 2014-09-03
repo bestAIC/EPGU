@@ -24,8 +24,10 @@
 </head>
 <body>
 
-  <? if($pagename == 'gibdd_shtrafy') { ?>
+  <? if ($pagename == 'gibdd_shtrafy') { ?>
       <div id="wrap" class="gibdd_shtrafy">
+  <? } else if ($pagename == 'gibdd_ekzamen') { ?>
+      <div id="wrap" class="gibdd_ekzamen">      
   <? } else if ($pagename == 'oplata_uniteller') { ?> 
       <div id="wrap" class="oplata_uniteller">      
   <? } else if ($pagename == 'ostavit_otzyv') { ?> 
@@ -106,7 +108,7 @@
             </li>                                      
           </ul>      
         </div>
-        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller') { ?>
+        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'gibdd_ekzamen' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller') { ?>
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">
@@ -118,6 +120,4 @@
             <div class="bottom type_5">                          
         <? } else if ($pagename == '404') { ?>
             <div class="bottom type_non">
-        <? } ?>
-        
-          
+        <? } ?>          
