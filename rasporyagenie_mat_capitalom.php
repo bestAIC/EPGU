@@ -1,12 +1,12 @@
 <?
-$pagename = 'detskiy_sad';
-$pagetitle = 'Запись в детский сад';
+$pagename = 'mat_capital';
+$pagetitle = 'Распоряжение материнским (семейным) капиталом';
 include('include/head.php');
 ?>
 
                 <ul class="breadcrumbs">
                     <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>
-                    <li class="last"><span>Постановка на регистрацию</span></li>
+                    <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>
                 </ul>
             </div>
         </div>
@@ -20,7 +20,7 @@ include('include/head.php');
               
             <fieldset class="group_1">
                 <span class="point_num">1</span>
-                <h3>Заявление подает</h3>
+                <h3>Кто подает заявление</h3>
             
                     <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1"/><label for="f_1">отец</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">мать</label></em>
@@ -33,6 +33,7 @@ include('include/head.php');
                 <h3>Ваши персональные данные <span class="fr">
                 <a href="#">Изменить данные</a> <i class="q">?
                 <div class="bg_c3 q_hover">
+                    <h4>Обратите внимание</h4>
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
                 </div></i>
                 </span></h3>
@@ -54,6 +55,7 @@ include('include/head.php');
                 <h3>Ваши паспортные данные <span class="fr">
                 <a href="#">Изменить данные</a> <i class="q">?
                 <div class="bg_c3 q_hover">
+                    <h4>Обратите внимание</h4>
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
                 </div></i>
                 </span></h3>
@@ -96,7 +98,7 @@ include('include/head.php');
                 </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
                 </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
                 
-                <em class="wrapper l_33"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
+                <em class="wrapper l_25"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
                 </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_7" /><label for="f_7">Мужской</label>
                 </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_8" /><label for="f_8">Женский</label></em>
             </fieldset>
@@ -177,7 +179,7 @@ include('include/head.php');
                     </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
 
-                    <em class="wrapper l_33"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
+                    <em class="wrapper l_25"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
                     </em><em class="wrapper l_16"><input type="radio" name="sex_3" id="f_9" /><label for="f_9">Мужской</label>
                     </em><em class="wrapper l_16"><input type="radio" name="sex_3" id="f_10" /><label for="f_10">Женский</label></em>
                 </div>
@@ -189,7 +191,7 @@ include('include/head.php');
                     </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
 
-                    <em class="wrapper l_33"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
+                    <em class="wrapper l_25"><input type="text" placeholder="Дата рождения (усыновления)" class="big" />
                     </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="f_11" /><label for="f_11">Мужской</label>
                     </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="f_12" /><label for="f_12">Женский</label></em>
                 </div>
