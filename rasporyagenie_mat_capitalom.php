@@ -5,7 +5,7 @@ include('include/head.php');
 ?>
 
                 <ul class="breadcrumbs">
-                    <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>
+                    <li class="first"><a href="#" tabindex="-1"><span class="icomoon">7</span>Главная</a></li>
                     <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>
                 </ul>
             </div>
@@ -25,13 +25,19 @@ include('include/head.php');
                     <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1"/><label for="f_1">отец</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">мать</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">ребенок</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3_n"/><label for="f_3_n">законный представитель</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3_n"/><label for="f_3_n">представитель</label></em>
+                    
+                    <div class="fields_cover">
+                        <em class="wrapper l_100"><input type="radio" name="g_2_1_1" id="f_2_1_1"/><label for="f_2_1_1">Законный представитель, опекун или попечитель несовершеннолетнего или недееспособного лица</label></em>
+                        <em class="wrapper l_100"><input type="radio" name="g_2_1_1" id="f_2_1_2"/><label for="f_2_1_2">Организация, на которую возложено исполнение обязанностей опекуна или попечителя</label></em>
+                        <em class="wrapper l_100"><input type="radio" name="g_2_1_1" id="f_2_1_3"/><label for="f_2_1_3">Доверенное лицо</label></em>
+                    </div>
             </fieldset>
 
             <fieldset class="group_2">
                 <span class="point_num">2</span>            
                 <h3>Ваши персональные данные <span class="fr">
-                <a href="#">Изменить данные</a> <i class="q">?
+                <a href="#" tabindex="-1">Изменить данные</a> <i class="q">?
                 <div class="bg_c3 q_hover">
                     <h4>Обратите внимание</h4>
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
@@ -53,7 +59,7 @@ include('include/head.php');
             <fieldset class="group_3">
                 <span class="point_num">3</span>
                 <h3>Ваши паспортные данные <span class="fr">
-                <a href="#">Изменить данные</a> <i class="q">?
+                <a href="#" tabindex="-1">Изменить данные</a> <i class="q">?
                 <div class="bg_c3 q_hover">
                     <h4>Обратите внимание</h4>
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
@@ -70,8 +76,8 @@ include('include/head.php');
 
                 <em class="wrapper l_66">
                     <div class="search_inp-block">
-                        <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-                        <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                        <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                        <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
                         <div class="selction_ajax-placeholder"></div>
                     </div>
                 </em>

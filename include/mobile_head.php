@@ -37,9 +37,9 @@ include('include/mobile_popup.php');
       <a class="exit">Константинопольский К. К.</a>
       
       <ul class="submenu">
-        <li class='ico_lk'><a href="#"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
-        <li class='ico_contact'><a href="#"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
-        <li class='ico_exit'><a href="#"><span class="icomoon">;</span><span>Выход</span></a></li>
+        <li class='ico_lk'><a href="#0" tabindex="-1"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
+        <li class='ico_contact'><a href="#0" tabindex="-1"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
+        <li class='ico_exit'><a href="#0" tabindex="-1"><span class="icomoon">;</span><span>Выход</span></a></li>
       </ul>
     </div>
   </div>
@@ -90,7 +90,7 @@ include('include/mobile_popup.php');
                   <div class="top type_2"> 
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  
-              <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy') { ?>
+              <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy' || $pagename == 'mobile_mat_capital') { ?>
                   <div class="top type_4">
               <? } else if ($pagename == 'mobile_egrn') { ?>
                   <div class="top type_5">                      
@@ -122,10 +122,10 @@ include('include/mobile_popup.php');
                     </span>
                   </li>
                   <li class="col_2">
-                    <a href="#" class="catalog_link">Основной портал</a>
+                    <a href="#0" tabindex="-1" class="catalog_link">Основной портал</a>
                   </li>
                   <li class="col_3"> 
-                    <a class="menu closed" href="#"><span class="icomoon">0</span><span>Меню</span></a>
+                    <a class="menu closed" href="#" tabindex="-1"><span class="icomoon">0</span><span>Меню</span></a>
                   </li>                                      
                 </ul>      
               </div>
