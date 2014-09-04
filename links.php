@@ -88,11 +88,11 @@ include('include/mobile_head.php');
 					<tr>
 						<td>
 							<p><a href="rasporyagenie_mat_capitalom.php">Распоряжение материнским капиталом</a></p>
-							<p><a href="rassmotreniye_zayavleniya_na_matcaputal.php">Рассмотрение заявление о выдаче государственного сертификата на материнский (семейный) капитал</a></p>
+							<p><a href="vidacha_sertifikata_na_matcapital.php">Выдача сертификата на материнский (семейный) капитал</a></p>
 						</td>
 						<td>
 							<p><a href="rasporyagenie_mat_capitalom.php">rasporyagenie_mat_capitalom.php</a></p>
-							<p><a href="rassmotreniye_zayavleniya_na_matcaputal.php">rassmotreniye_zayavleniya_na_matcaputal.php</a></p>
+							<p><a href="vidacha_sertifikata_na_matcapital.php">vidacha_sertifikata_na_matcapital.php</a></p>
 						</td>
 					</tr>
 					<!-- Типовые элементы -->
