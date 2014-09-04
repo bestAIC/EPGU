@@ -125,7 +125,7 @@ include('include/mobile_popup.php');
                     <a href="#0" tabindex="-1" class="catalog_link">Основной портал</a>
                   </li>
                   <li class="col_3"> 
-                    <a class="menu closed" href="#0" tabindex="-1"><span class="icomoon">0</span><span>Меню</span></a>
+                    <a class="menu closed" href="#" tabindex="-1"><span class="icomoon">0</span><span>Меню</span></a>
                   </li>                                      
                 </ul>      
               </div>

@@ -24,15 +24,15 @@ include('include/head.php');
                 <span class="point_num">1</span>
                 <h3>Кто подает заявление</h3>
             
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1" checked="checked" /><label for="f_1">отец</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">мать</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">ребенок</label></em>
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">представитель</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1" checked="checked" /><label for="f_1">Отец</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2"/><label for="f_2">Мать</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3"/><label for="f_3">Ребенок</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4"/><label for="f_4">Представитель</label></em>
 
                     <div class="fields_cover">
-                        <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_1"/><label for="f_1_1_1">Законный представитель, опекун или попечитель несовершеннолетнего или недееспособного лица</label></em>
-                        <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_2"/><label for="f_1_1_2">Организация, на которую возложено исполнение обязанностей опекуна или попечителя</label></em>
-                        <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_3"/><label for="f_1_1_3">Доверенное лицо</label></em>
+                        <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_1"/><label for="f_1_1_1">законный представитель, опекун или попечитель несовершеннолетнего или недееспособного лица</label></em>
+                        <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_2"/><label for="f_1_1_2">организация, на которую возложено исполнение обязанностей опекуна или попечителя</label></em>
+                        <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_3"/><label for="f_1_1_3">доверенное лицо</label></em>
                     </div>
             </fieldset>
 

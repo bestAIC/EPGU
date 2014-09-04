@@ -5,7 +5,7 @@ include('include/head.php');
 ?>
 
           <ul class="breadcrumbs">
-            <li class="first"><a href="#"><span class="icomoon">7</span>Главная</a></li>       
+            <li class="first"><a href="#" tabindex="-1"><span class="icomoon">7</span>Главная</a></li>       
             <li class="last"><span>Постановка на регистрацию</span></li>
           </ul>          
         </div>
@@ -142,7 +142,13 @@ include('include/head.php');
           <fieldset class="group_9">                      
             <span class="point_num">9</span>
             <h3>Выберете желаемый и дополнительные детские сады</h3>                      
-            <em class="wrapper l_100"><input type="text" placeholder="Поиск по адресу" class="big" /></em> 
+            <em class="wrapper l_100">
+              <div class="search_inp-block">
+                <input type="search" placeholder="Поиск по адресу" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                <div class="selction_ajax-placeholder"></div>
+              </div>
+            </em>
             <em class="wrapper l_16">Сортировать по:
             </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">удалённости</label>
             </em><em class="wrapper l_33"><input type="radio" name="g_5" id="f_22"/><label for="f_22">количеству человек в очереди</label></em><br/>
