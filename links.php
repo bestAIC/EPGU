@@ -18,6 +18,14 @@ include('include/mobile_head.php');
 						<td><a href="gibdd_shtrafy.php">gibdd_shtrafy.php</a></td>
 					</tr>
 					<tr>
+						<td><a href="gibdd_ekzamen.php">Приём экзаменов на получение права на управление транспортным средством</a></td>
+						<td><a href="gibdd_ekzamen.php">gibdd_ekzamen.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="egrn.php">Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</a></td>
+						<td><a href="egrn.php">egrn.php</a></td>
+					</tr>										
+					<tr>
 						<td><a href="nalogovaya_zadoljennost.php">Налоговая задолженность</a></td>
 						<td><a href="nalogovaya_zadoljennost.php">nalogovaya_zadoljennost.php</a></td>
 					</tr>
@@ -116,6 +124,14 @@ include('include/mobile_head.php');
 						<td><a href="mobile_gibdd_shtrafy.php">Штрафы ГИБДД</a></td>
 						<td><a href="mobile_gibdd_shtrafy.php">mobile_gibdd_shtrafy.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="mobile_gibdd_ekzamen.php">Приём экзаменов на получение права на управление транспортным средством</a></td>
+						<td><a href="mobile_gibdd_ekzamen.php">gibdd_ekzamen.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="mobile_egrn.php">Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</a></td>
+						<td><a href="mobile_egrn.php">egrn.php</a></td>
+					</tr>					
 					<tr>
 						<td><a href="mobile_nalogovaya_zadoljennost.php">Налоговая задолженность</a></td>
 						<td><a href="mobile_nalogovaya_zadoljennost.php">mobile_nalogovaya_zadoljennost.php</a></td>
