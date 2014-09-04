@@ -180,20 +180,25 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">месту регистрации</label>
               </em><em class="wrapper l_33"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
               
-              <em class="wrapper l_33"><label for="i_32">Дата зачисления</label><input id="i_32" type="tel" placeholder="Дата зачисления" class="big" />
-              </em><em class="wrapper l_66"><label for="i_32_1">Возрастная группа</label>
-                  <select id="i_32_1">
-                    <option value="0">Возрастная группа</option>
-                    <option value="1">Возрастная группа</option>
-                    <option value="2">Возрастная группа</option>
+              <em class="wrapper l_50">
+              <label>Дата зачисления</label>
+                <select>            
+                  <option class="selected_one">Дата зачисления</option>
+                  <option>Сентябрь 2014</option>
+                  <option>Сентябрь 2015</option>
+                  <option>Сентябрь 2016</option>
+                </select>
+              </em><em class="wrapper l_50">
+              <label>Возрастная группа</label>
+                  <select disabled="disabled">            
+                    <option class="selected_one">Возрастная группа</option>
                   </select>                  
-                </em>
+                </em> 
 
               <em class="wrapper l_66">
                 <label for="i_33">Потребность по здоровью</label>
                 <select id="i_33">
                   <option value="0">Потребность по здоровью</option>
-                  <option value="1">Потребность по здоровью</option>
                 </select>
               </em>
             </div>                                        

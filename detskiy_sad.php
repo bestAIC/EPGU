@@ -124,10 +124,16 @@ include('include/head.php');
             </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_44" id="f_19"/><label for="f_19">месту регистрации</label>
             </em><em class="wrapper l_25"><input type="radio" name="g_44" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
             
-            <em class="wrapper l_25"><input type="text" placeholder="Дата зачисления" class="big" />
-            </em><em class="wrapper l_25">
-                <select>            
-                  <option>Возрастная группа</option>
+            <em class="wrapper l_33">
+              <select>            
+                <option class="selected_one">Дата зачисления</option>
+                <option>Сентябрь 2014</option>
+                <option>Сентябрь 2015</option>
+                <option>Сентябрь 2016</option>
+              </select>
+            </em><em class="wrapper l_33">
+                <select disabled="disabled">            
+                  <option class="selected_one">Возрастная группа</option>
                 </select>                  
               </em> 
 
