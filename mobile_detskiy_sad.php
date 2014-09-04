@@ -13,7 +13,7 @@ include('include/mobile_head.php');
         
           
         <form action="#" class="main clear big_inp-form bt">             
-          <fieldset class="group_1">
+          <!--fieldset class="group_1">
             <div class="limiter">         
               <span class="point_num">1</span>
               <h3>Выберете ребенка</h3> 
@@ -23,11 +23,11 @@ include('include/mobile_head.php');
               <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Константинопольский Евгений Константинович, 3 года</label></em>                         
               <em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"/><label for="f_3">Константинопольская Татьяна Константиновна, 2 года</label></em>                                                                            
             </div>
-          </fieldset>
+          </fieldset-->
                      
-          <fieldset class="group_2">
+          <fieldset class="group_1">
             <div class="limiter">                             
-              <span class="point_num">2</span>
+              <span class="point_num">1</span>
               <h3>Ваши персональные данные</h3>  
             </div>
             <div class="limiter">          
@@ -59,9 +59,9 @@ include('include/mobile_head.php');
             </div>
           </fieldset>
           
-          <fieldset class="group_3">
+          <fieldset class="group_2">
             <div class="limiter">                     
-              <span class="point_num">3</span>
+              <span class="point_num">2</span>
               <h3>Ваши паспортные данные</h3>
             </div>
             <div class="limiter">            
@@ -86,9 +86,9 @@ include('include/mobile_head.php');
             </div>                                      
           </fieldset>
           
-          <fieldset class="group_4">
+          <fieldset class="group_3">
             <div class="limiter">                      
-              <span class="point_num">4</span>
+              <span class="point_num">3</span>
               <h3>Кем вы приходитесь ребенку?</h3>
             </div>
             <div class="limiter">                                    
@@ -105,9 +105,9 @@ include('include/mobile_head.php');
                                                                             
           </fieldset> 
           
-          <fieldset class="group_5">
+          <fieldset class="group_4">
             <div class="limiter">                      
-              <span class="point_num">5</span>
+              <span class="point_num">4</span>
               <h3>Персональные данные ребенка</h3>
             </div>
             <div class="limiter">            
@@ -123,9 +123,9 @@ include('include/mobile_head.php');
             </div>                                           
           </fieldset>          
                               
-          <fieldset class="group_6">
+          <fieldset class="group_5">
             <div class="limiter">
-              <span class="point_num">6</span>
+              <span class="point_num">5</span>
               <h3>Данные свидетельства о рождении ребенка</h3>
             </div>
             <div class="limiter">            
@@ -152,9 +152,9 @@ include('include/mobile_head.php');
             </div>                    
           </fieldset> 
                     
-          <fieldset class="group_7">
+          <fieldset class="group_6">
             <div class="limiter">                        
-              <span class="point_num">7</span>
+              <span class="point_num">6</span>
               <h3>Место проживания ребёнка совпадает с местом регистрации?</h3>
             </div>
             <div class="limiter">               
@@ -170,9 +170,9 @@ include('include/mobile_head.php');
             </div>                            
           </fieldset>
           
-          <fieldset class="group_8">
+          <fieldset class="group_7">
             <div class="limiter">                      
-              <span class="point_num">8</span>
+              <span class="point_num">7</span>
               <h3>Параметры для выбора детского сада</h3>
             </div>
             <div class="limiter">  
@@ -200,9 +200,9 @@ include('include/mobile_head.php');
           </fieldset>
         
 
-          <fieldset class="group_9">
+          <fieldset class="group_8">
             <div class="limiter">                      
-              <span class="point_num">9</span>
+              <span class="point_num">8</span>
               <h3>Выберете желаемый и дополнительные детские сады</h3>
             </div>
             <div class="limiter">                        
@@ -293,9 +293,9 @@ include('include/mobile_head.php');
             </div>                                       
           </fieldset> 
 
-          <fieldset class="group_10">
+          <fieldset class="group_9">
             <div class="limiter">                      
-              <span class="point_num">10</span>
+              <span class="point_num">9</span>
               <h3>Есть ли у вас льготы?</h3>
             </div>
             <div class="limiter">             
@@ -334,7 +334,7 @@ include('include/mobile_head.php');
             </div>           
           </fieldset> 
           
-          <fieldset class="group_11">                      
+          <fieldset class="group_10">                      
             <div class="limiter">
               <h3>Согласие на обработку персональных данных</h3>          
               

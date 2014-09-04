@@ -12,7 +12,7 @@ include('include/head.php');
 	</div>
 	<div id="content">
 		<div class="title">
-		<span class="icomoon color_1">G</span><h1>Приём экзаменов на получение права на управление транспортным средством</h1>
+		<span class="icomoon color_1">^</span><h1>Приём экзаменов на получение права на управление транспортным средством</h1>
 		<h2>Получение или замена международного водительского удостоверения</h2>
 		</div>
 		<form class="main clear" action="zamena_psporta_pol_ok.php">

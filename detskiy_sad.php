@@ -19,16 +19,16 @@ include('include/head.php');
           
         <form class="main clear">
               
-          <fieldset class="group_1">         
+          <!--fieldset class="group_1">         
             <span class="point_num">1</span>
             <h3>Выберете ребенка</h3>          
             <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Константинопольский Константин Константинович, 5 лет</label></em>  
             <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Константинопольский Евгений Константинович, 3 года</label></em>                         
             <em class="wrapper l_100"><input type="radio" name="g_1" id="f_3"/><label for="f_3">Константинопольская Татьяна Константиновна, 2 года</label></em>                                                                            
-          </fieldset>
+          </fieldset-->
                      
-          <fieldset class="group_2">                   
-            <span class="point_num">2</span>
+          <fieldset class="group_1">                   
+            <span class="point_num">1</span>
             <h3>Ваши персональные данные <span class="fr">
             <a href="#">Изменить данные</a> <i class="q">?
                 <div class="bg_c3 q_hover">
@@ -49,8 +49,8 @@ include('include/head.php');
             </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926)867 09 09" disabled="disabled"/></em><br/>                                 
           </fieldset>
           
-          <fieldset class="group_3">                     
-            <span class="point_num">3</span>
+          <fieldset class="group_2">                     
+            <span class="point_num">2</span>
             <h3>Ваши паспортные данные</h3>          
             <em class="wrapper l_16"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
             </em><em class="wrapper l_25"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
@@ -61,21 +61,21 @@ include('include/head.php');
             </em>                                    
           </fieldset>
           
-          <fieldset class="group_4">                      
-            <span class="point_num">4</span>
+          <fieldset class="group_3">                      
+            <span class="point_num">3</span>
             <h3>Кем вы приходитесь ребенку?</h3>                                  
             <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_10"/><label for="f_10">Отец</label></em>              
             <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_11"/><label for="f_11">Мать</label></em>
             <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_12"/><label for="f_12">Опекун</label></em>
             <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_13"/><label for="f_13">Попечитель</label></em>
             <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_14"/><label for="f_14">Иное</label></em>
-            <div class="fields_cover_inner">
+            <div class="fields_cover">
               <em class="wrapper l_100"><input type="text" placeholder="Ваш вариант" class="big" /></em>                
             </div>                                                              
           </fieldset> 
           
-          <fieldset class="group_5">                      
-            <span class="point_num">5</span>
+          <fieldset class="group_4">                      
+            <span class="point_num">4</span>
             <h3>Персональные данные ребенка</h3>          
             <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
             </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
@@ -87,8 +87,8 @@ include('include/head.php');
             </em><em class="wrapper l_33 fr"><input type="text" placeholder="СНИЛС" class="big" /><i class="not">необязательно</i></em><br/>                                         
           </fieldset>          
                               
-          <fieldset class="group_6">                      
-            <span class="point_num">6</span>
+          <fieldset class="group_5">                      
+            <span class="point_num">5</span>
             <h3>Данные свидетельства о рождении ребенка</h3>          
             <em class="wrapper l_100"><input type="radio" name="g_3" id="f_17" checked="checked"/><label for="f_17">Российской Федерации</label></em>
             <div class="fields_cover">
@@ -107,8 +107,8 @@ include('include/head.php');
             </div>                    
           </fieldset> 
                     
-          <fieldset class="group_7">                      
-            <span class="point_num">7</span>
+          <fieldset class="group_6">                      
+            <span class="point_num">6</span>
             <h3>Место проживания ребёнка совпадает с местом регистрации?</h3>             
             <em class="wrapper l_100"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">Да</label></em>                                   
             <em class="wrapper l_100"><input type="radio" name="g_4" id="f_20"/><label for="f_20">Нет</label></em>
@@ -117,8 +117,8 @@ include('include/head.php');
             </div>                                      
           </fieldset>
           
-          <fieldset class="group_8">                      
-            <span class="point_num">8</span>
+          <fieldset class="group_7">                      
+            <span class="point_num">7</span>
             <h3>Параметры для выбора детского сада</h3>
             <em class="wrapper l_16">Отображать по:
             </em><em class="wrapper l_25"><input type="radio" checked="checked" name="g_44" id="f_19"/><label for="f_19">месту регистрации</label>
@@ -139,8 +139,8 @@ include('include/head.php');
           </fieldset>                     
         
 
-          <fieldset class="group_9">                      
-            <span class="point_num">9</span>
+          <fieldset class="group_8">                      
+            <span class="point_num">8</span>
             <h3>Выберете желаемый и дополнительные детские сады</h3>                      
             <em class="wrapper l_100"><input type="text" placeholder="Поиск по адресу" class="big" /></em> 
             <em class="wrapper l_16">Сортировать по:
@@ -236,8 +236,8 @@ include('include/head.php');
             </div>                                     
           </fieldset> 
 
-          <fieldset class="group_10">                      
-            <span class="point_num">10</span>
+          <fieldset class="group_9">                      
+            <span class="point_num">9</span>
             <h3>Есть ли у вас льготы?</h3>
             <em class="wrapper l_100"><input type="radio" name="g_9" id="f_34" /><label for="f_34">Да</label></em>
             <div class="fields_cover">
@@ -260,7 +260,7 @@ include('include/head.php');
             <em class="wrapper l_100"><input type="radio" name="g_9" id="f_35" checked="checked"/><label for="f_35">Нет</label></em>               
           </fieldset> 
           
-          <fieldset class="group_11">                      
+          <fieldset class="group_10">                      
 
             <h3>Согласие на обработку персональных данных</h3>          
             

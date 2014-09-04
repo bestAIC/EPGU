@@ -6,7 +6,7 @@ include('include/mobile_head.php');
 <div id="content">
 	<div class="title">
 		<div class="limiter">
-			<span class="icomoon color_1">G</span>
+			<span class="icomoon color_1">^</span>
 			<h1>Приём экзаменов на получение права на управление транспортным средством</h1>
 			<h2>Получение или замена международного водительского удостоверения</h2>
 		</div>
@@ -107,11 +107,11 @@ include('include/mobile_head.php');
 				<h3>Сведения о медицинской справке</h3>
 			</div>
 			<div class="limiter">					
-				<em class="wrapper l_25"><input type="text" placeholder="Номер справки" class="big"/>
-				</em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
+				<em class="wrapper l_33"><input type="text" placeholder="Номер справки" class="big"/>
+				</em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
 				
-				<em class="wrapper l_75"><input type="text" placeholder="Название медицинского учреждения" class="big" />
-				</em><em class="wrapper l_25"><input type="text" placeholder="Номер лицензии" class="big" />
+				<em class="wrapper l_66"><input type="text" placeholder="Название медицинского учреждения" class="big" />
+				</em><em class="wrapper l_33"><input type="text" placeholder="Номер лицензии" class="big" />
 				</em><br/>
 
 				<h4>Разрешена категория</h4>
@@ -140,15 +140,15 @@ include('include/mobile_head.php');
 			<div class="fields_cover">
 				<div class="limiter">
 					<h4>Данные водительского удостоверения</h4>
-					<em class="wrapper l_16"><input type="text" placeholder="Серия" class="big"/>
-					</em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big"/>
-					</em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
-					</em><em class="wrapper l_33"><input type="text" placeholder="Действительный до" class="big" /></em><br/>
-					
-					<em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big"/>
+					<em class="wrapper l_33"><input type="text" placeholder="Серия" class="big"/>
+					</em><em class="wrapper l_33"><input type="text" placeholder="Номер" class="big"/>
+					</em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" /><br/>
+
+					</em><em class="wrapper l_33"><input type="text" placeholder="Действительный до" class="big" />
+					</em><em class="wrapper l_66"><input type="text" placeholder="Кем выдан" class="big"/>
 					</em>
 
-					<em class="wrapper l_75">
+					<em class="wrapper l_100">
 						<div class="search_inp-block">
 						  <input type="search" placeholder="Страна" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
 						  <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
@@ -206,10 +206,11 @@ include('include/mobile_head.php');
 						</div>
 					</em>
 					
-					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_100"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" /></em>
+
+					<em class="wrapper l_33"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_33"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_33"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
 				
 			</div>
@@ -244,10 +245,12 @@ include('include/mobile_head.php');
 						</div>
 					</em>
 					
-					<em class="wrapper l_50"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
-					</em><em class="wrapper l_16"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
-					</em><em class="wrapper l_16"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
-					</em><em class="wrapper l_16"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
+					<em class="wrapper l_100"><label for="">Улица</label><input type="text" placeholder="Улица" class="big" />
+					</em>
+
+					<em class="wrapper l_33"><label for="">Дом</label><input type="text" placeholder="Дом" class="big" />
+					</em><em class="wrapper l_33"><label for="">Корпус</label><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+					</em><em class="wrapper l_33"><label for="">Кв-ра</label><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em>
 				</div>
 				
 			</div>
@@ -258,7 +261,7 @@ include('include/mobile_head.php');
 				</div>
 			</div>
 			<div class="limiter">					
-				<em class="wrapper l_25"><input type="text" placeholder="Укажите дату" class="big" /></em>
+				<em class="wrapper l_33"><input type="text" placeholder="Укажите дату" class="big" /></em>
 			</div>
 			<div class="limiter">
 				<div class="map-h_wrap">
