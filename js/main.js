@@ -13,7 +13,7 @@ $(document).ready(function() {
   if($('.search_inp-ajax').length){
     selectRegion();
   }
-  ePrevent();
+  // ePrevent();
 });
 
 // Styler
@@ -595,10 +595,10 @@ function selectRegion(){
   });
 }
 
-function ePrevent(){
-  var btn = $('.list.edit_list .lnk, .load_photo-btn .btn, .btn.plus, .btn-cont_inner .btn');
+// function ePrevent(){
+//   var btn = $('.list.edit_list .lnk, .load_photo-btn .btn, .btn.plus, .btn-cont_inner .btn');
 
-  btn.on('click', function(e){
-    e.preventDefault()
-  })
-}
+//   btn.on('click', function(e){
+//     e.preventDefault()
+//   })
+// }

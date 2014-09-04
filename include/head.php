@@ -97,12 +97,12 @@
             </li>
             <li class="col_3">
               <div id="menu_btn" class="closed">
-                <a class="exit">Константинопольский К. К.</a>
+                <a href="#" tabindex="-1" class="exit">Константинопольский К. К.</a>
                 
                 <ul class="submenu">
-                  <li class='ico_lk'><a href="#"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
-                  <li class='ico_contact'><a href="#"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
-                  <li class='ico_exit'><a href="#"><span class="icomoon">;</span><span>Выход</span></a></li>
+                  <li class='ico_lk'><a href="#0" tabindex="-1"><span class="icomoon">9</span><span>Личный кабинет</span></a></li>
+                  <li class='ico_contact'><a href="#0" tabindex="-1"><span class="icomoon">:</span><span>Свяжитесь с нами</span></a></li>
+                  <li class='ico_exit'><a href="#0" tabindex="-1"><span class="icomoon">;</span><span>Выход</span></a></li>
                 </ul>
               </div>
             </li>                                      

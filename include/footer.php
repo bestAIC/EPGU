@@ -6,12 +6,12 @@
         </li>
         <li class="right">
           <span class="phones">
-            8 800 100-70-10<br/>
-            +7 499 550-18-39
+            <a href="tel:88001007010" type="tel">8 800 100-70-10</a><br/>
+            <a href="tel:+74995501839" type="tel">+7 499 550-18-39</a>
           </span>
           <div class="foot_lnk">
-            <a href="#">support@gosuslugi.ru</a><br/>
-            <a href="#">Оставить отзыв</a>
+            <a href="mailto:support@gosuslugi.ru">support@gosuslugi.ru</a><br/>
+            <a href="#0">Оставить отзыв</a>
           </div>
         </li>
       </ul>

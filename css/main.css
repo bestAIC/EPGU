@@ -1,7 +1,7 @@
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:15px 'Helvetica Neue', Helvetica, Arial, sans-serif; min-width:1200px;}
+BODY {height:100%; background:#fff; color:#000; font:15px "Helvetica Neue",Helvetica,Arial,sans-serif; min-width:1200px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG,FIELDSET {border:none;}
@@ -387,8 +387,8 @@ float: right;
 
 #menu_btn.opened {  border: 1px solid #CDD1D4; height:auto;}
 #menu_btn.closed {  border: 1px solid #fff;}
-#menu_btn.opened .exit {background: url('../img/header_arrow_up.png') 100% 50% no-repeat #fff; border-bottom: 1px solid #ddd;}
-#menu_btn.closed .exit {background: url('../img/header_arrow_down.png') 100% 50% no-repeat #fff; border-bottom: 1px solid #fff;}
+#menu_btn.opened .exit {background: url('../img/header_arrow_up.png') 100% 50% no-repeat #fff; border-bottom: 1px solid #ddd; outline: none;}
+#menu_btn.closed .exit {background: url('../img/header_arrow_down.png') 100% 50% no-repeat #fff; border-bottom: 1px solid #fff; outline: none;}
 #menu_btn.closed .submenu {top: -120px;}
 #menu_btn.opened .submenu {top: 0px;}
 
@@ -1530,12 +1530,15 @@ H4 {
   padding:0 95px 0 0px;     
 }
 
-#footer LI.right SPAN {
+#footer LI .phones {
   display:inline-block;
   font:115% 'etelka_mediumregular';
   margin:0 35px 0 0;
   position:relative;
   top:7px;
+}
+#footer LI .phones a{
+  color: #5F666C;
 }
 #footer LI.right .foot_lnk{
     display: inline-block;

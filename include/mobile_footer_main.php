@@ -2,10 +2,10 @@
     <div id="footer">
       <div class="bottom_link">
         <div class="cover">
-          <em class="first"><a href="#" class="call_link"><span class="pseudo">Позвоните нам</span></a>
-          </em><em><a href="#" class="feedback_link">Обратная связь</a>
-          </em><em class="last"><a href="#" class="mail_link">support@gosuslugi.ru</a></em>
-        </div>  
+            <em class="first"><a href="#0" tabindex="-1" class="call_link"><span class="pseudo">Служба поддержки</span></a>
+            </em><em><a href="#0" tabindex="-1" class="feedback_link">Оставить отзыв</a>
+            </em><em class="last"><a href="mailto:support@gosuslugi.ru" tabindex="-1" class="mail_link">support@gosuslugi.ru</a></em>
+        </div>   
       </div>
       <ul class="col_cover">
         <li class="left">

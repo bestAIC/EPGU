@@ -35,14 +35,14 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_50"><label for="i_02">Имя</label><input id="i_02" type="text" placeholder="Имя" class="big" disabled="disabled"/>
               </em><em class="wrapper l_50"><label for="i_03">Отчество</label><input id="i_03" type="text" placeholder="Отчество" class="big" disabled="disabled"/></em><br/>
               
-              <em class="wrapper l_33"><label for="i_04">Дата рождения</label><input id="i_04" type="text" placeholder="Дата рождения" class="big"  disabled="disabled"/>
+              <em class="wrapper l_33"><label for="i_04">Дата рождения</label><input id="i_04" type="tel" placeholder="Дата рождения" class="big"  disabled="disabled"/>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" checked="checked" /><label>Мужской</label>
               </em><em class="wrapper l_25"><input type="radio" name="sex_2" disabled="disabled" /><label>Женский</label></em><br/> 
 
-              <em class="wrapper l_33"><label for="i_05">СНИЛС</label><input id="i_05" type="text" placeholder="СНИЛС" class="big" value="152-676-184 70" disabled="disabled"/></em><br/>            
+              <em class="wrapper l_33"><label for="i_05">СНИЛС</label><input id="i_05" type="tel" placeholder="СНИЛС" class="big" value="152-676-184 70" disabled="disabled"/></em><br/>            
               
-              <em class="wrapper l_50"><label for="i_06">Адрес электронной почты</label><input id="i_06" type="text" placeholder="Адрес электронной почты" class="big" value="therasmus30.09.1992@yandex.ru" disabled="disabled"/>
-              </em><em class="wrapper l_50"><label for="i_07">Контактный телефон</label><input id="i_07" type="text" placeholder="Контактный телефон" class="big" value="+7 912 200-00-02" disabled="disabled"/></em>
+              <em class="wrapper l_50"><label for="i_06">Адрес электронной почты</label><input id="i_06" type="email" placeholder="Адрес электронной почты" class="big" value="therasmus30.09.1992@yandex.ru" disabled="disabled"/>
+              </em><em class="wrapper l_50"><label for="i_07">Контактный телефон</label><input id="i_07" type="tel" placeholder="Контактный телефон" class="big" value="+7 912 200-00-02" disabled="disabled"/></em>
               
               <div class="info-block_wrap">
                 <div class="info_block type_2">
@@ -53,7 +53,7 @@ include('include/mobile_head.php');
               </div>
               <div class="clear mobile_morpf btn-cont_inner">
                 <em class="wrapper l_100">
-                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                  <a href="#" tabindex="-1" class="btn white rarr fl"><b>Изменить данные</b></a>
                 </em>
               </div>
             </div>
@@ -80,7 +80,7 @@ include('include/mobile_head.php');
               </div>
               <div class="clear mobile_morpf btn-cont_inner">
                 <em class="wrapper l_100">
-                  <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                  <a href="#" tabindex="-1" class="btn white rarr fl"><b>Изменить данные</b></a>
                 </em>
               </div>
             </div>                                      
@@ -115,11 +115,11 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_50"><label for="i_15">Имя</label><input id="i_15" type="text" placeholder="Имя" class="big" />
               </em><em class="wrapper l_50"><label for="i_16">Отчество</label><input id="i_16" type="text" placeholder="Отчество" class="big" /></em><br/>
               
-              <em class="wrapper l_33"><label for="i_17">Дата рождения</label><input id="i_17" type="text" placeholder="Дата рождения" class="big"  />
+              <em class="wrapper l_33"><label for="i_17">Дата рождения</label><input id="i_17" type="tel" placeholder="Дата рождения" class="big"  />
               </em><em class="wrapper l_25"><input id="i_18" type="radio" name="sex_4" checked="checked" /><label for="i_18">Мужской</label>
               </em><em class="wrapper l_25"><input id="i_19" type="radio" name="sex_4" /><label for="i_19">Женский</label></em><br/>
 
-              <em class="wrapper l_33"><label for="i_20">СНИЛС</label><input id="i_20" type="text" placeholder="СНИЛС" class="big" /><i class="not">необязательно</i></em>
+              <em class="wrapper l_33"><label for="i_20">СНИЛС</label><input id="i_20" type="tel" placeholder="СНИЛС" class="big" /><i class="not">необязательно</i></em>
             </div>                                           
           </fieldset>          
                               
@@ -133,10 +133,10 @@ include('include/mobile_head.php');
             </div>  
             <div class="fields_cover">
               <div class="limiter">
-                <em class="wrapper l_33"><label for="i_21">Серия</label><input id="i_21" type="text" placeholder="Серия" class="big" />
-                </em><em class="wrapper l_33"><label for="i_22">Номер</label><input id="i_22" type="text" placeholder="Номер" class="big" />          
-                </em><em class="wrapper l_33"><label for="i_23">Дата выдачи</label><input id="i_23" type="text" placeholder="Дата выдачи" class="big" />
-                </em><em class="wrapper l_33"><label for="i_24">Номер акт. записи</label><input id="i_24" type="text" placeholder="Номер акт. записи" class="big" />
+                <em class="wrapper l_33"><label for="i_21">Серия</label><input id="i_21" type="tel" placeholder="Серия" class="big" />
+                </em><em class="wrapper l_33"><label for="i_22">Номер</label><input id="i_22" type="tel" placeholder="Номер" class="big" />          
+                </em><em class="wrapper l_33"><label for="i_23">Дата выдачи</label><input id="i_23" type="tel" placeholder="Дата выдачи" class="big" />
+                </em><em class="wrapper l_33"><label for="i_24">Номер акт. записи</label><input id="i_24" type="tel" placeholder="Номер акт. записи" class="big" />
                 </em><em class="wrapper l_66"><label for="i_25">Кем выдано</label><input id="i_25" type="text" placeholder="Кем выдано" class="big" /></em>
                 <em class="wrapper l_100"><label for="i_26">Место рождения</label><input id="i_26" type="text" placeholder="Место рождения" class="big" /></em>
               </div>                                                         
@@ -180,7 +180,7 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_4" id="f_19"/><label for="f_19">месту регистрации</label>
               </em><em class="wrapper l_33"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
               
-              <em class="wrapper l_33"><label for="i_32">Дата зачисления</label><input id="i_32" type="text" placeholder="Дата зачисления" class="big" />
+              <em class="wrapper l_33"><label for="i_32">Дата зачисления</label><input id="i_32" type="tel" placeholder="Дата зачисления" class="big" />
               </em><em class="wrapper l_66"><label for="i_32_1">Возрастная группа</label>
                   <select id="i_32_1">
                     <option value="0">Возрастная группа</option>
@@ -206,7 +206,14 @@ include('include/mobile_head.php');
               <h3>Выберете желаемый и дополнительные детские сады</h3>
             </div>
             <div class="limiter">                        
-              <em class="wrapper l_100"><label for="i_34">Поиск по адресу</label><input id="i_34" type="text" placeholder="Поиск по адресу" class="big" /></em> 
+              <em class="wrapper l_100">
+                  <label for="ser_12">Поиск по адресу</label>
+                  <div class="search_inp-block">
+                    <input id="ser_12" type="search" placeholder="Поиск по адресу" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em>
               <em class="wrapper l_33">Сортировать по:
               </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">удалённости</label>
               </em><em class="wrapper l_33"><input type="radio" name="g_5" id="f_22"/><label for="f_22">длине очереди</label></em><br/>
@@ -311,8 +318,8 @@ include('include/mobile_head.php');
               <em class="wrapper l_100">
                   <label for="ser_12">Название льготы</label>
                   <div class="search_inp-block">
-                    <input id="ser_12" type="search" placeholder="Название льготы" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <input id="ser_12" type="search" placeholder="Название льготы" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
                     <div class="selction_ajax-placeholder"></div>
                   </div>
                 </em>
