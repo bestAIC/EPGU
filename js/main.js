@@ -222,18 +222,7 @@ function radioGroup(){
       var identArr = that.map(function(i, el) {
         return $(el).attr('data-for');
       }).get();
-      var uniqueEl = [];
-
-      $.each(identArr, function(i, el){
-        if($.inArray(el, uniqueEl) === -1){
-          uniqueEl.push(el);
-        }
-      })
-      for(var j = 0; j<uniqueEl.length; j++){
-        console.log(uniqueEl[j]);
-      }
-      console.log(uniqueEl)
-      
+      var uniqueEl = $.unique(identArr).reverse();
       
       that.on('change', function(e){
         var thatID = $(this).attr('data-for');
@@ -427,10 +416,18 @@ function MapShow(){
   function init () {
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
-    var myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.76, 37.64], // Москва
+    var moscowMap = new ymaps.Map('map', {
+        center: [55.76, 37.64], // Москве
+        zoom: 10,
+        controls: []
+      });
+    var moscowMap2 = new ymaps.Map('map_moscow', {
+        center: [55.76, 37.64], // Москве
+        zoom: 10,
+        controls: []
+      });
+    var piterMap = new ymaps.Map('map_piter', {
+        center: [59.952677, 29.938116], // Питерский
         zoom: 10,
         controls: []
       });
@@ -438,7 +435,7 @@ function MapShow(){
 
 
 
-    var myPlacemark = new ymaps.Placemark([55.758007, 37.844264], {
+    var myPlacemark1 = new ymaps.Placemark([55.758007, 37.844264], {
         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
         balloonContentHeader: "<p><strong>МИФНС России №46 по г. Москве</strong></p> <p>В составе ИФНС России № 1 по г. Москве</p>",
         balloonContentBody: "<p>Адрес: Москва, Походный пр-д, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
@@ -451,19 +448,39 @@ function MapShow(){
         iconImageHref: 'img/ico_1.png',
         iconImageSize: [38, 54],
         iconImageOffset: [-10, -42]
+    });
+    var myPlacemark2 = new ymaps.Placemark([59.939222,30.329030], {
+        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+        balloonContentHeader: "<p><strong>МИФНС России №46 по г. Санкт-Петербург</strong></p> <p>В составе ИФНС России № 1 по г. Санкт-Петербург</p>",
+        balloonContentBody: "<p>Адрес: Санкт-Петербург, Невский пр-кт, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
+        balloonContentFooter: "Подвал",
+        hintContent: "Хинт метки",
+        balloonMaxWidth: 250,
+        balloonMinWidth: 250
     }, {
-        balloonContentBody: [
-          '<address>',
-          '<strong>Офис Яндекса в Москве</strong>',
-          '<br/>',
-          'Адрес: 119021, Москва, ул. Льва Толстого, 16',
-          '<br/>',
-          'Подробнее: <a href="http://company.yandex.ru/">http://company.yandex.ru</a>',
-          '</address>'
-        ]
+        iconLayout: 'default#image',
+        iconImageHref: 'img/ico_1.png',
+        iconImageSize: [38, 54],
+        iconImageOffset: [-10, -42]
+    });
+    var myPlacemark3 = new ymaps.Placemark([55.758007, 37.844264], {
+        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+        balloonContentHeader: "<p><strong>МИФНС России №46 по г. Москве</strong></p> <p>В составе ИФНС России № 1 по г. Москве</p>",
+        balloonContentBody: "<p>Адрес: Москва, Походный пр-д, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
+        balloonContentFooter: "Подвал",
+        hintContent: "Хинт метки",
+        balloonMaxWidth: 250,
+        balloonMinWidth: 250
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/ico_1.png',
+        iconImageSize: [38, 54],
+        iconImageOffset: [-10, -42]
     });
     
-    myMap.geoObjects.add(myPlacemark);
+    moscowMap.geoObjects.add(myPlacemark1);
+    piterMap.geoObjects.add(myPlacemark2);
+    moscowMap2.geoObjects.add(myPlacemark3);
   }
 }
 
