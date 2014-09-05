@@ -13,6 +13,7 @@ $(document).ready(function() {
   if($('.search_inp-ajax').length){
     selectRegion();
   }
+  radioGroup();
   // ePrevent();
 });
 
@@ -212,6 +213,40 @@ function PopUp() {
 }
 
 
+function radioGroup(){
+  var that = $('input.switcher_group'),
+      thatWrap = $('input', '.switcher_wrap')
+      cont = $('div.switcher_n');
+
+
+      var identArr = that.map(function(i, el) {
+        return $(el).attr('data-for');
+      }).get();
+      var uniqueEl = [];
+
+      $.each(identArr, function(i, el){
+        if($.inArray(el, uniqueEl) === -1){
+          uniqueEl.push(el);
+        }
+      })
+      for(var j = 0; j<uniqueEl.length; j++){
+        console.log(uniqueEl[j]);
+      }
+      console.log(uniqueEl)
+      
+      
+      that.on('change', function(e){
+        var thatID = $(this).attr('data-for');
+
+        cont.each(function(index, el){
+          $(el).addClass(uniqueEl[index]);
+        })
+
+        cont.hide();
+        $('.main').find('.' + thatID).show();
+        
+      })
+}
 
 // Hide show
 function HideShow(){
@@ -242,16 +277,17 @@ function HideShow(){
     }
   });
 
-  /*подача документов лично/представителем */
-  $('.egrn .group_1 input, .mobile_egrn .group_1 input').change(function(){
-    if($('#f_1-styler').hasClass('checked')){
-      $('.v_2').hide();
-      $('.v_1').show();
-    } else {
-      $('.v_1').hide();      
-      $('.v_2').show();
-    }
-  });
+  // /*подача документов лично/представителем */
+  // $('.group_1 input, .group_1 input').change(function(){
+  //   if($('#f_1-styler').hasClass('checked')){
+  //     $('.v_2').hide();
+  //     $('.v_1').show();
+  //   } else {
+  //     $('.v_1').hide();
+  //     $('.v_2').show();
+  //   }
+  // });
+
 
   
   /*pay*/
