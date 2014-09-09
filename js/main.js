@@ -215,6 +215,7 @@ function PopUp() {
 
 function radioGroup(){
   var that = $('input.switcher_group'),
+      thatWrap = $('input', '.switcher_wrap'),
       cont = $('div.switcher_n');
 
 
@@ -228,6 +229,11 @@ function radioGroup(){
 
         cont.each(function(index, el){
           $(el).addClass(uniqueEl[index]);
+        })
+
+        $('.fields_cover').prevUntil(that).on('click', function(){
+          console.log($('.wrapper:first-child .switcher_group', '.fields_cover'))
+          $('.wrapper:first-child .switcher_group', '.fields_cover').attr('checked', 'checked').addClass('checked');
         })
 
         cont.hide();
@@ -411,7 +417,6 @@ function MapShow(){
     ymaps.ready(init1);
   } 
   if($('#map_moscow').length){
-    console.log(111)
     ymaps.ready(init2);
   } 
   if($('#map_piter').length){

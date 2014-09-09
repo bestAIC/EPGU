@@ -27,10 +27,10 @@ include('include/head.php');
                 <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1" checked="checked" class="switcher_group" data-for="v_1" /><label for="f_1">Отец</label></em>
                 <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2" class="switcher_group" data-for="v_1" /><label for="f_2">Мать</label></em>
                 <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3" class="switcher_group" data-for="v_1" /><label for="f_3">Ребенок</label></em>
-                <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4" class="switcher_group" data-for="v_1"/><label for="f_4">Представитель</label></em>
+                <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4" class="switcher_group" data-for="v_2"/><label for="f_4">Представитель</label></em>
                     
                 <div class="fields_cover">
-                    <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_1" class="switcher_group" checked="checked" data-for="v_2" /><label for="f_1_1_1" >законный представитель, опекун или попечитель несовершеннолетнего или недееспособного лица</label></em>
+                    <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_1" class="switcher_group" data-for="v_2" /><label for="f_1_1_1" >законный представитель, опекун или попечитель несовершеннолетнего или недееспособного лица</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_2" class="switcher_group" data-for="v_3" /><label for="f_1_1_2">организация, на которую возложено исполнение обязанностей опекуна или попечителя</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_1n" id="f_1_1_3" class="switcher_group" data-for="v_2"/><label for="f_1_1_3" >доверенное лицо</label></em>
                 </div>
