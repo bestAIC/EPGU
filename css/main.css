@@ -1757,11 +1757,12 @@ TEXTAREA.big {
 .search_inp-block{
   position: relative;
   height: 54px;
+  background: #fff;
 }
 .search_inp-ajax{
   position: relative;
   z-index: 2;
-  background: #fff;
+  background: transparent;
 }
 .search_inp-ajax-x{
   color: #CCC;
@@ -1785,7 +1786,7 @@ TEXTAREA.big {
   padding: 15px 20px;
 }
 .autocomplete-suggestion:hover,
-.autocomplete-selection{
+.autocomplete-suggestion.autocomplete-selected{
   background: #6CA9D2;
   color: #fff;
 }
@@ -3095,7 +3096,6 @@ input[type="submit"].styler[disabled] {
 /* .form_info-choice */
 
 .switcher_n{
-  display: none;
   border-top: 1px solid #dbe2e6;
 }
 

@@ -233,7 +233,6 @@ function radioGroup(){
 
         cont.hide();
         $('.main').find('.' + thatID).show();
-        
       })
 }
 
@@ -407,33 +406,25 @@ function MenuShow() {
 }
 
 
-function MapShow(){
+
+function MapShow(){  
   if($('#map').length){
-    // Дождёмся загрузки API и готовности DOM.
-    ymaps.ready(init);
+    ymaps.ready(init1);
+  } 
+  if($('#map_moscow').length){
+    console.log(111)
+    ymaps.ready(init2);
+  } 
+  if($('#map_piter').length){
+    ymaps.ready(init3);
   }
   
-  function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
+  function init1 () {
     var moscowMap = new ymaps.Map('map', {
         center: [55.76, 37.64], // Москве
         zoom: 10,
         controls: []
       });
-    var moscowMap2 = new ymaps.Map('map_moscow', {
-        center: [55.76, 37.64], // Москве
-        zoom: 10,
-        controls: []
-      });
-    var piterMap = new ymaps.Map('map_piter', {
-        center: [59.952677, 29.938116], // Питерский
-        zoom: 10,
-        controls: []
-      });
-      
-
-
 
     var myPlacemark1 = new ymaps.Placemark([55.758007, 37.844264], {
         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
@@ -449,21 +440,19 @@ function MapShow(){
         iconImageSize: [38, 54],
         iconImageOffset: [-10, -42]
     });
-    var myPlacemark2 = new ymaps.Placemark([59.939222,30.329030], {
-        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-        balloonContentHeader: "<p><strong>МИФНС России №46 по г. Санкт-Петербург</strong></p> <p>В составе ИФНС России № 1 по г. Санкт-Петербург</p>",
-        balloonContentBody: "<p>Адрес: Санкт-Петербург, Невский пр-кт, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
-        balloonContentFooter: "Подвал",
-        hintContent: "Хинт метки",
-        balloonMaxWidth: 250,
-        balloonMinWidth: 250
-    }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/ico_1.png',
-        iconImageSize: [38, 54],
-        iconImageOffset: [-10, -42]
-    });
-    var myPlacemark3 = new ymaps.Placemark([55.758007, 37.844264], {
+
+    moscowMap.geoObjects.add(myPlacemark1);
+  }
+
+
+  function init2 () {
+    var moscowMap2 = new ymaps.Map('map_moscow', {
+        center: [55.76, 37.64], // Москве
+        zoom: 10,
+        controls: []
+      });
+
+    var myPlacemark2 = new ymaps.Placemark([55.758007, 37.844264], {
         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
         balloonContentHeader: "<p><strong>МИФНС России №46 по г. Москве</strong></p> <p>В составе ИФНС России № 1 по г. Москве</p>",
         balloonContentBody: "<p>Адрес: Москва, Походный пр-д, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
@@ -477,11 +466,36 @@ function MapShow(){
         iconImageSize: [38, 54],
         iconImageOffset: [-10, -42]
     });
-    
-    moscowMap.geoObjects.add(myPlacemark1);
-    piterMap.geoObjects.add(myPlacemark2);
-    moscowMap2.geoObjects.add(myPlacemark3);
+
+    moscowMap2.geoObjects.add(myPlacemark2);
   }
+
+
+  function init3 () {
+    var piterMap = new ymaps.Map('map_piter', {
+        center: [59.952677, 29.938116], // Питерский
+        zoom: 10,
+        controls: []
+      });
+
+    var myPlacemark3 = new ymaps.Placemark([59.939222,30.329030], {
+        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+        balloonContentHeader: "<p><strong>МИФНС России №46 по г. Санкт-Петербург</strong></p> <p>В составе ИФНС России № 1 по г. Санкт-Петербург</p>",
+        balloonContentBody: "<p>Адрес: Санкт-Петербург, Невский пр-кт, 3, стр. 2<br/>Режим работы: Пн-Пт: 9:00 - 18:00,<br/>Обед: 12:30 - 13:30<br/>Телефон: +7 (495) 913-00-09<br/>Как добраться:<br/>Ближайшее метро - Волоколамская,<br/>Мякинино, Тушинская<br/>E-mail: i010500@r01.nalog.ru</p>",
+        balloonContentFooter: "Подвал",
+        hintContent: "Хинт метки",
+        balloonMaxWidth: 250,
+        balloonMinWidth: 250
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/ico_1.png',
+        iconImageSize: [38, 54],
+        iconImageOffset: [-10, -42]
+    });
+
+    piterMap.geoObjects.add(myPlacemark3);
+  }
+
 }
 
 function MapControls(){
@@ -629,29 +643,12 @@ function tableAsynchron(){
     })
 }
 
-function selectRegion(){
-  
-  // var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
-  var citiesArray = $.map(cities, function (value, key) { return { value: value, data: key }; });
 
 
 
-  // Initialize autocomplete with local lookup:
-  $('.search_inp-ajax').autocomplete({
-      lookup: citiesArray,
-      minChars: 0,
-      onSelect: function (suggestion) {
-        var obj = this.parentElement.lastElementChild;
-          obj.innerHTML = this.getAttribute('placeholder');
-      },
-      noSuggestionNotice: 'Нет подходящих результатов'
-  });
-}
 
-// function ePrevent(){
-//   var btn = $('.list.edit_list .lnk, .load_photo-btn .btn, .btn.plus, .btn-cont_inner .btn');
 
-//   btn.on('click', function(e){
-//     e.preventDefault()
-//   })
-// }
+// onSelect: function (suggestion) {
+//   var obj = this.parentElement.lastElementChild;
+//     obj.innerHTML = this.getAttribute('placeholder');
+// },

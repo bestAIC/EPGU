@@ -57,9 +57,9 @@
 				
 				<em class="wrapper l_100">
 					<div class="search_inp-block">
-						<input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-						<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
-						<div class="selction_ajax-placeholder"></div>
+					    <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+					    <input type="search" class="big search_inp search_inp-ajax-x" tabindex="-1"/>
+					    <div class="selction_ajax-placeholder"></div>
 					</div>
 				</em>
 
@@ -193,9 +193,9 @@
 
 					<em class="wrapper l_100">
 						<div class="search_inp-block">
-							<input type="search" placeholder="Адрес изменения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-							<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
-							<div class="selction_ajax-placeholder"></div>
+						    <input type="search" placeholder="Адрес изменения" name="adress" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+						    <input type="search" id="autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+						    <div class="selction_ajax-placeholder"></div>
 						</div>
 					</em>
 

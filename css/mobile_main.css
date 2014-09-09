@@ -380,12 +380,10 @@ FIELDSET LABEL{
   display:none;
 }
 
-.jq-selectbox__select{
-  height: 60px;
-  line-height: 60px;
-}
+.jq-selectbox__select,
 .jq-selectbox__select-text{
   height: 60px;
+  line-height: 60px;
 }
 
 .jq-selectbox__dropdown .jq-selectbox__search {
@@ -410,6 +408,9 @@ INPUT{
 
 INPUT.search_btn {
   top: 0px;
+}
+.search_inp-block{
+  height: 60px;
 }
 
 .big_inp-form INPUT.btn.small{
@@ -795,34 +796,12 @@ INPUT.search_btn {
 .load_photo_cols.col_bottom .download_photo{ 
   display: inline-block;
 }
-.load_photo_cols.col_bottom .advice.type_ok,
-.load_photo_cols.col_bottom .advice.type_not{
+.load_photo_cols.col_bottom .advice.type_ok, .load_photo_cols.col_bottom .advice.type_not{
   display: none;
+  padding-top: 34px;
 }
-
 .load_photo_cols.col_bottom .advice_upload .advice{
-  width: 800px;
-  padding: 0;
   border: none;
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-.load_photo_cols.col_bottom .advice_upload .advice .advice_h{
-  margin: 0;
-}
-.load_photo_cols.col_bottom .advice_upload .advice .advice_ico{
-  width: 45px;
-  height: 45px;
-  border-width: 6px;
-  margin-top: -10px;
-}
-.load_photo_cols.col_bottom .advice_upload .advice .icomoon{
-  font-size: 18px;
-  line-height: 33px;
-}
-#content .load_photo_cols.col_bottom .advice_upload .advice H2{
-  font-size: 20px;
-  margin-left: 64px;
 }
 /* /LOAD PHOTO */
 
@@ -2322,6 +2301,11 @@ LABEL.map_txt {
     font-size: 22px;
     top: -2px;
   }
+  .autocomplete-suggestion,
+  .search_inp-ajax,
+  .search_inp-ajax-x{
+    font-size: 14px;
+  }
   .big_inp-form .point_num + H3 .q{
     display: none;
   }
@@ -2354,6 +2338,9 @@ LABEL.map_txt {
   .jq-selectbox__select{
     height: 50px;
     padding: 0 15px;
+  }
+  .search_inp-block{
+    height: 50px;
   }
   .big_inp-form INPUT.search_btn{
     padding: 0;
@@ -2389,6 +2376,8 @@ LABEL.map_txt {
 
   .jq-selectbox.changed .jq-selectbox__select-text{
     color: #000;
+    font-size: 15px;
+    line-height: 50px;
   }
   .jq-selectbox .jq-selectbox__select-text{
     color: transparent
@@ -3477,7 +3466,7 @@ LABEL.map_txt {
     margin-bottom: 0;
     display: inline-block;
     margin-left: 10px;
-    width: 60px;
+    width: 54px;
     vertical-align: top;
     text-align: center;
   }
@@ -3531,6 +3520,7 @@ LABEL.map_txt {
   .load_photo_cols.col_bottom .advice_upload .advice{
     width: 100%;
     margin: 0;
+    padding: 0;
   }
   .load_photo_cols.col_bottom .advice_upload .advice .advice_ico{
     margin: 0;
