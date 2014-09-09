@@ -189,6 +189,14 @@ include('include/mobile_head.php');
 						<td><a href="mobile_500.php">500 - Mobile</a></td>
 						<td><a href="mobile_500.php">mobile_500.php</a></td>
 					</tr>
+					<tr>
+						<td>
+							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">Выдача сертификата на материнский (семейный) капитал</a></p>
+						</td>
+						<td>
+							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">mobile_vidacha_sertifikata_na_matcapital.php</a></p>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
