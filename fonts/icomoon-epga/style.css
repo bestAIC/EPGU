@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon-epga';
-	src:url('fonts/icomoon-epga.eot?-p495my');
-	src:url('fonts/icomoon-epga.eot?#iefix-p495my') format('embedded-opentype'),
-		url('fonts/icomoon-epga.woff?-p495my') format('woff'),
-		url('fonts/icomoon-epga.ttf?-p495my') format('truetype'),
-		url('fonts/icomoon-epga.svg?-p495my#icomoon-epga') format('svg');
+	src:url('fonts/icomoon-epga.eot?-flxiyb');
+	src:url('fonts/icomoon-epga.eot?#iefix-flxiyb') format('embedded-opentype'),
+		url('fonts/icomoon-epga.woff?-flxiyb') format('woff'),
+		url('fonts/icomoon-epga.ttf?-flxiyb') format('truetype'),
+		url('fonts/icomoon-epga.svg?-flxiyb#icomoon-epga') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -211,4 +211,31 @@
 }
 .icon-svg63:before {
 	content: "\5f";
+}
+.icon-svg64:before {
+	content: "\60";
+}
+.icon-svg65:before {
+	content: "\61";
+}
+.icon-svg66:before {
+	content: "\62";
+}
+.icon-svg67:before {
+	content: "\63";
+}
+.icon-svg68:before {
+	content: "\64";
+}
+.icon-svg69:before {
+	content: "\65";
+}
+.icon-svg70:before {
+	content: "\66";
+}
+.icon-svg71:before {
+	content: "\67";
+}
+.icon-svg72:before {
+	content: "\68";
 }
