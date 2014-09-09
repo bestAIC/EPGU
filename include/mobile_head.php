@@ -91,7 +91,7 @@ include('include/mobile_popup.php');
                   <div class="top type_2"> 
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  
-              <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy' || $pagename == 'mobile_mat_capital') { ?>
+              <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy' || $pagename == 'mobile_mat_capital' || $pagename == 'mobile_vidacha_sertifikata_na_matcapital') { ?>
                   <div class="top type_4">
               <? } else if ($pagename == 'mobile_egrn') { ?>
                   <div class="top type_5">                      

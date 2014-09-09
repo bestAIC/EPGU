@@ -629,7 +629,7 @@
 			
 			<div class="map_cover">
 			  <div class="map_block" id="map"></div>
-			    <div class="address_list">               
+			    <div class="address_list">
 			      <div class="map_nav">
 			        <h4 class="map_nav_h">Доступны подразделения:</h4>
 			        <ul class="map_list">

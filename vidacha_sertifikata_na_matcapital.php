@@ -89,7 +89,7 @@ include('include/head.php');
                 
                 <fieldset class="group_4">
                     <span class="point_num">4</span>
-                    <h3>Вы хотите получить сертификат на материнский (семейный) капитал или дубликат ранее выданного сертификата?</h3>
+                    <h3>Гражданство</h3>
                 
                     <em class="wrapper l_100"><input type="radio" name="g_1_v_1" id="с_1_v_1" checked="checked" /><label for="с_1_v_1">Российской федерации</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1_v_1" id="с_2_v_1"/><label for="с_2_v_1">Иного государства</label></em>
@@ -164,9 +164,11 @@ include('include/head.php');
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i>
                     </em>
                     
-                    <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_1" checked="checked" id="sex_2_v_1_1" /><label for="sex_2_v_1_1">Мужской</label>
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_1" id="sex_2_v_1_2" /><label for="sex_2_v_1_2">Женский</label></em><br/>
+                    <div>
+                        <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+                        </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_1" checked="checked" id="sex_2_v_1_1" /><label for="sex_2_v_1_1">Мужской</label>
+                        </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_1" id="sex_2_v_1_2" /><label for="sex_2_v_1_2">Женский</label></em><br/>
+                    </div>
                     
                 
                     <em class="wrapper l_66">
@@ -487,7 +489,7 @@ include('include/head.php');
                 
                 <fieldset class="group_4">
                     <span class="point_num">4</span>
-                    <h3>Вы хотите получить сертификат на материнский (семейный) капитал или дубликат ранее выданного сертификата?</h3>
+                    <h3>Гражданство</h3>
                 
                     <em class="wrapper l_100"><input type="radio" name="g_1" id="с_1" checked="checked" /><label for="с_1">Российской федерации</label></em>
                     <em class="wrapper l_100"><input type="radio" name="g_1" id="с_2"/><label for="с_2">Иного государства</label></em>
@@ -554,14 +556,14 @@ include('include/head.php');
                 
                 <fieldset class="group_7">
                     <span class="point_num">7</span>
-                    <h3>На каком основании выдается сертификат</h3>
+                    <h3>Персональные данные получателя услуги</h3>
                     
                     <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
                     </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
                 
                     <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="s_1" /><label for="s_1">Мужской</label>
+                    </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="s_1" checked="checked"/><label for="s_1">Мужской</label>
                     </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="s_2" /><label for="s_2">Женский</label></em><br/>
                 
                     <em class="wrapper l_33"><input type="text" placeholder="СНИЛС" class="big" /></em><br/>
@@ -588,9 +590,11 @@ include('include/head.php');
                     </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
                 
-                    <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_4" /><label for="f_4">Мужской</label>
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_5" /><label for="f_5">Женский</label></em><br/>
+                    <div>
+                        <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
+                        </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_4_v_2" checked="checked" /><label for="f_4_v_2">Мужской</label>
+                        </em><em class="wrapper l_16"><input type="radio" name="sex_2" id="f_5_v_2" /><label for="f_5_v_2">Женский</label></em><br/>
+                    </div>
                 
                     <em class="wrapper l_66">
                         <div class="search_inp-block">
@@ -911,7 +915,7 @@ include('include/head.php');
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
                 
                     <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="s_1_v_3" /><label for="s_1_v_3">Мужской</label>
+                    </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="s_1_v_3" checked="checked" /><label for="s_1_v_3">Мужской</label>
                     </em><em class="wrapper l_16"><input type="radio" name="sex_4" id="s_2_v_3" /><label for="s_2_v_3">Женский</label></em><br/>
                 
                     <em class="wrapper l_33"><input type="text" placeholder="СНИЛС" class="big" /></em><br/>
@@ -950,7 +954,7 @@ include('include/head.php');
                     </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em>
                 
                     <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_3" id="f_4_v_3" /><label for="f_4_v_3">Мужской</label>
+                    </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_3" id="f_4_v_3" checked="checked" /><label for="f_4_v_3">Мужской</label>
                     </em><em class="wrapper l_16"><input type="radio" name="sex_2_v_3" id="f_5_v_3" /><label for="f_5_v_3">Женский</label></em><br/>
                 
                     <em class="wrapper l_66">

@@ -87,7 +87,7 @@ function SForm() {
           mobile_root.parent().find('.fields_cover').slideUp();
           if(mobile_group.hasClass('fields_cover')){
             mobile_group.slideDown();
-          }             
+          }
         } else {
           root.parent().find('.jq-radio').removeClass('lock');     
           root.parent().find('.fields_cover').slideUp();
@@ -215,7 +215,7 @@ function PopUp() {
 
 function radioGroup(){
   var that = $('input.switcher_group'),
-      thatWrap = $('input', '.switcher_wrap')
+      thatWrap = $('input', '.switcher_wrap'),
       cont = $('div.switcher_n');
 
 

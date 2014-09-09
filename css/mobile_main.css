@@ -1970,6 +1970,10 @@ LABEL.map_txt {
     display: none;
   }
 
+  .switcher_n{
+    border-top: none;
+  }
+
 
 
 
@@ -2551,7 +2555,8 @@ LABEL.map_txt {
   .wrapper.l_16,
   .wrapper.l_33,
   .wrapper.l_50,
-  .wrapper.l_66{
+  .wrapper.l_66,
+  .wrapper.l_75{
     width: 100%;
   }
 
