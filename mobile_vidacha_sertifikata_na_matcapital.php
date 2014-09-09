@@ -27,7 +27,7 @@ include('include/mobile_head.php');
 		    	<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3" class="switcher_group" data-for="v_1" /><label for="f_3">Ребенок</label></em>
 		    </div>
 		    <div class="limiter">
-		    	<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4" class="switcher_group" data-for="v_1"/><label for="f_4">Представитель</label></em>
+		    	<em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_4" class="switcher_group" data-for="v_2"/><label for="f_4">Представитель</label></em>
 		    </div>
 		        
 		    <div class="fields_cover">
