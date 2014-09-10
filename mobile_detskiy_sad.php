@@ -53,7 +53,7 @@ include('include/mobile_head.php');
               </div>
               <div class="clear mobile_morpf btn-cont_inner">
                 <em class="wrapper l_100">
-                  <a href="#" tabindex="-1" class="btn white rarr fl"><b>Изменить данные</b></a>
+                  <a href="#0" tabindex="-1" class="btn white rarr fl"><b>Изменить данные</b></a>
                 </em>
               </div>
             </div>
@@ -80,7 +80,7 @@ include('include/mobile_head.php');
               </div>
               <div class="clear mobile_morpf btn-cont_inner">
                 <em class="wrapper l_100">
-                  <a href="#" tabindex="-1" class="btn white rarr fl"><b>Изменить данные</b></a>
+                  <a href="#0" tabindex="-1" class="btn white rarr fl"><b>Изменить данные</b></a>
                 </em>
               </div>
             </div>                                      
@@ -181,8 +181,8 @@ include('include/mobile_head.php');
               </em><em class="wrapper l_33"><input type="radio" name="g_4" id="f_20"/><label for="f_20">месту проживания</label></em><br/>
               
               <em class="wrapper l_50">
-              <label>Дата зачисления</label>
-                <select>            
+              <label for="i_32">Дата зачисления</label>
+                <select id="i_32">
                   <option class="selected_one">Дата зачисления</option>
                   <option>Сентябрь 2014</option>
                   <option>Сентябрь 2015</option>
@@ -198,7 +198,10 @@ include('include/mobile_head.php');
               <em class="wrapper l_66">
                 <label for="i_33">Потребность по здоровью</label>
                 <select id="i_33">
-                  <option value="0">Потребность по здоровью</option>
+                  <option class="selected_one">Потребность по здоровью</option>
+                  <option>Потребность по здоровью 1</option>
+                  <option>Потребность по здоровью 2</option>
+                  <option>Потребность по здоровью 3</option>
                 </select>
               </em>
             </div>                                        
@@ -214,9 +217,9 @@ include('include/mobile_head.php');
               <em class="wrapper l_100">
                   <label for="ser_12">Поиск по адресу</label>
                   <div class="search_inp-block">
-                    <input id="ser_12" type="search" placeholder="Поиск по адресу" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
-                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
-                    <div class="selction_ajax-placeholder"></div>
+                      <input type="search" placeholder="Поиск по адресу" name="adress" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                      <input type="search" id="autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                      <div class="selction_ajax-placeholder"></div>
                   </div>
                 </em>
               <em class="wrapper l_33">Сортировать по:
@@ -323,8 +326,8 @@ include('include/mobile_head.php');
               <em class="wrapper l_100">
                   <label for="ser_12">Название льготы</label>
                   <div class="search_inp-block">
-                    <input id="ser_12" type="search" placeholder="Название льготы" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
-                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                    <input id="ser_12" type="search" placeholder="Название льготы" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                    <input type="search" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
                     <div class="selction_ajax-placeholder"></div>
                   </div>
                 </em>

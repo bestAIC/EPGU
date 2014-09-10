@@ -23,7 +23,7 @@ include('include/mobile_head.php');
 
 				<div class="clear mobile_morpf btn-cont_inner mt50">
 					<em class="wrapper l_100">
-						<a href="#" class="btn white larr fl"><b>Вернуться назад</b></a>
+						<a href="#0" class="btn white larr fl"><b>Вернуться назад</b></a>
 					</em>
 				</div>
 			</div>
@@ -60,7 +60,7 @@ include('include/mobile_head.php');
 	            </div>
 	            <div class="clear mobile_morpf btn-cont_inner">
 	                <em class="wrapper l_100">
-		          <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+		          <a href="#0" class="btn white rarr fl"><b>Изменить данные</b></a>
 		        </em>
 	            </div>
 	        </div>
@@ -88,7 +88,7 @@ include('include/mobile_head.php');
                 </div>
                 <div class="clear mobile_morpf btn-cont_inner">
                     <em class="wrapper l_100">
-                      <a href="#" class="btn white rarr fl"><b>Изменить данные</b></a>
+                      <a href="#0" class="btn white rarr fl"><b>Изменить данные</b></a>
                     </em>
                 </div>
             </div>
@@ -172,8 +172,8 @@ include('include/mobile_head.php');
                <em class="wrapper l_100">
                	<label for="ser_05">Регион</label>
                	<div class="search_inp-block">
-               		<input id="ser_05" type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-               		<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+               		<input id="ser_05" type="search" placeholder="Регион" name="region" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+               		<input type="search" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1"/>
                		<div class="selction_ajax-placeholder"></div>
                	</div>
                </em><br/>
@@ -181,15 +181,15 @@ include('include/mobile_head.php');
                <em class="wrapper l_50">
                	<label for="ser_06">Район</label>
                	<div class="search_inp-block">
-               		<input id="ser_06" type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-               		<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+               		<input id="ser_06" type="search" placeholder="Район" name="areas" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+               		<input type="search" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1"/>
                		<div class="selction_ajax-placeholder"></div>
                	</div>
                </em><em class="wrapper l_50">
                	<label for="ser_07">Населенный пункт</label>
                	<div class="search_inp-block">
-               		<input id="ser_07" type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-               		<input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+               		<input id="ser_07" type="search" placeholder="Населенный пункт" name="cities" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+               		<input type="search" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1"/>
                		<div class="selction_ajax-placeholder"></div>
                	</div>
                </em>
@@ -214,7 +214,17 @@ include('include/mobile_head.php');
            </div>
            <div class="fields_cover">
                <div class="limiter">
-                   <em class="wrapper l_100"><label for="i_31">Выберите регион</label><input id="i_31" type="text" placeholder="Выберите регион" class="big" /></em>
+                   <em class="wrapper l_100">
+                    <label for="i_31">Выберите регион</label>
+                     <em class="wrapper l_100">
+                      <label for="i_31">Выберите регион</label>
+                      <div class="search_inp-block">
+                          <input type="search" id="i_31" placeholder="Выберите регион" name="region" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                          <input type="search" id="autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                          <div class="selction_ajax-placeholder"></div>
+                      </div>
+                    </em>
+                  </em>
                </div>
            </div>
        </fieldset>
@@ -234,17 +244,18 @@ include('include/mobile_head.php');
                </em><em class="wrapper l_66">
                <label for="i_32_1">Возрастная группа</label>
                      <select id="i_32_1">
-                       <option value="0">Возрастная группа</option>
-                       <option value="1">Возрастная группа</option>
-                       <option value="2">Возрастная группа</option>
+                       <option class="selected_one">Возрастная группа</option>
+                       <option>Возрастная группа 1</option>
+                       <option>Возрастная группа 2</option>
                      </select>                  
                    </em>
 
                <em class="wrapper l_66">
                    <label for="i_33">Потребность по здоровью</label>
                    <select id="i_33">
-                     <option value="0">Потребность по здоровью</option>
-                     <option value="1">Потребность по здоровью</option>
+                     <option class="selected_one">Потребность по здоровью</option>
+                     <option>Потребность по здоровью 1</option>
+                     <option>Потребность по здоровью 2</option>
                    </select>
                  </em>
            </div>
@@ -256,7 +267,13 @@ include('include/mobile_head.php');
                <h3>Выберете желаемый и дополнительные детские сады</h3>
            </div>
            <div class="limiter">
-               <em class="wrapper l_100"><label for="i_34">Поиск по адресу</label><input id="i_34" type="text" placeholder="Поиск по адресу" class="big" /></em> 
+                <em class="l_100 wrapper"><label for="i_34">Поиск по адресу</label>
+                  <div class="search_inp-block">
+                      <input type="search" placeholder="Поиск по адресу" id="i_34" name="adress" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                      <input type="search" id="autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                      <div class="selction_ajax-placeholder"></div>
+                  </div></em>
+
                <em class="wrapper l_33">Сортировать по:
                  </em><em class="wrapper l_33"><input type="radio" checked="checked" name="g_5" id="f_21"/><label for="f_21">удалённости</label>
                  </em><em class="wrapper l_33"><input type="radio" name="g_5" id="f_22"/><label for="f_22">длине очереди</label></em>
@@ -371,8 +388,8 @@ include('include/mobile_head.php');
                    <em class="wrapper l_100">
                      <label for="ser_12">Название льготы</label>
                      <div class="search_inp-block">
-                       <input id="ser_12" type="search" placeholder="Название льготы" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
-                       <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                       <input id="ser_12" type="search" placeholder="Название льготы" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                       <input type="search" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1"/>
                        <div class="selction_ajax-placeholder"></div>
                      </div>
                    </em>
@@ -388,7 +405,14 @@ include('include/mobile_head.php');
                    </div>
                    <em class="wrapper l_100"><input type="checkbox" id="f_45"/><label for="f_45">Иные льготы</label></em>
                    <div class="fields_cover_inner">
-                       <em class="wrapper l_100"><label for="i_36">Название льготы</label><input id="i_36" type="text" placeholder="Название льготы" class="big" /></em> 
+                       <em class="wrapper l_100">
+                        <label for="ser_12">Название льготы</label>
+                            <div class="search_inp-block">
+                                <input id="ser_12" type="search" placeholder="Название льготы" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                                <input type="search" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1"/>
+                                <div class="selction_ajax-placeholder"></div>
+                            </div>
+                       </em> 
                    </div>
                </div>
            </div>
@@ -408,7 +432,7 @@ include('include/mobile_head.php');
        <div class="clear last_btn-block reverse_btn">
          <div class="limiter clear">
              <span class="fl">
-                <a href="#" class="btn white popup_link"><b class="popup_cancel_detsad">Отменить запись</b></a>
+                <a href="#0" class="btn white popup_link"><b class="popup_cancel_detsad">Отменить запись</b></a>
              </span>
              <span class="fr">
                  <input class="big btn" type="submit" value="Изменить">

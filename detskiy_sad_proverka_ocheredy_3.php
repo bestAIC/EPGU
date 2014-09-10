@@ -125,15 +125,15 @@ include('include/head.php');
 		<ul class="list form_info-list">
 			<li>
 				<p><b>Вы 123-й в очереди.</b> Детский сад №1214, Большой проспект Петроградской... <a href="#" class="form_info-more">Проверить очередь</a></p>
-				<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a></p>
+				<p><a href="#" class="pseudo popup_link"><em class="popup_map">Посмотреть на карте</em></a></p>
 			</li>
 			<li>
 				<p><b>Вы 34-й в очереди.</b> Детский сад №542542, Большой коретный переулок, 12. <a href="#" class="form_info-more">Проверить очередь</a></p>
-				<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a></p>
+				<p><a href="#" class="pseudo popup_link"><em class="popup_map">Посмотреть на карте</em></a></p>
 			</li>
 			<li>
 				<p><b>Вы 12-й в очереди</b> в детский сад №231, ул. Карла-Маркса, 34. <a href="#" class="form_info-more">Проверить очередь</a></p>
-				<p><a href="#" class="pseudo popup_link">Посмотреть на карте</a></p>
+				<p><a href="#" class="pseudo popup_link"><em class="popup_map">Посмотреть на карте</em></a></p>
 			</li>
 		</ul>
 	</div>

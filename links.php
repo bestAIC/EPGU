@@ -64,10 +64,6 @@ include('include/mobile_head.php');
 						</td>
 					</tr>
 					<tr>
-						
-						
-					</tr>
-					<tr>
 						<td>
 							<p><a href="detskiy_sad.php">Запись в детский сад</a></p>
 							<p><a href="detskiy_sad_proverka_ocheredy_1.php">Проверка очереди в десткий сад (шаг 1)</a></p>
@@ -87,11 +83,9 @@ include('include/mobile_head.php');
 					</tr>
 					<tr>
 						<td>
-							<p><a href="rasporyagenie_mat_capitalom.php">Распоряжение материнским капиталом</a></p>
 							<p><a href="vidacha_sertifikata_na_matcapital.php">Выдача сертификата на материнский (семейный) капитал</a></p>
 						</td>
 						<td>
-							<p><a href="rasporyagenie_mat_capitalom.php">rasporyagenie_mat_capitalom.php</a></p>
 							<p><a href="vidacha_sertifikata_na_matcapital.php">vidacha_sertifikata_na_matcapital.php</a></p>
 						</td>
 					</tr>
@@ -108,6 +102,10 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="500.php">500</a></td>
 						<td><a href="500.php">500.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="test_ajax_search.php">Тестовая страница AJAX autocomplete</a></td>
+						<td><a href="test_ajax_search.php">test_ajax_search.php</a></td>
 					</tr>
 				</tbody>
 				<thead>
@@ -190,6 +188,14 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_500.php">500 - Mobile</a></td>
 						<td><a href="mobile_500.php">mobile_500.php</a></td>
+					</tr>
+					<tr>
+						<td>
+							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">Выдача сертификата на материнский (семейный) капитал</a></p>
+						</td>
+						<td>
+							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">mobile_vidacha_sertifikata_na_matcapital.php</a></p>
+						</td>
 					</tr>
 				</tbody>
 			</table>

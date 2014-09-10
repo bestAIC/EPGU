@@ -15,8 +15,9 @@
 <script type="text/javascript" src="js/mobile_main.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.autocomplete.min.js"></script>
-<script type="text/javascript" src="js/plugins/countries.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/plugins/countries.js"></script>
+<script type="text/javascript" src="js/plugins/ajax_autocomplete.js"></script>
 
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
@@ -90,7 +91,7 @@ include('include/mobile_popup.php');
                   <div class="top type_2"> 
               <? } else if ($pagename == 'mobile_nalogovaya_zadoljennost' || $pagename == 'mobile_proverka_sudebnyh_zadoljennostey') { ?>
                   <div class="top type_3">  
-              <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy' || $pagename == 'mobile_mat_capital') { ?>
+              <? } else if ($pagename == 'mobile_detskiy_sad' || $pagename == 'mobile_detskiy_sad_proverka_ocheredy' || $pagename == 'mobile_mat_capital' || $pagename == 'mobile_vidacha_sertifikata_na_matcapital') { ?>
                   <div class="top type_4">
               <? } else if ($pagename == 'mobile_egrn') { ?>
                   <div class="top type_5">                      
