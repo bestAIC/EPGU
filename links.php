@@ -63,6 +63,34 @@ include('include/mobile_head.php');
 							<p><a href="snatie_s_registracii.php">snatie_s_registracii.php</a></p>
 						</td>
 					</tr>
+
+
+					<tr>
+						<td>
+							<p><a href="zayavlenie_vydacha_pensii.php">Заявление на выдачу пенсии</a></p>
+						</td>
+						<td>
+							<p><a href="zayavlenie_vydacha_pensii.php">zayavlenie_vydacha_pensii.php</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p><a href="registraciya_braka.php">Регистрация заключения брака</a></p>
+						</td>
+						<td>
+							<p><a href="registraciya_braka.php">registraciya_braka.php</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p><a href="registraciya_rozhdeniya.php">Регистрация рождения</a></p>
+						</td>
+						<td>
+							<p><a href="registraciya_rozhdeniya.php">registraciya_rozhdeniya.php</a></p>
+						</td>
+					</tr>										
+
+
 					<tr>
 						<td>
 							<p><a href="detskiy_sad.php">Запись в детский сад</a></p>
