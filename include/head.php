@@ -56,6 +56,10 @@
       <div id="wrap" class="zagran_pasport_nov_18_plus">
   <? } else if ($pagename == 'detskiy_sad') { ?> 
       <div id="wrap" class="detskiy_sad">
+  <? } else if ($pagename == 'registraciya_braka') { ?> 
+      <div id="wrap" class="registraciya_braka"> 
+  <? } else if ($pagename == 'registraciya_rozhdeniya') { ?> 
+      <div id="wrap" class="registraciya_rozhdeniya">            
   <? } else if ($pagename == 'egrn') { ?> 
       <div id="wrap" class="egrn">              
   <? } else if ($pagename == '404') { ?>
@@ -118,7 +122,7 @@
             <div class="bottom type_2">
         <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'zamena_pasporta_pol_ok' || $pagename == 'zagran_pasport_nov_18_plus' || $pagename == 'zamena_pasporta_neprigodnost' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
             <div class="bottom type_3">
-        <? } else if ($pagename == 'detskiy_sad' || $pagename == "mat_capital") { ?> 
+        <? } else if ($pagename == 'detskiy_sad' || $pagename == "mat_capital" || $pagename == "registraciya_braka" || $pagename == "registraciya_rozhdeniya") { ?> 
             <div class="bottom type_4">
         <? } else if ($pagename == 'egrn') { ?> 
             <div class="bottom type_5">                          

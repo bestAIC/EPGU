@@ -286,19 +286,7 @@ function HideShow(){
     }
   });
 
-  // /*подача документов лично/представителем */
-  // $('.group_1 input, .group_1 input').change(function(){
-  //   if($('#f_1-styler').hasClass('checked')){
-  //     $('.v_2').hide();
-  //     $('.v_1').show();
-  //   } else {
-  //     $('.v_1').hide();
-  //     $('.v_2').show();
-  //   }
-  // });
-
-
-  
+ 
   /*pay*/
   $('.selector li').click(function(){
     if($(this).attr('id') == 'pay'){

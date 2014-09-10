@@ -22,10 +22,10 @@ include('include/head.php');
           <fieldset class="group_1">         
             <span class="point_num">1</span>
             <h3>Кто подаёт заявление</h3>          
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Лично</label></em>                          
-            <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Я - представитель заявителя</label></em>                                                                
+            <em class="wrapper l_100"><input type="radio" class="switcher_group" name="g_1" data-for="v_1" id="f_1" checked="checked" /><label for="f_1">Лично</label></em>                          
+            <em class="wrapper l_100"><input type="radio" class="switcher_group" name="g_1" data-for="v_2" id="f_2"/><label for="f_2">Я - представитель заявителя</label></em>                                                                
           </fieldset>
-          <div class="v_1">           
+          <div class="switcher_n">           
             <fieldset class="group_2">                   
               <span class="point_num">2</span>
               <h3>Ваши персональные данные <span class="fr">
@@ -163,13 +163,7 @@ include('include/head.php');
 
 
 
-
-
-
-
-
-
-          <div class="v_2"> 
+          <div class="switcher_n"> 
             <fieldset class="group_2">                   
               <span class="point_num">2</span>
               <h3>Персональные данные получателя услуги</h3>  
@@ -337,7 +331,7 @@ include('include/head.php');
                либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>           
                                                      
             </fieldset>                                                                                               
-          
+          </div>
           <span class="fr">
               <input class="big btn" type="submit" value="Отправить">
           </span>                     

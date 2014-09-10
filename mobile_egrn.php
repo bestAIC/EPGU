@@ -20,11 +20,11 @@ include('include/mobile_head.php');
               <h3>Кто подаёт заявление</h3>
             </div>
             <div class="limiter">          
-              <em class="wrapper l_100"><input type="radio" name="g_1" id="f_1" checked="checked" /><label for="f_1">Лично</label></em>                          
-              <em class="wrapper l_100"><input type="radio" name="g_1" id="f_2"/><label for="f_2">Я - представитель заявителя</label></em>
+              <em class="wrapper l_100"><input type="radio" class="switcher_group" data-for="v_1" name="g_1" id="f_1" checked="checked" /><label for="f_1">Лично</label></em>                          
+              <em class="wrapper l_100"><input type="radio" class="switcher_group" data-for="v_2" name="g_1" id="f_2"/><label for="f_2">Я - представитель заявителя</label></em>
             </div>                                                                
           </fieldset>
-          <div class="v_1">           
+          <div class="switcher_n">           
           <fieldset class="group_2">
             <div class="limiter">                   
               <span class="point_num">2</span>
@@ -220,7 +220,7 @@ include('include/mobile_head.php');
 
 
 
-          <div class="v_2"> 
+          <div class="switcher_n"> 
           <fieldset class="group_2">
             <div class="limiter">                   
               <span class="point_num">2</span>
