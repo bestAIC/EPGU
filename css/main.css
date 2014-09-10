@@ -1645,13 +1645,6 @@ H4 {
   margin:0 0 20px 0;
 }
 
-.egrn .v_1, 
-.egrn .v_2,
-.mobile_egrn .v_1,
-.mobile_egrn .v_2 {
-  display:none;
-}
-
 /*Field & Button*/
 INPUT { 
   border:1px solid #d0d0d0;

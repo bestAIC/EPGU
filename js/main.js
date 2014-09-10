@@ -215,7 +215,6 @@ function PopUp() {
 
 function radioGroup(){
   var that = $('input.switcher_group'),
-      thatWrap = $('input', '.switcher_wrap')
       cont = $('div.switcher_n');
 
 
