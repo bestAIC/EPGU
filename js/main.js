@@ -215,30 +215,46 @@ function PopUp() {
 
 function radioGroup(){
   var that = $('input.switcher_group'),
-      thatWrap = $('input', '.switcher_wrap'),
+      thatWrap = $('input', 'fieldset.group_1'),
       cont = $('div.switcher_n');
 
 
       var identArr = that.map(function(i, el) {
         return $(el).attr('data-for');
       }).get();
-      var uniqueEl = $.unique(identArr).reverse();
+
+      var uniqueEl = [];
+      $.each(identArr, function(index, el){
+        if($.inArray(el, uniqueEl) == -1){
+          uniqueEl.push(el);
+        }
+      })
+      cont.map(function(index, el){
+        $(el).addClass(uniqueEl[index]);
+      })
+
+      that.trigger('change');
       
-      that.on('change', function(e){
+      that.on('change', function(event){
+
+        var thatLast = $('.fields_cover', 'fieldset.group_1').prev('.wrapper').last().children(that),
+            thatSubFirst = $('.fields_cover', 'fieldset.group_1').find('.wrapper:first-child .switcher_group'),
+            cnt = thatLast.parent('.wrapper').next($('.fields_cover', 'fieldset.group_1'));
+          
+          if(cnt.is(':visible')){
+            $('.switcher_group', cnt).removeClass('checked').removeAttr('checked');
+            thatLast.on('click', function(i){
+              $('.wrapper:first-child .switcher_group', cnt).addClass('checked').attr('checked', 'checked');
+            })
+          } else if(cnt.is(':hidden')){
+            thatSubFirst.addClass('checked').attr('checked', 'checked');
+          }
+
         var thatID = $(this).attr('data-for');
-
-        cont.each(function(index, el){
-          $(el).addClass(uniqueEl[index]);
-        })
-
-        $('.fields_cover').prevUntil(that).on('click', function(){
-          console.log($('.wrapper:first-child .switcher_group', '.fields_cover'))
-          $('.wrapper:first-child .switcher_group', '.fields_cover').attr('checked', 'checked').addClass('checked');
-        })
-
         cont.hide();
         $('.main').find('.' + thatID).show();
-      })
+        event.preventDefault();
+      });
 }
 
 // Hide show
@@ -576,12 +592,8 @@ function FieldSlide(){
 
               $('input', '.filed_slide').on('click', function(){
                 $(this).styler();
-                console.log('id: ' + ($(this).attr('id')));
               })
 
-              $('label', '.filed_slide').on('click', function(){
-                console.log('for: ' + ($(this).attr('for')));
-              })      
 
               $wrap.find('.filed_slide').each(function(){
                 var that = $(this),

@@ -23,7 +23,7 @@ include('include/head.php');
             <fieldset class="group_1">
                 <span class="point_num">1</span>
                 <h3>Кто подает заявление</h3>
-            
+
                 <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_1" checked="checked" class="switcher_group" data-for="v_1" /><label for="f_1">Отец</label></em>
                 <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_2" class="switcher_group" data-for="v_1" /><label for="f_2">Мать</label></em>
                 <em class="wrapper l_100"><input type="radio" name="g_1_1" id="f_3" class="switcher_group" data-for="v_1" /><label for="f_3">Ребенок</label></em>
@@ -1181,6 +1181,8 @@ include('include/head.php');
                     либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>
                 </fieldset>
             </div>
+
+            <div class="switcher_n">   </div>
 
             <div class="clear last_btn-block">
                 <span class="fr">

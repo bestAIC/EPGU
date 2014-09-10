@@ -5,6 +5,7 @@ $(document).ready(function() {
   ResponseGallery(); // Slick Galery 
   EasterEggs(); 
   LoadPhoto();
+  radioGroup();
 });
 
 lock = 0;
@@ -247,6 +248,51 @@ function LoadPhoto(){
       });
 }
 
+function radioGroup(){
+  var that = $('input.switcher_group'),
+      thatWrap = $('input', 'fieldset.group_1'),
+      cont = $('div.switcher_n');
+
+
+      var identArr = that.map(function(i, el) {
+        return $(el).attr('data-for');
+      }).get();
+
+      var uniqueEl = [];
+      $.each(identArr, function(index, el){
+        if($.inArray(el, uniqueEl) == -1){
+          uniqueEl.push(el);
+        }
+      })
+      cont.map(function(index, el){
+        $(el).addClass(uniqueEl[index]);
+      })
+
+      that.trigger('change');
+      
+      that.on('change', function(event){
+
+        var thatLast = $('.fields_cover', 'fieldset.group_1').prev('.limiter').last().children(that),
+            thatSubFirst = $('.fields_cover', 'fieldset.group_1').find('.wrapper:first-child .switcher_group'),
+            cnt = thatLast.parent('.limiter').next($('.fields_cover', 'fieldset.group_1'));
+
+            console.log(cnt)
+          
+          if(cnt.is(':visible')){
+            $('.switcher_group', cnt).removeClass('checked').removeAttr('checked');
+            thatLast.on('click', function(i){
+              $('.wrapper:first-child .switcher_group', cnt).addClass('checked').attr('checked', 'checked');
+            })
+          } else if(cnt.is(':hidden')){
+            thatSubFirst.addClass('checked').attr('checked', 'checked');
+          }
+
+        var thatID = $(this).attr('data-for');
+        cont.hide();
+        $('.main').find('.' + thatID).show();
+        event.preventDefault();
+      });
+}
 
 
 
