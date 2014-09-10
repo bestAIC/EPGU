@@ -46,10 +46,11 @@ function selectRegion(){
       },
       onInvalidateSelection: function() {
           var obj = this.parentElement.lastElementChild;
-            obj.innerHTML = " ";
+            obj.innerHTML = "";
       },
       autoSelectFirst: true
   });
+
 
 
   $('.search_inp-ajax[name="cities"]').autocomplete({
@@ -68,7 +69,7 @@ function selectRegion(){
       },
       onInvalidateSelection: function() {
           var obj = this.parentElement.lastElementChild;
-            obj.innerHTML = " ";
+            obj.innerHTML = "";
       }
   });
 

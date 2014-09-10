@@ -3,9 +3,9 @@ $(document).ready(function() {
   MPopUp(); 
   MenuShowMobile();
   ResponseGallery(); // Slick Galery 
-  EasterEggs(); 
-  LoadPhoto();
-  radioGroup();
+  EasterEggs(); // анимированная гифка на главной странце
+  LoadPhoto(); // загрузчик фото
+  radioGroup(); // смена содержимого формы, при клике на радиобаттны 
 });
 
 lock = 0;

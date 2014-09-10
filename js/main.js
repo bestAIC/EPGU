@@ -1,20 +1,20 @@
 // Inits
 $(document).ready(function() {
-  SForm(); 
-  PopUp();
+  SForm(); // стилизация элементов форм 
+  PopUp(); 
   HideShow();
   SwitchPoint();  
   PlaceSmall();
   MenuShow();
-  MapShow();
-  MapControls();
-  FieldSlide();
-  tableAsynchron();
+  MapShow(); // инициализая Ya карты
+  MapControls(); // попап для карты
+  FieldSlide(); // hide/show блоков при клике на кнопку добавить/удалить (страница: zagran_pasport_nov_18_plus.php)
+  tableAsynchron(); // асинхронная подгрузка содержимого в табилцу (страница: detskiy_sad_proverka_ocheredy_3.php)
   if($('.search_inp-ajax').length){
     selectRegion();
+    // вызывает ajax search autocomplete 
   }
-  radioGroup();
-  // ePrevent();
+  radioGroup(); // смена содержимого формы, при клике на радиобаттны
 });
 
 // Styler
@@ -610,6 +610,7 @@ function tableAsynchron(){
       e.preventDefault();
       $.ajax({
         url: "ajax/table.html",
+        ifModified: true,
         cache: false,
         success: function(html){
           $tbody.append(html);
