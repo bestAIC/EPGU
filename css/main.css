@@ -1937,13 +1937,16 @@ LABEL {
   min-height:100px;
   padding:20px 45px;
   border:1px dashed #d0d0d0;
+  background: #fff;
+  margin: 0 0 15px 0;
 }
 
 #drop_zone H4 {
   position:relative;
   color:#b1b2b4;
   border:none;
-  margin:0 0 10px 0;     
+  margin:0 0 10px 0; 
+  padding:0;    
 }
 
 #drop_zone H4:before {

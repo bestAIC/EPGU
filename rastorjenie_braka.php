@@ -1,19 +1,20 @@
 <?
-$pagename = 'registraciya_braka';
-$pagetitle = 'Регистрация заключения брака';
+$pagename = 'rastorjenie_braka';
+$pagetitle = 'Заявление на расторжение брака :: по взаимному согласию обоих супругов';
 include('include/head.php');
 ?>
 
                 <ul class="breadcrumbs">
                     <li class="first"><a href="#" tabindex="-1"><span class="icomoon">7</span>Главная</a></li>
-                    <li class="last"><span>Регистрация заключения брака</span></li>
+                    <li class="last"><span>Заявление на расторжение брака</span></li>
                 </ul>
             </div>
         </div>
 
         <div id="content">
             <div class="title">
-                <span class="icomoon color_4">a</span><h1>Регистрация заключения брака</h1>
+                <span class="icomoon color_4">g</span><h1>Заявление на расторжение брака</h1>
+                <h2>по взаимному согласию обоих супругов</h2>
             </div>
 
         <form class="main clear">
@@ -38,17 +39,14 @@ include('include/head.php');
                 <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="alexandr_k@bestmail.ru" disabled="disabled"/>
                 </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7 912 200-00-02" disabled="disabled"/></em><br/>
                 <em class="wrapper l_33"><input type="text" placeholder="СНИЛС" class="big" value="152-676-184-70" disabled="disabled"/></em>
-            </fieldset>
-            
-            <fieldset class="group_2">
-                <span class="point_num">2</span>
-                <h3>Ваши паспортные данные <span class="fr">
+
+                <h4>Ваши паспортные данные <span class="fr">
                 <a href="#" tabindex="-1">Изменить данные</a> <i class="q">?
                 <div class="bg_c3 q_hover">
                     <h4>Обратите внимание</h4>
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
                 </div></i>
-                </span></h3>
+                </span></h4>
                 
                 <em class="wrapper l_16"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
                 </em><em class="wrapper l_25"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
@@ -69,73 +67,22 @@ include('include/head.php');
                 <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
             </fieldset>
 
-            <fieldset class="group_3">
-                <span class="point_num">3</span>
-                <h3>Семейное положение <i class="q">?
-                <div class="bg_c3 q_hover">
-                    <h4>Пример свидетельства о заключении брака и свидетельства о расторжении брака.</h4>
-                    <p>Красным цветом выделена информация, которая поможет вам заполнить формы.</p>
-                    <img src="img/doc_group_3.png" alt=""/>
-                </div></i>
-                </h3>
-                
-                <em class="wrapper l_100"><input type="radio" name="family_status" checked="checked" id="f_s_1"/><label for="f_s_1">Никогда не была замужем</label></em>
-                
-                <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_3"/><label for="f_s_3">Вдова</label></em>
-                <div class="fields_cover">
-                    <h4>Персональные данные супруга</h4>
-                    
-                    <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
-                    
-                    <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em>
-                    
-                </div>
-                <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_4"/><label for="f_s_4">Разведена</label></em>
-                <div class="fields_cover">
-                    <h4>Персональные данные супруга</h4>
-                    
-                    <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
-                    
-                    <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em>
-                    
-                    <h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
-                    
-                    <em class="wrapper l_33"><input type="text" placeholder="Дата вступления в брак" class="big" />
-                    </em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-                    </em><em class="wrapper l_16"><input type="text" placeholder="Номер" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Номер актовой записи" class="big" /></em><br/>
-                    <em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
-                    </em><em class="wrapper l_75"><input type="text" placeholder="Кем выдан" class="big" />
-                    </em>
-                    
-                </div>
-            </fieldset>
-
-            <fieldset class="group_4">
-                <span class="point_num">4</span>            
-                <h3>Персональные данные второго заявителя</h3>
+            <fieldset class="group_2">
+                <span class="point_num">2</span>            
+                <h3>Персональные данные второго супруга</h3>
                 <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
                 </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
                 </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
                 
                 <em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" />
-                </em><em class="wrapper l_16"><input type="radio" name="sex_11"  checked="checked" /><label>Мужской</label>
-                </em><em class="wrapper l_16"><input type="radio" name="sex_11" /><label>Женский</label></em><br/>
+                </em><em class="wrapper l_16"><input type="radio" name="sex_11" /><label>Мужской</label>
+                </em><em class="wrapper l_16"><input type="radio" name="sex_11" checked="checked" /><label>Женский</label></em><br/>
                 
                 <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" />
                 </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" /></em><br/>
                 <em class="wrapper l_33"><input type="text" placeholder="СНИЛС" class="big" /></em>
-            </fieldset>
-            
-            <fieldset class="group_5">
-                <span class="point_num">5</span>
-                <h3>Паспортные данные второго заявителя</h3>
+
+                <h4>Паспортные данные второго супруга</h4>
                 
                 <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
                 </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big"/>
@@ -156,66 +103,48 @@ include('include/head.php');
                 <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
             </fieldset>            
 
-            <fieldset class="group_6">
-                <span class="point_num">6</span>
-                <h3>Семейное положение <i class="q">?
-                <div class="bg_c3 q_hover">
-                    <h4>Пример свидетельства о заключении брака и свидетельства о расторжении брака.</h4>
-                    <p>Красным цветом выделена информация, которая поможет вам заполнить формы.</p>
-                    <img src="img/doc_group_3.png" alt=""/>
-                </div></i>
-                </h3>
+
+            <fieldset class="group_3">
+                <span class="point_num">3</span>
+                <h3>Реквизиты записи акта о заключении брака</h3>                
+                <em class="wrapper l_25"><input type="text" placeholder="Дата вступления" class="big" />
+                </em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big"/>
+                </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
+                </em><em class="wrapper l_33"><input type="text" placeholder="Номер актовой записи" class="big" /></em><br/>
                 
-                <em class="wrapper l_100"><input type="radio" name="family_status" checked="checked" id="f_s_1"/><label for="f_s_1">Никогда не был женат</label></em>
-                
-                <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_3"/><label for="f_s_3">Вдовец</label></em>
+                <em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
+                </em><em class="wrapper l_75"><input type="text" placeholder="Наименование ЗАГСа" class="big"/>
+                </em>
+
+                <em class="wrapper l_100"><input type="text" placeholder="Адрес ЗАГСа" class="big" />
+                </em><br/>
+            </fieldset> 
+
+            <fieldset class="group_4">
+                <span class="point_num">4</span>
+                <h3>Есть ли у вас льготы при оплате государственной пошлины?</h3>                
+                <em class="wrapper l_100"><input type="radio" name="gp" id="f_s_3"/><label for="f_s_3">Да</label></em>
                 <div class="fields_cover">
-                    <h4>Персональные данные супруга</h4>
-                    
-                    <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
-                    
-                    <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em>
+                    <h4>Загрузите копии документов</h4>
+                    <em class="wrapper l_100">             
+                      <div id="drop_zone">
+                        <h4>Перетащите файлы сюда или <a href="#">загрузите вручную</a> (суммарно не больше 10Мб)</h4>
+                        <p>Загруженные файлы<nobr>.pdf</nobr><b class="file_progress_line"><span style="width:40%"></span></b></p>
+                        <p>Загруженные файлы<nobr>.pdf</nobr><span class="file_error">Ошибка загрузки</span></p>
+                        <p>Загруженные файлы<nobr>.pdf</nobr><span class="file_done">2,78 Мб</span></p>
+                      </div>
+                      <h5>Допустимый формат для загрузки файлов: pdf, doc, xls, jpg. Размер файла не должен превышать 5000 Кб.</h5> 
+                    </em>                    
                     
                 </div>
-                <em class="wrapper l_100"><input type="radio" name="family_status" id="f_s_4"/><label for="f_s_4">Разведен</label></em>
-                <div class="fields_cover">
-                    <h4>Персональные данные супруга</h4>
-                    
-                    <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">необязательно</i></em><br/>
-                    
-                    <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-                    </em>
-                    
-                    <h4>Сведения о документе, подтверждающем ваше семейное положение</h4>
-                    
-                    <em class="wrapper l_33"><input type="text" placeholder="Дата вступления в брак" class="big" />
-                    </em><em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
-                    </em><em class="wrapper l_16"><input type="text" placeholder="Номер" class="big" />
-                    </em><em class="wrapper l_33"><input type="text" placeholder="Номер актовой записи" class="big" /></em><br/>
-                    <em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" />
-                    </em><em class="wrapper l_75"><input type="text" placeholder="Кем выдан" class="big" />
-                    </em>
-                    
-                </div>
-            </fieldset>
+                <em class="wrapper l_100"><input type="radio" checked="checked" name="gp" id="f_s_4"/><label for="f_s_4">Нет</label></em>
+            </fieldset>                         
 
-            <fieldset class="group_7">
-                <span class="point_num">7</span>
-                <h3>После заключения брака присвоить фамилии</h3>                
-                <em class="wrapper l_100"><input type="radio" name="pass" checked="checked" id="p_1"/><label for="p_1">Оставить фамилию как до брака</label></em>                
-                <em class="wrapper l_100"><input type="radio" name="pass" id="p_2"/><label for="p_2">Присвоить фамилию супруга</label></em>
-                <em class="wrapper l_100"><input type="radio" name="pass" id="p_3"/><label for="p_3">Двойная фамилия</label></em>
-            </fieldset>            
-
-            <fieldset class="group_8">
-                <span class="point_num">8</span>
-                <h3>Выберете желаемую дату и время бракосочетания, а также отдел ЗАГС</h3>
-
+            <fieldset class="group_5">
+                <span class="point_num">5</span>
+                <h3>Данные о смене фамилии и ЗАГСе, в который подаётся заявление</h3>
+                <h4>Укажите желаемую фамилию после расторжения брака</h4>
+                <em class="wrapper l_50"><input type="text" placeholder="Фамилия" class="big" /></em>
                 <h4>Выберете дату</h4>
                 <em class="wrapper l_25"><input type="text" placeholder="Дата" class="big" /></em>
                 <h4>Выберете ваше местоположение</h4>

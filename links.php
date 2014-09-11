@@ -83,6 +83,14 @@ include('include/mobile_head.php');
 					</tr>
 					<tr>
 						<td>
+							<p><a href="rastorjenie_braka.php">Заявление на расторжение брака</a></p>
+						</td>
+						<td>
+							<p><a href="rastorjenie_braka.php">rastorjenie_braka.php</a></p>
+						</td>
+					</tr>					
+					<tr>
+						<td>
 							<p><a href="registraciya_rozhdeniya.php">Регистрация рождения</a></p>
 						</td>
 						<td>
