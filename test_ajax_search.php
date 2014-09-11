@@ -17,7 +17,7 @@ include('include/head.php');
         </div>
         
           
-        <form class="main clear">
+        <form class="main clear" id="profileForm">
             <fieldset class="group_1">
             <span class="point_num">1</span>
 
@@ -71,6 +71,23 @@ include('include/head.php');
                         <div class="selction_ajax-placeholder"></div>
                     </div>
                 </em>
+            </fieldset>
+
+            <fieldset class="group_2 form-group">
+                <em class="wrapper l_100 form-group">
+                    <input type="text" class="big form-control" name="username" placeholder="Имя пользователя" 
+                        data-bv-notempty="true"
+                        data-bv-regexp="true"
+                        data-bv-regexp-regexp="^[a-zA-Z0-9_\.]+$"></em>
+                <em class="wrapper l_100 form-group">
+                    <input type="text" class="big form-control" name="email" placeholder="email" />
+                </em>
+
+                <div class="clear last_btn-block form-group">
+                    <span class="fr">
+                        <input class="big btn" type="submit" value="Отправить">
+                    </span>
+                  </div>
             </fieldset>
         </form>
     </div>

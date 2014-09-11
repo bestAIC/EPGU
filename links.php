@@ -9,10 +9,15 @@ include('include/mobile_head.php');
 			<table class="links_html">
 				<thead>
 					<tr>
-						<th rowspan="2"><strong>Descktop</strong></th>
+						<th colspan="2"><strong>Descktop</strong></th>
 					</tr>
 				</thead>
 				<tbody>
+					<tr>
+						<td colspan="2">
+							<h4>Автомобиль и вождение</h4>
+						</td>
+					</tr>
 					<tr>
 						<td><a href="gibdd_shtrafy.php">Штрафы ГИБДД</a></td>
 						<td><a href="gibdd_shtrafy.php">gibdd_shtrafy.php</a></td>
@@ -22,20 +27,26 @@ include('include/mobile_head.php');
 						<td><a href="gibdd_ekzamen.php">gibdd_ekzamen.php</a></td>
 					</tr>
 					<tr>
-						<td><a href="egrn.php">Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</a></td>
-						<td><a href="egrn.php">egrn.php</a></td>
-					</tr>										
+						<td colspan="2">
+							<h4>Налоги и задолженности</h4>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="proverka_sudebnyh_zadoljennostey.php">Проверка судебных задолженностей</a></td>
+						<td><a href="proverka_sudebnyh_zadoljennostey.php">proverka_sudebnyh_zadoljennostey.php</a></td>
+					</tr>
 					<tr>
 						<td><a href="nalogovaya_zadoljennost.php">Налоговая задолженность</a></td>
 						<td><a href="nalogovaya_zadoljennost.php">nalogovaya_zadoljennost.php</a></td>
 					</tr>
 					<tr>
-						<td><a href="ostavit_otzyv.php">Оставить отзыв</a></td>
-						<td><a href="ostavit_otzyv.php">ostavit_otzyv.php</a></td>
-					</tr>
+						<td><a href="egrn.php">Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</a></td>
+						<td><a href="egrn.php">egrn.php</a></td>
+					</tr>	
 					<tr>
-						<td><a href="proverka_sudebnyh_zadoljennostey.php">Проверка судебных задолженностей</a></td>
-						<td><a href="proverka_sudebnyh_zadoljennostey.php">proverka_sudebnyh_zadoljennostey.php</a></td>
+						<td colspan="2">
+							<h4>Документы и регистрация</h4>
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -63,14 +74,26 @@ include('include/mobile_head.php');
 							<p><a href="snatie_s_registracii.php">snatie_s_registracii.php</a></p>
 						</td>
 					</tr>
-
-
+					<tr>
+						<td><a href="hunter_ticket.php">Оформление охотничего билета</a></td>
+						<td><a href="hunter_ticket.php">hunter_ticket.php</a></td>
+					</tr>	
+					<tr>
+						<td colspan="2">
+							<h4>Пособия и льготы</h4>
+						</td>
+					</tr>
 					<tr>
 						<td>
 							<p><a href="zayavlenie_vydacha_pensii.php">Заявление на выдачу пенсии</a></p>
 						</td>
 						<td>
 							<p><a href="zayavlenie_vydacha_pensii.php">zayavlenie_vydacha_pensii.php</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<h4>Здоровье и семья</h4>
 						</td>
 					</tr>
 					<tr>
@@ -88,9 +111,7 @@ include('include/mobile_head.php');
 						<td>
 							<p><a href="registraciya_rozhdeniya.php">registraciya_rozhdeniya.php</a></p>
 						</td>
-					</tr>										
-
-
+					</tr>
 					<tr>
 						<td>
 							<p><a href="detskiy_sad.php">Запись в детский сад</a></p>
@@ -117,7 +138,18 @@ include('include/mobile_head.php');
 							<p><a href="vidacha_sertifikata_na_matcapital.php">vidacha_sertifikata_na_matcapital.php</a></p>
 						</td>
 					</tr>
+					<tr>
+						<td><a href="ostavit_otzyv.php">Оставить отзыв</a></td>
+						<td><a href="ostavit_otzyv.php">ostavit_otzyv.php</a></td>
+					</tr>
+					
+
 					<!-- Типовые элементы -->
+					<tr>
+						<td colspan="2">
+							<h4>Technical</h4>
+						</td>
+					</tr>
 					<tr>
 						<td><a href="typical_elements.php">Типовые элементы</a></td>
 						<td><a href="typical_elements.php">typical_elements.php</a></td>
@@ -138,13 +170,18 @@ include('include/mobile_head.php');
 				</tbody>
 				<thead>
 					<tr>
-						<th rowspan="2"><strong>Mobile</strong></th>
+						<th colspan="2"><strong>Mobile</strong></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td><a href="mobile_landscape_main.php">Главная - мобильная версия</a></td>
 						<td><a href="mobile_landscape_main.php">mobile_landscape_main.php</a></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<h4>Автомобиль и вождение</h4>
+						</td>
 					</tr>
 					<tr>
 						<td><a href="mobile_gibdd_shtrafy.php">Штрафы ГИБДД</a></td>
@@ -155,6 +192,11 @@ include('include/mobile_head.php');
 						<td><a href="mobile_gibdd_ekzamen.php">mobile_gibdd_ekzamen.php</a></td>
 					</tr>
 					<tr>
+						<td colspan="2">
+							<h4>Налоги и задолженности</h4>
+						</td>
+					</tr>
+					<tr>
 						<td><a href="mobile_egrn.php">Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</a></td>
 						<td><a href="mobile_egrn.php">mobile_egrn.php</a></td>
 					</tr>					
@@ -162,13 +204,15 @@ include('include/mobile_head.php');
 						<td><a href="mobile_nalogovaya_zadoljennost.php">Налоговая задолженность</a></td>
 						<td><a href="mobile_nalogovaya_zadoljennost.php">mobile_nalogovaya_zadoljennost.php</a></td>
 					</tr>
-					<tr>
-						<td><a href="mobile_obratnaya_svyaz.php">Обратная связь</a></td>
-						<td><a href="mobile_obratnaya_svyaz.php">mobile_obratnaya_svyaz.php</a></td>
-					</tr>
+					
 					<tr>
 						<td><a href="mobile_proverka_sudebnyh_zadoljennostey.php">Cудебная задолженность</a></td>
 						<td><a href="mobile_proverka_sudebnyh_zadoljennostey.php">mobile_proverka_sudebnyh_zadoljennostey.php</a></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<h4>Документы и регистрация</h4>
+						</td>
 					</tr>
 					<tr>
 						<td>
@@ -185,6 +229,11 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_postanovka_na_registraciu.php">Постановка на регистрацию</a></td>
 						<td><a href="mobile_postanovka_na_registraciu.php">mobile_postanovka_na_registraciu.php</a></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<h4>Здоровье и семья</h4>
+						</td>
 					</tr>
 					<tr>
 						<td style="padding: 20px 0;">
@@ -204,7 +253,13 @@ include('include/mobile_head.php');
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_approve.php">mobile_detskiy_sad_proverka_ocheredy_approve.php</a></p>
 						</td>
 					</tr>
+
 					<!-- Типовые элементы - моб -->
+					<tr>
+						<td colspan="2">
+							<h4>Technical</h4>
+						</td>
+					</tr>
 					<tr>
 						<td><a href="mobile_typical_elements.php">Типовые элементы - мобильная версия</a></td>
 						<td><a href="mobile_typical_elements.php">mobile_typical_elements.php</a></td>
@@ -216,6 +271,10 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_500.php">500 - Mobile</a></td>
 						<td><a href="mobile_500.php">mobile_500.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="mobile_obratnaya_svyaz.php">Обратная связь</a></td>
+						<td><a href="mobile_obratnaya_svyaz.php">mobile_obratnaya_svyaz.php</a></td>
 					</tr>
 					<tr>
 						<td>

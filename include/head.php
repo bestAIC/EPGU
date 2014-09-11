@@ -5,6 +5,8 @@
 <title><?print $pagetitle ?> :: ЕПГУ</title>
 
 <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css"/>
+
 <script type="text/javascript" src="js/device.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.formstyler.js"></script>
@@ -15,6 +17,10 @@
 <script type="text/javascript" src="js/plugins/countries.js"></script>
 <script type="text/javascript" src="js/plugins/ajax_autocomplete.js"></script>
 
+<!-- bootstrap -->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="http://bootstrapvalidator.com/vendor/bootstrapvalidator/js/language/ru_RU.js"></script>
 
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
@@ -120,7 +126,7 @@
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">
-        <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'zamena_pasporta_pol_ok' || $pagename == 'zagran_pasport_nov_18_plus' || $pagename == 'zamena_pasporta_neprigodnost' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii') { ?>
+        <? } else if ($pagename == 'zamena_psporta_pol' || $pagename == 'zamena_pasporta_pol_ok' || $pagename == 'zagran_pasport_nov_18_plus' || $pagename == 'zamena_pasporta_neprigodnost' || $pagename == 'typical_elements' || $pagename == 'postanovka_na_registraciu' || $pagename == 'snatie_s_registracii' || $pagename == 'hunter_ticket') { ?>
             <div class="bottom type_3">
         <? } else if ($pagename == 'detskiy_sad' || $pagename == "mat_capital" || $pagename == "registraciya_braka" || $pagename == "registraciya_rozhdeniya") { ?> 
             <div class="bottom type_4">

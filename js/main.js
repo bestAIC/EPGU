@@ -15,6 +15,9 @@ $(document).ready(function() {
     // вызывает ajax search autocomplete 
   }
   radioGroup(); // смена содержимого формы, при клике на радиобаттны
+  if($('.form-group').length){
+    bootstrapValidator();
+  }
 });
 
 // Styler
@@ -233,7 +236,6 @@ function radioGroup(){
         $(el).addClass(uniqueEl[index]);
       })
 
-      that.trigger('change');
       
       that.on('change', function(event){
 
@@ -244,7 +246,7 @@ function radioGroup(){
           if(cnt.is(':visible')){
             $('.switcher_group', cnt).removeClass('checked').removeAttr('checked');
             thatLast.on('click', function(i){
-              $('.wrapper:first-child .switcher_group', cnt).addClass('checked').attr('checked', 'checked');
+              thatSubFirst.addClass('checked').attr('checked', 'checked');
             })
           } else if(cnt.is(':hidden')){
             thatSubFirst.addClass('checked').attr('checked', 'checked');
@@ -649,7 +651,39 @@ function tableAsynchron(){
 }
 
 
+function bootstrapValidator(){
+  $('#profileForm').bootstrapValidator({
+          feedbackIcons: {
+              valid: 'icomoon icomoon-ok',
+              invalid: 'icomoon icomoon-remove',
+              validating: 'icomoon icomoon-refresh'
+          },
+          fields: {
+              email: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Адрес электронной почты обязателен для заполнения'
+                      },
+                      emailAddress: {
+                          message: 'Адрес электронной почты заполнен не верно'
+                      }
+                  }
+              },
+              username: {
+                validators: {
+                  message: "Имя пользователя не валидно",
+                  notempty: {
+                    message: "Имя пользователя обязательно и не может оставаться пустым"
+                  },
+                  regexp: {
+                    message: "Имя пользователя может содержать символы, цифры и подчеркивания"
+                  }
+                }  
+              }
 
+          }
+      });
+}
 
 
 
