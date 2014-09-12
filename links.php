@@ -175,6 +175,10 @@ include('include/mobile_head.php');
 						<td><a href="test_ajax_search.php">Тестовая страница AJAX autocomplete</a></td>
 						<td><a href="test_ajax_search.php">test_ajax_search.php</a></td>
 					</tr>
+					<tr>
+						<td><a href="ostavit_otzyv.php">ОБратная связь</a></td>
+						<td><a href="ostavit_otzyv.php">ostavit_otzyv.php</a></td>
+					</tr>
 				</tbody>
 				<thead>
 					<tr>
