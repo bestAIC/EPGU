@@ -86,7 +86,7 @@ include('include/head.php');
                 
             </fieldset> -->
 
-            <fieldset class="group_6" id="fileupload">
+            <fieldset class="group_6 fileupload">
                 <span class="point_num">6</span>
                 <h3>Загрузите копии следующих документов</h3>
                 
@@ -97,11 +97,11 @@ include('include/head.php');
                 </ul>
 
                 <em class="wrapper l_100">
-                    <div class="file_uploader-block">
+                    <div class="file_uploader-block" id="dropzone">
                     <noscript><input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
                         <span class="btn-success fileinput-button">
                             <i class="icomoon icomoon-plus"></i>
-                            <span id="dropzone" class="file_uploader-txt fase well">Перетащите файлы сюда или</span>
+                            <span class="file_uploader-txt fase well">Перетащите файлы сюда или</span>
                             <span>загрузите вручную</span>
                             <!-- The file input field used as target for the file upload widget -->
                             <input class="file_uploader-inp" type="file" name="files[]" multiple>
@@ -119,8 +119,6 @@ include('include/head.php');
                         <!-- The table listing the files available for upload/download -->
                         <div role="presentation" class="file_upload-present"><div class="files"></div></div>
                     </div>
-                    <!-- The global progress state -->
-                    
                     <p class="file_uploader-require"><strong>Данный формат для загрузки файлов: pdf, doc, xls, jpg. Размер файла не должен превышать 5000 Kb.</strong></p>
                 </em>
 
@@ -134,30 +132,6 @@ include('include/head.php');
               </div>
         </form>
     </div>
-
-
-    <!-- The template to display files available for download -->
-<!--     <script id="template-download" type="text/x-tmpl">
-    {% for (var i=0, file; file=o.files[i]; i++) { %}
-        <tr class="template-download fade">
-            <td>
-                {% if (file.deleteUrl) { %}
-                    <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-                        <i class="icomoon icomoon-trash">(</i>
-                    </button>
-                {% } %}
-                <p class="name">
-                    <span>{%=file.name%}</span>
-                    <span class="size">{%=o.formatFileSize(file.size)%}</span>
-                    <span class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="progress-bar progress-bar-success" style="width:0%;"></span></span>
-                </p>
-                {% if (file.error) { %}
-                    <span class="label label-danger">Error</span> {%=file.error%}
-                {% } %}
-            </td>
-        </tr>
-    {% } %}
-    </script> -->
 
 <?
 include('include/footer.php');

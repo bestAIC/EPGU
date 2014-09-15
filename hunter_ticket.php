@@ -184,7 +184,31 @@ include('include/head.php');
             <li>Ранее выданный охотничий билет</li>
         </ul>
 
-        <p><strong>Данный формат для загрузки файлов: pdf, doc, xls, jpg. Размер файла не должен превышать 5000 Kb.</strong></p>
+        <em class="wrapper l_100 fileupload">
+            <div class="file_uploader-block" id="dropzone">
+            <noscript><input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
+                <span class="btn-success fileinput-button">
+                    <i class="icomoon icomoon-plus"></i>
+                    <span class="file_uploader-txt fase well">Перетащите файлы сюда или</span>
+                    <span>загрузите вручную</span>
+                    <!-- The file input field used as target for the file upload widget -->
+                    <input class="file_uploader-inp" type="file" name="files[]" multiple>
+                </span>
+                <button type="submit" class="btn file_uploader_btn-none btn-primary start">
+                    <i class="icomoon icomoon-upload">2</i>
+                </button>
+                <button type="reset" class="btn file_uploader_btn-none btn-warning cancel">
+                    <i class="icomoon icomoon-ban-circle">3</i>
+                </button>
+                <button type="button" class="btn file_uploader_btn-none btn-danger delete">
+                    <i class="icomoon icomoon-trash">(</i>
+                    <span>Delete</span>
+                </button>
+                <!-- The table listing the files available for upload/download -->
+                <div role="presentation" class="file_upload-present"><div class="files"></div></div>
+            </div>
+            <p class="file_uploader-require"><strong>Данный формат для загрузки файлов: pdf, doc, xls, jpg. Размер файла не должен превышать 5000 Kb.</strong></p>
+        </em>
     </fieldset>
 
     <fieldset class="group_7">

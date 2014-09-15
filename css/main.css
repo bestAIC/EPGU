@@ -3299,7 +3299,15 @@ input[type="submit"].styler[disabled] {
   margin-left: 10px;
 }
 
-
+#dropzone.hover {
+    background: #F5F5F5;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}
 /* file_uploader */
 
 

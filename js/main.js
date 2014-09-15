@@ -690,52 +690,85 @@ function bootstrapValidator(){
 
 function fileUpload(){
   // Initialize the jQuery File Upload widget:
-  $('#fileupload').fileupload({
-      // Uncomment the following to send cross-domain cookies:
-      //xhrFields: {withCredentials: true},
-      url: 'server/php/',
-      add: function (e, data) {
-        $.getJSON('server/php/', function (result) {
-            data.formData = result; // e.g. {id: 123}
-            data.submit();
-        });
-      },
-      maxFileSize: 500,
-      acceptFileTypes : /(\.|\/)(gif|jpe?g|png|doc?x|pdf|xls?x)$/i,
-      progress: function (e, data) {
-          var progress = parseInt(data.loaded / data.total * 100, 10);
-          $('.progress-striped .progress-bar').css(
-              'width',
-              progress + '%'
-          );
-      },
-      autoUpload: false,
-      filesContainer: $('.file_upload-present .files'),
-      uploadTemplateId: null,
-      downloadTemplateId: null,
-      downloadTemplate: function (o) {
-        var cont = $();
-        $.each(o.files, function (index, file) {
-            var contRow = $('<div class="template-download fade">' +
-                '<button class="btn btn-danger delete"><i class="icomoon icomoon-trash">(</i></button>' +
-                '<span class="name"></span>' +
-                '<span class="size"></span>' +
-                '<span class="progress progress-striped active role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0""><span class="progress-bar progress-bar-success" style="width:0%;"></span></span>' +
-                (file.error ? '<span class="error"></span>' : '') +
-                '</div>');
-            contRow.find('.size').text(o.formatFileSize(file.size));
-            if (file.error) {
-                contRow.find('.name').text(file.name);
-                contRow.find('.error').text(file.error);
-            } else {
-                contRow.find('.name').append($('<b></b>').text(file.name));
-                contRow.find('.delete button')
-                    .attr('data-type', file.delete_type)
-                    .attr('data-url', file.delete_url);
-            }
-            cont = cont.add(contRow);
-        });
-        return cont;
-    }
+  $('.fileupload').each(function(){
+    $(this).fileupload({
+          // Uncomment the following to send cross-domain cookies:
+          //xhrFields: {withCredentials: true},
+          url: 'server/php/',
+          add: function (e, data) {
+            $.getJSON('server/php/', function (result) {
+                data.formData = result; // e.g. {id: 123}
+                data.submit();
+            });
+          },
+          maxFileSize: 500,
+          acceptFileTypes : /(\.|\/)(gif|jpe?g|png|doc?x|pdf|xls?x)$/i,
+          autoUpload: false,
+          filesContainer: $('.file_upload-present .files'),
+          uploadTemplateId: null,
+          downloadTemplateId: null,
+          bitrateInterval: 0,
+          downloadTemplate: function (o) {
+            var cont = $();
+            $.each(o.files, function (index, file) {
+                var contRow = $('<div class="template-download fade">' +
+                    '<button class="btn btn-danger delete"><i class="icomoon icomoon-trash">(</i></button>' +
+                    '<span class="name"></span>' +
+                    '<span class="size"></span>' +
+                    '<span class="progress progress-striped active role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0""><span class="progress-bar progress-bar-success" style="width:0%;"></span></span>' +
+                    (file.error ? '<span class="error"></span>' : '') +
+                    '</div>');
+                contRow.find('.size').text(o.formatFileSize(file.size));
+                if (file.error) {
+                    contRow.find('.name').text(file.name);
+                    contRow.find('.error').text(file.error);
+                } else {
+                    contRow.find('.name').append($('<b></b>').text(file.name));
+                    contRow.find('.delete button')
+                        .attr('data-type', file.delete_type)
+                        .attr('data-url', file.delete_url);
+                }
+                cont = cont.add(contRow);
+            });
+            return cont
+          }
+    });
+
+    $(this).bind('fileuploadprogressall', function(e, data){
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        setTimeout(function(){
+            $('.progress-striped .progress-bar').css('width', progress + '%');
+        }, 1000)
+    });
   });
 }
+
+
+/* DropZone for fileUploader */
+$(document).bind('dragover', function (e) {
+    var dropZone = $('#dropzone'),
+        timeout = window.dropZoneTimeout;
+    if (!timeout) {
+        dropZone.addClass('in');
+    } else {
+        clearTimeout(timeout);
+    }
+    var found = false,
+        node = e.target;
+    do {
+        if (node === dropZone[0]) {
+            found = true;
+            break;
+        }
+        node = node.parentNode;
+    } while (node != null);
+    if (found) {
+        dropZone.addClass('hover');
+    } else {
+        dropZone.removeClass('hover');
+    }
+    window.dropZoneTimeout = setTimeout(function () {
+        window.dropZoneTimeout = null;
+        dropZone.removeClass('in hover');
+    }, 100);
+});

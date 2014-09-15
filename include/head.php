@@ -35,14 +35,12 @@
 <script src="js/plugins/jquery.fileupload.js"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
 <script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
 <!-- blueimp Gallery script -->
 <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The File Upload processing plugin -->
 <script src="js/plugins/jquery.fileupload-process.js"></script>
+<!-- DropZone -->
+<script src="js/plugins/dropzone.js"></script>
 <!-- The File Upload validation plugin -->
 <script src="js/plugins/jquery.fileupload-validate.js"></script>
 <!-- The File Upload user interface plugin -->
