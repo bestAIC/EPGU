@@ -5,10 +5,12 @@
 <title><?print $pagetitle ?> :: ЕПГУ</title>
 
 <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+<!-- Bootstrap styles -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css"/>
 
 <script type="text/javascript" src="js/device.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.formstyler.js"></script>
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
@@ -23,6 +25,28 @@
 <script type="text/javascript" src="http://bootstrapvalidator.com/vendor/bootstrapvalidator/js/language/ru_RU.js"></script>
 
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<!-- file uploader -->
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="js/plugins/vendor/jquery.ui.widget.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="js/plugins/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="js/plugins/jquery.fileupload.js"></script>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<!-- blueimp Gallery script -->
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="js/plugins/jquery.fileupload-process.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="js/plugins/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="js/plugins/jquery.fileupload-ui.js"></script>
 
 <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/ie8.css" media="all">

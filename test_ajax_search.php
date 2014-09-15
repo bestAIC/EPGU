@@ -73,7 +73,7 @@ include('include/head.php');
                 </em>
             </fieldset>
 
-            <fieldset class="group_2 form-group">
+            <!-- <fieldset class="group_2 form-group">
                 <em class="wrapper l_100 form-group">
                     <input type="text" class="big form-control" name="username" placeholder="Имя пользователя" 
                         data-bv-notempty="true"
@@ -83,14 +83,81 @@ include('include/head.php');
                     <input type="text" class="big form-control" name="email" placeholder="email" />
                 </em>
 
-                <div class="clear last_btn-block form-group">
-                    <span class="fr">
-                        <input class="big btn" type="submit" value="Отправить">
-                    </span>
-                  </div>
+                
+            </fieldset> -->
+
+            <fieldset class="group_6" id="fileupload">
+                <span class="point_num">6</span>
+                <h3>Загрузите копии следующих документов</h3>
+                
+                <ul class="list file_uploader-list">
+                    <li class="file_uploader-item">Разворот паспорта, страницы 2 и 3</li>
+                    <li class="file_uploader-item">Страницы паспорта с адресом регистрации</li>
+                    <li class="file_uploader-item">Ранее выданный охотничий билет</li>
+                </ul>
+
+                <em class="wrapper l_100">
+                    <div class="file_uploader-block">
+                    <noscript><input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
+                        <span class="btn-success fileinput-button">
+                            <i class="icomoon icomoon-plus"></i>
+                            <span id="dropzone" class="file_uploader-txt fase well">Перетащите файлы сюда или</span>
+                            <span>загрузите вручную</span>
+                            <!-- The file input field used as target for the file upload widget -->
+                            <input class="file_uploader-inp" type="file" name="files[]" multiple>
+                        </span>
+                        <button type="submit" class="btn file_uploader_btn-none btn-primary start">
+                            <i class="icomoon icomoon-upload">2</i>
+                        </button>
+                        <button type="reset" class="btn file_uploader_btn-none btn-warning cancel">
+                            <i class="icomoon icomoon-ban-circle">3</i>
+                        </button>
+                        <button type="button" class="btn file_uploader_btn-none btn-danger delete">
+                            <i class="icomoon icomoon-trash">(</i>
+                            <span>Delete</span>
+                        </button>
+                        <!-- The table listing the files available for upload/download -->
+                        <div role="presentation" class="file_upload-present"><div class="files"></div></div>
+                    </div>
+                    <!-- The global progress state -->
+                    
+                    <p class="file_uploader-require"><strong>Данный формат для загрузки файлов: pdf, doc, xls, jpg. Размер файла не должен превышать 5000 Kb.</strong></p>
+                </em>
+
+                
             </fieldset>
+
+            <div class="clear last_btn-block form-group">
+                <span class="fr">
+                    <input class="big btn" type="submit" value="Отправить">
+                </span>
+              </div>
         </form>
     </div>
+
+
+    <!-- The template to display files available for download -->
+<!--     <script id="template-download" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade">
+            <td>
+                {% if (file.deleteUrl) { %}
+                    <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                        <i class="icomoon icomoon-trash">(</i>
+                    </button>
+                {% } %}
+                <p class="name">
+                    <span>{%=file.name%}</span>
+                    <span class="size">{%=o.formatFileSize(file.size)%}</span>
+                    <span class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="progress-bar progress-bar-success" style="width:0%;"></span></span>
+                </p>
+                {% if (file.error) { %}
+                    <span class="label label-danger">Error</span> {%=file.error%}
+                {% } %}
+            </td>
+        </tr>
+    {% } %}
+    </script> -->
 
 <?
 include('include/footer.php');

@@ -18,6 +18,9 @@ $(document).ready(function() {
   if($('.form-group').length){
     bootstrapValidator();
   }
+  if($('.file_uploader-inp').length){
+    fileUpload();
+  }
 });
 
 // Styler
@@ -25,7 +28,7 @@ function SForm() {
 
   $(function() {
     /*стилизация элементов*/
-    $('input, select').styler({
+    $('input[type="checkbox"],input[type="radio"], select').styler({
       selectSearchLimit: 13,
       selectSmartPositioning: false
     });
@@ -685,9 +688,54 @@ function bootstrapValidator(){
       });
 }
 
-
-
-// onSelect: function (suggestion) {
-//   var obj = this.parentElement.lastElementChild;
-//     obj.innerHTML = this.getAttribute('placeholder');
-// },
+function fileUpload(){
+  // Initialize the jQuery File Upload widget:
+  $('#fileupload').fileupload({
+      // Uncomment the following to send cross-domain cookies:
+      //xhrFields: {withCredentials: true},
+      url: 'server/php/',
+      add: function (e, data) {
+        $.getJSON('server/php/', function (result) {
+            data.formData = result; // e.g. {id: 123}
+            data.submit();
+        });
+      },
+      maxFileSize: 500,
+      acceptFileTypes : /(\.|\/)(gif|jpe?g|png|doc?x|pdf|xls?x)$/i,
+      progress: function (e, data) {
+          var progress = parseInt(data.loaded / data.total * 100, 10);
+          $('.progress-striped .progress-bar').css(
+              'width',
+              progress + '%'
+          );
+      },
+      autoUpload: false,
+      filesContainer: $('.file_upload-present .files'),
+      uploadTemplateId: null,
+      downloadTemplateId: null,
+      downloadTemplate: function (o) {
+        var cont = $();
+        $.each(o.files, function (index, file) {
+            var contRow = $('<div class="template-download fade">' +
+                '<button class="btn btn-danger delete"><i class="icomoon icomoon-trash">(</i></button>' +
+                '<span class="name"></span>' +
+                '<span class="size"></span>' +
+                '<span class="progress progress-striped active role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0""><span class="progress-bar progress-bar-success" style="width:0%;"></span></span>' +
+                (file.error ? '<span class="error"></span>' : '') +
+                '</div>');
+            contRow.find('.size').text(o.formatFileSize(file.size));
+            if (file.error) {
+                contRow.find('.name').text(file.name);
+                contRow.find('.error').text(file.error);
+            } else {
+                contRow.find('.name').append($('<b></b>').text(file.name));
+                contRow.find('.delete button')
+                    .attr('data-type', file.delete_type)
+                    .attr('data-url', file.delete_url);
+            }
+            cont = cont.add(contRow);
+        });
+        return cont;
+    }
+  });
+}

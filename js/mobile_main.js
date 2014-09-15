@@ -275,8 +275,6 @@ function radioGroup(){
         var thatLast = $('.fields_cover', 'fieldset.group_1').prev('.limiter').last().children(that),
             thatSubFirst = $('.fields_cover', 'fieldset.group_1').find('.wrapper:first-child .switcher_group'),
             cnt = thatLast.parent('.limiter').next($('.fields_cover', 'fieldset.group_1'));
-
-            console.log(cnt)
           
           if(cnt.is(':visible')){
             $('.switcher_group', cnt).removeClass('checked').removeAttr('checked');
