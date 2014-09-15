@@ -164,19 +164,11 @@ include('include/head.php');
 			
 			<div class="fields_cover">
 				<em class="wrapper l_100">
-					<select class="select_choice">
-						<option value="0" selected="selected" class="selected_one">Страна рождения</option>
-						<option value="1">Белоруссия</option>
-						<option value="2">Белоруссия</option>
-						<option value="3">Украина</option>
-						<option value="4">Белоруссия</option>
-						<option value="5">Белоруссия</option>
-						<option value="6">Украина</option>
-						<option value="7">Украина</option>
-						<option value="8">Белоруссия</option>
-						<option value="9">Украина</option>
-						<option value="10">Украина</option>
-					</select>
+                    <div class="search_inp-block">
+                        <input type="search" placeholder="Выберете страну" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                        <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                        <div class="selction_ajax-placeholder"></div>
+                    </div>
 				</em>
 			</div>
 		</fieldset>
@@ -186,14 +178,6 @@ include('include/head.php');
 			<h3>Тип оформления загранпаспорта</h3>
 
 			<em class="wrapper l_100"><input type="radio" name="type_3" checked="checked" id="p_5"/><label for="p_5">Первичное</label></em>
-				<div class="fields_cover">	
-					<em class="wrapper l_25"><input type="text" placeholder="Серия" class="big" />
-					</em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-					</em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><em class="wrapper l_25"><input type="text" placeholder="Действителен до" class="big" /></em><br/>
-					
-					<em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" />
-					</em>
-				</div>
 			
 			<em class="wrapper l_100"><input type="radio" name="type_3" id="p_6"/><label for="p_6">В дополнение к имеющемуся</label></em>
 				<div class="fields_cover">	
@@ -230,25 +214,17 @@ include('include/head.php');
 			<span class="point_num">7</span>
 			<h3>Цель получения загранпаспорта</h3>
 			
-			<em class="wrapper l_100"><input type="radio" name="type_4" checked="checked" id="p_9"/><label for="p_9">Нет</label></em>
+			<em class="wrapper l_100"><input type="radio" name="type_4" checked="checked" id="p_9"/><label for="p_9">Для временных выездов за границу</label></em>
 			
-			<em class="wrapper l_100"><input type="radio" name="type_4" id="p_10"/><label for="p_10">Да</label></em>
+			<em class="wrapper l_100"><input type="radio" name="type_4" id="p_10"/><label for="p_10">Для проживания за границей</label></em>
 			
 			<div class="fields_cover">
 				<em class="wrapper l_100">
-					<select class="select_choice">
-						<option value="0" selected="selected" class="selected_one">Выберите страну</option>
-						<option value="1">Белоруссия</option>
-						<option value="2">Белоруссия</option>
-						<option value="3">Украина</option>
-						<option value="4">Белоруссия</option>
-						<option value="5">Белоруссия</option>
-						<option value="6">Украина</option>
-						<option value="7">Украина</option>
-						<option value="8">Белоруссия</option>
-						<option value="9">Украина</option>
-						<option value="10">Украина</option>
-					</select>
+                    <div class="search_inp-block">
+                        <input type="search" placeholder="Выберете страну" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                        <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                        <div class="selction_ajax-placeholder"></div>
+                    </div>
 				</em>
 			</div>
 		</fieldset>
@@ -272,7 +248,7 @@ include('include/head.php');
 			</ul>
 
 			<div class="field_slide-wrap js-field_slide-wrap">
-				<h3>Ваша деятельность за последнии 10 лет</h3>
+				<h3>Ваша деятельность за последние 10 лет</h3>
 
 				<h4>Виды деятельности</h4>
 
