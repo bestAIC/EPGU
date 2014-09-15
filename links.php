@@ -237,7 +237,7 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_postanovka_na_registraciu.php">Постановка на регистрацию</a></td>
 						<td><a href="mobile_postanovka_na_registraciu.php">mobile_postanovka_na_registraciu.php</a></td>
-					</tr>
+					</tr>					
 					<tr>
 						<td colspan="2">
 							<h4>Здоровье и семья</h4>
@@ -261,7 +261,14 @@ include('include/mobile_head.php');
 							<p><a href="mobile_detskiy_sad_proverka_ocheredy_approve.php">mobile_detskiy_sad_proverka_ocheredy_approve.php</a></p>
 						</td>
 					</tr>
-
+					<tr>
+						<td>
+							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">Выдача сертификата на материнский (семейный) капитал</a></p>
+						</td>
+						<td>
+							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">mobile_vidacha_sertifikata_na_matcapital.php</a></p>
+						</td>
+					</tr>
 					<!-- Типовые элементы - моб -->
 					<tr>
 						<td colspan="2">
@@ -283,14 +290,6 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="mobile_obratnaya_svyaz.php">Обратная связь</a></td>
 						<td><a href="mobile_obratnaya_svyaz.php">mobile_obratnaya_svyaz.php</a></td>
-					</tr>
-					<tr>
-						<td>
-							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">Выдача сертификата на материнский (семейный) капитал</a></p>
-						</td>
-						<td>
-							<p><a href="mobile_vidacha_sertifikata_na_matcapital.php">mobile_vidacha_sertifikata_na_matcapital.php</a></p>
-						</td>
 					</tr>
 				</tbody>
 			</table>
