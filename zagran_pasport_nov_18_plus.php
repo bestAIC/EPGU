@@ -26,12 +26,12 @@ include('include/head.php');
 			</div></i>
 			</span></h3>
 			<em class="wrapper l_33"><input type="text" placeholder="Фамилия" value="Константинопольский" class="big" disabled="disabled"/>
-			</em><em class="wrapper l_33"><input type="text" placeholder="Имя" value="Александра" class="big" disabled="disabled"/>
-			</em><em class="wrapper l_33"><input type="text" placeholder="Отчество" value="Константиновна" class="big" disabled="disabled"/></em><br/>
+			</em><em class="wrapper l_33"><input type="text" placeholder="Имя" value="Александр" class="big" disabled="disabled"/>
+			</em><em class="wrapper l_33"><input type="text" placeholder="Отчество" value="Иванович" class="big" disabled="disabled"/></em><br/>
 			
 			<em class="wrapper l_33"><input type="text" placeholder="Дата рождения" class="big" value="09.09.1989" disabled="disabled"/>
-			</em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" /><label>Мужской</label>
-			</em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" checked="checked" /><label>Женский</label></em><br/>
+			</em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" checked="checked" /><label>Мужской</label>
+			</em><em class="wrapper l_16"><input type="radio" name="sex_1" disabled="disabled" /><label>Женский</label></em><br/>
 			
 			<em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big" value="alexandra_k@bestmail.ru" disabled="disabled"/>
 			</em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big" value="+7(926) 867 09 09" disabled="disabled"/></em><br/>
@@ -49,19 +49,11 @@ include('include/head.php');
 			<em class="wrapper l_100"><input type="text" placeholder="Кем выдан" value="Отделением УФМС России по Свердловской области в Верхенпышминском районе" class="big" disabled="disabled"/>
 			</em><br/>
 			<em class="wrapper l_66">
-				<select class="select_choice">
-					<option value="0" selected="selected" class="selected_one">Страна рождения</option>
-					<option value="1">Белоруссия</option>
-					<option value="2">Белоруссия</option>
-					<option value="3">Украина</option>
-					<option value="4">Белоруссия</option>
-					<option value="5">Белоруссия</option>
-					<option value="6">Украина</option>
-					<option value="7">Украина</option>
-					<option value="8">Белоруссия</option>
-					<option value="9">Украина</option>
-					<option value="10">Украина</option>
-				</select>
+				<div class="search_inp-block">
+                    <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
+                    <div class="selction_ajax-placeholder"></div>
+                </div>
 			</em>
 			
 			<em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
@@ -131,7 +123,7 @@ include('include/head.php');
 
 		<fieldset class="group_4">
 			<span class="point_num">4</span>
-			<h3>Меняли ли вы когда-либо фамилия, имя или отчество?</h3>
+			<h3>Меняли ли вы когда-либо фамилию, имя или отчество?</h3>
 			
 			<em class="wrapper l_100"><input type="radio" name="type_1" checked="checked" id="p_1"/><label for="p_1">Нет</label></em>
 			
@@ -165,7 +157,7 @@ include('include/head.php');
 			<div class="fields_cover">
 				<em class="wrapper l_100">
                     <div class="search_inp-block">
-                        <input type="search" placeholder="Выберете страну" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                        <input type="search" placeholder="Выберите страну" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
                         <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
                         <div class="selction_ajax-placeholder"></div>
                     </div>
@@ -221,7 +213,7 @@ include('include/head.php');
 			<div class="fields_cover">
 				<em class="wrapper l_100">
                     <div class="search_inp-block">
-                        <input type="search" placeholder="Выберете страну" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
+                        <input type="search" placeholder="Выберите страну" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P" tabindex="-1">
                         <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" tabindex="-1" />
                         <div class="selction_ajax-placeholder"></div>
                     </div>
