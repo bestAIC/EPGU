@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon-epga';
-	src:url('fonts/icomoon-epga.eot?wlp6g2');
-	src:url('fonts/icomoon-epga.eot?#iefixwlp6g2') format('embedded-opentype'),
-		url('fonts/icomoon-epga.woff?wlp6g2') format('woff'),
-		url('fonts/icomoon-epga.ttf?wlp6g2') format('truetype'),
-		url('fonts/icomoon-epga.svg?wlp6g2#icomoon-epga') format('svg');
+	src:url('fonts/icomoon-epga.eot?-d590by');
+	src:url('fonts/icomoon-epga.eot?#iefix-d590by') format('embedded-opentype'),
+		url('fonts/icomoon-epga.woff?-d590by') format('woff'),
+		url('fonts/icomoon-epga.ttf?-d590by') format('truetype'),
+		url('fonts/icomoon-epga.svg?-d590by#icomoon-epga') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -241,4 +241,46 @@
 }
 .icon-svg73:before {
 	content: "\69";
+}
+.icon-svg74:before {
+	content: "\6a";
+}
+.icon-svg75:before {
+	content: "\6b";
+}
+.icon-svg76:before {
+	content: "\6c";
+}
+.icon-svg77:before {
+	content: "\6d";
+}
+.icon-svg78:before {
+	content: "\6e";
+}
+.icon-svg79:before {
+	content: "\6f";
+}
+.icon-svg80:before {
+	content: "\70";
+}
+.icon-svg81:before {
+	content: "\71";
+}
+.icon-svg82:before {
+	content: "\72";
+}
+.icon-svg83:before {
+	content: "\73";
+}
+.icon-svg84:before {
+	content: "\74";
+}
+.icon-svg85:before {
+	content: "\75";
+}
+.icon-svg86:before {
+	content: "\76";
+}
+.icon-svg87:before {
+	content: "\77";
 }
