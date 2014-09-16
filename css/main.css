@@ -528,7 +528,10 @@ float: right;
 
 LABEL .icomoon {
   color:#dbe2e6;
-  font-size:50px;  
+}
+
+LABEL .icomoon.on {
+  color:#6ca9d2;
 }
 
 #content .man,

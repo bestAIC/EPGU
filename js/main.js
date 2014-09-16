@@ -32,6 +32,14 @@ function SForm() {
       selectSearchLimit: 13,
       selectSmartPositioning: false
     });
+
+    $('.radio_ico-list .jq-checkbox').on('click', function() {
+      if ($(this).hasClass('checked')){
+        $(this).parent().find('.icomoon').addClass('on');
+      } else {
+        $(this).parent().find('.icomoon').removeClass('on');
+      }
+    });
     
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});
