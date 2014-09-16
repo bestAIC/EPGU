@@ -86,14 +86,16 @@ include('include/head.php');
 				<span class="point_num">4</span>
 				<h3>Пройдена подготовка и планируется получение категории</h3>
 
-				<em class="wrapper l_100"><input type="checkbox" id="f_10"/><label for="f_10" class="i_moto"><span class="icomoon">j</span> A</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_11"/><label for="f_11" class="i_car"><span class="icomoon">k</span> B</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_12"/><label for="f_12" class="i_truck"><span class="icomoon">l</span> C</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_13"/><label for="f_13" class="i_bus"><span class="icomoon">m</span> D</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_14"/><label for="f_14" class="i_bigtruck"><span class="icomoon">n</span> E</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_15"/><label for="f_15" class="i_e_car"><span class="icomoon">o</span> E k B</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_16"/><label for="f_16" class="i_e_truck"><span class="icomoon">p</span> E k C</label></em>
-				<em class="wrapper l_100"><input type="checkbox" id="f_17"/><label for="f_17" class="i_e_bus"><span class="icomoon">q</span> E k D</label></em>
+				<div class="radio_ico-list">
+					<em class="wrapper l_100"><input type="checkbox" id="f_10"/><label for="f_10" class="i_moto"><span class="icomoon fsz70">j</span> A</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_11"/><label for="f_11" class="i_car"><span class="icomoon fsz70">k</span> B</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_12"/><label for="f_12" class="i_truck"><span class="icomoon fsz70">l</span> C</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_13"/><label for="f_13" class="i_bus"><span class="icomoon fsz80">m</span> D</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_14"/><label for="f_14" class="i_bigtruck"><span class="icomoon fsz100">n</span> E</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_15"/><label for="f_15" class="i_e_car"><span class="icomoon fsz100">o</span> E k B</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_16"/><label for="f_16" class="i_e_truck"><span class="icomoon fsz100">p</span> E k C</label></em>
+					<em class="wrapper l_100"><input type="checkbox" id="f_17"/><label for="f_17" class="i_e_bus"><span class="icomoon fsz100">q</span> E k D</label></em>
+				</div>
 			</fieldset>
 
 			<fieldset class="group_5">

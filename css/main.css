@@ -3377,4 +3377,32 @@ input[type="submit"].styler[disabled] {
 }
 /* file_uploader */
 
+/* radio_ico-list */
+
+.radio_ico-list .jq-checkbox{
+  float: none;
+  vertical-align: top;
+  margin-top: 12px;
+}
+.radio_ico-list label{
+  width: 90%;
+  display: inline-block;
+}
+.radio_ico-list .icomoon{
+  line-height: 40px; 
+  margin-right: 10px;
+}
+
+.radio_ico-list .fsz70{
+  font-size: 70px;
+}
+.radio_ico-list .fsz80{
+  font-size: 80px;
+  margin-left: -4px;
+}
+.radio_ico-list .fsz100{
+  font-size: 100px;
+}
+/* /radio_ico-list */
+
 
