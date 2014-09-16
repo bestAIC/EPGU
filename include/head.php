@@ -57,7 +57,9 @@
   <? if ($pagename == 'gibdd_shtrafy') { ?>
       <div id="wrap" class="gibdd_shtrafy">
   <? } else if ($pagename == 'gibdd_ekzamen') { ?>
-      <div id="wrap" class="gibdd_ekzamen"> 
+      <div id="wrap" class="gibdd_ekzamen">
+  <? } else if ($pagename == 'gibdd_poluchenie_udostovereniya') { ?>
+      <div id="wrap" class="gibdd_poluchenie_udostovereniya">        
   <? } else if ($pagename == 'zayavlenie_vydacha_pensii') { ?>
       <div id="wrap" class="zayavlenie_vydacha_pensii">             
   <? } else if ($pagename == 'oplata_uniteller') { ?> 
@@ -146,7 +148,7 @@
             </li>                                      
           </ul>      
         </div>
-        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'gibdd_ekzamen' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller' || $pagename == 'zayavlenie_vydacha_pensii') { ?>
+        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'gibdd_ekzamen' || $pagename == 'gibdd_poluchenie_udostovereniya' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller' || $pagename == 'zayavlenie_vydacha_pensii') { ?>
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">

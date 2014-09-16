@@ -9,7 +9,7 @@ IMG {max-width:100%; height:auto;vertical-align: bottom;}
 A {text-decoration:none; color:#0173c1;}
 A:hover {color:#013e83;}
 P {line-height:1.5em;}
-UL, LI {list-style-type:none;}
+UL, UL LI {list-style-type:none;}
 EM {font-style:normal;}
 
 /* Fonts */
@@ -68,8 +68,8 @@ SPAN.icomoon{
     vertical-align:middle;
 }
 
-/*Iterant class*/
 
+/*Iterant class*/
 .clear:after {
   content:' ';
   display:block;
@@ -132,6 +132,12 @@ SPAN.icomoon{
   font-size: 16px;
   line-height: 20px;
   color: #535B63;
+}
+
+OL LI  {
+  margin:0 0 20px 24px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 /* Popup */ 
@@ -520,6 +526,30 @@ float: right;
   border-bottom:1px solid #dbe2e6;
 }
 
+LABEL .icomoon {
+  color:#dbe2e6;
+  font-size:50px;  
+}
+
+#content .man,
+#content .woman {
+  padding:0 0 0 65px;  
+}
+
+#content .man .icomoon {
+  font-size:50px;
+  position: absolute;
+  top:-18px;
+  left:18px;
+}
+
+#content .woman .icomoon {
+  font-size:50px;
+  position: absolute;
+  top:-18px;
+  left:18px;
+}
+
 #content .title IMG,
 #content .title SPAN.icomoon {
     position:absolute;
@@ -546,12 +576,49 @@ float: right;
 
 #content .title H1 {
   font:40px 'etelka_thinregular';
-  margin:0.35em 0 0 0;
+  /*margin:0.35em 0 0 0;*/
 }
 
 #content .title H2 {
   font:20px 'etelka_thinregular';
-  margin:0.1em 0 0 0;  
+  /*margin:0.1em 0 0 0;*/  
+}
+
+#content .intro {
+  padding: 0 10px 40px 65px;
+  font-size:18px;
+  color:#535b63;
+}
+
+#content .intro H2 {
+  font:30px 'etelka_thinregular';
+  margin: 40px 0 20px 0;
+}
+
+#content .close {
+  position: relative;
+  font:14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  cursor: pointer;
+  margin:0 20px 0 0;
+}
+
+#content .close:after {
+  position: absolute;
+  width:10px;
+  height:10px;
+  font-size:9px;
+  top:4px;
+  right:-20px;
+  font-family: "icomoon-epga";
+  content:'(';
+}
+
+#content .group_title {
+  font:30px 'etelka_thinregular';
+  padding: 40px 0px 20px 65px;
+  border-top:1px solid #dbe2e6;
+  margin: -1px 0 0 0;
+  position: relative;
 }
 
 #content .info_column {
@@ -691,10 +758,10 @@ float: right;
 .main FIELDSET {
   position:relative;
   display:block;
-  padding:40px 10px 25px 65px;
+  padding:0px 10px 25px 65px;
   background:#fff;
   /*margin:0 0 40px 0;*/
-  border-bottom:1px solid #dbe2e6;    
+ /*border-bottom:1px solid #dbe2e6;*/    
 }
 
 .main FIELDSET:last-of-type {
@@ -991,14 +1058,14 @@ float: right;
 H4 {
   font:bold 14px 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   margin:10px 20px 20px 0;
-  border-bottom:1px solid #dbe2e6;  
+  /*border-bottom:1px solid #dbe2e6;*/  
   padding:0 0 10px 0;    
 }
 
 .fields_cover H4 {
   padding:10px 0;
   margin:0px 20px 20px 0;
-  border-bottom:1px solid #c0e8ff;        
+  /*border-bottom:1px solid #c0e8ff;*/        
 }
 
 .cover_info_title {

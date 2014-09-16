@@ -282,6 +282,10 @@ function HideShow(){
     }    
   
   });
+
+  $('.intro .close').click(function(){
+    $(this).parent().parent().slideToggle();  
+  });  
   
   $('.select_choice').change(function(){
     if($('#new_auto').attr('selected') == 'selected'){

@@ -27,6 +27,10 @@ include('include/mobile_head.php');
 						<td><a href="gibdd_ekzamen.php">gibdd_ekzamen.php</a></td>
 					</tr>
 					<tr>
+						<td><a href="gibdd_poluchenie_udostovereniya.php">Получение водительского удостоверения</a></td>
+						<td><a href="gibdd_poluchenie_udostovereniya.php">gibdd_poluchenie_udostovereniya.php</a></td>
+					</tr>					
+					<tr>
 						<td colspan="2">
 							<h4>Налоги и задолженности</h4>
 						</td>
