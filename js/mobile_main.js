@@ -1,3 +1,7 @@
+/* Author:
+AIC http://aic.ru/
+*/
+
 // Inits
 $(document).ready(function() {
   MPopUp(); 

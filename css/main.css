@@ -2910,6 +2910,9 @@ input[type="submit"].styler[disabled] {
   margin: 8px 0;
   line-height: 1;
 }
+.links_html h4{
+  border-bottom: 1px solid #dbe2e6;
+}
 
 /* /links html */
 

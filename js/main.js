@@ -1,4 +1,7 @@
-// Inits
+/* Author:
+AIC http://aic.ru/
+*/
+
 $(document).ready(function() {
   SForm(); // стилизация элементов форм 
   PopUp(); 
@@ -23,7 +26,7 @@ $(document).ready(function() {
   }
 });
 
-// Styler
+// Form Styler
 function SForm() {
 
   $(function() {
@@ -721,6 +724,7 @@ function fileUpload(){
           downloadTemplateId: null,
           bitrateInterval: 0,
           downloadTemplate: function (o) {
+            console.time('Benchmarks');
             var cont = $();
             $.each(o.files, function (index, file) {
                 var contRow = $('<div class="template-download fade">' +
@@ -736,13 +740,16 @@ function fileUpload(){
                     contRow.find('.error').text(file.error);
                 } else {
                     contRow.find('.name').append($('<b></b>').text(file.name));
+                    console.time('Delete Benchmarks');
                     contRow.find('.delete button')
                         .attr('data-type', file.delete_type)
                         .attr('data-url', file.delete_url);
+                    console.timeEnd('Delete Benchmarks');
                 }
                 cont = cont.add(contRow);
             });
-            return cont
+            console.timeEnd('Benchmarks');
+            return cont;
           }
     });
 

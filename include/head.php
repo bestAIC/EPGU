@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
 <!-- Bootstrap styles -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css"/>
+<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css"/> -->
 
 <script type="text/javascript" src="js/device.min.js"></script>
 <!-- <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> -->
@@ -34,9 +34,11 @@
 <!-- The basic File Upload plugin -->
 <script src="js/plugins/jquery.fileupload.js"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
-<script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
-<!-- blueimp Gallery script -->
-<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script>
+  var script = document.createElement('script');
+  script.src = "http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js";
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
 <!-- The File Upload processing plugin -->
 <script src="js/plugins/jquery.fileupload-process.js"></script>
 <!-- DropZone -->
