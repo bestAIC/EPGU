@@ -3,6 +3,7 @@ AIC http://aic.ru/
 */
 
 $(document).ready(function() {
+  breadCrumbsWidth();
   SForm(); // стилизация элементов форм 
   PopUp(); 
   HideShow();
@@ -25,6 +26,16 @@ $(document).ready(function() {
     fileUpload();
   }
 });
+
+function breadCrumbsWidth(){
+  var cont = $('#header'),
+      item = $('ul.breadcrumbs li:not(.first, .last)', cont);
+      item.each(function(){
+        if($(this).width() >= 180){
+          $(this).addClass('overflow')
+        }
+      })     
+}
 
 // Form Styler
 function SForm() {

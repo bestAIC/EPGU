@@ -455,7 +455,17 @@ float: right;
 #header .breadcrumbs LI {
   display:inline-block;
   vertical-align: bottom;
+  position: relative;
 } 
+#header .breadcrumbs LI.overflow:before {
+  content: '...';
+  display: inline-block;
+  color: #485158;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  line-height: 45px;
+}
 #header .breadcrumbs LI:after{
     content: 'I';
     font: 43px 'icomoon-epga';
@@ -474,10 +484,10 @@ float: right;
 #header .breadcrumbs LI SPAN {
   display:inline-block;
   height:45px;
-  line-height:45px;
-  padding:0 30px 0 15px;    
+  line-height:46px;
+  padding:0 0px 0 15px;    
   position:relative;
-  font-size:12px;       
+  font-size:13px;
 }
 #header .breadcrumbs LI SPAN.icomoon{
     font-size: 20px;
@@ -486,15 +496,21 @@ float: right;
     color: #565656;
 }
 #header .breadcrumbs LI A {
-  color:#485158;      
+  color:#485158;
+  max-width: 167px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  margin-right: 20px;
 }
 
 #header .breadcrumbs LI SPAN {
-  color:#999;     
+  color:#999;
 }
 
 #header .breadcrumbs .first A {
-  padding:0 30px 0 30px;   
+  padding:0 20px 0 30px;   
+  margin-right: 0;
 }
 
 #header .breadcrumbs .first IMG {
@@ -591,11 +607,16 @@ LABEL .icomoon.on {
   padding: 0 10px 40px 65px;
   font-size:18px;
   color:#535b63;
+  border-bottom: 1px solid #dbe2e6;
+}
+#content .intro + .group_title {
+  border-top: none;
 }
 
 #content .intro H2 {
   font:30px 'etelka_thinregular';
-  margin: 40px 0 20px 0;
+  margin: 0;
+  padding: 40px 0 20px 0;
 }
 
 #content .close {
