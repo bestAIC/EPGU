@@ -465,6 +465,7 @@ float: right;
   top: 0;
   right: 20px;
   line-height: 45px;
+  font-size: 13px;
 }
 #header .breadcrumbs LI:after{
     content: 'I';
@@ -487,7 +488,7 @@ float: right;
   line-height:46px;
   padding:0 0px 0 15px;    
   position:relative;
-  font-size:13px;
+  font-size:12px;
 }
 #header .breadcrumbs LI SPAN.icomoon{
     font-size: 20px;
