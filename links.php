@@ -29,7 +29,15 @@ include('include/mobile_head.php');
 					<tr>
 						<td><a href="gibdd_poluchenie_udostovereniya.php">Получение водительского удостоверения</a></td>
 						<td><a href="gibdd_poluchenie_udostovereniya.php">gibdd_poluchenie_udostovereniya.php</a></td>
-					</tr>					
+					</tr>
+					<tr>
+						<td><a href="gibdd_poluchenie_mejdunarodnogo_udostovereniya.php">Получение международного водительского удостоверения</a></td>
+						<td><a href="gibdd_poluchenie_mejdunarodnogo_udostovereniya.php">gibdd_poluchenie_mejdunarodnogo_udostovereniya.php</a></td>
+					</tr>
+					<tr>
+						<td><a href="gibdd_postanovka_na_uchet_avto.php">Постановка на учет автотранспортного средства</a></td>
+						<td><a href="gibdd_postanovka_na_uchet_avto.php">gibdd_postanovka_na_uchet_avto.php</a></td>
+					</tr>																
 					<tr>
 						<td colspan="2">
 							<h4>Налоги и задолженности</h4>
@@ -52,6 +60,10 @@ include('include/mobile_head.php');
 							<h4>Документы и регистрация</h4>
 						</td>
 					</tr>
+					<tr>
+						<td><a href="sanitarnoe_zakluchenie.php">Получение санитарно-эпидемиологического заключения на вид деятельности</a></td>
+						<td><a href="sanitarnoe_zakluchenie.php">sanitarnoe_zakluchenie.php</a></td>
+					</tr>					
 					<tr>
 						<td>
 							<p><a href="zamena_psporta_pol.php">Замена паспорта гражданина Российской Федерации (в связи с изменением пола)</a></p>

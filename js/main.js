@@ -40,6 +40,11 @@ function SForm() {
         $(this).parent().find('.icomoon').removeClass('on');
       }
     });
+
+    $('.radio_ico-list .jq-radio').on('click', function() {
+        $(this).parent().parent().find('.icomoon').removeClass('on');
+        $(this).parent().find('.icomoon').addClass('on');
+    });    
     
     /*маска ввода даты*/    
     $(".format_date").mask("99.99.9999",{placeholder:"_"});

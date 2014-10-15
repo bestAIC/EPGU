@@ -59,7 +59,11 @@
   <? } else if ($pagename == 'gibdd_ekzamen') { ?>
       <div id="wrap" class="gibdd_ekzamen">
   <? } else if ($pagename == 'gibdd_poluchenie_udostovereniya') { ?>
-      <div id="wrap" class="gibdd_poluchenie_udostovereniya">        
+      <div id="wrap" class="gibdd_poluchenie_udostovereniya"> 
+  <? } else if ($pagename == 'gibdd_poluchenie_mejdunarodnogo_udostovereniya') { ?>
+      <div id="wrap" class="gibdd_poluchenie_mejdunarodnogo_udostovereniya"> 
+  <? } else if ($pagename == 'gibdd_postanovka_na_uchet_avto') { ?>
+      <div id="wrap" class="gibdd_postanovka_na_uchet_avto">                   
   <? } else if ($pagename == 'zayavlenie_vydacha_pensii') { ?>
       <div id="wrap" class="zayavlenie_vydacha_pensii">             
   <? } else if ($pagename == 'oplata_uniteller') { ?> 
@@ -93,7 +97,9 @@
   <? } else if ($pagename == 'registraciya_rozhdeniya') { ?> 
       <div id="wrap" class="registraciya_rozhdeniya">            
   <? } else if ($pagename == 'egrn') { ?> 
-      <div id="wrap" class="egrn">              
+      <div id="wrap" class="egrn"> 
+  <? } else if ($pagename == 'sanitarnoe_zakluchenie') { ?> 
+      <div id="wrap" class="sanitarnoe_zakluchenie">                    
   <? } else if ($pagename == '404') { ?>
       <div id="wrap" class="page_404">
   <? } else { ?>
@@ -148,7 +154,7 @@
             </li>                                      
           </ul>      
         </div>
-        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'gibdd_ekzamen' || $pagename == 'gibdd_poluchenie_udostovereniya' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller' || $pagename == 'zayavlenie_vydacha_pensii') { ?>
+        <? if($pagename == 'gibdd_shtrafy' || $pagename == 'gibdd_ekzamen' || $pagename == 'gibdd_poluchenie_udostovereniya' || $pagename == 'gibdd_poluchenie_mejdunarodnogo_udostovereniya' || $pagename == 'gibdd_postanovka_na_uchet_avto' || $pagename == 'ostavit_otzyv' || $pagename == 'oplata_uniteller' || $pagename == 'zayavlenie_vydacha_pensii') { ?>
             <div class="bottom type_1">
         <? } else if ($pagename == 'nalogovaya_zadoljennost' || $pagename == 'proverka_sudebnyh_zadoljennostey') { ?> 
             <div class="bottom type_2">
@@ -156,7 +162,7 @@
             <div class="bottom type_3">
         <? } else if ($pagename == 'detskiy_sad' || $pagename == "mat_capital" || $pagename == "registraciya_braka" || $pagename == "rastorjenie_braka" || $pagename == "registraciya_rozhdeniya") { ?> 
             <div class="bottom type_4">
-        <? } else if ($pagename == 'egrn') { ?> 
+        <? } else if ($pagename == 'egrn' || $pagename == 'sanitarnoe_zakluchenie') { ?> 
             <div class="bottom type_5">                          
         <? } else if ($pagename == '404') { ?>
             <div class="bottom type_non">

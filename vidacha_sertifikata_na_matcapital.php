@@ -6,19 +6,20 @@ include('include/head.php');
 
                 <ul class="breadcrumbs">
                     <li class="first"><a href="#0" tabindex="-1"><span class="icomoon">7</span>Главная</a></li>
-                    <li class="last"><span>Заявление о выдаче или замене паспорта</span></li>
+                    <li class="last"><span>Подача заявления о выдаче сертификата</span></li>
                 </ul>
             </div>
         </div>
 
         <div id="content">
             <div class="title">
-                <span class="icomoon color_4">]</span>
-                <h1>Выдача сертификата на материнский (семейный) капитал</h1>
                 <h2>Подача заявления о выдаче сертификата</h2>
+                <span class="icomoon color_4">]</span><h1>Выдача сертификата на материнский (семейный) капитал</h1>
             </div>
 
         <form class="main clear">
+
+            <h2 class="group_title">Ваши данные</h2> 
               
             <fieldset class="group_1">
                 <span class="point_num">1</span>
@@ -39,7 +40,7 @@ include('include/head.php');
             <div class="switcher_n">
                 <fieldset class="group_2">
                     <span class="point_num">2</span>            
-                    <h3>Ваши персональные данные <span class="fr">
+                    <h3>Персональные данные <span class="fr">
                     <a href="#0" tabindex="-1">Изменить данные</a> <i class="q">?
                     <div class="bg_c3 q_hover">
                         <h4>Обратите внимание</h4>
@@ -60,7 +61,7 @@ include('include/head.php');
 
                 <fieldset class="group_3">
                     <span class="point_num">3</span>
-                    <h3>Ваши паспортные данные <span class="fr">
+                    <h3>Паспортные данные <span class="fr">
                     <a href="#0" tabindex="-1">Изменить данные</a> <i class="q">?
                     <div class="bg_c3 q_hover">
                         <h4>Обратите внимание</h4>
@@ -144,6 +145,8 @@ include('include/head.php');
                     </em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" />
                     </em><em class="wrapper l_16"><input type="text" placeholder="Квартира" class="big" /></em>
                 </fieldset>
+
+                <h2 class="group_title">Данные о ваших детях</h2> 
 
                 <fieldset class="group_6">
                     <span class="point_num">6</span>

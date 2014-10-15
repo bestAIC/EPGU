@@ -13,11 +13,19 @@ include('include/head.php');
 
       <div id="content">
         <div class="title">
+          <h2>Налоговый учёт физических лиц и получение ИНН</h2>
           <span class="icomoon color_5">\</span><h1>Подача заявления физического лица о постановке на учёт в налоговом органе на территории РФ</h1>
         </div>
         
           
         <form class="main clear">
+
+          <div class="intro">
+            <h2>Приветственный текст<b class="close fr">Скрыть</b></h2>
+            <p>Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.</p>
+          </div>
+
+          <h2 class="group_title">Подача заявления</h2>        
               
           <fieldset class="group_1">         
             <span class="point_num">1</span>
@@ -25,10 +33,14 @@ include('include/head.php');
             <em class="wrapper l_100"><input type="radio" class="switcher_group" name="g_1" data-for="v_1" id="f_1" checked="checked" /><label for="f_1">Лично</label></em>                          
             <em class="wrapper l_100"><input type="radio" class="switcher_group" name="g_1" data-for="v_2" id="f_2"/><label for="f_2">Я - представитель заявителя</label></em>                                                                
           </fieldset>
-          <div class="switcher_n">           
+
+          <div class="switcher_n">
+
+            <h2 class="group_title">Ваши данные</h2>
+
             <fieldset class="group_2">                   
               <span class="point_num">2</span>
-              <h3>Ваши персональные данные <span class="fr">
+              <h3>Персональные данные <span class="fr">
               <a href="#">Изменить данные</a> <i class="q">?
                   <div class="bg_c3 q_hover">
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
@@ -50,38 +62,22 @@ include('include/head.php');
               </em>                                 
             </fieldset>
 
-            <fieldset class="group_3">                     
+            <fieldset class="group_3">
               <span class="point_num">3</span>
-              <h3>Меняли ли вы фамилию, имя или отчество после 01.01.1996?</h3>          
-              <em class="wrapper l_100"><input type="radio" name="g_22" id="f_3" /><label for="f_3">Да</label></em>
-              <div class="fields_cover">
-                <em class="wrapper l_50"><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
-              </div>                                      
-              <em class="wrapper l_100"><input type="radio" name="g_22" id="f_4" checked="checked" /><label for="f_4">Нет</label></em>                                    
-            </fieldset>          
-            
-            <fieldset class="group_4">                     
-              <span class="point_num">4</span>
-              <h3>Документ, удостоверяющий вашу личность</h3>
-              <em class="wrapper l_50">
-                <select class="select_choice">
-                  <option value="0" selected="selected" class="selected_one">Тип документа</option>                
-                  <option>Паспорт РФ</option>
-                </select>                  
-              </em><br/>
-
+              <h3>Паспортные данные <span class="fr">
+              <a href="#">Изменить данные</a> <i class="q">?
+              <div class="bg_c3 q_hover">
+                <p>Изменение личных данных будет происходить в личном кабинете.</p>
+              </div></i>
+              </span></h3>
+              
               <em class="wrapper l_16"><input type="text" placeholder="Серия" value="1100" class="big" disabled="disabled"/>
               </em><em class="wrapper l_25"><input type="text" placeholder="Номер" value="1100111000" class="big" disabled="disabled"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>            
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
+              </em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" value="111-000" class="big" disabled="disabled"/>
+              </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big" value="01.01.2014" disabled="disabled"/></em><br/>
               
-              <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" value="Отделением УФМС России" disabled="disabled"/></em>
+              <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" disabled="disabled" />
+              </em><br/>
 
               <em class="wrapper l_66">
                 <div class="search_inp-block">
@@ -89,15 +85,26 @@ include('include/head.php');
                   <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
                   <div class="selction_ajax-placeholder"></div>
                 </div>
-              </em><em class="wrapper l_33">
-                <select class="select_choice">
-                  <option value="0" selected="selected" class="selected_one">Код страны</option>                
-                  <option>007</option>
-                </select>
               </em>
-
+              
               <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
-            </fieldset>
+            </fieldset>           
+
+            <fieldset class="group_4">                     
+              <span class="point_num">4</span>
+              <h3>Меняли ли вы фамилию, имя или отчество после 01.01.1996?</h3>          
+              <em class="wrapper l_100"><input type="radio" name="g_22" id="f_3" /><label for="f_3">Да</label></em>
+              <div class="fields_cover">
+                <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">Необязательно</i>
+                </em><br/>
+                <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
+              </div>                                      
+              <em class="wrapper l_100"><input type="radio" name="g_22" id="f_4" checked="checked" /><label for="f_4">Нет</label></em>                                    
+            </fieldset>          
+            
+            <h2 class="group_title">Сведения о месте жительства</h2>
             
             <fieldset class="group_5">                      
               <span class="point_num">5</span>
@@ -106,10 +113,26 @@ include('include/head.php');
               
               <em class="wrapper l_100"><input type="radio" name="g_10" id="f_37" /><label for="f_37">По месту временного нахождения</label></em>                        
               <div class="fields_cover">
-                <em class="wrapper l_100"><input type="text" placeholder="Регион" class="big" /></em><br/>
-                
-                <em class="wrapper l_50"><input type="text" placeholder="Район" class="big" />
-                </em><em class="wrapper l_50"><input type="text" placeholder="Населенный пункт" class="big" /></em><br/>
+                <em class="wrapper l_100">
+                  <div class="search_inp-block">
+                    <input type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em><br/>               
+                <em class="wrapper l_50">
+                  <div class="search_inp-block">
+                    <input type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em><em class="wrapper l_50">                  
+                  <div class="search_inp-block">
+                    <input type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em><br/>
                 
                 <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
                 </em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
@@ -151,11 +174,32 @@ include('include/head.php');
               <div class="fields_cover">
                 <em class="wrapper l_100">
                   <div class="search_inp-block">
-                    <input type="search" placeholder="Выберете регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" placeholder="Регион" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
                     <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
                     <div class="selction_ajax-placeholder"></div>
                   </div>
-                </em>
+                </em><br/>               
+                <em class="wrapper l_50">
+                  <div class="search_inp-block">
+                    <input type="search" placeholder="Район" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em><em class="wrapper l_50">                  
+                  <div class="search_inp-block">
+                    <input type="search" placeholder="Населенный пункт" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                    <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                    <div class="selction_ajax-placeholder"></div>
+                  </div>
+                </em><br/>
+                
+                <em class="wrapper l_50"><input type="text" placeholder="Улица" class="big" />
+                </em><em class="wrapper l_16"><input type="text" placeholder="Дом" class="big" />
+                </em><em class="wrapper l_16"><input type="text" placeholder="Корпус" class="big" /><i class="not">необязательно</i>
+                </em><em class="wrapper l_16"><input type="text" placeholder="Кв-ра" class="big" /><i class="not">необязательно</i></em><br/>
+
+                <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>  
+
               </div>       
               <em class="wrapper l_100"><input type="radio" name="g_5" id="f_28" checked="checked"/><label for="f_28">Нет</label></em>                                            
             </fieldset>
@@ -163,29 +207,13 @@ include('include/head.php');
 
 
 
-          <div class="switcher_n"> 
+          <div class="switcher_n">
+
+            <h2 class="group_title">Ваши данные</h2>
+
             <fieldset class="group_2">                   
               <span class="point_num">2</span>
-              <h3>Персональные данные получателя услуги</h3>  
-                        
-              <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
-              
-              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
-              </em><em class="wrapper l_16"><input type="radio" name="sex_2_1" checked="checked" /><label>Мужской</label>
-              </em><em class="wrapper l_16"><input type="radio" name="sex_2_1" /><label>Женский</label></em><br/>            
-              
-              <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big"/>
-              </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big"/></em><br/>
-
-              <em class="wrapper l_33"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
-              </em>                                 
-            </fieldset>
-
-            <fieldset class="group_3">                   
-              <span class="point_num">3</span>
-              <h3>Ваши персональные данные <span class="fr">
+              <h3>Персональные данные <span class="fr">
               <a href="#">Изменить данные</a> <i class="q">?
                   <div class="bg_c3 q_hover">
                     <p>Изменение личных данных будет происходить в личном кабинете.</p>
@@ -205,38 +233,15 @@ include('include/head.php');
 
               <em class="wrapper l_33"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
               </em>                                 
-            </fieldset>
+            </fieldset> 
 
-            <fieldset class="group_4">                     
-              <span class="point_num">4</span>
-              <h3>Менял ли получатель фамилию, имя или отчество после 01.01.1996?</h3>          
-              <em class="wrapper l_100"><input type="radio" name="g_23" id="f_3_1" /><label for="f_3_1">Да</label></em>
-              <div class="fields_cover">
-                <em class="wrapper l_50"><input type="text" placeholder="Прежняя фамилия" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее имя" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <em class="wrapper l_50"><input type="text" placeholder="Прежнее отчество" class="big" /><i class="not">Необязательно</i>
-                </em><em class="wrapper l_25"><input type="text" placeholder="Год изменения" class="big" /><i class="not">Необязательно</i></em><br/>
-                <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
-              </div>                                      
-              <em class="wrapper l_100"><input type="radio" name="g_23" id="f_4_1" checked="checked" /><label for="f_4_1">Нет</label></em>                                    
-            </fieldset>          
-            
-            <fieldset class="group_5">                     
-              <span class="point_num">5</span>
-              <h3>Документ, удостоверяющий личность получателя услуги</h3>
-              <em class="wrapper l_50">
-                <select class="select_choice">
-                  <option value="0" selected="selected" class="selected_one">Тип документа</option>                
-                  <option>Паспорт РФ</option>
-                </select>                  
-              </em><br/>
-
+            <fieldset class="group_3">                     
+              <span class="point_num">3</span>
+              <h3>Сведения о документе, подтверждающем полномочия представителя</h3>
+              <em class="wrapper l_50"><input type="text" placeholder="Документ" class="big" /></em>
               <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big"/>
-              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
-              </em><em class="wrapper l_33"><input type="text" placeholder="Код подразд-я" class="big"/>            
-              </em><em class="wrapper l_25"><input type="text" placeholder="Дата выдачи" class="big" /></em><br/>
+              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />          
+              </em><br/>
               
               <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big"/></em>
 
@@ -252,12 +257,71 @@ include('include/head.php');
                   <option>007</option>
                 </select>
               </em>
-
               <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
             </fieldset>
-            
-            <fieldset class="group_6">                      
+
+            <h2 class="group_title">Сведения о получателе услуги</h2>                        
+
+            <fieldset class="group_4">                   
+              <span class="point_num">4</span>
+              <h3>Персональные данные получателя услуги</h3>  
+                        
+              <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /></em><br/>
+              
+              <em class="wrapper l_25"><input type="text" placeholder="Дата рождения" class="big" />
+              </em><em class="wrapper l_16"><input type="radio" name="sex_2_1" checked="checked" /><label>Мужской</label>
+              </em><em class="wrapper l_16"><input type="radio" name="sex_2_1" /><label>Женский</label></em><br/>            
+              
+              <em class="wrapper l_50"><input type="text" placeholder="Адрес электронной почты" class="big"/>
+              </em><em class="wrapper l_33"><input type="text" placeholder="Контактный телефон" class="big"/></em><br/>
+
+              <em class="wrapper l_33"><input type="text" placeholder="ИНН" class="big" /><i class="not">Необязательно</i>
+              </em>                                 
+            </fieldset>
+
+            <fieldset class="group_5">
+              <span class="point_num">5</span>
+              <h3>Паспортные данные</h3>
+              
+              <em class="wrapper l_16"><input type="text" placeholder="Серия" class="big" />
+              </em><em class="wrapper l_25"><input type="text" placeholder="Номер" class="big" />
+              </em><em class="wrapper l_25"><input type="text" placeholder="Код подразд-я" class="big" />
+              </em><em class="wrapper l_33"><input type="text" placeholder="Дата выдачи" class="big"/></em><br/>
+              
+              <em class="wrapper l_100"><input type="text" placeholder="Кем выдан" class="big" />
+              </em><br/>
+
+              <em class="wrapper l_66">
+                <div class="search_inp-block">
+                  <input type="search" placeholder="Страна рождения" name="country" class="big search_inp search_inp-ajax"/><input type="button" class="search_btn" value="P">
+                  <input type="search" name="country" id="#autocomplete-ajax-x" class="big search_inp search_inp-ajax-x" />
+                  <div class="selction_ajax-placeholder"></div>
+                </div>
+              </em>
+              
+              <em class="wrapper l_100"><input type="text" placeholder="Место рождения" class="big" /></em>
+            </fieldset>                       
+
+            <fieldset class="group_6">                     
               <span class="point_num">6</span>
+              <h3>Менял ли получатель фамилию, имя или отчество после 01.01.1996?</h3>          
+              <em class="wrapper l_100"><input type="radio" name="g_22" id="f_3" /><label for="f_3">Да</label></em>
+              <div class="fields_cover">
+                <em class="wrapper l_33"><input type="text" placeholder="Фамилия" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><input type="text" placeholder="Имя" class="big" /><i class="not">Необязательно</i>
+                </em><em class="wrapper l_33"><input type="text" placeholder="Отчество" class="big" /><i class="not">Необязательно</i>
+                </em><br/>
+                <a class="btn white plus" href="#"><span class="icomoon">8</span><b>Добавить данные</b></a>
+              </div>                                      
+              <em class="wrapper l_100"><input type="radio" name="g_22" id="f_4" checked="checked" /><label for="f_4">Нет</label></em>                                    
+            </fieldset> 
+
+            <h2 class="group_title">Сведения о месте жительства</h2>            
+            
+            <fieldset class="group_7">                      
+              <span class="point_num">7</span>
               <h3>Укажите адрес места жительства получателя услуги</h3>          
               <em class="wrapper l_100"><input type="radio" checked="checked" name="g_10_1" id="f_36_1" /><label for="f_36_1">По месту постоянной регистрации, как в паспорте</label></em>           
               
@@ -278,9 +342,9 @@ include('include/head.php');
               </div>                                         
             </fieldset>          
                                 
-            <fieldset class="group_7">                      
-              <span class="point_num">7</span>
-              <h3>Являетесь ли вы гражданином РФ?</h3>          
+            <fieldset class="group_8">                      
+              <span class="point_num">8</span>
+              <h3>Является ли получатель услуги гражданином РФ?</h3>          
               <em class="wrapper l_100"><input type="radio" name="g_3_1" id="f_17_1" checked="checked"/><label for="f_17_1">Да</label></em>        
               <em class="wrapper l_100"><input type="radio" name="g_3_1" id="f_18_1"/><label for="f_18_1">Нет</label></em>
               <div class="fields_cover">
@@ -330,15 +394,16 @@ include('include/head.php');
               <em class="wrapper l_100"><input type="checkbox" checked="checked" id="f_40" /><label for="f_40">Об ответственности за предоставление заведомо ложных сведений,
                либо подложных документов, в&nbsp;соответствии с&nbsp;законодательством Российской Федерации предупрежден</label></em>           
                                                      
-            </fieldset>                                                                                               
-          </div>
-          <span class="fr">
+            </fieldset>  
+
+            <span class="fr">
               <input class="big btn" type="submit" value="Отправить">
-          </span>                     
+            </span>                                                                                              
+          </div>
+                    
                              
         </form>                      
         
-      </div>
 
 <?
 include('include/footer.php');
