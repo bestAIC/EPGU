@@ -93,7 +93,7 @@ include('include/head.php');
                     <h3>Гражданство</h3>
                 
                     <em class="wrapper l_100"><input type="radio" name="g_1_v_1" id="с_1_v_1" checked="checked" /><label for="с_1_v_1">Российской федерации</label></em>
-                    <em class="wrapper l_100 bg_red"><input type="radio"  name="g_1_v_1" id="с_2_v_1"/><label for="с_2_v_1" class="attention_red-lb">Иного государства<span class="attention_red-bl">Внимание<br/>Услуга доступна только для граждан<br/>Российской федерации</span></label>
+                    <em class="wrapper l_100 bg_red"><input type="radio" name="g_1_v_1" id="с_2_v_1"/><label for="с_2_v_1" class="attention_red-lb">Иного государства<span class="attention_red-bl">Внимание<br/>Услуга доступна только для граждан<br/>Российской федерации</span></label>
                     </em>
                     <div class="fields_cover">
                         <em class="wrapper l_75">
