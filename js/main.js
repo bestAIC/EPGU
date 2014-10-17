@@ -25,13 +25,14 @@ $(document).ready(function() {
   if($('.file_uploader-inp').length){
     fileUpload();
   }
+  // attentionClickRed();
 });
 
 function breadCrumbsWidth(){
   var cont = $('#header'),
       item = $('ul.breadcrumbs li:not(.first, .last)', cont);
       item.each(function(){
-        if($(this).width() >= 180){
+        if($(this).width() >= 170){
           $(this).addClass('overflow')
         }
       })     
@@ -70,6 +71,12 @@ function SForm() {
         color: 'black'
       });
     });
+
+    $('.wrapper.bg_red').on('mouseenter', function(){
+      $(this).find('.attention_red-bl').addClass('visible');
+    }).on('mouseleave', function(){
+      $(this).find('.attention_red-bl').removeClass('visible');
+    });
     
      /*выпадающие поля при выборе пункта*/ 
     
@@ -83,14 +90,14 @@ function SForm() {
         root.parent().find('.fields_cover_inner').slideUp();
         if(group.hasClass('fields_cover_inner')){
           group.slideDown();
-        }                                                               
-      }           
+        }        
+      }
     });
 
     $('fieldset .jq-checkbox').on('click', function(){      
       var root = $(this).parent();
       var currentIndex = root.index();              
-      var group = root.parent().children().eq(currentIndex+1);    
+      var group = root.parent().children().eq(currentIndex+1);  
 
       if($(this).hasClass('checked')){
         if(group.hasClass('fields_cover_inner')){
@@ -127,7 +134,7 @@ function SForm() {
           if(group.hasClass('fields_cover')){
             group.slideDown();
           }                                        
-        }                        
+        }
       }
             
       $(this).addClass('lock');             
@@ -190,6 +197,8 @@ function SForm() {
     });      
     
   }); 
+   
+
    
 
 }
