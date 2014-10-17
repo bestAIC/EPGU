@@ -71,12 +71,6 @@ function SForm() {
         color: 'black'
       });
     });
-
-    $('.wrapper.bg_red').on('mouseenter', function(){
-      $(this).find('.attention_red-bl').addClass('visible');
-    }).on('mouseleave', function(){
-      $(this).find('.attention_red-bl').removeClass('visible');
-    });
     
      /*выпадающие поля при выборе пункта*/ 
     

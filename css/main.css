@@ -776,7 +776,7 @@ LABEL .icomoon.on {
   margin-bottom: 0;
 }
 
-#content .attention_red-bl{
+.bg_red .attention_red-bl{
   position: absolute;
   left: 100%;
   top: -10px;
@@ -792,16 +792,16 @@ LABEL .icomoon.on {
   -webkit-transition: opacity .25s ease-in-out, background-color .15s ease-in-out;
   transition: opacity .25s ease-in-out, background-color .15s ease-in-out;
 }
-#content .attention_red-bl.visible{
+.bg_red:hover .attention_red-bl{
   opacity: 1;
   background-color: #f15f5f;
 }
-#content .attention_red-bl:before{
+.bg_red .attention_red-bl:before{
   border-color: transparent transparent transparent transparent;
   -webkit-transition: border-color 2s;
   transition: border-color 2s;
 }
-#content .attention_red-bl.visible:before{
+.bg_red:hover .attention_red-bl:before{
   content: '';
   width: 0;
   height: 0;
